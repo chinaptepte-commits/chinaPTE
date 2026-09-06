@@ -51,6 +51,8 @@
 
     <p class="tip-banner">💡 戴耳机反复听，不必盯屏 · 英文 → 拼读 → 中文释义 → 例句</p>
 
+    <p class="tip-banner" id="tipBanner">💡 iPhone 关屏后系统仍可能暂停网页朗读；安卓 Chrome 开「息屏续听」通常可继续；或用保持常亮。</p>
+
     <div class="unsupported" id="speechWarn" role="alert" style="display:none">
       当前浏览器不支持 Web Speech API。请换用 Chrome / Edge / Safari。
     </div>
@@ -114,6 +116,17 @@
         <button type="button" class="speed-btn is-active" data-speed="1">1×</button>
         <button type="button" class="speed-btn" data-speed="1.2">1.2×</button>
       </div>
+
+    <div class="options keep-awake-options" aria-label="息屏续听设置">
+      <button type="button" class="toggle is-on" id="btnKeepAlive" aria-pressed="true" title="息屏续听（安卓更稳）">
+        <span class="toggle-track" aria-hidden="true"></span>
+        <span>息屏续听（安卓更稳）</span>
+      </button>
+      <button type="button" class="toggle" id="btnWakeLock" aria-pressed="false" title="保持屏幕常亮">
+        <span class="toggle-track" aria-hidden="true"></span>
+        <span>保持屏幕常亮</span>
+      </button>
+    </div>
       <button type="button" class="toggle is-on" id="btnToggleExample" aria-pressed="true"><span class="toggle-track"></span><span>例句</span></button>
       <button type="button" class="toggle is-on" id="btnToggleSpell" aria-pressed="true"><span class="toggle-track"></span><span>拼读</span></button>
     </div>
@@ -127,6 +140,8 @@
     </div>
   </div>
   <script src="data-vocab.js"></script>
+  <script src="keepalive.js"></script>
+  <script src="audio-engine.js"></script>
   <script src="vocab-app.js"></script>
 </body>
 </html>

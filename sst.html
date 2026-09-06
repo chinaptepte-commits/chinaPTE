@@ -39,7 +39,7 @@
       <div class="streak-pill" style="background:var(--accent-soft);border-color:rgba(91,141,239,0.25);color:var(--accent)">进度自动续听</div>
     </div>
 
-    <p class="tip-banner" id="tipBanner">💡 听完写 50–70 词总结：主旨+支撑点</p>
+    <p class="tip-banner" id="tipBanner">💡 听完写 50–70 词总结：主旨+支撑点 · iPhone 关屏后系统仍可能暂停网页朗读；安卓 Chrome 开「息屏续听」通常可继续；或用保持常亮。</p>
 
     <div class="unsupported" id="speechWarn" role="alert">
       当前浏览器不支持 Web Speech API。请换用 Chrome / Edge / Safari。
@@ -98,6 +98,17 @@
         <button type="button" class="speed-btn is-active" data-speed="1">1×</button>
         <button type="button" class="speed-btn" data-speed="1.2">1.2×</button>
       </div>
+
+    <div class="options keep-awake-options" aria-label="息屏续听设置">
+      <button type="button" class="toggle is-on" id="btnKeepAlive" aria-pressed="true" title="息屏续听（安卓更稳）">
+        <span class="toggle-track" aria-hidden="true"></span>
+        <span>息屏续听（安卓更稳）</span>
+      </button>
+      <button type="button" class="toggle" id="btnWakeLock" aria-pressed="false" title="保持屏幕常亮">
+        <span class="toggle-track" aria-hidden="true"></span>
+        <span>保持屏幕常亮</span>
+      </button>
+    </div>
       <button type="button" class="toggle is-on" id="btnToggleZh" aria-pressed="true" title="中文解读开关">
         <span class="toggle-track" aria-hidden="true"></span>
         <span>中文解读</span>
@@ -113,6 +124,8 @@
   </div>
 
   <script src="data-sst.js"></script>
+  <script src="keepalive.js"></script>
+  <script src="audio-engine.js"></script>
   <script src="player.js"></script>
   <script>
     ChinaPTEPlayer.create({

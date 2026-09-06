@@ -1185,3 +1185,18 @@ input:focus-visible {
   display: inline-block;
   margin: 6px 8px 0 0;
 }
+
+
+/* Keep-alive / wake-lock toggles */
+.keep-awake-options {
+  margin-top: -6px;
+  margin-bottom: 14px;
+}
+.keep-awake-options .toggle {
+  flex: 1 1 160px;
+  font-size: 0.78rem;
+}
+.tip-banner.is-warn {
+  background: rgba(255, 176, 32, 0.12);
+  border-color: rgba(255, 176, 32, 0.35);
+}

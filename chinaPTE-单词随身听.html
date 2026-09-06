@@ -1195,6 +1195,21 @@ input:focus-visible {
 }
 
 
+/* Keep-alive / wake-lock toggles */
+.keep-awake-options {
+  margin-top: -6px;
+  margin-bottom: 14px;
+}
+.keep-awake-options .toggle {
+  flex: 1 1 160px;
+  font-size: 0.78rem;
+}
+.tip-banner.is-warn {
+  background: rgba(255, 176, 32, 0.12);
+  border-color: rgba(255, 176, 32, 0.35);
+}
+
+
     .vocab-modes { display:flex; flex-wrap:wrap; gap:8px; margin:8px 0 12px; }
     .vocab-modes .type-tab { cursor:pointer; }
     .vocab-actions { display:flex; flex-wrap:wrap; gap:8px; margin:10px 0; }
@@ -1239,6 +1254,8 @@ input:focus-visible {
     </header>
 
     <p class="tip-banner">💡 戴耳机反复听，不必盯屏 · 英文 → 拼读 → 中文释义 → 例句</p>
+
+    <p class="tip-banner" id="tipBanner">💡 iPhone 关屏后系统仍可能暂停网页朗读；安卓 Chrome 开「息屏续听」通常可继续；或用保持常亮。</p>
 
     <div class="unsupported" id="speechWarn" role="alert" style="display:none">
       当前浏览器不支持 Web Speech API。请换用 Chrome / Edge / Safari。
@@ -1303,6 +1320,17 @@ input:focus-visible {
         <button type="button" class="speed-btn is-active" data-speed="1">1×</button>
         <button type="button" class="speed-btn" data-speed="1.2">1.2×</button>
       </div>
+
+    <div class="options keep-awake-options" aria-label="息屏续听设置">
+      <button type="button" class="toggle is-on" id="btnKeepAlive" aria-pressed="true" title="息屏续听（安卓更稳）">
+        <span class="toggle-track" aria-hidden="true"></span>
+        <span>息屏续听（安卓更稳）</span>
+      </button>
+      <button type="button" class="toggle" id="btnWakeLock" aria-pressed="false" title="保持屏幕常亮">
+        <span class="toggle-track" aria-hidden="true"></span>
+        <span>保持屏幕常亮</span>
+      </button>
+    </div>
       <button type="button" class="toggle is-on" id="btnToggleExample" aria-pressed="true"><span class="toggle-track"></span><span>例句</span></button>
       <button type="button" class="toggle is-on" id="btnToggleSpell" aria-pressed="true"><span class="toggle-track"></span><span>拼读</span></button>
     </div>
@@ -1315,6 +1343,8 @@ input:focus-visible {
       <a class="btn-soft" href="consult.html">出国咨询留资</a>
     </div>
   </div>
+  
+  
   
   
 
@@ -11757,6 +11787,473 @@ input:focus-visible {
 </script>
 <script>
 /**
+ * chinaPTE · mobile keep-alive helpers
+ * Silent looping HTMLAudio + Media Session + optional Screen Wake Lock.
+ * Helps Android Chrome keep Web Speech alive when the screen turns off.
+ * iOS Safari may still suspend speechSynthesis on lock — wake lock is the fallback.
+ */
+(function (global) {
+  "use strict";
+
+  var STORAGE_KEEP = "chinaPTE_keepAlive";
+  var STORAGE_WAKE = "chinaPTE_wakeLock";
+
+  // ~1s silent mono 8kHz WAV (PCM zeros) — loops while 随身听 is active
+  function buildSilentWavDataUri(seconds) {
+    var sampleRate = 8000;
+    var numSamples = Math.max(1, Math.floor(sampleRate * (seconds || 1)));
+    var dataSize = numSamples * 2;
+    var buffer = new ArrayBuffer(44 + dataSize);
+    var view = new DataView(buffer);
+    function writeStr(offset, str) {
+      for (var i = 0; i < str.length; i++) view.setUint8(offset + i, str.charCodeAt(i));
+    }
+    writeStr(0, "RIFF");
+    view.setUint32(4, 36 + dataSize, true);
+    writeStr(8, "WAVE");
+    writeStr(12, "fmt ");
+    view.setUint32(16, 16, true);
+    view.setUint16(20, 1, true);
+    view.setUint16(22, 1, true);
+    view.setUint32(24, sampleRate, true);
+    view.setUint32(28, sampleRate * 2, true);
+    view.setUint16(32, 2, true);
+    view.setUint16(34, 16, true);
+    writeStr(36, "data");
+    view.setUint32(40, dataSize, true);
+    // PCM silence already zero-filled
+    var bytes = new Uint8Array(buffer);
+    var bin = "";
+    for (var j = 0; j < bytes.length; j++) bin += String.fromCharCode(bytes[j]);
+    return "data:audio/wav;base64," + btoa(bin);
+  }
+
+  // Tiny known-good silent MP3 fallback (some Android prefer mpeg)
+  var SILENT_MP3 =
+    "data:audio/mpeg;base64,SUQzBAAAAAABEVRYWFgAAAAtAAADY29tbWVudABCaWdTb3VuZEJhbmsuY29tIC8gTGFTb25vdGhlcXVlLm9yZwBURU5DAAAAHQAAA1N3aXRjaCBTb3VuZCBzb25nLmpzb24AVFNTRQAAAA8AAANMYXZmNTcuODMuMTAwAAAAAAAAAAAAAAD/80DEAAAAA0gAAAAATEFNRTMuMTAwVVVVVVVVVVVVVUxBTUUzLjEwMFVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVf/zQM0AAAAA0gAAAAATEFNRTMuMTAwVVVVVVVVVVVVVUxBTUUzLjEwMFVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVV";
+
+  function loadBool(key, defaultVal) {
+    try {
+      var v = localStorage.getItem(key);
+      if (v === null || v === undefined) return defaultVal;
+      return v === "1" || v === "true";
+    } catch (e) {
+      return defaultVal;
+    }
+  }
+  function saveBool(key, val) {
+    try {
+      localStorage.setItem(key, val ? "1" : "0");
+    } catch (e) {}
+  }
+
+  /**
+   * @param {object} hooks
+   * @param {function():boolean} hooks.isPlaying
+   * @param {function()} hooks.onPlay
+   * @param {function()} hooks.onPause
+   * @param {function()} hooks.onNext
+   * @param {function()} hooks.onPrev
+   * @param {function()} [hooks.onResumeSpeech] - called when tab visible again and speech may have died
+   * @param {string} [hooks.artist]
+   */
+  function create(hooks) {
+    hooks = hooks || {};
+    var artist = hooks.artist || "chinaPTE 随身听";
+    var keepAliveOn = loadBool(STORAGE_KEEP, true);
+    var wakeLockOn = loadBool(STORAGE_WAKE, false);
+    var silentAudio = null;
+    var wakeLock = null;
+    var startedOnce = false;
+    var wantSilent = false;
+    var lastTitle = "";
+    var visibilityBound = false;
+
+    function ensureSilentEl() {
+      if (silentAudio) return silentAudio;
+      silentAudio = new Audio();
+      silentAudio.loop = true;
+      silentAudio.volume = 0.01;
+      silentAudio.preload = "auto";
+      try {
+        silentAudio.src = buildSilentWavDataUri(1.2);
+      } catch (e) {
+        silentAudio.src = SILENT_MP3;
+      }
+      silentAudio.setAttribute("playsinline", "true");
+      silentAudio.setAttribute("webkit-playsinline", "true");
+      // Keep session alive if the element ends unexpectedly
+      silentAudio.addEventListener("pause", function () {
+        if (wantSilent && keepAliveOn && !silentAudio._chinaPteStopping) {
+          tryPlaySilent();
+        }
+      });
+      silentAudio.addEventListener("ended", function () {
+        if (wantSilent && keepAliveOn) tryPlaySilent();
+      });
+      return silentAudio;
+    }
+
+    function tryPlaySilent() {
+      if (!keepAliveOn || !wantSilent) return;
+      var el = ensureSilentEl();
+      el._chinaPteStopping = false;
+      var p = el.play();
+      if (p && typeof p.catch === "function") {
+        p.catch(function () {
+          // Autoplay blocked until next user gesture — ignored
+        });
+      }
+    }
+
+    function stopSilent() {
+      wantSilent = false;
+      if (!silentAudio) return;
+      silentAudio._chinaPteStopping = true;
+      try {
+        silentAudio.pause();
+        silentAudio.currentTime = 0;
+      } catch (e) {}
+    }
+
+    function releaseWakeLock() {
+      if (wakeLock) {
+        try {
+          wakeLock.release();
+        } catch (e) {}
+        wakeLock = null;
+      }
+    }
+
+    async function requestWakeLock() {
+      if (!wakeLockOn) {
+        releaseWakeLock();
+        return;
+      }
+      if (!("wakeLock" in navigator) || !navigator.wakeLock) return;
+      try {
+        wakeLock = await navigator.wakeLock.request("screen");
+        if (wakeLock && wakeLock.addEventListener) {
+          wakeLock.addEventListener("release", function () {
+            wakeLock = null;
+          });
+        }
+      } catch (e) {
+        // Permission / unsupported / battery saver
+        wakeLock = null;
+      }
+    }
+
+    function setMediaSessionPlaying(playing) {
+      if (!("mediaSession" in navigator)) return;
+      try {
+        navigator.mediaSession.playbackState = playing ? "playing" : "paused";
+      } catch (e) {}
+    }
+
+    function updateMetadata(title) {
+      lastTitle = title || lastTitle || "随身听";
+      if (!("mediaSession" in navigator) || typeof MediaMetadata === "undefined") return;
+      try {
+        navigator.mediaSession.metadata = new MediaMetadata({
+          title: lastTitle,
+          artist: artist,
+          album: "chinaPTE",
+        });
+      } catch (e) {}
+    }
+
+    function wireMediaSession() {
+      if (!("mediaSession" in navigator)) return;
+      var map = {
+        play: hooks.onPlay,
+        pause: hooks.onPause,
+        nexttrack: hooks.onNext,
+        previoustrack: hooks.onPrev,
+      };
+      Object.keys(map).forEach(function (action) {
+        try {
+          if (typeof map[action] === "function") {
+            navigator.mediaSession.setActionHandler(action, function () {
+              map[action]();
+            });
+          }
+        } catch (e) {
+          // Some browsers reject unsupported actions
+        }
+      });
+    }
+
+    function onVisibility() {
+      var hidden = document.hidden || document.visibilityState === "hidden";
+      if (hidden) {
+        if (wantSilent && keepAliveOn) tryPlaySilent();
+        if (window.speechSynthesis) {
+          try {
+            if (speechSynthesis.paused) speechSynthesis.resume();
+          } catch (e) {}
+        }
+      } else {
+        // Visible again — re-acquire wake lock if needed; resume speech if it died
+        if (wakeLockOn && wantSilent) requestWakeLock();
+        if (wantSilent && keepAliveOn) tryPlaySilent();
+        if (typeof hooks.isPlaying === "function" && hooks.isPlaying()) {
+          var dead =
+            window.speechSynthesis &&
+            !speechSynthesis.speaking &&
+            !speechSynthesis.pending;
+          if (dead && typeof hooks.onResumeSpeech === "function") {
+            hooks.onResumeSpeech();
+          } else if (window.speechSynthesis && speechSynthesis.paused) {
+            try {
+              speechSynthesis.resume();
+            } catch (e) {}
+          }
+        }
+      }
+    }
+
+    function bindVisibility() {
+      if (visibilityBound) return;
+      visibilityBound = true;
+      document.addEventListener("visibilitychange", onVisibility);
+      window.addEventListener("pagehide", function () {
+        if (wantSilent && keepAliveOn) tryPlaySilent();
+      });
+      window.addEventListener("pageshow", function () {
+        if (wantSilent && keepAliveOn) tryPlaySilent();
+        if (wakeLockOn && wantSilent) requestWakeLock();
+      });
+      document.addEventListener("freeze", function () {
+        if (wantSilent && keepAliveOn) tryPlaySilent();
+      });
+    }
+
+    /** Call on first Play / Play All user gesture while session active */
+    function onSessionStart(title) {
+      startedOnce = true;
+      wantSilent = true;
+      bindVisibility();
+      wireMediaSession();
+      if (title) updateMetadata(title);
+      if (keepAliveOn) tryPlaySilent();
+      if (wakeLockOn) requestWakeLock();
+      setMediaSessionPlaying(true);
+    }
+
+    function onSessionStop() {
+      wantSilent = false;
+      stopSilent();
+      releaseWakeLock();
+      setMediaSessionPlaying(false);
+    }
+
+    function onSessionPause() {
+      // Keep silent audio if keep-alive is on (helps Android), but mark paused
+      setMediaSessionPlaying(false);
+      releaseWakeLock();
+      // Still keep silent looping if user left keep-alive on and may resume soon —
+      // stop silent only when fully stopped; on pause release wake lock only.
+    }
+
+    function setKeepAlive(on) {
+      keepAliveOn = !!on;
+      saveBool(STORAGE_KEEP, keepAliveOn);
+      if (keepAliveOn && wantSilent) tryPlaySilent();
+      else if (!keepAliveOn) stopSilent();
+      syncToggleUI();
+    }
+
+    function setWakeLock(on) {
+      wakeLockOn = !!on;
+      saveBool(STORAGE_WAKE, wakeLockOn);
+      if (wakeLockOn && wantSilent) requestWakeLock();
+      else releaseWakeLock();
+      syncToggleUI();
+    }
+
+    function syncToggleUI() {
+      var ka = document.getElementById("btnKeepAlive");
+      var wl = document.getElementById("btnWakeLock");
+      if (ka) {
+        ka.classList.toggle("is-on", keepAliveOn);
+        ka.setAttribute("aria-pressed", keepAliveOn ? "true" : "false");
+      }
+      if (wl) {
+        wl.classList.toggle("is-on", wakeLockOn);
+        wl.setAttribute("aria-pressed", wakeLockOn ? "true" : "false");
+      }
+    }
+
+    function bindToggles() {
+      syncToggleUI();
+      var ka = document.getElementById("btnKeepAlive");
+      var wl = document.getElementById("btnWakeLock");
+      if (ka && !ka._chinaPteBound) {
+        ka._chinaPteBound = true;
+        ka.addEventListener("click", function () {
+          setKeepAlive(!keepAliveOn);
+        });
+      }
+      if (wl && !wl._chinaPteBound) {
+        wl._chinaPteBound = true;
+        wl.addEventListener("click", function () {
+          setWakeLock(!wakeLockOn);
+        });
+      }
+    }
+
+    // Heartbeat: nudge silent audio + resume paused TTS while active
+    setInterval(function () {
+      if (!wantSilent) return;
+      if (keepAliveOn) {
+        var el = silentAudio;
+        if (el && el.paused) tryPlaySilent();
+      }
+      if (
+        typeof hooks.isPlaying === "function" &&
+        hooks.isPlaying() &&
+        window.speechSynthesis &&
+        speechSynthesis.speaking &&
+        speechSynthesis.paused
+      ) {
+        try {
+          speechSynthesis.resume();
+        } catch (e) {}
+      }
+    }, 4000);
+
+    return {
+      onSessionStart: onSessionStart,
+      onSessionStop: onSessionStop,
+      onSessionPause: onSessionPause,
+      updateMetadata: updateMetadata,
+      setKeepAlive: setKeepAlive,
+      setWakeLock: setWakeLock,
+      bindToggles: bindToggles,
+      syncToggleUI: syncToggleUI,
+      isKeepAliveOn: function () {
+        return keepAliveOn;
+      },
+      isWakeLockOn: function () {
+        return wakeLockOn;
+      },
+      nudgeSilent: tryPlaySilent,
+    };
+  }
+
+  global.ChinaPTEKeepAlive = { create: create, STORAGE_KEEP: STORAGE_KEEP, STORAGE_WAKE: STORAGE_WAKE };
+})(typeof window !== "undefined" ? window : globalThis);
+
+</script>
+<script>
+/**
+ * chinaPTE · audio engine stub
+ * Prefers prebuilt HTMLAudio URL when available; otherwise falls back to speechSynthesis.
+ * Full edge-tts / clip library generation is deferred — this round keeps Web Speech primary.
+ *
+ * Usage (future):
+ *   ChinaPTEAudio.speak(text, { lang, rate, voice, audioUrl }) -> Promise
+ */
+(function (global) {
+  "use strict";
+
+  var activeAudio = null;
+
+  function cancel() {
+    if (activeAudio) {
+      try {
+        activeAudio.pause();
+        activeAudio.removeAttribute("src");
+        activeAudio.load();
+      } catch (e) {}
+      activeAudio = null;
+    }
+    if (window.speechSynthesis) {
+      try {
+        speechSynthesis.cancel();
+      } catch (e) {}
+    }
+  }
+
+  /**
+   * @param {string} text
+   * @param {object} opts
+   * @param {string} [opts.audioUrl] - prebuilt clip URL (mp3/ogg/wav)
+   * @param {string} [opts.lang]
+   * @param {number} [opts.rate]
+   * @param {SpeechSynthesisVoice} [opts.voice]
+   * @returns {Promise<{interrupted?:boolean, via?:string}>}
+   */
+  function speak(text, opts) {
+    opts = opts || {};
+    if (opts.audioUrl) {
+      return new Promise(function (resolve, reject) {
+        cancel();
+        var a = new Audio(opts.audioUrl);
+        activeAudio = a;
+        a.onended = function () {
+          if (activeAudio === a) activeAudio = null;
+          resolve({ via: "html-audio" });
+        };
+        a.onerror = function (e) {
+          if (activeAudio === a) activeAudio = null;
+          // Fall back to TTS if clip fails
+          speakViaTts(text, opts).then(resolve, reject);
+        };
+        var p = a.play();
+        if (p && typeof p.catch === "function") {
+          p.catch(function () {
+            speakViaTts(text, opts).then(resolve, reject);
+          });
+        }
+      });
+    }
+    return speakViaTts(text, opts);
+  }
+
+  function speakViaTts(text, opts) {
+    return new Promise(function (resolve, reject) {
+      if (!window.speechSynthesis) {
+        reject(new Error("no speechSynthesis"));
+        return;
+      }
+      var u = new SpeechSynthesisUtterance(text);
+      u.lang = opts.lang || "en-US";
+      u.rate = opts.rate != null ? opts.rate : 1;
+      u.pitch = opts.pitch != null ? opts.pitch : 1;
+      u.volume = 1;
+      if (opts.voice) u.voice = opts.voice;
+      u.onend = function () {
+        resolve({ via: "speechSynthesis" });
+      };
+      u.onerror = function (e) {
+        if (e.error === "interrupted" || e.error === "canceled") {
+          resolve({ interrupted: true, via: "speechSynthesis" });
+        } else {
+          reject(e);
+        }
+      };
+      speechSynthesis.cancel();
+      setTimeout(function () {
+        speechSynthesis.speak(u);
+      }, 40);
+    });
+  }
+
+  global.ChinaPTEAudio = {
+    speak: speak,
+    cancel: cancel,
+    /** Placeholder: map item id / phrase → clip path when library exists */
+    resolveClipUrl: function (/* key */) {
+      return null;
+    },
+  };
+})(typeof window !== "undefined" ? window : globalThis);
+
+</script>
+<script>
+/**
  * chinaPTE · 单词库 / 单词随身听
  * Flow: EN word → spelling → Chinese gloss → example → exampleZh → next
  * Does NOT speak tip fields (memory tips shown in UI only).
@@ -11829,6 +12326,57 @@ input:focus-visible {
   var els = {};
   var playToken = 0;
   var pauseTimer = null;
+  var keepAlive = null;
+  var resumePending = false;
+
+  function ensureKeepAlive() {
+    if (keepAlive) return keepAlive;
+    if (!global.ChinaPTEKeepAlive) return null;
+    keepAlive = global.ChinaPTEKeepAlive.create({
+      artist: "chinaPTE 随身听",
+      isPlaying: function () { return state.playing && !state.paused; },
+      onPlay: function () {
+        if (state.playing && !state.paused) pausePlayback();
+        else {
+          var was = state.playAll;
+          cancelSpeech();
+          playCurrent({ continueAll: was });
+        }
+      },
+      onPause: function () { pausePlayback(); },
+      onNext: function () {
+        if (state.index < items.length - 1) {
+          state.index += 1; renderItem();
+          if (state.playing) { cancelSpeech(); playCurrent({ continueAll: state.playAll }); }
+        }
+      },
+      onPrev: function () {
+        if (state.index > 0) {
+          state.index -= 1; renderItem();
+          if (state.playing) { cancelSpeech(); playCurrent({ continueAll: state.playAll }); }
+        }
+      },
+      onResumeSpeech: function () {
+        if (state.paused || resumePending) return;
+        if (!state.playing && !state.playAll) return;
+        resumePending = true;
+        var wasAll = state.playAll;
+        state.playing = true;
+        cancelSpeech();
+        setTimeout(function () {
+          resumePending = false;
+          playCurrent({ continueAll: wasAll, resume: true });
+        }, 80);
+      },
+    });
+    return keepAlive;
+  }
+
+  function sessionTitle() {
+    var it = current();
+    if (!it) return "单词随身听";
+    return (it.word || "").slice(0, 80) || "单词随身听";
+  }
 
   function current() { return items[state.index] || null; }
 
@@ -11913,6 +12461,10 @@ input:focus-visible {
     var idle = label === "准备就绪" || label === "已停止" || label === "已暂停" || label === "本条完成" || label === "全部完成";
     if (els.statusBadge) els.statusBadge.classList.toggle("is-idle", idle);
     if (els.statusText) els.statusText.textContent = idle ? "待机" : "播放中";
+    var ka = ensureKeepAlive();
+    if (ka && label && label !== "准备就绪" && label !== "已停止" && label !== "已暂停" && label !== "本条完成" && label !== "全部完成" && label !== "播放中断") {
+      ka.updateMetadata(sessionTitle() + " · " + label);
+    }
   }
 
   function escapeHtml(s) {
@@ -12050,6 +12602,8 @@ input:focus-visible {
     updateTransport();
     var it = current();
     if (!it) { stopAll(); return; }
+    var kaStart = ensureKeepAlive();
+    if (kaStart) kaStart.onSessionStart(sessionTitle());
     try {
       setPhase("单词");
       var r1 = await speak(it.word, { lang: enSpeakLang(), rate: Math.max(0.7, state.rate * 0.88), voice: state.enVoice });
@@ -12104,18 +12658,21 @@ input:focus-visible {
         state.playing = false;
         setPhase("全部完成");
         updateTransport();
+        { var ka = ensureKeepAlive(); if (ka) ka.onSessionStop(); }
         return;
       }
       state.playing = false;
       state.playAll = false;
       setPhase("本条完成");
       updateTransport();
+      { var ka = ensureKeepAlive(); if (ka) ka.onSessionStop(); }
     } catch (err) {
       console.warn(err);
       state.playing = false;
       state.playAll = false;
       setPhase("播放中断");
       updateTransport();
+      { var ka = ensureKeepAlive(); if (ka) ka.onSessionStop(); }
     }
   }
 
@@ -12127,6 +12684,8 @@ input:focus-visible {
     cancelSpeech();
     setPhase("已停止");
     updateTransport();
+    var ka = ensureKeepAlive();
+    if (ka) ka.onSessionStop();
   }
 
   function pausePlayback() {
@@ -12137,6 +12696,8 @@ input:focus-visible {
     cancelSpeech();
     setPhase("已暂停");
     updateTransport();
+    var ka = ensureKeepAlive();
+    if (ka) ka.onSessionPause();
   }
 
   function bind() {
@@ -12173,6 +12734,16 @@ input:focus-visible {
     };
 
     if (!window.speechSynthesis && els.speechWarn) els.speechWarn.style.display = "block";
+    var kaInit = ensureKeepAlive();
+    if (kaInit) kaInit.bindToggles();
+    var tipEl = document.getElementById("tipBanner") || document.querySelector(".tip-banner");
+    if (tipEl && !tipEl.dataset.keepAliveTip) {
+      tipEl.dataset.keepAliveTip = "1";
+      tipEl.id = tipEl.id || "tipBanner";
+      var base = (tipEl.textContent || "").trim();
+      var tip = "iPhone 关屏后系统仍可能暂停网页朗读；安卓 Chrome 开「息屏续听」通常可继续；或用保持常亮。";
+      tipEl.textContent = base ? base + " · " + tip : "💡 " + tip;
+    }
     pickVoices();
     if (window.speechSynthesis) {
       speechSynthesis.onvoiceschanged = pickVoices;

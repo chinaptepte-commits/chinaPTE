@@ -71,6 +71,57 @@
   var els = {};
   var playToken = 0;
   var pauseTimer = null;
+  var keepAlive = null;
+  var resumePending = false;
+
+  function ensureKeepAlive() {
+    if (keepAlive) return keepAlive;
+    if (!global.ChinaPTEKeepAlive) return null;
+    keepAlive = global.ChinaPTEKeepAlive.create({
+      artist: "chinaPTE 随身听",
+      isPlaying: function () { return state.playing && !state.paused; },
+      onPlay: function () {
+        if (state.playing && !state.paused) pausePlayback();
+        else {
+          var was = state.playAll;
+          cancelSpeech();
+          playCurrent({ continueAll: was });
+        }
+      },
+      onPause: function () { pausePlayback(); },
+      onNext: function () {
+        if (state.index < items.length - 1) {
+          state.index += 1; renderItem();
+          if (state.playing) { cancelSpeech(); playCurrent({ continueAll: state.playAll }); }
+        }
+      },
+      onPrev: function () {
+        if (state.index > 0) {
+          state.index -= 1; renderItem();
+          if (state.playing) { cancelSpeech(); playCurrent({ continueAll: state.playAll }); }
+        }
+      },
+      onResumeSpeech: function () {
+        if (state.paused || resumePending) return;
+        if (!state.playing && !state.playAll) return;
+        resumePending = true;
+        var wasAll = state.playAll;
+        state.playing = true;
+        cancelSpeech();
+        setTimeout(function () {
+          resumePending = false;
+          playCurrent({ continueAll: wasAll, resume: true });
+        }, 80);
+      },
+    });
+    return keepAlive;
+  }
+
+  function sessionTitle() {
+    var it = current();
+    if (!it) return "单词随身听";
+    return (it.word || "").slice(0, 80) || "单词随身听";
+  }
 
   function current() { return items[state.index] || null; }
 
@@ -155,6 +206,10 @@
     var idle = label === "准备就绪" || label === "已停止" || label === "已暂停" || label === "本条完成" || label === "全部完成";
     if (els.statusBadge) els.statusBadge.classList.toggle("is-idle", idle);
     if (els.statusText) els.statusText.textContent = idle ? "待机" : "播放中";
+    var ka = ensureKeepAlive();
+    if (ka && label && label !== "准备就绪" && label !== "已停止" && label !== "已暂停" && label !== "本条完成" && label !== "全部完成" && label !== "播放中断") {
+      ka.updateMetadata(sessionTitle() + " · " + label);
+    }
   }
 
   function escapeHtml(s) {
@@ -292,6 +347,8 @@
     updateTransport();
     var it = current();
     if (!it) { stopAll(); return; }
+    var kaStart = ensureKeepAlive();
+    if (kaStart) kaStart.onSessionStart(sessionTitle());
     try {
       setPhase("单词");
       var r1 = await speak(it.word, { lang: enSpeakLang(), rate: Math.max(0.7, state.rate * 0.88), voice: state.enVoice });
@@ -346,18 +403,21 @@
         state.playing = false;
         setPhase("全部完成");
         updateTransport();
+        { var ka = ensureKeepAlive(); if (ka) ka.onSessionStop(); }
         return;
       }
       state.playing = false;
       state.playAll = false;
       setPhase("本条完成");
       updateTransport();
+      { var ka = ensureKeepAlive(); if (ka) ka.onSessionStop(); }
     } catch (err) {
       console.warn(err);
       state.playing = false;
       state.playAll = false;
       setPhase("播放中断");
       updateTransport();
+      { var ka = ensureKeepAlive(); if (ka) ka.onSessionStop(); }
     }
   }
 
@@ -369,6 +429,8 @@
     cancelSpeech();
     setPhase("已停止");
     updateTransport();
+    var ka = ensureKeepAlive();
+    if (ka) ka.onSessionStop();
   }
 
   function pausePlayback() {
@@ -379,6 +441,8 @@
     cancelSpeech();
     setPhase("已暂停");
     updateTransport();
+    var ka = ensureKeepAlive();
+    if (ka) ka.onSessionPause();
   }
 
   function bind() {
@@ -415,6 +479,16 @@
     };
 
     if (!window.speechSynthesis && els.speechWarn) els.speechWarn.style.display = "block";
+    var kaInit = ensureKeepAlive();
+    if (kaInit) kaInit.bindToggles();
+    var tipEl = document.getElementById("tipBanner") || document.querySelector(".tip-banner");
+    if (tipEl && !tipEl.dataset.keepAliveTip) {
+      tipEl.dataset.keepAliveTip = "1";
+      tipEl.id = tipEl.id || "tipBanner";
+      var base = (tipEl.textContent || "").trim();
+      var tip = "iPhone 关屏后系统仍可能暂停网页朗读；安卓 Chrome 开「息屏续听」通常可继续；或用保持常亮。";
+      tipEl.textContent = base ? base + " · " + tip : "💡 " + tip;
+    }
     pickVoices();
     if (window.speechSynthesis) {
       speechSynthesis.onvoiceschanged = pickVoices;

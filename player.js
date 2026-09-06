@@ -61,7 +61,46 @@
       answerReveal: $("answerReveal"),
       tipBanner: $("tipBanner"),
       speedBtns: document.querySelectorAll(".speed-btn"),
+      keepAlive: $("btnKeepAlive"),
+      wakeLock: $("btnWakeLock"),
     };
+
+    let keepAlive = null;
+    let resumePending = false;
+
+    function ensureKeepAlive() {
+      if (keepAlive) return keepAlive;
+      if (!global.ChinaPTEKeepAlive) return null;
+      keepAlive = global.ChinaPTEKeepAlive.create({
+        artist: "chinaPTE 随身听",
+        isPlaying: () => state.playing && !state.paused,
+        onPlay: () => onPlayPause(),
+        onPause: () => pausePlayback(),
+        onNext: () => onNext(),
+        onPrev: () => onPrev(),
+        onResumeSpeech: () => {
+          if (state.paused || resumePending) return;
+          // Recover even if a mid-utterance interrupt cleared the loop but left UI "playing"
+          if (!state.playing && !state.playAll) return;
+          resumePending = true;
+          const wasAll = state.playAll;
+          state.playing = true;
+          cancelSpeech();
+          setTimeout(() => {
+            resumePending = false;
+            playCurrentSequence({ continueAll: wasAll, resume: true });
+          }, 80);
+        },
+      });
+      return keepAlive;
+    }
+
+    function sessionTitle() {
+      const item = currentItem();
+      if (!item) return mode.toUpperCase() + " 随身听";
+      const en = itemEn(item);
+      return (en || "").slice(0, 80) || mode.toUpperCase() + " 随身听";
+    }
 
     function itemEn(item) {
       return item.en || item.sentence || item.question || item.passage || item.transcript || "";
@@ -326,6 +365,11 @@
       const idle = phase === "idle";
       if (els.statusBadge) els.statusBadge.classList.toggle("is-idle", idle);
       if (els.statusText) els.statusText.textContent = idle ? "待机" : "播放中";
+      const ka = ensureKeepAlive();
+      if (ka && !idle) {
+        const lab = label || phaseLabel(phase);
+        ka.updateMetadata(sessionTitle() + (lab ? " · " + lab : ""));
+      }
     }
 
     function phaseLabel(phase) {
@@ -509,6 +553,9 @@
         return;
       }
 
+      const kaStart = ensureKeepAlive();
+      if (kaStart) kaStart.onSessionStart(sessionTitle());
+
       try {
         if (fromVocab == null) {
           // EN audio
@@ -598,6 +645,7 @@
           state.playing = false;
           setPhase("idle", "全部完成");
           updateTransportUI();
+          { const ka = ensureKeepAlive(); if (ka) ka.onSessionStop(); }
           return;
         }
 
@@ -605,12 +653,14 @@
         state.playAll = false;
         setPhase("idle", "本条完成");
         updateTransportUI();
+        { const ka = ensureKeepAlive(); if (ka) ka.onSessionStop(); }
       } catch (err) {
         console.warn("speech error", err);
         state.playing = false;
         state.playAll = false;
         setPhase("idle", "播放中断");
         updateTransportUI();
+        { const ka = ensureKeepAlive(); if (ka) ka.onSessionStop(); }
       }
     }
 
@@ -623,6 +673,8 @@
       highlightVocab(-1);
       setPhase("idle", "已停止");
       updateTransportUI();
+      const ka = ensureKeepAlive();
+      if (ka) ka.onSessionStop();
     }
 
     function pausePlayback() {
@@ -633,6 +685,8 @@
       cancelSpeech();
       setPhase("idle", "已暂停");
       updateTransportUI();
+      const ka = ensureKeepAlive();
+      if (ka) ka.onSessionPause();
     }
 
     async function playVocabOnly(idx) {
@@ -781,6 +835,16 @@
       renderItem();
       setPhase("idle", "准备就绪");
       updateTransportUI();
+
+      const kaInit = ensureKeepAlive();
+      if (kaInit) kaInit.bindToggles();
+      if (els.tipBanner && !els.tipBanner.dataset.keepAliveTip) {
+        els.tipBanner.dataset.keepAliveTip = "1";
+        const base = (els.tipBanner.textContent || "").trim();
+        const tip =
+          "iPhone 关屏后系统仍可能暂停网页朗读；安卓 Chrome 开「息屏续听」通常可继续；或用保持常亮。";
+        els.tipBanner.textContent = base ? base + " · " + tip : "💡 " + tip;
+      }
 
       if (els.playAll) els.playAll.addEventListener("click", onPlayAll);
       if (els.playPause) els.playPause.addEventListener("click", onPlayPause);
