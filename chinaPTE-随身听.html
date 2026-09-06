@@ -1,0 +1,6076 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+  <meta name="theme-color" content="#0c0f14" />
+  <meta name="description" content="chinaPTE WFD 随身听 — 听写记忆训练，纯浏览器语音合成，零成本本地运行" />
+  <title>chinaPTE · WFD 随身听</title>
+  <style>
+/* chinaPTE — dark calm mobile-first (WFD 随身听 approved language) */
+
+:root {
+  --bg: #0c0f14;
+  --bg-elevated: #151a22;
+  --bg-card: #1a2130;
+  --border: rgba(255, 255, 255, 0.08);
+  --text: #e8ecf4;
+  --text-muted: #8b95a8;
+  --accent: #5b8def;
+  --accent-soft: rgba(91, 141, 239, 0.18);
+  --accent-glow: rgba(91, 141, 239, 0.35);
+  --success: #3dd68c;
+  --success-soft: rgba(61, 214, 140, 0.15);
+  --chip: #243044;
+  --chip-active: #2d4a7a;
+  --danger-soft: rgba(239, 100, 100, 0.15);
+  --radius: 16px;
+  --radius-sm: 10px;
+  --safe-bottom: env(safe-area-inset-bottom, 0px);
+  --font: "SF Pro Text", -apple-system, BlinkMacSystemFont, "Segoe UI",
+    "PingFang SC", "Hiragino Sans GB", "Microsoft YaHei", sans-serif;
+  --max: 480px;
+  --max-wide: 720px;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  font-size: 16px;
+  -webkit-text-size-adjust: 100%;
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: var(--font);
+  background: var(--bg);
+  color: var(--text);
+  min-height: 100dvh;
+  line-height: 1.5;
+  overflow-x: hidden;
+  background-image:
+    radial-gradient(ellipse 80% 50% at 50% -20%, rgba(91, 141, 239, 0.12), transparent),
+    radial-gradient(ellipse 60% 40% at 100% 100%, rgba(61, 214, 140, 0.05), transparent);
+}
+
+a {
+  color: var(--accent);
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+button {
+  font-family: inherit;
+  border: none;
+  cursor: pointer;
+  color: inherit;
+  background: none;
+  -webkit-tap-highlight-color: transparent;
+  touch-action: manipulation;
+}
+
+button:disabled {
+  opacity: 0.4;
+  cursor: not-allowed;
+}
+
+input,
+select,
+textarea {
+  font-family: inherit;
+  font-size: 1rem;
+  color: var(--text);
+  background: var(--bg-elevated);
+  border: 1px solid var(--border);
+  border-radius: var(--radius-sm);
+  padding: 12px 14px;
+  width: 100%;
+  outline: none;
+}
+
+input:focus,
+select:focus,
+textarea:focus {
+  border-color: var(--accent);
+  box-shadow: 0 0 0 3px var(--accent-soft);
+}
+
+.app {
+  max-width: var(--max);
+  margin: 0 auto;
+  min-height: 100dvh;
+  display: flex;
+  flex-direction: column;
+  padding: 12px 16px calc(24px + var(--safe-bottom));
+}
+
+.app-wide {
+  max-width: var(--max-wide);
+}
+
+/* ===== Shared site nav ===== */
+.site-nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 8px;
+  padding: 4px 0 12px;
+  border-bottom: 1px solid var(--border);
+  margin-bottom: 16px;
+  flex-wrap: wrap;
+}
+
+.site-nav-brand {
+  font-size: 0.9rem;
+  font-weight: 700;
+  color: var(--text);
+  letter-spacing: -0.02em;
+  white-space: nowrap;
+}
+
+.site-nav-brand span {
+  color: var(--accent);
+  font-weight: 600;
+}
+
+.site-nav-links {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 4px;
+  list-style: none;
+}
+
+.site-nav-links a {
+  display: inline-flex;
+  align-items: center;
+  padding: 8px 10px;
+  border-radius: 999px;
+  font-size: 0.75rem;
+  font-weight: 600;
+  color: var(--text-muted);
+  text-decoration: none;
+  min-height: 36px;
+}
+
+.site-nav-links a:hover {
+  color: var(--text);
+  background: rgba(255, 255, 255, 0.05);
+  text-decoration: none;
+}
+
+.site-nav-links a.is-active {
+  color: var(--accent);
+  background: var(--accent-soft);
+}
+
+/* Header (WFD) */
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 0 16px;
+  gap: 12px;
+}
+
+.brand {
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+}
+
+.brand-name {
+  font-size: 0.95rem;
+  font-weight: 700;
+  letter-spacing: -0.02em;
+  color: var(--text);
+}
+
+.brand-sub {
+  font-size: 0.75rem;
+  color: var(--text-muted);
+  font-weight: 500;
+}
+
+.stats-pill {
+  background: var(--bg-elevated);
+  border: 1px solid var(--border);
+  border-radius: 999px;
+  padding: 8px 14px;
+  font-size: 0.8rem;
+  color: var(--text-muted);
+  white-space: nowrap;
+  flex-shrink: 0;
+}
+
+.stats-pill strong {
+  color: var(--success);
+  font-weight: 700;
+}
+
+.streak-row {
+  display: flex;
+  gap: 8px;
+  flex-wrap: wrap;
+  margin-bottom: 12px;
+}
+
+.streak-pill {
+  background: var(--success-soft);
+  border: 1px solid rgba(61, 214, 140, 0.25);
+  border-radius: 999px;
+  padding: 6px 12px;
+  font-size: 0.75rem;
+  color: var(--success);
+  font-weight: 600;
+}
+
+/* Hero Play All */
+.hero {
+  margin-bottom: 20px;
+}
+
+.btn-play-all {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 12px;
+  padding: 20px 24px;
+  background: linear-gradient(135deg, #4a7de0 0%, #3d6bc7 100%);
+  border-radius: var(--radius);
+  font-size: 1.15rem;
+  font-weight: 700;
+  letter-spacing: 0.02em;
+  box-shadow: 0 8px 32px var(--accent-glow), inset 0 1px 0 rgba(255, 255, 255, 0.15);
+  transition: transform 0.15s ease, box-shadow 0.15s ease;
+  min-height: 64px;
+  color: #fff;
+}
+
+.btn-play-all:active:not(:disabled) {
+  transform: scale(0.98);
+}
+
+.btn-play-all.is-playing {
+  background: linear-gradient(135deg, #3a5fad 0%, #2d4a8a 100%);
+}
+
+.btn-play-all .icon {
+  font-size: 1.4rem;
+  line-height: 1;
+}
+
+.btn-play-all .label-stack {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 2px;
+}
+
+.btn-play-all .label-en {
+  font-size: 0.7rem;
+  font-weight: 500;
+  opacity: 0.85;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+}
+
+/* Progress */
+.progress-wrap {
+  margin-bottom: 16px;
+}
+
+.progress-meta {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 8px;
+  font-size: 0.8rem;
+  color: var(--text-muted);
+}
+
+.progress-bar {
+  height: 4px;
+  background: var(--bg-elevated);
+  border-radius: 2px;
+  overflow: hidden;
+}
+
+.progress-fill {
+  height: 100%;
+  background: linear-gradient(90deg, var(--accent), var(--success));
+  border-radius: 2px;
+  width: 0%;
+  transition: width 0.35s ease;
+}
+
+/* Now playing card */
+.now-card {
+  background: var(--bg-card);
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  padding: 20px 18px;
+  margin-bottom: 16px;
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  min-height: 220px;
+}
+
+.status-badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  align-self: flex-start;
+  font-size: 0.7rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+  color: var(--accent);
+  background: var(--accent-soft);
+  padding: 5px 10px;
+  border-radius: 999px;
+}
+
+.status-badge .dot {
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+  background: var(--accent);
+  animation: pulse 1.4s ease infinite;
+}
+
+.status-badge.is-idle .dot {
+  animation: none;
+  background: var(--text-muted);
+}
+
+.status-badge.is-idle {
+  color: var(--text-muted);
+  background: rgba(255, 255, 255, 0.06);
+}
+
+@keyframes pulse {
+  0%, 100% { opacity: 1; transform: scale(1); }
+  50% { opacity: 0.4; transform: scale(0.85); }
+}
+
+.sentence-en {
+  font-size: 1.2rem;
+  font-weight: 600;
+  line-height: 1.55;
+  letter-spacing: -0.01em;
+  color: var(--text);
+}
+
+.sentence-zh {
+  font-size: 0.95rem;
+  color: var(--text-muted);
+  line-height: 1.6;
+  padding-top: 4px;
+  border-top: 1px solid var(--border);
+}
+
+.sentence-zh.hidden {
+  display: none;
+}
+
+.vocab-section {
+  margin-top: auto;
+}
+
+.vocab-label {
+  font-size: 0.7rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+  color: var(--text-muted);
+  margin-bottom: 10px;
+}
+
+.vocab-chips {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+
+.chip {
+  background: var(--chip);
+  border: 1px solid var(--border);
+  border-radius: var(--radius-sm);
+  padding: 10px 12px;
+  font-size: 0.85rem;
+  min-height: 44px;
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+  transition: background 0.2s, border-color 0.2s, transform 0.15s;
+  text-align: left;
+  max-width: 100%;
+}
+
+.chip:active {
+  transform: scale(0.97);
+}
+
+.chip.is-active {
+  background: var(--chip-active);
+  border-color: var(--accent);
+  box-shadow: 0 0 0 1px var(--accent);
+}
+
+.chip-word {
+  font-weight: 700;
+  color: var(--text);
+}
+
+.chip-gloss {
+  font-size: 0.75rem;
+  color: var(--text-muted);
+}
+
+.chip-spelling {
+  font-size: 0.7rem;
+  font-family: ui-monospace, "SF Mono", Menlo, monospace;
+  color: var(--accent);
+  letter-spacing: 0.04em;
+  display: none;
+}
+
+.chip.is-active .chip-spelling {
+  display: block;
+}
+
+.chip-tip {
+  font-size: 0.7rem;
+  color: var(--text-muted);
+  display: none;
+  margin-top: 2px;
+}
+
+.chip.is-active .chip-tip {
+  display: block;
+}
+
+/* Transport controls */
+.controls {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  gap: 8px;
+  margin-bottom: 14px;
+}
+
+.ctrl-btn {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 4px;
+  min-height: 56px;
+  background: var(--bg-elevated);
+  border: 1px solid var(--border);
+  border-radius: var(--radius-sm);
+  font-size: 0.65rem;
+  color: var(--text-muted);
+  font-weight: 600;
+  transition: background 0.15s, border-color 0.15s;
+}
+
+.ctrl-btn .ico {
+  font-size: 1.25rem;
+  line-height: 1;
+  color: var(--text);
+}
+
+.ctrl-btn:active:not(:disabled) {
+  background: var(--accent-soft);
+  border-color: var(--accent);
+}
+
+.ctrl-btn.is-primary {
+  background: var(--accent-soft);
+  border-color: rgba(91, 141, 239, 0.4);
+}
+
+.ctrl-btn.is-primary .ico {
+  color: var(--accent);
+}
+
+/* Options row */
+.options {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  align-items: center;
+  margin-bottom: 16px;
+}
+
+.speed-group {
+  display: flex;
+  background: var(--bg-elevated);
+  border: 1px solid var(--border);
+  border-radius: var(--radius-sm);
+  overflow: hidden;
+}
+
+.speed-btn {
+  padding: 10px 14px;
+  font-size: 0.8rem;
+  font-weight: 600;
+  color: var(--text-muted);
+  min-height: 44px;
+  min-width: 48px;
+  border-right: 1px solid var(--border);
+}
+
+.speed-btn:last-child {
+  border-right: none;
+}
+
+.speed-btn.is-active {
+  background: var(--accent-soft);
+  color: var(--accent);
+}
+
+.toggle {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  background: var(--bg-elevated);
+  border: 1px solid var(--border);
+  border-radius: var(--radius-sm);
+  padding: 8px 14px;
+  min-height: 44px;
+  font-size: 0.8rem;
+  font-weight: 600;
+  color: var(--text-muted);
+  flex: 1;
+  min-width: 140px;
+}
+
+.toggle-track {
+  width: 40px;
+  height: 22px;
+  background: #2a3344;
+  border-radius: 11px;
+  position: relative;
+  flex-shrink: 0;
+  transition: background 0.2s;
+}
+
+.toggle-track::after {
+  content: "";
+  position: absolute;
+  width: 18px;
+  height: 18px;
+  border-radius: 50%;
+  background: var(--text-muted);
+  top: 2px;
+  left: 2px;
+  transition: transform 0.2s, background 0.2s;
+}
+
+.toggle.is-on .toggle-track {
+  background: var(--accent);
+}
+
+.toggle.is-on .toggle-track::after {
+  transform: translateX(18px);
+  background: #fff;
+}
+
+.toggle.is-on {
+  color: var(--text);
+}
+
+/* Filter / search */
+.filter-bar {
+  display: flex;
+  gap: 8px;
+  margin-bottom: 14px;
+}
+
+.filter-bar input {
+  flex: 1;
+  min-height: 44px;
+}
+
+.btn-ghost {
+  background: var(--bg-elevated);
+  border: 1px solid var(--border);
+  border-radius: var(--radius-sm);
+  padding: 10px 14px;
+  font-size: 0.8rem;
+  font-weight: 600;
+  color: var(--text-muted);
+  min-height: 44px;
+  white-space: nowrap;
+}
+
+.btn-ghost:active {
+  background: var(--accent-soft);
+  color: var(--accent);
+}
+
+/* Privacy note */
+.privacy {
+  font-size: 0.72rem;
+  color: var(--text-muted);
+  text-align: center;
+  line-height: 1.5;
+  padding: 8px 4px;
+  opacity: 0.85;
+}
+
+.privacy span {
+  color: var(--success);
+}
+
+.unsupported {
+  background: var(--danger-soft);
+  border: 1px solid rgba(239, 100, 100, 0.3);
+  border-radius: var(--radius-sm);
+  padding: 12px 14px;
+  font-size: 0.85rem;
+  color: #f0a0a0;
+  margin-bottom: 12px;
+  display: none;
+}
+
+.unsupported.is-visible {
+  display: block;
+}
+
+/* Soft lead blurb (sticky / footer) */
+.lead-blurb {
+  margin-top: 12px;
+  background: var(--bg-card);
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  padding: 14px 16px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.lead-blurb p {
+  font-size: 0.85rem;
+  color: var(--text-muted);
+  line-height: 1.55;
+}
+
+.lead-blurb strong {
+  color: var(--text);
+}
+
+.btn-soft {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  background: var(--accent-soft);
+  border: 1px solid rgba(91, 141, 239, 0.35);
+  color: var(--accent);
+  font-weight: 700;
+  font-size: 0.9rem;
+  padding: 12px 18px;
+  border-radius: var(--radius-sm);
+  min-height: 48px;
+  text-decoration: none;
+  text-align: center;
+}
+
+.btn-soft:hover {
+  text-decoration: none;
+  background: rgba(91, 141, 239, 0.28);
+}
+
+.btn-primary-link {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  width: 100%;
+  background: linear-gradient(135deg, #4a7de0 0%, #3d6bc7 100%);
+  color: #fff;
+  font-weight: 700;
+  font-size: 1.05rem;
+  padding: 16px 20px;
+  border-radius: var(--radius);
+  min-height: 56px;
+  text-decoration: none;
+  box-shadow: 0 8px 28px var(--accent-glow);
+}
+
+.btn-primary-link:hover {
+  text-decoration: none;
+  filter: brightness(1.05);
+}
+
+.btn-secondary-link {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  background: var(--bg-elevated);
+  border: 1px solid var(--border);
+  color: var(--text);
+  font-weight: 600;
+  font-size: 0.95rem;
+  padding: 14px 18px;
+  border-radius: var(--radius);
+  min-height: 52px;
+  text-decoration: none;
+  margin-top: 10px;
+}
+
+.btn-secondary-link:hover {
+  text-decoration: none;
+  border-color: var(--accent);
+}
+
+/* ===== Marketing home ===== */
+.home-hero {
+  text-align: left;
+  padding: 8px 0 24px;
+}
+
+.home-hero h1 {
+  font-size: 1.65rem;
+  font-weight: 800;
+  letter-spacing: -0.03em;
+  line-height: 1.25;
+  margin-bottom: 12px;
+}
+
+.home-hero h1 em {
+  font-style: normal;
+  color: var(--accent);
+}
+
+.home-hero .tagline {
+  font-size: 1rem;
+  color: var(--text-muted);
+  line-height: 1.6;
+  margin-bottom: 20px;
+}
+
+.trust-grid {
+  display: grid;
+  gap: 10px;
+  margin: 20px 0 24px;
+}
+
+.trust-card {
+  background: var(--bg-card);
+  border: 1px solid var(--border);
+  border-radius: var(--radius-sm);
+  padding: 14px 16px;
+}
+
+.trust-card h3 {
+  font-size: 0.9rem;
+  font-weight: 700;
+  margin-bottom: 4px;
+}
+
+.trust-card p {
+  font-size: 0.8rem;
+  color: var(--text-muted);
+  line-height: 1.5;
+}
+
+.section-title {
+  font-size: 1.1rem;
+  font-weight: 700;
+  margin: 8px 0 12px;
+}
+
+.method-steps {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  margin-bottom: 24px;
+}
+
+.method-steps li {
+  background: var(--bg-elevated);
+  border: 1px solid var(--border);
+  border-radius: var(--radius-sm);
+  padding: 12px 14px;
+  font-size: 0.88rem;
+  color: var(--text-muted);
+  display: flex;
+  gap: 12px;
+  align-items: flex-start;
+}
+
+.method-steps .num {
+  flex-shrink: 0;
+  width: 28px;
+  height: 28px;
+  border-radius: 50%;
+  background: var(--accent-soft);
+  color: var(--accent);
+  font-weight: 700;
+  font-size: 0.8rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.bridge-card {
+  background: linear-gradient(135deg, rgba(91, 141, 239, 0.12), rgba(61, 214, 140, 0.08));
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  padding: 18px 16px;
+  margin: 8px 0 24px;
+}
+
+.bridge-card h2 {
+  font-size: 1.05rem;
+  margin-bottom: 8px;
+}
+
+.bridge-card p {
+  font-size: 0.88rem;
+  color: var(--text-muted);
+  line-height: 1.55;
+  margin-bottom: 12px;
+}
+
+.disclaimer {
+  font-size: 0.72rem;
+  color: var(--text-muted);
+  opacity: 0.9;
+  line-height: 1.5;
+  margin-top: 8px;
+}
+
+/* Lead form */
+.lead-form {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  margin-top: 8px;
+}
+
+.lead-form label {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+  font-size: 0.8rem;
+  font-weight: 600;
+  color: var(--text-muted);
+}
+
+.lead-form .btn-submit {
+  background: linear-gradient(135deg, #4a7de0 0%, #3d6bc7 100%);
+  color: #fff;
+  font-weight: 700;
+  font-size: 1rem;
+  padding: 14px;
+  border-radius: var(--radius-sm);
+  min-height: 52px;
+  margin-top: 4px;
+  box-shadow: 0 6px 20px var(--accent-glow);
+}
+
+.lead-form .btn-submit:active {
+  transform: scale(0.98);
+}
+
+.wechat-box {
+  background: var(--bg-elevated);
+  border: 1px dashed rgba(91, 141, 239, 0.4);
+  border-radius: var(--radius-sm);
+  padding: 14px;
+  text-align: center;
+  margin: 12px 0;
+}
+
+.wechat-box .wx-label {
+  font-size: 0.75rem;
+  color: var(--text-muted);
+  margin-bottom: 4px;
+}
+
+.wechat-box .wx-id {
+  font-size: 1.15rem;
+  font-weight: 800;
+  color: var(--accent);
+  letter-spacing: 0.02em;
+}
+
+.form-success {
+  display: none;
+  background: var(--success-soft);
+  border: 1px solid rgba(61, 214, 140, 0.35);
+  border-radius: var(--radius);
+  padding: 16px;
+  margin-top: 12px;
+}
+
+.form-success.is-visible {
+  display: block;
+}
+
+.form-success h3 {
+  color: var(--success);
+  font-size: 1rem;
+  margin-bottom: 8px;
+}
+
+.form-success p {
+  font-size: 0.85rem;
+  color: var(--text-muted);
+  line-height: 1.55;
+}
+
+.form-note {
+  font-size: 0.72rem;
+  color: var(--text-muted);
+  line-height: 1.5;
+  margin-top: 8px;
+}
+
+.copy-toast {
+  position: fixed;
+  bottom: calc(24px + var(--safe-bottom));
+  left: 50%;
+  transform: translateX(-50%) translateY(80px);
+  background: var(--bg-card);
+  border: 1px solid var(--border);
+  color: var(--text);
+  padding: 12px 18px;
+  border-radius: 999px;
+  font-size: 0.85rem;
+  font-weight: 600;
+  opacity: 0;
+  transition: transform 0.25s, opacity 0.25s;
+  z-index: 100;
+  pointer-events: none;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.4);
+}
+
+.copy-toast.is-show {
+  opacity: 1;
+  transform: translateX(-50%) translateY(0);
+}
+
+/* Bank list */
+.bank-meta {
+  font-size: 0.8rem;
+  color: var(--text-muted);
+  margin-bottom: 12px;
+}
+
+.bank-list {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  margin-bottom: 24px;
+}
+
+.bank-item {
+  background: var(--bg-card);
+  border: 1px solid var(--border);
+  border-radius: var(--radius-sm);
+  padding: 14px;
+  text-align: left;
+  width: 100%;
+  transition: border-color 0.15s;
+}
+
+.bank-item:active,
+.bank-item:hover {
+  border-color: var(--accent);
+}
+
+.bank-item .bi-id {
+  font-size: 0.7rem;
+  font-weight: 700;
+  color: var(--accent);
+  margin-bottom: 6px;
+}
+
+.bank-item .bi-en {
+  font-size: 0.95rem;
+  font-weight: 600;
+  line-height: 1.45;
+  margin-bottom: 6px;
+}
+
+.bank-item .bi-zh {
+  font-size: 0.8rem;
+  color: var(--text-muted);
+  line-height: 1.5;
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}
+
+.bank-empty {
+  text-align: center;
+  padding: 32px 16px;
+  color: var(--text-muted);
+  font-size: 0.9rem;
+}
+
+.site-footer {
+  margin-top: auto;
+  padding-top: 24px;
+  border-top: 1px solid var(--border);
+  font-size: 0.72rem;
+  color: var(--text-muted);
+  text-align: center;
+  line-height: 1.6;
+}
+
+button:focus-visible,
+a:focus-visible,
+input:focus-visible {
+  outline: 2px solid var(--accent);
+  outline-offset: 2px;
+}
+
+@media (min-width: 480px) {
+  .app {
+    padding-top: 24px;
+  }
+
+  .sentence-en {
+    font-size: 1.3rem;
+  }
+
+  .home-hero h1 {
+    font-size: 1.9rem;
+  }
+}
+
+@media (min-width: 640px) {
+  .trust-grid {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+
+/* file:// Chrome tip */
+.file-tip {
+  background: #f5c542;
+  color: #1a1508;
+  border: 1px solid #e0a800;
+  border-radius: var(--radius-sm);
+  padding: 12px 14px;
+  font-size: 0.85rem;
+  font-weight: 600;
+  line-height: 1.55;
+  margin-bottom: 14px;
+  box-shadow: 0 2px 12px rgba(245, 197, 66, 0.25);
+}
+.file-tip strong {
+  font-weight: 800;
+}
+.site-nav-brand-static {
+  font-size: 0.9rem;
+  font-weight: 700;
+  color: var(--text);
+  letter-spacing: -0.02em;
+  white-space: nowrap;
+  pointer-events: none;
+}
+.lead-blurb .note-disabled {
+  font-size: 0.8rem;
+  color: var(--text-muted);
+}
+
+  </style>
+</head>
+<body>
+  <div class="app">
+    <nav class="site-nav" aria-label="站点导航">
+      <span class="site-nav-brand-static">chinaPTE</span>
+    </nav>
+
+    <div class="file-tip" role="note">
+      <strong>提示：</strong>请用 Chrome 或 Edge 打开本文件；点「随身听」后声音从本机扬声器/耳机出来。
+    </div>
+
+    <header class="header">
+      <div class="brand">
+        <div class="brand-name">WFD 随身听</div>
+        <div class="brand-sub">Write From Dictation · 耳机记忆</div>
+      </div>
+      <div class="stats-pill" id="todayStats" title="今日已听句数（本地存储）">
+        今天已听 <strong id="todayCount">0</strong> 句
+      </div>
+    </header>
+
+    <div class="streak-row">
+      <div class="streak-pill">连续 <strong id="streakCount">0</strong> 天</div>
+      <div class="streak-pill" style="background:var(--accent-soft);border-color:rgba(91,141,239,0.25);color:var(--accent)">进度自动续听</div>
+    </div>
+
+    <div class="unsupported" id="speechWarn" role="alert">
+      当前浏览器不支持 Web Speech API（speechSynthesis）。请换用 Chrome / Edge / Safari。
+    </div>
+
+    <div class="filter-bar">
+      <input type="search" id="wfdSearch" placeholder="筛选句子 / 词汇 / 中文…" autocomplete="off" enterkeyhint="search" />
+      <button type="button" class="btn-ghost" id="btnClearSearch">清除</button>
+    </div>
+
+    <section class="hero">
+      <button type="button" class="btn-play-all" id="btnPlayAll" aria-label="随身听 播放全部">
+        <span class="icon" id="playAllIcon">▶</span>
+        <span class="label-stack">
+          <span id="playAllLabel">随身听 · Play All</span>
+          <span class="label-en">EN → 中文解读 → 拼写</span>
+        </span>
+      </button>
+    </section>
+
+    <div class="progress-wrap">
+      <div class="progress-meta">
+        <span id="progressText">1 / —</span>
+        <span id="phaseText">准备就绪</span>
+      </div>
+      <div class="progress-bar" role="progressbar" aria-valuemin="0" aria-valuemax="100" aria-valuenow="0">
+        <div class="progress-fill" id="progressFill"></div>
+      </div>
+    </div>
+
+    <article class="now-card" aria-live="polite">
+      <div class="status-badge is-idle" id="statusBadge">
+        <span class="dot"></span>
+        <span id="statusText">待机</span>
+      </div>
+      <p class="sentence-en" id="sentenceEn">点击「随身听」开始，戴上耳机，不必盯屏。</p>
+      <p class="sentence-zh" id="sentenceZh">英文句子 → 中文解读 → 难词逐字母拼写 + 释义 → 下一句</p>
+      <div class="vocab-section">
+        <div class="vocab-label">重点词汇</div>
+        <div class="vocab-chips" id="vocabChips"></div>
+      </div>
+    </article>
+
+    <nav class="controls" aria-label="播放控制">
+      <button type="button" class="ctrl-btn" id="btnPrev" title="上一句">
+        <span class="ico">⏮</span>
+        <span>上一句</span>
+      </button>
+      <button type="button" class="ctrl-btn is-primary" id="btnPlayPause" title="播放 / 暂停">
+        <span class="ico" id="playPauseIcon">▶</span>
+        <span id="playPauseLabel">播放</span>
+      </button>
+      <button type="button" class="ctrl-btn" id="btnReplay" title="重播当前">
+        <span class="ico">↺</span>
+        <span>重播</span>
+      </button>
+      <button type="button" class="ctrl-btn" id="btnNext" title="下一句">
+        <span class="ico">⏭</span>
+        <span>下一句</span>
+      </button>
+      <button type="button" class="ctrl-btn" id="btnStop" title="停止">
+        <span class="ico">■</span>
+        <span>停止</span>
+      </button>
+    </nav>
+
+    <div class="options">
+      <div class="speed-group" role="group" aria-label="语速">
+        <button type="button" class="speed-btn" data-speed="0.8">0.8×</button>
+        <button type="button" class="speed-btn is-active" data-speed="1">1×</button>
+        <button type="button" class="speed-btn" data-speed="1.2">1.2×</button>
+      </div>
+      <button type="button" class="toggle is-on" id="btnToggleZh" aria-pressed="true" title="中文解读开关">
+        <span class="toggle-track" aria-hidden="true"></span>
+        <span>中文解读</span>
+      </button>
+    </div>
+
+    <p class="privacy">
+      语音由浏览器 <span>Web Speech API</span> 本地合成 · 不上传音频 · 零成本 · 隐私优先 · 可双击本 HTML 离线使用
+    </p>
+
+    <div class="lead-blurb">
+      <p><strong>备考之外：</strong>需要了解出国劳务 / 海外就业机会？可联系 chinaPTE 咨询（本单文件版不含在线留资页）。</p>
+      <p class="note-disabled">单文件离线版 · 无法跳转到其他页面</p>
+    </div>
+  </div>
+
+  <script>
+/**
+ * chinaPTE · WFD bank — Write From Dictation items
+ * Free, local-only. No network required.
+ * Total: 133 sentences
+ * Schema: { id, en, zhAnalysis, vocab: [{ word, spelling, gloss, tip }] }
+ */
+(function (global) {
+  "use strict";
+
+  var WFD_BANK = [
+    {
+      id: 1,
+      en: "The professor asked the students to submit their essays by Friday afternoon.",
+      zhAnalysis: "教授要求学生们在周五下午前提交他们的论文。注意 submit 与 by Friday afternoon 的时间截止表达。",
+      vocab: [
+        {
+          word: "professor",
+          spelling: "P-R-O-F-E-S-S-O-R",
+          gloss: "教授",
+          tip: "双写 S；词尾 -or 常见于职业名词"
+        },
+        {
+          word: "submit",
+          spelling: "S-U-B-M-I-T",
+          gloss: "提交",
+          tip: "sub-（向下）+ mit（送）；过去式 submitted 双写 t"
+        },
+        {
+          word: "essays",
+          spelling: "E-S-S-A-Y-S",
+          gloss: "论文 / 短文",
+          tip: "双写 S；复数加 -s"
+        },
+      ]
+    },
+    {
+      id: 2,
+      en: "Climate change is one of the most urgent issues facing our generation.",
+      zhAnalysis: "气候变化是我们这一代面临的最紧迫问题之一。one of the most + 形容词，后面 issues facing… 作后置修饰。",
+      vocab: [
+        {
+          word: "climate",
+          spelling: "C-L-I-M-A-T-E",
+          gloss: "气候",
+          tip: "cli-mate；勿写成 climet"
+        },
+        {
+          word: "urgent",
+          spelling: "U-R-G-E-N-T",
+          gloss: "紧急的 / 紧迫的",
+          tip: "ur-gent；词尾 -ent"
+        },
+        {
+          word: "generation",
+          spelling: "G-E-N-E-R-A-T-I-O-N",
+          gloss: "一代人",
+          tip: "gene-ration；-tion 名词后缀"
+        },
+      ]
+    },
+    {
+      id: 3,
+      en: "Please ensure that all equipment is returned to the laboratory after the experiment.",
+      zhAnalysis: "请确保实验结束后所有设备都归还到实验室。ensure that + 从句；is returned 表被动。",
+      vocab: [
+        {
+          word: "ensure",
+          spelling: "E-N-S-U-R-E",
+          gloss: "确保",
+          tip: "en-sure；勿与 insure（投保）混淆"
+        },
+        {
+          word: "equipment",
+          spelling: "E-Q-U-I-P-M-E-N-T",
+          gloss: "设备",
+          tip: "不可数名词，无复数；equip + -ment"
+        },
+        {
+          word: "laboratory",
+          spelling: "L-A-B-O-R-A-T-O-R-Y",
+          gloss: "实验室",
+          tip: "常缩写为 lab；注意 -atory 结尾"
+        },
+        {
+          word: "experiment",
+          spelling: "E-X-P-E-R-I-M-E-N-T",
+          gloss: "实验",
+          tip: "experi-ment；与 experience 词根相关"
+        },
+      ]
+    },
+    {
+      id: 4,
+      en: "The conference will provide an opportunity for researchers to share their latest findings.",
+      zhAnalysis: "这次会议将为研究人员提供分享最新研究成果的机会。provide an opportunity for sb to do sth 是高频结构。",
+      vocab: [
+        {
+          word: "conference",
+          spelling: "C-O-N-F-E-R-E-N-C-E",
+          gloss: "会议 / 学术会议",
+          tip: "con-ference；双写 e 在 -ence 前"
+        },
+        {
+          word: "opportunity",
+          spelling: "O-P-P-O-R-T-U-N-I-T-Y",
+          gloss: "机会",
+          tip: "双写 P；oppor-tunity"
+        },
+        {
+          word: "researchers",
+          spelling: "R-E-S-E-A-R-C-H-E-R-S",
+          gloss: "研究人员",
+          tip: "research + -er + -s"
+        },
+        {
+          word: "findings",
+          spelling: "F-I-N-D-I-N-G-S",
+          gloss: "研究结果 / 发现",
+          tip: "学术语境常用复数 findings"
+        },
+      ]
+    },
+    {
+      id: 5,
+      en: "Students are encouraged to participate in extracurricular activities throughout the semester.",
+      zhAnalysis: "鼓励学生在整个学期参与课外活动。are encouraged to + 动词原形；throughout the semester 表时间跨度。",
+      vocab: [
+        {
+          word: "encouraged",
+          spelling: "E-N-C-O-U-R-A-G-E-D",
+          gloss: "被鼓励",
+          tip: "en-courage + -d"
+        },
+        {
+          word: "participate",
+          spelling: "P-A-R-T-I-C-I-P-A-T-E",
+          gloss: "参与",
+          tip: "parti-cipate；后面常接 in"
+        },
+        {
+          word: "extracurricular",
+          spelling: "E-X-T-R-A-C-U-R-R-I-C-U-L-A-R",
+          gloss: "课外的",
+          tip: "extra- + curricular；双写 R"
+        },
+        {
+          word: "semester",
+          spelling: "S-E-M-E-S-T-E-R",
+          gloss: "学期",
+          tip: "se-mes-ter；美式常用"
+        },
+      ]
+    },
+    {
+      id: 6,
+      en: "The library has extended its opening hours during the examination period.",
+      zhAnalysis: "图书馆在考试期间延长了开放时间。has extended 现在完成；during the examination period 表时段。",
+      vocab: [
+        {
+          word: "extended",
+          spelling: "E-X-T-E-N-D-E-D",
+          gloss: "延长了",
+          tip: "extend + -ed；勿写成 extented"
+        },
+        {
+          word: "examination",
+          spelling: "E-X-A-M-I-N-A-T-I-O-N",
+          gloss: "考试",
+          tip: "常缩写 exam；-ation 名词后缀"
+        },
+        {
+          word: "period",
+          spelling: "P-E-R-I-O-D",
+          gloss: "时期 / 时段",
+          tip: "per-i-od；三音节"
+        },
+      ]
+    },
+    {
+      id: 7,
+      en: "Collaboration between colleagues is essential for completing complex projects on time.",
+      zhAnalysis: "同事之间的协作对于按时完成复杂项目至关重要。Collaboration between A；is essential for + 动名词。",
+      vocab: [
+        {
+          word: "collaboration",
+          spelling: "C-O-L-L-A-B-O-R-A-T-I-O-N",
+          gloss: "协作 / 合作",
+          tip: "双写 L；col-labor-ation"
+        },
+        {
+          word: "colleagues",
+          spelling: "C-O-L-L-E-A-G-U-E-S",
+          gloss: "同事",
+          tip: "双写 L；-eague 易错"
+        },
+        {
+          word: "essential",
+          spelling: "E-S-S-E-N-T-I-A-L",
+          gloss: "必要的",
+          tip: "双写 S；-tial 结尾"
+        },
+        {
+          word: "complex",
+          spelling: "C-O-M-P-L-E-X",
+          gloss: "复杂的",
+          tip: "com-plex；作形容词重音在前"
+        },
+      ]
+    },
+    {
+      id: 8,
+      en: "All assignments must be submitted electronically through the university portal.",
+      zhAnalysis: "所有作业必须通过大学门户以电子方式提交。must be submitted 表义务被动；electronically 作方式状语。",
+      vocab: [
+        {
+          word: "assignments",
+          spelling: "A-S-S-I-G-N-M-E-N-T-S",
+          gloss: "作业 / 任务",
+          tip: "双写 S；assign + -ment"
+        },
+        {
+          word: "electronically",
+          spelling: "E-L-E-C-T-R-O-N-I-C-A-L-L-Y",
+          gloss: "以电子方式",
+          tip: "electronic + -ally"
+        },
+        {
+          word: "portal",
+          spelling: "P-O-R-T-A-L",
+          gloss: "门户网站",
+          tip: "por-tal；校园系统常用"
+        },
+      ]
+    },
+    {
+      id: 9,
+      en: "The seminar will focus on sustainable development and environmental policy.",
+      zhAnalysis: "本次研讨会将聚焦可持续发展与环境政策。focus on + 名词；and 连接两个并列主题。",
+      vocab: [
+        {
+          word: "seminar",
+          spelling: "S-E-M-I-N-A-R",
+          gloss: "研讨会",
+          tip: "sem-i-nar"
+        },
+        {
+          word: "sustainable",
+          spelling: "S-U-S-T-A-I-N-A-B-L-E",
+          gloss: "可持续的",
+          tip: "sustain + -able"
+        },
+        {
+          word: "development",
+          spelling: "D-E-V-E-L-O-P-M-E-N-T",
+          gloss: "发展",
+          tip: "develop + -ment"
+        },
+        {
+          word: "environmental",
+          spelling: "E-N-V-I-R-O-N-M-E-N-T-A-L",
+          gloss: "环境的",
+          tip: "environment + -al"
+        },
+      ]
+    },
+    {
+      id: 10,
+      en: "Candidates are required to present a valid identification document at registration.",
+      zhAnalysis: "考生在注册时需出示有效身份证明文件。are required to + 动词；valid 修饰 identification document。",
+      vocab: [
+        {
+          word: "candidates",
+          spelling: "C-A-N-D-I-D-A-T-E-S",
+          gloss: "考生 / 候选人",
+          tip: "can-di-dates"
+        },
+        {
+          word: "identification",
+          spelling: "I-D-E-N-T-I-F-I-C-A-T-I-O-N",
+          gloss: "身份证明",
+          tip: "i-den-ti-fi-ca-tion"
+        },
+        {
+          word: "registration",
+          spelling: "R-E-G-I-S-T-R-A-T-I-O-N",
+          gloss: "注册 / 报到",
+          tip: "register + -ation"
+        },
+      ]
+    },
+    {
+      id: 11,
+      en: "The research methodology must be clearly described in the methodology chapter.",
+      zhAnalysis: "研究方法必须在方法章节中清晰描述。must be described 被动；clearly 修饰 described。",
+      vocab: [
+        {
+          word: "methodology",
+          spelling: "M-E-T-H-O-D-O-L-O-G-Y",
+          gloss: "方法论 / 研究方法",
+          tip: "method + -ology"
+        },
+        {
+          word: "described",
+          spelling: "D-E-S-C-R-I-B-E-D",
+          gloss: "被描述",
+          tip: "de-scribe + -d；注意 i 不双写"
+        },
+        {
+          word: "chapter",
+          spelling: "C-H-A-P-T-E-R",
+          gloss: "章节",
+          tip: "chap-ter"
+        },
+      ]
+    },
+    {
+      id: 12,
+      en: "International students should attend the orientation session before classes begin.",
+      zhAnalysis: "国际学生应在开课前参加迎新说明会。should attend；before + 从句表时间。",
+      vocab: [
+        {
+          word: "international",
+          spelling: "I-N-T-E-R-N-A-T-I-O-N-A-L",
+          gloss: "国际的",
+          tip: "inter- + national"
+        },
+        {
+          word: "orientation",
+          spelling: "O-R-I-E-N-T-A-T-I-O-N",
+          gloss: "迎新 / 导向",
+          tip: "orient + -ation"
+        },
+        {
+          word: "session",
+          spelling: "S-E-S-S-I-O-N",
+          gloss: "场次 / 会议",
+          tip: "ses-sion；双写 S"
+        },
+      ]
+    },
+    {
+      id: 13,
+      en: "Statistical analysis revealed a significant correlation between the two variables.",
+      zhAnalysis: "统计分析显示这两个变量之间存在显著相关。revealed 过去式；correlation between A and B。",
+      vocab: [
+        {
+          word: "statistical",
+          spelling: "S-T-A-T-I-S-T-I-C-A-L",
+          gloss: "统计的",
+          tip: "statistic + -al"
+        },
+        {
+          word: "significant",
+          spelling: "S-I-G-N-I-F-I-C-A-N-T",
+          gloss: "显著的",
+          tip: "sig-nif-i-cant"
+        },
+        {
+          word: "correlation",
+          spelling: "C-O-R-R-E-L-A-T-I-O-N",
+          gloss: "相关性",
+          tip: "cor-re-la-tion；双写 R"
+        },
+        {
+          word: "variables",
+          spelling: "V-A-R-I-A-B-L-E-S",
+          gloss: "变量",
+          tip: "var-i-a-bles"
+        },
+      ]
+    },
+    {
+      id: 14,
+      en: "The scholarship application deadline has been postponed until next Monday.",
+      zhAnalysis: "奖学金申请截止日期已推迟到下周一。has been postponed 现在完成被动；until 表截止。",
+      vocab: [
+        {
+          word: "scholarship",
+          spelling: "S-C-H-O-L-A-R-S-H-I-P",
+          gloss: "奖学金",
+          tip: "scholar + -ship"
+        },
+        {
+          word: "deadline",
+          spelling: "D-E-A-D-L-I-N-E",
+          gloss: "截止日期",
+          tip: "dead-line；合成词"
+        },
+        {
+          word: "postponed",
+          spelling: "P-O-S-T-P-O-N-E-D",
+          gloss: "推迟",
+          tip: "post-pone + -d"
+        },
+      ]
+    },
+    {
+      id: 15,
+      en: "Participants were asked to complete a questionnaire about their learning preferences.",
+      zhAnalysis: "参与者被要求完成一份关于学习偏好的问卷。were asked to；about 引出问卷主题。",
+      vocab: [
+        {
+          word: "participants",
+          spelling: "P-A-R-T-I-C-I-P-A-N-T-S",
+          gloss: "参与者",
+          tip: "participate → participant"
+        },
+        {
+          word: "questionnaire",
+          spelling: "Q-U-E-S-T-I-O-N-N-A-I-R-E",
+          gloss: "问卷",
+          tip: "注意双写 n；-aire 结尾"
+        },
+        {
+          word: "preferences",
+          spelling: "P-R-E-F-E-R-E-N-C-E-S",
+          gloss: "偏好",
+          tip: "prefer + -ence + -s"
+        },
+      ]
+    },
+    {
+      id: 16,
+      en: "Academic integrity is a fundamental principle of university education.",
+      zhAnalysis: "学术诚信是大学教育的基本原则。is a fundamental principle of… 表归属与重要性。",
+      vocab: [
+        {
+          word: "academic",
+          spelling: "A-C-A-D-E-M-I-C",
+          gloss: "学术的",
+          tip: "ac-a-dem-ic"
+        },
+        {
+          word: "integrity",
+          spelling: "I-N-T-E-G-R-I-T-Y",
+          gloss: "诚信 / 正直",
+          tip: "in-teg-ri-ty"
+        },
+        {
+          word: "fundamental",
+          spelling: "F-U-N-D-A-M-E-N-T-A-L",
+          gloss: "基本的",
+          tip: "fun-da-men-tal"
+        },
+        {
+          word: "principle",
+          spelling: "P-R-I-N-C-I-P-L-E",
+          gloss: "原则",
+          tip: "勿与 principal 混淆"
+        },
+      ]
+    },
+    {
+      id: 17,
+      en: "The lecture theatre is located on the third floor of the science building.",
+      zhAnalysis: "报告厅位于理科楼三楼。is located on；of the science building 表所属。",
+      vocab: [
+        {
+          word: "lecture",
+          spelling: "L-E-C-T-U-R-E",
+          gloss: "讲座",
+          tip: "lec-ture"
+        },
+        {
+          word: "theatre",
+          spelling: "T-H-E-A-T-R-E",
+          gloss: "剧场 / 阶梯教室",
+          tip: "英式 theatre；美式 theater"
+        },
+        {
+          word: "located",
+          spelling: "L-O-C-A-T-E-D",
+          gloss: "位于",
+          tip: "lo-cate + -d"
+        },
+        {
+          word: "building",
+          spelling: "B-U-I-L-D-I-N-G",
+          gloss: "大楼",
+          tip: "build + -ing"
+        },
+      ]
+    },
+    {
+      id: 18,
+      en: "Please refer to the course handbook for detailed assessment criteria.",
+      zhAnalysis: "详细评分标准请参阅课程手册。refer to；assessment criteria 学术高频搭配。",
+      vocab: [
+        {
+          word: "refer",
+          spelling: "R-E-F-E-R",
+          gloss: "查阅 / 参考",
+          tip: "re-fer；后面常接 to"
+        },
+        {
+          word: "handbook",
+          spelling: "H-A-N-D-B-O-O-K",
+          gloss: "手册",
+          tip: "hand + book"
+        },
+        {
+          word: "assessment",
+          spelling: "A-S-S-E-S-S-M-E-N-T",
+          gloss: "评估",
+          tip: "as-sess-ment；双写 S"
+        },
+        {
+          word: "criteria",
+          spelling: "C-R-I-T-E-R-I-A",
+          gloss: "标准",
+          tip: "criterion 的复数"
+        },
+      ]
+    },
+    {
+      id: 19,
+      en: "Globalisation has transformed the way businesses operate across national borders.",
+      zhAnalysis: "全球化已经改变了企业跨国经营的方式。has transformed；the way + 从句。",
+      vocab: [
+        {
+          word: "globalisation",
+          spelling: "G-L-O-B-A-L-I-S-A-T-I-O-N",
+          gloss: "全球化",
+          tip: "global + -isation；美式 -ization"
+        },
+        {
+          word: "transformed",
+          spelling: "T-R-A-N-S-F-O-R-M-E-D",
+          gloss: "改变了",
+          tip: "trans-form + -ed"
+        },
+        {
+          word: "businesses",
+          spelling: "B-U-S-I-N-E-S-S-E-S",
+          gloss: "企业",
+          tip: "business 复数加 -es"
+        },
+        {
+          word: "borders",
+          spelling: "B-O-R-D-E-R-S",
+          gloss: "边界",
+          tip: "bor-ders"
+        },
+      ]
+    },
+    {
+      id: 20,
+      en: "The laboratory technician demonstrated the correct procedure for handling samples.",
+      zhAnalysis: "实验室技术员演示了处理样本的正确程序。demonstrated；procedure for + 动名词。",
+      vocab: [
+        {
+          word: "technician",
+          spelling: "T-E-C-H-N-I-C-I-A-N",
+          gloss: "技术员",
+          tip: "tech-ni-cian"
+        },
+        {
+          word: "demonstrated",
+          spelling: "D-E-M-O-N-S-T-R-A-T-E-D",
+          gloss: "演示了",
+          tip: "dem-on-strate + -d"
+        },
+        {
+          word: "procedure",
+          spelling: "P-R-O-C-E-D-U-R-E",
+          gloss: "程序 / 步骤",
+          tip: "pro-ce-dure"
+        },
+        {
+          word: "samples",
+          spelling: "S-A-M-P-L-E-S",
+          gloss: "样本",
+          tip: "sam-ples"
+        },
+      ]
+    },
+    {
+      id: 21,
+      en: "Undergraduates may borrow up to ten books from the main library at one time.",
+      zhAnalysis: "本科生一次最多可从主图书馆借十本书。may borrow；up to + 数量。",
+      vocab: [
+        {
+          word: "undergraduates",
+          spelling: "U-N-D-E-R-G-R-A-D-U-A-T-E-S",
+          gloss: "本科生",
+          tip: "under + graduates"
+        },
+        {
+          word: "borrow",
+          spelling: "B-O-R-R-O-W",
+          gloss: "借（入）",
+          tip: "bor-row；双写 R"
+        },
+        {
+          word: "library",
+          spelling: "L-I-B-R-A-R-Y",
+          gloss: "图书馆",
+          tip: "li-brar-y"
+        },
+      ]
+    },
+    {
+      id: 22,
+      en: "The hypothesis was tested using a controlled experimental design.",
+      zhAnalysis: "该假设通过受控实验设计加以检验。was tested using… 表手段。",
+      vocab: [
+        {
+          word: "hypothesis",
+          spelling: "H-Y-P-O-T-H-E-S-I-S",
+          gloss: "假设",
+          tip: "hy-poth-e-sis；复数 hypotheses"
+        },
+        {
+          word: "controlled",
+          spelling: "C-O-N-T-R-O-L-L-E-D",
+          gloss: "受控的",
+          tip: "con-trol + -led；双写 L"
+        },
+        {
+          word: "experimental",
+          spelling: "E-X-P-E-R-I-M-E-N-T-A-L",
+          gloss: "实验的",
+          tip: "experiment + -al"
+        },
+        {
+          word: "design",
+          spelling: "D-E-S-I-G-N",
+          gloss: "设计",
+          tip: "de-sign"
+        },
+      ]
+    },
+    {
+      id: 23,
+      en: "Attendance at weekly tutorials is compulsory for all enrolled students.",
+      zhAnalysis: "所有在籍学生必须参加每周辅导课。is compulsory for；enrolled 作前置定语。",
+      vocab: [
+        {
+          word: "attendance",
+          spelling: "A-T-T-E-N-D-A-N-C-E",
+          gloss: "出勤",
+          tip: "at-tend-ance"
+        },
+        {
+          word: "tutorials",
+          spelling: "T-U-T-O-R-I-A-L-S",
+          gloss: "辅导课",
+          tip: "tu-to-ri-als"
+        },
+        {
+          word: "compulsory",
+          spelling: "C-O-M-P-U-L-S-O-R-Y",
+          gloss: "必修的 / 强制的",
+          tip: "com-pul-so-ry"
+        },
+        {
+          word: "enrolled",
+          spelling: "E-N-R-O-L-L-E-D",
+          gloss: "已注册的",
+          tip: "en-rol + -led"
+        },
+      ]
+    },
+    {
+      id: 24,
+      en: "The department organised a workshop on effective academic writing skills.",
+      zhAnalysis: "该系组织了一场关于有效学术写作技巧的工作坊。organised（英式）；workshop on…。",
+      vocab: [
+        {
+          word: "department",
+          spelling: "D-E-P-A-R-T-M-E-N-T",
+          gloss: "系 / 部门",
+          tip: "de-part-ment"
+        },
+        {
+          word: "organised",
+          spelling: "O-R-G-A-N-I-S-E-D",
+          gloss: "组织了",
+          tip: "英式 s；美式 organized"
+        },
+        {
+          word: "workshop",
+          spelling: "W-O-R-K-S-H-O-P",
+          gloss: "工作坊",
+          tip: "work + shop"
+        },
+        {
+          word: "effective",
+          spelling: "E-F-F-E-C-T-I-V-E",
+          gloss: "有效的",
+          tip: "ef-fec-tive；双写 F"
+        },
+      ]
+    },
+    {
+      id: 25,
+      en: "Public transport facilities have been significantly improved in recent years.",
+      zhAnalysis: "近年来公共交通设施已得到显著改善。have been improved 现在完成被动；significantly 修饰。",
+      vocab: [
+        {
+          word: "transport",
+          spelling: "T-R-A-N-S-P-O-R-T",
+          gloss: "交通 / 运输",
+          tip: "trans-port"
+        },
+        {
+          word: "facilities",
+          spelling: "F-A-C-I-L-I-T-I-E-S",
+          gloss: "设施",
+          tip: "fa-cil-i-ties"
+        },
+        {
+          word: "significantly",
+          spelling: "S-I-G-N-I-F-I-C-A-N-T-L-Y",
+          gloss: "显著地",
+          tip: "significant + -ly"
+        },
+        {
+          word: "improved",
+          spelling: "I-M-P-R-O-V-E-D",
+          gloss: "改善了",
+          tip: "im-prove + -d"
+        },
+      ]
+    },
+    {
+      id: 26,
+      en: "The journal article provides a comprehensive review of previous research.",
+      zhAnalysis: "这篇期刊文章对以往研究做了全面综述。provides a comprehensive review of…。",
+      vocab: [
+        {
+          word: "journal",
+          spelling: "J-O-U-R-N-A-L",
+          gloss: "期刊",
+          tip: "jour-nal"
+        },
+        {
+          word: "article",
+          spelling: "A-R-T-I-C-L-E",
+          gloss: "文章",
+          tip: "ar-ti-cle"
+        },
+        {
+          word: "comprehensive",
+          spelling: "C-O-M-P-R-E-H-E-N-S-I-V-E",
+          gloss: "全面的",
+          tip: "com-pre-hen-sive"
+        },
+        {
+          word: "previous",
+          spelling: "P-R-E-V-I-O-U-S",
+          gloss: "以往的",
+          tip: "pre-vi-ous"
+        },
+      ]
+    },
+    {
+      id: 27,
+      en: "Students must obtain approval from their supervisor before collecting data.",
+      zhAnalysis: "学生在收集数据前必须获得导师批准。must obtain；before + 动名词。",
+      vocab: [
+        {
+          word: "obtain",
+          spelling: "O-B-T-A-I-N",
+          gloss: "获得",
+          tip: "ob-tain"
+        },
+        {
+          word: "approval",
+          spelling: "A-P-P-R-O-V-A-L",
+          gloss: "批准",
+          tip: "ap-prov-al"
+        },
+        {
+          word: "supervisor",
+          spelling: "S-U-P-E-R-V-I-S-O-R",
+          gloss: "导师 / 主管",
+          tip: "super-visor"
+        },
+        {
+          word: "collecting",
+          spelling: "C-O-L-L-E-C-T-I-N-G",
+          gloss: "收集",
+          tip: "col-lect + -ing"
+        },
+      ]
+    },
+    {
+      id: 28,
+      en: "The museum exhibition features artefacts from ancient civilisations.",
+      zhAnalysis: "博物馆展览展出了古代文明的文物。features；artefacts（英式）/ artifacts。",
+      vocab: [
+        {
+          word: "exhibition",
+          spelling: "E-X-H-I-B-I-T-I-O-N",
+          gloss: "展览",
+          tip: "ex-hi-bi-tion"
+        },
+        {
+          word: "artefacts",
+          spelling: "A-R-T-E-F-A-C-T-S",
+          gloss: "文物",
+          tip: "arte-facts；美式 artifacts"
+        },
+        {
+          word: "ancient",
+          spelling: "A-N-C-I-E-N-T",
+          gloss: "古代的",
+          tip: "an-cient"
+        },
+        {
+          word: "civilisations",
+          spelling: "C-I-V-I-L-I-S-A-T-I-O-N-S",
+          gloss: "文明",
+          tip: "civil + -isation"
+        },
+      ]
+    },
+    {
+      id: 29,
+      en: "Economic growth depends on investment in education and infrastructure.",
+      zhAnalysis: "经济增长依赖于对教育与基础设施的投资。depends on；investment in…。",
+      vocab: [
+        {
+          word: "economic",
+          spelling: "E-C-O-N-O-M-I-C",
+          gloss: "经济的",
+          tip: "ec-o-nom-ic"
+        },
+        {
+          word: "investment",
+          spelling: "I-N-V-E-S-T-M-E-N-T",
+          gloss: "投资",
+          tip: "in-vest-ment"
+        },
+        {
+          word: "infrastructure",
+          spelling: "I-N-F-R-A-S-T-R-U-C-T-U-R-E",
+          gloss: "基础设施",
+          tip: "infra- + structure"
+        },
+        {
+          word: "education",
+          spelling: "E-D-U-C-A-T-I-O-N",
+          gloss: "教育",
+          tip: "ed-u-ca-tion"
+        },
+      ]
+    },
+    {
+      id: 30,
+      en: "The committee will announce the final decision at the end of this month.",
+      zhAnalysis: "委员会将在本月底宣布最终决定。will announce；at the end of… 时间短语。",
+      vocab: [
+        {
+          word: "committee",
+          spelling: "C-O-M-M-I-T-T-E-E",
+          gloss: "委员会",
+          tip: "双写 M、T、E 各一次易错"
+        },
+        {
+          word: "announce",
+          spelling: "A-N-N-O-U-N-C-E",
+          gloss: "宣布",
+          tip: "an-nounce；双写 N"
+        },
+        {
+          word: "decision",
+          spelling: "D-E-C-I-S-I-O-N",
+          gloss: "决定",
+          tip: "de-ci-sion"
+        },
+        {
+          word: "month",
+          spelling: "M-O-N-T-H",
+          gloss: "月份",
+          tip: "month"
+        },
+      ]
+    },
+    {
+      id: 31,
+      en: "Please switch off all mobile devices during the examination.",
+      zhAnalysis: "考试期间请关闭所有移动设备。switch off；during the examination。",
+      vocab: [
+        {
+          word: "switch",
+          spelling: "S-W-I-T-C-H",
+          gloss: "开关 / 切换",
+          tip: "switch"
+        },
+        {
+          word: "mobile",
+          spelling: "M-O-B-I-L-E",
+          gloss: "移动的",
+          tip: "mo-bile"
+        },
+        {
+          word: "devices",
+          spelling: "D-E-V-I-C-E-S",
+          gloss: "设备",
+          tip: "de-vic-es"
+        },
+        {
+          word: "during",
+          spelling: "D-U-R-I-N-G",
+          gloss: "在…期间",
+          tip: "dur-ing"
+        },
+      ]
+    },
+    {
+      id: 32,
+      en: "The results indicate that further investigation is necessary.",
+      zhAnalysis: "结果表明有必要进行进一步研究。indicate that + 从句；further investigation。",
+      vocab: [
+        {
+          word: "results",
+          spelling: "R-E-S-U-L-T-S",
+          gloss: "结果",
+          tip: "re-sults"
+        },
+        {
+          word: "indicate",
+          spelling: "I-N-D-I-C-A-T-E",
+          gloss: "表明",
+          tip: "in-di-cate"
+        },
+        {
+          word: "investigation",
+          spelling: "I-N-V-E-S-T-I-G-A-T-I-O-N",
+          gloss: "调查 / 研究",
+          tip: "in-ves-ti-ga-tion"
+        },
+        {
+          word: "necessary",
+          spelling: "N-E-C-E-S-S-A-R-Y",
+          gloss: "必要的",
+          tip: "nec-es-sar-y；双写 S"
+        },
+      ]
+    },
+    {
+      id: 33,
+      en: "Access to the computer laboratory requires a valid student card.",
+      zhAnalysis: "进入计算机实验室需要有效学生卡。Access to；requires + 名词。",
+      vocab: [
+        {
+          word: "access",
+          spelling: "A-C-C-E-S-S",
+          gloss: "进入 / 使用权",
+          tip: "ac-cess；双写 C、S"
+        },
+        {
+          word: "computer",
+          spelling: "C-O-M-P-U-T-E-R",
+          gloss: "计算机",
+          tip: "com-pu-ter"
+        },
+        {
+          word: "requires",
+          spelling: "R-E-Q-U-I-R-E-S",
+          gloss: "需要",
+          tip: "re-quire + -s"
+        },
+        {
+          word: "valid",
+          spelling: "V-A-L-I-D",
+          gloss: "有效的",
+          tip: "val-id"
+        },
+      ]
+    },
+    {
+      id: 34,
+      en: "The guest speaker emphasised the importance of critical thinking.",
+      zhAnalysis: "嘉宾演讲者强调了批判性思维的重要性。emphasised（英式）；the importance of…。",
+      vocab: [
+        {
+          word: "speaker",
+          spelling: "S-P-E-A-K-E-R",
+          gloss: "演讲者",
+          tip: "speak + -er"
+        },
+        {
+          word: "emphasised",
+          spelling: "E-M-P-H-A-S-I-S-E-D",
+          gloss: "强调了",
+          tip: "英式 s；美式 emphasized"
+        },
+        {
+          word: "importance",
+          spelling: "I-M-P-O-R-T-A-N-C-E",
+          gloss: "重要性",
+          tip: "im-por-tance"
+        },
+        {
+          word: "critical",
+          spelling: "C-R-I-T-I-C-A-L",
+          gloss: "批判的 / 关键的",
+          tip: "crit-i-cal"
+        },
+      ]
+    },
+    {
+      id: 35,
+      en: "Coursework contributes forty percent of the final grade for this module.",
+      zhAnalysis: "本课程作业占总成绩的百分之四十。contributes … of；module 模块课程。",
+      vocab: [
+        {
+          word: "coursework",
+          spelling: "C-O-U-R-S-E-W-O-R-K",
+          gloss: "课程作业",
+          tip: "course + work"
+        },
+        {
+          word: "contributes",
+          spelling: "C-O-N-T-R-I-B-U-T-E-S",
+          gloss: "构成 / 贡献",
+          tip: "con-trib-ute + -s"
+        },
+        {
+          word: "percent",
+          spelling: "P-E-R-C-E-N-T",
+          gloss: "百分之",
+          tip: "per-cent"
+        },
+        {
+          word: "module",
+          spelling: "M-O-D-U-L-E",
+          gloss: "模块 / 课程单元",
+          tip: "mod-ule"
+        },
+      ]
+    },
+    {
+      id: 36,
+      en: "The university campus is easily accessible by public transportation.",
+      zhAnalysis: "大学校园乘坐公共交通很容易到达。is easily accessible；by 表方式。",
+      vocab: [
+        {
+          word: "campus",
+          spelling: "C-A-M-P-U-S",
+          gloss: "校园",
+          tip: "cam-pus"
+        },
+        {
+          word: "accessible",
+          spelling: "A-C-C-E-S-S-I-B-L-E",
+          gloss: "可到达的",
+          tip: "access + -ible"
+        },
+        {
+          word: "public",
+          spelling: "P-U-B-L-I-C",
+          gloss: "公共的",
+          tip: "pub-lic"
+        },
+        {
+          word: "transportation",
+          spelling: "T-R-A-N-S-P-O-R-T-A-T-I-O-N",
+          gloss: "交通运输",
+          tip: "transport + -ation"
+        },
+      ]
+    },
+    {
+      id: 37,
+      en: "Researchers collected samples from several different geographical regions.",
+      zhAnalysis: "研究人员从多个不同地理区域采集了样本。collected … from；geographical regions。",
+      vocab: [
+        {
+          word: "collected",
+          spelling: "C-O-L-L-E-C-T-E-D",
+          gloss: "采集了",
+          tip: "col-lect + -ed"
+        },
+        {
+          word: "geographical",
+          spelling: "G-E-O-G-R-A-P-H-I-C-A-L",
+          gloss: "地理的",
+          tip: "geo-graph-i-cal"
+        },
+        {
+          word: "regions",
+          spelling: "R-E-G-I-O-N-S",
+          gloss: "地区",
+          tip: "re-gions"
+        },
+        {
+          word: "several",
+          spelling: "S-E-V-E-R-A-L",
+          gloss: "几个",
+          tip: "sev-er-al"
+        },
+      ]
+    },
+    {
+      id: 38,
+      en: "The abstract should summarise the main arguments of the dissertation.",
+      zhAnalysis: "摘要应概括论文的主要论点。should summarise；of the dissertation。",
+      vocab: [
+        {
+          word: "abstract",
+          spelling: "A-B-S-T-R-A-C-T",
+          gloss: "摘要",
+          tip: "ab-stract"
+        },
+        {
+          word: "summarise",
+          spelling: "S-U-M-M-A-R-I-S-E",
+          gloss: "概括",
+          tip: "英式 s；美式 summarize"
+        },
+        {
+          word: "arguments",
+          spelling: "A-R-G-U-M-E-N-T-S",
+          gloss: "论点",
+          tip: "ar-gu-ments"
+        },
+        {
+          word: "dissertation",
+          spelling: "D-I-S-S-E-R-T-A-T-I-O-N",
+          gloss: "学位论文",
+          tip: "dis-ser-ta-tion；双写 S"
+        },
+      ]
+    },
+    {
+      id: 39,
+      en: "Staff members are reminded to update their contact information regularly.",
+      zhAnalysis: "提醒教职员工定期更新联系信息。are reminded to；update … regularly。",
+      vocab: [
+        {
+          word: "reminded",
+          spelling: "R-E-M-I-N-D-E-D",
+          gloss: "被提醒",
+          tip: "re-mind + -ed"
+        },
+        {
+          word: "update",
+          spelling: "U-P-D-A-T-E",
+          gloss: "更新",
+          tip: "up-date"
+        },
+        {
+          word: "contact",
+          spelling: "C-O-N-T-A-C-T",
+          gloss: "联系",
+          tip: "con-tact"
+        },
+        {
+          word: "regularly",
+          spelling: "R-E-G-U-L-A-R-L-Y",
+          gloss: "定期地",
+          tip: "reg-u-lar-ly"
+        },
+      ]
+    },
+    {
+      id: 40,
+      en: "The experiment was conducted under carefully controlled laboratory conditions.",
+      zhAnalysis: "该实验在严格受控的实验室条件下进行。was conducted；under … conditions。",
+      vocab: [
+        {
+          word: "conducted",
+          spelling: "C-O-N-D-U-C-T-E-D",
+          gloss: "进行了",
+          tip: "con-duct + -ed"
+        },
+        {
+          word: "carefully",
+          spelling: "C-A-R-E-F-U-L-L-Y",
+          gloss: "仔细地",
+          tip: "care-ful-ly"
+        },
+        {
+          word: "conditions",
+          spelling: "C-O-N-D-I-T-I-O-N-S",
+          gloss: "条件",
+          tip: "con-di-tions"
+        },
+        {
+          word: "laboratory",
+          spelling: "L-A-B-O-R-A-T-O-R-Y",
+          gloss: "实验室",
+          tip: "lab-o-ra-to-ry"
+        },
+      ]
+    },
+    {
+      id: 41,
+      en: "Language proficiency is assessed through a combination of written and oral tests.",
+      zhAnalysis: "语言水平通过笔试与口试相结合的方式评估。is assessed；a combination of A and B。",
+      vocab: [
+        {
+          word: "proficiency",
+          spelling: "P-R-O-F-I-C-I-E-N-C-Y",
+          gloss: "熟练程度",
+          tip: "pro-fi-cien-cy"
+        },
+        {
+          word: "assessed",
+          spelling: "A-S-S-E-S-S-E-D",
+          gloss: "被评估",
+          tip: "as-sess + -ed；双写 S"
+        },
+        {
+          word: "combination",
+          spelling: "C-O-M-B-I-N-A-T-I-O-N",
+          gloss: "结合",
+          tip: "com-bi-na-tion"
+        },
+        {
+          word: "oral",
+          spelling: "O-R-A-L",
+          gloss: "口头的",
+          tip: "o-ral"
+        },
+      ]
+    },
+    {
+      id: 42,
+      en: "The new policy aims to reduce carbon emissions from university buildings.",
+      zhAnalysis: "新政策旨在减少大学建筑的碳排放。aims to + 动词；reduce … from…。",
+      vocab: [
+        {
+          word: "policy",
+          spelling: "P-O-L-I-C-Y",
+          gloss: "政策",
+          tip: "pol-i-cy"
+        },
+        {
+          word: "reduce",
+          spelling: "R-E-D-U-C-E",
+          gloss: "减少",
+          tip: "re-duce"
+        },
+        {
+          word: "carbon",
+          spelling: "C-A-R-B-O-N",
+          gloss: "碳",
+          tip: "car-bon"
+        },
+        {
+          word: "emissions",
+          spelling: "E-M-I-S-S-I-O-N-S",
+          gloss: "排放",
+          tip: "e-mis-sions；双写 S"
+        },
+      ]
+    },
+    {
+      id: 43,
+      en: "Please arrive at least fifteen minutes before your scheduled appointment.",
+      zhAnalysis: "请至少提前十五分钟到达预约时间。arrive … before；scheduled appointment。",
+      vocab: [
+        {
+          word: "arrive",
+          spelling: "A-R-R-I-V-E",
+          gloss: "到达",
+          tip: "ar-rive；双写 R"
+        },
+        {
+          word: "scheduled",
+          spelling: "S-C-H-E-D-U-L-E-D",
+          gloss: "已安排的",
+          tip: "sched-ule + -d"
+        },
+        {
+          word: "appointment",
+          spelling: "A-P-P-O-I-N-T-M-E-N-T",
+          gloss: "预约",
+          tip: "ap-point-ment；双写 P"
+        },
+        {
+          word: "minutes",
+          spelling: "M-I-N-U-T-E-S",
+          gloss: "分钟",
+          tip: "min-utes"
+        },
+      ]
+    },
+    {
+      id: 44,
+      en: "Theoretical frameworks help scholars interpret complex social phenomena.",
+      zhAnalysis: "理论框架帮助学者解释复杂的社会现象。help sb do；complex social phenomena。",
+      vocab: [
+        {
+          word: "theoretical",
+          spelling: "T-H-E-O-R-E-T-I-C-A-L",
+          gloss: "理论的",
+          tip: "the-o-ret-i-cal"
+        },
+        {
+          word: "frameworks",
+          spelling: "F-R-A-M-E-W-O-R-K-S",
+          gloss: "框架",
+          tip: "frame + works"
+        },
+        {
+          word: "scholars",
+          spelling: "S-C-H-O-L-A-R-S",
+          gloss: "学者",
+          tip: "schol-ars"
+        },
+        {
+          word: "phenomena",
+          spelling: "P-H-E-N-O-M-E-N-A",
+          gloss: "现象",
+          tip: "phenomenon 的复数"
+        },
+      ]
+    },
+    {
+      id: 45,
+      en: "The bibliography must follow the referencing style specified in the guidelines.",
+      zhAnalysis: "参考文献必须遵循指南中规定的引用格式。must follow；specified in the guidelines。",
+      vocab: [
+        {
+          word: "bibliography",
+          spelling: "B-I-B-L-I-O-G-R-A-P-H-Y",
+          gloss: "参考文献",
+          tip: "bib-li-og-ra-phy"
+        },
+        {
+          word: "referencing",
+          spelling: "R-E-F-E-R-E-N-C-I-N-G",
+          gloss: "引用格式",
+          tip: "ref-er-enc-ing"
+        },
+        {
+          word: "specified",
+          spelling: "S-P-E-C-I-F-I-E-D",
+          gloss: "规定的",
+          tip: "spec-i-fy → specified"
+        },
+        {
+          word: "guidelines",
+          spelling: "G-U-I-D-E-L-I-N-E-S",
+          gloss: "指南",
+          tip: "guide + lines"
+        },
+      ]
+    },
+    {
+      id: 46,
+      en: "Online resources are available to support independent learning outside class.",
+      zhAnalysis: "可利用在线资源支持课外自主学习。are available to；independent learning。",
+      vocab: [
+        {
+          word: "resources",
+          spelling: "R-E-S-O-U-R-C-E-S",
+          gloss: "资源",
+          tip: "re-sour-ces"
+        },
+        {
+          word: "available",
+          spelling: "A-V-A-I-L-A-B-L-E",
+          gloss: "可用的",
+          tip: "a-vail-a-ble"
+        },
+        {
+          word: "independent",
+          spelling: "I-N-D-E-P-E-N-D-E-N-T",
+          gloss: "独立的",
+          tip: "in-de-pen-dent"
+        },
+        {
+          word: "learning",
+          spelling: "L-E-A-R-N-I-N-G",
+          gloss: "学习",
+          tip: "learn + -ing"
+        },
+      ]
+    },
+    {
+      id: 47,
+      en: "The survey received responses from more than two thousand participants.",
+      zhAnalysis: "该调查收到了两千多名参与者的回复。received … from；more than + 数量。",
+      vocab: [
+        {
+          word: "survey",
+          spelling: "S-U-R-V-E-Y",
+          gloss: "调查",
+          tip: "sur-vey"
+        },
+        {
+          word: "responses",
+          spelling: "R-E-S-P-O-N-S-E-S",
+          gloss: "回复 / 响应",
+          tip: "re-spons-es"
+        },
+        {
+          word: "thousand",
+          spelling: "T-H-O-U-S-A-N-D",
+          gloss: "千",
+          tip: "thou-sand"
+        },
+        {
+          word: "participants",
+          spelling: "P-A-R-T-I-C-I-P-A-N-T-S",
+          gloss: "参与者",
+          tip: "par-tic-i-pants"
+        },
+      ]
+    },
+    {
+      id: 48,
+      en: "Graduates with relevant experience are more competitive in the employment market.",
+      zhAnalysis: "具备相关经验的毕业生在就业市场上更具竞争力。with relevant experience；more competitive。",
+      vocab: [
+        {
+          word: "graduates",
+          spelling: "G-R-A-D-U-A-T-E-S",
+          gloss: "毕业生",
+          tip: "grad-u-ates"
+        },
+        {
+          word: "relevant",
+          spelling: "R-E-L-E-V-A-N-T",
+          gloss: "相关的",
+          tip: "rel-e-vant"
+        },
+        {
+          word: "experience",
+          spelling: "E-X-P-E-R-I-E-N-C-E",
+          gloss: "经验",
+          tip: "ex-pe-ri-ence"
+        },
+        {
+          word: "employment",
+          spelling: "E-M-P-L-O-Y-M-E-N-T",
+          gloss: "就业",
+          tip: "em-ploy-ment"
+        },
+      ]
+    },
+    {
+      id: 49,
+      en: "The chemistry laboratory is equipped with modern analytical instruments.",
+      zhAnalysis: "化学实验室配备了现代化的分析仪器。is equipped with；analytical instruments。",
+      vocab: [
+        {
+          word: "chemistry",
+          spelling: "C-H-E-M-I-S-T-R-Y",
+          gloss: "化学",
+          tip: "chem-is-try"
+        },
+        {
+          word: "equipped",
+          spelling: "E-Q-U-I-P-P-E-D",
+          gloss: "配备",
+          tip: "e-quip + -ped；双写 P"
+        },
+        {
+          word: "analytical",
+          spelling: "A-N-A-L-Y-T-I-C-A-L",
+          gloss: "分析的",
+          tip: "an-a-lyt-i-cal"
+        },
+        {
+          word: "instruments",
+          spelling: "I-N-S-T-R-U-M-E-N-T-S",
+          gloss: "仪器",
+          tip: "in-stru-ments"
+        },
+      ]
+    },
+    {
+      id: 50,
+      en: "It is important to acknowledge the limitations of the present study.",
+      zhAnalysis: "承认本研究的局限性很重要。It is important to；limitations of…。",
+      vocab: [
+        {
+          word: "acknowledge",
+          spelling: "A-C-K-N-O-W-L-E-D-G-E",
+          gloss: "承认",
+          tip: "ac-knowl-edge"
+        },
+        {
+          word: "limitations",
+          spelling: "L-I-M-I-T-A-T-I-O-N-S",
+          gloss: "局限性",
+          tip: "lim-i-ta-tions"
+        },
+        {
+          word: "present",
+          spelling: "P-R-E-S-E-N-T",
+          gloss: "目前的",
+          tip: "pres-ent；作形容词"
+        },
+        {
+          word: "study",
+          spelling: "S-T-U-D-Y",
+          gloss: "研究",
+          tip: "stud-y"
+        },
+      ]
+    },
+    {
+      id: 51,
+      en: "The registrar office processes applications for transcript requests daily.",
+      zhAnalysis: "注册处每天处理成绩单申请。processes；applications for…。",
+      vocab: [
+        {
+          word: "registrar",
+          spelling: "R-E-G-I-S-T-R-A-R",
+          gloss: "注册主任 / 教务",
+          tip: "reg-is-trar"
+        },
+        {
+          word: "processes",
+          spelling: "P-R-O-C-E-S-S-E-S",
+          gloss: "处理",
+          tip: "proc-ess-es；双写 S"
+        },
+        {
+          word: "transcript",
+          spelling: "T-R-A-N-S-C-R-I-P-T",
+          gloss: "成绩单",
+          tip: "trans-cript"
+        },
+        {
+          word: "requests",
+          spelling: "R-E-Q-U-E-S-T-S",
+          gloss: "请求",
+          tip: "re-quests"
+        },
+      ]
+    },
+    {
+      id: 52,
+      en: "Digital literacy has become an essential skill for contemporary students.",
+      zhAnalysis: "数字素养已成为当代学生的必备技能。has become；essential skill for…。",
+      vocab: [
+        {
+          word: "digital",
+          spelling: "D-I-G-I-T-A-L",
+          gloss: "数字的",
+          tip: "dig-i-tal"
+        },
+        {
+          word: "literacy",
+          spelling: "L-I-T-E-R-A-C-Y",
+          gloss: "素养",
+          tip: "lit-er-a-cy"
+        },
+        {
+          word: "contemporary",
+          spelling: "C-O-N-T-E-M-P-O-R-A-R-Y",
+          gloss: "当代的",
+          tip: "con-tem-po-rar-y"
+        },
+        {
+          word: "skill",
+          spelling: "S-K-I-L-L",
+          gloss: "技能",
+          tip: "skill"
+        },
+      ]
+    },
+    {
+      id: 53,
+      en: "The architect presented several alternative designs for the new campus centre.",
+      zhAnalysis: "建筑师为新校园中心提出了几种备选设计。presented；alternative designs for…。",
+      vocab: [
+        {
+          word: "architect",
+          spelling: "A-R-C-H-I-T-E-C-T",
+          gloss: "建筑师",
+          tip: "ar-chi-tect"
+        },
+        {
+          word: "alternative",
+          spelling: "A-L-T-E-R-N-A-T-I-V-E",
+          gloss: "备选的",
+          tip: "al-ter-na-tive"
+        },
+        {
+          word: "designs",
+          spelling: "D-E-S-I-G-N-S",
+          gloss: "设计方案",
+          tip: "de-signs"
+        },
+        {
+          word: "centre",
+          spelling: "C-E-N-T-R-E",
+          gloss: "中心",
+          tip: "英式 centre；美式 center"
+        },
+      ]
+    },
+    {
+      id: 54,
+      en: "Peer review is a standard practice in academic publishing.",
+      zhAnalysis: "同行评议是学术出版的标准做法。is a standard practice in…。",
+      vocab: [
+        {
+          word: "peer",
+          spelling: "P-E-E-R",
+          gloss: "同行",
+          tip: "peer"
+        },
+        {
+          word: "review",
+          spelling: "R-E-V-I-E-W",
+          gloss: "评议 / 审阅",
+          tip: "re-view"
+        },
+        {
+          word: "standard",
+          spelling: "S-T-A-N-D-A-R-D",
+          gloss: "标准的",
+          tip: "stan-dard"
+        },
+        {
+          word: "publishing",
+          spelling: "P-U-B-L-I-S-H-I-N-G",
+          gloss: "出版",
+          tip: "pub-lish + -ing"
+        },
+      ]
+    },
+    {
+      id: 55,
+      en: "The field trip has been cancelled due to adverse weather conditions.",
+      zhAnalysis: "因恶劣天气，实地考察已取消。has been cancelled；due to…。",
+      vocab: [
+        {
+          word: "cancelled",
+          spelling: "C-A-N-C-E-L-L-E-D",
+          gloss: "取消了",
+          tip: "英式双写 L；美式 canceled"
+        },
+        {
+          word: "adverse",
+          spelling: "A-D-V-E-R-S-E",
+          gloss: "不利的",
+          tip: "ad-verse"
+        },
+        {
+          word: "weather",
+          spelling: "W-E-A-T-H-E-R",
+          gloss: "天气",
+          tip: "weath-er"
+        },
+        {
+          word: "conditions",
+          spelling: "C-O-N-D-I-T-I-O-N-S",
+          gloss: "状况",
+          tip: "con-di-tions"
+        },
+      ]
+    },
+    {
+      id: 56,
+      en: "Quantitative methods are frequently employed in social science research.",
+      zhAnalysis: "社会科学研究中经常使用定量方法。are frequently employed；in … research。",
+      vocab: [
+        {
+          word: "quantitative",
+          spelling: "Q-U-A-N-T-I-T-A-T-I-V-E",
+          gloss: "定量的",
+          tip: "quan-ti-ta-tive"
+        },
+        {
+          word: "methods",
+          spelling: "M-E-T-H-O-D-S",
+          gloss: "方法",
+          tip: "meth-ods"
+        },
+        {
+          word: "frequently",
+          spelling: "F-R-E-Q-U-E-N-T-L-Y",
+          gloss: "经常地",
+          tip: "fre-quent-ly"
+        },
+        {
+          word: "employed",
+          spelling: "E-M-P-L-O-Y-E-D",
+          gloss: "被使用",
+          tip: "em-ploy + -ed"
+        },
+      ]
+    },
+    {
+      id: 57,
+      en: "The induction programme introduces new staff to university procedures.",
+      zhAnalysis: "入职培训向新员工介绍大学流程。introduces … to；university procedures。",
+      vocab: [
+        {
+          word: "induction",
+          spelling: "I-N-D-U-C-T-I-O-N",
+          gloss: "入职培训",
+          tip: "in-duc-tion"
+        },
+        {
+          word: "programme",
+          spelling: "P-R-O-G-R-A-M-M-E",
+          gloss: "项目 / 计划",
+          tip: "英式 programme；美式 program"
+        },
+        {
+          word: "introduces",
+          spelling: "I-N-T-R-O-D-U-C-E-S",
+          gloss: "介绍",
+          tip: "in-tro-duce + -s"
+        },
+        {
+          word: "procedures",
+          spelling: "P-R-O-C-E-D-U-R-E-S",
+          gloss: "流程",
+          tip: "pro-ce-dures"
+        },
+      ]
+    },
+    {
+      id: 58,
+      en: "Cultural diversity enriches the educational experience of all students.",
+      zhAnalysis: "文化多样性丰富了所有学生的教育体验。enriches；educational experience of…。",
+      vocab: [
+        {
+          word: "cultural",
+          spelling: "C-U-L-T-U-R-A-L",
+          gloss: "文化的",
+          tip: "cul-tur-al"
+        },
+        {
+          word: "diversity",
+          spelling: "D-I-V-E-R-S-I-T-Y",
+          gloss: "多样性",
+          tip: "di-ver-si-ty"
+        },
+        {
+          word: "enriches",
+          spelling: "E-N-R-I-C-H-E-S",
+          gloss: "丰富",
+          tip: "en-rich + -es"
+        },
+        {
+          word: "educational",
+          spelling: "E-D-U-C-A-T-I-O-N-A-L",
+          gloss: "教育的",
+          tip: "ed-u-ca-tion-al"
+        },
+      ]
+    },
+    {
+      id: 59,
+      en: "The manuscript was revised according to the reviewers comments.",
+      zhAnalysis: "手稿已根据审稿人意见进行修订。was revised；according to…。",
+      vocab: [
+        {
+          word: "manuscript",
+          spelling: "M-A-N-U-S-C-R-I-P-T",
+          gloss: "手稿",
+          tip: "man-u-script"
+        },
+        {
+          word: "revised",
+          spelling: "R-E-V-I-S-E-D",
+          gloss: "修订了",
+          tip: "re-vise + -d"
+        },
+        {
+          word: "according",
+          spelling: "A-C-C-O-R-D-I-N-G",
+          gloss: "根据",
+          tip: "ac-cord-ing"
+        },
+        {
+          word: "reviewers",
+          spelling: "R-E-V-I-E-W-E-R-S",
+          gloss: "审稿人",
+          tip: "re-view-ers"
+        },
+      ]
+    },
+    {
+      id: 60,
+      en: "Parking permits can be purchased from the security office on campus.",
+      zhAnalysis: "停车许可证可在校园安保处购买。can be purchased；from the security office。",
+      vocab: [
+        {
+          word: "parking",
+          spelling: "P-A-R-K-I-N-G",
+          gloss: "停车",
+          tip: "park + -ing"
+        },
+        {
+          word: "permits",
+          spelling: "P-E-R-M-I-T-S",
+          gloss: "许可证",
+          tip: "per-mits"
+        },
+        {
+          word: "purchased",
+          spelling: "P-U-R-C-H-A-S-E-D",
+          gloss: "购买",
+          tip: "pur-chase + -d"
+        },
+        {
+          word: "security",
+          spelling: "S-E-C-U-R-I-T-Y",
+          gloss: "安保",
+          tip: "se-cu-ri-ty"
+        },
+      ]
+    },
+    {
+      id: 61,
+      en: "Historical evidence suggests that trade routes influenced cultural exchange.",
+      zhAnalysis: "历史证据表明贸易路线影响了文化交流。suggests that；influenced…。",
+      vocab: [
+        {
+          word: "historical",
+          spelling: "H-I-S-T-O-R-I-C-A-L",
+          gloss: "历史的",
+          tip: "his-tor-i-cal"
+        },
+        {
+          word: "evidence",
+          spelling: "E-V-I-D-E-N-C-E",
+          gloss: "证据",
+          tip: "ev-i-dence；不可数"
+        },
+        {
+          word: "influenced",
+          spelling: "I-N-F-L-U-E-N-C-E-D",
+          gloss: "影响了",
+          tip: "in-flu-ence + -d"
+        },
+        {
+          word: "exchange",
+          spelling: "E-X-C-H-A-N-G-E",
+          gloss: "交流 / 交换",
+          tip: "ex-change"
+        },
+      ]
+    },
+    {
+      id: 62,
+      en: "The database contains extensive information about published scientific papers.",
+      zhAnalysis: "该数据库包含已发表科学论文的大量信息。contains；extensive information about…。",
+      vocab: [
+        {
+          word: "database",
+          spelling: "D-A-T-A-B-A-S-E",
+          gloss: "数据库",
+          tip: "data + base"
+        },
+        {
+          word: "extensive",
+          spelling: "E-X-T-E-N-S-I-V-E",
+          gloss: "广泛的",
+          tip: "ex-ten-sive"
+        },
+        {
+          word: "published",
+          spelling: "P-U-B-L-I-S-H-E-D",
+          gloss: "已发表的",
+          tip: "pub-lish + -ed"
+        },
+        {
+          word: "scientific",
+          spelling: "S-C-I-E-N-T-I-F-I-C",
+          gloss: "科学的",
+          tip: "sci-en-tif-ic"
+        },
+      ]
+    },
+    {
+      id: 63,
+      en: "Applicants should demonstrate relevant professional experience in their resumes.",
+      zhAnalysis: "申请人应在简历中展示相关专业经验。should demonstrate；relevant professional experience。",
+      vocab: [
+        {
+          word: "applicants",
+          spelling: "A-P-P-L-I-C-A-N-T-S",
+          gloss: "申请人",
+          tip: "ap-pli-cants；双写 P"
+        },
+        {
+          word: "demonstrate",
+          spelling: "D-E-M-O-N-S-T-R-A-T-E",
+          gloss: "展示",
+          tip: "dem-on-strate"
+        },
+        {
+          word: "professional",
+          spelling: "P-R-O-F-E-S-S-I-O-N-A-L",
+          gloss: "专业的",
+          tip: "pro-fes-sion-al"
+        },
+        {
+          word: "resumes",
+          spelling: "R-E-S-U-M-E-S",
+          gloss: "简历",
+          tip: "re-sumes；亦作 CVs"
+        },
+      ]
+    },
+    {
+      id: 64,
+      en: "The lecture slides will be uploaded to the learning management system.",
+      zhAnalysis: "讲座幻灯片将上传到学习管理系统。will be uploaded；learning management system。",
+      vocab: [
+        {
+          word: "slides",
+          spelling: "S-L-I-D-E-S",
+          gloss: "幻灯片",
+          tip: "slides"
+        },
+        {
+          word: "uploaded",
+          spelling: "U-P-L-O-A-D-E-D",
+          gloss: "上传",
+          tip: "up-load + -ed"
+        },
+        {
+          word: "management",
+          spelling: "M-A-N-A-G-E-M-E-N-T",
+          gloss: "管理",
+          tip: "man-age-ment"
+        },
+        {
+          word: "system",
+          spelling: "S-Y-S-T-E-M",
+          gloss: "系统",
+          tip: "sys-tem"
+        },
+      ]
+    },
+    {
+      id: 65,
+      en: "Biodiversity conservation requires international cooperation and local action.",
+      zhAnalysis: "生物多样性保护需要国际合作与地方行动。requires；A and B 并列。",
+      vocab: [
+        {
+          word: "biodiversity",
+          spelling: "B-I-O-D-I-V-E-R-S-I-T-Y",
+          gloss: "生物多样性",
+          tip: "bio- + diversity"
+        },
+        {
+          word: "conservation",
+          spelling: "C-O-N-S-E-R-V-A-T-I-O-N",
+          gloss: "保护",
+          tip: "con-ser-va-tion"
+        },
+        {
+          word: "cooperation",
+          spelling: "C-O-O-P-E-R-A-T-I-O-N",
+          gloss: "合作",
+          tip: "co-op-er-a-tion"
+        },
+        {
+          word: "action",
+          spelling: "A-C-T-I-O-N",
+          gloss: "行动",
+          tip: "ac-tion"
+        },
+      ]
+    },
+    {
+      id: 66,
+      en: "The tutorial discussion focused on ethical issues in medical research.",
+      zhAnalysis: "辅导讨论聚焦医学研究中的伦理问题。focused on；ethical issues in…。",
+      vocab: [
+        {
+          word: "tutorial",
+          spelling: "T-U-T-O-R-I-A-L",
+          gloss: "辅导课",
+          tip: "tu-to-ri-al"
+        },
+        {
+          word: "discussion",
+          spelling: "D-I-S-C-U-S-S-I-O-N",
+          gloss: "讨论",
+          tip: "dis-cus-sion；双写 S"
+        },
+        {
+          word: "ethical",
+          spelling: "E-T-H-I-C-A-L",
+          gloss: "伦理的",
+          tip: "eth-i-cal"
+        },
+        {
+          word: "medical",
+          spelling: "M-E-D-I-C-A-L",
+          gloss: "医学的",
+          tip: "med-i-cal"
+        },
+      ]
+    },
+    {
+      id: 67,
+      en: "Please complete the enrolment form and return it to the student services desk.",
+      zhAnalysis: "请填写注册表格并交回学生服务台。complete … and return；student services desk。",
+      vocab: [
+        {
+          word: "enrolment",
+          spelling: "E-N-R-O-L-M-E-N-T",
+          gloss: "注册",
+          tip: "英式 enrolment；美式 enrollment"
+        },
+        {
+          word: "form",
+          spelling: "F-O-R-M",
+          gloss: "表格",
+          tip: "form"
+        },
+        {
+          word: "return",
+          spelling: "R-E-T-U-R-N",
+          gloss: "交回",
+          tip: "re-turn"
+        },
+        {
+          word: "services",
+          spelling: "S-E-R-V-I-C-E-S",
+          gloss: "服务",
+          tip: "ser-vic-es"
+        },
+      ]
+    },
+    {
+      id: 68,
+      en: "Technological innovation continues to reshape traditional industries worldwide.",
+      zhAnalysis: "技术创新继续重塑全球传统产业。continues to；reshape … worldwide。",
+      vocab: [
+        {
+          word: "technological",
+          spelling: "T-E-C-H-N-O-L-O-G-I-C-A-L",
+          gloss: "技术的",
+          tip: "tech-no-log-i-cal"
+        },
+        {
+          word: "innovation",
+          spelling: "I-N-N-O-V-A-T-I-O-N",
+          gloss: "创新",
+          tip: "in-no-va-tion；双写 N"
+        },
+        {
+          word: "reshape",
+          spelling: "R-E-S-H-A-P-E",
+          gloss: "重塑",
+          tip: "re- + shape"
+        },
+        {
+          word: "traditional",
+          spelling: "T-R-A-D-I-T-I-O-N-A-L",
+          gloss: "传统的",
+          tip: "tra-di-tion-al"
+        },
+      ]
+    },
+    {
+      id: 69,
+      en: "The appendix includes supplementary tables and statistical appendices.",
+      zhAnalysis: "附录包含补充表格与统计附录材料。includes；supplementary tables。",
+      vocab: [
+        {
+          word: "appendix",
+          spelling: "A-P-P-E-N-D-I-X",
+          gloss: "附录",
+          tip: "ap-pen-dix；复数 appendices"
+        },
+        {
+          word: "supplementary",
+          spelling: "S-U-P-P-L-E-M-E-N-T-A-R-Y",
+          gloss: "补充的",
+          tip: "sup-ple-men-ta-ry"
+        },
+        {
+          word: "tables",
+          spelling: "T-A-B-L-E-S",
+          gloss: "表格",
+          tip: "ta-bles"
+        },
+        {
+          word: "statistical",
+          spelling: "S-T-A-T-I-S-T-I-C-A-L",
+          gloss: "统计的",
+          tip: "sta-tis-ti-cal"
+        },
+      ]
+    },
+    {
+      id: 70,
+      en: "Undergraduate dissertations should be between eight and twelve thousand words.",
+      zhAnalysis: "本科论文字数应在八千至一万二千词之间。should be between A and B。",
+      vocab: [
+        {
+          word: "undergraduate",
+          spelling: "U-N-D-E-R-G-R-A-D-U-A-T-E",
+          gloss: "本科的",
+          tip: "un-der-grad-u-ate"
+        },
+        {
+          word: "dissertations",
+          spelling: "D-I-S-S-E-R-T-A-T-I-O-N-S",
+          gloss: "学位论文",
+          tip: "dis-ser-ta-tions"
+        },
+        {
+          word: "thousand",
+          spelling: "T-H-O-U-S-A-N-D",
+          gloss: "千",
+          tip: "thou-sand"
+        },
+        {
+          word: "words",
+          spelling: "W-O-R-D-S",
+          gloss: "词数",
+          tip: "words"
+        },
+      ]
+    },
+    {
+      id: 71,
+      en: "The laboratory safety regulations must be strictly observed at all times.",
+      zhAnalysis: "实验室安全规定必须始终严格遵守。must be observed；at all times。",
+      vocab: [
+        {
+          word: "safety",
+          spelling: "S-A-F-E-T-Y",
+          gloss: "安全",
+          tip: "safe-ty"
+        },
+        {
+          word: "regulations",
+          spelling: "R-E-G-U-L-A-T-I-O-N-S",
+          gloss: "规定",
+          tip: "reg-u-la-tions"
+        },
+        {
+          word: "strictly",
+          spelling: "S-T-R-I-C-T-L-Y",
+          gloss: "严格地",
+          tip: "strict-ly"
+        },
+        {
+          word: "observed",
+          spelling: "O-B-S-E-R-V-E-D",
+          gloss: "遵守",
+          tip: "ob-serve + -d"
+        },
+      ]
+    },
+    {
+      id: 72,
+      en: "Urbanisation has led to increased demand for affordable housing.",
+      zhAnalysis: "城市化导致对经济适用住房需求增加。has led to；increased demand for…。",
+      vocab: [
+        {
+          word: "urbanisation",
+          spelling: "U-R-B-A-N-I-S-A-T-I-O-N",
+          gloss: "城市化",
+          tip: "urban + -isation"
+        },
+        {
+          word: "increased",
+          spelling: "I-N-C-R-E-A-S-E-D",
+          gloss: "增加的",
+          tip: "in-crease + -d"
+        },
+        {
+          word: "demand",
+          spelling: "D-E-M-A-N-D",
+          gloss: "需求",
+          tip: "de-mand"
+        },
+        {
+          word: "affordable",
+          spelling: "A-F-F-O-R-D-A-B-L-E",
+          gloss: "负担得起的",
+          tip: "af-ford-a-ble"
+        },
+      ]
+    },
+    {
+      id: 73,
+      en: "The symposium brings together experts from a wide range of disciplines.",
+      zhAnalysis: "该专题研讨会汇集了来自广泛学科的专家。brings together；a wide range of…。",
+      vocab: [
+        {
+          word: "symposium",
+          spelling: "S-Y-M-P-O-S-I-U-M",
+          gloss: "专题研讨会",
+          tip: "sym-po-si-um"
+        },
+        {
+          word: "experts",
+          spelling: "E-X-P-E-R-T-S",
+          gloss: "专家",
+          tip: "ex-perts"
+        },
+        {
+          word: "disciplines",
+          spelling: "D-I-S-C-I-P-L-I-N-E-S",
+          gloss: "学科",
+          tip: "dis-ci-plines"
+        },
+        {
+          word: "range",
+          spelling: "R-A-N-G-E",
+          gloss: "范围",
+          tip: "range"
+        },
+      ]
+    },
+    {
+      id: 74,
+      en: "Confidential documents should be stored in a secure filing cabinet.",
+      zhAnalysis: "机密文件应存放在安全文件柜中。should be stored；in a secure…。",
+      vocab: [
+        {
+          word: "confidential",
+          spelling: "C-O-N-F-I-D-E-N-T-I-A-L",
+          gloss: "机密的",
+          tip: "con-fi-den-tial"
+        },
+        {
+          word: "documents",
+          spelling: "D-O-C-U-M-E-N-T-S",
+          gloss: "文件",
+          tip: "doc-u-ments"
+        },
+        {
+          word: "secure",
+          spelling: "S-E-C-U-R-E",
+          gloss: "安全的",
+          tip: "se-cure"
+        },
+        {
+          word: "cabinet",
+          spelling: "C-A-B-I-N-E-T",
+          gloss: "柜子",
+          tip: "cab-i-net"
+        },
+      ]
+    },
+    {
+      id: 75,
+      en: "The findings have important implications for educational practice.",
+      zhAnalysis: "这些发现对教育实践具有重要启示。have important implications for…。",
+      vocab: [
+        {
+          word: "findings",
+          spelling: "F-I-N-D-I-N-G-S",
+          gloss: "研究发现",
+          tip: "find + -ings"
+        },
+        {
+          word: "implications",
+          spelling: "I-M-P-L-I-C-A-T-I-O-N-S",
+          gloss: "启示 / 影响",
+          tip: "im-pli-ca-tions"
+        },
+        {
+          word: "educational",
+          spelling: "E-D-U-C-A-T-I-O-N-A-L",
+          gloss: "教育的",
+          tip: "ed-u-ca-tion-al"
+        },
+        {
+          word: "practice",
+          spelling: "P-R-A-C-T-I-C-E",
+          gloss: "实践",
+          tip: "prac-tice"
+        },
+      ]
+    },
+    {
+      id: 76,
+      en: "Visitors must register at reception before entering restricted areas.",
+      zhAnalysis: "访客进入限制区域前须在前台登记。must register；before + 动名词。",
+      vocab: [
+        {
+          word: "visitors",
+          spelling: "V-I-S-I-T-O-R-S",
+          gloss: "访客",
+          tip: "vis-i-tors"
+        },
+        {
+          word: "register",
+          spelling: "R-E-G-I-S-T-E-R",
+          gloss: "登记",
+          tip: "reg-is-ter"
+        },
+        {
+          word: "reception",
+          spelling: "R-E-C-E-P-T-I-O-N",
+          gloss: "前台 / 接待处",
+          tip: "re-cep-tion"
+        },
+        {
+          word: "restricted",
+          spelling: "R-E-S-T-R-I-C-T-E-D",
+          gloss: "受限的",
+          tip: "re-strict + -ed"
+        },
+      ]
+    },
+    {
+      id: 77,
+      en: "The curriculum emphasises both theoretical knowledge and practical skills.",
+      zhAnalysis: "课程强调理论知识与实践技能并重。emphasises both A and B。",
+      vocab: [
+        {
+          word: "curriculum",
+          spelling: "C-U-R-R-I-C-U-L-U-M",
+          gloss: "课程",
+          tip: "cur-ric-u-lum；复数 curricula"
+        },
+        {
+          word: "emphasises",
+          spelling: "E-M-P-H-A-S-I-S-E-S",
+          gloss: "强调",
+          tip: "英式 s"
+        },
+        {
+          word: "theoretical",
+          spelling: "T-H-E-O-R-E-T-I-C-A-L",
+          gloss: "理论的",
+          tip: "the-o-ret-i-cal"
+        },
+        {
+          word: "practical",
+          spelling: "P-R-A-C-T-I-C-A-L",
+          gloss: "实践的",
+          tip: "prac-ti-cal"
+        },
+      ]
+    },
+    {
+      id: 78,
+      en: "Climate models predict rising temperatures over the coming decades.",
+      zhAnalysis: "气候模型预测未来几十年气温将上升。predict；over the coming decades。",
+      vocab: [
+        {
+          word: "models",
+          spelling: "M-O-D-E-L-S",
+          gloss: "模型",
+          tip: "mod-els"
+        },
+        {
+          word: "predict",
+          spelling: "P-R-E-D-I-C-T",
+          gloss: "预测",
+          tip: "pre-dict"
+        },
+        {
+          word: "temperatures",
+          spelling: "T-E-M-P-E-R-A-T-U-R-E-S",
+          gloss: "气温",
+          tip: "tem-per-a-tures"
+        },
+        {
+          word: "decades",
+          spelling: "D-E-C-A-D-E-S",
+          gloss: "十年",
+          tip: "dec-ades"
+        },
+      ]
+    },
+    {
+      id: 79,
+      en: "The plagiarism detection software checks submissions against online sources.",
+      zhAnalysis: "查重软件对照在线来源检查提交内容。checks … against；online sources。",
+      vocab: [
+        {
+          word: "plagiarism",
+          spelling: "P-L-A-G-I-A-R-I-S-M",
+          gloss: "抄袭",
+          tip: "pla-gia-rism"
+        },
+        {
+          word: "detection",
+          spelling: "D-E-T-E-C-T-I-O-N",
+          gloss: "检测",
+          tip: "de-tec-tion"
+        },
+        {
+          word: "submissions",
+          spelling: "S-U-B-M-I-S-S-I-O-N-S",
+          gloss: "提交物",
+          tip: "sub-mis-sions"
+        },
+        {
+          word: "sources",
+          spelling: "S-O-U-R-C-E-S",
+          gloss: "来源",
+          tip: "sour-ces"
+        },
+      ]
+    },
+    {
+      id: 80,
+      en: "Financial assistance is available for students experiencing economic hardship.",
+      zhAnalysis: "遇到经济困难的学生可申请资助。is available for；experiencing…。",
+      vocab: [
+        {
+          word: "financial",
+          spelling: "F-I-N-A-N-C-I-A-L",
+          gloss: "财务的",
+          tip: "fi-nan-cial"
+        },
+        {
+          word: "assistance",
+          spelling: "A-S-S-I-S-T-A-N-C-E",
+          gloss: "援助",
+          tip: "as-sis-tance；双写 S"
+        },
+        {
+          word: "experiencing",
+          spelling: "E-X-P-E-R-I-E-N-C-I-N-G",
+          gloss: "经历",
+          tip: "ex-pe-ri-enc-ing"
+        },
+        {
+          word: "hardship",
+          spelling: "H-A-R-D-S-H-I-P",
+          gloss: "困难",
+          tip: "hard + ship"
+        },
+      ]
+    },
+    {
+      id: 81,
+      en: "The geography department organised an expedition to study coastal erosion.",
+      zhAnalysis: "地理系组织了考察以研究海岸侵蚀。organised … to study；coastal erosion。",
+      vocab: [
+        {
+          word: "geography",
+          spelling: "G-E-O-G-R-A-P-H-Y",
+          gloss: "地理",
+          tip: "ge-og-ra-phy"
+        },
+        {
+          word: "expedition",
+          spelling: "E-X-P-E-D-I-T-I-O-N",
+          gloss: "考察 / 远征",
+          tip: "ex-pe-di-tion"
+        },
+        {
+          word: "coastal",
+          spelling: "C-O-A-S-T-A-L",
+          gloss: "海岸的",
+          tip: "coast-al"
+        },
+        {
+          word: "erosion",
+          spelling: "E-R-O-S-I-O-N",
+          gloss: "侵蚀",
+          tip: "e-ro-sion"
+        },
+      ]
+    },
+    {
+      id: 82,
+      en: "Please cite all sources according to the prescribed citation format.",
+      zhAnalysis: "请按指定引用格式标注所有来源。cite … according to；prescribed … format。",
+      vocab: [
+        {
+          word: "cite",
+          spelling: "C-I-T-E",
+          gloss: "引用",
+          tip: "cite"
+        },
+        {
+          word: "sources",
+          spelling: "S-O-U-R-C-E-S",
+          gloss: "来源",
+          tip: "sour-ces"
+        },
+        {
+          word: "prescribed",
+          spelling: "P-R-E-S-C-R-I-B-E-D",
+          gloss: "规定的",
+          tip: "pre-scribe + -d"
+        },
+        {
+          word: "citation",
+          spelling: "C-I-T-A-T-I-O-N",
+          gloss: "引用格式",
+          tip: "ci-ta-tion"
+        },
+      ]
+    },
+    {
+      id: 83,
+      en: "The auditorium can accommodate approximately five hundred audience members.",
+      zhAnalysis: "礼堂大约可容纳五百名观众。can accommodate；approximately…。",
+      vocab: [
+        {
+          word: "auditorium",
+          spelling: "A-U-D-I-T-O-R-I-U-M",
+          gloss: "礼堂",
+          tip: "au-di-to-ri-um"
+        },
+        {
+          word: "accommodate",
+          spelling: "A-C-C-O-M-M-O-D-A-T-E",
+          gloss: "容纳",
+          tip: "双写 C、M 各一次"
+        },
+        {
+          word: "approximately",
+          spelling: "A-P-P-R-O-X-I-M-A-T-E-L-Y",
+          gloss: "大约",
+          tip: "ap-prox-i-mate-ly"
+        },
+        {
+          word: "audience",
+          spelling: "A-U-D-I-E-N-C-E",
+          gloss: "观众",
+          tip: "au-di-ence"
+        },
+      ]
+    },
+    {
+      id: 84,
+      en: "Longitudinal studies track the same participants over an extended period.",
+      zhAnalysis: "纵向研究在较长时期内追踪同一批参与者。track … over；extended period。",
+      vocab: [
+        {
+          word: "longitudinal",
+          spelling: "L-O-N-G-I-T-U-D-I-N-A-L",
+          gloss: "纵向的",
+          tip: "lon-gi-tu-di-nal"
+        },
+        {
+          word: "track",
+          spelling: "T-R-A-C-K",
+          gloss: "追踪",
+          tip: "track"
+        },
+        {
+          word: "participants",
+          spelling: "P-A-R-T-I-C-I-P-A-N-T-S",
+          gloss: "参与者",
+          tip: "par-tic-i-pants"
+        },
+        {
+          word: "extended",
+          spelling: "E-X-T-E-N-D-E-D",
+          gloss: "延长的",
+          tip: "ex-tend-ed"
+        },
+      ]
+    },
+    {
+      id: 85,
+      en: "The vice chancellor delivered the opening address at the graduation ceremony.",
+      zhAnalysis: "副校长在毕业典礼上致开幕辞。delivered；opening address at…。",
+      vocab: [
+        {
+          word: "chancellor",
+          spelling: "C-H-A-N-C-E-L-L-O-R",
+          gloss: "校长（英联邦）",
+          tip: "chan-cel-lor"
+        },
+        {
+          word: "delivered",
+          spelling: "D-E-L-I-V-E-R-E-D",
+          gloss: "发表了",
+          tip: "de-liv-er + -ed"
+        },
+        {
+          word: "graduation",
+          spelling: "G-R-A-D-U-A-T-I-O-N",
+          gloss: "毕业",
+          tip: "grad-u-a-tion"
+        },
+        {
+          word: "ceremony",
+          spelling: "C-E-R-E-M-O-N-Y",
+          gloss: "仪式",
+          tip: "cer-e-mo-ny"
+        },
+      ]
+    },
+    {
+      id: 86,
+      en: "Renewable energy sources are becoming increasingly important for sustainable economies.",
+      zhAnalysis: "可再生能源对可持续经济日益重要。are becoming；increasingly important for…。",
+      vocab: [
+        {
+          word: "renewable",
+          spelling: "R-E-N-E-W-A-B-L-E",
+          gloss: "可再生的",
+          tip: "re-new-a-ble"
+        },
+        {
+          word: "energy",
+          spelling: "E-N-E-R-G-Y",
+          gloss: "能源",
+          tip: "en-er-gy"
+        },
+        {
+          word: "increasingly",
+          spelling: "I-N-C-R-E-A-S-I-N-G-L-Y",
+          gloss: "日益",
+          tip: "in-creas-ing-ly"
+        },
+        {
+          word: "economies",
+          spelling: "E-C-O-N-O-M-I-E-S",
+          gloss: "经济体",
+          tip: "e-con-o-mies"
+        },
+      ]
+    },
+    {
+      id: 87,
+      en: "The research proposal must outline the aims methods and expected outcomes.",
+      zhAnalysis: "研究计划书必须概述目标、方法与预期成果。must outline；aims methods and outcomes。",
+      vocab: [
+        {
+          word: "proposal",
+          spelling: "P-R-O-P-O-S-A-L",
+          gloss: "计划书",
+          tip: "pro-pos-al"
+        },
+        {
+          word: "outline",
+          spelling: "O-U-T-L-I-N-E",
+          gloss: "概述",
+          tip: "out-line"
+        },
+        {
+          word: "methods",
+          spelling: "M-E-T-H-O-D-S",
+          gloss: "方法",
+          tip: "meth-ods"
+        },
+        {
+          word: "outcomes",
+          spelling: "O-U-T-C-O-M-E-S",
+          gloss: "成果",
+          tip: "out-comes"
+        },
+      ]
+    },
+    {
+      id: 88,
+      en: "Students may request an extension if they experience unforeseen circumstances.",
+      zhAnalysis: "学生若遇不可预见情况可申请延期。may request；if they experience…。",
+      vocab: [
+        {
+          word: "request",
+          spelling: "R-E-Q-U-E-S-T",
+          gloss: "申请 / 请求",
+          tip: "re-quest"
+        },
+        {
+          word: "extension",
+          spelling: "E-X-T-E-N-S-I-O-N",
+          gloss: "延期",
+          tip: "ex-ten-sion"
+        },
+        {
+          word: "unforeseen",
+          spelling: "U-N-F-O-R-E-S-E-E-N",
+          gloss: "不可预见的",
+          tip: "un- + foreseen"
+        },
+        {
+          word: "circumstances",
+          spelling: "C-I-R-C-U-M-S-T-A-N-C-E-S",
+          gloss: "情况",
+          tip: "cir-cum-stan-ces"
+        },
+      ]
+    },
+    {
+      id: 89,
+      en: "The anthropology museum houses a collection of indigenous artefacts.",
+      zhAnalysis: "人类学博物馆收藏了一批原住民文物。houses；a collection of…。",
+      vocab: [
+        {
+          word: "anthropology",
+          spelling: "A-N-T-H-R-O-P-O-L-O-G-Y",
+          gloss: "人类学",
+          tip: "an-thro-pol-o-gy"
+        },
+        {
+          word: "collection",
+          spelling: "C-O-L-L-E-C-T-I-O-N",
+          gloss: "收藏 / 集合",
+          tip: "col-lec-tion"
+        },
+        {
+          word: "indigenous",
+          spelling: "I-N-D-I-G-E-N-O-U-S",
+          gloss: "原住民的 / 本土的",
+          tip: "in-dig-e-nous"
+        },
+        {
+          word: "artefacts",
+          spelling: "A-R-T-E-F-A-C-T-S",
+          gloss: "文物",
+          tip: "arte-facts"
+        },
+      ]
+    },
+    {
+      id: 90,
+      en: "Effective communication is vital for successful teamwork in professional settings.",
+      zhAnalysis: "在职业环境中，有效沟通对成功团队合作至关重要。is vital for；in professional settings。",
+      vocab: [
+        {
+          word: "communication",
+          spelling: "C-O-M-M-U-N-I-C-A-T-I-O-N",
+          gloss: "沟通",
+          tip: "com-mu-ni-ca-tion"
+        },
+        {
+          word: "vital",
+          spelling: "V-I-T-A-L",
+          gloss: "至关重要的",
+          tip: "vi-tal"
+        },
+        {
+          word: "teamwork",
+          spelling: "T-E-A-M-W-O-R-K",
+          gloss: "团队合作",
+          tip: "team + work"
+        },
+        {
+          word: "professional",
+          spelling: "P-R-O-F-E-S-S-I-O-N-A-L",
+          gloss: "职业的",
+          tip: "pro-fes-sion-al"
+        },
+      ]
+    },
+    {
+      id: 91,
+      en: "The chemistry experiment requires precise measurement of chemical substances.",
+      zhAnalysis: "化学实验需要精确测量化学物质。requires；precise measurement of…。",
+      vocab: [
+        {
+          word: "precise",
+          spelling: "P-R-E-C-I-S-E",
+          gloss: "精确的",
+          tip: "pre-cise"
+        },
+        {
+          word: "measurement",
+          spelling: "M-E-A-S-U-R-E-M-E-N-T",
+          gloss: "测量",
+          tip: "meas-ure-ment"
+        },
+        {
+          word: "chemical",
+          spelling: "C-H-E-M-I-C-A-L",
+          gloss: "化学的",
+          tip: "chem-i-cal"
+        },
+        {
+          word: "substances",
+          spelling: "S-U-B-S-T-A-N-C-E-S",
+          gloss: "物质",
+          tip: "sub-stan-ces"
+        },
+      ]
+    },
+    {
+      id: 92,
+      en: "Admission to the postgraduate programme is highly competitive.",
+      zhAnalysis: "研究生项目的录取竞争激烈。Admission to；is highly competitive。",
+      vocab: [
+        {
+          word: "admission",
+          spelling: "A-D-M-I-S-S-I-O-N",
+          gloss: "录取 / 准入",
+          tip: "ad-mis-sion"
+        },
+        {
+          word: "postgraduate",
+          spelling: "P-O-S-T-G-R-A-D-U-A-T-E",
+          gloss: "研究生的",
+          tip: "post- + graduate"
+        },
+        {
+          word: "programme",
+          spelling: "P-R-O-G-R-A-M-M-E",
+          gloss: "项目",
+          tip: "pro-gramme"
+        },
+        {
+          word: "competitive",
+          spelling: "C-O-M-P-E-T-I-T-I-V-E",
+          gloss: "竞争激烈的",
+          tip: "com-pet-i-tive"
+        },
+      ]
+    },
+    {
+      id: 93,
+      en: "The literature review identifies gaps in existing scholarly research.",
+      zhAnalysis: "文献综述指出了现有学术研究中的空白。identifies gaps in…。",
+      vocab: [
+        {
+          word: "literature",
+          spelling: "L-I-T-E-R-A-T-U-R-E",
+          gloss: "文献",
+          tip: "lit-er-a-ture"
+        },
+        {
+          word: "identifies",
+          spelling: "I-D-E-N-T-I-F-I-E-S",
+          gloss: "指出 / 识别",
+          tip: "i-den-ti-fy + -ies"
+        },
+        {
+          word: "existing",
+          spelling: "E-X-I-S-T-I-N-G",
+          gloss: "现有的",
+          tip: "ex-ist + -ing"
+        },
+        {
+          word: "scholarly",
+          spelling: "S-C-H-O-L-A-R-L-Y",
+          gloss: "学术的",
+          tip: "schol-ar-ly"
+        },
+      ]
+    },
+    {
+      id: 94,
+      en: "Please notify the administration office of any change of address promptly.",
+      zhAnalysis: "地址变更请及时通知行政办公室。notify … of；change of address。",
+      vocab: [
+        {
+          word: "notify",
+          spelling: "N-O-T-I-F-Y",
+          gloss: "通知",
+          tip: "no-ti-fy"
+        },
+        {
+          word: "administration",
+          spelling: "A-D-M-I-N-I-S-T-R-A-T-I-O-N",
+          gloss: "行政",
+          tip: "ad-min-is-tra-tion"
+        },
+        {
+          word: "address",
+          spelling: "A-D-D-R-E-S-S",
+          gloss: "地址",
+          tip: "ad-dress；双写 D、S"
+        },
+        {
+          word: "promptly",
+          spelling: "P-R-O-M-P-T-L-Y",
+          gloss: "及时地",
+          tip: "prompt-ly"
+        },
+      ]
+    },
+    {
+      id: 95,
+      en: "Sociological theories attempt to explain patterns of human behaviour.",
+      zhAnalysis: "社会学理论试图解释人类行为模式。attempt to explain；patterns of…。",
+      vocab: [
+        {
+          word: "sociological",
+          spelling: "S-O-C-I-O-L-O-G-I-C-A-L",
+          gloss: "社会学的",
+          tip: "so-ci-o-log-i-cal"
+        },
+        {
+          word: "theories",
+          spelling: "T-H-E-O-R-I-E-S",
+          gloss: "理论",
+          tip: "the-o-ries"
+        },
+        {
+          word: "patterns",
+          spelling: "P-A-T-T-E-R-N-S",
+          gloss: "模式",
+          tip: "pat-terns；双写 T"
+        },
+        {
+          word: "behaviour",
+          spelling: "B-E-H-A-V-I-O-U-R",
+          gloss: "行为",
+          tip: "英式 behaviour；美式 behavior"
+        },
+      ]
+    },
+    {
+      id: 96,
+      en: "The laboratory report should include an introduction methods results and discussion.",
+      zhAnalysis: "实验报告应包括引言、方法、结果与讨论。should include；IMRaD 结构。",
+      vocab: [
+        {
+          word: "report",
+          spelling: "R-E-P-O-R-T",
+          gloss: "报告",
+          tip: "re-port"
+        },
+        {
+          word: "introduction",
+          spelling: "I-N-T-R-O-D-U-C-T-I-O-N",
+          gloss: "引言",
+          tip: "in-tro-duc-tion"
+        },
+        {
+          word: "results",
+          spelling: "R-E-S-U-L-T-S",
+          gloss: "结果",
+          tip: "re-sults"
+        },
+        {
+          word: "discussion",
+          spelling: "D-I-S-C-U-S-S-I-O-N",
+          gloss: "讨论",
+          tip: "dis-cus-sion"
+        },
+      ]
+    },
+    {
+      id: 97,
+      en: "Funding for the project was provided by a national research council.",
+      zhAnalysis: "该项目资金由国家研究理事会提供。was provided by；national research council。",
+      vocab: [
+        {
+          word: "funding",
+          spelling: "F-U-N-D-I-N-G",
+          gloss: "资金",
+          tip: "fund + -ing"
+        },
+        {
+          word: "project",
+          spelling: "P-R-O-J-E-C-T",
+          gloss: "项目",
+          tip: "proj-ect"
+        },
+        {
+          word: "provided",
+          spelling: "P-R-O-V-I-D-E-D",
+          gloss: "提供了",
+          tip: "pro-vide + -d"
+        },
+        {
+          word: "council",
+          spelling: "C-O-U-N-C-I-L",
+          gloss: "理事会",
+          tip: "coun-cil"
+        },
+      ]
+    },
+    {
+      id: 98,
+      en: "The psychology experiment investigated memory retention among adult learners.",
+      zhAnalysis: "心理学实验调查了成人学习者的记忆保持。investigated；memory retention among…。",
+      vocab: [
+        {
+          word: "psychology",
+          spelling: "P-S-Y-C-H-O-L-O-G-Y",
+          gloss: "心理学",
+          tip: "psy-chol-o-gy"
+        },
+        {
+          word: "investigated",
+          spelling: "I-N-V-E-S-T-I-G-A-T-E-D",
+          gloss: "调查了",
+          tip: "in-ves-ti-gate + -d"
+        },
+        {
+          word: "retention",
+          spelling: "R-E-T-E-N-T-I-O-N",
+          gloss: "保持 / 留存",
+          tip: "re-ten-tion"
+        },
+        {
+          word: "learners",
+          spelling: "L-E-A-R-N-E-R-S",
+          gloss: "学习者",
+          tip: "learn-ers"
+        },
+      ]
+    },
+    {
+      id: 99,
+      en: "All electronic devices must be switched off before entering the examination hall.",
+      zhAnalysis: "进入考场前必须关闭所有电子设备。must be switched off；before entering…。",
+      vocab: [
+        {
+          word: "electronic",
+          spelling: "E-L-E-C-T-R-O-N-I-C",
+          gloss: "电子的",
+          tip: "e-lec-tron-ic"
+        },
+        {
+          word: "switched",
+          spelling: "S-W-I-T-C-H-E-D",
+          gloss: "关闭 / 切换",
+          tip: "switch + -ed"
+        },
+        {
+          word: "entering",
+          spelling: "E-N-T-E-R-I-N-G",
+          gloss: "进入",
+          tip: "en-ter + -ing"
+        },
+        {
+          word: "examination",
+          spelling: "E-X-A-M-I-N-A-T-I-O-N",
+          gloss: "考试",
+          tip: "ex-am-i-na-tion"
+        },
+      ]
+    },
+    {
+      id: 100,
+      en: "The annual report summarises the achievements of the academic year.",
+      zhAnalysis: "年报总结了该学年的成就。summarises；achievements of…。",
+      vocab: [
+        {
+          word: "annual",
+          spelling: "A-N-N-U-A-L",
+          gloss: "年度的",
+          tip: "an-nu-al；双写 N"
+        },
+        {
+          word: "summarises",
+          spelling: "S-U-M-M-A-R-I-S-E-S",
+          gloss: "总结",
+          tip: "英式 s"
+        },
+        {
+          word: "achievements",
+          spelling: "A-C-H-I-E-V-E-M-E-N-T-S",
+          gloss: "成就",
+          tip: "a-chieve-ments"
+        },
+        {
+          word: "academic",
+          spelling: "A-C-A-D-E-M-I-C",
+          gloss: "学术的",
+          tip: "ac-a-dem-ic"
+        },
+      ]
+    },
+    {
+      id: 101,
+      en: "Groundwater contamination poses a serious threat to public health.",
+      zhAnalysis: "地下水污染对公众健康构成严重威胁。poses a … threat to…。",
+      vocab: [
+        {
+          word: "groundwater",
+          spelling: "G-R-O-U-N-D-W-A-T-E-R",
+          gloss: "地下水",
+          tip: "ground + water"
+        },
+        {
+          word: "contamination",
+          spelling: "C-O-N-T-A-M-I-N-A-T-I-O-N",
+          gloss: "污染",
+          tip: "con-tam-i-na-tion"
+        },
+        {
+          word: "threat",
+          spelling: "T-H-R-E-A-T",
+          gloss: "威胁",
+          tip: "threat"
+        },
+        {
+          word: "health",
+          spelling: "H-E-A-L-T-H",
+          gloss: "健康",
+          tip: "health"
+        },
+      ]
+    },
+    {
+      id: 102,
+      en: "The faculty meeting will discuss proposed changes to the assessment scheme.",
+      zhAnalysis: "教职工会议将讨论评估方案的拟议变更。will discuss；proposed changes to…。",
+      vocab: [
+        {
+          word: "faculty",
+          spelling: "F-A-C-U-L-T-Y",
+          gloss: "教职工 / 学院",
+          tip: "fac-ul-ty"
+        },
+        {
+          word: "proposed",
+          spelling: "P-R-O-P-O-S-E-D",
+          gloss: "拟议的",
+          tip: "pro-pose + -d"
+        },
+        {
+          word: "changes",
+          spelling: "C-H-A-N-G-E-S",
+          gloss: "变更",
+          tip: "chang-es"
+        },
+        {
+          word: "scheme",
+          spelling: "S-C-H-E-M-E",
+          gloss: "方案",
+          tip: "scheme"
+        },
+      ]
+    },
+    {
+      id: 103,
+      en: "Interdisciplinary collaboration often produces innovative research outcomes.",
+      zhAnalysis: "跨学科合作往往产生创新研究成果。often produces；innovative … outcomes。",
+      vocab: [
+        {
+          word: "interdisciplinary",
+          spelling: "I-N-T-E-R-D-I-S-C-I-P-L-I-N-A-R-Y",
+          gloss: "跨学科的",
+          tip: "inter- + disciplinary"
+        },
+        {
+          word: "collaboration",
+          spelling: "C-O-L-L-A-B-O-R-A-T-I-O-N",
+          gloss: "合作",
+          tip: "col-lab-o-ra-tion"
+        },
+        {
+          word: "innovative",
+          spelling: "I-N-N-O-V-A-T-I-V-E",
+          gloss: "创新的",
+          tip: "in-no-va-tive"
+        },
+        {
+          word: "outcomes",
+          spelling: "O-U-T-C-O-M-E-S",
+          gloss: "成果",
+          tip: "out-comes"
+        },
+      ]
+    },
+    {
+      id: 104,
+      en: "The archive contains original manuscripts dating from the eighteenth century.",
+      zhAnalysis: "档案馆藏有十八世纪起的原始手稿。contains；dating from…。",
+      vocab: [
+        {
+          word: "archive",
+          spelling: "A-R-C-H-I-V-E",
+          gloss: "档案馆",
+          tip: "ar-chive"
+        },
+        {
+          word: "original",
+          spelling: "O-R-I-G-I-N-A-L",
+          gloss: "原始的",
+          tip: "o-rig-i-nal"
+        },
+        {
+          word: "manuscripts",
+          spelling: "M-A-N-U-S-C-R-I-P-T-S",
+          gloss: "手稿",
+          tip: "man-u-scripts"
+        },
+        {
+          word: "century",
+          spelling: "C-E-N-T-U-R-Y",
+          gloss: "世纪",
+          tip: "cen-tu-ry"
+        },
+      ]
+    },
+    {
+      id: 105,
+      en: "Mature students may apply for recognition of prior learning credits.",
+      zhAnalysis: "成人学生可申请先前学习学分认定。may apply for；recognition of…。",
+      vocab: [
+        {
+          word: "mature",
+          spelling: "M-A-T-U-R-E",
+          gloss: "成人的 / 成熟的",
+          tip: "ma-ture"
+        },
+        {
+          word: "recognition",
+          spelling: "R-E-C-O-G-N-I-T-I-O-N",
+          gloss: "认定 / 承认",
+          tip: "rec-og-ni-tion"
+        },
+        {
+          word: "prior",
+          spelling: "P-R-I-O-R",
+          gloss: "先前的",
+          tip: "pri-or"
+        },
+        {
+          word: "credits",
+          spelling: "C-R-E-D-I-T-S",
+          gloss: "学分",
+          tip: "cred-its"
+        },
+      ]
+    },
+    {
+      id: 106,
+      en: "The hypothesis predicts a positive relationship between motivation and achievement.",
+      zhAnalysis: "该假设预测动机与成就之间存在正相关。predicts；a positive relationship between A and B。",
+      vocab: [
+        {
+          word: "predicts",
+          spelling: "P-R-E-D-I-C-T-S",
+          gloss: "预测",
+          tip: "pre-dict + -s"
+        },
+        {
+          word: "positive",
+          spelling: "P-O-S-I-T-I-V-E",
+          gloss: "正向的",
+          tip: "pos-i-tive"
+        },
+        {
+          word: "relationship",
+          spelling: "R-E-L-A-T-I-O-N-S-H-I-P",
+          gloss: "关系",
+          tip: "re-la-tion-ship"
+        },
+        {
+          word: "motivation",
+          spelling: "M-O-T-I-V-A-T-I-O-N",
+          gloss: "动机",
+          tip: "mo-ti-va-tion"
+        },
+      ]
+    },
+    {
+      id: 107,
+      en: "Please keep noise to a minimum in designated quiet study zones.",
+      zhAnalysis: "请在指定安静学习区内尽量保持安静。keep … to a minimum；designated … zones。",
+      vocab: [
+        {
+          word: "minimum",
+          spelling: "M-I-N-I-M-U-M",
+          gloss: "最低限度",
+          tip: "min-i-mum"
+        },
+        {
+          word: "designated",
+          spelling: "D-E-S-I-G-N-A-T-E-D",
+          gloss: "指定的",
+          tip: "des-ig-nate + -d"
+        },
+        {
+          word: "quiet",
+          spelling: "Q-U-I-E-T",
+          gloss: "安静的",
+          tip: "qui-et"
+        },
+        {
+          word: "zones",
+          spelling: "Z-O-N-E-S",
+          gloss: "区域",
+          tip: "zones"
+        },
+      ]
+    },
+    {
+      id: 108,
+      en: "Demographic changes have altered the structure of the labour market.",
+      zhAnalysis: "人口结构变化改变了劳动力市场结构。have altered；structure of…。",
+      vocab: [
+        {
+          word: "demographic",
+          spelling: "D-E-M-O-G-R-A-P-H-I-C",
+          gloss: "人口统计的",
+          tip: "dem-o-graph-ic"
+        },
+        {
+          word: "altered",
+          spelling: "A-L-T-E-R-E-D",
+          gloss: "改变了",
+          tip: "al-ter + -ed"
+        },
+        {
+          word: "structure",
+          spelling: "S-T-R-U-C-T-U-R-E",
+          gloss: "结构",
+          tip: "struc-ture"
+        },
+        {
+          word: "labour",
+          spelling: "L-A-B-O-U-R",
+          gloss: "劳动力",
+          tip: "英式 labour；美式 labor"
+        },
+      ]
+    },
+    {
+      id: 109,
+      en: "The engineering faculty offers specialised courses in renewable energy systems.",
+      zhAnalysis: "工程学院开设可再生能源系统专业课程。offers；specialised courses in…。",
+      vocab: [
+        {
+          word: "engineering",
+          spelling: "E-N-G-I-N-E-E-R-I-N-G",
+          gloss: "工程",
+          tip: "en-gi-neer-ing"
+        },
+        {
+          word: "specialised",
+          spelling: "S-P-E-C-I-A-L-I-S-E-D",
+          gloss: "专业的",
+          tip: "英式 s"
+        },
+        {
+          word: "courses",
+          spelling: "C-O-U-R-S-E-S",
+          gloss: "课程",
+          tip: "cours-es"
+        },
+        {
+          word: "systems",
+          spelling: "S-Y-S-T-E-M-S",
+          gloss: "系统",
+          tip: "sys-tems"
+        },
+      ]
+    },
+    {
+      id: 110,
+      en: "Observational data were recorded systematically throughout the fieldwork period.",
+      zhAnalysis: "实地考察期间系统记录了观察数据。were recorded；throughout the … period。",
+      vocab: [
+        {
+          word: "observational",
+          spelling: "O-B-S-E-R-V-A-T-I-O-N-A-L",
+          gloss: "观察的",
+          tip: "ob-ser-va-tion-al"
+        },
+        {
+          word: "recorded",
+          spelling: "R-E-C-O-R-D-E-D",
+          gloss: "记录了",
+          tip: "re-cord + -ed"
+        },
+        {
+          word: "systematically",
+          spelling: "S-Y-S-T-E-M-A-T-I-C-A-L-L-Y",
+          gloss: "系统地",
+          tip: "sys-tem-at-i-cal-ly"
+        },
+        {
+          word: "fieldwork",
+          spelling: "F-I-E-L-D-W-O-R-K",
+          gloss: "实地考察",
+          tip: "field + work"
+        },
+      ]
+    },
+    {
+      id: 111,
+      en: "The student union organises social events throughout the academic calendar.",
+      zhAnalysis: "学生会在整个学年安排社交活动。organises；throughout the academic calendar。",
+      vocab: [
+        {
+          word: "union",
+          spelling: "U-N-I-O-N",
+          gloss: "联合会",
+          tip: "un-ion"
+        },
+        {
+          word: "organises",
+          spelling: "O-R-G-A-N-I-S-E-S",
+          gloss: "组织",
+          tip: "英式 s"
+        },
+        {
+          word: "events",
+          spelling: "E-V-E-N-T-S",
+          gloss: "活动",
+          tip: "e-vents"
+        },
+        {
+          word: "calendar",
+          spelling: "C-A-L-E-N-D-A-R",
+          gloss: "日程 / 日历",
+          tip: "cal-en-dar"
+        },
+      ]
+    },
+    {
+      id: 112,
+      en: "Comparative analysis revealed substantial differences between the two groups.",
+      zhAnalysis: "比较分析显示两组之间存在显著差异。revealed；substantial differences between…。",
+      vocab: [
+        {
+          word: "comparative",
+          spelling: "C-O-M-P-A-R-A-T-I-V-E",
+          gloss: "比较的",
+          tip: "com-par-a-tive"
+        },
+        {
+          word: "substantial",
+          spelling: "S-U-B-S-T-A-N-T-I-A-L",
+          gloss: "显著的 / 大量的",
+          tip: "sub-stan-tial"
+        },
+        {
+          word: "differences",
+          spelling: "D-I-F-F-E-R-E-N-C-E-S",
+          gloss: "差异",
+          tip: "dif-fer-enc-es"
+        },
+        {
+          word: "groups",
+          spelling: "G-R-O-U-P-S",
+          gloss: "组别",
+          tip: "groups"
+        },
+      ]
+    },
+    {
+      id: 113,
+      en: "The chemistry laboratory will be closed for maintenance next Wednesday.",
+      zhAnalysis: "化学实验室下周三因维护关闭。will be closed for；next Wednesday。",
+      vocab: [
+        {
+          word: "closed",
+          spelling: "C-L-O-S-E-D",
+          gloss: "关闭",
+          tip: "close + -d"
+        },
+        {
+          word: "maintenance",
+          spelling: "M-A-I-N-T-E-N-A-N-C-E",
+          gloss: "维护",
+          tip: "main-te-nance"
+        },
+        {
+          word: "wednesday",
+          spelling: "W-E-D-N-E-S-D-A-Y",
+          gloss: "星期三",
+          tip: "注意 d 不发音拼写仍要写"
+        },
+        {
+          word: "laboratory",
+          spelling: "L-A-B-O-R-A-T-O-R-Y",
+          gloss: "实验室",
+          tip: "lab-o-ra-to-ry"
+        },
+      ]
+    },
+    {
+      id: 114,
+      en: "Philosophical debates explore fundamental questions about knowledge and existence.",
+      zhAnalysis: "哲学辩论探讨关于知识与存在的基本问题。explore；fundamental questions about…。",
+      vocab: [
+        {
+          word: "philosophical",
+          spelling: "P-H-I-L-O-S-O-P-H-I-C-A-L",
+          gloss: "哲学的",
+          tip: "phil-o-soph-i-cal"
+        },
+        {
+          word: "debates",
+          spelling: "D-E-B-A-T-E-S",
+          gloss: "辩论",
+          tip: "de-bates"
+        },
+        {
+          word: "fundamental",
+          spelling: "F-U-N-D-A-M-E-N-T-A-L",
+          gloss: "基本的",
+          tip: "fun-da-men-tal"
+        },
+        {
+          word: "existence",
+          spelling: "E-X-I-S-T-E-N-C-E",
+          gloss: "存在",
+          tip: "ex-is-tence"
+        },
+      ]
+    },
+    {
+      id: 115,
+      en: "The accommodation office assists international students in finding suitable housing.",
+      zhAnalysis: "住宿办公室协助国际学生寻找合适住房。assists … in；finding suitable housing。",
+      vocab: [
+        {
+          word: "accommodation",
+          spelling: "A-C-C-O-M-M-O-D-A-T-I-O-N",
+          gloss: "住宿",
+          tip: "双写 C、M"
+        },
+        {
+          word: "assists",
+          spelling: "A-S-S-I-S-T-S",
+          gloss: "协助",
+          tip: "as-sist + -s"
+        },
+        {
+          word: "suitable",
+          spelling: "S-U-I-T-A-B-L-E",
+          gloss: "合适的",
+          tip: "suit-a-ble"
+        },
+        {
+          word: "housing",
+          spelling: "H-O-U-S-I-N-G",
+          gloss: "住房",
+          tip: "hous-ing"
+        },
+      ]
+    },
+    {
+      id: 116,
+      en: "Empirical evidence supports the conclusions drawn in the final chapter.",
+      zhAnalysis: "经验证据支持最后一章得出的结论。supports；conclusions drawn in…。",
+      vocab: [
+        {
+          word: "empirical",
+          spelling: "E-M-P-I-R-I-C-A-L",
+          gloss: "经验的 / 实证的",
+          tip: "em-pir-i-cal"
+        },
+        {
+          word: "supports",
+          spelling: "S-U-P-P-O-R-T-S",
+          gloss: "支持",
+          tip: "sup-port + -s"
+        },
+        {
+          word: "conclusions",
+          spelling: "C-O-N-C-L-U-S-I-O-N-S",
+          gloss: "结论",
+          tip: "con-clu-sions"
+        },
+        {
+          word: "chapter",
+          spelling: "C-H-A-P-T-E-R",
+          gloss: "章节",
+          tip: "chap-ter"
+        },
+      ]
+    },
+    {
+      id: 117,
+      en: "The timetable for examinations will be published on the noticeboard tomorrow.",
+      zhAnalysis: "考试时间表将于明天在布告栏公布。will be published；on the noticeboard。",
+      vocab: [
+        {
+          word: "timetable",
+          spelling: "T-I-M-E-T-A-B-L-E",
+          gloss: "时间表",
+          tip: "time + table"
+        },
+        {
+          word: "examinations",
+          spelling: "E-X-A-M-I-N-A-T-I-O-N-S",
+          gloss: "考试",
+          tip: "ex-am-i-na-tions"
+        },
+        {
+          word: "published",
+          spelling: "P-U-B-L-I-S-H-E-D",
+          gloss: "公布",
+          tip: "pub-lish + -ed"
+        },
+        {
+          word: "noticeboard",
+          spelling: "N-O-T-I-C-E-B-O-A-R-D",
+          gloss: "布告栏",
+          tip: "notice + board"
+        },
+      ]
+    },
+    {
+      id: 118,
+      en: "Agricultural productivity has increased dramatically over the past century.",
+      zhAnalysis: "过去一个世纪农业生产力大幅提高。has increased；dramatically over…。",
+      vocab: [
+        {
+          word: "agricultural",
+          spelling: "A-G-R-I-C-U-L-T-U-R-A-L",
+          gloss: "农业的",
+          tip: "ag-ri-cul-tur-al"
+        },
+        {
+          word: "productivity",
+          spelling: "P-R-O-D-U-C-T-I-V-I-T-Y",
+          gloss: "生产力",
+          tip: "pro-duc-tiv-i-ty"
+        },
+        {
+          word: "dramatically",
+          spelling: "D-R-A-M-A-T-I-C-A-L-L-Y",
+          gloss: "大幅地",
+          tip: "dra-mat-i-cal-ly"
+        },
+        {
+          word: "century",
+          spelling: "C-E-N-T-U-R-Y",
+          gloss: "世纪",
+          tip: "cen-tu-ry"
+        },
+      ]
+    },
+    {
+      id: 119,
+      en: "The counsellor provides confidential advice on academic and personal matters.",
+      zhAnalysis: "辅导员就学业与个人事务提供保密建议。provides；confidential advice on…。",
+      vocab: [
+        {
+          word: "counsellor",
+          spelling: "C-O-U-N-S-E-L-L-O-R",
+          gloss: "辅导员",
+          tip: "英式双写 L；美式 counselor"
+        },
+        {
+          word: "confidential",
+          spelling: "C-O-N-F-I-D-E-N-T-I-A-L",
+          gloss: "保密的",
+          tip: "con-fi-den-tial"
+        },
+        {
+          word: "advice",
+          spelling: "A-D-V-I-C-E",
+          gloss: "建议",
+          tip: "ad-vice；不可数"
+        },
+        {
+          word: "matters",
+          spelling: "M-A-T-T-E-R-S",
+          gloss: "事务",
+          tip: "mat-ters"
+        },
+      ]
+    },
+    {
+      id: 120,
+      en: "Meteorological data indicate an unusual pattern of rainfall this season.",
+      zhAnalysis: "气象数据表明本季降雨模式异常。indicate；an unusual pattern of…。",
+      vocab: [
+        {
+          word: "meteorological",
+          spelling: "M-E-T-E-O-R-O-L-O-G-I-C-A-L",
+          gloss: "气象的",
+          tip: "me-te-or-o-log-i-cal"
+        },
+        {
+          word: "indicate",
+          spelling: "I-N-D-I-C-A-T-E",
+          gloss: "表明",
+          tip: "in-di-cate"
+        },
+        {
+          word: "unusual",
+          spelling: "U-N-U-S-U-A-L",
+          gloss: "异常的",
+          tip: "un-u-su-al"
+        },
+        {
+          word: "rainfall",
+          spelling: "R-A-I-N-F-A-L-L",
+          gloss: "降雨",
+          tip: "rain + fall"
+        },
+      ]
+    },
+    {
+      id: 121,
+      en: "The postgraduate handbook explains the requirements for thesis submission.",
+      zhAnalysis: "研究生手册说明了论文提交要求。explains；requirements for…。",
+      vocab: [
+        {
+          word: "postgraduate",
+          spelling: "P-O-S-T-G-R-A-D-U-A-T-E",
+          gloss: "研究生的",
+          tip: "post-grad-u-ate"
+        },
+        {
+          word: "handbook",
+          spelling: "H-A-N-D-B-O-O-K",
+          gloss: "手册",
+          tip: "hand-book"
+        },
+        {
+          word: "requirements",
+          spelling: "R-E-Q-U-I-R-E-M-E-N-T-S",
+          gloss: "要求",
+          tip: "re-quire-ments"
+        },
+        {
+          word: "thesis",
+          spelling: "T-H-E-S-I-S",
+          gloss: "论文",
+          tip: "the-sis；复数 theses"
+        },
+      ]
+    },
+    {
+      id: 122,
+      en: "Volunteer opportunities are advertised on the community engagement website.",
+      zhAnalysis: "志愿服务机会在社区参与网站上公布。are advertised；on the … website。",
+      vocab: [
+        {
+          word: "volunteer",
+          spelling: "V-O-L-U-N-T-E-E-R",
+          gloss: "志愿的 / 志愿者",
+          tip: "vol-un-teer"
+        },
+        {
+          word: "opportunities",
+          spelling: "O-P-P-O-R-T-U-N-I-T-I-E-S",
+          gloss: "机会",
+          tip: "op-por-tu-ni-ties"
+        },
+        {
+          word: "advertised",
+          spelling: "A-D-V-E-R-T-I-S-E-D",
+          gloss: "公布 / 做广告",
+          tip: "ad-ver-tise + -d"
+        },
+        {
+          word: "engagement",
+          spelling: "E-N-G-A-G-E-M-E-N-T",
+          gloss: "参与",
+          tip: "en-gage-ment"
+        },
+      ]
+    },
+    {
+      id: 123,
+      en: "The physics lecture covered the fundamental principles of quantum mechanics.",
+      zhAnalysis: "物理讲座涵盖了量子力学的基本原理。covered；fundamental principles of…。",
+      vocab: [
+        {
+          word: "physics",
+          spelling: "P-H-Y-S-I-C-S",
+          gloss: "物理学",
+          tip: "phys-ics"
+        },
+        {
+          word: "covered",
+          spelling: "C-O-V-E-R-E-D",
+          gloss: "涵盖了",
+          tip: "cov-er + -ed"
+        },
+        {
+          word: "principles",
+          spelling: "P-R-I-N-C-I-P-L-E-S",
+          gloss: "原理",
+          tip: "prin-ci-ples"
+        },
+        {
+          word: "quantum",
+          spelling: "Q-U-A-N-T-U-M",
+          gloss: "量子",
+          tip: "quan-tum"
+        },
+      ]
+    },
+    {
+      id: 124,
+      en: "Immigration policies vary considerably between different destination countries.",
+      zhAnalysis: "不同目的国的移民政策差异很大。vary considerably；between … countries。",
+      vocab: [
+        {
+          word: "immigration",
+          spelling: "I-M-M-I-G-R-A-T-I-O-N",
+          gloss: "移民（入境）",
+          tip: "im-mi-gra-tion；双写 M"
+        },
+        {
+          word: "policies",
+          spelling: "P-O-L-I-C-I-E-S",
+          gloss: "政策",
+          tip: "pol-i-cies"
+        },
+        {
+          word: "considerably",
+          spelling: "C-O-N-S-I-D-E-R-A-B-L-Y",
+          gloss: "相当大地",
+          tip: "con-sid-er-a-bly"
+        },
+        {
+          word: "destination",
+          spelling: "D-E-S-T-I-N-A-T-I-O-N",
+          gloss: "目的地",
+          tip: "des-ti-na-tion"
+        },
+      ]
+    },
+    {
+      id: 125,
+      en: "The archive catalogue is searchable through the online library system.",
+      zhAnalysis: "档案馆目录可通过在线图书馆系统检索。is searchable；through the … system。",
+      vocab: [
+        {
+          word: "catalogue",
+          spelling: "C-A-T-A-L-O-G-U-E",
+          gloss: "目录",
+          tip: "英式 catalogue；美式 catalog"
+        },
+        {
+          word: "searchable",
+          spelling: "S-E-A-R-C-H-A-B-L-E",
+          gloss: "可检索的",
+          tip: "search + -able"
+        },
+        {
+          word: "online",
+          spelling: "O-N-L-I-N-E",
+          gloss: "在线的",
+          tip: "on-line"
+        },
+        {
+          word: "library",
+          spelling: "L-I-B-R-A-R-Y",
+          gloss: "图书馆",
+          tip: "li-brar-y"
+        },
+      ]
+    },
+    {
+      id: 126,
+      en: "Nutritional guidelines recommend a balanced diet for optimal health.",
+      zhAnalysis: "营养指南建议均衡饮食以保持最佳健康。recommend；a balanced diet for…。",
+      vocab: [
+        {
+          word: "nutritional",
+          spelling: "N-U-T-R-I-T-I-O-N-A-L",
+          gloss: "营养的",
+          tip: "nu-tri-tion-al"
+        },
+        {
+          word: "guidelines",
+          spelling: "G-U-I-D-E-L-I-N-E-S",
+          gloss: "指南",
+          tip: "guide-lines"
+        },
+        {
+          word: "balanced",
+          spelling: "B-A-L-A-N-C-E-D",
+          gloss: "均衡的",
+          tip: "bal-ance + -d"
+        },
+        {
+          word: "optimal",
+          spelling: "O-P-T-I-M-A-L",
+          gloss: "最佳的",
+          tip: "op-ti-mal"
+        },
+      ]
+    },
+    {
+      id: 127,
+      en: "The construction of the new research facility is scheduled for completion next year.",
+      zhAnalysis: "新研究设施的建设计划于明年完工。is scheduled for；completion next year。",
+      vocab: [
+        {
+          word: "construction",
+          spelling: "C-O-N-S-T-R-U-C-T-I-O-N",
+          gloss: "建设",
+          tip: "con-struc-tion"
+        },
+        {
+          word: "facility",
+          spelling: "F-A-C-I-L-I-T-Y",
+          gloss: "设施",
+          tip: "fa-cil-i-ty"
+        },
+        {
+          word: "scheduled",
+          spelling: "S-C-H-E-D-U-L-E-D",
+          gloss: "计划于",
+          tip: "sched-uled"
+        },
+        {
+          word: "completion",
+          spelling: "C-O-M-P-L-E-T-I-O-N",
+          gloss: "完工",
+          tip: "com-ple-tion"
+        },
+      ]
+    },
+    {
+      id: 128,
+      en: "Qualitative interviews provide rich insights into participants lived experiences.",
+      zhAnalysis: "质性访谈为参与者的生活经历提供丰富洞见。provide … insights into…。",
+      vocab: [
+        {
+          word: "qualitative",
+          spelling: "Q-U-A-L-I-T-A-T-I-V-E",
+          gloss: "质性的",
+          tip: "qual-i-ta-tive"
+        },
+        {
+          word: "interviews",
+          spelling: "I-N-T-E-R-V-I-E-W-S",
+          gloss: "访谈",
+          tip: "in-ter-views"
+        },
+        {
+          word: "insights",
+          spelling: "I-N-S-I-G-H-T-S",
+          gloss: "洞见",
+          tip: "in-sights"
+        },
+        {
+          word: "experiences",
+          spelling: "E-X-P-E-R-I-E-N-C-E-S",
+          gloss: "经历",
+          tip: "ex-pe-ri-enc-es"
+        },
+      ]
+    },
+    {
+      id: 129,
+      en: "The disability support service offers assistance to students with special needs.",
+      zhAnalysis: "残障支持服务为有特殊需要的学生提供帮助。offers assistance to；with special needs。",
+      vocab: [
+        {
+          word: "disability",
+          spelling: "D-I-S-A-B-I-L-I-T-Y",
+          gloss: "残障",
+          tip: "dis-a-bil-i-ty"
+        },
+        {
+          word: "assistance",
+          spelling: "A-S-S-I-S-T-A-N-C-E",
+          gloss: "帮助",
+          tip: "as-sis-tance"
+        },
+        {
+          word: "special",
+          spelling: "S-P-E-C-I-A-L",
+          gloss: "特殊的",
+          tip: "spe-cial"
+        },
+        {
+          word: "needs",
+          spelling: "N-E-E-D-S",
+          gloss: "需要",
+          tip: "needs"
+        },
+      ]
+    },
+    {
+      id: 130,
+      en: "Ocean currents play a crucial role in regulating global climate systems.",
+      zhAnalysis: "洋流在调节全球气候系统中起关键作用。play a crucial role in；regulating…。",
+      vocab: [
+        {
+          word: "ocean",
+          spelling: "O-C-E-A-N",
+          gloss: "海洋",
+          tip: "o-cean"
+        },
+        {
+          word: "currents",
+          spelling: "C-U-R-R-E-N-T-S",
+          gloss: "洋流",
+          tip: "cur-rents；双写 R"
+        },
+        {
+          word: "crucial",
+          spelling: "C-R-U-C-I-A-L",
+          gloss: "关键的",
+          tip: "cru-cial"
+        },
+        {
+          word: "regulating",
+          spelling: "R-E-G-U-L-A-T-I-N-G",
+          gloss: "调节",
+          tip: "reg-u-lat-ing"
+        },
+      ]
+    },
+    {
+      id: 131,
+      en: "The placement office helps students secure internships with partner organisations.",
+      zhAnalysis: "就业实习办公室帮助学生在合作机构获得实习。helps … secure；with partner organisations。",
+      vocab: [
+        {
+          word: "placement",
+          spelling: "P-L-A-C-E-M-E-N-T",
+          gloss: "实习安排",
+          tip: "place-ment"
+        },
+        {
+          word: "internships",
+          spelling: "I-N-T-E-R-N-S-H-I-P-S",
+          gloss: "实习",
+          tip: "in-tern-ships"
+        },
+        {
+          word: "partner",
+          spelling: "P-A-R-T-N-E-R",
+          gloss: "合作方",
+          tip: "part-ner"
+        },
+        {
+          word: "organisations",
+          spelling: "O-R-G-A-N-I-S-A-T-I-O-N-S",
+          gloss: "机构",
+          tip: "英式 s"
+        },
+      ]
+    },
+    {
+      id: 132,
+      en: "Mathematical models are used to simulate complex environmental processes.",
+      zhAnalysis: "数学模型用于模拟复杂环境过程。are used to；simulate … processes。",
+      vocab: [
+        {
+          word: "mathematical",
+          spelling: "M-A-T-H-E-M-A-T-I-C-A-L",
+          gloss: "数学的",
+          tip: "math-e-mat-i-cal"
+        },
+        {
+          word: "simulate",
+          spelling: "S-I-M-U-L-A-T-E",
+          gloss: "模拟",
+          tip: "sim-u-late"
+        },
+        {
+          word: "complex",
+          spelling: "C-O-M-P-L-E-X",
+          gloss: "复杂的",
+          tip: "com-plex"
+        },
+        {
+          word: "processes",
+          spelling: "P-R-O-C-E-S-S-E-S",
+          gloss: "过程",
+          tip: "proc-ess-es"
+        },
+      ]
+    },
+    {
+      id: 133,
+      en: "The registrar confirmed that the graduation certificates will be issued in June.",
+      zhAnalysis: "注册主任确认毕业证书将于六月发放。confirmed that；will be issued。",
+      vocab: [
+        {
+          word: "confirmed",
+          spelling: "C-O-N-F-I-R-M-E-D",
+          gloss: "确认了",
+          tip: "con-firm + -ed"
+        },
+        {
+          word: "graduation",
+          spelling: "G-R-A-D-U-A-T-I-O-N",
+          gloss: "毕业",
+          tip: "grad-u-a-tion"
+        },
+        {
+          word: "certificates",
+          spelling: "C-E-R-T-I-F-I-C-A-T-E-S",
+          gloss: "证书",
+          tip: "cer-tif-i-cates"
+        },
+        {
+          word: "issued",
+          spelling: "I-S-S-U-E-D",
+          gloss: "发放",
+          tip: "is-sue + -d"
+        },
+      ]
+    },
+  ];
+
+  // Compatibility aliases for older field names
+  WFD_BANK.forEach(function (item) {
+    if (!item.sentence) item.sentence = item.en;
+    if (!item.analysis) item.analysis = item.zhAnalysis;
+  });
+
+  global.WFD_BANK = WFD_BANK;
+  global.WFD_DATA = WFD_BANK; // alias
+})(typeof window !== "undefined" ? window : globalThis);
+
+  </script>
+  <script>
+/**
+ * chinaPTE · WFD 随身听
+ * Audio-first Write From Dictation trainer using browser Web Speech API only.
+ */
+(function () {
+  "use strict";
+
+  const STORAGE_TODAY = "chinaPTE_wfd_today";
+  const STORAGE_RESUME = "chinaPTE_wfd_resume";
+  const STORAGE_STREAK = "chinaPTE_wfd_streak";
+
+  const allItems = window.WFD_BANK || window.WFD_DATA || [];
+  let items = allItems.slice();
+
+  const state = {
+    index: 0,
+    rate: 1,
+    zhOn: true,
+    playing: false,
+    playAll: false,
+    paused: false,
+    phase: "idle",
+    vocabIdx: 0,
+    voicesReady: false,
+    enVoice: null,
+    zhVoice: null,
+    filterQuery: "",
+  };
+
+  const $ = (id) => document.getElementById(id);
+
+  const els = {
+    playAll: $("btnPlayAll"),
+    playAllIcon: $("playAllIcon"),
+    playAllLabel: $("playAllLabel"),
+    prev: $("btnPrev"),
+    next: $("btnNext"),
+    playPause: $("btnPlayPause"),
+    playPauseIcon: $("playPauseIcon"),
+    playPauseLabel: $("playPauseLabel"),
+    replay: $("btnReplay"),
+    stop: $("btnStop"),
+    toggleZh: $("btnToggleZh"),
+    sentenceEn: $("sentenceEn"),
+    sentenceZh: $("sentenceZh"),
+    vocabChips: $("vocabChips"),
+    progressText: $("progressText"),
+    progressFill: $("progressFill"),
+    phaseText: $("phaseText"),
+    statusBadge: $("statusBadge"),
+    statusText: $("statusText"),
+    todayCount: $("todayCount"),
+    streakCount: $("streakCount"),
+    speechWarn: $("speechWarn"),
+    searchInput: $("wfdSearch"),
+    clearSearch: $("btnClearSearch"),
+    speedBtns: document.querySelectorAll(".speed-btn"),
+  };
+
+  function itemEn(item) {
+    return item.en || item.sentence || "";
+  }
+
+  function itemZh(item) {
+    return item.zhAnalysis || item.analysis || "";
+  }
+
+  function todayKey() {
+    const d = new Date();
+    const y = d.getFullYear();
+    const m = String(d.getMonth() + 1).padStart(2, "0");
+    const day = String(d.getDate()).padStart(2, "0");
+    return `${y}-${m}-${day}`;
+  }
+
+  function loadTodayCount() {
+    try {
+      const raw = localStorage.getItem(STORAGE_TODAY);
+      if (!raw) return 0;
+      const data = JSON.parse(raw);
+      if (data.date !== todayKey()) return 0;
+      return data.count || 0;
+    } catch {
+      return 0;
+    }
+  }
+
+  function bumpTodayCount() {
+    const count = loadTodayCount() + 1;
+    try {
+      localStorage.setItem(
+        STORAGE_TODAY,
+        JSON.stringify({ date: todayKey(), count })
+      );
+    } catch {
+      /* ignore */
+    }
+    if (els.todayCount) els.todayCount.textContent = String(count);
+    updateStreak();
+  }
+
+  function refreshTodayUI() {
+    if (els.todayCount) els.todayCount.textContent = String(loadTodayCount());
+    if (els.streakCount) els.streakCount.textContent = String(loadStreak());
+  }
+
+  function loadStreak() {
+    try {
+      const raw = localStorage.getItem(STORAGE_STREAK);
+      if (!raw) return 0;
+      const data = JSON.parse(raw);
+      const today = todayKey();
+      if (data.lastDate === today) return data.days || 0;
+      // yesterday?
+      const yest = new Date();
+      yest.setDate(yest.getDate() - 1);
+      const yk =
+        yest.getFullYear() +
+        "-" +
+        String(yest.getMonth() + 1).padStart(2, "0") +
+        "-" +
+        String(yest.getDate()).padStart(2, "0");
+      if (data.lastDate === yk) return data.days || 0;
+      return 0;
+    } catch {
+      return 0;
+    }
+  }
+
+  function updateStreak() {
+    try {
+      const today = todayKey();
+      const raw = localStorage.getItem(STORAGE_STREAK);
+      let days = 1;
+      if (raw) {
+        const data = JSON.parse(raw);
+        if (data.lastDate === today) {
+          days = data.days || 1;
+        } else {
+          const yest = new Date();
+          yest.setDate(yest.getDate() - 1);
+          const yk =
+            yest.getFullYear() +
+            "-" +
+            String(yest.getMonth() + 1).padStart(2, "0") +
+            "-" +
+            String(yest.getDate()).padStart(2, "0");
+          if (data.lastDate === yk) days = (data.days || 0) + 1;
+          else days = 1;
+        }
+      }
+      localStorage.setItem(
+        STORAGE_STREAK,
+        JSON.stringify({ lastDate: today, days })
+      );
+      if (els.streakCount) els.streakCount.textContent = String(days);
+    } catch {
+      /* ignore */
+    }
+  }
+
+  function saveResume() {
+    try {
+      const item = currentItem();
+      localStorage.setItem(
+        STORAGE_RESUME,
+        JSON.stringify({
+          id: item ? item.id : null,
+          index: state.index,
+          filter: state.filterQuery,
+        })
+      );
+    } catch {
+      /* ignore */
+    }
+  }
+
+  function loadResume() {
+    try {
+      const raw = localStorage.getItem(STORAGE_RESUME);
+      if (!raw) return;
+      const data = JSON.parse(raw);
+      if (data.filter) {
+        state.filterQuery = data.filter;
+        if (els.searchInput) els.searchInput.value = data.filter;
+        applyFilter(false);
+      }
+      if (typeof data.index === "number" && data.index >= 0 && data.index < items.length) {
+        state.index = data.index;
+      } else if (data.id != null) {
+        const idx = items.findIndex((it) => it.id === data.id);
+        if (idx >= 0) state.index = idx;
+      }
+    } catch {
+      /* ignore */
+    }
+  }
+
+  function pickVoices() {
+    if (!window.speechSynthesis) return;
+    const voices = speechSynthesis.getVoices();
+    if (!voices.length) return;
+
+    const enPrefs = ["en-US", "en_US", "en-GB", "en_GB", "en"];
+    const zhPrefs = ["zh-CN", "zh_CN", "zh-Hans", "cmn-Hans", "zh"];
+
+    function find(prefs, langPrefix) {
+      for (const p of prefs) {
+        const exact = voices.find(
+          (v) => v.lang === p || v.lang.replace("_", "-") === p
+        );
+        if (exact) return exact;
+      }
+      return (
+        voices.find((v) =>
+          v.lang.toLowerCase().startsWith(langPrefix.toLowerCase())
+        ) || null
+      );
+    }
+
+    state.enVoice = find(enPrefs, "en") || voices.find((v) => /en/i.test(v.lang));
+    state.zhVoice = find(zhPrefs, "zh") || voices.find((v) => /zh|cmn/i.test(v.lang));
+    state.voicesReady = true;
+  }
+
+  let pauseTimer = null;
+  let currentUtter = null;
+
+  function cancelSpeech() {
+    if (pauseTimer) {
+      clearTimeout(pauseTimer);
+      pauseTimer = null;
+    }
+    if (window.speechSynthesis) {
+      speechSynthesis.cancel();
+    }
+    currentUtter = null;
+  }
+
+  function speak(text, opts) {
+    return new Promise((resolve, reject) => {
+      if (!window.speechSynthesis) {
+        reject(new Error("no speechSynthesis"));
+        return;
+      }
+      const u = new SpeechSynthesisUtterance(text);
+      u.lang = opts.lang || "en-US";
+      u.rate = opts.rate != null ? opts.rate : state.rate;
+      u.pitch = opts.pitch != null ? opts.pitch : 1;
+      u.volume = 1;
+      if (opts.voice) u.voice = opts.voice;
+
+      u.onend = () => {
+        currentUtter = null;
+        resolve();
+      };
+      u.onerror = (e) => {
+        currentUtter = null;
+        if (e.error === "interrupted" || e.error === "canceled") {
+          resolve({ interrupted: true });
+        } else {
+          reject(e);
+        }
+      };
+
+      currentUtter = u;
+      speechSynthesis.cancel();
+      setTimeout(() => {
+        if (!state.playing && !opts.force) {
+          resolve({ interrupted: true });
+          return;
+        }
+        speechSynthesis.speak(u);
+      }, 40);
+    });
+  }
+
+  function wait(ms) {
+    return new Promise((resolve) => {
+      pauseTimer = setTimeout(() => {
+        pauseTimer = null;
+        resolve();
+      }, ms);
+    });
+  }
+
+  function lettersOf(spelling) {
+    if (spelling.includes("-")) {
+      return spelling.split("-").join(" ");
+    }
+    return spelling.split("").join(" ");
+  }
+
+  function currentItem() {
+    return items[state.index] || null;
+  }
+
+  function setPhase(phase, label) {
+    state.phase = phase;
+    if (els.phaseText) els.phaseText.textContent = label || phaseLabel(phase);
+    const idle = phase === "idle";
+    if (els.statusBadge) els.statusBadge.classList.toggle("is-idle", idle);
+    if (els.statusText) els.statusText.textContent = idle ? "待机" : "播放中";
+  }
+
+  function phaseLabel(phase) {
+    const map = {
+      idle: "准备就绪",
+      en: "英文句子",
+      pause: "…",
+      zh: "中文解读",
+      "vocab-word": "词汇",
+      "vocab-spell": "拼写",
+      "vocab-gloss": "释义",
+    };
+    return map[phase] || phase;
+  }
+
+  function renderItem() {
+    const item = currentItem();
+    if (!item) {
+      if (els.sentenceEn) els.sentenceEn.textContent = items.length ? "无匹配句子" : "暂无数据";
+      if (els.sentenceZh) els.sentenceZh.textContent = "";
+      if (els.vocabChips) els.vocabChips.innerHTML = "";
+      if (els.progressText) els.progressText.textContent = `0 / ${allItems.length}`;
+      return;
+    }
+
+    const n = items.length;
+    const i = state.index + 1;
+    if (els.progressText) {
+      const filterNote = state.filterQuery ? `（筛选 ${n}/${allItems.length}）` : "";
+      els.progressText.textContent = `${i} / ${n}${filterNote}`;
+    }
+    if (els.progressFill) {
+      els.progressFill.style.width = `${(i / n) * 100}%`;
+      if (els.progressFill.parentElement) {
+        els.progressFill.parentElement.setAttribute(
+          "aria-valuenow",
+          String(Math.round((i / n) * 100))
+        );
+      }
+    }
+
+    if (els.sentenceEn) els.sentenceEn.textContent = itemEn(item);
+    if (els.sentenceZh) {
+      els.sentenceZh.textContent = itemZh(item);
+      els.sentenceZh.classList.toggle("hidden", !state.zhOn);
+    }
+
+    if (els.vocabChips) {
+      els.vocabChips.innerHTML = "";
+      (item.vocab || []).forEach((v, idx) => {
+        const btn = document.createElement("button");
+        btn.type = "button";
+        btn.className = "chip";
+        btn.dataset.idx = String(idx);
+        btn.innerHTML =
+          `<span class="chip-word">${escapeHtml(v.word)}</span>` +
+          `<span class="chip-gloss">${escapeHtml(v.gloss)}</span>` +
+          `<span class="chip-spelling">${escapeHtml(v.spelling)}</span>` +
+          (v.tip
+            ? `<span class="chip-tip">${escapeHtml(v.tip)}</span>`
+            : "");
+        btn.addEventListener("click", () => playVocabOnly(idx));
+        els.vocabChips.appendChild(btn);
+      });
+    }
+
+    highlightVocab(-1);
+    saveResume();
+  }
+
+  function highlightVocab(idx) {
+    if (!els.vocabChips) return;
+    els.vocabChips.querySelectorAll(".chip").forEach((el, i) => {
+      el.classList.toggle("is-active", i === idx);
+    });
+  }
+
+  function escapeHtml(s) {
+    return String(s)
+      .replace(/&/g, "&amp;")
+      .replace(/</g, "&lt;")
+      .replace(/>/g, "&gt;")
+      .replace(/"/g, "&quot;");
+  }
+
+  function updateTransportUI() {
+    const playing = state.playing && !state.paused;
+    if (els.playPauseIcon) els.playPauseIcon.textContent = playing ? "⏸" : "▶";
+    if (els.playPauseLabel) els.playPauseLabel.textContent = playing ? "暂停" : "播放";
+
+    if (els.playAll) {
+      if (state.playAll && state.playing) {
+        els.playAll.classList.add("is-playing");
+        if (els.playAllIcon) els.playAllIcon.textContent = "⏸";
+        if (els.playAllLabel) els.playAllLabel.textContent = "随身听播放中…";
+      } else {
+        els.playAll.classList.remove("is-playing");
+        if (els.playAllIcon) els.playAllIcon.textContent = "▶";
+        if (els.playAllLabel) els.playAllLabel.textContent = "随身听 · Play All";
+      }
+    }
+  }
+
+  let playToken = 0;
+
+  function newToken() {
+    playToken += 1;
+    return playToken;
+  }
+
+  function isActive(token) {
+    return token === playToken && state.playing;
+  }
+
+  async function playCurrentSequence(opts) {
+    const token = newToken();
+    const fromVocab = opts && opts.fromVocab;
+    const continueAll = opts && opts.continueAll;
+
+    state.playing = true;
+    state.paused = false;
+    if (continueAll) state.playAll = true;
+    updateTransportUI();
+
+    const item = currentItem();
+    if (!item) {
+      stopAll();
+      return;
+    }
+
+    try {
+      if (!fromVocab) {
+        setPhase("en", "英文句子");
+        highlightVocab(-1);
+        const enRate = Math.max(0.65, state.rate * 0.9);
+        const r1 = await speak(itemEn(item), {
+          lang: "en-US",
+          rate: enRate,
+          voice: state.enVoice,
+        });
+        if (!isActive(token) || (r1 && r1.interrupted)) return;
+
+        setPhase("pause", "…");
+        await wait(550);
+        if (!isActive(token)) return;
+
+        const analysis = itemZh(item);
+        if (state.zhOn && analysis) {
+          setPhase("zh", "中文解读");
+          const r2 = await speak(analysis, {
+            lang: "zh-CN",
+            rate: state.rate,
+            voice: state.zhVoice,
+          });
+          if (!isActive(token) || (r2 && r2.interrupted)) return;
+          await wait(400);
+          if (!isActive(token)) return;
+        }
+      }
+
+      const startV = fromVocab != null ? fromVocab : 0;
+      const vocab = item.vocab || [];
+      for (let vi = startV; vi < vocab.length; vi++) {
+        if (!isActive(token)) return;
+        state.vocabIdx = vi;
+        const v = vocab[vi];
+        highlightVocab(vi);
+
+        setPhase("vocab-word", `词汇 · ${v.word}`);
+        const rw = await speak(v.word, {
+          lang: "en-US",
+          rate: Math.max(0.7, state.rate * 0.95),
+          voice: state.enVoice,
+        });
+        if (!isActive(token) || (rw && rw.interrupted)) return;
+        await wait(280);
+        if (!isActive(token)) return;
+
+        setPhase("vocab-spell", `拼写 · ${v.spelling}`);
+        const letters = lettersOf(v.spelling);
+        const rs = await speak(letters, {
+          lang: "en-US",
+          rate: Math.max(0.6, state.rate * 0.75),
+          voice: state.enVoice,
+        });
+        if (!isActive(token) || (rs && rs.interrupted)) return;
+        await wait(280);
+        if (!isActive(token)) return;
+
+        if (state.zhOn && v.gloss) {
+          setPhase("vocab-gloss", `释义 · ${v.gloss}`);
+          let glossText = v.gloss;
+          if (v.tip) glossText += "。" + v.tip;
+          const rg = await speak(glossText, {
+            lang: "zh-CN",
+            rate: state.rate,
+            voice: state.zhVoice,
+          });
+          if (!isActive(token) || (rg && rg.interrupted)) return;
+          await wait(350);
+          if (!isActive(token)) return;
+        }
+      }
+
+      highlightVocab(-1);
+      bumpTodayCount();
+      saveResume();
+
+      if (state.playAll && isActive(token)) {
+        if (state.index < items.length - 1) {
+          state.index += 1;
+          renderItem();
+          await wait(700);
+          if (!isActive(token)) return;
+          playCurrentSequence({ continueAll: true });
+          return;
+        }
+        state.playAll = false;
+        state.playing = false;
+        setPhase("idle", "全部完成");
+        updateTransportUI();
+        return;
+      }
+
+      state.playing = false;
+      state.playAll = false;
+      setPhase("idle", "本句完成");
+      updateTransportUI();
+    } catch (err) {
+      console.warn("speech error", err);
+      state.playing = false;
+      state.playAll = false;
+      setPhase("idle", "播放中断");
+      updateTransportUI();
+    }
+  }
+
+  function stopAll() {
+    newToken();
+    state.playing = false;
+    state.paused = false;
+    state.playAll = false;
+    cancelSpeech();
+    highlightVocab(-1);
+    setPhase("idle", "已停止");
+    updateTransportUI();
+  }
+
+  function pausePlayback() {
+    if (!state.playing || state.paused) return;
+    state.paused = true;
+    state.playing = false;
+    newToken();
+    cancelSpeech();
+    setPhase("idle", "已暂停");
+    updateTransportUI();
+  }
+
+  async function playVocabOnly(idx) {
+    stopAll();
+    state.playing = true;
+    state.playAll = false;
+    updateTransportUI();
+    await playCurrentSequence({ fromVocab: idx });
+  }
+
+  function applyFilter(resetIndex) {
+    const q = (state.filterQuery || "").trim().toLowerCase();
+    if (!q) {
+      items = allItems.slice();
+    } else {
+      items = allItems.filter((it) => {
+        const en = itemEn(it).toLowerCase();
+        const zh = itemZh(it).toLowerCase();
+        const vocabHit = (it.vocab || []).some(
+          (v) =>
+            (v.word || "").toLowerCase().includes(q) ||
+            (v.gloss || "").toLowerCase().includes(q)
+        );
+        return en.includes(q) || zh.includes(q) || vocabHit;
+      });
+    }
+    if (resetIndex !== false) {
+      state.index = 0;
+    } else if (state.index >= items.length) {
+      state.index = Math.max(0, items.length - 1);
+    }
+    saveResume();
+  }
+
+  function onPlayAll() {
+    if (state.playAll && state.playing) {
+      pausePlayback();
+      return;
+    }
+    cancelSpeech();
+    // Play All from current index (resume-friendly); if at end, restart
+    if (state.index >= items.length - 1 && !state.playing) {
+      // if user finished, restart from 0
+    }
+    // Fresh Play All from start of current filtered list when not mid-resume play
+    // Spec: Play All through entire bank — start from beginning of current list
+    state.playAll = true;
+    state.index = 0;
+    renderItem();
+    playCurrentSequence({ continueAll: true });
+  }
+
+  function onPlayPause() {
+    if (state.playing && !state.paused) {
+      pausePlayback();
+      return;
+    }
+    const wasAll = state.playAll;
+    cancelSpeech();
+    playCurrentSequence({ continueAll: wasAll });
+  }
+
+  function onReplay() {
+    cancelSpeech();
+    playCurrentSequence({ continueAll: state.playAll });
+  }
+
+  function onPrev() {
+    const keepAll = state.playAll;
+    stopAll();
+    state.index = Math.max(0, state.index - 1);
+    renderItem();
+    if (keepAll) {
+      state.playAll = true;
+      playCurrentSequence({ continueAll: true });
+    }
+  }
+
+  function onNext() {
+    const keepAll = state.playAll;
+    stopAll();
+    state.index = Math.min(items.length - 1, state.index + 1);
+    renderItem();
+    if (keepAll) {
+      state.playAll = true;
+      playCurrentSequence({ continueAll: true });
+    }
+  }
+
+  function onSpeed(rate) {
+    state.rate = rate;
+    els.speedBtns.forEach((b) => {
+      b.classList.toggle("is-active", parseFloat(b.dataset.speed) === rate);
+    });
+  }
+
+  function onToggleZh() {
+    state.zhOn = !state.zhOn;
+    if (els.toggleZh) {
+      els.toggleZh.classList.toggle("is-on", state.zhOn);
+      els.toggleZh.setAttribute("aria-pressed", state.zhOn ? "true" : "false");
+    }
+    if (els.sentenceZh) els.sentenceZh.classList.toggle("hidden", !state.zhOn);
+  }
+
+  function onSearchInput() {
+    state.filterQuery = els.searchInput ? els.searchInput.value : "";
+    stopAll();
+    applyFilter(true);
+    renderItem();
+    setPhase("idle", state.filterQuery ? "已筛选" : "准备就绪");
+  }
+
+  function jumpToId(id) {
+    applyFilter(true);
+    const idx = items.findIndex((it) => it.id === id);
+    if (idx >= 0) {
+      state.index = idx;
+      renderItem();
+    }
+  }
+
+  // Deep link: wfd.html?id=12
+  function applyQueryParam() {
+    try {
+      const params = new URLSearchParams(window.location.search);
+      const id = params.get("id");
+      if (id) {
+        const num = parseInt(id, 10);
+        if (!isNaN(num)) jumpToId(num);
+      }
+    } catch {
+      /* ignore */
+    }
+  }
+
+  function init() {
+    if (!allItems.length) {
+      if (els.sentenceEn) els.sentenceEn.textContent = "暂无数据";
+      return;
+    }
+
+    if (!window.speechSynthesis) {
+      if (els.speechWarn) els.speechWarn.classList.add("is-visible");
+    } else {
+      pickVoices();
+      speechSynthesis.onvoiceschanged = () => pickVoices();
+      setTimeout(pickVoices, 200);
+    }
+
+    loadResume();
+    applyQueryParam();
+    refreshTodayUI();
+    renderItem();
+    setPhase("idle", "准备就绪");
+    updateTransportUI();
+
+    if (els.playAll) els.playAll.addEventListener("click", onPlayAll);
+    if (els.playPause) els.playPause.addEventListener("click", onPlayPause);
+    if (els.replay) els.replay.addEventListener("click", onReplay);
+    if (els.prev) els.prev.addEventListener("click", onPrev);
+    if (els.next) els.next.addEventListener("click", onNext);
+    if (els.stop) els.stop.addEventListener("click", stopAll);
+    if (els.toggleZh) els.toggleZh.addEventListener("click", onToggleZh);
+
+    els.speedBtns.forEach((b) => {
+      b.addEventListener("click", () => onSpeed(parseFloat(b.dataset.speed)));
+    });
+
+    if (els.searchInput) {
+      let t = null;
+      els.searchInput.addEventListener("input", () => {
+        clearTimeout(t);
+        t = setTimeout(onSearchInput, 180);
+      });
+    }
+    if (els.clearSearch) {
+      els.clearSearch.addEventListener("click", () => {
+        if (els.searchInput) els.searchInput.value = "";
+        state.filterQuery = "";
+        stopAll();
+        applyFilter(true);
+        renderItem();
+        setPhase("idle", "准备就绪");
+      });
+    }
+
+    document.addEventListener("keydown", (e) => {
+      if (e.code === "Space" && e.target === document.body) {
+        e.preventDefault();
+        onPlayPause();
+      }
+    });
+  }
+
+  setInterval(function () {
+    if (
+      state.playing &&
+      window.speechSynthesis &&
+      speechSynthesis.speaking &&
+      speechSynthesis.paused
+    ) {
+      speechSynthesis.resume();
+    }
+  }, 5000);
+
+  if (document.readyState === "loading") {
+    document.addEventListener("DOMContentLoaded", init);
+  } else {
+    init();
+  }
+})();
+
+  </script>
+</body>
+</html>

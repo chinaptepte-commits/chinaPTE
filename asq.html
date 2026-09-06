@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+  <meta name="theme-color" content="#0c0f14" />
+  <meta name="description" content="chinaPTE ASQ 随身听 — 零成本本地 Web Speech 练习" />
+  <title>chinaPTE · ASQ 随身听</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <div class="app">
+    <nav class="site-nav" aria-label="站点导航">
+      <a class="site-nav-brand" href="index.html">chinaPTE</a>
+      <ul class="site-nav-links">
+        <li><a href="index.html">首页</a></li>
+        <li><a href="practice.html" class="is-active">练习中心</a></li>
+        <li><a href="wfd.html">WFD</a></li>
+        <li><a href="rs.html">RS</a></li>
+        <li><a href="vocab.html">单词库</a></li>
+        <li><a href="bank.html">题库</a></li>
+        <li><a href="consult.html">出国咨询</a></li>
+      </ul>
+    </nav>
+
+    <header class="header">
+      <div class="brand">
+        <div class="brand-name">ASQ 随身听</div>
+        <div class="brand-sub">Answer Short Question</div>
+      </div>
+      <div class="stats-pill" id="todayStats" title="今日已练（本地存储）">
+        今天已练 <strong id="todayCount">0</strong>
+      </div>
+    </header>
+
+    <div class="streak-row">
+      <div class="streak-pill">连续 <strong id="streakCount">0</strong> 天</div>
+      <div class="streak-pill" style="background:var(--accent-soft);border-color:rgba(91,141,239,0.25);color:var(--accent)">进度自动续听</div>
+    </div>
+
+    <p class="tip-banner" id="tipBanner">💡 听完立刻短答；答案延迟揭晓</p>
+
+    <div class="unsupported" id="speechWarn" role="alert">
+      当前浏览器不支持 Web Speech API。请换用 Chrome / Edge / Safari。
+    </div>
+
+    <div class="filter-bar">
+      <input type="search" id="itemSearch" placeholder="筛选问题…" autocomplete="off" enterkeyhint="search" />
+      <button type="button" class="btn-ghost" id="btnClearSearch">清除</button>
+    </div>
+
+    <section class="hero">
+      <button type="button" class="btn-play-all" id="btnPlayAll" aria-label="随身听 播放全部">
+        <span class="icon" id="playAllIcon">▶</span>
+        <span class="label-stack">
+          <span id="playAllLabel">随身听 · Play All</span>
+          <span class="label-en">问题 → 中文提示 → 答案揭晓</span>
+        </span>
+      </button>
+    </section>
+
+    <div class="progress-wrap">
+      <div class="progress-meta">
+        <span id="progressText">1 / —</span>
+        <span id="phaseText">准备就绪</span>
+      </div>
+      <div class="progress-bar" role="progressbar" aria-valuemin="0" aria-valuemax="100" aria-valuenow="0">
+        <div class="progress-fill" id="progressFill"></div>
+      </div>
+    </div>
+
+    <article class="now-card" aria-live="polite">
+      <div class="status-badge is-idle" id="statusBadge">
+        <span class="dot"></span>
+        <span id="statusText">待机</span>
+      </div>
+      <p class="sentence-en" id="sentenceEn">点击「随身听」开始，戴上耳机。</p>
+      <p class="sentence-zh" id="sentenceZh">中文解读将显示在这里</p>
+      <div class="answer-reveal" id="answerReveal" hidden></div>
+      <div class="vocab-section">
+        <div class="vocab-label">重点词汇 / 提示</div>
+        <div class="vocab-chips" id="vocabChips"></div>
+      </div>
+    </article>
+
+    <nav class="controls" aria-label="播放控制">
+      <button type="button" class="ctrl-btn" id="btnPrev" title="上一条"><span class="ico">⏮</span><span>上一条</span></button>
+      <button type="button" class="ctrl-btn is-primary" id="btnPlayPause" title="播放 / 暂停"><span class="ico" id="playPauseIcon">▶</span><span id="playPauseLabel">播放</span></button>
+      <button type="button" class="ctrl-btn" id="btnReplay" title="重播"><span class="ico">↺</span><span>重播</span></button>
+      <button type="button" class="ctrl-btn" id="btnNext" title="下一条"><span class="ico">⏭</span><span>下一条</span></button>
+      <button type="button" class="ctrl-btn" id="btnStop" title="停止"><span class="ico">■</span><span>停止</span></button>
+    </nav>
+
+    <div class="options">
+      <div class="speed-group" role="group" aria-label="语速">
+        <button type="button" class="speed-btn" data-speed="0.8">0.8×</button>
+        <button type="button" class="speed-btn is-active" data-speed="1">1×</button>
+        <button type="button" class="speed-btn" data-speed="1.2">1.2×</button>
+      </div>
+      <button type="button" class="toggle is-on" id="btnToggleZh" aria-pressed="true" title="中文解读开关">
+        <span class="toggle-track" aria-hidden="true"></span>
+        <span>中文解读</span>
+      </button>
+    </div>
+
+    <p class="privacy">语音由浏览器 <span>Web Speech API</span> 本地合成 · 不上传 · 零成本</p>
+
+    <div class="lead-blurb">
+      <p><strong>备考之外：</strong>出国劳务 / 海外就业免费评估，不承诺签证结果。</p>
+      <a class="btn-soft" href="consult.html">出国咨询留资</a>
+    </div>
+  </div>
+
+  <script src="data-asq.js"></script>
+  <script src="player.js"></script>
+  <script>
+    ChinaPTEPlayer.create({
+      bankGlobal: "ASQ_BANK",
+      storagePrefix: "chinaPTE_asq",
+      mode: "asq",
+      enRateMul: 0.9,
+      bankName: "ASQ_BANK"
+    });
+  </script>
+</body>
+</html>

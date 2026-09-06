@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+  <meta name="theme-color" content="#0c0f14" />
+  <title>chinaPTE · DI Describe Image</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <div class="app app-wide">
+    <nav class="site-nav" aria-label="站点导航">
+      <a class="site-nav-brand" href="index.html">chinaPTE</a>
+      <ul class="site-nav-links">
+        <li><a href="index.html">首页</a></li>
+        <li><a href="practice.html" class="is-active">练习中心</a></li>
+        <li><a href="wfd.html">WFD</a></li>
+        <li><a href="rs.html">RS</a></li>
+        <li><a href="vocab.html">单词库</a></li>
+        <li><a href="bank.html">题库</a></li>
+        <li><a href="consult.html">出国咨询</a></li>
+      </ul>
+    </nav>
+    <header class="header">
+      <div class="brand">
+        <div class="brand-name">DI 描述图片</div>
+        <div class="brand-sub">看图说话 · 中文要点</div>
+      </div>
+      <div class="stats-pill">共 <strong id="totalCount">0</strong> 题</div>
+    </header>
+    <p class="tip-banner">💡 先观察 25 秒：总述→细节对比→趋势→结论。可用下方提示对照。</p>
+    <div class="filter-bar">
+      <input type="search" id="textSearch" placeholder="筛选…" autocomplete="off" />
+      <select id="typeFilter" class="type-select" hidden></select>
+      <button type="button" class="btn-ghost" id="btnClear">清除</button>
+    </div>
+    <div class="progress-wrap">
+      <div class="progress-meta"><span id="progressText">1 / —</span><span id="phaseText">题库练习</span></div>
+    </div>
+    <article class="now-card text-practice-card">
+      <div class="status-badge is-idle"><span class="dot"></span><span id="typeBadge">练习</span></div>
+      <p class="sentence-en" id="itemEn"></p>
+      <p class="sentence-zh" id="itemZh"></p>
+      <div class="answer-box" id="answerBox" hidden>
+        <div class="vocab-label">参考答案 / 要点</div>
+        <p id="itemAnswer"></p>
+      </div>
+      <div class="vocab-chips" id="vocabChips"></div>
+    </article>
+    <nav class="controls">
+      <button type="button" class="ctrl-btn" id="btnPrev"><span class="ico">⏮</span><span>上一条</span></button>
+      <button type="button" class="ctrl-btn is-primary" id="btnReveal"><span class="ico">👁</span><span>看提示/答案</span></button>
+      <button type="button" class="ctrl-btn" id="btnNext"><span class="ico">⏭</span><span>下一条</span></button>
+      <button type="button" class="ctrl-btn" id="btnSpeak" hidden><span class="ico">🔊</span><span>朗读</span></button>
+    </nav>
+    <div class="lead-blurb">
+      <p><a class="btn-soft" href="practice.html">← 返回练习中心</a>
+      <a class="btn-soft" href="consult.html">出国咨询</a></p>
+    </div>
+  </div>
+  <script src="data-di.js"></script>
+  <script src="text-practice.js"></script>
+  <script>
+    ChinaPTETextPractice.init({
+      bankGlobal: "DI_BANK",
+      storageKey: "chinaPTE_di",
+      enableTTS: false,
+      typeFilter: false
+    });
+  </script>
+</body>
+</html>

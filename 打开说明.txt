@@ -1,0 +1,27 @@
+chinaPTE · 全题型练习站 — 打开说明
+====================================
+
+★ 完整体验请用 Chrome 打开 体验全部功能.html
+   （或 chinaPTE-体验全部功能.html）
+
+1. 推荐：解压 chinaPTE-site.zip 后，用 Chrome / Edge 打开：
+   体验全部功能.html  （全部功能总入口）
+   index.html         （首页）
+   practice.html      （练习中心 · 全部题型入口）
+
+2. 随身听快捷入口：
+   wfd.html   — WFD Write From Dictation（听写）
+   rs.html    — RS Repeat Sentence（跟读）
+   vocab.html — 单词库 / 单词随身听（核心词汇）
+
+3. 单文件双击版（无需整个文件夹）：
+   chinaPTE-随身听.html       — WFD 单文件
+   chinaPTE-RS随身听.html     — RS 单文件
+   chinaPTE-单词随身听.html   — 单词库单文件
+
+4. 远程桌面可能听不到声音；请在实体电脑用 Chrome / Edge 打开。
+   语音由浏览器 Web Speech API 本地合成，无需联网、无需服务器。
+
+5. 本地预览（可选）：
+   python3 -m http.server 8080
+   浏览器访问 http://127.0.0.1:8080/体验全部功能.html

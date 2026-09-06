@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+  <meta name="theme-color" content="#0c0f14" />
+  <meta name="description" content="chinaPTE 出国劳务 / 海外就业免费评估咨询留资" />
+  <title>chinaPTE · 出国咨询</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <div class="app">
+    <nav class="site-nav" aria-label="站点导航">
+      <a class="site-nav-brand" href="index.html">chinaPTE</a>
+      <ul class="site-nav-links">
+        <li><a href="index.html">首页</a></li>
+        <li><a href="practice.html">练习中心</a></li>
+        <li><a href="wfd.html">WFD</a></li>
+        <li><a href="rs.html">RS</a></li>
+        <li><a href="vocab.html">单词库</a></li>
+        <li><a href="bank.html">题库</a></li>
+        <li><a href="consult.html" class="is-active">出国咨询</a></li>
+      </ul>
+    </nav>
+
+    <header class="header">
+      <div class="brand">
+        <div class="brand-name">出国劳务 · 免费评估</div>
+        <div class="brand-sub">海外就业机会咨询（非绑定）</div>
+      </div>
+    </header>
+
+    <div class="bridge-card" style="margin-top:0">
+      <h2>告诉顾问你的目标</h2>
+      <p>
+        填写后可<strong style="color:var(--text)">一键复制摘要</strong>并添加顾问微信。
+        信息默认保存在你本机浏览器（localStorage），本静态站<strong style="color:var(--text)">没有后端收件箱</strong>。
+        正式收资可改用免费 Google 表单嵌入或 Formspree 免费档（见 README）。
+      </p>
+      <p class="disclaimer">我们提供信息与匹配沟通，不承诺签证、工作或移民结果；请以官方政策为准。</p>
+    </div>
+
+    <div class="wechat-box">
+      <div class="wx-label">顾问微信号（占位，请自行替换）</div>
+      <div class="wx-id" id="wechatId">chinaPTE顾问</div>
+      <button type="button" class="btn-ghost" id="btnCopyWx" style="margin-top:10px;width:100%">复制微信号</button>
+    </div>
+
+    <form class="lead-form" id="leadForm" novalidate>
+      <label>
+        姓名
+        <input type="text" name="name" id="leadName" required maxlength="40" placeholder="怎么称呼你" autocomplete="name" />
+      </label>
+      <label>
+        微信 / 手机
+        <input type="text" name="contact" id="leadContact" required maxlength="60" placeholder="微信号或手机号" autocomplete="tel" />
+      </label>
+      <label>
+        目标国家 / 地区
+        <input type="text" name="country" id="leadCountry" required maxlength="40" placeholder="例如：澳大利亚 / 加拿大 / 日本" list="countryHints" />
+        <datalist id="countryHints">
+          <option value="澳大利亚"></option>
+          <option value="新西兰"></option>
+          <option value="加拿大"></option>
+          <option value="日本"></option>
+          <option value="新加坡"></option>
+          <option value="德国"></option>
+          <option value="其他"></option>
+        </datalist>
+      </label>
+      <label>
+        补充说明（可选）
+        <textarea name="note" id="leadNote" rows="3" maxlength="300" placeholder="PTE 目标分、工种意向、时间规划等"></textarea>
+      </label>
+      <button type="submit" class="btn-submit">提交并复制给顾问</button>
+    </form>
+
+    <div class="form-success" id="formSuccess" role="status">
+      <h3>已提交，顾问将联系你</h3>
+      <p id="successDetail">摘要已复制到剪贴板（若浏览器允许）。请添加上方微信号并粘贴发送。本机也已保存一份记录。</p>
+    </div>
+
+    <p class="form-note">
+      真实线上收资建议：在本页嵌入免费 Google Forms iframe，或把表单 action 换成 Formspree 免费档。
+      当前为<strong>零成本 mock</strong>：复制 + localStorage，方便你先试用整站流程。
+    </p>
+
+    <p style="margin-top:16px">
+      <a class="btn-secondary-link" href="practice.html">返回练习中心 随身听继续练习</a>
+    </p>
+
+    <footer class="site-footer">
+      chinaPTE · 出国劳务中介方向运营 · 合规信息咨询
+    </footer>
+  </div>
+
+  <div class="copy-toast" id="copyToast">已复制</div>
+  <script src="lead.js"></script>
+</body>
+</html>

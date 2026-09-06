@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+  <meta name="theme-color" content="#0c0f14" />
+  <meta name="description" content="chinaPTE 单词库 · PTE 核心词汇随身听" />
+  <title>chinaPTE · 单词库 / 单词随身听</title>
+  <link rel="stylesheet" href="styles.css" />
+  <style>
+    .vocab-modes { display:flex; flex-wrap:wrap; gap:8px; margin:8px 0 12px; }
+    .vocab-modes .type-tab { cursor:pointer; }
+    .vocab-actions { display:flex; flex-wrap:wrap; gap:8px; margin:10px 0; }
+    .vocab-row {
+      display:grid; grid-template-columns: 1fr auto; gap:2px 10px;
+      width:100%; text-align:left; padding:10px 12px; margin-bottom:6px;
+      background:var(--bg-elevated); border:1px solid var(--border); border-radius:var(--radius-sm);
+    }
+    .vocab-row.is-active { border-color:rgba(91,141,239,.5); background:var(--accent-soft); }
+    .vocab-row.is-mastered .vr-word { color:var(--success); }
+    .vocab-row.is-note { box-shadow: inset 3px 0 0 var(--accent); }
+    .vr-word { font-weight:600; font-size:0.95rem; }
+    .vr-gloss { color:var(--text-muted); font-size:0.82rem; grid-column:1; }
+    .vr-ph { color:var(--text-muted); font-size:0.75rem; grid-column:2; grid-row:1 / span 2; align-self:center; }
+    #wordList { max-height:280px; overflow:auto; margin-top:12px; padding-right:4px; }
+  </style>
+</head>
+<body>
+  <div class="app">
+    <nav class="site-nav" aria-label="站点导航">
+      <a class="site-nav-brand" href="index.html">chinaPTE</a>
+      <ul class="site-nav-links">
+        <li><a href="index.html">首页</a></li>
+        <li><a href="practice.html">练习中心</a></li>
+        <li><a href="wfd.html">WFD</a></li>
+        <li><a href="rs.html">RS</a></li>
+        <li><a href="vocab.html" class="is-active">单词库</a></li>
+        <li><a href="bank.html">题库</a></li>
+        <li><a href="consult.html">出国咨询</a></li>
+      </ul>
+    </nav>
+
+    <header class="header">
+      <div class="brand">
+        <div class="brand-name">单词库 · 随身听</div>
+        <div class="brand-sub">PTE 核心高频 / 学术词汇</div>
+      </div>
+      <div class="stats-pill" id="todayStats">今天已听 <strong id="todayCount">0</strong></div>
+    </header>
+
+    <p class="tip-banner">💡 戴耳机反复听，不必盯屏 · 英文 → 拼读 → 中文释义 → 例句</p>
+
+    <div class="unsupported" id="speechWarn" role="alert" style="display:none">
+      当前浏览器不支持 Web Speech API。请换用 Chrome / Edge / Safari。
+    </div>
+
+    <div class="filter-bar">
+      <input type="search" id="itemSearch" placeholder="搜索英文 / 中文释义…" autocomplete="off" enterkeyhint="search" />
+      <button type="button" class="btn-ghost" id="btnClearSearch">清除</button>
+    </div>
+
+    <div class="vocab-modes" role="group" aria-label="听词模式">
+      <button type="button" class="type-tab is-active" data-vocab-mode="all">全部</button>
+      <button type="button" class="type-tab" data-vocab-mode="notebook">只听生词本</button>
+      <button type="button" class="type-tab" data-vocab-mode="unmastered">只听未掌握</button>
+    </div>
+    <p class="privacy" id="metaStats">词库加载中…</p>
+
+    <section class="hero">
+      <button type="button" class="btn-play-all" id="btnPlayAll" aria-label="单词随身听">
+        <span class="icon" id="playAllIcon">▶</span>
+        <span class="label-stack">
+          <span id="playAllLabel">单词随身听 · Play All</span>
+          <span class="label-en">单词 → 拼读 → 释义 → 例句</span>
+        </span>
+      </button>
+    </section>
+
+    <div class="progress-wrap">
+      <div class="progress-meta">
+        <span id="progressText">1 / —</span>
+        <span id="phaseText">准备就绪</span>
+      </div>
+      <div class="progress-bar" role="progressbar" aria-valuemin="0" aria-valuemax="100" aria-valuenow="0">
+        <div class="progress-fill" id="progressFill"></div>
+      </div>
+    </div>
+
+    <article class="now-card" aria-live="polite">
+      <div class="status-badge is-idle" id="statusBadge">
+        <span class="dot"></span>
+        <span id="statusText">待机</span>
+      </div>
+      <p class="sentence-en" id="sentenceEn">点击「单词随身听」开始</p>
+      <p class="sentence-zh" id="sentenceZh">释义与例句将显示在这里</p>
+      <div class="vocab-actions">
+        <button type="button" class="toggle" id="btnMastered" aria-pressed="false"><span class="toggle-track"></span><span>已掌握</span></button>
+        <button type="button" class="toggle" id="btnNotebook" aria-pressed="false"><span class="toggle-track"></span><span>生词本</span></button>
+      </div>
+    </article>
+
+    <nav class="controls" aria-label="播放控制">
+      <button type="button" class="ctrl-btn" id="btnPrev"><span class="ico">⏮</span><span>上一个</span></button>
+      <button type="button" class="ctrl-btn is-primary" id="btnPlayPause"><span class="ico" id="playPauseIcon">▶</span><span id="playPauseLabel">播放</span></button>
+      <button type="button" class="ctrl-btn" id="btnReplay"><span class="ico">↺</span><span>重播</span></button>
+      <button type="button" class="ctrl-btn" id="btnNext"><span class="ico">⏭</span><span>下一个</span></button>
+      <button type="button" class="ctrl-btn" id="btnStop"><span class="ico">■</span><span>停止</span></button>
+    </nav>
+
+    <div class="options">
+      <div class="speed-group" role="group" aria-label="语速">
+        <button type="button" class="speed-btn" data-speed="0.8">0.8×</button>
+        <button type="button" class="speed-btn is-active" data-speed="1">1×</button>
+        <button type="button" class="speed-btn" data-speed="1.2">1.2×</button>
+      </div>
+      <button type="button" class="toggle is-on" id="btnToggleExample" aria-pressed="true"><span class="toggle-track"></span><span>例句</span></button>
+      <button type="button" class="toggle is-on" id="btnToggleSpell" aria-pressed="true"><span class="toggle-track"></span><span>拼读</span></button>
+    </div>
+
+    <div id="wordList" aria-label="单词列表"></div>
+
+    <p class="privacy">语音由浏览器 Web Speech API 本地合成 · 不上传 · 零成本</p>
+    <div class="lead-blurb">
+      <p><strong>备考之外：</strong>出国劳务 / 海外就业免费评估，不承诺签证结果。</p>
+      <a class="btn-soft" href="consult.html">出国咨询留资</a>
+    </div>
+  </div>
+  <script src="data-vocab.js"></script>
+  <script src="vocab-app.js"></script>
+</body>
+</html>

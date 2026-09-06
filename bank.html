@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+  <meta name="theme-color" content="#0c0f14" />
+  <title>chinaPTE · 题库</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <div class="app app-wide">
+    <nav class="site-nav" aria-label="站点导航">
+      <a class="site-nav-brand" href="index.html">chinaPTE</a>
+      <ul class="site-nav-links">
+        <li><a href="index.html">首页</a></li>
+        <li><a href="practice.html">练习中心</a></li>
+        <li><a href="wfd.html">WFD</a></li>
+        <li><a href="rs.html">RS</a></li>
+        <li><a href="vocab.html">单词库</a></li>
+        <li><a href="bank.html" class="is-active">题库</a></li>
+        <li><a href="consult.html">出国咨询</a></li>
+      </ul>
+    </nav>
+
+    <header class="header">
+      <div class="brand">
+        <div class="brand-name">综合题库</div>
+        <div class="brand-sub">按题型筛选 · 跳转练习页</div>
+      </div>
+    </header>
+
+    <div class="type-tabs" id="typeTabs" role="tablist"></div>
+
+    <div class="filter-bar">
+      <input type="search" id="bankSearch" placeholder="搜索英文 / 中文 / 词汇…" autocomplete="off" enterkeyhint="search" />
+      <button type="button" class="btn-ghost" id="bankClear">清除</button>
+    </div>
+    <p class="bank-meta" id="bankMeta">加载中…</p>
+    <ul class="bank-list" id="bankList"></ul>
+    <div class="bank-empty" id="bankEmpty" hidden>没有匹配的条目</div>
+
+    <div class="lead-blurb">
+      <p><strong>听完想了解海外路径？</strong>免费出国劳务 / 就业评估咨询。</p>
+      <a class="btn-soft" href="consult.html">出国咨询</a>
+    </div>
+    <footer class="site-footer">数据本地 · 点击跳转对应练习页</footer>
+  </div>
+
+  <script src="data.js"></script>
+  <script src="data-rs.js"></script>
+  <script src="data-rl.js"></script>
+  <script src="data-asq.js"></script>
+  <script src="data-sst.js"></script>
+  <script src="data-hiw.js"></script>
+  <script src="data-ra.js"></script>
+  <script src="data-di.js"></script>
+  <script src="data-swt.js"></script>
+  <script src="data-essay.js"></script>
+  <script src="data-reading.js"></script>
+  <script src="data-listening.js"></script>
+  <script src="bank.js"></script>
+</body>
+</html>

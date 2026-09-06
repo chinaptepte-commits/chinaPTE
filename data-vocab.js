@@ -1,0 +1,8735 @@
+/**
+ * chinaPTE · PTE 核心词汇库
+ * Total: 663
+ */
+(function (global) {
+  "use strict";
+  var VOCAB_BANK = [
+  {
+    "id": 1,
+    "word": "abandon",
+    "spelling": "A-B-A-N-D-O-N",
+    "phonetic": "/əˈbændən/",
+    "gloss": "放弃",
+    "tip": "a-+bandon",
+    "example": "They had to abandon the project.",
+    "exampleZh": "他们不得不放弃该项目。",
+    "tags": [
+      "academic",
+      "verb"
+    ]
+  },
+  {
+    "id": 2,
+    "word": "abstract",
+    "spelling": "A-B-S-T-R-A-C-T",
+    "phonetic": "/ˈæbstrækt/",
+    "gloss": "摘要；抽象的",
+    "tip": "论文 abstract",
+    "example": "Read the abstract first.",
+    "exampleZh": "请先阅读摘要。",
+    "tags": [
+      "academic"
+    ]
+  },
+  {
+    "id": 3,
+    "word": "academic",
+    "spelling": "A-C-A-D-E-M-I-C",
+    "phonetic": "/ˌækəˈdemɪk/",
+    "gloss": "学术的",
+    "tip": "academ-+-ic",
+    "example": "Academic writing needs structure.",
+    "exampleZh": "学术写作需要结构。",
+    "tags": [
+      "academic",
+      "campus"
+    ]
+  },
+  {
+    "id": 4,
+    "word": "access",
+    "spelling": "A-C-C-E-S-S",
+    "phonetic": "/ˈækses/",
+    "gloss": "获取",
+    "tip": "have access to",
+    "example": "Students have access to journals.",
+    "exampleZh": "学生可获取期刊。",
+    "tags": [
+      "campus"
+    ]
+  },
+  {
+    "id": 5,
+    "word": "accurate",
+    "spelling": "A-C-C-U-R-A-T-E",
+    "phonetic": "/ˈækjərət/",
+    "gloss": "准确的",
+    "tip": "accuracy",
+    "example": "Data must be accurate.",
+    "exampleZh": "数据必须准确。",
+    "tags": [
+      "academic"
+    ]
+  },
+  {
+    "id": 6,
+    "word": "achieve",
+    "spelling": "A-C-H-I-E-V-E",
+    "phonetic": "/əˈtʃiːv/",
+    "gloss": "实现",
+    "tip": "achievement",
+    "example": "She achieved a high score.",
+    "exampleZh": "她取得了高分。",
+    "tags": [
+      "verb",
+      "campus"
+    ]
+  },
+  {
+    "id": 7,
+    "word": "acknowledge",
+    "spelling": "A-C-K-N-O-W-L-E-D-G-E",
+    "phonetic": "/əkˈnɒlɪdʒ/",
+    "gloss": "承认；致谢",
+    "tip": "ack-+knowledge",
+    "example": "Acknowledge all sources.",
+    "exampleZh": "致谢所有来源。",
+    "tags": [
+      "academic",
+      "verb"
+    ]
+  },
+  {
+    "id": 8,
+    "word": "acquire",
+    "spelling": "A-C-Q-U-I-R-E",
+    "phonetic": "/əˈkwaɪə/",
+    "gloss": "获得",
+    "tip": "acquisition",
+    "example": "Children acquire language naturally.",
+    "exampleZh": "儿童自然习得语言。",
+    "tags": [
+      "verb",
+      "academic"
+    ]
+  },
+  {
+    "id": 9,
+    "word": "adapt",
+    "spelling": "A-D-A-P-T",
+    "phonetic": "/əˈdæpt/",
+    "gloss": "适应",
+    "tip": "adaptation",
+    "example": "Students must adapt to new cultures.",
+    "exampleZh": "学生必须适应新文化。",
+    "tags": [
+      "verb",
+      "campus"
+    ]
+  },
+  {
+    "id": 10,
+    "word": "adequate",
+    "spelling": "A-D-E-Q-U-A-T-E",
+    "phonetic": "/ˈædɪkwət/",
+    "gloss": "足够的",
+    "tip": "inadequate",
+    "example": "Funding is not adequate.",
+    "exampleZh": "资金不足。",
+    "tags": [
+      "academic"
+    ]
+  },
+  {
+    "id": 11,
+    "word": "adjust",
+    "spelling": "A-D-J-U-S-T",
+    "phonetic": "/əˈdʒʌst/",
+    "gloss": "调整",
+    "tip": "ad-+just",
+    "example": "Adjust the volume please.",
+    "exampleZh": "请调整音量。",
+    "tags": [
+      "verb"
+    ]
+  },
+  {
+    "id": 12,
+    "word": "affect",
+    "spelling": "A-F-F-E-C-T",
+    "phonetic": "/əˈfekt/",
+    "gloss": "影响（动词）",
+    "tip": "≠ effect",
+    "example": "Climate change affects agriculture.",
+    "exampleZh": "气候变化影响农业。",
+    "tags": [
+      "verb",
+      "academic"
+    ]
+  },
+  {
+    "id": 13,
+    "word": "allocate",
+    "spelling": "A-L-L-O-C-A-T-E",
+    "phonetic": "/ˈæləkeɪt/",
+    "gloss": "分配",
+    "tip": "allocation",
+    "example": "Allocate scholarships fairly.",
+    "exampleZh": "公平分配奖学金。",
+    "tags": [
+      "verb",
+      "academic"
+    ]
+  },
+  {
+    "id": 14,
+    "word": "alternative",
+    "spelling": "A-L-T-E-R-N-A-T-I-V-E",
+    "phonetic": "/ɔːlˈtɜːnətɪv/",
+    "gloss": "替代方案",
+    "tip": "alter-",
+    "example": "We need alternative energy.",
+    "exampleZh": "我们需要替代能源。",
+    "tags": [
+      "academic"
+    ]
+  },
+  {
+    "id": 15,
+    "word": "analyse",
+    "spelling": "A-N-A-L-Y-S-E",
+    "phonetic": "/ˈænəlaɪz/",
+    "gloss": "分析",
+    "tip": "analysis",
+    "example": "Analyse the survey results.",
+    "exampleZh": "分析调查结果。",
+    "tags": [
+      "verb",
+      "academic"
+    ]
+  },
+  {
+    "id": 16,
+    "word": "annual",
+    "spelling": "A-N-N-U-A-L",
+    "phonetic": "/ˈænjuəl/",
+    "gloss": "每年的",
+    "tip": "ann-",
+    "example": "An annual career fair is held.",
+    "exampleZh": "举办年度招聘会。",
+    "tags": [
+      "campus"
+    ]
+  },
+  {
+    "id": 17,
+    "word": "approach",
+    "spelling": "A-P-P-R-O-A-C-H",
+    "phonetic": "/əˈprəʊtʃ/",
+    "gloss": "方法",
+    "tip": "systematic approach",
+    "example": "A systematic approach helps.",
+    "exampleZh": "系统方法有帮助。",
+    "tags": [
+      "academic"
+    ]
+  },
+  {
+    "id": 18,
+    "word": "appropriate",
+    "spelling": "A-P-P-R-O-P-R-I-A-T-E",
+    "phonetic": "/əˈprəʊpriət/",
+    "gloss": "合适的",
+    "tip": "appropriateness",
+    "example": "Use an appropriate tone.",
+    "exampleZh": "使用合适语气。",
+    "tags": [
+      "academic"
+    ]
+  },
+  {
+    "id": 19,
+    "word": "assess",
+    "spelling": "A-S-S-E-S-S",
+    "phonetic": "/əˈses/",
+    "gloss": "评估",
+    "tip": "assessment",
+    "example": "Teachers assess students.",
+    "exampleZh": "教师评估学生。",
+    "tags": [
+      "verb",
+      "campus"
+    ]
+  },
+  {
+    "id": 20,
+    "word": "assign",
+    "spelling": "A-S-S-I-G-N",
+    "phonetic": "/əˈsaɪn/",
+    "gloss": "布置",
+    "tip": "assignment",
+    "example": "Assign homework weekly.",
+    "exampleZh": "每周布置作业。",
+    "tags": [
+      "verb",
+      "campus"
+    ]
+  },
+  {
+    "id": 21,
+    "word": "assume",
+    "spelling": "A-S-S-U-M-E",
+    "phonetic": "/əˈsjuːm/",
+    "gloss": "假设",
+    "tip": "assumption",
+    "example": "Do not assume causation.",
+    "exampleZh": "不要假设因果。",
+    "tags": [
+      "verb",
+      "academic"
+    ]
+  },
+  {
+    "id": 22,
+    "word": "attach",
+    "spelling": "A-T-T-A-C-H",
+    "phonetic": "/əˈtætʃ/",
+    "gloss": "附上",
+    "tip": "attachment",
+    "example": "Attach your resume.",
+    "exampleZh": "附上简历。",
+    "tags": [
+      "verb",
+      "campus"
+    ]
+  },
+  {
+    "id": 23,
+    "word": "attitude",
+    "spelling": "A-T-T-I-T-U-D-E",
+    "phonetic": "/ˈætɪtjuːd/",
+    "gloss": "态度",
+    "tip": "atti-+tude",
+    "example": "A positive attitude helps.",
+    "exampleZh": "积极态度有帮助。",
+    "tags": [
+      "academic"
+    ]
+  },
+  {
+    "id": 24,
+    "word": "authority",
+    "spelling": "A-U-T-H-O-R-I-T-Y",
+    "phonetic": "/ɔːˈθɒrəti/",
+    "gloss": "权威",
+    "tip": "author+-ity",
+    "example": "Cite a reliable authority.",
+    "exampleZh": "引用可靠权威。",
+    "tags": [
+      "academic"
+    ]
+  },
+  {
+    "id": 25,
+    "word": "available",
+    "spelling": "A-V-A-I-L-A-B-L-E",
+    "phonetic": "/əˈveɪləbl/",
+    "gloss": "可获得的",
+    "tip": "avail+-able",
+    "example": "Computers are available.",
+    "exampleZh": "电脑可用。",
+    "tags": [
+      "campus"
+    ]
+  },
+  {
+    "id": 26,
+    "word": "aware",
+    "spelling": "A-W-A-R-E",
+    "phonetic": "/əˈweə/",
+    "gloss": "意识到的",
+    "tip": "be aware of",
+    "example": "Be aware of plagiarism rules.",
+    "exampleZh": "了解抄袭规定。",
+    "tags": [
+      "campus",
+      "academic"
+    ]
+  },
+  {
+    "id": 27,
+    "word": "benefit",
+    "spelling": "B-E-N-E-F-I-T",
+    "phonetic": "/ˈbenɪfɪt/",
+    "gloss": "益处",
+    "tip": "bene-",
+    "example": "Practice benefits fluency.",
+    "exampleZh": "练习有益流利度。",
+    "tags": [
+      "verb"
+    ]
+  },
+  {
+    "id": 28,
+    "word": "bias",
+    "spelling": "B-I-A-S",
+    "phonetic": "/ˈbaɪəs/",
+    "gloss": "偏见",
+    "tip": "biased",
+    "example": "Avoid bias in research.",
+    "exampleZh": "研究中避免偏见。",
+    "tags": [
+      "academic"
+    ]
+  },
+  {
+    "id": 29,
+    "word": "brief",
+    "spelling": "B-R-I-E-F",
+    "phonetic": "/briːf/",
+    "gloss": "简短的",
+    "tip": "in brief",
+    "example": "Give a brief summary.",
+    "exampleZh": "给出简要摘要。",
+    "tags": [
+      "academic"
+    ]
+  },
+  {
+    "id": 30,
+    "word": "capable",
+    "spelling": "C-A-P-A-B-L-E",
+    "phonetic": "/ˈkeɪpəbl/",
+    "gloss": "有能力的",
+    "tip": "be capable of",
+    "example": "She is capable of the task.",
+    "exampleZh": "她有能力完成任务。",
+    "tags": [
+      "academic"
+    ]
+  },
+  {
+    "id": 31,
+    "word": "capacity",
+    "spelling": "C-A-P-A-C-I-T-Y",
+    "phonetic": "/kəˈpæsəti/",
+    "gloss": "容量",
+    "tip": "cap-",
+    "example": "Hall capacity is 300.",
+    "exampleZh": "礼堂可容纳300人。",
+    "tags": [
+      "campus"
+    ]
+  },
+  {
+    "id": 32,
+    "word": "category",
+    "spelling": "C-A-T-E-G-O-R-Y",
+    "phonetic": "/ˈkætəɡəri/",
+    "gloss": "类别",
+    "tip": "categories",
+    "example": "Put words into categories.",
+    "exampleZh": "把词归类。",
+    "tags": [
+      "academic"
+    ]
+  },
+  {
+    "id": 33,
+    "word": "challenge",
+    "spelling": "C-H-A-L-L-E-N-G-E",
+    "phonetic": "/ˈtʃælɪndʒ/",
+    "gloss": "挑战",
+    "tip": "ch=/tʃ/",
+    "example": "Time management is a challenge.",
+    "exampleZh": "时间管理是挑战。",
+    "tags": [
+      "campus"
+    ]
+  },
+  {
+    "id": 34,
+    "word": "circumstance",
+    "spelling": "C-I-R-C-U-M-S-T-A-N-C-E",
+    "phonetic": "/ˈsɜːkəmstəns/",
+    "gloss": "情况",
+    "tip": "circum-",
+    "example": "Under these circumstances we delay.",
+    "exampleZh": "在此情况下我们延期。",
+    "tags": [
+      "academic"
+    ]
+  },
+  {
+    "id": 35,
+    "word": "cite",
+    "spelling": "C-I-T-E",
+    "phonetic": "/saɪt/",
+    "gloss": "引用",
+    "tip": "≠ site/sight",
+    "example": "Always cite your sources.",
+    "exampleZh": "务必引用来源。",
+    "tags": [
+      "verb",
+      "academic"
+    ]
+  },
+  {
+    "id": 36,
+    "word": "clarify",
+    "spelling": "C-L-A-R-I-F-Y",
+    "phonetic": "/ˈklærɪfaɪ/",
+    "gloss": "澄清",
+    "tip": "clear→clarify",
+    "example": "Could you clarify this point?",
+    "exampleZh": "请澄清这一点？",
+    "tags": [
+      "verb",
+      "academic"
+    ]
+  },
+  {
+    "id": 37,
+    "word": "clause",
+    "spelling": "C-L-A-U-S-E",
+    "phonetic": "/klɔːz/",
+    "gloss": "从句；条款",
+    "tip": "relative clause",
+    "example": "This has a relative clause.",
+    "exampleZh": "这含关系从句。",
+    "tags": [
+      "academic"
+    ]
+  },
+  {
+    "id": 38,
+    "word": "coherent",
+    "spelling": "C-O-H-E-R-E-N-T",
+    "phonetic": "/kəʊˈhɪərənt/",
+    "gloss": "连贯的",
+    "tip": "co-+here",
+    "example": "Write a coherent paragraph.",
+    "exampleZh": "写连贯段落。",
+    "tags": [
+      "academic"
+    ]
+  },
+  {
+    "id": 39,
+    "word": "colleague",
+    "spelling": "C-O-L-L-E-A-G-U-E",
+    "phonetic": "/ˈkɒliːɡ/",
+    "gloss": "同事",
+    "tip": "双写l",
+    "example": "Discuss with colleagues.",
+    "exampleZh": "与同事讨论。",
+    "tags": [
+      "campus"
+    ]
+  },
+  {
+    "id": 40,
+    "word": "comment",
+    "spelling": "C-O-M-M-E-N-T",
+    "phonetic": "/ˈkɒment/",
+    "gloss": "评论",
+    "tip": "comment on",
+    "example": "Tutor left comments.",
+    "exampleZh": "导师留了评语。",
+    "tags": [
+      "campus"
+    ]
+  },
+  {
+    "id": 41,
+    "word": "commit",
+    "spelling": "C-O-M-M-I-T",
+    "phonetic": "/kəˈmɪt/",
+    "gloss": "承诺",
+    "tip": "commit to",
+    "example": "Commit to regular practice.",
+    "exampleZh": "坚持定期练习。",
+    "tags": [
+      "verb"
+    ]
+  },
+  {
+    "id": 42,
+    "word": "communicate",
+    "spelling": "C-O-M-M-U-N-I-C-A-T-E",
+    "phonetic": "/kəˈmjuːnɪkeɪt/",
+    "gloss": "交流",
+    "tip": "communication",
+    "example": "Communicate with staff by email.",
+    "exampleZh": "用电邮与教职工沟通。",
+    "tags": [
+      "verb",
+      "campus"
+    ]
+  },
+  {
+    "id": 43,
+    "word": "community",
+    "spelling": "C-O-M-M-U-N-I-T-Y",
+    "phonetic": "/kəˈmjuːnəti/",
+    "gloss": "社区",
+    "tip": "commun-",
+    "example": "Help the local community.",
+    "exampleZh": "帮助本地社区。",
+    "tags": [
+      "academic"
+    ]
+  },
+  {
+    "id": 44,
+    "word": "compensate",
+    "spelling": "C-O-M-P-E-N-S-A-T-E",
+    "phonetic": "/ˈkɒmpenseɪt/",
+    "gloss": "补偿",
+    "tip": "com-+pens",
+    "example": "Compensate for the delay.",
+    "exampleZh": "补偿延误。",
+    "tags": [
+      "verb"
+    ]
+  },
+  {
+    "id": 45,
+    "word": "complex",
+    "spelling": "C-O-M-P-L-E-X",
+    "phonetic": "/ˈkɒmpleks/",
+    "gloss": "复杂的",
+    "tip": "complexity",
+    "example": "The issue is complex.",
+    "exampleZh": "问题复杂。",
+    "tags": [
+      "academic"
+    ]
+  },
+  {
+    "id": 46,
+    "word": "component",
+    "spelling": "C-O-M-P-O-N-E-N-T",
+    "phonetic": "/kəmˈpəʊnənt/",
+    "gloss": "组成部分",
+    "tip": "com-+pon",
+    "example": "Each component matters.",
+    "exampleZh": "每个部分都重要。",
+    "tags": [
+      "academic"
+    ]
+  },
+  {
+    "id": 47,
+    "word": "comprehensive",
+    "spelling": "C-O-M-P-R-E-H-E-N-S-I-V-E",
+    "phonetic": "/ˌkɒmprɪˈhensɪv/",
+    "gloss": "全面的",
+    "tip": "comprehend",
+    "example": "A comprehensive review.",
+    "exampleZh": "全面综述。",
+    "tags": [
+      "academic"
+    ]
+  },
+  {
+    "id": 48,
+    "word": "comprise",
+    "spelling": "C-O-M-P-R-I-S-E",
+    "phonetic": "/kəmˈpraɪz/",
+    "gloss": "包含",
+    "tip": "consist of 近义",
+    "example": "The course comprises labs.",
+    "exampleZh": "课程包括实验。",
+    "tags": [
+      "verb",
+      "academic"
+    ]
+  },
+  {
+    "id": 49,
+    "word": "concentrate",
+    "spelling": "C-O-N-C-E-N-T-R-A-T-E",
+    "phonetic": "/ˈkɒnsntreɪt/",
+    "gloss": "集中",
+    "tip": "concentrate on",
+    "example": "Hard to concentrate here.",
+    "exampleZh": "这里很难集中。",
+    "tags": [
+      "verb",
+      "campus"
+    ]
+  },
+  {
+    "id": 50,
+    "word": "concept",
+    "spelling": "C-O-N-C-E-P-T",
+    "phonetic": "/ˈkɒnsept/",
+    "gloss": "概念",
+    "tip": "con-+cept",
+    "example": "Explain the key concept.",
+    "exampleZh": "解释关键概念。",
+    "tags": [
+      "academic"
+    ]
+  },
+  {
+    "id": 51,
+    "word": "conclude",
+    "spelling": "C-O-N-C-L-U-D-E",
+    "phonetic": "/kənˈkluːd/",
+    "gloss": "得出结论",
+    "tip": "conclusion",
+    "example": "We can conclude it works.",
+    "exampleZh": "可得出其有效。",
+    "tags": [
+      "verb",
+      "academic"
+    ]
+  },
+  {
+    "id": 52,
+    "word": "conduct",
+    "spelling": "C-O-N-D-U-C-T",
+    "phonetic": "/kənˈdʌkt/",
+    "gloss": "进行",
+    "tip": "conduct research",
+    "example": "Scientists conduct experiments.",
+    "exampleZh": "科学家做实验。",
+    "tags": [
+      "verb",
+      "academic"
+    ]
+  },
+  {
+    "id": 53,
+    "word": "confirm",
+    "spelling": "C-O-N-F-I-R-M",
+    "phonetic": "/kənˈfɜːm/",
+    "gloss": "确认",
+    "tip": "con-+firm",
+    "example": "Confirm your attendance.",
+    "exampleZh": "确认出席。",
+    "tags": [
+      "verb",
+      "campus"
+    ]
+  },
+  {
+    "id": 54,
+    "word": "conflict",
+    "spelling": "C-O-N-F-L-I-C-T",
+    "phonetic": "/ˈkɒnflɪkt/",
+    "gloss": "冲突",
+    "tip": "con-+flict",
+    "example": "A conflict between theories.",
+    "exampleZh": "理论间冲突。",
+    "tags": [
+      "academic"
+    ]
+  },
+  {
+    "id": 55,
+    "word": "consent",
+    "spelling": "C-O-N-S-E-N-T",
+    "phonetic": "/kənˈsent/",
+    "gloss": "同意",
+    "tip": "informed consent",
+    "example": "Give written consent.",
+    "exampleZh": "给出书面同意。",
+    "tags": [
+      "academic"
+    ]
+  },
+  {
+    "id": 56,
+    "word": "considerable",
+    "spelling": "C-O-N-S-I-D-E-R-A-B-L-E",
+    "phonetic": "/kənˈsɪdərəbl/",
+    "gloss": "相当大的",
+    "tip": "consider",
+    "example": "Considerable progress.",
+    "exampleZh": "相当大的进展。",
+    "tags": [
+      "academic"
+    ]
+  },
+  {
+    "id": 57,
+    "word": "consist",
+    "spelling": "C-O-N-S-I-S-T",
+    "phonetic": "/kənˈsɪst/",
+    "gloss": "由…组成",
+    "tip": "consist of",
+    "example": "Test consists of four parts.",
+    "exampleZh": "考试分四部分。",
+    "tags": [
+      "verb"
+    ]
+  },
+  {
+    "id": 58,
+    "word": "constant",
+    "spelling": "C-O-N-S-T-A-N-T",
+    "phonetic": "/ˈkɒnstənt/",
+    "gloss": "不断的",
+    "tip": "constancy",
+    "example": "Keep a constant schedule.",
+    "exampleZh": "保持稳定计划。",
+    "tags": [
+      "academic"
+    ]
+  },
+  {
+    "id": 59,
+    "word": "constitute",
+    "spelling": "C-O-N-S-T-I-T-U-T-E",
+    "phonetic": "/ˈkɒnstɪtjuːt/",
+    "gloss": "构成",
+    "tip": "constitution",
+    "example": "Factors constitute a risk.",
+    "exampleZh": "因素构成风险。",
+    "tags": [
+      "verb",
+      "academic"
+    ]
+  },
+  {
+    "id": 60,
+    "word": "construct",
+    "spelling": "C-O-N-S-T-R-U-C-T",
+    "phonetic": "/kənˈstrʌkt/",
+    "gloss": "构建",
+    "tip": "construction",
+    "example": "Construct arguments with evidence.",
+    "exampleZh": "用证据构建论点。",
+    "tags": [
+      "verb",
+      "academic"
+    ]
+  },
+  {
+    "id": 61,
+    "word": "consult",
+    "spelling": "C-O-N-S-U-L-T",
+    "phonetic": "/kənˈsʌlt/",
+    "gloss": "咨询",
+    "tip": "consultation",
+    "example": "Consult your advisor.",
+    "exampleZh": "咨询导师。",
+    "tags": [
+      "verb",
+      "campus"
+    ]
+  },
+  {
+    "id": 62,
+    "word": "consume",
+    "spelling": "C-O-N-S-U-M-E",
+    "phonetic": "/kənˈsjuːm/",
+    "gloss": "消耗",
+    "tip": "consumer",
+    "example": "Households consume energy.",
+    "exampleZh": "家庭消耗能源。",
+    "tags": [
+      "verb"
+    ]
+  },
+  {
+    "id": 63,
+    "word": "contemporary",
+    "spelling": "C-O-N-T-E-M-P-O-R-A-R-Y",
+    "phonetic": "/kənˈtemprəri/",
+    "gloss": "当代的",
+    "tip": "tempor",
+    "example": "Contemporary art history.",
+    "exampleZh": "当代艺术史。",
+    "tags": [
+      "academic"
+    ]
+  },
+  {
+    "id": 64,
+    "word": "context",
+    "spelling": "C-O-N-T-E-X-T",
+    "phonetic": "/ˈkɒntekst/",
+    "gloss": "语境",
+    "tip": "con-+text",
+    "example": "Guess from context.",
+    "exampleZh": "根据语境猜测。",
+    "tags": [
+      "academic"
+    ]
+  },
+  {
+    "id": 65,
+    "word": "contract",
+    "spelling": "C-O-N-T-R-A-C-T",
+    "phonetic": "/ˈkɒntrækt/",
+    "gloss": "合同",
+    "tip": "签约动词重音后",
+    "example": "Read the contract carefully.",
+    "exampleZh": "仔细阅读合同。",
+    "tags": [
+      "academic"
+    ]
+  },
+  {
+    "id": 66,
+    "word": "contrast",
+    "spelling": "C-O-N-T-R-A-S-T",
+    "phonetic": "/ˈkɒntrɑːst/",
+    "gloss": "对比",
+    "tip": "in contrast",
+    "example": "Contrast the two methods.",
+    "exampleZh": "对比两种方法。",
+    "tags": [
+      "academic"
+    ]
+  },
+  {
+    "id": 67,
+    "word": "contribute",
+    "spelling": "C-O-N-T-R-I-B-U-T-E",
+    "phonetic": "/kənˈtrɪbjuːt/",
+    "gloss": "贡献",
+    "tip": "contribution",
+    "example": "Factors contribute to success.",
+    "exampleZh": "因素促成成功。",
+    "tags": [
+      "verb"
+    ]
+  },
+  {
+    "id": 68,
+    "word": "controversy",
+    "spelling": "C-O-N-T-R-O-V-E-R-S-Y",
+    "phonetic": "/ˈkɒntrəvɜːsi/",
+    "gloss": "争议",
+    "tip": "controversial",
+    "example": "The policy caused controversy.",
+    "exampleZh": "政策引发争议。",
+    "tags": [
+      "academic"
+    ]
+  },
+  {
+    "id": 69,
+    "word": "convert",
+    "spelling": "C-O-N-V-E-R-T",
+    "phonetic": "/kənˈvɜːt/",
+    "gloss": "转换",
+    "tip": "con-+vert",
+    "example": "Convert to a percentage.",
+    "exampleZh": "换算成百分比。",
+    "tags": [
+      "verb"
+    ]
+  },
+  {
+    "id": 70,
+    "word": "convince",
+    "spelling": "C-O-N-V-I-N-C-E",
+    "phonetic": "/kənˈvɪns/",
+    "gloss": "说服",
+    "tip": "convinced",
+    "example": "Evidence should convince readers.",
+    "exampleZh": "证据应说服读者。",
+    "tags": [
+      "verb",
+      "academic"
+    ]
+  },
+  {
+    "id": 71,
+    "word": "cooperate",
+    "spelling": "C-O-O-P-E-R-A-T-E",
+    "phonetic": "/kəʊˈɒpəreɪt/",
+    "gloss": "合作",
+    "tip": "co-+operate",
+    "example": "Teams must cooperate.",
+    "exampleZh": "团队必须合作。",
+    "tags": [
+      "verb"
+    ]
+  },
+  {
+    "id": 72,
+    "word": "coordinate",
+    "spelling": "C-O-O-R-D-I-N-A-T-E",
+    "phonetic": "/kəʊˈɔːdɪneɪt/",
+    "gloss": "协调",
+    "tip": "co-+ordinate",
+    "example": "Coordinate the group project.",
+    "exampleZh": "协调小组项目。",
+    "tags": [
+      "verb",
+      "campus"
+    ]
+  },
+  {
+    "id": 73,
+    "word": "core",
+    "spelling": "C-O-R-E",
+    "phonetic": "/kɔː/",
+    "gloss": "核心",
+    "tip": "core vocabulary",
+    "example": "Focus on core vocabulary.",
+    "exampleZh": "聚焦核心词汇。",
+    "tags": [
+      "academic"
+    ]
+  },
+  {
+    "id": 74,
+    "word": "correspond",
+    "spelling": "C-O-R-R-E-S-P-O-N-D",
+    "phonetic": "/ˌkɒrəˈspɒnd/",
+    "gloss": "对应",
+    "tip": "correspond to",
+    "example": "Each symbol corresponds to a sound.",
+    "exampleZh": "符号对应音。",
+    "tags": [
+      "verb"
+    ]
+  },
+  {
+    "id": 75,
+    "word": "create",
+    "spelling": "C-R-E-A-T-E",
+    "phonetic": "/kriˈeɪt/",
+    "gloss": "创造",
+    "tip": "creation",
+    "example": "Create an outline first.",
+    "exampleZh": "先列提纲。",
+    "tags": [
+      "verb"
+    ]
+  },
+  {
+    "id": 76,
+    "word": "criteria",
+    "spelling": "C-R-I-T-E-R-I-A",
+    "phonetic": "/kraɪˈtɪəriə/",
+    "gloss": "标准",
+    "tip": "criterion 单数",
+    "example": "Marking criteria are listed.",
+    "exampleZh": "评分标准已列出。",
+    "tags": [
+      "academic",
+      "campus"
+    ]
+  },
+  {
+    "id": 77,
+    "word": "crucial",
+    "spelling": "C-R-U-C-I-A-L",
+    "phonetic": "/ˈkruːʃl/",
+    "gloss": "关键的",
+    "tip": "vital",
+    "example": "Listening is crucial.",
+    "exampleZh": "听力至关重要。",
+    "tags": [
+      "academic"
+    ]
+  },
+  {
+    "id": 78,
+    "word": "culture",
+    "spelling": "C-U-L-T-U-R-E",
+    "phonetic": "/ˈkʌltʃə/",
+    "gloss": "文化",
+    "tip": "cultural",
+    "example": "Language and culture link.",
+    "exampleZh": "语言与文化相关。",
+    "tags": [
+      "academic"
+    ]
+  },
+  {
+    "id": 79,
+    "word": "cycle",
+    "spelling": "C-Y-C-L-E",
+    "phonetic": "/ˈsaɪkl/",
+    "gloss": "周期",
+    "tip": "life cycle",
+    "example": "The water cycle.",
+    "exampleZh": "水循环。",
+    "tags": [
+      "academic"
+    ]
+  },
+  {
+    "id": 80,
+    "word": "data",
+    "spelling": "D-A-T-A",
+    "phonetic": "/ˈdeɪtə/",
+    "gloss": "数据",
+    "tip": "常不可数",
+    "example": "Collect reliable data.",
+    "exampleZh": "收集可靠数据。",
+    "tags": [
+      "academic"
+    ]
+  },
+  {
+    "id": 81,
+    "word": "debate",
+    "spelling": "D-E-B-A-T-E",
+    "phonetic": "/dɪˈbeɪt/",
+    "gloss": "辩论",
+    "tip": "de-+bate",
+    "example": "Hold a class debate.",
+    "exampleZh": "举行课堂辩论。",
+    "tags": [
+      "campus",
+      "academic"
+    ]
+  },
+  {
+    "id": 82,
+    "word": "decade",
+    "spelling": "D-E-C-A-D-E",
+    "phonetic": "/ˈdekeɪd/",
+    "gloss": "十年",
+    "tip": "dec-",
+    "example": "In the past decade.",
+    "exampleZh": "在过去十年。",
+    "tags": [
+      "academic"
+    ]
+  },
+  {
+    "id": 83,
+    "word": "decline",
+    "spelling": "D-E-C-L-I-N-E",
+    "phonetic": "/dɪˈklaɪn/",
+    "gloss": "下降",
+    "tip": "in decline",
+    "example": "A decline in quality.",
+    "exampleZh": "质量下降。",
+    "tags": [
+      "academic"
+    ]
+  },
+  {
+    "id": 84,
+    "word": "define",
+    "spelling": "D-E-F-I-N-E",
+    "phonetic": "/dɪˈfaɪn/",
+    "gloss": "定义",
+    "tip": "definition",
+    "example": "Define key terms.",
+    "exampleZh": "定义关键术语。",
+    "tags": [
+      "verb",
+      "academic"
+    ]
+  },
+  {
+    "id": 85,
+    "word": "demonstrate",
+    "spelling": "D-E-M-O-N-S-T-R-A-T-E",
+    "phonetic": "/ˈdemənstreɪt/",
+    "gloss": "证明",
+    "tip": "demonstration",
+    "example": "The study demonstrates a pattern.",
+    "exampleZh": "研究证明模式。",
+    "tags": [
+      "verb",
+      "academic"
+    ]
+  },
+  {
+    "id": 86,
+    "word": "deny",
+    "spelling": "D-E-N-Y",
+    "phonetic": "/dɪˈnaɪ/",
+    "gloss": "否认",
+    "tip": "denial",
+    "example": "He did not deny it.",
+    "exampleZh": "他并未否认。",
+    "tags": [
+      "verb"
+    ]
+  },
+  {
+    "id": 87,
+    "word": "derive",
+    "spelling": "D-E-R-I-V-E",
+    "phonetic": "/dɪˈraɪv/",
+    "gloss": "源自",
+    "tip": "derive from",
+    "example": "Words derive from Latin.",
+    "exampleZh": "词源自拉丁语。",
+    "tags": [
+      "verb",
+      "academic"
+    ]
+  },
+  {
+    "id": 88,
+    "word": "design",
+    "spelling": "D-E-S-I-G-N",
+    "phonetic": "/dɪˈzaɪn/",
+    "gloss": "设计",
+    "tip": "名/动",
+    "example": "Design experiments carefully.",
+    "exampleZh": "仔细设计实验。",
+    "tags": [
+      "verb",
+      "academic"
+    ]
+  },
+  {
+    "id": 89,
+    "word": "despite",
+    "spelling": "D-E-S-P-I-T-E",
+    "phonetic": "/dɪˈspaɪt/",
+    "gloss": "尽管",
+    "tip": "despite+名词",
+    "example": "Despite the rain, we continued.",
+    "exampleZh": "尽管下雨仍继续。",
+    "tags": [
+      "academic"
+    ]
+  },
+  {
+    "id": 90,
+    "word": "detect",
+    "spelling": "D-E-T-E-C-T",
+    "phonetic": "/dɪˈtekt/",
+    "gloss": "检测",
+    "tip": "detection",
+    "example": "Sensors detect changes.",
+    "exampleZh": "传感器检测变化。",
+    "tags": [
+      "verb"
+    ]
+  },
+  {
+    "id": 91,
+    "word": "device",
+    "spelling": "D-E-V-I-C-E",
+    "phonetic": "/dɪˈvaɪs/",
+    "gloss": "设备",
+    "tip": "≠ devise",
+    "example": "Turn off devices.",
+    "exampleZh": "关闭设备。",
+    "tags": [
+      "campus"
+    ]
+  },
+  {
+    "id": 92,
+    "word": "dimension",
+    "spelling": "D-I-M-E-N-S-I-O-N",
+    "phonetic": "/daɪˈmenʃn/",
+    "gloss": "维度",
+    "tip": "multi-",
+    "example": "Social and economic dimensions.",
+    "exampleZh": "社会与经济维度。",
+    "tags": [
+      "academic"
+    ]
+  },
+  {
+    "id": 93,
+    "word": "diminish",
+    "spelling": "D-I-M-I-N-I-S-H",
+    "phonetic": "/dɪˈmɪnɪʃ/",
+    "gloss": "减少",
+    "tip": "di-+mini",
+    "example": "Noise can diminish focus.",
+    "exampleZh": "噪音削弱专注。",
+    "tags": [
+      "verb"
+    ]
+  },
+  {
+    "id": 94,
+    "word": "discrete",
+    "spelling": "D-I-S-C-R-E-T-E",
+    "phonetic": "/dɪˈskriːt/",
+    "gloss": "离散的",
+    "tip": "≠ discreet",
+    "example": "Three discrete modules.",
+    "exampleZh": "三个独立模块。",
+    "tags": [
+      "academic"
+    ]
+  },
+  {
+    "id": 95,
+    "word": "display",
+    "spelling": "D-I-S-P-L-A-Y",
+    "phonetic": "/dɪˈspleɪ/",
+    "gloss": "展示",
+    "tip": "on display",
+    "example": "Charts display findings.",
+    "exampleZh": "图表展示发现。",
+    "tags": [
+      "verb"
+    ]
+  },
+  {
+    "id": 96,
+    "word": "distinct",
+    "spelling": "D-I-S-T-I-N-C-T",
+    "phonetic": "/dɪˈstɪŋkt/",
+    "gloss": "明显不同的",
+    "tip": "distinction",
+    "example": "Distinct features.",
+    "exampleZh": "明显不同特征。",
+    "tags": [
+      "academic"
+    ]
+  },
+  {
+    "id": 97,
+    "word": "distribute",
+    "spelling": "D-I-S-T-R-I-B-U-T-E",
+    "phonetic": "/dɪˈstrɪbjuːt/",
+    "gloss": "分发",
+    "tip": "distribution",
+    "example": "Distribute the handouts.",
+    "exampleZh": "分发讲义。",
+    "tags": [
+      "verb",
+      "campus"
+    ]
+  },
+  {
+    "id": 98,
+    "word": "diverse",
+    "spelling": "D-I-V-E-R-S-E",
+    "phonetic": "/daɪˈvɜːs/",
+    "gloss": "多样的",
+    "tip": "diversity",
+    "example": "A diverse campus.",
+    "exampleZh": "多元校园。",
+    "tags": [
+      "campus",
+      "academic"
+    ]
+  },
+  {
+    "id": 99,
+    "word": "document",
+    "spelling": "D-O-C-U-M-E-N-T",
+    "phonetic": "/ˈdɒkjʊmənt/",
+    "gloss": "文件",
+    "tip": "作动：记录",
+    "example": "Keep visa documents.",
+    "exampleZh": "保留签证文件。",
+    "tags": [
+      "campus"
+    ]
+  },
+  {
+    "id": 100,
+    "word": "domain",
+    "spelling": "D-O-M-A-I-N",
+    "phonetic": "/dəˈmeɪn/",
+    "gloss": "领域",
+    "tip": "public domain",
+    "example": "Medical domain.",
+    "exampleZh": "医学领域。",
+    "tags": [
+      "academic"
+    ]
+  },
+  {
+    "id": 101,
+    "word": "domestic",
+    "spelling": "D-O-M-E-S-T-I-C",
+    "phonetic": "/dəˈmestɪk/",
+    "gloss": "国内的",
+    "tip": "≠ international",
+    "example": "Domestic flights.",
+    "exampleZh": "国内航班。",
+    "tags": [
+      "academic"
+    ]
+  },
+  {
+    "id": 102,
+    "word": "dominate",
+    "spelling": "D-O-M-I-N-A-T-E",
+    "phonetic": "/ˈdɒmɪneɪt/",
+    "gloss": "主导",
+    "tip": "dominant",
+    "example": "Firms dominate the market.",
+    "exampleZh": "公司主导市场。",
+    "tags": [
+      "verb"
+    ]
+  },
+  {
+    "id": 103,
+    "word": "draft",
+    "spelling": "D-R-A-F-T",
+    "phonetic": "/drɑːft/",
+    "gloss": "草稿",
+    "tip": "first draft",
+    "example": "Submit a draft first.",
+    "exampleZh": "先交草稿。",
+    "tags": [
+      "campus",
+      "academic"
+    ]
+  },
+  {
+    "id": 104,
+    "word": "duration",
+    "spelling": "D-U-R-A-T-I-O-N",
+    "phonetic": "/djuˈreɪʃn/",
+    "gloss": "持续时间",
+    "tip": "during",
+    "example": "Exam duration is two hours.",
+    "exampleZh": "考试两小时。",
+    "tags": [
+      "campus"
+    ]
+  },
+  {
+    "id": 105,
+    "word": "dynamic",
+    "spelling": "D-Y-N-A-M-I-C",
+    "phonetic": "/daɪˈnæmɪk/",
+    "gloss": "动态的",
+    "tip": "dynamics",
+    "example": "Markets are dynamic.",
+    "exampleZh": "市场动态。",
+    "tags": [
+      "academic"
+    ]
+  },
+  {
+    "id": 106,
+    "word": "economy",
+    "spelling": "E-C-O-N-O-M-Y",
+    "phonetic": "/ɪˈkɒnəmi/",
+    "gloss": "经济",
+    "tip": "economic",
+    "example": "Global economy recovers.",
+    "exampleZh": "全球经济复苏。",
+    "tags": [
+      "academic"
+    ]
+  },
+  {
+    "id": 107,
+    "word": "edit",
+    "spelling": "E-D-I-T",
+    "phonetic": "/ˈedɪt/",
+    "gloss": "编辑",
+    "tip": "editor",
+    "example": "Edit for grammar.",
+    "exampleZh": "编辑语法。",
+    "tags": [
+      "verb",
+      "campus"
+    ]
+  },
+  {
+    "id": 108,
+    "word": "element",
+    "spelling": "E-L-E-M-E-N-T",
+    "phonetic": "/ˈelɪmənt/",
+    "gloss": "要素",
+    "tip": "elemental",
+    "example": "Trust is a key element.",
+    "exampleZh": "信任是关键要素。",
+    "tags": [
+      "academic"
+    ]
+  },
+  {
+    "id": 109,
+    "word": "eliminate",
+    "spelling": "E-L-I-M-I-N-A-T-E",
+    "phonetic": "/ɪˈlɪmɪneɪt/",
+    "gloss": "消除",
+    "tip": "e-+limin",
+    "example": "Eliminate extra words.",
+    "exampleZh": "删去多余词。",
+    "tags": [
+      "verb",
+      "academic"
+    ]
+  },
+  {
+    "id": 110,
+    "word": "emerge",
+    "spelling": "E-M-E-R-G-E",
+    "phonetic": "/ɪˈmɜːdʒ/",
+    "gloss": "出现",
+    "tip": "emerging",
+    "example": "Patterns emerge from data.",
+    "exampleZh": "模式从数据浮现。",
+    "tags": [
+      "verb",
+      "academic"
+    ]
+  },
+  {
+    "id": 111,
+    "word": "emphasis",
+    "spelling": "E-M-P-H-A-S-I-S",
+    "phonetic": "/ˈemfəsɪs/",
+    "gloss": "强调",
+    "tip": "emphasise",
+    "example": "Place emphasis on listening.",
+    "exampleZh": "强调听力。",
+    "tags": [
+      "academic"
+    ]
+  },
+  {
+    "id": 112,
+    "word": "empirical",
+    "spelling": "E-M-P-I-R-I-C-A-L",
+    "phonetic": "/ɪmˈpɪrɪkl/",
+    "gloss": "实证的",
+    "tip": "empiric-",
+    "example": "Empirical evidence.",
+    "exampleZh": "实证证据。",
+    "tags": [
+      "academic"
+    ]
+  },
+  {
+    "id": 113,
+    "word": "enable",
+    "spelling": "E-N-A-B-L-E",
+    "phonetic": "/ɪˈneɪbl/",
+    "gloss": "使能够",
+    "tip": "en-+able",
+    "example": "Technology enables learning.",
+    "exampleZh": "技术使学习成为可能。",
+    "tags": [
+      "verb"
+    ]
+  },
+  {
+    "id": 114,
+    "word": "encounter",
+    "spelling": "E-N-C-O-U-N-T-E-R",
+    "phonetic": "/ɪnˈkaʊntə/",
+    "gloss": "遇到",
+    "tip": "en-+counter",
+    "example": "Encounter new words daily.",
+    "exampleZh": "每天遇到新词。",
+    "tags": [
+      "verb"
+    ]
+  },
+  {
+    "id": 115,
+    "word": "energy",
+    "spelling": "E-N-E-R-G-Y",
+    "phonetic": "/ˈenədʒi/",
+    "gloss": "能量",
+    "tip": "renewable energy",
+    "example": "Save energy.",
+    "exampleZh": "节约能源。",
+    "tags": [
+      "academic"
+    ]
+  },
+  {
+    "id": 116,
+    "word": "enforce",
+    "spelling": "E-N-F-O-R-C-E",
+    "phonetic": "/ɪnˈfɔːs/",
+    "gloss": "执行",
+    "tip": "enforcement",
+    "example": "Enforce attendance rules.",
+    "exampleZh": "执行出勤规定。",
+    "tags": [
+      "verb",
+      "campus"
+    ]
+  },
+  {
+    "id": 117,
+    "word": "enhance",
+    "spelling": "E-N-H-A-N-C-E",
+    "phonetic": "/ɪnˈhɑːns/",
+    "gloss": "增强",
+    "tip": "enhancement",
+    "example": "Practice enhances fluency.",
+    "exampleZh": "练习增强流利度。",
+    "tags": [
+      "verb"
+    ]
+  },
+  {
+    "id": 118,
+    "word": "enormous",
+    "spelling": "E-N-O-R-M-O-U-S",
+    "phonetic": "/ɪˈnɔːməs/",
+    "gloss": "巨大的",
+    "tip": "e-+norm",
+    "example": "Enormous research.",
+    "exampleZh": "研究数量巨大。",
+    "tags": [
+      "academic"
+    ]
+  },
+  {
+    "id": 119,
+    "word": "ensure",
+    "spelling": "E-N-S-U-R-E",
+    "phonetic": "/ɪnˈʃʊə/",
+    "gloss": "确保",
+    "tip": "≠ insure",
+    "example": "Ensure citations are correct.",
+    "exampleZh": "确保引用正确。",
+    "tags": [
+      "verb",
+      "academic"
+    ]
+  },
+  {
+    "id": 120,
+    "word": "entity",
+    "spelling": "E-N-T-I-T-Y",
+    "phonetic": "/ˈentəti/",
+    "gloss": "实体",
+    "tip": "legal entity",
+    "example": "A legal entity.",
+    "exampleZh": "法律实体。",
+    "tags": [
+      "academic"
+    ]
+  },
+  {
+    "id": 121,
+    "word": "environment",
+    "spelling": "E-N-V-I-R-O-N-M-E-N-T",
+    "phonetic": "/ɪnˈvaɪrənmənt/",
+    "gloss": "环境",
+    "tip": "environmental",
+    "example": "Protect the environment.",
+    "exampleZh": "保护环境。",
+    "tags": [
+      "academic"
+    ]
+  },
+  {
+    "id": 122,
+    "word": "equate",
+    "spelling": "E-Q-U-A-T-E",
+    "phonetic": "/ɪˈkweɪt/",
+    "gloss": "等同",
+    "tip": "equate A with B",
+    "example": "Do not equate price with quality.",
+    "exampleZh": "勿把价格等同质量。",
+    "tags": [
+      "verb"
+    ]
+  },
+  {
+    "id": 123,
+    "word": "equivalent",
+    "spelling": "E-Q-U-I-V-A-L-E-N-T",
+    "phonetic": "/ɪˈkwɪvələnt/",
+    "gloss": "等同的",
+    "tip": "equivalent to",
+    "example": "Degree equivalent.",
+    "exampleZh": "学位等同。",
+    "tags": [
+      "academic"
+    ]
+  },
+  {
+    "id": 124,
+    "word": "erode",
+    "spelling": "E-R-O-D-E",
+    "phonetic": "/ɪˈrəʊd/",
+    "gloss": "侵蚀",
+    "tip": "erosion",
+    "example": "Cliffs erode over time.",
+    "exampleZh": "悬崖被侵蚀。",
+    "tags": [
+      "verb",
+      "academic"
+    ]
+  },
+  {
+    "id": 125,
+    "word": "error",
+    "spelling": "E-R-R-O-R",
+    "phonetic": "/ˈerə/",
+    "gloss": "错误",
+    "tip": "trial and error",
+    "example": "Correct spelling errors.",
+    "exampleZh": "改正拼写错误。",
+    "tags": [
+      "academic"
+    ]
+  },
+  {
+    "id": 126,
+    "word": "establish",
+    "spelling": "E-S-T-A-B-L-I-S-H",
+    "phonetic": "/ɪˈstæblɪʃ/",
+    "gloss": "建立",
+    "tip": "establishment",
+    "example": "University established in 1901.",
+    "exampleZh": "大学成立于1901年。",
+    "tags": [
+      "verb",
+      "academic"
+    ]
+  },
+  {
+    "id": 127,
+    "word": "estimate",
+    "spelling": "E-S-T-I-M-A-T-E",
+    "phonetic": "/ˈestɪmeɪt/",
+    "gloss": "估计",
+    "tip": "名同形",
+    "example": "Estimate revision time.",
+    "exampleZh": "估计复习时间。",
+    "tags": [
+      "verb"
+    ]
+  },
+  {
+    "id": 128,
+    "word": "ethic",
+    "spelling": "E-T-H-I-C",
+    "phonetic": "/ˈeθɪk/",
+    "gloss": "伦理",
+    "tip": "ethics",
+    "example": "Follow research ethics.",
+    "exampleZh": "遵守研究伦理。",
+    "tags": [
+      "academic"
+    ]
+  },
+  {
+    "id": 129,
+    "word": "ethnic",
+    "spelling": "E-T-H-N-I-C",
+    "phonetic": "/ˈeθnɪk/",
+    "gloss": "民族的",
+    "tip": "ethnicity",
+    "example": "Ethnic communities.",
+    "exampleZh": "民族社区。",
+    "tags": [
+      "academic"
+    ]
+  },
+  {
+    "id": 130,
+    "word": "evaluate",
+    "spelling": "E-V-A-L-U-A-T-E",
+    "phonetic": "/ɪˈvæljueɪt/",
+    "gloss": "评估",
+    "tip": "evaluation",
+    "example": "Evaluate each method.",
+    "exampleZh": "评估每种方法。",
+    "tags": [
+      "verb",
+      "academic"
+    ]
+  },
+  {
+    "id": 131,
+    "word": "eventually",
+    "spelling": "E-V-E-N-T-U-A-L-L-Y",
+    "phonetic": "/ɪˈventʃuəli/",
+    "gloss": "最终",
+    "tip": "eventual",
+    "example": "She eventually passed.",
+    "exampleZh": "她最终通过。",
+    "tags": [
+      "academic"
+    ]
+  },
+  {
+    "id": 132,
+    "word": "evidence",
+    "spelling": "E-V-I-D-E-N-C-E",
+    "phonetic": "/ˈevɪdəns/",
+    "gloss": "证据",
+    "tip": "不可数",
+    "example": "Provide evidence.",
+    "exampleZh": "提供证据。",
+    "tags": [
+      "academic"
+    ]
+  },
+  {
+    "id": 133,
+    "word": "evolve",
+    "spelling": "E-V-O-L-V-E",
+    "phonetic": "/ɪˈvɒlv/",
+    "gloss": "演变",
+    "tip": "evolution",
+    "example": "Languages evolve.",
+    "exampleZh": "语言演变。",
+    "tags": [
+      "verb",
+      "academic"
+    ]
+  },
+  {
+    "id": 134,
+    "word": "exceed",
+    "spelling": "E-X-C-E-E-D",
+    "phonetic": "/ɪkˈsiːd/",
+    "gloss": "超过",
+    "tip": "excess",
+    "example": "Do not exceed word limit.",
+    "exampleZh": "勿超字数。",
+    "tags": [
+      "verb",
+      "campus"
+    ]
+  },
+  {
+    "id": 135,
+    "word": "exclude",
+    "spelling": "E-X-C-L-U-D-E",
+    "phonetic": "/ɪkˈskluːd/",
+    "gloss": "排除",
+    "tip": "exclusion",
+    "example": "Exclude children under five.",
+    "exampleZh": "排除五岁以下。",
+    "tags": [
+      "verb",
+      "academic"
+    ]
+  },
+  {
+    "id": 136,
+    "word": "exhibit",
+    "spelling": "E-X-H-I-B-I-T",
+    "phonetic": "/ɪɡˈzɪbɪt/",
+    "gloss": "展出",
+    "tip": "exhibition",
+    "example": "Exhibit rare maps.",
+    "exampleZh": "展出罕见地图。",
+    "tags": [
+      "verb"
+    ]
+  },
+  {
+    "id": 137,
+    "word": "expand",
+    "spelling": "E-X-P-A-N-D",
+    "phonetic": "/ɪkˈspænd/",
+    "gloss": "扩展",
+    "tip": "expansion",
+    "example": "Expand notes into sentences.",
+    "exampleZh": "笔记扩展成句子。",
+    "tags": [
+      "verb"
+    ]
+  },
+  {
+    "id": 138,
+    "word": "expert",
+    "spelling": "E-X-P-E-R-T",
+    "phonetic": "/ˈekspɜːt/",
+    "gloss": "专家",
+    "tip": "expertise",
+    "example": "Ask an expert.",
+    "exampleZh": "问专家。",
+    "tags": [
+      "academic"
+    ]
+  },
+  {
+    "id": 139,
+    "word": "explicit",
+    "spelling": "E-X-P-L-I-C-I-T",
+    "phonetic": "/ɪkˈsplɪsɪt/",
+    "gloss": "明确的",
+    "tip": "≠ implicit",
+    "example": "Give explicit instructions.",
+    "exampleZh": "给出明确指示。",
+    "tags": [
+      "academic"
+    ]
+  },
+  {
+    "id": 140,
+    "word": "exploit",
+    "spelling": "E-X-P-L-O-I-T",
+    "phonetic": "/ɪkˈsplɔɪt/",
+    "gloss": "利用",
+    "tip": "可褒可贬",
+    "example": "Exploit resources carefully.",
+    "exampleZh": "谨慎利用资源。",
+    "tags": [
+      "verb"
+    ]
+  },
+  {
+    "id": 141,
+    "word": "export",
+    "spelling": "E-X-P-O-R-T",
+    "phonetic": "/ˈekspɔːt/",
+    "gloss": "出口",
+    "tip": "≠ import",
+    "example": "Export products.",
+    "exampleZh": "出口产品。",
+    "tags": [
+      "academic"
+    ]
+  },
+  {
+    "id": 142,
+    "word": "expose",
+    "spelling": "E-X-P-O-S-E",
+    "phonetic": "/ɪkˈspəʊz/",
+    "gloss": "接触；暴露",
+    "tip": "be exposed to",
+    "example": "Be exposed to real English.",
+    "exampleZh": "接触真实英语。",
+    "tags": [
+      "verb"
+    ]
+  },
+  {
+    "id": 143,
+    "word": "external",
+    "spelling": "E-X-T-E-R-N-A-L",
+    "phonetic": "/ɪkˈstɜːnl/",
+    "gloss": "外部的",
+    "tip": "≠ internal",
+    "example": "External factors.",
+    "exampleZh": "外部因素。",
+    "tags": [
+      "academic"
+    ]
+  },
+  {
+    "id": 144,
+    "word": "extract",
+    "spelling": "E-X-T-R-A-C-T",
+    "phonetic": "/ˈekstrækt/",
+    "gloss": "提取",
+    "tip": "extraction",
+    "example": "Extract key points.",
+    "exampleZh": "提取要点。",
+    "tags": [
+      "verb",
+      "academic"
+    ]
+  },
+  {
+    "id": 145,
+    "word": "facilitate",
+    "spelling": "F-A-C-I-L-I-T-A-T-E",
+    "phonetic": "/fəˈsɪlɪteɪt/",
+    "gloss": "促进",
+    "tip": "facility",
+    "example": "Good lighting facilitates reading.",
+    "exampleZh": "良好照明利于阅读。",
+    "tags": [
+      "verb",
+      "academic"
+    ]
+  },
+  {
+    "id": 146,
+    "word": "factor",
+    "spelling": "F-A-C-T-O-R",
+    "phonetic": "/ˈfæktə/",
+    "gloss": "因素",
+    "tip": "key factor",
+    "example": "Stress is a major factor.",
+    "exampleZh": "压力是重要因素。",
+    "tags": [
+      "academic"
+    ]
+  },
+  {
+    "id": 147,
+    "word": "feature",
+    "spelling": "F-E-A-T-U-R-E",
+    "phonetic": "/ˈfiːtʃə/",
+    "gloss": "特征",
+    "tip": "feature of",
+    "example": "List main features.",
+    "exampleZh": "列出主要特征。",
+    "tags": [
+      "academic"
+    ]
+  },
+  {
+    "id": 148,
+    "word": "federal",
+    "spelling": "F-E-D-E-R-A-L",
+    "phonetic": "/ˈfedərəl/",
+    "gloss": "联邦的",
+    "tip": "federation",
+    "example": "Federal funding.",
+    "exampleZh": "联邦资金。",
+    "tags": [
+      "academic"
+    ]
+  },
+  {
+    "id": 149,
+    "word": "fee",
+    "spelling": "F-E-E",
+    "phonetic": "/fiː/",
+    "gloss": "费用",
+    "tip": "tuition fee",
+    "example": "Application fee is fifty dollars.",
+    "exampleZh": "申请费五十美元。",
+    "tags": [
+      "campus"
+    ]
+  },
+  {
+    "id": 150,
+    "word": "final",
+    "spelling": "F-I-N-A-L",
+    "phonetic": "/ˈfaɪnl/",
+    "gloss": "最终的",
+    "tip": "final exam",
+    "example": "Submit the final version.",
+    "exampleZh": "提交终稿。",
+    "tags": [
+      "campus"
+    ]
+  },
+  {
+    "id": 151,
+    "word": "finance",
+    "spelling": "F-I-N-A-N-C-E",
+    "phonetic": "/ˈfaɪnæns/",
+    "gloss": "金融",
+    "tip": "financial",
+    "example": "Need finance for housing.",
+    "exampleZh": "需要住房资助。",
+    "tags": [
+      "campus"
+    ]
+  },
+  {
+    "id": 152,
+    "word": "flexible",
+    "spelling": "F-L-E-X-I-B-L-E",
+    "phonetic": "/ˈfleksəbl/",
+    "gloss": "灵活的",
+    "tip": "flexibility",
+    "example": "Flexible schedules.",
+    "exampleZh": "灵活时间。",
+    "tags": [
+      "campus"
+    ]
+  },
+  {
+    "id": 153,
+    "word": "fluctuate",
+    "spelling": "F-L-U-C-T-U-A-T-E",
+    "phonetic": "/ˈflʌktʃueɪt/",
+    "gloss": "波动",
+    "tip": "fluctuation",
+    "example": "Prices fluctuate.",
+    "exampleZh": "价格波动。",
+    "tags": [
+      "verb",
+      "academic"
+    ]
+  },
+  {
+    "id": 154,
+    "word": "focus",
+    "spelling": "F-O-C-U-S",
+    "phonetic": "/ˈfəʊkəs/",
+    "gloss": "专注",
+    "tip": "focus on",
+    "example": "Focus on accuracy.",
+    "exampleZh": "先重准确。",
+    "tags": [
+      "verb"
+    ]
+  },
+  {
+    "id": 155,
+    "word": "format",
+    "spelling": "F-O-R-M-A-T",
+    "phonetic": "/ˈfɔːmæt/",
+    "gloss": "格式",
+    "tip": "file format",
+    "example": "Use required format.",
+    "exampleZh": "使用规定格式。",
+    "tags": [
+      "campus"
+    ]
+  },
+  {
+    "id": 156,
+    "word": "formula",
+    "spelling": "F-O-R-M-U-L-A",
+    "phonetic": "/ˈfɔːmjələ/",
+    "gloss": "公式",
+    "tip": "formulae",
+    "example": "Learn the formula.",
+    "exampleZh": "学习公式。",
+    "tags": [
+      "academic"
+    ]
+  },
+  {
+    "id": 157,
+    "word": "foundation",
+    "spelling": "F-O-U-N-D-A-T-I-O-N",
+    "phonetic": "/faʊnˈdeɪʃn/",
+    "gloss": "基础",
+    "tip": "found",
+    "example": "Grammar is the foundation.",
+    "exampleZh": "语法是基础。",
+    "tags": [
+      "academic"
+    ]
+  },
+  {
+    "id": 158,
+    "word": "framework",
+    "spelling": "F-R-A-M-E-W-O-R-K",
+    "phonetic": "/ˈfreɪmwɜːk/",
+    "gloss": "框架",
+    "tip": "frame+work",
+    "example": "Use a clear framework.",
+    "exampleZh": "用清晰框架。",
+    "tags": [
+      "academic"
+    ]
+  },
+  {
+    "id": 159,
+    "word": "function",
+    "spelling": "F-U-N-C-T-I-O-N",
+    "phonetic": "/ˈfʌŋkʃn/",
+    "gloss": "功能",
+    "tip": "functional",
+    "example": "Explain each function.",
+    "exampleZh": "说明各功能。",
+    "tags": [
+      "academic"
+    ]
+  },
+  {
+    "id": 160,
+    "word": "fund",
+    "spelling": "F-U-N-D",
+    "phonetic": "/fʌnd/",
+    "gloss": "资金",
+    "tip": "funding",
+    "example": "Funded by government.",
+    "exampleZh": "政府资助。",
+    "tags": [
+      "academic"
+    ]
+  },
+  {
+    "id": 161,
+    "word": "fundamental",
+    "spelling": "F-U-N-D-A-M-E-N-T-A-L",
+    "phonetic": "/ˌfʌndəˈmentl/",
+    "gloss": "基本的",
+    "tip": "fundament",
+    "example": "Fundamental skill.",
+    "exampleZh": "基本技能。",
+    "tags": [
+      "academic"
+    ]
+  },
+  {
+    "id": 162,
+    "word": "furthermore",
+    "spelling": "F-U-R-T-H-E-R-M-O-R-E",
+    "phonetic": "/ˌfɜːðəˈmɔː/",
+    "gloss": "此外",
+    "tip": "衔接词",
+    "example": "Furthermore, results match.",
+    "exampleZh": "此外结果一致。",
+    "tags": [
+      "academic"
+    ]
+  },
+  {
+    "id": 163,
+    "word": "gender",
+    "spelling": "G-E-N-D-E-R",
+    "phonetic": "/ˈdʒendə/",
+    "gloss": "性别",
+    "tip": "gender equality",
+    "example": "Gender differences.",
+    "exampleZh": "性别差异。",
+    "tags": [
+      "academic"
+    ]
+  },
+  {
+    "id": 164,
+    "word": "generate",
+    "spelling": "G-E-N-E-R-A-T-E",
+    "phonetic": "/ˈdʒenəreɪt/",
+    "gloss": "产生",
+    "tip": "generation",
+    "example": "Solar panels generate power.",
+    "exampleZh": "太阳能板发电。",
+    "tags": [
+      "verb"
+    ]
+  },
+  {
+    "id": 165,
+    "word": "generation",
+    "spelling": "G-E-N-E-R-A-T-I-O-N",
+    "phonetic": "/ˌdʒenəˈreɪʃn/",
+    "gloss": "一代",
+    "tip": "gen-",
+    "example": "Younger generations.",
+    "exampleZh": "年轻一代。",
+    "tags": [
+      "academic"
+    ]
+  },
+  {
+    "id": 166,
+    "word": "global",
+    "spelling": "G-L-O-B-A-L",
+    "phonetic": "/ˈɡləʊbl/",
+    "gloss": "全球的",
+    "tip": "globalisation",
+    "example": "A global language.",
+    "exampleZh": "全球性语言。",
+    "tags": [
+      "academic"
+    ]
+  },
+  {
+    "id": 167,
+    "word": "goal",
+    "spelling": "G-O-A-L",
+    "phonetic": "/ɡəʊl/",
+    "gloss": "目标",
+    "tip": "goal setting",
+    "example": "Set a clear goal.",
+    "exampleZh": "设定明确目标。",
+    "tags": [
+      "campus"
+    ]
+  },
+  {
+    "id": 168,
+    "word": "grade",
+    "spelling": "G-R-A-D-E",
+    "phonetic": "/ɡreɪd/",
+    "gloss": "成绩",
+    "tip": "grading",
+    "example": "Grade posted online.",
+    "exampleZh": "成绩网上公布。",
+    "tags": [
+      "campus"
+    ]
+  },
+  {
+    "id": 169,
+    "word": "grant",
+    "spelling": "G-R-A-N-T",
+    "phonetic": "/ɡrɑːnt/",
+    "gloss": "授予；助学金",
+    "tip": "research grant",
+    "example": "Received a grant.",
+    "exampleZh": "获得经费。",
+    "tags": [
+      "campus",
+      "academic"
+    ]
+  },
+  {
+    "id": 170,
+    "word": "guarantee",
+    "spelling": "G-U-A-R-A-N-T-E-E",
+    "phonetic": "/ˌɡærənˈtiː/",
+    "gloss": "保证",
+    "tip": "双写a",
+    "example": "Hard work does not guarantee success.",
+    "exampleZh": "努力不保证成功。",
+    "tags": [
+      "verb"
+    ]
+  },
+  {
+    "id": 171,
+    "word": "guideline",
+    "spelling": "G-U-I-D-E-L-I-N-E",
+    "phonetic": "/ˈɡaɪdlaɪn/",
+    "gloss": "指南",
+    "tip": "guide+line",
+    "example": "Follow citation guidelines.",
+    "exampleZh": "遵循引用指南。",
+    "tags": [
+      "campus"
+    ]
+  },
+  {
+    "id": 172,
+    "word": "hence",
+    "spelling": "H-E-N-C-E",
+    "phonetic": "/hens/",
+    "gloss": "因此",
+    "tip": "正式",
+    "example": "Hence results vary.",
+    "exampleZh": "因此结果有差异。",
+    "tags": [
+      "academic"
+    ]
+  },
+  {
+    "id": 173,
+    "word": "hierarchy",
+    "spelling": "H-I-E-R-A-R-C-H-Y",
+    "phonetic": "/ˈhaɪərɑːki/",
+    "gloss": "等级制度",
+    "tip": "hier-",
+    "example": "Corporate hierarchy.",
+    "exampleZh": "企业等级制。",
+    "tags": [
+      "academic"
+    ]
+  },
+  {
+    "id": 174,
+    "word": "highlight",
+    "spelling": "H-I-G-H-L-I-G-H-T",
+    "phonetic": "/ˈhaɪlaɪt/",
+    "gloss": "突出",
+    "tip": "high+light",
+    "example": "Highlight key sentences.",
+    "exampleZh": "标出关键句。",
+    "tags": [
+      "verb"
+    ]
+  },
+  {
+    "id": 175,
+    "word": "hypothesis",
+    "spelling": "H-Y-P-O-T-H-E-S-I-S",
+    "phonetic": "/haɪˈpɒθəsɪs/",
+    "gloss": "假设",
+    "tip": "hypotheses",
+    "example": "Test the hypothesis.",
+    "exampleZh": "检验假设。",
+    "tags": [
+      "academic"
+    ]
+  },
+  {
+    "id": 176,
+    "word": "identical",
+    "spelling": "I-D-E-N-T-I-C-A-L",
+    "phonetic": "/aɪˈdentɪkl/",
+    "gloss": "相同的",
+    "tip": "identity",
+    "example": "Not identical.",
+    "exampleZh": "不完全相同。",
+    "tags": [
+      "academic"
+    ]
+  },
+  {
+    "id": 177,
+    "word": "identify",
+    "spelling": "I-D-E-N-T-I-F-Y",
+    "phonetic": "/aɪˈdentɪfaɪ/",
+    "gloss": "识别",
+    "tip": "identification",
+    "example": "Identify the main idea.",
+    "exampleZh": "识别主旨。",
+    "tags": [
+      "verb",
+      "academic"
+    ]
+  },
+  {
+    "id": 178,
+    "word": "ideology",
+    "spelling": "I-D-E-O-L-O-G-Y",
+    "phonetic": "/ˌaɪdiˈɒlədʒi/",
+    "gloss": "意识形态",
+    "tip": "ideo-",
+    "example": "Political ideology.",
+    "exampleZh": "政治意识形态。",
+    "tags": [
+      "academic"
+    ]
+  },
+  {
+    "id": 179,
+    "word": "illustrate",
+    "spelling": "I-L-L-U-S-T-R-A-T-E",
+    "phonetic": "/ˈɪləstreɪt/",
+    "gloss": "说明",
+    "tip": "illustration",
+    "example": "Examples illustrate the theory.",
+    "exampleZh": "例子说明理论。",
+    "tags": [
+      "verb",
+      "academic"
+    ]
+  },
+  {
+    "id": 180,
+    "word": "image",
+    "spelling": "I-M-A-G-E",
+    "phonetic": "/ˈɪmɪdʒ/",
+    "gloss": "形象",
+    "tip": "imagery",
+    "example": "Brand image.",
+    "exampleZh": "品牌形象。",
+    "tags": [
+      "academic"
+    ]
+  },
+  {
+    "id": 181,
+    "word": "impact",
+    "spelling": "I-M-P-A-C-T",
+    "phonetic": "/ˈɪmpækt/",
+    "gloss": "影响",
+    "tip": "impact on",
+    "example": "Tourism has a large impact.",
+    "exampleZh": "旅游影响大。",
+    "tags": [
+      "academic"
+    ]
+  },
+  {
+    "id": 182,
+    "word": "implement",
+    "spelling": "I-M-P-L-E-M-E-N-T",
+    "phonetic": "/ˈɪmplɪment/",
+    "gloss": "实施",
+    "tip": "implementation",
+    "example": "Implement a new policy.",
+    "exampleZh": "实施新政策。",
+    "tags": [
+      "verb",
+      "campus"
+    ]
+  },
+  {
+    "id": 183,
+    "word": "imply",
+    "spelling": "I-M-P-L-Y",
+    "phonetic": "/ɪmˈplaɪ/",
+    "gloss": "暗示",
+    "tip": "implication",
+    "example": "Silence does not imply agreement.",
+    "exampleZh": "沉默不代表同意。",
+    "tags": [
+      "verb",
+      "academic"
+    ]
+  },
+  {
+    "id": 184,
+    "word": "impose",
+    "spelling": "I-M-P-O-S-E",
+    "phonetic": "/ɪmˈpəʊz/",
+    "gloss": "强加",
+    "tip": "impose on",
+    "example": "Impose new taxes.",
+    "exampleZh": "开征新税。",
+    "tags": [
+      "verb"
+    ]
+  },
+  {
+    "id": 185,
+    "word": "incentive",
+    "spelling": "I-N-C-E-N-T-I-V-E",
+    "phonetic": "/ɪnˈsentɪv/",
+    "gloss": "激励",
+    "tip": "in-+centive",
+    "example": "Financial incentives.",
+    "exampleZh": "经济激励。",
+    "tags": [
+      "academic"
+    ]
+  },
+  {
+    "id": 186,
+    "word": "income",
+    "spelling": "I-N-C-O-M-E",
+    "phonetic": "/ˈɪnkʌm/",
+    "gloss": "收入",
+    "tip": "in+come",
+    "example": "Average income rose.",
+    "exampleZh": "平均收入上升。",
+    "tags": [
+      "academic"
+    ]
+  },
+  {
+    "id": 187,
+    "word": "incorporate",
+    "spelling": "I-N-C-O-R-P-O-R-A-T-E",
+    "phonetic": "/ɪnˈkɔːpəreɪt/",
+    "gloss": "纳入",
+    "tip": "incorporation",
+    "example": "Incorporate feedback.",
+    "exampleZh": "纳入反馈。",
+    "tags": [
+      "verb",
+      "campus"
+    ]
+  },
+  {
+    "id": 188,
+    "word": "index",
+    "spelling": "I-N-D-E-X",
+    "phonetic": "/ˈɪndeks/",
+    "gloss": "指数",
+    "tip": "indices",
+    "example": "Price index rose.",
+    "exampleZh": "价格指数上升。",
+    "tags": [
+      "academic"
+    ]
+  },
+  {
+    "id": 189,
+    "word": "indicate",
+    "spelling": "I-N-D-I-C-A-T-E",
+    "phonetic": "/ˈɪndɪkeɪt/",
+    "gloss": "表明",
+    "tip": "indication",
+    "example": "Results indicate a trend.",
+    "exampleZh": "结果表明趋势。",
+    "tags": [
+      "verb",
+      "academic"
+    ]
+  },
+  {
+    "id": 190,
+    "word": "individual",
+    "spelling": "I-N-D-I-V-I-D-U-A-L",
+    "phonetic": "/ˌɪndɪˈvɪdʒuəl/",
+    "gloss": "个人",
+    "tip": "≠ group",
+    "example": "Each individual differs.",
+    "exampleZh": "每个人不同。",
+    "tags": [
+      "academic"
+    ]
+  },
+  {
+    "id": 191,
+    "word": "induce",
+    "spelling": "I-N-D-U-C-E",
+    "phonetic": "/ɪnˈdjuːs/",
+    "gloss": "引起",
+    "tip": "induction",
+    "example": "Stress may induce headaches.",
+    "exampleZh": "压力可引起头痛。",
+    "tags": [
+      "verb"
+    ]
+  },
+  {
+    "id": 192,
+    "word": "inevitable",
+    "spelling": "I-N-E-V-I-T-A-B-L-E",
+    "phonetic": "/ɪnˈevɪtəbl/",
+    "gloss": "不可避免的",
+    "tip": "in-",
+    "example": "Mistakes are inevitable.",
+    "exampleZh": "错误不可避免。",
+    "tags": [
+      "academic"
+    ]
+  },
+  {
+    "id": 193,
+    "word": "infer",
+    "spelling": "I-N-F-E-R",
+    "phonetic": "/ɪnˈfɜː/",
+    "gloss": "推断",
+    "tip": "inference",
+    "example": "Infer meaning from context.",
+    "exampleZh": "从语境推断。",
+    "tags": [
+      "verb",
+      "academic"
+    ]
+  },
+  {
+    "id": 194,
+    "word": "infrastructure",
+    "spelling": "I-N-F-R-A-S-T-R-U-C-T-U-R-E",
+    "phonetic": "/ˈɪnfrəstrʌktʃə/",
+    "gloss": "基础设施",
+    "tip": "infra-",
+    "example": "Transport infrastructure.",
+    "exampleZh": "交通基础设施。",
+    "tags": [
+      "academic"
+    ]
+  },
+  {
+    "id": 195,
+    "word": "inherent",
+    "spelling": "I-N-H-E-R-E-N-T",
+    "phonetic": "/ɪnˈherənt/",
+    "gloss": "固有的",
+    "tip": "inherent in",
+    "example": "Risk is inherent.",
+    "exampleZh": "风险固有。",
+    "tags": [
+      "academic"
+    ]
+  },
+  {
+    "id": 196,
+    "word": "initial",
+    "spelling": "I-N-I-T-I-A-L",
+    "phonetic": "/ɪˈnɪʃl/",
+    "gloss": "最初的",
+    "tip": "initially",
+    "example": "Initial plan.",
+    "exampleZh": "最初计划。",
+    "tags": [
+      "academic"
+    ]
+  },
+  {
+    "id": 197,
+    "word": "initiate",
+    "spelling": "I-N-I-T-I-A-T-E",
+    "phonetic": "/ɪˈnɪʃieɪt/",
+    "gloss": "发起",
+    "tip": "initiative",
+    "example": "Initiate a new program.",
+    "exampleZh": "启动新项目。",
+    "tags": [
+      "verb",
+      "campus"
+    ]
+  },
+  {
+    "id": 198,
+    "word": "innovate",
+    "spelling": "I-N-N-O-V-A-T-E",
+    "phonetic": "/ˈɪnəveɪt/",
+    "gloss": "创新",
+    "tip": "innovation",
+    "example": "Firms must innovate.",
+    "exampleZh": "企业须创新。",
+    "tags": [
+      "verb"
+    ]
+  },
+  {
+    "id": 199,
+    "word": "input",
+    "spelling": "I-N-P-U-T",
+    "phonetic": "/ˈɪnpʊt/",
+    "gloss": "投入",
+    "tip": "≠ output",
+    "example": "Student input improved the course.",
+    "exampleZh": "学生意见改进课程。",
+    "tags": [
+      "campus"
+    ]
+  },
+  {
+    "id": 200,
+    "word": "insert",
+    "spelling": "I-N-S-E-R-T",
+    "phonetic": "/ɪnˈsɜːt/",
+    "gloss": "插入",
+    "tip": "insertion",
+    "example": "Insert a topic sentence.",
+    "exampleZh": "插入主题句。",
+    "tags": [
+      "verb"
+    ]
+  },
+  {
+    "id": 201,
+    "word": "insight",
+    "spelling": "I-N-S-I-G-H-T",
+    "phonetic": "/ˈɪnsaɪt/",
+    "gloss": "洞察",
+    "tip": "insight into",
+    "example": "New insights.",
+    "exampleZh": "新洞察。",
+    "tags": [
+      "academic"
+    ]
+  },
+  {
+    "id": 202,
+    "word": "inspect",
+    "spelling": "I-N-S-P-E-C-T",
+    "phonetic": "/ɪnˈspekt/",
+    "gloss": "检查",
+    "tip": "inspection",
+    "example": "Inspect equipment.",
+    "exampleZh": "检查设备。",
+    "tags": [
+      "verb"
+    ]
+  },
+  {
+    "id": 203,
+    "word": "instance",
+    "spelling": "I-N-S-T-A-N-C-E",
+    "phonetic": "/ˈɪnstəns/",
+    "gloss": "实例",
+    "tip": "for instance",
+    "example": "For instance, prices rose.",
+    "exampleZh": "例如价格上涨。",
+    "tags": [
+      "academic"
+    ]
+  },
+  {
+    "id": 204,
+    "word": "institute",
+    "spelling": "I-N-S-T-I-T-U-T-E",
+    "phonetic": "/ˈɪnstɪtjuːt/",
+    "gloss": "机构",
+    "tip": "institution",
+    "example": "Research institute.",
+    "exampleZh": "研究机构。",
+    "tags": [
+      "academic"
+    ]
+  },
+  {
+    "id": 205,
+    "word": "instruct",
+    "spelling": "I-N-S-T-R-U-C-T",
+    "phonetic": "/ɪnˈstrʌkt/",
+    "gloss": "指导",
+    "tip": "instruction",
+    "example": "Instruct students in labs.",
+    "exampleZh": "在实验室指导学生。",
+    "tags": [
+      "verb",
+      "campus"
+    ]
+  },
+  {
+    "id": 206,
+    "word": "integral",
+    "spelling": "I-N-T-E-G-R-A-L",
+    "phonetic": "/ˈɪntɪɡrəl/",
+    "gloss": "不可或缺的",
+    "tip": "integrate",
+    "example": "Feedback is integral.",
+    "exampleZh": "反馈不可或缺。",
+    "tags": [
+      "academic"
+    ]
+  },
+  {
+    "id": 207,
+    "word": "integrate",
+    "spelling": "I-N-T-E-G-R-A-T-E",
+    "phonetic": "/ˈɪntɪɡreɪt/",
+    "gloss": "整合",
+    "tip": "integration",
+    "example": "Integrate charts.",
+    "exampleZh": "整合图表。",
+    "tags": [
+      "verb",
+      "academic"
+    ]
+  },
+  {
+    "id": 208,
+    "word": "integrity",
+    "spelling": "I-N-T-E-G-R-I-T-Y",
+    "phonetic": "/ɪnˈteɡrəti/",
+    "gloss": "诚信",
+    "tip": "academic integrity",
+    "example": "Academic integrity matters.",
+    "exampleZh": "学术诚信重要。",
+    "tags": [
+      "campus",
+      "academic"
+    ]
+  },
+  {
+    "id": 209,
+    "word": "intelligence",
+    "spelling": "I-N-T-E-L-L-I-G-E-N-C-E",
+    "phonetic": "/ɪnˈtelɪdʒəns/",
+    "gloss": "智力",
+    "tip": "intelligent",
+    "example": "Emotional intelligence.",
+    "exampleZh": "情商。",
+    "tags": [
+      "academic"
+    ]
+  },
+  {
+    "id": 210,
+    "word": "intense",
+    "spelling": "I-N-T-E-N-S-E",
+    "phonetic": "/ɪnˈtens/",
+    "gloss": "强烈的",
+    "tip": "intensity",
+    "example": "Intense competition.",
+    "exampleZh": "激烈竞争。",
+    "tags": [
+      "academic"
+    ]
+  },
+  {
+    "id": 211,
+    "word": "interact",
+    "spelling": "I-N-T-E-R-A-C-T",
+    "phonetic": "/ˌɪntərˈækt/",
+    "gloss": "互动",
+    "tip": "interaction",
+    "example": "Students interact in groups.",
+    "exampleZh": "学生小组互动。",
+    "tags": [
+      "verb",
+      "campus"
+    ]
+  },
+  {
+    "id": 212,
+    "word": "intermediate",
+    "spelling": "I-N-T-E-R-M-E-D-I-A-T-E",
+    "phonetic": "/ˌɪntəˈmiːdiət/",
+    "gloss": "中级的",
+    "tip": "inter-",
+    "example": "Intermediate vocabulary.",
+    "exampleZh": "中级词汇。",
+    "tags": [
+      "campus"
+    ]
+  },
+  {
+    "id": 213,
+    "word": "internal",
+    "spelling": "I-N-T-E-R-N-A-L",
+    "phonetic": "/ɪnˈtɜːnl/",
+    "gloss": "内部的",
+    "tip": "≠ external",
+    "example": "Internal motivation.",
+    "exampleZh": "内在动机。",
+    "tags": [
+      "academic"
+    ]
+  },
+  {
+    "id": 214,
+    "word": "interpret",
+    "spelling": "I-N-T-E-R-P-R-E-T",
+    "phonetic": "/ɪnˈtɜːprɪt/",
+    "gloss": "解释",
+    "tip": "interpretation",
+    "example": "Interpret the graph.",
+    "exampleZh": "解释图表。",
+    "tags": [
+      "verb",
+      "academic"
+    ]
+  },
+  {
+    "id": 215,
+    "word": "interval",
+    "spelling": "I-N-T-E-R-V-A-L",
+    "phonetic": "/ˈɪntəvl/",
+    "gloss": "间隔",
+    "tip": "at intervals",
+    "example": "Breaks at intervals.",
+    "exampleZh": "定期休息。",
+    "tags": [
+      "campus"
+    ]
+  },
+  {
+    "id": 216,
+    "word": "intervene",
+    "spelling": "I-N-T-E-R-V-E-N-E",
+    "phonetic": "/ˌɪntəˈviːn/",
+    "gloss": "干预",
+    "tip": "intervention",
+    "example": "Teachers may intervene.",
+    "exampleZh": "教师可干预。",
+    "tags": [
+      "verb"
+    ]
+  },
+  {
+    "id": 217,
+    "word": "intrinsic",
+    "spelling": "I-N-T-R-I-N-S-I-C",
+    "phonetic": "/ɪnˈtrɪnsɪk/",
+    "gloss": "内在的",
+    "tip": "≠ extrinsic",
+    "example": "Intrinsic motivator.",
+    "exampleZh": "内在动机。",
+    "tags": [
+      "academic"
+    ]
+  },
+  {
+    "id": 218,
+    "word": "invest",
+    "spelling": "I-N-V-E-S-T",
+    "phonetic": "/ɪnˈvest/",
+    "gloss": "投资",
+    "tip": "investment",
+    "example": "Invest time in listening.",
+    "exampleZh": "把时间投入听力。",
+    "tags": [
+      "verb"
+    ]
+  },
+  {
+    "id": 219,
+    "word": "investigate",
+    "spelling": "I-N-V-E-S-T-I-G-A-T-E",
+    "phonetic": "/ɪnˈvestɪɡeɪt/",
+    "gloss": "调查",
+    "tip": "investigation",
+    "example": "Investigate carefully.",
+    "exampleZh": "仔细调查。",
+    "tags": [
+      "verb",
+      "academic"
+    ]
+  },
+  {
+    "id": 220,
+    "word": "invoke",
+    "spelling": "I-N-V-O-K-E",
+    "phonetic": "/ɪnˈvəʊk/",
+    "gloss": "援引",
+    "tip": "invocation",
+    "example": "Invoke previous cases.",
+    "exampleZh": "援引先例。",
+    "tags": [
+      "verb",
+      "academic"
+    ]
+  },
+  {
+    "id": 221,
+    "word": "involve",
+    "spelling": "I-N-V-O-L-V-E",
+    "phonetic": "/ɪnˈvɒlv/",
+    "gloss": "涉及",
+    "tip": "involved in",
+    "example": "Project involves three teams.",
+    "exampleZh": "项目涉及三队。",
+    "tags": [
+      "verb"
+    ]
+  },
+  {
+    "id": 222,
+    "word": "isolate",
+    "spelling": "I-S-O-L-A-T-E",
+    "phonetic": "/ˈaɪsəleɪt/",
+    "gloss": "隔离",
+    "tip": "isolation",
+    "example": "Do not isolate yourself.",
+    "exampleZh": "不要自我孤立。",
+    "tags": [
+      "verb",
+      "campus"
+    ]
+  },
+  {
+    "id": 223,
+    "word": "issue",
+    "spelling": "I-S-S-U-E",
+    "phonetic": "/ˈɪʃuː/",
+    "gloss": "问题",
+    "tip": "raise an issue",
+    "example": "Traffic is an urban issue.",
+    "exampleZh": "交通是城市问题。",
+    "tags": [
+      "academic"
+    ]
+  },
+  {
+    "id": 224,
+    "word": "item",
+    "spelling": "I-T-E-M",
+    "phonetic": "/ˈaɪtəm/",
+    "gloss": "条目",
+    "tip": "test item",
+    "example": "Each item is one mark.",
+    "exampleZh": "每题一分。",
+    "tags": [
+      "campus"
+    ]
+  },
+  {
+    "id": 225,
+    "word": "journal",
+    "spelling": "J-O-U-R-N-A-L",
+    "phonetic": "/ˈdʒɜːnl/",
+    "gloss": "期刊",
+    "tip": "academic journal",
+    "example": "Peer-reviewed journal.",
+    "exampleZh": "同行评议期刊。",
+    "tags": [
+      "academic"
+    ]
+  },
+  {
+    "id": 226,
+    "word": "justify",
+    "spelling": "J-U-S-T-I-F-Y",
+    "phonetic": "/ˈdʒʌstɪfaɪ/",
+    "gloss": "证明正当",
+    "tip": "justification",
+    "example": "Justify with data.",
+    "exampleZh": "用数据证明。",
+    "tags": [
+      "verb",
+      "academic"
+    ]
+  },
+  {
+    "id": 227,
+    "word": "label",
+    "spelling": "L-A-B-E-L",
+    "phonetic": "/ˈleɪbl/",
+    "gloss": "标注",
+    "tip": "labelling",
+    "example": "Label each axis.",
+    "exampleZh": "标注各轴。",
+    "tags": [
+      "verb"
+    ]
+  },
+  {
+    "id": 228,
+    "word": "labour",
+    "spelling": "L-A-B-O-U-R",
+    "phonetic": "/ˈleɪbə/",
+    "gloss": "劳动",
+    "tip": "labor",
+    "example": "Cheap labour.",
+    "exampleZh": "廉价劳动力。",
+    "tags": [
+      "academic"
+    ]
+  },
+  {
+    "id": 229,
+    "word": "layer",
+    "spelling": "L-A-Y-E-R",
+    "phonetic": "/ˈleɪə/",
+    "gloss": "层",
+    "tip": "ozone layer",
+    "example": "Another layer of analysis.",
+    "exampleZh": "另一层分析。",
+    "tags": [
+      "academic"
+    ]
+  },
+  {
+    "id": 230,
+    "word": "lecture",
+    "spelling": "L-E-C-T-U-R-E",
+    "phonetic": "/ˈlektʃə/",
+    "gloss": "讲座",
+    "tip": "lecturer",
+    "example": "Attend every lecture.",
+    "exampleZh": "出席每堂讲座。",
+    "tags": [
+      "campus"
+    ]
+  },
+  {
+    "id": 231,
+    "word": "legal",
+    "spelling": "L-E-G-A-L",
+    "phonetic": "/ˈliːɡl/",
+    "gloss": "法律的",
+    "tip": "legislation",
+    "example": "Legal requirements.",
+    "exampleZh": "法律要求。",
+    "tags": [
+      "academic"
+    ]
+  },
+  {
+    "id": 232,
+    "word": "legislate",
+    "spelling": "L-E-G-I-S-L-A-T-E",
+    "phonetic": "/ˈledʒɪsleɪt/",
+    "gloss": "立法",
+    "tip": "legislation",
+    "example": "Legislate on privacy.",
+    "exampleZh": "就隐私立法。",
+    "tags": [
+      "verb",
+      "academic"
+    ]
+  },
+  {
+    "id": 233,
+    "word": "liberal",
+    "spelling": "L-I-B-E-R-A-L",
+    "phonetic": "/ˈlɪbərəl/",
+    "gloss": "开明的；文科",
+    "tip": "liberal arts",
+    "example": "Liberal arts college.",
+    "exampleZh": "文理学院。",
+    "tags": [
+      "campus"
+    ]
+  },
+  {
+    "id": 234,
+    "word": "likewise",
+    "spelling": "L-I-K-E-W-I-S-E",
+    "phonetic": "/ˈlaɪkwaɪz/",
+    "gloss": "同样",
+    "tip": "衔接",
+    "example": "Likewise, practice daily.",
+    "exampleZh": "同样每日练习。",
+    "tags": [
+      "academic"
+    ]
+  },
+  {
+    "id": 235,
+    "word": "link",
+    "spelling": "L-I-N-K",
+    "phonetic": "/lɪŋk/",
+    "gloss": "联系",
+    "tip": "linked to",
+    "example": "Diet is linked to health.",
+    "exampleZh": "饮食关联健康。",
+    "tags": [
+      "academic"
+    ]
+  },
+  {
+    "id": 236,
+    "word": "locate",
+    "spelling": "L-O-C-A-T-E",
+    "phonetic": "/ləʊˈkeɪt/",
+    "gloss": "定位",
+    "tip": "location",
+    "example": "Library is located near the lake.",
+    "exampleZh": "图书馆在湖边。",
+    "tags": [
+      "verb",
+      "campus"
+    ]
+  },
+  {
+    "id": 237,
+    "word": "logic",
+    "spelling": "L-O-G-I-C",
+    "phonetic": "/ˈlɒdʒɪk/",
+    "gloss": "逻辑",
+    "tip": "logical",
+    "example": "Check the logic.",
+    "exampleZh": "检查逻辑。",
+    "tags": [
+      "academic"
+    ]
+  },
+  {
+    "id": 238,
+    "word": "maintain",
+    "spelling": "M-A-I-N-T-A-I-N",
+    "phonetic": "/meɪnˈteɪn/",
+    "gloss": "维持",
+    "tip": "maintenance",
+    "example": "Maintain steady pace.",
+    "exampleZh": "保持稳定节奏。",
+    "tags": [
+      "verb"
+    ]
+  },
+  {
+    "id": 239,
+    "word": "major",
+    "spelling": "M-A-J-O-R",
+    "phonetic": "/ˈmeɪdʒə/",
+    "gloss": "专业；主要的",
+    "tip": "≠ minor",
+    "example": "Her major is science.",
+    "exampleZh": "她主修科学。",
+    "tags": [
+      "campus"
+    ]
+  },
+  {
+    "id": 240,
+    "word": "manipulate",
+    "spelling": "M-A-N-I-P-U-L-A-T-E",
+    "phonetic": "/məˈnɪpjuleɪt/",
+    "gloss": "操纵",
+    "tip": "manipulation",
+    "example": "Do not manipulate data.",
+    "exampleZh": "勿篡改数据。",
+    "tags": [
+      "verb",
+      "academic"
+    ]
+  },
+  {
+    "id": 241,
+    "word": "manual",
+    "spelling": "M-A-N-U-A-L",
+    "phonetic": "/ˈmænjuəl/",
+    "gloss": "手册",
+    "tip": "user manual",
+    "example": "Read the safety manual.",
+    "exampleZh": "阅读安全手册。",
+    "tags": [
+      "campus"
+    ]
+  },
+  {
+    "id": 242,
+    "word": "margin",
+    "spelling": "M-A-R-G-I-N",
+    "phonetic": "/ˈmɑːdʒɪn/",
+    "gloss": "页边",
+    "tip": "marginal",
+    "example": "Leave a wide margin.",
+    "exampleZh": "留宽页边。",
+    "tags": [
+      "campus"
+    ]
+  },
+  {
+    "id": 243,
+    "word": "mature",
+    "spelling": "M-A-T-U-R-E",
+    "phonetic": "/məˈtʃʊə/",
+    "gloss": "成熟的",
+    "tip": "maturity",
+    "example": "Mature discussion.",
+    "exampleZh": "成熟讨论。",
+    "tags": [
+      "academic"
+    ]
+  },
+  {
+    "id": 244,
+    "word": "mechanism",
+    "spelling": "M-E-C-H-A-N-I-S-M",
+    "phonetic": "/ˈmekənɪzəm/",
+    "gloss": "机制",
+    "tip": "mech-",
+    "example": "Explain the mechanism.",
+    "exampleZh": "解释机制。",
+    "tags": [
+      "academic"
+    ]
+  },
+  {
+    "id": 245,
+    "word": "media",
+    "spelling": "M-E-D-I-A",
+    "phonetic": "/ˈmiːdiə/",
+    "gloss": "媒体",
+    "tip": "medium",
+    "example": "Social media.",
+    "exampleZh": "社交媒体。",
+    "tags": [
+      "academic"
+    ]
+  },
+  {
+    "id": 246,
+    "word": "mediate",
+    "spelling": "M-E-D-I-A-T-E",
+    "phonetic": "/ˈmiːdieɪt/",
+    "gloss": "调解",
+    "tip": "mediation",
+    "example": "Mediate conflicts.",
+    "exampleZh": "调解冲突。",
+    "tags": [
+      "verb"
+    ]
+  },
+  {
+    "id": 247,
+    "word": "medical",
+    "spelling": "M-E-D-I-C-A-L",
+    "phonetic": "/ˈmedɪkl/",
+    "gloss": "医学的",
+    "tip": "medicine",
+    "example": "Medical research.",
+    "exampleZh": "医学研究。",
+    "tags": [
+      "academic"
+    ]
+  },
+  {
+    "id": 248,
+    "word": "medium",
+    "spelling": "M-E-D-I-U-M",
+    "phonetic": "/ˈmiːdiəm/",
+    "gloss": "媒介",
+    "tip": "media",
+    "example": "Medium of instruction.",
+    "exampleZh": "教学媒介。",
+    "tags": [
+      "campus"
+    ]
+  },
+  {
+    "id": 249,
+    "word": "mental",
+    "spelling": "M-E-N-T-A-L",
+    "phonetic": "/ˈmentl/",
+    "gloss": "心理的",
+    "tip": "mental health",
+    "example": "Mental health support.",
+    "exampleZh": "心理健康支持。",
+    "tags": [
+      "campus"
+    ]
+  },
+  {
+    "id": 250,
+    "word": "method",
+    "spelling": "M-E-T-H-O-D",
+    "phonetic": "/ˈmeθəd/",
+    "gloss": "方法",
+    "tip": "methodology",
+    "example": "Describe your method.",
+    "exampleZh": "描述方法。",
+    "tags": [
+      "academic"
+    ]
+  },
+  {
+    "id": 251,
+    "word": "migrate",
+    "spelling": "M-I-G-R-A-T-E",
+    "phonetic": "/maɪˈɡreɪt/",
+    "gloss": "迁移",
+    "tip": "migration",
+    "example": "Birds migrate south.",
+    "exampleZh": "鸟类南迁。",
+    "tags": [
+      "verb",
+      "academic"
+    ]
+  },
+  {
+    "id": 252,
+    "word": "military",
+    "spelling": "M-I-L-I-T-A-R-Y",
+    "phonetic": "/ˈmɪlətri/",
+    "gloss": "军事的",
+    "tip": "≠ civilian",
+    "example": "Military spending.",
+    "exampleZh": "军费。",
+    "tags": [
+      "academic"
+    ]
+  },
+  {
+    "id": 253,
+    "word": "minimal",
+    "spelling": "M-I-N-I-M-A-L",
+    "phonetic": "/ˈmɪnɪml/",
+    "gloss": "最小的",
+    "tip": "minimum",
+    "example": "Minimal changes.",
+    "exampleZh": "最小改动。",
+    "tags": [
+      "academic"
+    ]
+  },
+  {
+    "id": 254,
+    "word": "ministry",
+    "spelling": "M-I-N-I-S-T-R-Y",
+    "phonetic": "/ˈmɪnɪstri/",
+    "gloss": "部",
+    "tip": "minister",
+    "example": "Ministry of Education.",
+    "exampleZh": "教育部。",
+    "tags": [
+      "academic"
+    ]
+  },
+  {
+    "id": 255,
+    "word": "minor",
+    "spelling": "M-I-N-O-R",
+    "phonetic": "/ˈmaɪnə/",
+    "gloss": "次要的",
+    "tip": "≠ major",
+    "example": "A minor error.",
+    "exampleZh": "小错误。",
+    "tags": [
+      "campus"
+    ]
+  },
+  {
+    "id": 256,
+    "word": "mode",
+    "spelling": "M-O-D-E",
+    "phonetic": "/məʊd/",
+    "gloss": "模式",
+    "tip": "mode of",
+    "example": "Mode of transport.",
+    "exampleZh": "交通方式。",
+    "tags": [
+      "academic"
+    ]
+  },
+  {
+    "id": 257,
+    "word": "modify",
+    "spelling": "M-O-D-I-F-Y",
+    "phonetic": "/ˈmɒdɪfaɪ/",
+    "gloss": "修改",
+    "tip": "modification",
+    "example": "Modify the sentence.",
+    "exampleZh": "修改句子。",
+    "tags": [
+      "verb"
+    ]
+  },
+  {
+    "id": 258,
+    "word": "monitor",
+    "spelling": "M-O-N-I-T-O-R",
+    "phonetic": "/ˈmɒnɪtə/",
+    "gloss": "监控",
+    "tip": "monitoring",
+    "example": "Monitor progress.",
+    "exampleZh": "监控进度。",
+    "tags": [
+      "verb",
+      "campus"
+    ]
+  },
+  {
+    "id": 259,
+    "word": "motive",
+    "spelling": "M-O-T-I-V-E",
+    "phonetic": "/ˈməʊtɪv/",
+    "gloss": "动机",
+    "tip": "motivation",
+    "example": "What is the motive?",
+    "exampleZh": "动机是什么？",
+    "tags": [
+      "academic"
+    ]
+  },
+  {
+    "id": 260,
+    "word": "mutual",
+    "spelling": "M-U-T-U-A-L",
+    "phonetic": "/ˈmjuːtʃuəl/",
+    "gloss": "相互的",
+    "tip": "mutual respect",
+    "example": "Mutual respect.",
+    "exampleZh": "相互尊重。",
+    "tags": [
+      "academic"
+    ]
+  },
+  {
+    "id": 261,
+    "word": "negate",
+    "spelling": "N-E-G-A-T-E",
+    "phonetic": "/nɪˈɡeɪt/",
+    "gloss": "否定",
+    "tip": "negation",
+    "example": "Counterexample can negate a claim.",
+    "exampleZh": "反例可否定主张。",
+    "tags": [
+      "verb",
+      "academic"
+    ]
+  },
+  {
+    "id": 262,
+    "word": "network",
+    "spelling": "N-E-T-W-O-R-K",
+    "phonetic": "/ˈnetwɜːk/",
+    "gloss": "网络",
+    "tip": "networking",
+    "example": "Build a network.",
+    "exampleZh": "建立人脉。",
+    "tags": [
+      "campus"
+    ]
+  },
+  {
+    "id": 263,
+    "word": "neutral",
+    "spelling": "N-E-U-T-R-A-L",
+    "phonetic": "/ˈnjuːtrəl/",
+    "gloss": "中立的",
+    "tip": "neutrality",
+    "example": "Remain neutral.",
+    "exampleZh": "保持中立。",
+    "tags": [
+      "academic"
+    ]
+  },
+  {
+    "id": 264,
+    "word": "nevertheless",
+    "spelling": "N-E-V-E-R-T-H-E-L-E-S-S",
+    "phonetic": "/ˌnevəðəˈles/",
+    "gloss": "然而",
+    "tip": "= nonetheless",
+    "example": "Nevertheless, trends appear.",
+    "exampleZh": "然而仍有趋势。",
+    "tags": [
+      "academic"
+    ]
+  },
+  {
+    "id": 265,
+    "word": "norm",
+    "spelling": "N-O-R-M",
+    "phonetic": "/nɔːm/",
+    "gloss": "规范",
+    "tip": "social norm",
+    "example": "Academic norms.",
+    "exampleZh": "学术规范。",
+    "tags": [
+      "academic"
+    ]
+  },
+  {
+    "id": 266,
+    "word": "notion",
+    "spelling": "N-O-T-I-O-N",
+    "phonetic": "/ˈnəʊʃn/",
+    "gloss": "概念",
+    "tip": "a notion of",
+    "example": "Notion of fairness.",
+    "exampleZh": "公平概念。",
+    "tags": [
+      "academic"
+    ]
+  },
+  {
+    "id": 267,
+    "word": "nuclear",
+    "spelling": "N-U-C-L-E-A-R",
+    "phonetic": "/ˈnjuːkliə/",
+    "gloss": "核的",
+    "tip": "nuclear energy",
+    "example": "Nuclear power.",
+    "exampleZh": "核能。",
+    "tags": [
+      "academic"
+    ]
+  },
+  {
+    "id": 268,
+    "word": "objective",
+    "spelling": "O-B-J-E-C-T-I-V-E",
+    "phonetic": "/əbˈdʒektɪv/",
+    "gloss": "目标；客观的",
+    "tip": "≠ subjective",
+    "example": "Learning objectives.",
+    "exampleZh": "学习目标。",
+    "tags": [
+      "academic"
+    ]
+  },
+  {
+    "id": 269,
+    "word": "obtain",
+    "spelling": "O-B-T-A-I-N",
+    "phonetic": "/əbˈteɪn/",
+    "gloss": "获得",
+    "tip": "obtainable",
+    "example": "Obtain permission.",
+    "exampleZh": "获得许可。",
+    "tags": [
+      "verb"
+    ]
+  },
+  {
+    "id": 270,
+    "word": "obvious",
+    "spelling": "O-B-V-I-O-U-S",
+    "phonetic": "/ˈɒbviəs/",
+    "gloss": "明显的",
+    "tip": "obviously",
+    "example": "Not always obvious.",
+    "exampleZh": "并非总明显。",
+    "tags": [
+      "academic"
+    ]
+  },
+  {
+    "id": 271,
+    "word": "occupy",
+    "spelling": "O-C-C-U-P-Y",
+    "phonetic": "/ˈɒkjupaɪ/",
+    "gloss": "占用",
+    "tip": "occupation",
+    "example": "Meetings occupy afternoons.",
+    "exampleZh": "会议占用下午。",
+    "tags": [
+      "verb"
+    ]
+  },
+  {
+    "id": 272,
+    "word": "occur",
+    "spelling": "O-C-C-U-R",
+    "phonetic": "/əˈkɜː/",
+    "gloss": "发生",
+    "tip": "occurrence",
+    "example": "Errors occur when rushing.",
+    "exampleZh": "赶时间易出错。",
+    "tags": [
+      "verb"
+    ]
+  },
+  {
+    "id": 273,
+    "word": "offset",
+    "spelling": "O-F-F-S-E-T",
+    "phonetic": "/ˈɒfset/",
+    "gloss": "抵消",
+    "tip": "carbon offset",
+    "example": "Gains may offset costs.",
+    "exampleZh": "收益或抵消成本。",
+    "tags": [
+      "verb"
+    ]
+  },
+  {
+    "id": 274,
+    "word": "ongoing",
+    "spelling": "O-N-G-O-I-N-G",
+    "phonetic": "/ˈɒnɡəʊɪŋ/",
+    "gloss": "持续的",
+    "tip": "on+going",
+    "example": "Ongoing project.",
+    "exampleZh": "持续项目。",
+    "tags": [
+      "academic"
+    ]
+  },
+  {
+    "id": 275,
+    "word": "option",
+    "spelling": "O-P-T-I-O-N",
+    "phonetic": "/ˈɒpʃn/",
+    "gloss": "选项",
+    "tip": "optional",
+    "example": "Option to retake.",
+    "exampleZh": "可选重考。",
+    "tags": [
+      "campus"
+    ]
+  },
+  {
+    "id": 276,
+    "word": "orient",
+    "spelling": "O-R-I-E-N-T",
+    "phonetic": "/ˈɔːrient/",
+    "gloss": "定向",
+    "tip": "orientation",
+    "example": "Orientation week.",
+    "exampleZh": "迎新周。",
+    "tags": [
+      "campus"
+    ]
+  },
+  {
+    "id": 277,
+    "word": "outcome",
+    "spelling": "O-U-T-C-O-M-E",
+    "phonetic": "/ˈaʊtkʌm/",
+    "gloss": "结果",
+    "tip": "out+come",
+    "example": "Learning outcomes.",
+    "exampleZh": "学习成果。",
+    "tags": [
+      "campus",
+      "academic"
+    ]
+  },
+  {
+    "id": 278,
+    "word": "output",
+    "spelling": "O-U-T-P-U-T",
+    "phonetic": "/ˈaʊtpʊt/",
+    "gloss": "产出",
+    "tip": "≠ input",
+    "example": "Factory output rose.",
+    "exampleZh": "工厂产出上升。",
+    "tags": [
+      "academic"
+    ]
+  },
+  {
+    "id": 279,
+    "word": "overall",
+    "spelling": "O-V-E-R-A-L-L",
+    "phonetic": "/ˌəʊvərˈɔːl/",
+    "gloss": "总体的",
+    "tip": "overall score",
+    "example": "Overall score improved.",
+    "exampleZh": "总分提高。",
+    "tags": [
+      "campus"
+    ]
+  },
+  {
+    "id": 280,
+    "word": "overlap",
+    "spelling": "O-V-E-R-L-A-P",
+    "phonetic": "/ˌəʊvəˈlæp/",
+    "gloss": "重叠",
+    "tip": "overlapping",
+    "example": "Topics overlap.",
+    "exampleZh": "话题重叠。",
+    "tags": [
+      "academic"
+    ]
+  },
+  {
+    "id": 281,
+    "word": "overseas",
+    "spelling": "O-V-E-R-S-E-A-S",
+    "phonetic": "/ˌəʊvəˈsiːz/",
+    "gloss": "海外的",
+    "tip": "over+seas",
+    "example": "Study overseas.",
+    "exampleZh": "出国留学。",
+    "tags": [
+      "campus"
+    ]
+  },
+  {
+    "id": 282,
+    "word": "panel",
+    "spelling": "P-A-N-E-L",
+    "phonetic": "/ˈpænl/",
+    "gloss": "小组",
+    "tip": "expert panel",
+    "example": "Expert panel reviewed.",
+    "exampleZh": "专家组审阅。",
+    "tags": [
+      "academic"
+    ]
+  },
+  {
+    "id": 283,
+    "word": "paradigm",
+    "spelling": "P-A-R-A-D-I-G-M",
+    "phonetic": "/ˈpærədaɪm/",
+    "gloss": "范式",
+    "tip": "paradigm shift",
+    "example": "New paradigm.",
+    "exampleZh": "新范式。",
+    "tags": [
+      "academic"
+    ]
+  },
+  {
+    "id": 284,
+    "word": "paragraph",
+    "spelling": "P-A-R-A-G-R-A-P-H",
+    "phonetic": "/ˈpærəɡrɑːf/",
+    "gloss": "段落",
+    "tip": "topic sentence",
+    "example": "Clear paragraph.",
+    "exampleZh": "清晰段落。",
+    "tags": [
+      "academic"
+    ]
+  },
+  {
+    "id": 285,
+    "word": "parallel",
+    "spelling": "P-A-R-A-L-L-E-L",
+    "phonetic": "/ˈpærəlel/",
+    "gloss": "平行的",
+    "tip": "双写l",
+    "example": "Draw a parallel.",
+    "exampleZh": "作类比。",
+    "tags": [
+      "academic"
+    ]
+  },
+  {
+    "id": 286,
+    "word": "parameter",
+    "spelling": "P-A-R-A-M-E-T-E-R",
+    "phonetic": "/pəˈræmɪtə/",
+    "gloss": "参数",
+    "tip": "para-+meter",
+    "example": "Change one parameter.",
+    "exampleZh": "改一个参数。",
+    "tags": [
+      "academic"
+    ]
+  },
+  {
+    "id": 287,
+    "word": "participate",
+    "spelling": "P-A-R-T-I-C-I-P-A-T-E",
+    "phonetic": "/pɑːˈtɪsɪpeɪt/",
+    "gloss": "参与",
+    "tip": "participation",
+    "example": "Participate in the survey.",
+    "exampleZh": "参与调查。",
+    "tags": [
+      "verb",
+      "campus"
+    ]
+  },
+  {
+    "id": 288,
+    "word": "partner",
+    "spelling": "P-A-R-T-N-E-R",
+    "phonetic": "/ˈpɑːtnə/",
+    "gloss": "伙伴",
+    "tip": "partnership",
+    "example": "Study partner.",
+    "exampleZh": "学习伙伴。",
+    "tags": [
+      "campus"
+    ]
+  },
+  {
+    "id": 289,
+    "word": "passive",
+    "spelling": "P-A-S-S-I-V-E",
+    "phonetic": "/ˈpæsɪv/",
+    "gloss": "被动的",
+    "tip": "passive voice",
+    "example": "Avoid excess passive.",
+    "exampleZh": "避免过多被动。",
+    "tags": [
+      "academic"
+    ]
+  },
+  {
+    "id": 290,
+    "word": "perceive",
+    "spelling": "P-E-R-C-E-I-V-E",
+    "phonetic": "/pəˈsiːv/",
+    "gloss": "感知",
+    "tip": "perception",
+    "example": "Perceive risk differently.",
+    "exampleZh": "风险感知不同。",
+    "tags": [
+      "verb",
+      "academic"
+    ]
+  },
+  {
+    "id": 291,
+    "word": "percent",
+    "spelling": "P-E-R-C-E-N-T",
+    "phonetic": "/pəˈsent/",
+    "gloss": "百分比",
+    "tip": "percentage",
+    "example": "Forty percent agreed.",
+    "exampleZh": "百分之四十同意。",
+    "tags": [
+      "academic"
+    ]
+  },
+  {
+    "id": 292,
+    "word": "period",
+    "spelling": "P-E-R-I-O-D",
+    "phonetic": "/ˈpɪəriəd/",
+    "gloss": "时期",
+    "tip": "periodic",
+    "example": "During this period.",
+    "exampleZh": "这一时期。",
+    "tags": [
+      "academic"
+    ]
+  },
+  {
+    "id": 293,
+    "word": "persist",
+    "spelling": "P-E-R-S-I-S-T",
+    "phonetic": "/pəˈsɪst/",
+    "gloss": "持续",
+    "tip": "persistent",
+    "example": "Symptoms may persist.",
+    "exampleZh": "症状或持续。",
+    "tags": [
+      "verb"
+    ]
+  },
+  {
+    "id": 294,
+    "word": "perspective",
+    "spelling": "P-E-R-S-P-E-C-T-I-V-E",
+    "phonetic": "/pəˈspektɪv/",
+    "gloss": "视角",
+    "tip": "from…perspective",
+    "example": "Another perspective.",
+    "exampleZh": "另一视角。",
+    "tags": [
+      "academic"
+    ]
+  },
+  {
+    "id": 295,
+    "word": "phase",
+    "spelling": "P-H-A-S-E",
+    "phonetic": "/feɪz/",
+    "gloss": "阶段",
+    "tip": "in phases",
+    "example": "Three phases.",
+    "exampleZh": "三阶段。",
+    "tags": [
+      "academic"
+    ]
+  },
+  {
+    "id": 296,
+    "word": "phenomenon",
+    "spelling": "P-H-E-N-O-M-E-N-O-N",
+    "phonetic": "/fəˈnɒmɪnən/",
+    "gloss": "现象",
+    "tip": "phenomena",
+    "example": "Global phenomenon.",
+    "exampleZh": "全球现象。",
+    "tags": [
+      "academic"
+    ]
+  },
+  {
+    "id": 297,
+    "word": "philosophy",
+    "spelling": "P-H-I-L-O-S-O-P-H-Y",
+    "phonetic": "/fəˈlɒsəfi/",
+    "gloss": "哲学",
+    "tip": "philosophical",
+    "example": "Majored in philosophy.",
+    "exampleZh": "主修哲学。",
+    "tags": [
+      "campus"
+    ]
+  },
+  {
+    "id": 298,
+    "word": "physical",
+    "spelling": "P-H-Y-S-I-C-A-L",
+    "phonetic": "/ˈfɪzɪkl/",
+    "gloss": "身体的",
+    "tip": "physics",
+    "example": "Physical activity.",
+    "exampleZh": "体育活动。",
+    "tags": [
+      "campus"
+    ]
+  },
+  {
+    "id": 299,
+    "word": "policy",
+    "spelling": "P-O-L-I-C-Y",
+    "phonetic": "/ˈpɒləsi/",
+    "gloss": "政策",
+    "tip": "public policy",
+    "example": "Education policy.",
+    "exampleZh": "教育政策。",
+    "tags": [
+      "academic"
+    ]
+  },
+  {
+    "id": 300,
+    "word": "portion",
+    "spelling": "P-O-R-T-I-O-N",
+    "phonetic": "/ˈpɔːʃn/",
+    "gloss": "部分",
+    "tip": "a portion of",
+    "example": "A large portion of time.",
+    "exampleZh": "大量时间。",
+    "tags": [
+      "academic"
+    ]
+  },
+  {
+    "id": 301,
+    "word": "pose",
+    "spelling": "P-O-S-E",
+    "phonetic": "/pəʊz/",
+    "gloss": "构成",
+    "tip": "pose a threat",
+    "example": "Pollution poses a threat.",
+    "exampleZh": "污染构成威胁。",
+    "tags": [
+      "verb"
+    ]
+  },
+  {
+    "id": 302,
+    "word": "positive",
+    "spelling": "P-O-S-I-T-I-V-E",
+    "phonetic": "/ˈpɒzətɪv/",
+    "gloss": "积极的",
+    "tip": "≠ negative",
+    "example": "Positive mindset.",
+    "exampleZh": "积极心态。",
+    "tags": [
+      "campus"
+    ]
+  },
+  {
+    "id": 303,
+    "word": "potential",
+    "spelling": "P-O-T-E-N-T-I-A-L",
+    "phonetic": "/pəˈtenʃl/",
+    "gloss": "潜在的",
+    "tip": "potential energy",
+    "example": "Great potential.",
+    "exampleZh": "巨大潜力。",
+    "tags": [
+      "academic"
+    ]
+  },
+  {
+    "id": 304,
+    "word": "practitioner",
+    "spelling": "P-R-A-C-T-I-T-I-O-N-E-R",
+    "phonetic": "/prækˈtɪʃənə/",
+    "gloss": "从业者",
+    "tip": "practice",
+    "example": "Medical practitioners.",
+    "exampleZh": "医疗从业者。",
+    "tags": [
+      "academic"
+    ]
+  },
+  {
+    "id": 305,
+    "word": "precede",
+    "spelling": "P-R-E-C-E-D-E",
+    "phonetic": "/prɪˈsiːd/",
+    "gloss": "先于",
+    "tip": "≠ proceed",
+    "example": "Intro should precede data.",
+    "exampleZh": "引言应先于数据。",
+    "tags": [
+      "verb",
+      "academic"
+    ]
+  },
+  {
+    "id": 306,
+    "word": "precise",
+    "spelling": "P-R-E-C-I-S-E",
+    "phonetic": "/prɪˈsaɪs/",
+    "gloss": "精确的",
+    "tip": "precision",
+    "example": "Be precise with numbers.",
+    "exampleZh": "数字要精确。",
+    "tags": [
+      "academic"
+    ]
+  },
+  {
+    "id": 307,
+    "word": "predict",
+    "spelling": "P-R-E-D-I-C-T",
+    "phonetic": "/prɪˈdɪkt/",
+    "gloss": "预测",
+    "tip": "prediction",
+    "example": "Models predict demand.",
+    "exampleZh": "模型预测需求。",
+    "tags": [
+      "verb",
+      "academic"
+    ]
+  },
+  {
+    "id": 308,
+    "word": "predominant",
+    "spelling": "P-R-E-D-O-M-I-N-A-N-T",
+    "phonetic": "/prɪˈdɒmɪnənt/",
+    "gloss": "占主导的",
+    "tip": "predominance",
+    "example": "Predominant language.",
+    "exampleZh": "主导语言。",
+    "tags": [
+      "academic"
+    ]
+  },
+  {
+    "id": 309,
+    "word": "preliminary",
+    "spelling": "P-R-E-L-I-M-I-N-A-R-Y",
+    "phonetic": "/prɪˈlɪmɪnəri/",
+    "gloss": "初步的",
+    "tip": "prelim-",
+    "example": "Preliminary findings.",
+    "exampleZh": "初步发现。",
+    "tags": [
+      "academic"
+    ]
+  },
+  {
+    "id": 310,
+    "word": "presume",
+    "spelling": "P-R-E-S-U-M-E",
+    "phonetic": "/prɪˈzjuːm/",
+    "gloss": "假定",
+    "tip": "presumption",
+    "example": "Do not presume knowledge.",
+    "exampleZh": "勿假定已知。",
+    "tags": [
+      "verb"
+    ]
+  },
+  {
+    "id": 311,
+    "word": "previous",
+    "spelling": "P-R-E-V-I-O-U-S",
+    "phonetic": "/ˈpriːviəs/",
+    "gloss": "先前的",
+    "tip": "previously",
+    "example": "Previous chapter.",
+    "exampleZh": "上一章。",
+    "tags": [
+      "academic"
+    ]
+  },
+  {
+    "id": 312,
+    "word": "primary",
+    "spelling": "P-R-I-M-A-R-Y",
+    "phonetic": "/ˈpraɪməri/",
+    "gloss": "主要的",
+    "tip": "primary source",
+    "example": "Primary goal.",
+    "exampleZh": "主要目标。",
+    "tags": [
+      "academic"
+    ]
+  },
+  {
+    "id": 313,
+    "word": "principal",
+    "spelling": "P-R-I-N-C-I-P-A-L",
+    "phonetic": "/ˈprɪnsəpl/",
+    "gloss": "主要的",
+    "tip": "≠ principle",
+    "example": "Principal reason.",
+    "exampleZh": "主要原因。",
+    "tags": [
+      "academic"
+    ]
+  },
+  {
+    "id": 314,
+    "word": "principle",
+    "spelling": "P-R-I-N-C-I-P-L-E",
+    "phonetic": "/ˈprɪnsəpl/",
+    "gloss": "原则",
+    "tip": "in principle",
+    "example": "Academic principles.",
+    "exampleZh": "学术原则。",
+    "tags": [
+      "academic"
+    ]
+  },
+  {
+    "id": 315,
+    "word": "prior",
+    "spelling": "P-R-I-O-R",
+    "phonetic": "/ˈpraɪə/",
+    "gloss": "先前的",
+    "tip": "prior to",
+    "example": "Prior experience.",
+    "exampleZh": "先前经验。",
+    "tags": [
+      "academic"
+    ]
+  },
+  {
+    "id": 316,
+    "word": "priority",
+    "spelling": "P-R-I-O-R-I-T-Y",
+    "phonetic": "/praɪˈɒrəti/",
+    "gloss": "优先事项",
+    "tip": "prioritise",
+    "example": "Daily priority.",
+    "exampleZh": "每日优先。",
+    "tags": [
+      "campus"
+    ]
+  },
+  {
+    "id": 317,
+    "word": "proceed",
+    "spelling": "P-R-O-C-E-E-D",
+    "phonetic": "/prəˈsiːd/",
+    "gloss": "继续",
+    "tip": "proceedings",
+    "example": "Proceed to next question.",
+    "exampleZh": "继续下一题。",
+    "tags": [
+      "verb"
+    ]
+  },
+  {
+    "id": 318,
+    "word": "process",
+    "spelling": "P-R-O-C-E-S-S",
+    "phonetic": "/ˈprəʊses/",
+    "gloss": "过程",
+    "tip": "in the process",
+    "example": "Learning is a process.",
+    "exampleZh": "学习是过程。",
+    "tags": [
+      "academic"
+    ]
+  },
+  {
+    "id": 319,
+    "word": "professional",
+    "spelling": "P-R-O-F-E-S-S-I-O-N-A-L",
+    "phonetic": "/prəˈfeʃənl/",
+    "gloss": "专业的",
+    "tip": "profession",
+    "example": "Professional tone.",
+    "exampleZh": "专业语气。",
+    "tags": [
+      "campus"
+    ]
+  },
+  {
+    "id": 320,
+    "word": "prohibit",
+    "spelling": "P-R-O-H-I-B-I-T",
+    "phonetic": "/prəˈhɪbɪt/",
+    "gloss": "禁止",
+    "tip": "prohibition",
+    "example": "Prohibit cheating.",
+    "exampleZh": "禁止作弊。",
+    "tags": [
+      "verb",
+      "campus"
+    ]
+  },
+  {
+    "id": 321,
+    "word": "project",
+    "spelling": "P-R-O-J-E-C-T",
+    "phonetic": "/ˈprɒdʒekt/",
+    "gloss": "项目",
+    "tip": "group project",
+    "example": "Group projects.",
+    "exampleZh": "小组项目。",
+    "tags": [
+      "campus"
+    ]
+  },
+  {
+    "id": 322,
+    "word": "promote",
+    "spelling": "P-R-O-M-O-T-E",
+    "phonetic": "/prəˈməʊt/",
+    "gloss": "促进",
+    "tip": "promotion",
+    "example": "Promote new courses.",
+    "exampleZh": "推广新课。",
+    "tags": [
+      "verb"
+    ]
+  },
+  {
+    "id": 323,
+    "word": "proportion",
+    "spelling": "P-R-O-P-O-R-T-I-O-N",
+    "phonetic": "/prəˈpɔːʃn/",
+    "gloss": "比例",
+    "tip": "proportional",
+    "example": "Large proportion.",
+    "exampleZh": "大部分。",
+    "tags": [
+      "academic"
+    ]
+  },
+  {
+    "id": 324,
+    "word": "prospect",
+    "spelling": "P-R-O-S-P-E-C-T",
+    "phonetic": "/ˈprɒspekt/",
+    "gloss": "前景",
+    "tip": "prospective",
+    "example": "Job prospects.",
+    "exampleZh": "就业前景。",
+    "tags": [
+      "campus"
+    ]
+  },
+  {
+    "id": 325,
+    "word": "protocol",
+    "spelling": "P-R-O-T-O-C-O-L",
+    "phonetic": "/ˈprəʊtəkɒl/",
+    "gloss": "规程",
+    "tip": "lab protocol",
+    "example": "Safety protocols.",
+    "exampleZh": "安全规程。",
+    "tags": [
+      "campus"
+    ]
+  },
+  {
+    "id": 326,
+    "word": "psychology",
+    "spelling": "P-S-Y-C-H-O-L-O-G-Y",
+    "phonetic": "/saɪˈkɒlədʒi/",
+    "gloss": "心理学",
+    "tip": "psychological",
+    "example": "Psychology explains learning.",
+    "exampleZh": "心理学解释学习。",
+    "tags": [
+      "academic"
+    ]
+  },
+  {
+    "id": 327,
+    "word": "publication",
+    "spelling": "P-U-B-L-I-C-A-T-I-O-N",
+    "phonetic": "/ˌpʌblɪˈkeɪʃn/",
+    "gloss": "出版物",
+    "tip": "publish",
+    "example": "List publications.",
+    "exampleZh": "列出发表作品。",
+    "tags": [
+      "academic"
+    ]
+  },
+  {
+    "id": 328,
+    "word": "publish",
+    "spelling": "P-U-B-L-I-S-H",
+    "phonetic": "/ˈpʌblɪʃ/",
+    "gloss": "出版",
+    "tip": "publisher",
+    "example": "Publish in journals.",
+    "exampleZh": "在期刊发表。",
+    "tags": [
+      "verb",
+      "academic"
+    ]
+  },
+  {
+    "id": 329,
+    "word": "purchase",
+    "spelling": "P-U-R-C-H-A-S-E",
+    "phonetic": "/ˈpɜːtʃəs/",
+    "gloss": "购买",
+    "tip": "正式",
+    "example": "Purchase textbooks.",
+    "exampleZh": "购买教材。",
+    "tags": [
+      "campus"
+    ]
+  },
+  {
+    "id": 330,
+    "word": "pursue",
+    "spelling": "P-U-R-S-U-E",
+    "phonetic": "/pəˈsjuː/",
+    "gloss": "追求",
+    "tip": "pursuit",
+    "example": "Pursue a master's.",
+    "exampleZh": "攻读硕士。",
+    "tags": [
+      "verb",
+      "campus"
+    ]
+  },
+  {
+    "id": 331,
+    "word": "qualitative",
+    "spelling": "Q-U-A-L-I-T-A-T-I-V-E",
+    "phonetic": "/ˈkwɒlɪtətɪv/",
+    "gloss": "定性的",
+    "tip": "≠ quantitative",
+    "example": "Qualitative research.",
+    "exampleZh": "定性研究。",
+    "tags": [
+      "academic"
+    ]
+  },
+  {
+    "id": 332,
+    "word": "quote",
+    "spelling": "Q-U-O-T-E",
+    "phonetic": "/kwəʊt/",
+    "gloss": "引用",
+    "tip": "quotation",
+    "example": "Do not quote without citation.",
+    "exampleZh": "引用须标注。",
+    "tags": [
+      "verb",
+      "academic"
+    ]
+  },
+  {
+    "id": 333,
+    "word": "radical",
+    "spelling": "R-A-D-I-C-A-L",
+    "phonetic": "/ˈrædɪkl/",
+    "gloss": "激进的",
+    "tip": "radical change",
+    "example": "Radical changes.",
+    "exampleZh": "激进变化。",
+    "tags": [
+      "academic"
+    ]
+  },
+  {
+    "id": 334,
+    "word": "random",
+    "spelling": "R-A-N-D-O-M",
+    "phonetic": "/ˈrændəm/",
+    "gloss": "随机的",
+    "tip": "at random",
+    "example": "Select at random.",
+    "exampleZh": "随机选择。",
+    "tags": [
+      "academic"
+    ]
+  },
+  {
+    "id": 335,
+    "word": "range",
+    "spelling": "R-A-N-G-E",
+    "phonetic": "/reɪndʒ/",
+    "gloss": "范围",
+    "tip": "a wide range",
+    "example": "Wide range of resources.",
+    "exampleZh": "广泛资源。",
+    "tags": [
+      "campus"
+    ]
+  },
+  {
+    "id": 336,
+    "word": "ratio",
+    "spelling": "R-A-T-I-O",
+    "phonetic": "/ˈreɪʃiəʊ/",
+    "gloss": "比率",
+    "tip": "ratio of",
+    "example": "Student-teacher ratio.",
+    "exampleZh": "师生比。",
+    "tags": [
+      "academic"
+    ]
+  },
+  {
+    "id": 337,
+    "word": "rational",
+    "spelling": "R-A-T-I-O-N-A-L",
+    "phonetic": "/ˈræʃənl/",
+    "gloss": "理性的",
+    "tip": "rationale",
+    "example": "Rational decision.",
+    "exampleZh": "理性决定。",
+    "tags": [
+      "academic"
+    ]
+  },
+  {
+    "id": 338,
+    "word": "react",
+    "spelling": "R-E-A-C-T",
+    "phonetic": "/riˈækt/",
+    "gloss": "反应",
+    "tip": "reaction",
+    "example": "Markets react to news.",
+    "exampleZh": "市场应对新闻。",
+    "tags": [
+      "verb"
+    ]
+  },
+  {
+    "id": 339,
+    "word": "recover",
+    "spelling": "R-E-C-O-V-E-R",
+    "phonetic": "/rɪˈkʌvə/",
+    "gloss": "恢复",
+    "tip": "recovery",
+    "example": "Economies recover.",
+    "exampleZh": "经济复苏。",
+    "tags": [
+      "verb"
+    ]
+  },
+  {
+    "id": 340,
+    "word": "refine",
+    "spelling": "R-E-F-I-N-E",
+    "phonetic": "/rɪˈfaɪn/",
+    "gloss": "改进",
+    "tip": "refinement",
+    "example": "Refine your thesis.",
+    "exampleZh": "打磨论点。",
+    "tags": [
+      "verb",
+      "academic"
+    ]
+  },
+  {
+    "id": 341,
+    "word": "regime",
+    "spelling": "R-E-G-I-M-E",
+    "phonetic": "/reɪˈʒiːm/",
+    "gloss": "制度",
+    "tip": "tax regime",
+    "example": "New tax regime.",
+    "exampleZh": "新税制。",
+    "tags": [
+      "academic"
+    ]
+  },
+  {
+    "id": 342,
+    "word": "region",
+    "spelling": "R-E-G-I-O-N",
+    "phonetic": "/ˈriːdʒən/",
+    "gloss": "地区",
+    "tip": "regional",
+    "example": "Coastal region.",
+    "exampleZh": "沿海地区。",
+    "tags": [
+      "academic"
+    ]
+  },
+  {
+    "id": 343,
+    "word": "register",
+    "spelling": "R-E-G-I-S-T-E-R",
+    "phonetic": "/ˈredʒɪstə/",
+    "gloss": "注册",
+    "tip": "registration",
+    "example": "Register for classes.",
+    "exampleZh": "注册课程。",
+    "tags": [
+      "verb",
+      "campus"
+    ]
+  },
+  {
+    "id": 344,
+    "word": "regulate",
+    "spelling": "R-E-G-U-L-A-T-E",
+    "phonetic": "/ˈreɡjuleɪt/",
+    "gloss": "监管",
+    "tip": "regulation",
+    "example": "Regulate privacy.",
+    "exampleZh": "监管隐私。",
+    "tags": [
+      "verb",
+      "academic"
+    ]
+  },
+  {
+    "id": 345,
+    "word": "reinforce",
+    "spelling": "R-E-I-N-F-O-R-C-E",
+    "phonetic": "/ˌriːɪnˈfɔːs/",
+    "gloss": "加强",
+    "tip": "reinforcement",
+    "example": "Examples reinforce ideas.",
+    "exampleZh": "例子加强观点。",
+    "tags": [
+      "verb"
+    ]
+  },
+  {
+    "id": 346,
+    "word": "reject",
+    "spelling": "R-E-J-E-C-T",
+    "phonetic": "/rɪˈdʒekt/",
+    "gloss": "拒绝",
+    "tip": "rejection",
+    "example": "Journal may reject.",
+    "exampleZh": "期刊或拒稿。",
+    "tags": [
+      "verb",
+      "academic"
+    ]
+  },
+  {
+    "id": 347,
+    "word": "release",
+    "spelling": "R-E-L-E-A-S-E",
+    "phonetic": "/rɪˈliːs/",
+    "gloss": "发布",
+    "tip": "press release",
+    "example": "Report released next week.",
+    "exampleZh": "报告下周发布。",
+    "tags": [
+      "verb"
+    ]
+  },
+  {
+    "id": 348,
+    "word": "relevant",
+    "spelling": "R-E-L-E-V-A-N-T",
+    "phonetic": "/ˈreləvənt/",
+    "gloss": "相关的",
+    "tip": "relevance",
+    "example": "Keep relevant examples.",
+    "exampleZh": "保留相关例子。",
+    "tags": [
+      "academic"
+    ]
+  },
+  {
+    "id": 349,
+    "word": "rely",
+    "spelling": "R-E-L-Y",
+    "phonetic": "/rɪˈlaɪ/",
+    "gloss": "依赖",
+    "tip": "rely on",
+    "example": "Do not rely on apps in exams.",
+    "exampleZh": "考试勿依赖软件。",
+    "tags": [
+      "verb"
+    ]
+  },
+  {
+    "id": 350,
+    "word": "remove",
+    "spelling": "R-E-M-O-V-E",
+    "phonetic": "/rɪˈmuːv/",
+    "gloss": "移除",
+    "tip": "removal",
+    "example": "Remove distractions.",
+    "exampleZh": "排除干扰。",
+    "tags": [
+      "verb"
+    ]
+  },
+  {
+    "id": 351,
+    "word": "require",
+    "spelling": "R-E-Q-U-I-R-E",
+    "phonetic": "/rɪˈkwaɪə/",
+    "gloss": "需要",
+    "tip": "requirement",
+    "example": "Course requires essays.",
+    "exampleZh": "课程要求论文。",
+    "tags": [
+      "verb",
+      "campus"
+    ]
+  },
+  {
+    "id": 352,
+    "word": "research",
+    "spelling": "R-E-S-E-A-R-C-H",
+    "phonetic": "/rɪˈsɜːtʃ/",
+    "gloss": "研究",
+    "tip": "researcher",
+    "example": "Further research needed.",
+    "exampleZh": "需进一步研究。",
+    "tags": [
+      "academic"
+    ]
+  },
+  {
+    "id": 353,
+    "word": "reside",
+    "spelling": "R-E-S-I-D-E",
+    "phonetic": "/rɪˈzaɪd/",
+    "gloss": "居住",
+    "tip": "residence",
+    "example": "Reside on campus.",
+    "exampleZh": "住校。",
+    "tags": [
+      "verb",
+      "campus"
+    ]
+  },
+  {
+    "id": 354,
+    "word": "resolve",
+    "spelling": "R-E-S-O-L-V-E",
+    "phonetic": "/rɪˈzɒlv/",
+    "gloss": "解决",
+    "tip": "resolution",
+    "example": "Resolve conflicts calmly.",
+    "exampleZh": "冷静解决冲突。",
+    "tags": [
+      "verb"
+    ]
+  },
+  {
+    "id": 355,
+    "word": "resource",
+    "spelling": "R-E-S-O-U-R-C-E",
+    "phonetic": "/rɪˈsɔːs/",
+    "gloss": "资源",
+    "tip": "resources",
+    "example": "Use library resources.",
+    "exampleZh": "利用图书馆资源。",
+    "tags": [
+      "campus"
+    ]
+  },
+  {
+    "id": 356,
+    "word": "respond",
+    "spelling": "R-E-S-P-O-N-D",
+    "phonetic": "/rɪˈspɒnd/",
+    "gloss": "回应",
+    "tip": "response",
+    "example": "Respond promptly.",
+    "exampleZh": "及时回复。",
+    "tags": [
+      "verb"
+    ]
+  },
+  {
+    "id": 357,
+    "word": "restore",
+    "spelling": "R-E-S-T-O-R-E",
+    "phonetic": "/rɪˈstɔː/",
+    "gloss": "恢复",
+    "tip": "restoration",
+    "example": "Restore habitats.",
+    "exampleZh": "恢复栖息地。",
+    "tags": [
+      "verb"
+    ]
+  },
+  {
+    "id": 358,
+    "word": "restrict",
+    "spelling": "R-E-S-T-R-I-C-T",
+    "phonetic": "/rɪˈstrɪkt/",
+    "gloss": "限制",
+    "tip": "restriction",
+    "example": "Parking is restricted.",
+    "exampleZh": "停车受限。",
+    "tags": [
+      "verb",
+      "campus"
+    ]
+  },
+  {
+    "id": 359,
+    "word": "retain",
+    "spelling": "R-E-T-A-I-N",
+    "phonetic": "/rɪˈteɪn/",
+    "gloss": "保留",
+    "tip": "retention",
+    "example": "Retain vocabulary.",
+    "exampleZh": "保留词汇。",
+    "tags": [
+      "verb"
+    ]
+  },
+  {
+    "id": 360,
+    "word": "reveal",
+    "spelling": "R-E-V-E-A-L",
+    "phonetic": "/rɪˈviːl/",
+    "gloss": "揭示",
+    "tip": "revelation",
+    "example": "Survey reveals preferences.",
+    "exampleZh": "调查揭示偏好。",
+    "tags": [
+      "verb",
+      "academic"
+    ]
+  },
+  {
+    "id": 361,
+    "word": "revenue",
+    "spelling": "R-E-V-E-N-U-E",
+    "phonetic": "/ˈrevənjuː/",
+    "gloss": "收入",
+    "tip": "tax revenue",
+    "example": "Tourism revenue.",
+    "exampleZh": "旅游收入。",
+    "tags": [
+      "academic"
+    ]
+  },
+  {
+    "id": 362,
+    "word": "reverse",
+    "spelling": "R-E-V-E-R-S-E",
+    "phonetic": "/rɪˈvɜːs/",
+    "gloss": "逆转",
+    "tip": "in reverse",
+    "example": "Reverse the order.",
+    "exampleZh": "颠倒顺序。",
+    "tags": [
+      "verb"
+    ]
+  },
+  {
+    "id": 363,
+    "word": "revise",
+    "spelling": "R-E-V-I-S-E",
+    "phonetic": "/rɪˈvaɪz/",
+    "gloss": "复习；修订",
+    "tip": "revision",
+    "example": "Revise notes before tests.",
+    "exampleZh": "考前复习笔记。",
+    "tags": [
+      "verb",
+      "campus"
+    ]
+  },
+  {
+    "id": 364,
+    "word": "revolution",
+    "spelling": "R-E-V-O-L-U-T-I-O-N",
+    "phonetic": "/ˌrevəˈluːʃn/",
+    "gloss": "革命",
+    "tip": "revolutionary",
+    "example": "Digital revolution.",
+    "exampleZh": "数字革命。",
+    "tags": [
+      "academic"
+    ]
+  },
+  {
+    "id": 365,
+    "word": "rigid",
+    "spelling": "R-I-G-I-D",
+    "phonetic": "/ˈrɪdʒɪd/",
+    "gloss": "僵化的",
+    "tip": "rigidity",
+    "example": "Avoid rigid thinking.",
+    "exampleZh": "避免僵化思维。",
+    "tags": [
+      "academic"
+    ]
+  },
+  {
+    "id": 366,
+    "word": "role",
+    "spelling": "R-O-L-E",
+    "phonetic": "/rəʊl/",
+    "gloss": "角色",
+    "tip": "play a role",
+    "example": "Teachers play a key role.",
+    "exampleZh": "教师起关键作用。",
+    "tags": [
+      "academic"
+    ]
+  },
+  {
+    "id": 367,
+    "word": "route",
+    "spelling": "R-O-U-T-E",
+    "phonetic": "/ruːt/",
+    "gloss": "路线",
+    "tip": "en route",
+    "example": "Fastest route to campus.",
+    "exampleZh": "到校园最快路线。",
+    "tags": [
+      "campus"
+    ]
+  },
+  {
+    "id": 368,
+    "word": "scenario",
+    "spelling": "S-C-E-N-A-R-I-O",
+    "phonetic": "/səˈnɑːriəʊ/",
+    "gloss": "情景",
+    "tip": "worst-case",
+    "example": "Worst-case scenario.",
+    "exampleZh": "最坏情况。",
+    "tags": [
+      "academic"
+    ]
+  },
+  {
+    "id": 369,
+    "word": "schedule",
+    "spelling": "S-C-H-E-D-U-L-E",
+    "phonetic": "/ˈʃedjuːl/",
+    "gloss": "日程",
+    "tip": "美 /ˈskedʒuːl/",
+    "example": "Check exam schedule.",
+    "exampleZh": "查看考试日程。",
+    "tags": [
+      "campus"
+    ]
+  },
+  {
+    "id": 370,
+    "word": "scheme",
+    "spelling": "S-C-H-E-M-E",
+    "phonetic": "/skiːm/",
+    "gloss": "方案",
+    "tip": "funding scheme",
+    "example": "New funding scheme.",
+    "exampleZh": "新资助方案。",
+    "tags": [
+      "academic"
+    ]
+  },
+  {
+    "id": 371,
+    "word": "scope",
+    "spelling": "S-C-O-P-E",
+    "phonetic": "/skəʊp/",
+    "gloss": "范围",
+    "tip": "scope of",
+    "example": "Define research scope.",
+    "exampleZh": "界定研究范围。",
+    "tags": [
+      "academic"
+    ]
+  },
+  {
+    "id": 372,
+    "word": "section",
+    "spelling": "S-E-C-T-I-O-N",
+    "phonetic": "/ˈsekʃn/",
+    "gloss": "部分",
+    "tip": "reading section",
+    "example": "Complete each section.",
+    "exampleZh": "完成各部分。",
+    "tags": [
+      "campus"
+    ]
+  },
+  {
+    "id": 373,
+    "word": "sector",
+    "spelling": "S-E-C-T-O-R",
+    "phonetic": "/ˈsektə/",
+    "gloss": "行业",
+    "tip": "service sector",
+    "example": "Service sector jobs.",
+    "exampleZh": "服务业岗位。",
+    "tags": [
+      "academic"
+    ]
+  },
+  {
+    "id": 374,
+    "word": "secure",
+    "spelling": "S-E-C-U-R-E",
+    "phonetic": "/sɪˈkjʊə/",
+    "gloss": "安全的；获得",
+    "tip": "security",
+    "example": "Secure a quiet place.",
+    "exampleZh": "找到安静处。",
+    "tags": [
+      "verb"
+    ]
+  },
+  {
+    "id": 375,
+    "word": "seek",
+    "spelling": "S-E-E-K",
+    "phonetic": "/siːk/",
+    "gloss": "寻求",
+    "tip": "sought",
+    "example": "Seek help from tutors.",
+    "exampleZh": "向导师求助。",
+    "tags": [
+      "verb",
+      "campus"
+    ]
+  },
+  {
+    "id": 376,
+    "word": "select",
+    "spelling": "S-E-L-E-C-T",
+    "phonetic": "/sɪˈlekt/",
+    "gloss": "选择",
+    "tip": "selection",
+    "example": "Select the best answer.",
+    "exampleZh": "选择最佳答案。",
+    "tags": [
+      "verb"
+    ]
+  },
+  {
+    "id": 377,
+    "word": "sequence",
+    "spelling": "S-E-Q-U-E-N-C-E",
+    "phonetic": "/ˈsiːkwəns/",
+    "gloss": "序列",
+    "tip": "sequential",
+    "example": "Correct sequence.",
+    "exampleZh": "正确顺序。",
+    "tags": [
+      "academic"
+    ]
+  },
+  {
+    "id": 378,
+    "word": "series",
+    "spelling": "S-E-R-I-E-S",
+    "phonetic": "/ˈsɪəriːz/",
+    "gloss": "系列",
+    "tip": "单复同形",
+    "example": "A series of talks.",
+    "exampleZh": "系列讲座。",
+    "tags": [
+      "campus"
+    ]
+  },
+  {
+    "id": 379,
+    "word": "shift",
+    "spelling": "S-H-I-F-T",
+    "phonetic": "/ʃɪft/",
+    "gloss": "转变",
+    "tip": "paradigm shift",
+    "example": "Shift toward online learning.",
+    "exampleZh": "转向线上学习。",
+    "tags": [
+      "academic"
+    ]
+  },
+  {
+    "id": 380,
+    "word": "significant",
+    "spelling": "S-I-G-N-I-F-I-C-A-N-T",
+    "phonetic": "/sɪɡˈnɪfɪkənt/",
+    "gloss": "显著的",
+    "tip": "significance",
+    "example": "Statistically significant.",
+    "exampleZh": "统计显著。",
+    "tags": [
+      "academic"
+    ]
+  },
+  {
+    "id": 381,
+    "word": "similar",
+    "spelling": "S-I-M-I-L-A-R",
+    "phonetic": "/ˈsɪmələ/",
+    "gloss": "相似的",
+    "tip": "similarity",
+    "example": "Charts are similar.",
+    "exampleZh": "图表相似。",
+    "tags": [
+      "academic"
+    ]
+  },
+  {
+    "id": 382,
+    "word": "simulate",
+    "spelling": "S-I-M-U-L-A-T-E",
+    "phonetic": "/ˈsɪmjuleɪt/",
+    "gloss": "模拟",
+    "tip": "simulation",
+    "example": "Simulate real driving.",
+    "exampleZh": "模拟真实驾驶。",
+    "tags": [
+      "verb"
+    ]
+  },
+  {
+    "id": 383,
+    "word": "site",
+    "spelling": "S-I-T-E",
+    "phonetic": "/saɪt/",
+    "gloss": "地点",
+    "tip": "≠ cite",
+    "example": "Construction site.",
+    "exampleZh": "建筑工地。",
+    "tags": [
+      "campus"
+    ]
+  },
+  {
+    "id": 384,
+    "word": "sole",
+    "spelling": "S-O-L-E",
+    "phonetic": "/səʊl/",
+    "gloss": "唯一的",
+    "tip": "solely",
+    "example": "Sole author.",
+    "exampleZh": "唯一作者。",
+    "tags": [
+      "academic"
+    ]
+  },
+  {
+    "id": 385,
+    "word": "somewhat",
+    "spelling": "S-O-M-E-W-H-A-T",
+    "phonetic": "/ˈsʌmwɒt/",
+    "gloss": "有点",
+    "tip": "somewhat difficult",
+    "example": "Somewhat difficult.",
+    "exampleZh": "有点难。",
+    "tags": [
+      "academic"
+    ]
+  },
+  {
+    "id": 386,
+    "word": "source",
+    "spelling": "S-O-U-R-C-E",
+    "phonetic": "/sɔːs/",
+    "gloss": "来源",
+    "tip": "primary source",
+    "example": "Cite every source.",
+    "exampleZh": "引用每个来源。",
+    "tags": [
+      "academic"
+    ]
+  },
+  {
+    "id": 387,
+    "word": "specific",
+    "spelling": "S-P-E-C-I-F-I-C",
+    "phonetic": "/spəˈsɪfɪk/",
+    "gloss": "具体的",
+    "tip": "specify",
+    "example": "Give specific examples.",
+    "exampleZh": "给出具体例子。",
+    "tags": [
+      "academic"
+    ]
+  },
+  {
+    "id": 388,
+    "word": "specify",
+    "spelling": "S-P-E-C-I-F-Y",
+    "phonetic": "/ˈspesɪfaɪ/",
+    "gloss": "指定",
+    "tip": "specification",
+    "example": "Specify your date.",
+    "exampleZh": "注明日期。",
+    "tags": [
+      "verb"
+    ]
+  },
+  {
+    "id": 389,
+    "word": "sphere",
+    "spelling": "S-P-H-E-R-E",
+    "phonetic": "/sfɪə/",
+    "gloss": "领域",
+    "tip": "public sphere",
+    "example": "Political sphere.",
+    "exampleZh": "政治领域。",
+    "tags": [
+      "academic"
+    ]
+  },
+  {
+    "id": 390,
+    "word": "stable",
+    "spelling": "S-T-A-B-L-E",
+    "phonetic": "/ˈsteɪbl/",
+    "gloss": "稳定的",
+    "tip": "stability",
+    "example": "Stable connection.",
+    "exampleZh": "稳定连接。",
+    "tags": [
+      "campus"
+    ]
+  },
+  {
+    "id": 391,
+    "word": "statistic",
+    "spelling": "S-T-A-T-I-S-T-I-C",
+    "phonetic": "/stəˈtɪstɪk/",
+    "gloss": "统计数据",
+    "tip": "statistics",
+    "example": "The statistic shows a rise.",
+    "exampleZh": "统计显示上升。",
+    "tags": [
+      "academic"
+    ]
+  },
+  {
+    "id": 392,
+    "word": "status",
+    "spelling": "S-T-A-T-U-S",
+    "phonetic": "/ˈsteɪtəs/",
+    "gloss": "状态",
+    "tip": "status update",
+    "example": "Check application status.",
+    "exampleZh": "查看申请状态。",
+    "tags": [
+      "campus"
+    ]
+  },
+  {
+    "id": 393,
+    "word": "strategy",
+    "spelling": "S-T-R-A-T-E-G-Y",
+    "phonetic": "/ˈstrætədʒi/",
+    "gloss": "策略",
+    "tip": "strategic",
+    "example": "Listening strategy.",
+    "exampleZh": "听力策略。",
+    "tags": [
+      "academic"
+    ]
+  },
+  {
+    "id": 394,
+    "word": "stress",
+    "spelling": "S-T-R-E-S-S",
+    "phonetic": "/stres/",
+    "gloss": "压力",
+    "tip": "under stress",
+    "example": "Manage exam stress.",
+    "exampleZh": "管理考前压力。",
+    "tags": [
+      "campus"
+    ]
+  },
+  {
+    "id": 395,
+    "word": "structure",
+    "spelling": "S-T-R-U-C-T-U-R-E",
+    "phonetic": "/ˈstrʌktʃə/",
+    "gloss": "结构",
+    "tip": "structural",
+    "example": "Clear essay structure.",
+    "exampleZh": "清晰论文结构。",
+    "tags": [
+      "academic"
+    ]
+  },
+  {
+    "id": 396,
+    "word": "style",
+    "spelling": "S-T-Y-L-E",
+    "phonetic": "/staɪl/",
+    "gloss": "风格",
+    "tip": "academic style",
+    "example": "Formal academic style.",
+    "exampleZh": "正式学术风格。",
+    "tags": [
+      "academic"
+    ]
+  },
+  {
+    "id": 397,
+    "word": "submit",
+    "spelling": "S-U-B-M-I-T",
+    "phonetic": "/səbˈmɪt/",
+    "gloss": "提交",
+    "tip": "submission",
+    "example": "Submit before midnight.",
+    "exampleZh": "午夜前提交。",
+    "tags": [
+      "verb",
+      "campus"
+    ]
+  },
+  {
+    "id": 398,
+    "word": "subsequent",
+    "spelling": "S-U-B-S-E-Q-U-E-N-T",
+    "phonetic": "/ˈsʌbsɪkwənt/",
+    "gloss": "随后的",
+    "tip": "subsequently",
+    "example": "Subsequent studies.",
+    "exampleZh": "后续研究。",
+    "tags": [
+      "academic"
+    ]
+  },
+  {
+    "id": 399,
+    "word": "subsidy",
+    "spelling": "S-U-B-S-I-D-Y",
+    "phonetic": "/ˈsʌbsədi/",
+    "gloss": "补贴",
+    "tip": "subsidise",
+    "example": "Government subsidy.",
+    "exampleZh": "政府补贴。",
+    "tags": [
+      "academic"
+    ]
+  },
+  {
+    "id": 400,
+    "word": "substitute",
+    "spelling": "S-U-B-S-T-I-T-U-T-E",
+    "phonetic": "/ˈsʌbstɪtjuːt/",
+    "gloss": "替代",
+    "tip": "substitution",
+    "example": "Substitute online labs.",
+    "exampleZh": "用线上实验替代。",
+    "tags": [
+      "verb",
+      "campus"
+    ]
+  },
+  {
+    "id": 401,
+    "word": "sufficient",
+    "spelling": "S-U-F-F-I-C-I-E-N-T",
+    "phonetic": "/səˈfɪʃnt/",
+    "gloss": "足够的",
+    "tip": "sufficiency",
+    "example": "Sufficient evidence?",
+    "exampleZh": "证据充分吗？",
+    "tags": [
+      "academic"
+    ]
+  },
+  {
+    "id": 402,
+    "word": "summary",
+    "spelling": "S-U-M-M-A-R-Y",
+    "phonetic": "/ˈsʌməri/",
+    "gloss": "摘要",
+    "tip": "summarise",
+    "example": "One-sentence summary.",
+    "exampleZh": "一句摘要。",
+    "tags": [
+      "academic"
+    ]
+  },
+  {
+    "id": 403,
+    "word": "supplement",
+    "spelling": "S-U-P-P-L-E-M-E-N-T",
+    "phonetic": "/ˈsʌplɪmənt/",
+    "gloss": "补充",
+    "tip": "supplementary",
+    "example": "Supplement with podcasts.",
+    "exampleZh": "用播客补充。",
+    "tags": [
+      "verb"
+    ]
+  },
+  {
+    "id": 404,
+    "word": "survey",
+    "spelling": "S-U-R-V-E-Y",
+    "phonetic": "/ˈsɜːveɪ/",
+    "gloss": "调查",
+    "tip": "survey results",
+    "example": "Survey of 500 students.",
+    "exampleZh": "调查500名学生。",
+    "tags": [
+      "academic"
+    ]
+  },
+  {
+    "id": 405,
+    "word": "survive",
+    "spelling": "S-U-R-V-I-V-E",
+    "phonetic": "/səˈvaɪv/",
+    "gloss": "生存",
+    "tip": "survival",
+    "example": "Struggle to survive.",
+    "exampleZh": "艰难求生。",
+    "tags": [
+      "verb"
+    ]
+  },
+  {
+    "id": 406,
+    "word": "suspend",
+    "spelling": "S-U-S-P-E-N-D",
+    "phonetic": "/səˈspend/",
+    "gloss": "暂停",
+    "tip": "suspension",
+    "example": "Classes suspended.",
+    "exampleZh": "停课。",
+    "tags": [
+      "verb",
+      "campus"
+    ]
+  },
+  {
+    "id": 407,
+    "word": "sustain",
+    "spelling": "S-U-S-T-A-I-N",
+    "phonetic": "/səˈsteɪn/",
+    "gloss": "维持",
+    "tip": "sustainable",
+    "example": "Sustain this growth?",
+    "exampleZh": "维持增长？",
+    "tags": [
+      "verb",
+      "academic"
+    ]
+  },
+  {
+    "id": 408,
+    "word": "symbol",
+    "spelling": "S-Y-M-B-O-L",
+    "phonetic": "/ˈsɪmbl/",
+    "gloss": "象征",
+    "tip": "symbolic",
+    "example": "Symbol of peace.",
+    "exampleZh": "和平象征。",
+    "tags": [
+      "academic"
+    ]
+  },
+  {
+    "id": 409,
+    "word": "target",
+    "spelling": "T-A-R-G-E-T",
+    "phonetic": "/ˈtɑːɡɪt/",
+    "gloss": "目标",
+    "tip": "target score",
+    "example": "Realistic target score.",
+    "exampleZh": "现实目标分。",
+    "tags": [
+      "campus"
+    ]
+  },
+  {
+    "id": 410,
+    "word": "task",
+    "spelling": "T-A-S-K",
+    "phonetic": "/tɑːsk/",
+    "gloss": "任务",
+    "tip": "task-based",
+    "example": "Speaking task.",
+    "exampleZh": "口语任务。",
+    "tags": [
+      "campus"
+    ]
+  },
+  {
+    "id": 411,
+    "word": "team",
+    "spelling": "T-E-A-M",
+    "phonetic": "/tiːm/",
+    "gloss": "团队",
+    "tip": "teamwork",
+    "example": "Work as a team.",
+    "exampleZh": "以团队工作。",
+    "tags": [
+      "campus"
+    ]
+  },
+  {
+    "id": 412,
+    "word": "technical",
+    "spelling": "T-E-C-H-N-I-C-A-L",
+    "phonetic": "/ˈteknɪkl/",
+    "gloss": "技术的",
+    "tip": "technique",
+    "example": "Avoid heavy jargon.",
+    "exampleZh": "避免过重行话。",
+    "tags": [
+      "academic"
+    ]
+  },
+  {
+    "id": 413,
+    "word": "technique",
+    "spelling": "T-E-C-H-N-I-Q-U-E",
+    "phonetic": "/tekˈniːk/",
+    "gloss": "技巧",
+    "tip": "tech-",
+    "example": "Spaced repetition technique.",
+    "exampleZh": "间隔重复技巧。",
+    "tags": [
+      "academic"
+    ]
+  },
+  {
+    "id": 414,
+    "word": "technology",
+    "spelling": "T-E-C-H-N-O-L-O-G-Y",
+    "phonetic": "/tekˈnɒlədʒi/",
+    "gloss": "技术",
+    "tip": "technological",
+    "example": "Technology transforms education.",
+    "exampleZh": "技术改变教育。",
+    "tags": [
+      "academic"
+    ]
+  },
+  {
+    "id": 415,
+    "word": "temporary",
+    "spelling": "T-E-M-P-O-R-A-R-Y",
+    "phonetic": "/ˈtemprəri/",
+    "gloss": "暂时的",
+    "tip": "temporarily",
+    "example": "Temporary change.",
+    "exampleZh": "临时变更。",
+    "tags": [
+      "campus"
+    ]
+  },
+  {
+    "id": 416,
+    "word": "terminate",
+    "spelling": "T-E-R-M-I-N-A-T-E",
+    "phonetic": "/ˈtɜːmɪneɪt/",
+    "gloss": "终止",
+    "tip": "termination",
+    "example": "Terminate the contract.",
+    "exampleZh": "终止合同。",
+    "tags": [
+      "verb"
+    ]
+  },
+  {
+    "id": 417,
+    "word": "text",
+    "spelling": "T-E-X-T",
+    "phonetic": "/tekst/",
+    "gloss": "文本",
+    "tip": "textbook",
+    "example": "Annotate the text.",
+    "exampleZh": "标注文本。",
+    "tags": [
+      "academic"
+    ]
+  },
+  {
+    "id": 418,
+    "word": "theme",
+    "spelling": "T-H-E-M-E",
+    "phonetic": "/θiːm/",
+    "gloss": "主题",
+    "tip": "thematic",
+    "example": "Lecture theme.",
+    "exampleZh": "讲座主题。",
+    "tags": [
+      "academic"
+    ]
+  },
+  {
+    "id": 419,
+    "word": "theory",
+    "spelling": "T-H-E-O-R-Y",
+    "phonetic": "/ˈθɪəri/",
+    "gloss": "理论",
+    "tip": "theoretical",
+    "example": "Apply the theory.",
+    "exampleZh": "应用理论。",
+    "tags": [
+      "academic"
+    ]
+  },
+  {
+    "id": 420,
+    "word": "thereby",
+    "spelling": "T-H-E-R-E-B-Y",
+    "phonetic": "/ˌðeəˈbaɪ/",
+    "gloss": "因此",
+    "tip": "正式",
+    "example": "Thereby improving fast.",
+    "exampleZh": "因此迅速提高。",
+    "tags": [
+      "academic"
+    ]
+  },
+  {
+    "id": 421,
+    "word": "thesis",
+    "spelling": "T-H-E-S-I-S",
+    "phonetic": "/ˈθiːsɪs/",
+    "gloss": "论文；论点",
+    "tip": "theses",
+    "example": "Defend your thesis.",
+    "exampleZh": "捍卫论点。",
+    "tags": [
+      "campus",
+      "academic"
+    ]
+  },
+  {
+    "id": 422,
+    "word": "topic",
+    "spelling": "T-O-P-I-C",
+    "phonetic": "/ˈtɒpɪk/",
+    "gloss": "话题",
+    "tip": "topic sentence",
+    "example": "Familiar essay topic.",
+    "exampleZh": "熟悉论文话题。",
+    "tags": [
+      "campus"
+    ]
+  },
+  {
+    "id": 423,
+    "word": "trace",
+    "spelling": "T-R-A-C-E",
+    "phonetic": "/treɪs/",
+    "gloss": "追踪",
+    "tip": "trace back",
+    "example": "Trace the argument.",
+    "exampleZh": "追溯论证。",
+    "tags": [
+      "verb"
+    ]
+  },
+  {
+    "id": 424,
+    "word": "tradition",
+    "spelling": "T-R-A-D-I-T-I-O-N",
+    "phonetic": "/trəˈdɪʃn/",
+    "gloss": "传统",
+    "tip": "traditional",
+    "example": "Local traditions.",
+    "exampleZh": "地方传统。",
+    "tags": [
+      "academic"
+    ]
+  },
+  {
+    "id": 425,
+    "word": "transfer",
+    "spelling": "T-R-A-N-S-F-E-R",
+    "phonetic": "/trænsˈfɜː/",
+    "gloss": "转移",
+    "tip": "transferable",
+    "example": "Credits may transfer.",
+    "exampleZh": "学分或可转移。",
+    "tags": [
+      "campus"
+    ]
+  },
+  {
+    "id": 426,
+    "word": "transform",
+    "spelling": "T-R-A-N-S-F-O-R-M",
+    "phonetic": "/trænsˈfɔːm/",
+    "gloss": "转变",
+    "tip": "transformation",
+    "example": "Tools transform classrooms.",
+    "exampleZh": "工具改变课堂。",
+    "tags": [
+      "verb"
+    ]
+  },
+  {
+    "id": 427,
+    "word": "transit",
+    "spelling": "T-R-A-N-S-I-T",
+    "phonetic": "/ˈtrænzɪt/",
+    "gloss": "公交；过境",
+    "tip": "public transit",
+    "example": "Public transit.",
+    "exampleZh": "公共交通。",
+    "tags": [
+      "academic"
+    ]
+  },
+  {
+    "id": 428,
+    "word": "transmit",
+    "spelling": "T-R-A-N-S-M-I-T",
+    "phonetic": "/trænsˈmɪt/",
+    "gloss": "传输",
+    "tip": "transmission",
+    "example": "Transmit through droplets.",
+    "exampleZh": "经飞沫传播。",
+    "tags": [
+      "verb"
+    ]
+  },
+  {
+    "id": 429,
+    "word": "transport",
+    "spelling": "T-R-A-N-S-P-O-R-T",
+    "phonetic": "/ˈtrænspɔːt/",
+    "gloss": "交通",
+    "tip": "transportation",
+    "example": "Public transport.",
+    "exampleZh": "公共交通。",
+    "tags": [
+      "campus"
+    ]
+  },
+  {
+    "id": 430,
+    "word": "trend",
+    "spelling": "T-R-E-N-D",
+    "phonetic": "/trend/",
+    "gloss": "趋势",
+    "tip": "trendy",
+    "example": "Main trend in the graph.",
+    "exampleZh": "图表主要趋势。",
+    "tags": [
+      "academic"
+    ]
+  },
+  {
+    "id": 431,
+    "word": "trigger",
+    "spelling": "T-R-I-G-G-E-R",
+    "phonetic": "/ˈtrɪɡə/",
+    "gloss": "触发",
+    "tip": "trigger",
+    "example": "Stress can trigger headaches.",
+    "exampleZh": "压力可触发头痛。",
+    "tags": [
+      "verb"
+    ]
+  },
+  {
+    "id": 432,
+    "word": "ultimate",
+    "spelling": "U-L-T-I-M-A-T-E",
+    "phonetic": "/ˈʌltɪmət/",
+    "gloss": "最终的",
+    "tip": "ultimately",
+    "example": "Ultimate goal is fluency.",
+    "exampleZh": "最终目标是流利。",
+    "tags": [
+      "academic"
+    ]
+  },
+  {
+    "id": 433,
+    "word": "undergo",
+    "spelling": "U-N-D-E-R-G-O",
+    "phonetic": "/ˌʌndəˈɡəʊ/",
+    "gloss": "经历",
+    "tip": "underwent",
+    "example": "Undergo surgery.",
+    "exampleZh": "接受手术。",
+    "tags": [
+      "verb"
+    ]
+  },
+  {
+    "id": 434,
+    "word": "undertake",
+    "spelling": "U-N-D-E-R-T-A-K-E",
+    "phonetic": "/ˌʌndəˈteɪk/",
+    "gloss": "承担",
+    "tip": "undertaking",
+    "example": "Undertake research.",
+    "exampleZh": "承担研究。",
+    "tags": [
+      "verb",
+      "campus"
+    ]
+  },
+  {
+    "id": 435,
+    "word": "uniform",
+    "spelling": "U-N-I-F-O-R-M",
+    "phonetic": "/ˈjuːnɪfɔːm/",
+    "gloss": "统一的",
+    "tip": "uni-",
+    "example": "Uniform citation style.",
+    "exampleZh": "统一引用格式。",
+    "tags": [
+      "academic"
+    ]
+  },
+  {
+    "id": 436,
+    "word": "unique",
+    "spelling": "U-N-I-Q-U-E",
+    "phonetic": "/juˈniːk/",
+    "gloss": "独特的",
+    "tip": "uni-",
+    "example": "Unique pace.",
+    "exampleZh": "独特节奏。",
+    "tags": [
+      "academic"
+    ]
+  },
+  {
+    "id": 437,
+    "word": "utilise",
+    "spelling": "U-T-I-L-I-S-E",
+    "phonetic": "/ˈjuːtəlaɪz/",
+    "gloss": "利用",
+    "tip": "utilize",
+    "example": "Utilise past papers.",
+    "exampleZh": "利用真题。",
+    "tags": [
+      "verb"
+    ]
+  },
+  {
+    "id": 438,
+    "word": "valid",
+    "spelling": "V-A-L-I-D",
+    "phonetic": "/ˈvælɪd/",
+    "gloss": "有效的",
+    "tip": "validity",
+    "example": "Logically valid?",
+    "exampleZh": "逻辑有效？",
+    "tags": [
+      "academic"
+    ]
+  },
+  {
+    "id": 439,
+    "word": "vary",
+    "spelling": "V-A-R-Y",
+    "phonetic": "/ˈveəri/",
+    "gloss": "变化",
+    "tip": "various",
+    "example": "Scores vary.",
+    "exampleZh": "分数有差异。",
+    "tags": [
+      "verb"
+    ]
+  },
+  {
+    "id": 440,
+    "word": "vehicle",
+    "spelling": "V-E-H-I-C-L-E",
+    "phonetic": "/ˈviːɪkl/",
+    "gloss": "车辆；媒介",
+    "tip": "motor vehicle",
+    "example": "English as a vehicle.",
+    "exampleZh": "英语作为媒介。",
+    "tags": [
+      "academic"
+    ]
+  },
+  {
+    "id": 441,
+    "word": "version",
+    "spelling": "V-E-R-S-I-O-N",
+    "phonetic": "/ˈvɜːʃn/",
+    "gloss": "版本",
+    "tip": "revised version",
+    "example": "Latest version.",
+    "exampleZh": "最新版本。",
+    "tags": [
+      "campus"
+    ]
+  },
+  {
+    "id": 442,
+    "word": "via",
+    "spelling": "V-I-A",
+    "phonetic": "/ˈvaɪə/",
+    "gloss": "通过",
+    "tip": "via email",
+    "example": "Submit via portal.",
+    "exampleZh": "通过门户提交。",
+    "tags": [
+      "campus"
+    ]
+  },
+  {
+    "id": 443,
+    "word": "violate",
+    "spelling": "V-I-O-L-A-T-E",
+    "phonetic": "/ˈvaɪəleɪt/",
+    "gloss": "违反",
+    "tip": "violation",
+    "example": "Do not violate rules.",
+    "exampleZh": "勿违反规定。",
+    "tags": [
+      "verb",
+      "campus"
+    ]
+  },
+  {
+    "id": 444,
+    "word": "virtual",
+    "spelling": "V-I-R-T-U-A-L",
+    "phonetic": "/ˈvɜːtʃuəl/",
+    "gloss": "虚拟的",
+    "tip": "virtual class",
+    "example": "Virtual classes.",
+    "exampleZh": "虚拟课堂。",
+    "tags": [
+      "campus"
+    ]
+  },
+  {
+    "id": 445,
+    "word": "visible",
+    "spelling": "V-I-S-I-B-L-E",
+    "phonetic": "/ˈvɪzəbl/",
+    "gloss": "可见的",
+    "tip": "visibility",
+    "example": "Make structure visible.",
+    "exampleZh": "让结构可见。",
+    "tags": [
+      "academic"
+    ]
+  },
+  {
+    "id": 446,
+    "word": "vision",
+    "spelling": "V-I-S-I-O-N",
+    "phonetic": "/ˈvɪʒn/",
+    "gloss": "愿景",
+    "tip": "visionary",
+    "example": "Clear vision.",
+    "exampleZh": "清晰愿景。",
+    "tags": [
+      "academic"
+    ]
+  },
+  {
+    "id": 447,
+    "word": "visual",
+    "spelling": "V-I-S-U-A-L",
+    "phonetic": "/ˈvɪʒuəl/",
+    "gloss": "视觉的",
+    "tip": "visual aid",
+    "example": "Visual aids.",
+    "exampleZh": "视觉辅助。",
+    "tags": [
+      "campus"
+    ]
+  },
+  {
+    "id": 448,
+    "word": "volume",
+    "spelling": "V-O-L-U-M-E",
+    "phonetic": "/ˈvɒljuːm/",
+    "gloss": "音量；量",
+    "tip": "traffic volume",
+    "example": "Turn down the volume.",
+    "exampleZh": "调低音量。",
+    "tags": [
+      "campus"
+    ]
+  },
+  {
+    "id": 449,
+    "word": "voluntary",
+    "spelling": "V-O-L-U-N-T-A-R-Y",
+    "phonetic": "/ˈvɒləntri/",
+    "gloss": "自愿的",
+    "tip": "volunteer",
+    "example": "Participation is voluntary.",
+    "exampleZh": "参与自愿。",
+    "tags": [
+      "campus"
+    ]
+  },
+  {
+    "id": 450,
+    "word": "welfare",
+    "spelling": "W-E-L-F-A-R-E",
+    "phonetic": "/ˈwelfeə/",
+    "gloss": "福利",
+    "tip": "social welfare",
+    "example": "Welfare programs.",
+    "exampleZh": "福利项目。",
+    "tags": [
+      "academic"
+    ]
+  },
+  {
+    "id": 451,
+    "word": "whereas",
+    "spelling": "W-H-E-R-E-A-S",
+    "phonetic": "/ˌweərˈæz/",
+    "gloss": "然而",
+    "tip": "对比",
+    "example": "Tea is popular, whereas coffee dominates.",
+    "exampleZh": "茶流行而咖啡主导。",
+    "tags": [
+      "academic"
+    ]
+  },
+  {
+    "id": 452,
+    "word": "whereby",
+    "spelling": "W-H-E-R-E-B-Y",
+    "phonetic": "/weəˈbaɪ/",
+    "gloss": "凭借",
+    "tip": "正式",
+    "example": "A system whereby students book labs.",
+    "exampleZh": "学生借此预约实验室。",
+    "tags": [
+      "academic"
+    ]
+  },
+  {
+    "id": 453,
+    "word": "widespread",
+    "spelling": "W-I-D-E-S-P-R-E-A-D",
+    "phonetic": "/ˈwaɪdspred/",
+    "gloss": "广泛的",
+    "tip": "wide+spread",
+    "example": "Widespread use.",
+    "exampleZh": "广泛使用。",
+    "tags": [
+      "academic"
+    ]
+  },
+  {
+    "id": 454,
+    "word": "campus",
+    "spelling": "C-A-M-P-U-S",
+    "phonetic": "/ˈkæmpəs/",
+    "gloss": "校园",
+    "tip": "on campus",
+    "example": "Campus closed Sundays.",
+    "exampleZh": "校园周日关闭。",
+    "tags": [
+      "campus"
+    ]
+  },
+  {
+    "id": 455,
+    "word": "assignment",
+    "spelling": "A-S-S-I-G-N-M-E-N-T",
+    "phonetic": "/əˈsaɪnmənt/",
+    "gloss": "作业",
+    "tip": "assign",
+    "example": "Assignment due Friday.",
+    "exampleZh": "作业周五到期。",
+    "tags": [
+      "campus"
+    ]
+  },
+  {
+    "id": 456,
+    "word": "deadline",
+    "spelling": "D-E-A-D-L-I-N-E",
+    "phonetic": "/ˈdedlaɪn/",
+    "gloss": "截止日期",
+    "tip": "dead+line",
+    "example": "Never miss a deadline.",
+    "exampleZh": "切勿错过截止。",
+    "tags": [
+      "campus"
+    ]
+  },
+  {
+    "id": 457,
+    "word": "semester",
+    "spelling": "S-E-M-E-S-T-E-R",
+    "phonetic": "/sɪˈmestə/",
+    "gloss": "学期",
+    "tip": "=term",
+    "example": "Semester ends in June.",
+    "exampleZh": "学期六月结束。",
+    "tags": [
+      "campus"
+    ]
+  },
+  {
+    "id": 458,
+    "word": "faculty",
+    "spelling": "F-A-C-U-L-T-Y",
+    "phonetic": "/ˈfæklti/",
+    "gloss": "教职工",
+    "tip": "faculty member",
+    "example": "Faculty office hours.",
+    "exampleZh": "教职工答疑时间。",
+    "tags": [
+      "campus"
+    ]
+  },
+  {
+    "id": 459,
+    "word": "tuition",
+    "spelling": "T-U-I-T-I-O-N",
+    "phonetic": "/tjuˈɪʃn/",
+    "gloss": "学费",
+    "tip": "tuition fee",
+    "example": "Tuition rises yearly.",
+    "exampleZh": "学费逐年涨。",
+    "tags": [
+      "campus"
+    ]
+  },
+  {
+    "id": 460,
+    "word": "dormitory",
+    "spelling": "D-O-R-M-I-T-O-R-Y",
+    "phonetic": "/ˈdɔːmətri/",
+    "gloss": "宿舍",
+    "tip": "dorm",
+    "example": "Lives in a dormitory.",
+    "exampleZh": "住宿舍。",
+    "tags": [
+      "campus"
+    ]
+  },
+  {
+    "id": 461,
+    "word": "syllabus",
+    "spelling": "S-Y-L-L-A-B-U-S",
+    "phonetic": "/ˈsɪləbəs/",
+    "gloss": "教学大纲",
+    "tip": "syllabi",
+    "example": "Read the syllabus.",
+    "exampleZh": "阅读教学大纲。",
+    "tags": [
+      "campus"
+    ]
+  },
+  {
+    "id": 462,
+    "word": "plagiarism",
+    "spelling": "P-L-A-G-I-A-R-I-S-M",
+    "phonetic": "/ˈpleɪdʒərɪzəm/",
+    "gloss": "抄袭",
+    "tip": "plagiarise",
+    "example": "Plagiarism leads to failure.",
+    "exampleZh": "抄袭导致不及格。",
+    "tags": [
+      "campus",
+      "academic"
+    ]
+  },
+  {
+    "id": 463,
+    "word": "citation",
+    "spelling": "C-I-T-A-T-I-O-N",
+    "phonetic": "/saɪˈteɪʃn/",
+    "gloss": "引用",
+    "tip": "cite",
+    "example": "Add a citation.",
+    "exampleZh": "加上引用。",
+    "tags": [
+      "academic"
+    ]
+  },
+  {
+    "id": 464,
+    "word": "bibliography",
+    "spelling": "B-I-B-L-I-O-G-R-A-P-H-Y",
+    "phonetic": "/ˌbɪbliˈɒɡrəfi/",
+    "gloss": "参考文献",
+    "tip": "biblio-",
+    "example": "Include a bibliography.",
+    "exampleZh": "附参考文献。",
+    "tags": [
+      "academic"
+    ]
+  },
+  {
+    "id": 465,
+    "word": "mentor",
+    "spelling": "M-E-N-T-O-R",
+    "phonetic": "/ˈmentɔː/",
+    "gloss": "导师",
+    "tip": "mentorship",
+    "example": "Find a mentor.",
+    "exampleZh": "找导师。",
+    "tags": [
+      "campus"
+    ]
+  },
+  {
+    "id": 466,
+    "word": "internship",
+    "spelling": "I-N-T-E-R-N-S-H-I-P",
+    "phonetic": "/ˈɪntɜːnʃɪp/",
+    "gloss": "实习",
+    "tip": "intern",
+    "example": "Summer internship.",
+    "exampleZh": "暑期实习。",
+    "tags": [
+      "campus"
+    ]
+  },
+  {
+    "id": 467,
+    "word": "scholarship",
+    "spelling": "S-C-H-O-L-A-R-S-H-I-P",
+    "phonetic": "/ˈskɒləʃɪp/",
+    "gloss": "奖学金",
+    "tip": "scholar",
+    "example": "Full scholarship.",
+    "exampleZh": "全额奖学金。",
+    "tags": [
+      "campus"
+    ]
+  },
+  {
+    "id": 468,
+    "word": "attendance",
+    "spelling": "A-T-T-E-N-D-A-N-C-E",
+    "phonetic": "/əˈtendəns/",
+    "gloss": "出勤",
+    "tip": "attend",
+    "example": "Attendance is recorded.",
+    "exampleZh": "记录出勤。",
+    "tags": [
+      "campus"
+    ]
+  },
+  {
+    "id": 469,
+    "word": "feedback",
+    "spelling": "F-E-E-D-B-A-C-K",
+    "phonetic": "/ˈfiːdbæk/",
+    "gloss": "反馈",
+    "tip": "feed+back",
+    "example": "Ask for feedback.",
+    "exampleZh": "请求反馈。",
+    "tags": [
+      "campus"
+    ]
+  },
+  {
+    "id": 470,
+    "word": "module",
+    "spelling": "M-O-D-U-L-E",
+    "phonetic": "/ˈmɒdjuːl/",
+    "gloss": "模块",
+    "tip": "modular",
+    "example": "Twelve-week module.",
+    "exampleZh": "十二周模块。",
+    "tags": [
+      "campus"
+    ]
+  },
+  {
+    "id": 471,
+    "word": "transcript",
+    "spelling": "T-R-A-N-S-C-R-I-P-T",
+    "phonetic": "/ˈtrænskrɪpt/",
+    "gloss": "成绩单",
+    "tip": "transcribe",
+    "example": "Official transcript.",
+    "exampleZh": "正式成绩单。",
+    "tags": [
+      "campus"
+    ]
+  },
+  {
+    "id": 472,
+    "word": "graduation",
+    "spelling": "G-R-A-D-U-A-T-I-O-N",
+    "phonetic": "/ˌɡrædʒuˈeɪʃn/",
+    "gloss": "毕业",
+    "tip": "graduate",
+    "example": "Graduation in June.",
+    "exampleZh": "六月毕业。",
+    "tags": [
+      "campus"
+    ]
+  },
+  {
+    "id": 473,
+    "word": "undergraduate",
+    "spelling": "U-N-D-E-R-G-R-A-D-U-A-T-E",
+    "phonetic": "/ˌʌndəˈɡrædʒuət/",
+    "gloss": "本科生",
+    "tip": "≠ postgraduate",
+    "example": "Undergraduate students.",
+    "exampleZh": "本科生。",
+    "tags": [
+      "campus"
+    ]
+  },
+  {
+    "id": 474,
+    "word": "postgraduate",
+    "spelling": "P-O-S-T-G-R-A-D-U-A-T-E",
+    "phonetic": "/ˌpəʊstˈɡrædʒuət/",
+    "gloss": "研究生",
+    "tip": "post-",
+    "example": "Postgraduate study.",
+    "exampleZh": "研究生学习。",
+    "tags": [
+      "campus"
+    ]
+  },
+  {
+    "id": 475,
+    "word": "seminar",
+    "spelling": "S-E-M-I-N-A-R",
+    "phonetic": "/ˈsemɪnɑː/",
+    "gloss": "研讨会",
+    "tip": "seminar paper",
+    "example": "Weekly seminar.",
+    "exampleZh": "每周研讨会。",
+    "tags": [
+      "campus"
+    ]
+  },
+  {
+    "id": 476,
+    "word": "workshop",
+    "spelling": "W-O-R-K-S-H-O-P",
+    "phonetic": "/ˈwɜːkʃɒp/",
+    "gloss": "工作坊",
+    "tip": "work+shop",
+    "example": "Writing workshop.",
+    "exampleZh": "写作工作坊。",
+    "tags": [
+      "campus"
+    ]
+  },
+  {
+    "id": 477,
+    "word": "conference",
+    "spelling": "C-O-N-F-E-R-E-N-C-E",
+    "phonetic": "/ˈkɒnfərəns/",
+    "gloss": "会议",
+    "tip": "confer",
+    "example": "International conference.",
+    "exampleZh": "国际会议。",
+    "tags": [
+      "academic"
+    ]
+  },
+  {
+    "id": 478,
+    "word": "presentation",
+    "spelling": "P-R-E-S-E-N-T-A-T-I-O-N",
+    "phonetic": "/ˌpreznˈteɪʃn/",
+    "gloss": "演示",
+    "tip": "present",
+    "example": "Ten-minute presentation.",
+    "exampleZh": "十分钟演示。",
+    "tags": [
+      "campus"
+    ]
+  },
+  {
+    "id": 479,
+    "word": "audience",
+    "spelling": "A-U-D-I-E-N-C-E",
+    "phonetic": "/ˈɔːdiəns/",
+    "gloss": "听众",
+    "tip": "audio",
+    "example": "Know your audience.",
+    "exampleZh": "了解听众。",
+    "tags": [
+      "campus"
+    ]
+  },
+  {
+    "id": 480,
+    "word": "methodology",
+    "spelling": "M-E-T-H-O-D-O-L-O-G-Y",
+    "phonetic": "/ˌmeθəˈdɒlədʒi/",
+    "gloss": "方法论",
+    "tip": "method",
+    "example": "Explain methodology.",
+    "exampleZh": "说明方法论。",
+    "tags": [
+      "academic"
+    ]
+  },
+  {
+    "id": 481,
+    "word": "variable",
+    "spelling": "V-A-R-I-A-B-L-E",
+    "phonetic": "/ˈveəriəbl/",
+    "gloss": "变量",
+    "tip": "vary",
+    "example": "Control one variable.",
+    "exampleZh": "控制一个变量。",
+    "tags": [
+      "academic"
+    ]
+  },
+  {
+    "id": 482,
+    "word": "sample",
+    "spelling": "S-A-M-P-L-E",
+    "phonetic": "/ˈsɑːmpl/",
+    "gloss": "样本",
+    "tip": "sampling",
+    "example": "Sample size 200.",
+    "exampleZh": "样本量200。",
+    "tags": [
+      "academic"
+    ]
+  },
+  {
+    "id": 483,
+    "word": "correlation",
+    "spelling": "C-O-R-R-E-L-A-T-I-O-N",
+    "phonetic": "/ˌkɒrəˈleɪʃn/",
+    "gloss": "相关性",
+    "tip": "correlate",
+    "example": "Correlation ≠ causation.",
+    "exampleZh": "相关≠因果。",
+    "tags": [
+      "academic"
+    ]
+  },
+  {
+    "id": 484,
+    "word": "conclusion",
+    "spelling": "C-O-N-C-L-U-S-I-O-N",
+    "phonetic": "/kənˈkluːʒn/",
+    "gloss": "结论",
+    "tip": "conclude",
+    "example": "Strong conclusion.",
+    "exampleZh": "有力结论。",
+    "tags": [
+      "academic"
+    ]
+  },
+  {
+    "id": 485,
+    "word": "implication",
+    "spelling": "I-M-P-L-I-C-A-T-I-O-N",
+    "phonetic": "/ˌɪmplɪˈkeɪʃn/",
+    "gloss": "含义",
+    "tip": "imply",
+    "example": "Practical implications.",
+    "exampleZh": "实际影响。",
+    "tags": [
+      "academic"
+    ]
+  },
+  {
+    "id": 486,
+    "word": "limitation",
+    "spelling": "L-I-M-I-T-A-T-I-O-N",
+    "phonetic": "/ˌlɪmɪˈteɪʃn/",
+    "gloss": "局限",
+    "tip": "limit",
+    "example": "Study limitations.",
+    "exampleZh": "研究局限。",
+    "tags": [
+      "academic"
+    ]
+  },
+  {
+    "id": 487,
+    "word": "recommendation",
+    "spelling": "R-E-C-O-M-M-E-N-D-A-T-I-O-N",
+    "phonetic": "/ˌrekəmenˈdeɪʃn/",
+    "gloss": "建议",
+    "tip": "recommend",
+    "example": "Clear recommendations.",
+    "exampleZh": "清晰建议。",
+    "tags": [
+      "academic"
+    ]
+  },
+  {
+    "id": 488,
+    "word": "emission",
+    "spelling": "E-M-I-S-S-I-O-N",
+    "phonetic": "/ɪˈmɪʃn/",
+    "gloss": "排放",
+    "tip": "emit",
+    "example": "Reduce emissions.",
+    "exampleZh": "减少排放。",
+    "tags": [
+      "academic"
+    ]
+  },
+  {
+    "id": 489,
+    "word": "renewable",
+    "spelling": "R-E-N-E-W-A-B-L-E",
+    "phonetic": "/rɪˈnjuːəbl/",
+    "gloss": "可再生的",
+    "tip": "re-+new",
+    "example": "Renewable energy.",
+    "exampleZh": "可再生能源。",
+    "tags": [
+      "academic"
+    ]
+  },
+  {
+    "id": 490,
+    "word": "pollution",
+    "spelling": "P-O-L-L-U-T-I-O-N",
+    "phonetic": "/pəˈluːʃn/",
+    "gloss": "污染",
+    "tip": "pollute",
+    "example": "Air pollution.",
+    "exampleZh": "空气污染。",
+    "tags": [
+      "academic"
+    ]
+  },
+  {
+    "id": 491,
+    "word": "habitat",
+    "spelling": "H-A-B-I-T-A-T",
+    "phonetic": "/ˈhæbɪtæt/",
+    "gloss": "栖息地",
+    "tip": "habit",
+    "example": "Wildlife habitats.",
+    "exampleZh": "野生动物栖息地。",
+    "tags": [
+      "academic"
+    ]
+  },
+  {
+    "id": 492,
+    "word": "species",
+    "spelling": "S-P-E-C-I-E-S",
+    "phonetic": "/ˈspiːʃiːz/",
+    "gloss": "物种",
+    "tip": "单复同形",
+    "example": "Endangered species.",
+    "exampleZh": "濒危物种。",
+    "tags": [
+      "academic"
+    ]
+  },
+  {
+    "id": 493,
+    "word": "ecosystem",
+    "spelling": "E-C-O-S-Y-S-T-E-M",
+    "phonetic": "/ˈiːkəʊsɪstəm/",
+    "gloss": "生态系统",
+    "tip": "eco-",
+    "example": "Fragile ecosystem.",
+    "exampleZh": "脆弱生态系统。",
+    "tags": [
+      "academic"
+    ]
+  },
+  {
+    "id": 494,
+    "word": "algorithm",
+    "spelling": "A-L-G-O-R-I-T-H-M",
+    "phonetic": "/ˈælɡərɪðəm/",
+    "gloss": "算法",
+    "tip": "algo-",
+    "example": "Ranking algorithm.",
+    "exampleZh": "排序算法。",
+    "tags": [
+      "academic"
+    ]
+  },
+  {
+    "id": 495,
+    "word": "database",
+    "spelling": "D-A-T-A-B-A-S-E",
+    "phonetic": "/ˈdeɪtəbeɪs/",
+    "gloss": "数据库",
+    "tip": "data+base",
+    "example": "Secure database.",
+    "exampleZh": "安全数据库。",
+    "tags": [
+      "academic"
+    ]
+  },
+  {
+    "id": 496,
+    "word": "privacy",
+    "spelling": "P-R-I-V-A-C-Y",
+    "phonetic": "/ˈprɪvəsi/",
+    "gloss": "隐私",
+    "tip": "private",
+    "example": "User privacy.",
+    "exampleZh": "用户隐私。",
+    "tags": [
+      "academic"
+    ]
+  },
+  {
+    "id": 497,
+    "word": "security",
+    "spelling": "S-E-C-U-R-I-T-Y",
+    "phonetic": "/sɪˈkjʊərəti/",
+    "gloss": "安全",
+    "tip": "secure",
+    "example": "Data security.",
+    "exampleZh": "数据安全。",
+    "tags": [
+      "academic"
+    ]
+  },
+  {
+    "id": 498,
+    "word": "healthcare",
+    "spelling": "H-E-A-L-T-H-C-A-R-E",
+    "phonetic": "/ˈhelθkeə/",
+    "gloss": "医疗保健",
+    "tip": "health+care",
+    "example": "Healthcare costs.",
+    "exampleZh": "医疗成本。",
+    "tags": [
+      "academic"
+    ]
+  },
+  {
+    "id": 499,
+    "word": "diagnosis",
+    "spelling": "D-I-A-G-N-O-S-I-S",
+    "phonetic": "/ˌdaɪəɡˈnəʊsɪs/",
+    "gloss": "诊断",
+    "tip": "diagnose",
+    "example": "Early diagnosis.",
+    "exampleZh": "早期诊断。",
+    "tags": [
+      "academic"
+    ]
+  },
+  {
+    "id": 500,
+    "word": "treatment",
+    "spelling": "T-R-E-A-T-M-E-N-T",
+    "phonetic": "/ˈtriːtmənt/",
+    "gloss": "治疗",
+    "tip": "treat",
+    "example": "New treatments.",
+    "exampleZh": "新疗法。",
+    "tags": [
+      "academic"
+    ]
+  },
+  {
+    "id": 501,
+    "word": "vaccine",
+    "spelling": "V-A-C-C-I-N-E",
+    "phonetic": "/ˈvæksiːn/",
+    "gloss": "疫苗",
+    "tip": "vaccinate",
+    "example": "The vaccine helps.",
+    "exampleZh": "疫苗有帮助。",
+    "tags": [
+      "academic"
+    ]
+  },
+  {
+    "id": 502,
+    "word": "nutrition",
+    "spelling": "N-U-T-R-I-T-I-O-N",
+    "phonetic": "/njuˈtrɪʃn/",
+    "gloss": "营养",
+    "tip": "nutrient",
+    "example": "Good nutrition.",
+    "exampleZh": "良好营养。",
+    "tags": [
+      "academic"
+    ]
+  },
+  {
+    "id": 503,
+    "word": "wellbeing",
+    "spelling": "W-E-L-L-B-E-I-N-G",
+    "phonetic": "/ˌwelˈbiːɪŋ/",
+    "gloss": "福祉",
+    "tip": "well+being",
+    "example": "Student wellbeing.",
+    "exampleZh": "学生福祉。",
+    "tags": [
+      "campus"
+    ]
+  },
+  {
+    "id": 504,
+    "word": "pandemic",
+    "spelling": "P-A-N-D-E-M-I-C",
+    "phonetic": "/pænˈdemɪk/",
+    "gloss": "大流行病",
+    "tip": "pan-",
+    "example": "The pandemic changed work.",
+    "exampleZh": "大流行病改变工作。",
+    "tags": [
+      "academic"
+    ]
+  },
+  {
+    "id": 505,
+    "word": "prevention",
+    "spelling": "P-R-E-V-E-N-T-I-O-N",
+    "phonetic": "/prɪˈvenʃn/",
+    "gloss": "预防",
+    "tip": "prevent",
+    "example": "Prevention is better.",
+    "exampleZh": "预防更好。",
+    "tags": [
+      "academic"
+    ]
+  },
+  {
+    "id": 506,
+    "word": "migration",
+    "spelling": "M-I-G-R-A-T-I-O-N",
+    "phonetic": "/maɪˈɡreɪʃn/",
+    "gloss": "移民",
+    "tip": "migrate",
+    "example": "Labour migration.",
+    "exampleZh": "劳动力移民。",
+    "tags": [
+      "academic"
+    ]
+  },
+  {
+    "id": 507,
+    "word": "refugee",
+    "spelling": "R-E-F-U-G-E-E",
+    "phonetic": "/ˌrefjuˈdʒiː/",
+    "gloss": "难民",
+    "tip": "refuge",
+    "example": "Refugee support.",
+    "exampleZh": "难民支持。",
+    "tags": [
+      "academic"
+    ]
+  },
+  {
+    "id": 508,
+    "word": "equality",
+    "spelling": "E-Q-U-A-L-I-T-Y",
+    "phonetic": "/ɪˈkwɒləti/",
+    "gloss": "平等",
+    "tip": "equal",
+    "example": "Gender equality.",
+    "exampleZh": "性别平等。",
+    "tags": [
+      "academic"
+    ]
+  },
+  {
+    "id": 509,
+    "word": "discrimination",
+    "spelling": "D-I-S-C-R-I-M-I-N-A-T-I-O-N",
+    "phonetic": "/dɪˌskrɪmɪˈneɪʃn/",
+    "gloss": "歧视",
+    "tip": "discriminate",
+    "example": "Ban discrimination.",
+    "exampleZh": "禁止歧视。",
+    "tags": [
+      "academic"
+    ]
+  },
+  {
+    "id": 510,
+    "word": "democracy",
+    "spelling": "D-E-M-O-C-R-A-C-Y",
+    "phonetic": "/dɪˈmɒkrəsi/",
+    "gloss": "民主",
+    "tip": "democratic",
+    "example": "Support democracy.",
+    "exampleZh": "支持民主。",
+    "tags": [
+      "academic"
+    ]
+  },
+  {
+    "id": 511,
+    "word": "compliance",
+    "spelling": "C-O-M-P-L-I-A-N-C-E",
+    "phonetic": "/kəmˈplaɪəns/",
+    "gloss": "合规",
+    "tip": "comply",
+    "example": "Visa compliance.",
+    "exampleZh": "签证合规。",
+    "tags": [
+      "campus"
+    ]
+  },
+  {
+    "id": 512,
+    "word": "budget",
+    "spelling": "B-U-D-G-E-T",
+    "phonetic": "/ˈbʌdʒɪt/",
+    "gloss": "预算",
+    "tip": "budget cut",
+    "example": "Research budget.",
+    "exampleZh": "研究预算。",
+    "tags": [
+      "academic"
+    ]
+  },
+  {
+    "id": 513,
+    "word": "investment",
+    "spelling": "I-N-V-E-S-T-M-E-N-T",
+    "phonetic": "/ɪnˈvestmənt/",
+    "gloss": "投资",
+    "tip": "invest",
+    "example": "Long-term investment.",
+    "exampleZh": "长期投资。",
+    "tags": [
+      "academic"
+    ]
+  },
+  {
+    "id": 514,
+    "word": "inflation",
+    "spelling": "I-N-F-L-A-T-I-O-N",
+    "phonetic": "/ɪnˈfleɪʃn/",
+    "gloss": "通胀",
+    "tip": "inflate",
+    "example": "Inflation rises.",
+    "exampleZh": "通胀上升。",
+    "tags": [
+      "academic"
+    ]
+  },
+  {
+    "id": 515,
+    "word": "employment",
+    "spelling": "E-M-P-L-O-Y-M-E-N-T",
+    "phonetic": "/ɪmˈplɔɪmənt/",
+    "gloss": "就业",
+    "tip": "employ",
+    "example": "Employment rates.",
+    "exampleZh": "就业率。",
+    "tags": [
+      "academic"
+    ]
+  },
+  {
+    "id": 516,
+    "word": "unemployment",
+    "spelling": "U-N-E-M-P-L-O-Y-M-E-N-T",
+    "phonetic": "/ˌʌnɪmˈplɔɪmənt/",
+    "gloss": "失业",
+    "tip": "un-",
+    "example": "Youth unemployment.",
+    "exampleZh": "青年失业。",
+    "tags": [
+      "academic"
+    ]
+  },
+  {
+    "id": 517,
+    "word": "productivity",
+    "spelling": "P-R-O-D-U-C-T-I-V-I-T-Y",
+    "phonetic": "/ˌprɒdʌkˈtɪvəti/",
+    "gloss": "生产力",
+    "tip": "productive",
+    "example": "Raise productivity.",
+    "exampleZh": "提高生产力。",
+    "tags": [
+      "academic"
+    ]
+  },
+  {
+    "id": 518,
+    "word": "consumer",
+    "spelling": "C-O-N-S-U-M-E-R",
+    "phonetic": "/kənˈsjuːmə/",
+    "gloss": "消费者",
+    "tip": "consume",
+    "example": "Consumer demand.",
+    "exampleZh": "消费者需求。",
+    "tags": [
+      "academic"
+    ]
+  },
+  {
+    "id": 519,
+    "word": "competition",
+    "spelling": "C-O-M-P-E-T-I-T-I-O-N",
+    "phonetic": "/ˌkɒmpəˈtɪʃn/",
+    "gloss": "竞争",
+    "tip": "compete",
+    "example": "Global competition.",
+    "exampleZh": "全球竞争。",
+    "tags": [
+      "academic"
+    ]
+  },
+  {
+    "id": 520,
+    "word": "urban",
+    "spelling": "U-R-B-A-N",
+    "phonetic": "/ˈɜːbən/",
+    "gloss": "城市的",
+    "tip": "urbanisation",
+    "example": "Urban growth.",
+    "exampleZh": "城市增长。",
+    "tags": [
+      "academic"
+    ]
+  },
+  {
+    "id": 521,
+    "word": "rural",
+    "spelling": "R-U-R-A-L",
+    "phonetic": "/ˈrʊərəl/",
+    "gloss": "农村的",
+    "tip": "≠ urban",
+    "example": "Rural schools.",
+    "exampleZh": "农村学校。",
+    "tags": [
+      "academic"
+    ]
+  },
+  {
+    "id": 522,
+    "word": "housing",
+    "spelling": "H-O-U-S-I-N-G",
+    "phonetic": "/ˈhaʊzɪŋ/",
+    "gloss": "住房",
+    "tip": "house",
+    "example": "Student housing.",
+    "exampleZh": "学生住房。",
+    "tags": [
+      "campus"
+    ]
+  },
+  {
+    "id": 523,
+    "word": "commute",
+    "spelling": "C-O-M-M-U-T-E",
+    "phonetic": "/kəˈmjuːt/",
+    "gloss": "通勤",
+    "tip": "commuter",
+    "example": "Commute by train.",
+    "exampleZh": "乘火车通勤。",
+    "tags": [
+      "campus"
+    ]
+  },
+  {
+    "id": 524,
+    "word": "congestion",
+    "spelling": "C-O-N-G-E-S-T-I-O-N",
+    "phonetic": "/kənˈdʒestʃən/",
+    "gloss": "拥堵",
+    "tip": "congested",
+    "example": "Traffic congestion.",
+    "exampleZh": "交通拥堵。",
+    "tags": [
+      "academic"
+    ]
+  },
+  {
+    "id": 525,
+    "word": "literacy",
+    "spelling": "L-I-T-E-R-A-C-Y",
+    "phonetic": "/ˈlɪtərəsi/",
+    "gloss": "读写能力",
+    "tip": "literal",
+    "example": "Digital literacy.",
+    "exampleZh": "数字素养。",
+    "tags": [
+      "academic"
+    ]
+  },
+  {
+    "id": 526,
+    "word": "curriculum",
+    "spelling": "C-U-R-R-I-C-U-L-U-M",
+    "phonetic": "/kəˈrɪkjələm/",
+    "gloss": "课程",
+    "tip": "curricula",
+    "example": "Curriculum includes labs.",
+    "exampleZh": "课程含实验。",
+    "tags": [
+      "campus"
+    ]
+  },
+  {
+    "id": 527,
+    "word": "motivation",
+    "spelling": "M-O-T-I-V-A-T-I-O-N",
+    "phonetic": "/ˌməʊtɪˈveɪʃn/",
+    "gloss": "动机",
+    "tip": "motivate",
+    "example": "Intrinsic motivation.",
+    "exampleZh": "内在动机。",
+    "tags": [
+      "academic"
+    ]
+  },
+  {
+    "id": 528,
+    "word": "autonomy",
+    "spelling": "A-U-T-O-N-O-M-Y",
+    "phonetic": "/ɔːˈtɒnəmi/",
+    "gloss": "自主",
+    "tip": "auto-",
+    "example": "Learner autonomy.",
+    "exampleZh": "学习者自主。",
+    "tags": [
+      "academic"
+    ]
+  },
+  {
+    "id": 529,
+    "word": "collaboration",
+    "spelling": "C-O-L-L-A-B-O-R-A-T-I-O-N",
+    "phonetic": "/kəˌlæbəˈreɪʃn/",
+    "gloss": "协作",
+    "tip": "collaborate",
+    "example": "Collaboration helps.",
+    "exampleZh": "协作有帮助。",
+    "tags": [
+      "campus"
+    ]
+  },
+  {
+    "id": 530,
+    "word": "creativity",
+    "spelling": "C-R-E-A-T-I-V-I-T-Y",
+    "phonetic": "/ˌkriːeɪˈtɪvəti/",
+    "gloss": "创造力",
+    "tip": "creative",
+    "example": "Creativity matters.",
+    "exampleZh": "创造力重要。",
+    "tags": [
+      "academic"
+    ]
+  },
+  {
+    "id": 531,
+    "word": "critical",
+    "spelling": "C-R-I-T-I-C-A-L",
+    "phonetic": "/ˈkrɪtɪkl/",
+    "gloss": "批判性的",
+    "tip": "critical thinking",
+    "example": "Critical thinking.",
+    "exampleZh": "批判性思维。",
+    "tags": [
+      "academic"
+    ]
+  },
+  {
+    "id": 532,
+    "word": "reflective",
+    "spelling": "R-E-F-L-E-C-T-I-V-E",
+    "phonetic": "/rɪˈflektɪv/",
+    "gloss": "反思的",
+    "tip": "reflect",
+    "example": "Reflective journal.",
+    "exampleZh": "反思日志。",
+    "tags": [
+      "campus"
+    ]
+  },
+  {
+    "id": 533,
+    "word": "enrol",
+    "spelling": "E-N-R-O-L",
+    "phonetic": "/ɪnˈrəʊl/",
+    "gloss": "注册入学",
+    "tip": "enroll",
+    "example": "Enrol before semester.",
+    "exampleZh": "学期前注册。",
+    "tags": [
+      "campus",
+      "verb"
+    ]
+  },
+  {
+    "id": 534,
+    "word": "tutorial",
+    "spelling": "T-U-T-O-R-I-A-L",
+    "phonetic": "/tjuːˈtɔːriəl/",
+    "gloss": "辅导课",
+    "tip": "tutor",
+    "example": "Small tutorials.",
+    "exampleZh": "小班辅导。",
+    "tags": [
+      "campus"
+    ]
+  },
+  {
+    "id": 535,
+    "word": "cafeteria",
+    "spelling": "C-A-F-E-T-E-R-I-A",
+    "phonetic": "/ˌkæfəˈtɪəriə/",
+    "gloss": "食堂",
+    "tip": "cafe",
+    "example": "Cafeteria opens at seven.",
+    "exampleZh": "食堂七点开。",
+    "tags": [
+      "campus"
+    ]
+  },
+  {
+    "id": 536,
+    "word": "laboratory",
+    "spelling": "L-A-B-O-R-A-T-O-R-Y",
+    "phonetic": "/ləˈbɒrətri/",
+    "gloss": "实验室",
+    "tip": "lab",
+    "example": "Chemistry laboratory.",
+    "exampleZh": "化学实验室。",
+    "tags": [
+      "campus"
+    ]
+  },
+  {
+    "id": 537,
+    "word": "professor",
+    "spelling": "P-R-O-F-E-S-S-O-R",
+    "phonetic": "/prəˈfesə/",
+    "gloss": "教授",
+    "tip": "prof.",
+    "example": "Email the professor.",
+    "exampleZh": "给教授发邮件。",
+    "tags": [
+      "campus"
+    ]
+  },
+  {
+    "id": 538,
+    "word": "library",
+    "spelling": "L-I-B-R-A-R-Y",
+    "phonetic": "/ˈlaɪbrəri/",
+    "gloss": "图书馆",
+    "tip": "librarian",
+    "example": "Library closes at midnight.",
+    "exampleZh": "图书馆午夜关。",
+    "tags": [
+      "campus"
+    ]
+  },
+  {
+    "id": 539,
+    "word": "exam",
+    "spelling": "E-X-A-M",
+    "phonetic": "/ɪɡˈzæm/",
+    "gloss": "考试",
+    "tip": "examination",
+    "example": "Final exam next week.",
+    "exampleZh": "下周期末考。",
+    "tags": [
+      "campus"
+    ]
+  },
+  {
+    "id": 540,
+    "word": "essay",
+    "spelling": "E-S-S-A-Y",
+    "phonetic": "/ˈeseɪ/",
+    "gloss": "短文",
+    "tip": "essay structure",
+    "example": "Write a 300-word essay.",
+    "exampleZh": "写300词短文。",
+    "tags": [
+      "campus"
+    ]
+  },
+  {
+    "id": 541,
+    "word": "vocabulary",
+    "spelling": "V-O-C-A-B-U-L-A-R-Y",
+    "phonetic": "/vəˈkæbjələri/",
+    "gloss": "词汇",
+    "tip": "vocab",
+    "example": "Build vocabulary daily.",
+    "exampleZh": "每日积累词汇。",
+    "tags": [
+      "campus"
+    ]
+  },
+  {
+    "id": 542,
+    "word": "fluency",
+    "spelling": "F-L-U-E-N-C-Y",
+    "phonetic": "/ˈfluːənsi/",
+    "gloss": "流利度",
+    "tip": "fluent",
+    "example": "Fluency improves with practice.",
+    "exampleZh": "练习提高流利度。",
+    "tags": [
+      "campus"
+    ]
+  },
+  {
+    "id": 543,
+    "word": "dictation",
+    "spelling": "D-I-C-T-A-T-I-O-N",
+    "phonetic": "/dɪkˈteɪʃn/",
+    "gloss": "听写",
+    "tip": "dictate",
+    "example": "WFD is dictation.",
+    "exampleZh": "WFD是听写。",
+    "tags": [
+      "campus"
+    ]
+  },
+  {
+    "id": 544,
+    "word": "listening",
+    "spelling": "L-I-S-T-E-N-I-N-G",
+    "phonetic": "/ˈlɪsnɪŋ/",
+    "gloss": "听力",
+    "tip": "listen",
+    "example": "Daily listening helps.",
+    "exampleZh": "每日听力有帮助。",
+    "tags": [
+      "campus"
+    ]
+  },
+  {
+    "id": 545,
+    "word": "speaking",
+    "spelling": "S-P-E-A-K-I-N-G",
+    "phonetic": "/ˈspiːkɪŋ/",
+    "gloss": "口语",
+    "tip": "speak",
+    "example": "Speaking reduces anxiety.",
+    "exampleZh": "口语减少焦虑。",
+    "tags": [
+      "campus"
+    ]
+  },
+  {
+    "id": 546,
+    "word": "reading",
+    "spelling": "R-E-A-D-I-N-G",
+    "phonetic": "/ˈriːdɪŋ/",
+    "gloss": "阅读",
+    "tip": "read",
+    "example": "Skim before reading.",
+    "exampleZh": "细读前略读。",
+    "tags": [
+      "campus"
+    ]
+  },
+  {
+    "id": 547,
+    "word": "writing",
+    "spelling": "W-R-I-T-I-N-G",
+    "phonetic": "/ˈraɪtɪŋ/",
+    "gloss": "写作",
+    "tip": "write",
+    "example": "Academic writing needs evidence.",
+    "exampleZh": "学术写作需证据。",
+    "tags": [
+      "campus"
+    ]
+  },
+  {
+    "id": 548,
+    "word": "comprehension",
+    "spelling": "C-O-M-P-R-E-H-E-N-S-I-O-N",
+    "phonetic": "/ˌkɒmprɪˈhenʃn/",
+    "gloss": "理解",
+    "tip": "comprehend",
+    "example": "Listening comprehension.",
+    "exampleZh": "听力理解。",
+    "tags": [
+      "campus"
+    ]
+  },
+  {
+    "id": 549,
+    "word": "accuracy",
+    "spelling": "A-C-C-U-R-A-C-Y",
+    "phonetic": "/ˈækjərəsi/",
+    "gloss": "准确度",
+    "tip": "accurate",
+    "example": "Balance fluency and accuracy.",
+    "exampleZh": "平衡流利与准确。",
+    "tags": [
+      "campus"
+    ]
+  },
+  {
+    "id": 550,
+    "word": "repetition",
+    "spelling": "R-E-P-E-T-I-T-I-O-N",
+    "phonetic": "/ˌrepəˈtɪʃn/",
+    "gloss": "重复",
+    "tip": "repeat",
+    "example": "Repetition strengthens memory.",
+    "exampleZh": "重复加强记忆。",
+    "tags": [
+      "campus"
+    ]
+  },
+  {
+    "id": 551,
+    "word": "memorise",
+    "spelling": "M-E-M-O-R-I-S-E",
+    "phonetic": "/ˈmeməraɪz/",
+    "gloss": "记忆",
+    "tip": "memorize",
+    "example": "Do not only memorise lists.",
+    "exampleZh": "不要只背词表。",
+    "tags": [
+      "verb",
+      "campus"
+    ]
+  },
+  {
+    "id": 552,
+    "word": "headphones",
+    "spelling": "H-E-A-D-P-H-O-N-E-S",
+    "phonetic": "/ˈhedfəʊnz/",
+    "gloss": "耳机",
+    "tip": "head+phones",
+    "example": "Wear headphones.",
+    "exampleZh": "戴耳机。",
+    "tags": [
+      "campus"
+    ]
+  },
+  {
+    "id": 553,
+    "word": "browser",
+    "spelling": "B-R-O-W-S-E-R",
+    "phonetic": "/ˈbraʊzə/",
+    "gloss": "浏览器",
+    "tip": "browse",
+    "example": "Use Chrome browser.",
+    "exampleZh": "用Chrome浏览器。",
+    "tags": [
+      "campus"
+    ]
+  },
+  {
+    "id": 554,
+    "word": "offline",
+    "spelling": "O-F-F-L-I-N-E",
+    "phonetic": "/ˌɒfˈlaɪn/",
+    "gloss": "离线",
+    "tip": "≠ online",
+    "example": "Works fully offline.",
+    "exampleZh": "可完全离线。",
+    "tags": [
+      "campus"
+    ]
+  },
+  {
+    "id": 555,
+    "word": "accommodate",
+    "spelling": "A-C-C-O-M-M-O-D-A-T-E",
+    "phonetic": "/əˈkɒmədeɪt/",
+    "gloss": "容纳",
+    "tip": "accommodation",
+    "example": "Halls accommodate 200.",
+    "exampleZh": "宿舍可住200人。",
+    "tags": [
+      "verb",
+      "campus"
+    ]
+  },
+  {
+    "id": 556,
+    "word": "accompany",
+    "spelling": "A-C-C-O-M-P-A-N-Y",
+    "phonetic": "/əˈkʌmpəni/",
+    "gloss": "陪伴",
+    "tip": "companion",
+    "example": "Charts accompany the text.",
+    "exampleZh": "图表伴随文本。",
+    "tags": [
+      "verb"
+    ]
+  },
+  {
+    "id": 557,
+    "word": "accumulate",
+    "spelling": "A-C-C-U-M-U-L-A-T-E",
+    "phonetic": "/əˈkjuːmjəleɪt/",
+    "gloss": "积累",
+    "tip": "accumulation",
+    "example": "Accumulate knowledge.",
+    "exampleZh": "积累知识。",
+    "tags": [
+      "verb"
+    ]
+  },
+  {
+    "id": 558,
+    "word": "adjacent",
+    "spelling": "A-D-J-A-C-E-N-T",
+    "phonetic": "/əˈdʒeɪsnt/",
+    "gloss": "邻近的",
+    "tip": "ad-",
+    "example": "Adjacent buildings.",
+    "exampleZh": "邻近建筑。",
+    "tags": [
+      "academic"
+    ]
+  },
+  {
+    "id": 559,
+    "word": "advocate",
+    "spelling": "A-D-V-O-C-A-T-E",
+    "phonetic": "/ˈædvəkeɪt/",
+    "gloss": "提倡",
+    "tip": "advocacy",
+    "example": "Advocate for education.",
+    "exampleZh": "提倡教育。",
+    "tags": [
+      "verb"
+    ]
+  },
+  {
+    "id": 560,
+    "word": "aggregate",
+    "spelling": "A-G-G-R-E-G-A-T-E",
+    "phonetic": "/ˈæɡrɪɡət/",
+    "gloss": "总计",
+    "tip": "aggregation",
+    "example": "Aggregate data.",
+    "exampleZh": "汇总数据。",
+    "tags": [
+      "academic"
+    ]
+  },
+  {
+    "id": 561,
+    "word": "albeit",
+    "spelling": "A-L-B-E-I-T",
+    "phonetic": "/ɔːlˈbiːɪt/",
+    "gloss": "尽管",
+    "tip": "正式",
+    "example": "Useful, albeit costly.",
+    "exampleZh": "有用尽管昂贵。",
+    "tags": [
+      "academic"
+    ]
+  },
+  {
+    "id": 562,
+    "word": "alter",
+    "spelling": "A-L-T-E-R",
+    "phonetic": "/ˈɔːltə/",
+    "gloss": "改变",
+    "tip": "alteration",
+    "example": "Alter the plan.",
+    "exampleZh": "改变计划。",
+    "tags": [
+      "verb"
+    ]
+  },
+  {
+    "id": 563,
+    "word": "ambiguous",
+    "spelling": "A-M-B-I-G-U-O-U-S",
+    "phonetic": "/æmˈbɪɡjuəs/",
+    "gloss": "模棱两可的",
+    "tip": "ambiguity",
+    "example": "Ambiguous sentence.",
+    "exampleZh": "模棱两可的句子。",
+    "tags": [
+      "academic"
+    ]
+  },
+  {
+    "id": 564,
+    "word": "amend",
+    "spelling": "A-M-E-N-D",
+    "phonetic": "/əˈmend/",
+    "gloss": "修正",
+    "tip": "amendment",
+    "example": "Amend the draft.",
+    "exampleZh": "修正草稿。",
+    "tags": [
+      "verb"
+    ]
+  },
+  {
+    "id": 565,
+    "word": "analogy",
+    "spelling": "A-N-A-L-O-G-Y",
+    "phonetic": "/əˈnælədʒi/",
+    "gloss": "类比",
+    "tip": "analogous",
+    "example": "By analogy.",
+    "exampleZh": "通过类比。",
+    "tags": [
+      "academic"
+    ]
+  },
+  {
+    "id": 566,
+    "word": "anticipate",
+    "spelling": "A-N-T-I-C-I-P-A-T-E",
+    "phonetic": "/ænˈtɪsɪpeɪt/",
+    "gloss": "预期",
+    "tip": "anticipation",
+    "example": "Anticipate questions.",
+    "exampleZh": "预期问题。",
+    "tags": [
+      "verb"
+    ]
+  },
+  {
+    "id": 567,
+    "word": "apparent",
+    "spelling": "A-P-P-A-R-E-N-T",
+    "phonetic": "/əˈpærənt/",
+    "gloss": "明显的",
+    "tip": "apparently",
+    "example": "Apparent difference.",
+    "exampleZh": "明显差异。",
+    "tags": [
+      "academic"
+    ]
+  },
+  {
+    "id": 568,
+    "word": "appendix",
+    "spelling": "A-P-P-E-N-D-I-X",
+    "phonetic": "/əˈpendɪks/",
+    "gloss": "附录",
+    "tip": "appendices",
+    "example": "See the appendix.",
+    "exampleZh": "见附录。",
+    "tags": [
+      "academic"
+    ]
+  },
+  {
+    "id": 569,
+    "word": "appreciate",
+    "spelling": "A-P-P-R-E-C-I-A-T-E",
+    "phonetic": "/əˈpriːʃieɪt/",
+    "gloss": "理解；欣赏",
+    "tip": "appreciation",
+    "example": "Appreciate the difficulty.",
+    "exampleZh": "理解难度。",
+    "tags": [
+      "verb"
+    ]
+  },
+  {
+    "id": 570,
+    "word": "approximate",
+    "spelling": "A-P-P-R-O-X-I-M-A-T-E",
+    "phonetic": "/əˈprɒksɪmət/",
+    "gloss": "大约的",
+    "tip": "approximation",
+    "example": "Approximate number.",
+    "exampleZh": "大约数字。",
+    "tags": [
+      "academic"
+    ]
+  },
+  {
+    "id": 571,
+    "word": "arbitrary",
+    "spelling": "A-R-B-I-T-R-A-R-Y",
+    "phonetic": "/ˈɑːbɪtrəri/",
+    "gloss": "任意的",
+    "tip": "arbitrarily",
+    "example": "Arbitrary choice.",
+    "exampleZh": "任意选择。",
+    "tags": [
+      "academic"
+    ]
+  },
+  {
+    "id": 572,
+    "word": "assemble",
+    "spelling": "A-S-S-E-M-B-L-E",
+    "phonetic": "/əˈsembl/",
+    "gloss": "组装",
+    "tip": "assembly",
+    "example": "Assemble the team.",
+    "exampleZh": "组建团队。",
+    "tags": [
+      "verb"
+    ]
+  },
+  {
+    "id": 573,
+    "word": "assist",
+    "spelling": "A-S-S-I-S-T",
+    "phonetic": "/əˈsɪst/",
+    "gloss": "协助",
+    "tip": "assistance",
+    "example": "Assist new students.",
+    "exampleZh": "协助新生。",
+    "tags": [
+      "verb",
+      "campus"
+    ]
+  },
+  {
+    "id": 574,
+    "word": "assure",
+    "spelling": "A-S-S-U-R-E",
+    "phonetic": "/əˈʃʊə/",
+    "gloss": "保证",
+    "tip": "assurance",
+    "example": "I assure you.",
+    "exampleZh": "我向你保证。",
+    "tags": [
+      "verb"
+    ]
+  },
+  {
+    "id": 575,
+    "word": "attain",
+    "spelling": "A-T-T-A-I-N",
+    "phonetic": "/əˈteɪn/",
+    "gloss": "达到",
+    "tip": "attainment",
+    "example": "Attain your goals.",
+    "exampleZh": "达到目标。",
+    "tags": [
+      "verb"
+    ]
+  },
+  {
+    "id": 576,
+    "word": "attribute",
+    "spelling": "A-T-T-R-I-B-U-T-E",
+    "phonetic": "/əˈtrɪbjuːt/",
+    "gloss": "归因",
+    "tip": "attribution",
+    "example": "Attribute success to effort.",
+    "exampleZh": "把成功归因于努力。",
+    "tags": [
+      "verb"
+    ]
+  },
+  {
+    "id": 577,
+    "word": "automate",
+    "spelling": "A-U-T-O-M-A-T-E",
+    "phonetic": "/ˈɔːtəmeɪt/",
+    "gloss": "自动化",
+    "tip": "automation",
+    "example": "Automate the process.",
+    "exampleZh": "自动化流程。",
+    "tags": [
+      "verb"
+    ]
+  },
+  {
+    "id": 578,
+    "word": "behalf",
+    "spelling": "B-E-H-A-L-F",
+    "phonetic": "/bɪˈhɑːf/",
+    "gloss": "代表",
+    "tip": "on behalf of",
+    "example": "On behalf of the class.",
+    "exampleZh": "代表全班。",
+    "tags": [
+      "academic"
+    ]
+  },
+  {
+    "id": 579,
+    "word": "bond",
+    "spelling": "B-O-N-D",
+    "phonetic": "/bɒnd/",
+    "gloss": "纽带",
+    "tip": "bonds",
+    "example": "Social bonds.",
+    "exampleZh": "社会纽带。",
+    "tags": [
+      "academic"
+    ]
+  },
+  {
+    "id": 580,
+    "word": "bulk",
+    "spelling": "B-U-L-K",
+    "phonetic": "/bʌlk/",
+    "gloss": "大量",
+    "tip": "in bulk",
+    "example": "In bulk.",
+    "exampleZh": "大量。",
+    "tags": [
+      "academic"
+    ]
+  },
+  {
+    "id": 581,
+    "word": "cease",
+    "spelling": "C-E-A-S-E",
+    "phonetic": "/siːs/",
+    "gloss": "停止",
+    "tip": "cessation",
+    "example": "Cease operations.",
+    "exampleZh": "停止运作。",
+    "tags": [
+      "verb"
+    ]
+  },
+  {
+    "id": 582,
+    "word": "channel",
+    "spelling": "C-H-A-N-N-E-L",
+    "phonetic": "/ˈtʃænl/",
+    "gloss": "渠道",
+    "tip": "channels",
+    "example": "Official channel.",
+    "exampleZh": "官方渠道。",
+    "tags": [
+      "academic"
+    ]
+  },
+  {
+    "id": 583,
+    "word": "chapter",
+    "spelling": "C-H-A-P-T-E-R",
+    "phonetic": "/ˈtʃæptə/",
+    "gloss": "章节",
+    "tip": "chap.",
+    "example": "Next chapter.",
+    "exampleZh": "下一章。",
+    "tags": [
+      "academic"
+    ]
+  },
+  {
+    "id": 584,
+    "word": "chart",
+    "spelling": "C-H-A-R-T",
+    "phonetic": "/tʃɑːt/",
+    "gloss": "图表",
+    "tip": "bar chart",
+    "example": "Describe the chart.",
+    "exampleZh": "描述图表。",
+    "tags": [
+      "academic"
+    ]
+  },
+  {
+    "id": 585,
+    "word": "chemical",
+    "spelling": "C-H-E-M-I-C-A-L",
+    "phonetic": "/ˈkemɪkl/",
+    "gloss": "化学的",
+    "tip": "chemistry",
+    "example": "Chemical reaction.",
+    "exampleZh": "化学反应。",
+    "tags": [
+      "academic"
+    ]
+  },
+  {
+    "id": 586,
+    "word": "civil",
+    "spelling": "C-I-V-I-L",
+    "phonetic": "/ˈsɪvl/",
+    "gloss": "公民的",
+    "tip": "civilian",
+    "example": "Civil rights.",
+    "exampleZh": "公民权利。",
+    "tags": [
+      "academic"
+    ]
+  },
+  {
+    "id": 587,
+    "word": "classic",
+    "spelling": "C-L-A-S-S-I-C",
+    "phonetic": "/ˈklæsɪk/",
+    "gloss": "经典的",
+    "tip": "classical",
+    "example": "Classic study.",
+    "exampleZh": "经典研究。",
+    "tags": [
+      "academic"
+    ]
+  },
+  {
+    "id": 588,
+    "word": "code",
+    "spelling": "C-O-D-E",
+    "phonetic": "/kəʊd/",
+    "gloss": "代码；法规",
+    "tip": "coding",
+    "example": "Follow the code.",
+    "exampleZh": "遵守规范。",
+    "tags": [
+      "academic"
+    ]
+  },
+  {
+    "id": 589,
+    "word": "coincide",
+    "spelling": "C-O-I-N-C-I-D-E",
+    "phonetic": "/ˌkəʊɪnˈsaɪd/",
+    "gloss": "同时发生",
+    "tip": "coincidence",
+    "example": "Dates coincide.",
+    "exampleZh": "日期碰巧相同。",
+    "tags": [
+      "verb"
+    ]
+  },
+  {
+    "id": 590,
+    "word": "collapse",
+    "spelling": "C-O-L-L-A-P-S-E",
+    "phonetic": "/kəˈlæps/",
+    "gloss": "崩溃",
+    "tip": "collapse",
+    "example": "Market collapse.",
+    "exampleZh": "市场崩溃。",
+    "tags": [
+      "verb"
+    ]
+  },
+  {
+    "id": 591,
+    "word": "commence",
+    "spelling": "C-O-M-M-E-N-C-E",
+    "phonetic": "/kəˈmens/",
+    "gloss": "开始",
+    "tip": "commencement",
+    "example": "Classes commence Monday.",
+    "exampleZh": "周一开课。",
+    "tags": [
+      "verb",
+      "campus"
+    ]
+  },
+  {
+    "id": 592,
+    "word": "commission",
+    "spelling": "C-O-M-M-I-S-S-I-O-N",
+    "phonetic": "/kəˈmɪʃn/",
+    "gloss": "委托",
+    "tip": "commissioned",
+    "example": "Commission a study.",
+    "exampleZh": "委托研究。",
+    "tags": [
+      "academic"
+    ]
+  },
+  {
+    "id": 593,
+    "word": "commodity",
+    "spelling": "C-O-M-M-O-D-I-T-Y",
+    "phonetic": "/kəˈmɒdəti/",
+    "gloss": "商品",
+    "tip": "commodities",
+    "example": "Commodity prices.",
+    "exampleZh": "商品价格。",
+    "tags": [
+      "academic"
+    ]
+  },
+  {
+    "id": 594,
+    "word": "compatible",
+    "spelling": "C-O-M-P-A-T-I-B-L-E",
+    "phonetic": "/kəmˈpætəbl/",
+    "gloss": "兼容的",
+    "tip": "compatibility",
+    "example": "Compatible systems.",
+    "exampleZh": "兼容系统。",
+    "tags": [
+      "academic"
+    ]
+  },
+  {
+    "id": 595,
+    "word": "compile",
+    "spelling": "C-O-M-P-I-L-E",
+    "phonetic": "/kəmˈpaɪl/",
+    "gloss": "汇编",
+    "tip": "compilation",
+    "example": "Compile a list.",
+    "exampleZh": "汇编列表。",
+    "tags": [
+      "verb"
+    ]
+  },
+  {
+    "id": 596,
+    "word": "complement",
+    "spelling": "C-O-M-P-L-E-M-E-N-T",
+    "phonetic": "/ˈkɒmplɪment/",
+    "gloss": "补充",
+    "tip": "≠ compliment",
+    "example": "Complement each other.",
+    "exampleZh": "互补。",
+    "tags": [
+      "verb"
+    ]
+  },
+  {
+    "id": 597,
+    "word": "compound",
+    "spelling": "C-O-M-P-O-U-N-D",
+    "phonetic": "/ˈkɒmpaʊnd/",
+    "gloss": "化合物",
+    "tip": "compound noun",
+    "example": "Chemical compound.",
+    "exampleZh": "化合物。",
+    "tags": [
+      "academic"
+    ]
+  },
+  {
+    "id": 598,
+    "word": "compute",
+    "spelling": "C-O-M-P-U-T-E",
+    "phonetic": "/kəmˈpjuːt/",
+    "gloss": "计算",
+    "tip": "computation",
+    "example": "Compute the average.",
+    "exampleZh": "计算平均值。",
+    "tags": [
+      "verb"
+    ]
+  },
+  {
+    "id": 599,
+    "word": "conceive",
+    "spelling": "C-O-N-C-E-I-V-E",
+    "phonetic": "/kənˈsiːv/",
+    "gloss": "构想",
+    "tip": "conception",
+    "example": "Conceive a plan.",
+    "exampleZh": "构想计划。",
+    "tags": [
+      "verb"
+    ]
+  },
+  {
+    "id": 600,
+    "word": "concurrent",
+    "spelling": "C-O-N-C-U-R-R-E-N-T",
+    "phonetic": "/kənˈkʌrənt/",
+    "gloss": "同时的",
+    "tip": "concurrency",
+    "example": "Concurrent courses.",
+    "exampleZh": "同时修读课程。",
+    "tags": [
+      "academic"
+    ]
+  },
+  {
+    "id": 601,
+    "word": "confer",
+    "spelling": "C-O-N-F-E-R",
+    "phonetic": "/kənˈfɜː/",
+    "gloss": "授予；商议",
+    "tip": "conference",
+    "example": "Confer a degree.",
+    "exampleZh": "授予学位。",
+    "tags": [
+      "verb"
+    ]
+  },
+  {
+    "id": 602,
+    "word": "confine",
+    "spelling": "C-O-N-F-I-N-E",
+    "phonetic": "/kənˈfaɪn/",
+    "gloss": "限制",
+    "tip": "confined to",
+    "example": "Confine to the topic.",
+    "exampleZh": "限于主题。",
+    "tags": [
+      "verb"
+    ]
+  },
+  {
+    "id": 603,
+    "word": "conform",
+    "spelling": "C-O-N-F-O-R-M",
+    "phonetic": "/kənˈfɔːm/",
+    "gloss": "符合",
+    "tip": "conform to",
+    "example": "Conform to rules.",
+    "exampleZh": "符合规定。",
+    "tags": [
+      "verb"
+    ]
+  },
+  {
+    "id": 604,
+    "word": "consequent",
+    "spelling": "C-O-N-S-E-Q-U-E-N-T",
+    "phonetic": "/ˈkɒnsɪkwənt/",
+    "gloss": "随之发生的",
+    "tip": "consequently",
+    "example": "Consequent changes.",
+    "exampleZh": "随之变化。",
+    "tags": [
+      "academic"
+    ]
+  },
+  {
+    "id": 605,
+    "word": "constrain",
+    "spelling": "C-O-N-S-T-R-A-I-N",
+    "phonetic": "/kənˈstreɪn/",
+    "gloss": "约束",
+    "tip": "constraint",
+    "example": "Time constrains us.",
+    "exampleZh": "时间约束我们。",
+    "tags": [
+      "verb"
+    ]
+  },
+  {
+    "id": 606,
+    "word": "contact",
+    "spelling": "C-O-N-T-A-C-T",
+    "phonetic": "/ˈkɒntækt/",
+    "gloss": "联系",
+    "tip": "contact details",
+    "example": "Contact support.",
+    "exampleZh": "联系支持。",
+    "tags": [
+      "verb"
+    ]
+  },
+  {
+    "id": 607,
+    "word": "contradict",
+    "spelling": "C-O-N-T-R-A-D-I-C-T",
+    "phonetic": "/ˌkɒntrəˈdɪkt/",
+    "gloss": "反驳",
+    "tip": "contradiction",
+    "example": "Results contradict claims.",
+    "exampleZh": "结果反驳主张。",
+    "tags": [
+      "verb"
+    ]
+  },
+  {
+    "id": 608,
+    "word": "contrary",
+    "spelling": "C-O-N-T-R-A-R-Y",
+    "phonetic": "/ˈkɒntrəri/",
+    "gloss": "相反的",
+    "tip": "on the contrary",
+    "example": "On the contrary.",
+    "exampleZh": "恰恰相反。",
+    "tags": [
+      "academic"
+    ]
+  },
+  {
+    "id": 609,
+    "word": "convene",
+    "spelling": "C-O-N-V-E-N-E",
+    "phonetic": "/kənˈviːn/",
+    "gloss": "召集",
+    "tip": "convention",
+    "example": "Convene a meeting.",
+    "exampleZh": "召集会议。",
+    "tags": [
+      "verb"
+    ]
+  },
+  {
+    "id": 610,
+    "word": "converse",
+    "spelling": "C-O-N-V-E-R-S-E",
+    "phonetic": "/ˈkɒnvɜːs/",
+    "gloss": "相反的",
+    "tip": "conversely",
+    "example": "The converse is true.",
+    "exampleZh": "反过来也成立。",
+    "tags": [
+      "academic"
+    ]
+  },
+  {
+    "id": 611,
+    "word": "corporate",
+    "spelling": "C-O-R-P-O-R-A-T-E",
+    "phonetic": "/ˈkɔːpərət/",
+    "gloss": "企业的",
+    "tip": "corporation",
+    "example": "Corporate culture.",
+    "exampleZh": "企业文化。",
+    "tags": [
+      "academic"
+    ]
+  },
+  {
+    "id": 612,
+    "word": "couple",
+    "spelling": "C-O-U-P-L-E",
+    "phonetic": "/ˈkʌpl/",
+    "gloss": "一对",
+    "tip": "a couple of",
+    "example": "A couple of examples.",
+    "exampleZh": "几个例子。",
+    "tags": [
+      "academic"
+    ]
+  },
+  {
+    "id": 613,
+    "word": "credit",
+    "spelling": "C-R-E-D-I-T",
+    "phonetic": "/ˈkredɪt/",
+    "gloss": "学分",
+    "tip": "course credit",
+    "example": "Earn three credits.",
+    "exampleZh": "获得三学分。",
+    "tags": [
+      "campus"
+    ]
+  },
+  {
+    "id": 614,
+    "word": "currency",
+    "spelling": "C-U-R-R-E-N-C-Y",
+    "phonetic": "/ˈkʌrənsi/",
+    "gloss": "货币",
+    "tip": "currencies",
+    "example": "Foreign currency.",
+    "exampleZh": "外币。",
+    "tags": [
+      "academic"
+    ]
+  },
+  {
+    "id": 615,
+    "word": "deduce",
+    "spelling": "D-E-D-U-C-E",
+    "phonetic": "/dɪˈdjuːs/",
+    "gloss": "推断",
+    "tip": "deduction",
+    "example": "Deduce the answer.",
+    "exampleZh": "推断答案。",
+    "tags": [
+      "verb"
+    ]
+  },
+  {
+    "id": 616,
+    "word": "definite",
+    "spelling": "D-E-F-I-N-I-T-E",
+    "phonetic": "/ˈdefɪnət/",
+    "gloss": "明确的",
+    "tip": "definitely",
+    "example": "Definite answer.",
+    "exampleZh": "明确答案。",
+    "tags": [
+      "academic"
+    ]
+  },
+  {
+    "id": 617,
+    "word": "denote",
+    "spelling": "D-E-N-O-T-E",
+    "phonetic": "/dɪˈnəʊt/",
+    "gloss": "表示",
+    "tip": "denotation",
+    "example": "X denotes time.",
+    "exampleZh": "X表示时间。",
+    "tags": [
+      "verb"
+    ]
+  },
+  {
+    "id": 618,
+    "word": "depress",
+    "spelling": "D-E-P-R-E-S-S",
+    "phonetic": "/dɪˈpres/",
+    "gloss": "使沮丧",
+    "tip": "depression",
+    "example": "Bad news depresses markets.",
+    "exampleZh": "坏消息打压市场。",
+    "tags": [
+      "verb"
+    ]
+  },
+  {
+    "id": 619,
+    "word": "deviate",
+    "spelling": "D-E-V-I-A-T-E",
+    "phonetic": "/ˈdiːvieɪt/",
+    "gloss": "偏离",
+    "tip": "deviation",
+    "example": "Do not deviate from the plan.",
+    "exampleZh": "勿偏离计划。",
+    "tags": [
+      "verb"
+    ]
+  },
+  {
+    "id": 620,
+    "word": "devote",
+    "spelling": "D-E-V-O-T-E",
+    "phonetic": "/dɪˈvəʊt/",
+    "gloss": "致力于",
+    "tip": "devotion",
+    "example": "Devote time to study.",
+    "exampleZh": "把时间用于学习。",
+    "tags": [
+      "verb"
+    ]
+  },
+  {
+    "id": 621,
+    "word": "differentiate",
+    "spelling": "D-I-F-F-E-R-E-N-T-I-A-T-E",
+    "phonetic": "/ˌdɪfəˈrenʃieɪt/",
+    "gloss": "区分",
+    "tip": "differentiation",
+    "example": "Differentiate the two terms.",
+    "exampleZh": "区分两术语。",
+    "tags": [
+      "verb"
+    ]
+  },
+  {
+    "id": 622,
+    "word": "discriminate",
+    "spelling": "D-I-S-C-R-I-M-I-N-A-T-E",
+    "phonetic": "/dɪˈskrɪmɪneɪt/",
+    "gloss": "区分；歧视",
+    "tip": "discrimination",
+    "example": "Laws ban discrimination.",
+    "exampleZh": "法律禁止歧视。",
+    "tags": [
+      "verb"
+    ]
+  },
+  {
+    "id": 623,
+    "word": "displace",
+    "spelling": "D-I-S-P-L-A-C-E",
+    "phonetic": "/dɪsˈpleɪs/",
+    "gloss": "取代",
+    "tip": "displacement",
+    "example": "Robots displace some jobs.",
+    "exampleZh": "机器人取代部分工作。",
+    "tags": [
+      "verb"
+    ]
+  },
+  {
+    "id": 624,
+    "word": "dispose",
+    "spelling": "D-I-S-P-O-S-E",
+    "phonetic": "/dɪˈspəʊz/",
+    "gloss": "处理",
+    "tip": "dispose of",
+    "example": "Dispose of waste safely.",
+    "exampleZh": "安全处理废物。",
+    "tags": [
+      "verb"
+    ]
+  },
+  {
+    "id": 625,
+    "word": "distort",
+    "spelling": "D-I-S-T-O-R-T",
+    "phonetic": "/dɪˈstɔːt/",
+    "gloss": "扭曲",
+    "tip": "distortion",
+    "example": "Do not distort facts.",
+    "exampleZh": "勿扭曲事实。",
+    "tags": [
+      "verb"
+    ]
+  },
+  {
+    "id": 626,
+    "word": "drama",
+    "spelling": "D-R-A-M-A",
+    "phonetic": "/ˈdrɑːmə/",
+    "gloss": "戏剧",
+    "tip": "dramatic",
+    "example": "Drama club.",
+    "exampleZh": "戏剧社。",
+    "tags": [
+      "campus"
+    ]
+  },
+  {
+    "id": 627,
+    "word": "estate",
+    "spelling": "E-S-T-A-T-E",
+    "phonetic": "/ɪˈsteɪt/",
+    "gloss": "地产",
+    "tip": "real estate",
+    "example": "Real estate prices.",
+    "exampleZh": "房地产价格。",
+    "tags": [
+      "academic"
+    ]
+  },
+  {
+    "id": 628,
+    "word": "finite",
+    "spelling": "F-I-N-I-T-E",
+    "phonetic": "/ˈfaɪnaɪt/",
+    "gloss": "有限的",
+    "tip": "≠ infinite",
+    "example": "Finite resources.",
+    "exampleZh": "有限资源。",
+    "tags": [
+      "academic"
+    ]
+  },
+  {
+    "id": 629,
+    "word": "forthcoming",
+    "spelling": "F-O-R-T-H-C-O-M-I-N-G",
+    "phonetic": "/ˌfɔːθˈkʌmɪŋ/",
+    "gloss": "即将到来的",
+    "tip": "forth+",
+    "example": "Forthcoming exam.",
+    "exampleZh": "即将到来的考试。",
+    "tags": [
+      "campus"
+    ]
+  },
+  {
+    "id": 630,
+    "word": "globe",
+    "spelling": "G-L-O-B-E",
+    "phonetic": "/ɡləʊb/",
+    "gloss": "全球",
+    "tip": "global",
+    "example": "Around the globe.",
+    "exampleZh": "全球各地。",
+    "tags": [
+      "academic"
+    ]
+  },
+  {
+    "id": 631,
+    "word": "ignorance",
+    "spelling": "I-G-N-O-R-A-N-C-E",
+    "phonetic": "/ˈɪɡnərəns/",
+    "gloss": "无知",
+    "tip": "ignore",
+    "example": "Ignorance is costly.",
+    "exampleZh": "无知代价高。",
+    "tags": [
+      "academic"
+    ]
+  },
+  {
+    "id": 632,
+    "word": "immigrate",
+    "spelling": "I-M-M-I-G-R-A-T-E",
+    "phonetic": "/ˈɪmɪɡreɪt/",
+    "gloss": "移民入境",
+    "tip": "immigration",
+    "example": "Immigrate to Canada.",
+    "exampleZh": "移民加拿大。",
+    "tags": [
+      "verb"
+    ]
+  },
+  {
+    "id": 633,
+    "word": "implicate",
+    "spelling": "I-M-P-L-I-C-A-T-E",
+    "phonetic": "/ˈɪmplɪkeɪt/",
+    "gloss": "牵涉",
+    "tip": "implication",
+    "example": "Implicate several factors.",
+    "exampleZh": "牵涉多个因素。",
+    "tags": [
+      "verb"
+    ]
+  },
+  {
+    "id": 634,
+    "word": "implicit",
+    "spelling": "I-M-P-L-I-C-I-T",
+    "phonetic": "/ɪmˈplɪsɪt/",
+    "gloss": "隐含的",
+    "tip": "≠ explicit",
+    "example": "Implicit meaning.",
+    "exampleZh": "隐含意义。",
+    "tags": [
+      "academic"
+    ]
+  },
+  {
+    "id": 635,
+    "word": "incidence",
+    "spelling": "I-N-C-I-D-E-N-C-E",
+    "phonetic": "/ˈɪnsɪdəns/",
+    "gloss": "发生率",
+    "tip": "incident",
+    "example": "Incidence of disease.",
+    "exampleZh": "疾病发生率。",
+    "tags": [
+      "academic"
+    ]
+  },
+  {
+    "id": 636,
+    "word": "incline",
+    "spelling": "I-N-C-L-I-N-E",
+    "phonetic": "/ɪnˈklaɪn/",
+    "gloss": "倾向于",
+    "tip": "inclined to",
+    "example": "Inclined to agree.",
+    "exampleZh": "倾向于同意。",
+    "tags": [
+      "verb"
+    ]
+  },
+  {
+    "id": 637,
+    "word": "inhibit",
+    "spelling": "I-N-H-I-B-I-T",
+    "phonetic": "/ɪnˈhɪbɪt/",
+    "gloss": "抑制",
+    "tip": "inhibition",
+    "example": "Fear inhibits speaking.",
+    "exampleZh": "恐惧抑制口语。",
+    "tags": [
+      "verb"
+    ]
+  },
+  {
+    "id": 638,
+    "word": "injure",
+    "spelling": "I-N-J-U-R-E",
+    "phonetic": "/ˈɪndʒə/",
+    "gloss": "伤害",
+    "tip": "injury",
+    "example": "Injure severely.",
+    "exampleZh": "严重伤害。",
+    "tags": [
+      "verb"
+    ]
+  },
+  {
+    "id": 639,
+    "word": "job",
+    "spelling": "J-O-B",
+    "phonetic": "/dʒɒb/",
+    "gloss": "工作",
+    "tip": "job market",
+    "example": "Find a job.",
+    "exampleZh": "找工作。",
+    "tags": [
+      "campus"
+    ]
+  },
+  {
+    "id": 640,
+    "word": "levy",
+    "spelling": "L-E-V-Y",
+    "phonetic": "/ˈlevi/",
+    "gloss": "征税",
+    "tip": "levy a tax",
+    "example": "Levy a tax.",
+    "exampleZh": "征税。",
+    "tags": [
+      "verb"
+    ]
+  },
+  {
+    "id": 641,
+    "word": "licence",
+    "spelling": "L-I-C-E-N-C-E",
+    "phonetic": "/ˈlaɪsns/",
+    "gloss": "执照",
+    "tip": "license",
+    "example": "Driving licence.",
+    "exampleZh": "驾照。",
+    "tags": [
+      "campus"
+    ]
+  },
+  {
+    "id": 642,
+    "word": "maximise",
+    "spelling": "M-A-X-I-M-I-S-E",
+    "phonetic": "/ˈmæksɪmaɪz/",
+    "gloss": "最大化",
+    "tip": "maximize",
+    "example": "Maximise your score.",
+    "exampleZh": "最大化分数。",
+    "tags": [
+      "verb"
+    ]
+  },
+  {
+    "id": 643,
+    "word": "minimise",
+    "spelling": "M-I-N-I-M-I-S-E",
+    "phonetic": "/ˈmɪnɪmaɪz/",
+    "gloss": "最小化",
+    "tip": "minimize",
+    "example": "Minimise errors.",
+    "exampleZh": "最小化错误。",
+    "tags": [
+      "verb"
+    ]
+  },
+  {
+    "id": 644,
+    "word": "minimum",
+    "spelling": "M-I-N-I-M-U-M",
+    "phonetic": "/ˈmɪnɪməm/",
+    "gloss": "最小值",
+    "tip": "minimal",
+    "example": "Minimum score.",
+    "exampleZh": "最低分。",
+    "tags": [
+      "campus"
+    ]
+  },
+  {
+    "id": 645,
+    "word": "nonetheless",
+    "spelling": "N-O-N-E-T-H-E-L-E-S-S",
+    "phonetic": "/ˌnʌnðəˈles/",
+    "gloss": "尽管如此",
+    "tip": "=nevertheless",
+    "example": "Nonetheless, try again.",
+    "exampleZh": "尽管如此再试。",
+    "tags": [
+      "academic"
+    ]
+  },
+  {
+    "id": 646,
+    "word": "normal",
+    "spelling": "N-O-R-M-A-L",
+    "phonetic": "/ˈnɔːml/",
+    "gloss": "正常的",
+    "tip": "normally",
+    "example": "Normal range.",
+    "exampleZh": "正常范围。",
+    "tags": [
+      "academic"
+    ]
+  },
+  {
+    "id": 647,
+    "word": "notwithstanding",
+    "spelling": "N-O-T-W-I-T-H-S-T-A-N-D-I-N-G",
+    "phonetic": "/ˌnɒtwɪθˈstændɪŋ/",
+    "gloss": "尽管",
+    "tip": "正式",
+    "example": "Notwithstanding the delay.",
+    "exampleZh": "尽管延误。",
+    "tags": [
+      "academic"
+    ]
+  },
+  {
+    "id": 648,
+    "word": "odd",
+    "spelling": "O-D-D",
+    "phonetic": "/ɒd/",
+    "gloss": "奇怪的",
+    "tip": "oddly",
+    "example": "Odd result.",
+    "exampleZh": "奇怪结果。",
+    "tags": [
+      "academic"
+    ]
+  },
+  {
+    "id": 649,
+    "word": "plus",
+    "spelling": "P-L-U-S",
+    "phonetic": "/plʌs/",
+    "gloss": "加上",
+    "tip": "plus",
+    "example": "Cost plus tax.",
+    "exampleZh": "费用加税。",
+    "tags": [
+      "academic"
+    ]
+  },
+  {
+    "id": 650,
+    "word": "prime",
+    "spelling": "P-R-I-M-E",
+    "phonetic": "/praɪm/",
+    "gloss": "首要的",
+    "tip": "prime example",
+    "example": "Prime example.",
+    "exampleZh": "首要例子。",
+    "tags": [
+      "academic"
+    ]
+  },
+  {
+    "id": 651,
+    "word": "relax",
+    "spelling": "R-E-L-A-X",
+    "phonetic": "/rɪˈlæks/",
+    "gloss": "放松",
+    "tip": "relaxation",
+    "example": "Relax before the test.",
+    "exampleZh": "考前放松。",
+    "tags": [
+      "verb"
+    ]
+  },
+  {
+    "id": 652,
+    "word": "reluctance",
+    "spelling": "R-E-L-U-C-T-A-N-C-E",
+    "phonetic": "/rɪˈlʌktəns/",
+    "gloss": "不情愿",
+    "tip": "reluctant",
+    "example": "Show reluctance.",
+    "exampleZh": "表现出不情愿。",
+    "tags": [
+      "academic"
+    ]
+  },
+  {
+    "id": 653,
+    "word": "restrain",
+    "spelling": "R-E-S-T-R-A-I-N",
+    "phonetic": "/rɪˈstreɪn/",
+    "gloss": "抑制",
+    "tip": "restraint",
+    "example": "Restrain spending.",
+    "exampleZh": "抑制开支。",
+    "tags": [
+      "verb"
+    ]
+  },
+  {
+    "id": 654,
+    "word": "sex",
+    "spelling": "S-E-X",
+    "phonetic": "/seks/",
+    "gloss": "性别",
+    "tip": "=gender（语境）",
+    "example": "Sex differences in scores.",
+    "exampleZh": "分数的性别差异。",
+    "tags": [
+      "academic"
+    ]
+  },
+  {
+    "id": 655,
+    "word": "so-called",
+    "spelling": "S-O-C-A-L-L-E-D",
+    "phonetic": "/ˌsəʊ ˈkɔːld/",
+    "gloss": "所谓的",
+    "tip": "so-called",
+    "example": "So-called experts.",
+    "exampleZh": "所谓专家。",
+    "tags": [
+      "academic"
+    ]
+  },
+  {
+    "id": 656,
+    "word": "straightforward",
+    "spelling": "S-T-R-A-I-G-H-T-F-O-R-W-A-R-D",
+    "phonetic": "/ˌstreɪtˈfɔːwəd/",
+    "gloss": "简单明了的",
+    "tip": "straight+forward",
+    "example": "Straightforward task.",
+    "exampleZh": "简单明了的任务。",
+    "tags": [
+      "academic"
+    ]
+  },
+  {
+    "id": 657,
+    "word": "subordinate",
+    "spelling": "S-U-B-O-R-D-I-N-A-T-E",
+    "phonetic": "/səˈbɔːdɪnət/",
+    "gloss": "从属的",
+    "tip": "sub-",
+    "example": "Subordinate clause.",
+    "exampleZh": "从属从句。",
+    "tags": [
+      "academic"
+    ]
+  },
+  {
+    "id": 658,
+    "word": "successor",
+    "spelling": "S-U-C-C-E-S-S-O-R",
+    "phonetic": "/səkˈsesə/",
+    "gloss": "继任者",
+    "tip": "succeed",
+    "example": "Appoint a successor.",
+    "exampleZh": "任命继任者。",
+    "tags": [
+      "academic"
+    ]
+  },
+  {
+    "id": 659,
+    "word": "sum",
+    "spelling": "S-U-M",
+    "phonetic": "/sʌm/",
+    "gloss": "总和",
+    "tip": "sum up",
+    "example": "Sum of scores.",
+    "exampleZh": "分数总和。",
+    "tags": [
+      "academic"
+    ]
+  },
+  {
+    "id": 660,
+    "word": "tape",
+    "spelling": "T-A-P-E",
+    "phonetic": "/teɪp/",
+    "gloss": "磁带",
+    "tip": "tape recorder",
+    "example": "Listen to the tape.",
+    "exampleZh": "听磁带。",
+    "tags": [
+      "campus"
+    ]
+  },
+  {
+    "id": 661,
+    "word": "tense",
+    "spelling": "T-E-N-S-E",
+    "phonetic": "/tens/",
+    "gloss": "紧张的；时态",
+    "tip": "tension",
+    "example": "Feel tense before exams.",
+    "exampleZh": "考前紧张。",
+    "tags": [
+      "campus"
+    ]
+  },
+  {
+    "id": 662,
+    "word": "unify",
+    "spelling": "U-N-I-F-Y",
+    "phonetic": "/ˈjuːnɪfaɪ/",
+    "gloss": "统一",
+    "tip": "unification",
+    "example": "Unify the standards.",
+    "exampleZh": "统一标准。",
+    "tags": [
+      "verb"
+    ]
+  },
+  {
+    "id": 663,
+    "word": "underlie",
+    "spelling": "U-N-D-E-R-L-I-E",
+    "phonetic": "/ˌʌndəˈlaɪ/",
+    "gloss": "构成…的基础",
+    "tip": "underlying",
+    "example": "Factors that underlie success.",
+    "exampleZh": "构成成功基础的因素。",
+    "tags": [
+      "verb"
+    ]
+  }
+];
+  global.VOCAB_BANK = VOCAB_BANK;
+})(typeof window !== "undefined" ? window : globalThis);
