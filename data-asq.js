@@ -1,6 +1,6 @@
 /**
  * chinaPTE · ASQ — Answer Short Question
- * Total: 42 items
+ * Total: 84 items
  */
 (function (global) {
   "use strict";
@@ -340,11 +340,349 @@
     "answer": "breakfast",
     "zhAnalysis": "早餐。",
     "vocab": []
+  },
+  {
+    "id": 43,
+    "en": "What do we call the study of living organisms?",
+    "question": "What do we call the study of living organisms?",
+    "answer": "biology / biology.",
+    "zhAnalysis": "生物学。",
+    "vocab": []
+  },
+  {
+    "id": 44,
+    "en": "How many sides does a hexagon have?",
+    "question": "How many sides does a hexagon have?",
+    "answer": "six / 6",
+    "zhAnalysis": "六边形有六条边。",
+    "vocab": []
+  },
+  {
+    "id": 45,
+    "en": "What planet is known as the Red Planet?",
+    "question": "What planet is known as the Red Planet?",
+    "answer": "Mars",
+    "zhAnalysis": "火星。",
+    "vocab": []
+  },
+  {
+    "id": 46,
+    "en": "What do bees produce?",
+    "question": "What do bees produce?",
+    "answer": "honey",
+    "zhAnalysis": "蜜蜂产蜜。",
+    "vocab": []
+  },
+  {
+    "id": 47,
+    "en": "What is the opposite of hot?",
+    "question": "What is the opposite of hot?",
+    "answer": "cold",
+    "zhAnalysis": "hot 的反义是 cold。",
+    "vocab": []
+  },
+  {
+    "id": 48,
+    "en": "Which ocean is the largest?",
+    "question": "Which ocean is the largest?",
+    "answer": "the Pacific / Pacific Ocean",
+    "zhAnalysis": "太平洋最大。",
+    "vocab": []
+  },
+  {
+    "id": 49,
+    "en": "What do we call a baby cat?",
+    "question": "What do we call a baby cat?",
+    "answer": "kitten / a kitten",
+    "zhAnalysis": "小猫叫 kitten。",
+    "vocab": []
+  },
+  {
+    "id": 50,
+    "en": "How many minutes are there in an hour?",
+    "question": "How many minutes are there in an hour?",
+    "answer": "sixty / 60",
+    "zhAnalysis": "一小时六十分钟。",
+    "vocab": []
+  },
+  {
+    "id": 51,
+    "en": "What gas do plants absorb from the air?",
+    "question": "What gas do plants absorb from the air?",
+    "answer": "carbon dioxide / CO2",
+    "zhAnalysis": "植物吸收二氧化碳。",
+    "vocab": []
+  },
+  {
+    "id": 52,
+    "en": "What is H2O commonly known as?",
+    "question": "What is H2O commonly known as?",
+    "answer": "water",
+    "zhAnalysis": "H2O即水。",
+    "vocab": []
+  },
+  {
+    "id": 53,
+    "en": "Who writes a novel?",
+    "question": "Who writes a novel?",
+    "answer": "an author / a novelist / writer",
+    "zhAnalysis": "小说作者。",
+    "vocab": []
+  },
+  {
+    "id": 54,
+    "en": "What do we call frozen water?",
+    "question": "What do we call frozen water?",
+    "answer": "ice",
+    "zhAnalysis": "冰。",
+    "vocab": []
+  },
+  {
+    "id": 55,
+    "en": "Which sense do we use to hear?",
+    "question": "Which sense do we use to hear?",
+    "answer": "hearing / the sense of hearing",
+    "zhAnalysis": "听觉。",
+    "vocab": []
+  },
+  {
+    "id": 56,
+    "en": "What is the past tense of go?",
+    "question": "What is the past tense of go?",
+    "answer": "went",
+    "zhAnalysis": "go 的过去式是 went。",
+    "vocab": []
+  },
+  {
+    "id": 57,
+    "en": "How many legs does a spider have?",
+    "question": "How many legs does a spider have?",
+    "answer": "eight / 8",
+    "zhAnalysis": "蜘蛛有八条腿。",
+    "vocab": []
+  },
+  {
+    "id": 58,
+    "en": "What do we call the middle of the day?",
+    "question": "What do we call the middle of the day?",
+    "answer": "noon / midday",
+    "zhAnalysis": "正午。",
+    "vocab": []
+  },
+  {
+    "id": 59,
+    "en": "Which instrument has black and white keys?",
+    "question": "Which instrument has black and white keys?",
+    "answer": "piano / a piano",
+    "zhAnalysis": "钢琴。",
+    "vocab": []
+  },
+  {
+    "id": 60,
+    "en": "What do we call a place where books are kept for borrowing?",
+    "question": "What do we call a place where books are kept for borrowing?",
+    "answer": "library / a library",
+    "zhAnalysis": "图书馆。",
+    "vocab": []
+  },
+  {
+    "id": 61,
+    "en": "What colour do you get when you mix red and yellow?",
+    "question": "What colour do you get when you mix red and yellow?",
+    "answer": "orange",
+    "zhAnalysis": "红+黄=橙。",
+    "vocab": []
+  },
+  {
+    "id": 62,
+    "en": "What is the capital of Japan?",
+    "question": "What is the capital of Japan?",
+    "answer": "Tokyo",
+    "zhAnalysis": "东京。",
+    "vocab": []
+  },
+  {
+    "id": 63,
+    "en": "What do we call animals that eat only plants?",
+    "question": "What do we call animals that eat only plants?",
+    "answer": "herbivores / herbivore",
+    "zhAnalysis": "食草动物。",
+    "vocab": []
+  },
+  {
+    "id": 64,
+    "en": "How many wheels does a bicycle have?",
+    "question": "How many wheels does a bicycle have?",
+    "answer": "two / 2",
+    "zhAnalysis": "自行车两轮。",
+    "vocab": []
+  },
+  {
+    "id": 65,
+    "en": "What do we call the person who flies an aeroplane?",
+    "question": "What do we call the person who flies an aeroplane?",
+    "answer": "pilot / a pilot",
+    "zhAnalysis": "飞行员。",
+    "vocab": []
+  },
+  {
+    "id": 66,
+    "en": "Which season comes after winter?",
+    "question": "Which season comes after winter?",
+    "answer": "spring",
+    "zhAnalysis": "冬后是春。",
+    "vocab": []
+  },
+  {
+    "id": 67,
+    "en": "What is the largest mammal on Earth?",
+    "question": "What is the largest mammal on Earth?",
+    "answer": "blue whale / the blue whale",
+    "zhAnalysis": "蓝鲸。",
+    "vocab": []
+  },
+  {
+    "id": 68,
+    "en": "What do we use to measure temperature?",
+    "question": "What do we use to measure temperature?",
+    "answer": "thermometer / a thermometer",
+    "zhAnalysis": "温度计。",
+    "vocab": []
+  },
+  {
+    "id": 69,
+    "en": "What is the currency of the United Kingdom?",
+    "question": "What is the currency of the United Kingdom?",
+    "answer": "pound / pound sterling",
+    "zhAnalysis": "英镑。",
+    "vocab": []
+  },
+  {
+    "id": 70,
+    "en": "What do we call a word with the same meaning as another?",
+    "question": "What do we call a word with the same meaning as another?",
+    "answer": "synonym / a synonym",
+    "zhAnalysis": "同义词。",
+    "vocab": []
+  },
+  {
+    "id": 71,
+    "en": "How many continents are there?",
+    "question": "How many continents are there?",
+    "answer": "seven / 7",
+    "zhAnalysis": "七大洲。",
+    "vocab": []
+  },
+  {
+    "id": 72,
+    "en": "What organ do we use to breathe?",
+    "question": "What organ do we use to breathe?",
+    "answer": "lungs / the lungs",
+    "zhAnalysis": "肺。",
+    "vocab": []
+  },
+  {
+    "id": 73,
+    "en": "What is the boiling point of water in Celsius?",
+    "question": "What is the boiling point of water in Celsius?",
+    "answer": "100 / one hundred degrees",
+    "zhAnalysis": "摄氏100度。",
+    "vocab": []
+  },
+  {
+    "id": 74,
+    "en": "What do we call a shape with three sides?",
+    "question": "What do we call a shape with three sides?",
+    "answer": "triangle / a triangle",
+    "zhAnalysis": "三角形。",
+    "vocab": []
+  },
+  {
+    "id": 75,
+    "en": "Which bird cannot fly but is a fast runner?",
+    "question": "Which bird cannot fly but is a fast runner?",
+    "answer": "ostrich / an ostrich",
+    "zhAnalysis": "鸵鸟。",
+    "vocab": []
+  },
+  {
+    "id": 76,
+    "en": "What do we call the study of the past?",
+    "question": "What do we call the study of the past?",
+    "answer": "history",
+    "zhAnalysis": "历史学。",
+    "vocab": []
+  },
+  {
+    "id": 77,
+    "en": "What is the opposite of expensive?",
+    "question": "What is the opposite of expensive?",
+    "answer": "cheap / inexpensive",
+    "zhAnalysis": "expensive 反义 cheap。",
+    "vocab": []
+  },
+  {
+    "id": 78,
+    "en": "What do we call rain when it freezes?",
+    "question": "What do we call rain when it freezes?",
+    "answer": "hail / sleet / snow (accept hail)",
+    "zhAnalysis": "冰雹/冻雨。",
+    "vocab": []
+  },
+  {
+    "id": 79,
+    "en": "Who treats sick animals?",
+    "question": "Who treats sick animals?",
+    "answer": "veterinarian / vet / a vet",
+    "zhAnalysis": "兽医。",
+    "vocab": []
+  },
+  {
+    "id": 80,
+    "en": "What is the first meal of the day called?",
+    "question": "What is the first meal of the day called?",
+    "answer": "breakfast",
+    "zhAnalysis": "早餐。",
+    "vocab": []
+  },
+  {
+    "id": 81,
+    "en": "How many days are there in a fortnight?",
+    "question": "How many days are there in a fortnight?",
+    "answer": "fourteen / 14",
+    "zhAnalysis": "两周十四天。",
+    "vocab": []
+  },
+  {
+    "id": 82,
+    "en": "What do we call a baby dog?",
+    "question": "What do we call a baby dog?",
+    "answer": "puppy / a puppy",
+    "zhAnalysis": "小狗。",
+    "vocab": []
+  },
+  {
+    "id": 83,
+    "en": "Which metal is liquid at room temperature?",
+    "question": "Which metal is liquid at room temperature?",
+    "answer": "mercury",
+    "zhAnalysis": "汞。",
+    "vocab": []
+  },
+  {
+    "id": 84,
+    "en": "What do we call the top of a mountain?",
+    "question": "What do we call the top of a mountain?",
+    "answer": "peak / summit",
+    "zhAnalysis": "山顶。",
+    "vocab": []
   }
 ];
+
   ASQ_BANK.forEach(function (item) {
     if (!item.sentence && item.en) item.sentence = item.en;
     if (!item.analysis && item.zhAnalysis) item.analysis = item.zhAnalysis;
   });
+
   global.ASQ_BANK = ASQ_BANK;
 })(typeof window !== "undefined" ? window : globalThis);

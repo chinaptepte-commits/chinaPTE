@@ -1,6 +1,6 @@
 /**
  * chinaPTE · Reading — FIB / Re-order / MCQ
- * Total: 30 items
+ * Total: 60 items
  */
 (function (global) {
   "use strict";
@@ -244,11 +244,253 @@
     "answer": "Make data collection easier for volunteers.",
     "zhAnalysis": "主要功能。",
     "vocab": []
+  },
+  {
+    "id": 31,
+    "type": "FIB",
+    "en": "Researchers must _____ ethics approval before interviewing participants.",
+    "answer": "obtain / get / secure",
+    "zhAnalysis": "FIB：obtain/get/secure 获得伦理批准。",
+    "vocab": []
+  },
+  {
+    "id": 32,
+    "type": "FIB",
+    "en": "The results _____ that online tutoring improves writing scores.",
+    "answer": "indicate / suggest / show",
+    "zhAnalysis": "FIB：indicate/suggest/show 表明。",
+    "vocab": []
+  },
+  {
+    "id": 33,
+    "type": "FIB",
+    "en": "Students are advised to _____ sources carefully to avoid plagiarism.",
+    "answer": "cite / acknowledge / reference",
+    "zhAnalysis": "FIB：cite/acknowledge/reference 引用。",
+    "vocab": []
+  },
+  {
+    "id": 34,
+    "type": "FIB",
+    "en": "Public transport can _____ congestion in densely populated cities.",
+    "answer": "reduce / ease / alleviate",
+    "zhAnalysis": "FIB：reduce/ease/alleviate 减少拥堵。",
+    "vocab": []
+  },
+  {
+    "id": 35,
+    "type": "FIB",
+    "en": "The sample was not large _____ to detect a small effect.",
+    "answer": "enough / sufficient",
+    "zhAnalysis": "FIB：enough/sufficient 足够。",
+    "vocab": []
+  },
+  {
+    "id": 36,
+    "type": "FIB",
+    "en": "Climate models _____ rising temperatures over the coming decades.",
+    "answer": "predict / forecast / project",
+    "zhAnalysis": "FIB：predict/forecast/project 预测。",
+    "vocab": []
+  },
+  {
+    "id": 37,
+    "type": "FIB",
+    "en": "Please _____ your assignment via the online portal by Friday.",
+    "answer": "submit / upload",
+    "zhAnalysis": "FIB：submit/upload 提交。",
+    "vocab": []
+  },
+  {
+    "id": 38,
+    "type": "FIB",
+    "en": "Peer review improves the _____ of academic publications.",
+    "answer": "quality / credibility / reliability",
+    "zhAnalysis": "FIB：quality/credibility/reliability。",
+    "vocab": []
+  },
+  {
+    "id": 39,
+    "type": "FIB",
+    "en": "Enrolment _____ significantly after scholarships were expanded.",
+    "answer": "increased / rose / grew",
+    "zhAnalysis": "FIB：increased/rose/grew 上升。",
+    "vocab": []
+  },
+  {
+    "id": 40,
+    "type": "FIB",
+    "en": "The lecture provided a brief _____ of key economic theories.",
+    "answer": "overview / summary / outline",
+    "zhAnalysis": "FIB：overview/summary/outline 概述。",
+    "vocab": []
+  },
+  {
+    "id": 41,
+    "type": "RO",
+    "en": "A) Funding was approved in March.\nB) The laboratory opened in September.\nC) Construction began in May.\nD) Equipment was installed in August.\nOrder:",
+    "answer": "A-C-D-B",
+    "zhAnalysis": "RO：批准→开工→装设备→开放。",
+    "vocab": []
+  },
+  {
+    "id": 42,
+    "type": "RO",
+    "en": "A) Students analysed the survey data.\nB) A questionnaire was distributed online.\nC) Findings were presented at a seminar.\nD) Ethics approval was obtained.\nOrder:",
+    "answer": "D-B-A-C",
+    "zhAnalysis": "RO：伦理→发问卷→分析→报告。",
+    "vocab": []
+  },
+  {
+    "id": 43,
+    "type": "RO",
+    "en": "A) Draft feedback was returned by tutors.\nB) Students submitted revised essays.\nC) The essay brief was published.\nD) First drafts were uploaded.\nOrder:",
+    "answer": "C-D-A-B",
+    "zhAnalysis": "RO：简报→初稿→反馈→修订稿。",
+    "vocab": []
+  },
+  {
+    "id": 44,
+    "type": "RO",
+    "en": "A) Sea levels continued to rise.\nB) Coastal defences were upgraded.\nC) Flooding damaged several districts.\nD) An emergency was declared.\nOrder:",
+    "answer": "A-C-D-B",
+    "zhAnalysis": "RO：海平面升→洪水→紧急状态→升级防御。",
+    "vocab": []
+  },
+  {
+    "id": 45,
+    "type": "RO",
+    "en": "A) Graduates attended a careers fair.\nB) Internship offers were negotiated.\nC) CVs were prepared in workshops.\nD) Some students accepted placements.\nOrder:",
+    "answer": "C-A-B-D",
+    "zhAnalysis": "RO：准备CV→招聘会→谈实习→接受。",
+    "vocab": []
+  },
+  {
+    "id": 46,
+    "type": "RO",
+    "en": "A) The hypothesis was revised.\nB) Pilot results were unexpected.\nC) A new experiment was designed.\nD) Final data supported the revised model.\nOrder:",
+    "answer": "B-A-C-D",
+    "zhAnalysis": "RO：试点意外→改假设→新实验→数据支持。",
+    "vocab": []
+  },
+  {
+    "id": 47,
+    "type": "RO",
+    "en": "A) Tickets sold out within hours.\nB) The guest lecture was announced.\nC) An overflow room was opened.\nD) Students queued outside early.\nOrder:",
+    "answer": "B-A-D-C",
+    "zhAnalysis": "RO：公告→售罄→排队→开溢流教室。",
+    "vocab": []
+  },
+  {
+    "id": 48,
+    "type": "RO",
+    "en": "A) Recommendations were sent to policymakers.\nB) Researchers collected air-quality data.\nC) A report summarised the findings.\nD) Pollution peaks were identified.\nOrder:",
+    "answer": "B-D-C-A",
+    "zhAnalysis": "RO：采集→识别峰值→报告→政策建议。",
+    "vocab": []
+  },
+  {
+    "id": 49,
+    "type": "RO",
+    "en": "A) Orientation week concluded on Friday.\nB) New students collected campus maps.\nC) Welcome talks were held on Monday.\nD) Library tours ran mid-week.\nOrder:",
+    "answer": "C-B-D-A",
+    "zhAnalysis": "RO：周一欢迎→领地图→周中参观→周五结束。",
+    "vocab": []
+  },
+  {
+    "id": 50,
+    "type": "RO",
+    "en": "A) The paper was peer-reviewed.\nB) Authors submitted a manuscript.\nC) Revisions were completed.\nD) The article was published online.\nOrder:",
+    "answer": "B-A-C-D",
+    "zhAnalysis": "RO：投稿→评审→修改→在线发表。",
+    "vocab": []
+  },
+  {
+    "id": 51,
+    "type": "MCQ",
+    "en": "The passage states that urban parks reduce stress and encourage exercise. What is one benefit of urban parks?",
+    "answer": "They reduce stress / encourage exercise",
+    "zhAnalysis": "MCQ：抓住 parks→stress/exercise。",
+    "vocab": []
+  },
+  {
+    "id": 52,
+    "type": "MCQ",
+    "en": "According to the text, peer review can be slow but improves quality. What is a drawback of peer review?",
+    "answer": "It can be slow",
+    "zhAnalysis": "MCQ：drawback=slow。",
+    "vocab": []
+  },
+  {
+    "id": 53,
+    "type": "MCQ",
+    "en": "The author argues that correlation is not causation. What does the author warn against?",
+    "answer": "Treating correlation as causation",
+    "zhAnalysis": "MCQ：勿把相关当因果。",
+    "vocab": []
+  },
+  {
+    "id": 54,
+    "type": "MCQ",
+    "en": "Students without reliable internet struggle with online exams. What problem is highlighted?",
+    "answer": "Unequal access to internet / digital divide",
+    "zhAnalysis": "MCQ：网络获取不平等。",
+    "vocab": []
+  },
+  {
+    "id": 55,
+    "type": "MCQ",
+    "en": "The study found scholarships increased enrolment among low-income applicants. What was the effect of scholarships?",
+    "answer": "Increased enrolment among low-income applicants",
+    "zhAnalysis": "MCQ：奖学金→低收入入学升。",
+    "vocab": []
+  },
+  {
+    "id": 56,
+    "type": "MCQ",
+    "en": "Noise pollution raises stress and disrupts sleep. Which health effect is mentioned?",
+    "answer": "Stress / sleep disruption",
+    "zhAnalysis": "MCQ：噪声→压力/睡眠。",
+    "vocab": []
+  },
+  {
+    "id": 57,
+    "type": "MCQ",
+    "en": "The module requires both a midterm test and a final essay. What assessments are required?",
+    "answer": "A midterm test and a final essay",
+    "zhAnalysis": "MCQ：两种考核。",
+    "vocab": []
+  },
+  {
+    "id": 58,
+    "type": "MCQ",
+    "en": "Desalination is energy-intensive but useful where water is scarce. What is a disadvantage of desalination?",
+    "answer": "It is energy-intensive / high energy use",
+    "zhAnalysis": "MCQ：能耗高。",
+    "vocab": []
+  },
+  {
+    "id": 59,
+    "type": "MCQ",
+    "en": "The career fair connects students with employers and mentors. What is the purpose of the career fair?",
+    "answer": "To connect students with employers and mentors",
+    "zhAnalysis": "MCQ：连接学生与雇主导师。",
+    "vocab": []
+  },
+  {
+    "id": 60,
+    "type": "MCQ",
+    "en": "Transparent marking criteria help students understand grades. Why are transparent criteria useful?",
+    "answer": "They help students understand grades",
+    "zhAnalysis": "MCQ：透明标准帮助理解成绩。",
+    "vocab": []
   }
 ];
+
   READING_BANK.forEach(function (item) {
     if (!item.sentence && item.en) item.sentence = item.en;
     if (!item.analysis && item.zhAnalysis) item.analysis = item.zhAnalysis;
   });
+
   global.READING_BANK = READING_BANK;
 })(typeof window !== "undefined" ? window : globalThis);

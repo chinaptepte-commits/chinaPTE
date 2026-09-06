@@ -1,6 +1,6 @@
 /**
  * chinaPTE · Listening — MCQ / FIB / HCS / SMW
- * Total: 32 items
+ * Total: 64 items
  */
 (function (global) {
   "use strict";
@@ -260,11 +260,269 @@
     "answer": "shuttle / bus",
     "zhAnalysis": "shuttle bus。",
     "vocab": []
+  },
+  {
+    "id": 33,
+    "type": "MCQ",
+    "en": "Speaker: The delay was caused by software failure, not staff shortages.\nQuestion: What caused the delay?",
+    "answer": "Software failure",
+    "zhAnalysis": "抓 caused by，排除 staff。",
+    "vocab": []
+  },
+  {
+    "id": 34,
+    "type": "MCQ",
+    "en": "Speaker: We will extend library hours during the exam period only.\nQuestion: When will library hours be extended?",
+    "answer": "During the exam period",
+    "zhAnalysis": "时间细节 exam period。",
+    "vocab": []
+  },
+  {
+    "id": 35,
+    "type": "MCQ",
+    "en": "Speaker: Scholarships cover tuition but not accommodation costs.\nQuestion: What do scholarships not cover?",
+    "answer": "Accommodation costs",
+    "zhAnalysis": "but not 后是答案。",
+    "vocab": []
+  },
+  {
+    "id": 36,
+    "type": "MCQ",
+    "en": "Speaker: The seminar has moved from Room 12 to the main hall.\nQuestion: Where is the seminar now?",
+    "answer": "The main hall",
+    "zhAnalysis": "moved … to 后地点。",
+    "vocab": []
+  },
+  {
+    "id": 37,
+    "type": "MCQ",
+    "en": "Speaker: Applications close at midnight on the thirtieth.\nQuestion: When do applications close?",
+    "answer": "Midnight on the thirtieth",
+    "zhAnalysis": "截止时间。",
+    "vocab": []
+  },
+  {
+    "id": 38,
+    "type": "MCQ",
+    "en": "Speaker: The main benefit of the reform is improved access, not lower fees.\nQuestion: What is the main benefit?",
+    "answer": "Improved access",
+    "zhAnalysis": "main benefit，排除 fees。",
+    "vocab": []
+  },
+  {
+    "id": 39,
+    "type": "MCQ",
+    "en": "Speaker: Please bring a calculator; dictionaries are not allowed.\nQuestion: What are students not allowed to bring?",
+    "answer": "Dictionaries",
+    "zhAnalysis": "not allowed。",
+    "vocab": []
+  },
+  {
+    "id": 40,
+    "type": "MCQ",
+    "en": "Speaker: Enrolment rose in engineering but fell in history.\nQuestion: In which subject did enrolment fall?",
+    "answer": "History",
+    "zhAnalysis": "fell in history。",
+    "vocab": []
+  },
+  {
+    "id": 41,
+    "type": "MCQ",
+    "en": "Speaker: The guest lecture is optional for first-year students.\nQuestion: Who may skip the guest lecture?",
+    "answer": "First-year students (it is optional for them)",
+    "zhAnalysis": "optional for first-year。",
+    "vocab": []
+  },
+  {
+    "id": 42,
+    "type": "FIB",
+    "en": "Speaker: Please submit your _____ before the Friday deadline.\nBlank:",
+    "answer": "assignment / essay / coursework",
+    "zhAnalysis": "FIB听写：assignment/essay。",
+    "vocab": []
+  },
+  {
+    "id": 43,
+    "type": "FIB",
+    "en": "Speaker: The laboratory will reopen after _____.\nBlank:",
+    "answer": "maintenance / repairs",
+    "zhAnalysis": "FIB：maintenance/repairs。",
+    "vocab": []
+  },
+  {
+    "id": 44,
+    "type": "FIB",
+    "en": "Speaker: Students must show their _____ cards at the entrance.\nBlank:",
+    "answer": "student / identity / ID",
+    "zhAnalysis": "FIB：student/ID cards。",
+    "vocab": []
+  },
+  {
+    "id": 45,
+    "type": "FIB",
+    "en": "Speaker: The research was funded by a government _____.\nBlank:",
+    "answer": "grant / subsidy",
+    "zhAnalysis": "FIB：grant。",
+    "vocab": []
+  },
+  {
+    "id": 46,
+    "type": "FIB",
+    "en": "Speaker: Please revise the draft according to tutor _____.\nBlank:",
+    "answer": "feedback / comments",
+    "zhAnalysis": "FIB：feedback。",
+    "vocab": []
+  },
+  {
+    "id": 47,
+    "type": "FIB",
+    "en": "Speaker: Public transport can reduce traffic _____.\nBlank:",
+    "answer": "congestion",
+    "zhAnalysis": "FIB：congestion。",
+    "vocab": []
+  },
+  {
+    "id": 48,
+    "type": "FIB",
+    "en": "Speaker: The survey used a random _____ of graduates.\nBlank:",
+    "answer": "sample",
+    "zhAnalysis": "FIB：sample。",
+    "vocab": []
+  },
+  {
+    "id": 49,
+    "type": "FIB",
+    "en": "Speaker: Orientation week includes a campus _____.\nBlank:",
+    "answer": "tour / map session",
+    "zhAnalysis": "FIB：tour。",
+    "vocab": []
+  },
+  {
+    "id": 50,
+    "type": "FIB",
+    "en": "Speaker: Accurate _____ is essential in Write From Dictation.\nBlank:",
+    "answer": "spelling",
+    "zhAnalysis": "FIB：spelling。",
+    "vocab": []
+  },
+  {
+    "id": 51,
+    "type": "HCS",
+    "en": "Summary A: The talk focuses on how parks improve mental health and fitness.\nSummary B: The talk mainly discusses museum ticket prices.\nAudio topic: urban green spaces and wellbeing.\nQuestion: Which summary is correct?",
+    "answer": "Summary A",
+    "zhAnalysis": "HCS：选与录音主旨一致的摘要A。",
+    "vocab": []
+  },
+  {
+    "id": 52,
+    "type": "HCS",
+    "en": "Summary A: The lecture explains peer review delays only.\nSummary B: The lecture explains peer review improves quality despite being slow.\nAudio topic: peer review benefits and limits.\nQuestion: Which summary is correct?",
+    "answer": "Summary B",
+    "zhAnalysis": "HCS：完整主旨选B。",
+    "vocab": []
+  },
+  {
+    "id": 53,
+    "type": "HCS",
+    "en": "Summary A: Scholarships increased enrolment among low-income students.\nSummary B: Scholarships reduced teaching quality.\nAudio topic: scholarship impact study.\nQuestion: Which summary is correct?",
+    "answer": "Summary A",
+    "zhAnalysis": "HCS：选A。",
+    "vocab": []
+  },
+  {
+    "id": 54,
+    "type": "HCS",
+    "en": "Summary A: Desalination is cheap and uses little energy.\nSummary B: Desalination helps scarce regions but is energy-intensive.\nAudio topic: desalination pros and cons.\nQuestion: Which summary is correct?",
+    "answer": "Summary B",
+    "zhAnalysis": "HCS：选B。",
+    "vocab": []
+  },
+  {
+    "id": 55,
+    "type": "HCS",
+    "en": "Summary A: The speaker recommends banning all internships.\nSummary B: The speaker supports structured, preferably paid internships.\nAudio topic: internship quality.\nQuestion: Which summary is correct?",
+    "answer": "Summary B",
+    "zhAnalysis": "HCS：选B。",
+    "vocab": []
+  },
+  {
+    "id": 56,
+    "type": "SMW",
+    "en": "Audio: The committee will reconvene next Thursday to finalise the timetable.\nMissing word in transcript: The committee will _____ next Thursday to finalise the timetable.",
+    "answer": "reconvene",
+    "zhAnalysis": "SMW：reconvene。",
+    "vocab": []
+  },
+  {
+    "id": 57,
+    "type": "SMW",
+    "en": "Audio: Empirical evidence supports the new teaching method.\nMissing: _____ evidence supports the new teaching method.",
+    "answer": "Empirical",
+    "zhAnalysis": "SMW：Empirical。",
+    "vocab": []
+  },
+  {
+    "id": 58,
+    "type": "SMW",
+    "en": "Audio: Students must enrol before the registration deadline.\nMissing: Students must _____ before the registration deadline.",
+    "answer": "enrol",
+    "zhAnalysis": "SMW：enrol。",
+    "vocab": []
+  },
+  {
+    "id": 59,
+    "type": "SMW",
+    "en": "Audio: Biodiversity loss threatens fragile ecosystems.\nMissing: _____ loss threatens fragile ecosystems.",
+    "answer": "Biodiversity",
+    "zhAnalysis": "SMW：Biodiversity。",
+    "vocab": []
+  },
+  {
+    "id": 60,
+    "type": "SMW",
+    "en": "Audio: Please allocate sufficient time for revision.\nMissing: Please _____ sufficient time for revision.",
+    "answer": "allocate",
+    "zhAnalysis": "SMW：allocate。",
+    "vocab": []
+  },
+  {
+    "id": 61,
+    "type": "SMW",
+    "en": "Audio: The findings were statistically significant.\nMissing: The findings were statistically _____.",
+    "answer": "significant",
+    "zhAnalysis": "SMW：significant。",
+    "vocab": []
+  },
+  {
+    "id": 62,
+    "type": "SMW",
+    "en": "Audio: Infrastructure investment creates long-term jobs.\nMissing: _____ investment creates long-term jobs.",
+    "answer": "Infrastructure",
+    "zhAnalysis": "SMW：Infrastructure。",
+    "vocab": []
+  },
+  {
+    "id": 63,
+    "type": "SMW",
+    "en": "Audio: Orientation week begins on Monday morning.\nMissing: _____ week begins on Monday morning.",
+    "answer": "Orientation",
+    "zhAnalysis": "SMW：Orientation。",
+    "vocab": []
+  },
+  {
+    "id": 64,
+    "type": "SMW",
+    "en": "Audio: Rising inflation has increased tuition costs.\nMissing: Rising _____ has increased tuition costs.",
+    "answer": "inflation",
+    "zhAnalysis": "SMW：inflation。",
+    "vocab": []
   }
 ];
+
   LISTENING_BANK.forEach(function (item) {
     if (!item.sentence && item.en) item.sentence = item.en;
     if (!item.analysis && item.zhAnalysis) item.analysis = item.zhAnalysis;
   });
+
   global.LISTENING_BANK = LISTENING_BANK;
 })(typeof window !== "undefined" ? window : globalThis);

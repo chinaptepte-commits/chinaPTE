@@ -1,6 +1,6 @@
 /**
  * chinaPTE · RA — Read Aloud
- * Total: 41 items
+ * Total: 82 items
  */
 (function (global) {
   "use strict";
@@ -783,11 +783,1026 @@
         "tip": ""
       }
     ]
+  },
+  {
+    "id": 42,
+    "en": "Consistent practice and targeted feedback are essential for improving spoken fluency in academic English.",
+    "zhAnalysis": "持续练习与有针对性的反馈对提高学术英语口语流利度至关重要。",
+    "vocab": [
+      {
+        "word": "Consistent",
+        "spelling": "C-O-N-S-I-S-T-E-N-T",
+        "gloss": "持续的",
+        "tip": ""
+      },
+      {
+        "word": "targeted",
+        "spelling": "T-A-R-G-E-T-E-D",
+        "gloss": "有针对性的",
+        "tip": ""
+      },
+      {
+        "word": "fluency",
+        "spelling": "F-L-U-E-N-C-Y",
+        "gloss": "流利度",
+        "tip": ""
+      }
+    ]
+  },
+  {
+    "id": 43,
+    "en": "Universities increasingly encourage interdisciplinary collaboration to address complex global challenges.",
+    "zhAnalysis": "大学日益鼓励跨学科合作以应对复杂全球挑战。",
+    "vocab": [
+      {
+        "word": "increasingly",
+        "spelling": "I-N-C-R-E-A-S-I-N-G-L-Y",
+        "gloss": "日益",
+        "tip": ""
+      },
+      {
+        "word": "interdisciplinary",
+        "spelling": "I-N-T-E-R-D-I-S-C-I-P-L-I-N-A-R-Y",
+        "gloss": "跨学科的",
+        "tip": ""
+      },
+      {
+        "word": "collaboration",
+        "spelling": "C-O-L-L-A-B-O-R-A-T-I-O-N",
+        "gloss": "合作",
+        "tip": ""
+      }
+    ]
+  },
+  {
+    "id": 44,
+    "en": "Access to peer-reviewed journals enables students to engage with current research debates.",
+    "zhAnalysis": "获取同行评审期刊使学生能参与当前研究辩论。",
+    "vocab": [
+      {
+        "word": "Access",
+        "spelling": "A-C-C-E-S-S",
+        "gloss": "获取",
+        "tip": ""
+      },
+      {
+        "word": "peer-reviewed",
+        "spelling": "P-E-E-R-R-E-V-I-E-W-E-D",
+        "gloss": "同行评审的",
+        "tip": ""
+      },
+      {
+        "word": "engage",
+        "spelling": "E-N-G-A-G-E",
+        "gloss": "参与",
+        "tip": ""
+      }
+    ]
+  },
+  {
+    "id": 45,
+    "en": "Effective time management helps students balance coursework, revision and extracurricular activities.",
+    "zhAnalysis": "有效时间管理帮助学生平衡课业、复习与课外活动。",
+    "vocab": [
+      {
+        "word": "Effective",
+        "spelling": "E-F-F-E-C-T-I-V-E",
+        "gloss": "有效的",
+        "tip": ""
+      },
+      {
+        "word": "balance",
+        "spelling": "B-A-L-A-N-C-E",
+        "gloss": "平衡",
+        "tip": ""
+      },
+      {
+        "word": "extracurricular",
+        "spelling": "E-X-T-R-A-C-U-R-R-I-C-U-L-A-R",
+        "gloss": "课外的",
+        "tip": ""
+      }
+    ]
+  },
+  {
+    "id": 46,
+    "en": "Urban planners must consider sustainability when designing transport networks and housing.",
+    "zhAnalysis": "城市规划者在设计交通网络与住房时必须考虑可持续性。",
+    "vocab": [
+      {
+        "word": "planners",
+        "spelling": "P-L-A-N-N-E-R-S",
+        "gloss": "规划者",
+        "tip": ""
+      },
+      {
+        "word": "sustainability",
+        "spelling": "S-U-S-T-A-I-N-A-B-I-L-I-T-Y",
+        "gloss": "可持续性",
+        "tip": ""
+      },
+      {
+        "word": "transport",
+        "spelling": "T-R-A-N-S-P-O-R-T",
+        "gloss": "交通",
+        "tip": ""
+      }
+    ]
+  },
+  {
+    "id": 47,
+    "en": "Critical reading involves questioning assumptions and evaluating the strength of evidence.",
+    "zhAnalysis": "批判性阅读包括质疑假设并评估证据力度。",
+    "vocab": [
+      {
+        "word": "Critical",
+        "spelling": "C-R-I-T-I-C-A-L",
+        "gloss": "批判的",
+        "tip": ""
+      },
+      {
+        "word": "assumptions",
+        "spelling": "A-S-S-U-M-P-T-I-O-N-S",
+        "gloss": "假设",
+        "tip": ""
+      },
+      {
+        "word": "evaluating",
+        "spelling": "E-V-A-L-U-A-T-I-N-G",
+        "gloss": "评估",
+        "tip": ""
+      }
+    ]
+  },
+  {
+    "id": 48,
+    "en": "Laboratory safety protocols protect researchers and ensure reliable experimental results.",
+    "zhAnalysis": "实验室安全规程保护研究者并确保可靠实验结果。",
+    "vocab": [
+      {
+        "word": "protocols",
+        "spelling": "P-R-O-T-O-C-O-L-S",
+        "gloss": "规程",
+        "tip": ""
+      },
+      {
+        "word": "ensure",
+        "spelling": "E-N-S-U-R-E",
+        "gloss": "确保",
+        "tip": ""
+      },
+      {
+        "word": "reliable",
+        "spelling": "R-E-L-I-A-B-L-E",
+        "gloss": "可靠的",
+        "tip": ""
+      }
+    ]
+  },
+  {
+    "id": 49,
+    "en": "Scholarship schemes aim to widen participation among students from diverse backgrounds.",
+    "zhAnalysis": "奖学金计划旨在扩大不同背景学生的参与。",
+    "vocab": [
+      {
+        "word": "Scholarship",
+        "spelling": "S-C-H-O-L-A-R-S-H-I-P",
+        "gloss": "奖学金",
+        "tip": ""
+      },
+      {
+        "word": "widen",
+        "spelling": "W-I-D-E-N",
+        "gloss": "扩大",
+        "tip": ""
+      },
+      {
+        "word": "diverse",
+        "spelling": "D-I-V-E-R-S-E",
+        "gloss": "多样的",
+        "tip": ""
+      }
+    ]
+  },
+  {
+    "id": 50,
+    "en": "Climate models predict rising sea levels that threaten coastal infrastructure and communities.",
+    "zhAnalysis": "气候模型预测海平面上升威胁沿海基础设施与社区。",
+    "vocab": [
+      {
+        "word": "predict",
+        "spelling": "P-R-E-D-I-C-T",
+        "gloss": "预测",
+        "tip": ""
+      },
+      {
+        "word": "threaten",
+        "spelling": "T-H-R-E-A-T-E-N",
+        "gloss": "威胁",
+        "tip": ""
+      },
+      {
+        "word": "infrastructure",
+        "spelling": "I-N-F-R-A-S-T-R-U-C-T-U-R-E",
+        "gloss": "基础设施",
+        "tip": ""
+      }
+    ]
+  },
+  {
+    "id": 51,
+    "en": "Academic integrity requires honest citation practices and original work in all assessments.",
+    "zhAnalysis": "学术诚信要求所有考核中诚实引用与原创作品。",
+    "vocab": [
+      {
+        "word": "integrity",
+        "spelling": "I-N-T-E-G-R-I-T-Y",
+        "gloss": "诚信",
+        "tip": ""
+      },
+      {
+        "word": "citation",
+        "spelling": "C-I-T-A-T-I-O-N",
+        "gloss": "引用",
+        "tip": ""
+      },
+      {
+        "word": "assessments",
+        "spelling": "A-S-S-E-S-S-M-E-N-T-S",
+        "gloss": "考核",
+        "tip": ""
+      }
+    ]
+  },
+  {
+    "id": 52,
+    "en": "Digital platforms have transformed how lectures are delivered and how students collaborate.",
+    "zhAnalysis": "数字平台转变了讲座交付与学生协作方式。",
+    "vocab": [
+      {
+        "word": "platforms",
+        "spelling": "P-L-A-T-F-O-R-M-S",
+        "gloss": "平台",
+        "tip": ""
+      },
+      {
+        "word": "transformed",
+        "spelling": "T-R-A-N-S-F-O-R-M-E-D",
+        "gloss": "转变",
+        "tip": ""
+      },
+      {
+        "word": "collaborate",
+        "spelling": "C-O-L-L-A-B-O-R-A-T-E",
+        "gloss": "合作",
+        "tip": ""
+      }
+    ]
+  },
+  {
+    "id": 53,
+    "en": "Demographic change is reshaping labour markets and demand for lifelong learning.",
+    "zhAnalysis": "人口结构变化正在重塑劳动力市场与终身学习需求。",
+    "vocab": [
+      {
+        "word": "Demographic",
+        "spelling": "D-E-M-O-G-R-A-P-H-I-C",
+        "gloss": "人口结构的",
+        "tip": ""
+      },
+      {
+        "word": "labour",
+        "spelling": "L-A-B-O-U-R",
+        "gloss": "劳动",
+        "tip": ""
+      },
+      {
+        "word": "lifelong",
+        "spelling": "L-I-F-E-L-O-N-G",
+        "gloss": "终身的",
+        "tip": ""
+      }
+    ]
+  },
+  {
+    "id": 54,
+    "en": "Clear structure and precise vocabulary improve the clarity of academic writing.",
+    "zhAnalysis": "清晰结构与精确词汇提高学术写作清晰度。",
+    "vocab": [
+      {
+        "word": "structure",
+        "spelling": "S-T-R-U-C-T-U-R-E",
+        "gloss": "结构",
+        "tip": ""
+      },
+      {
+        "word": "precise",
+        "spelling": "P-R-E-C-I-S-E",
+        "gloss": "精确的",
+        "tip": ""
+      },
+      {
+        "word": "clarity",
+        "spelling": "C-L-A-R-I-T-Y",
+        "gloss": "清晰",
+        "tip": ""
+      }
+    ]
+  },
+  {
+    "id": 55,
+    "en": "Renewable energy investment supports economic growth while reducing carbon emissions.",
+    "zhAnalysis": "可再生能源投资在减少碳排放的同时支持经济增长。",
+    "vocab": [
+      {
+        "word": "Renewable",
+        "spelling": "R-E-N-E-W-A-B-L-E",
+        "gloss": "可再生的",
+        "tip": ""
+      },
+      {
+        "word": "investment",
+        "spelling": "I-N-V-E-S-T-M-E-N-T",
+        "gloss": "投资",
+        "tip": ""
+      },
+      {
+        "word": "emissions",
+        "spelling": "E-M-I-S-S-I-O-N-S",
+        "gloss": "排放",
+        "tip": ""
+      }
+    ]
+  },
+  {
+    "id": 56,
+    "en": "Tutorials provide opportunities for students to discuss complex ideas in small groups.",
+    "zhAnalysis": "辅导课为学生在小组中讨论复杂观点提供机会。",
+    "vocab": [
+      {
+        "word": "Tutorials",
+        "spelling": "T-U-T-O-R-I-A-L-S",
+        "gloss": "辅导课",
+        "tip": ""
+      },
+      {
+        "word": "opportunities",
+        "spelling": "O-P-P-O-R-T-U-N-I-T-I-E-S",
+        "gloss": "机会",
+        "tip": ""
+      },
+      {
+        "word": "complex",
+        "spelling": "C-O-M-P-L-E-X",
+        "gloss": "复杂的",
+        "tip": ""
+      }
+    ]
+  },
+  {
+    "id": 57,
+    "en": "Empirical studies show that sleep quality significantly affects cognitive performance.",
+    "zhAnalysis": "实证研究表明睡眠质量显著影响认知表现。",
+    "vocab": [
+      {
+        "word": "Empirical",
+        "spelling": "E-M-P-I-R-I-C-A-L",
+        "gloss": "实证的",
+        "tip": ""
+      },
+      {
+        "word": "significantly",
+        "spelling": "S-I-G-N-I-F-I-C-A-N-T-L-Y",
+        "gloss": "显著地",
+        "tip": ""
+      },
+      {
+        "word": "cognitive",
+        "spelling": "C-O-G-N-I-T-I-V-E",
+        "gloss": "认知的",
+        "tip": ""
+      }
+    ]
+  },
+  {
+    "id": 58,
+    "en": "Library workshops teach students how to search databases and evaluate sources critically.",
+    "zhAnalysis": "图书馆工作坊教学生如何检索数据库并批判性评估来源。",
+    "vocab": [
+      {
+        "word": "workshops",
+        "spelling": "W-O-R-K-S-H-O-P-S",
+        "gloss": "工作坊",
+        "tip": ""
+      },
+      {
+        "word": "databases",
+        "spelling": "D-A-T-A-B-A-S-E-S",
+        "gloss": "数据库",
+        "tip": ""
+      },
+      {
+        "word": "evaluate",
+        "spelling": "E-V-A-L-U-A-T-E",
+        "gloss": "评估",
+        "tip": ""
+      }
+    ]
+  },
+  {
+    "id": 59,
+    "en": "Inflation reduces purchasing power and can increase the real cost of higher education.",
+    "zhAnalysis": "通胀降低购买力并可能提高高等教育实际成本。",
+    "vocab": [
+      {
+        "word": "Inflation",
+        "spelling": "I-N-F-L-A-T-I-O-N",
+        "gloss": "通货膨胀",
+        "tip": ""
+      },
+      {
+        "word": "purchasing",
+        "spelling": "P-U-R-C-H-A-S-I-N-G",
+        "gloss": "购买",
+        "tip": ""
+      },
+      {
+        "word": "education",
+        "spelling": "E-D-U-C-A-T-I-O-N",
+        "gloss": "教育",
+        "tip": ""
+      }
+    ]
+  },
+  {
+    "id": 60,
+    "en": "Orientation programmes help international students adapt to campus life and academic expectations.",
+    "zhAnalysis": "迎新项目帮助国际学生适应校园生活与学术期望。",
+    "vocab": [
+      {
+        "word": "Orientation",
+        "spelling": "O-R-I-E-N-T-A-T-I-O-N",
+        "gloss": "迎新",
+        "tip": ""
+      },
+      {
+        "word": "adapt",
+        "spelling": "A-D-A-P-T",
+        "gloss": "适应",
+        "tip": ""
+      },
+      {
+        "word": "expectations",
+        "spelling": "E-X-P-E-C-T-A-T-I-O-N-S",
+        "gloss": "期望",
+        "tip": ""
+      }
+    ]
+  },
+  {
+    "id": 61,
+    "en": "Peer feedback encourages reflection and often leads to more polished final drafts.",
+    "zhAnalysis": "同伴反馈鼓励反思，常带来更精炼的终稿。",
+    "vocab": [
+      {
+        "word": "Peer",
+        "spelling": "P-E-E-R",
+        "gloss": "同伴",
+        "tip": ""
+      },
+      {
+        "word": "reflection",
+        "spelling": "R-E-F-L-E-C-T-I-O-N",
+        "gloss": "反思",
+        "tip": ""
+      },
+      {
+        "word": "polished",
+        "spelling": "P-O-L-I-S-H-E-D",
+        "gloss": "精炼的",
+        "tip": ""
+      }
+    ]
+  },
+  {
+    "id": 62,
+    "en": "Biodiversity conservation requires coordinated action across governments and local communities.",
+    "zhAnalysis": "生物多样性保护需要政府与地方社区的协调行动。",
+    "vocab": [
+      {
+        "word": "Biodiversity",
+        "spelling": "B-I-O-D-I-V-E-R-S-I-T-Y",
+        "gloss": "生物多样性",
+        "tip": ""
+      },
+      {
+        "word": "conservation",
+        "spelling": "C-O-N-S-E-R-V-A-T-I-O-N",
+        "gloss": "保护",
+        "tip": ""
+      },
+      {
+        "word": "coordinated",
+        "spelling": "C-O-O-R-D-I-N-A-T-E-D",
+        "gloss": "协调的",
+        "tip": ""
+      }
+    ]
+  },
+  {
+    "id": 63,
+    "en": "Assessment rubrics make marking criteria transparent and support fair grading decisions.",
+    "zhAnalysis": "评分量表使评分标准透明并支持公平评分。",
+    "vocab": [
+      {
+        "word": "rubrics",
+        "spelling": "R-U-B-R-I-C-S",
+        "gloss": "评分量表",
+        "tip": ""
+      },
+      {
+        "word": "transparent",
+        "spelling": "T-R-A-N-S-P-A-R-E-N-T",
+        "gloss": "透明的",
+        "tip": ""
+      },
+      {
+        "word": "grading",
+        "spelling": "G-R-A-D-I-N-G",
+        "gloss": "评分",
+        "tip": ""
+      }
+    ]
+  },
+  {
+    "id": 64,
+    "en": "Public transport improvements can reduce congestion and improve air quality in cities.",
+    "zhAnalysis": "公共交通改善可减少拥堵并提高城市空气质量。",
+    "vocab": [
+      {
+        "word": "transport",
+        "spelling": "T-R-A-N-S-P-O-R-T",
+        "gloss": "交通",
+        "tip": ""
+      },
+      {
+        "word": "congestion",
+        "spelling": "C-O-N-G-E-S-T-I-O-N",
+        "gloss": "拥堵",
+        "tip": ""
+      },
+      {
+        "word": "quality",
+        "spelling": "Q-U-A-L-I-T-Y",
+        "gloss": "质量",
+        "tip": ""
+      }
+    ]
+  },
+  {
+    "id": 65,
+    "en": "Research methodology must be described clearly so that studies can be replicated.",
+    "zhAnalysis": "研究方法必须清晰描述以便研究可复现。",
+    "vocab": [
+      {
+        "word": "methodology",
+        "spelling": "M-E-T-H-O-D-O-L-O-G-Y",
+        "gloss": "方法论",
+        "tip": ""
+      },
+      {
+        "word": "replicated",
+        "spelling": "R-E-P-L-I-C-A-T-E-D",
+        "gloss": "复现",
+        "tip": ""
+      }
+    ]
+  },
+  {
+    "id": 66,
+    "en": "Student wellbeing services provide counselling and support during periods of high stress.",
+    "zhAnalysis": "学生福祉服务在高压时期提供咨询与支持。",
+    "vocab": [
+      {
+        "word": "wellbeing",
+        "spelling": "W-E-L-L-B-E-I-N-G",
+        "gloss": "福祉",
+        "tip": ""
+      },
+      {
+        "word": "counselling",
+        "spelling": "C-O-U-N-S-E-L-L-I-N-G",
+        "gloss": "咨询",
+        "tip": ""
+      },
+      {
+        "word": "stress",
+        "spelling": "S-T-R-E-S-S",
+        "gloss": "压力",
+        "tip": ""
+      }
+    ]
+  },
+  {
+    "id": 67,
+    "en": "Technological innovation continues to reshape manufacturing and service sector employment.",
+    "zhAnalysis": "技术创新继续重塑制造业与服务业就业。",
+    "vocab": [
+      {
+        "word": "innovation",
+        "spelling": "I-N-N-O-V-A-T-I-O-N",
+        "gloss": "创新",
+        "tip": ""
+      },
+      {
+        "word": "manufacturing",
+        "spelling": "M-A-N-U-F-A-C-T-U-R-I-N-G",
+        "gloss": "制造业",
+        "tip": ""
+      },
+      {
+        "word": "employment",
+        "spelling": "E-M-P-L-O-Y-M-E-N-T",
+        "gloss": "就业",
+        "tip": ""
+      }
+    ]
+  },
+  {
+    "id": 68,
+    "en": "A well-organised essay presents a clear thesis supported by relevant evidence.",
+    "zhAnalysis": "结构良好的作文提出由相关证据支撑的清晰论点。",
+    "vocab": [
+      {
+        "word": "organised",
+        "spelling": "O-R-G-A-N-I-S-E-D",
+        "gloss": "有组织的",
+        "tip": ""
+      },
+      {
+        "word": "thesis",
+        "spelling": "T-H-E-S-I-S",
+        "gloss": "论点",
+        "tip": ""
+      },
+      {
+        "word": "relevant",
+        "spelling": "R-E-L-E-V-A-N-T",
+        "gloss": "相关的",
+        "tip": ""
+      }
+    ]
+  },
+  {
+    "id": 69,
+    "en": "Enrolment procedures require careful attention to deadlines and supporting documentation.",
+    "zhAnalysis": "注册程序需要仔细关注截止日期与证明文件。",
+    "vocab": [
+      {
+        "word": "Enrolment",
+        "spelling": "E-N-R-O-L-M-E-N-T",
+        "gloss": "注册",
+        "tip": ""
+      },
+      {
+        "word": "deadlines",
+        "spelling": "D-E-A-D-L-I-N-E-S",
+        "gloss": "截止日期",
+        "tip": ""
+      },
+      {
+        "word": "documentation",
+        "spelling": "D-O-C-U-M-E-N-T-A-T-I-O-N",
+        "gloss": "文件",
+        "tip": ""
+      }
+    ]
+  },
+  {
+    "id": 70,
+    "en": "Habitat restoration projects aim to reverse biodiversity loss in damaged ecosystems.",
+    "zhAnalysis": "栖息地修复项目旨在扭转受损生态系统中的生物多样性丧失。",
+    "vocab": [
+      {
+        "word": "Habitat",
+        "spelling": "H-A-B-I-T-A-T",
+        "gloss": "栖息地",
+        "tip": ""
+      },
+      {
+        "word": "restoration",
+        "spelling": "R-E-S-T-O-R-A-T-I-O-N",
+        "gloss": "修复",
+        "tip": ""
+      },
+      {
+        "word": "ecosystems",
+        "spelling": "E-C-O-S-Y-S-T-E-M-S",
+        "gloss": "生态系统",
+        "tip": ""
+      }
+    ]
+  },
+  {
+    "id": 71,
+    "en": "Listening carefully to lectures improves note-taking accuracy and subsequent revision.",
+    "zhAnalysis": "仔细听讲座提高记笔记准确度与随后复习。",
+    "vocab": [
+      {
+        "word": "Listening",
+        "spelling": "L-I-S-T-E-N-I-N-G",
+        "gloss": "听力",
+        "tip": ""
+      },
+      {
+        "word": "accuracy",
+        "spelling": "A-C-C-U-R-A-C-Y",
+        "gloss": "准确度",
+        "tip": ""
+      },
+      {
+        "word": "subsequent",
+        "spelling": "S-U-B-S-E-Q-U-E-N-T",
+        "gloss": "随后的",
+        "tip": ""
+      }
+    ]
+  },
+  {
+    "id": 72,
+    "en": "Graduate employment rates vary across disciplines and economic conditions.",
+    "zhAnalysis": "毕业生就业率因学科与经济状况而异。",
+    "vocab": [
+      {
+        "word": "Graduate",
+        "spelling": "G-R-A-D-U-A-T-E",
+        "gloss": "毕业生",
+        "tip": ""
+      },
+      {
+        "word": "employment",
+        "spelling": "E-M-P-L-O-Y-M-E-N-T",
+        "gloss": "就业",
+        "tip": ""
+      },
+      {
+        "word": "disciplines",
+        "spelling": "D-I-S-C-I-P-L-I-N-E-S",
+        "gloss": "学科",
+        "tip": ""
+      }
+    ]
+  },
+  {
+    "id": 73,
+    "en": "Transparent governance builds public trust in educational institutions and research.",
+    "zhAnalysis": "透明治理建立公众对教育机构与研究的信任。",
+    "vocab": [
+      {
+        "word": "Transparent",
+        "spelling": "T-R-A-N-S-P-A-R-E-N-T",
+        "gloss": "透明的",
+        "tip": ""
+      },
+      {
+        "word": "governance",
+        "spelling": "G-O-V-E-R-N-A-N-C-E",
+        "gloss": "治理",
+        "tip": ""
+      },
+      {
+        "word": "institutions",
+        "spelling": "I-N-S-T-I-T-U-T-I-O-N-S",
+        "gloss": "机构",
+        "tip": ""
+      }
+    ]
+  },
+  {
+    "id": 74,
+    "en": "Paraphrasing source material correctly is a key skill for avoiding plagiarism.",
+    "zhAnalysis": "正确改述来源材料是避免抄袭的关键技能。",
+    "vocab": [
+      {
+        "word": "Paraphrasing",
+        "spelling": "P-A-R-A-P-H-R-A-S-I-N-G",
+        "gloss": "改述",
+        "tip": ""
+      },
+      {
+        "word": "skill",
+        "spelling": "S-K-I-L-L",
+        "gloss": "技能",
+        "tip": ""
+      },
+      {
+        "word": "plagiarism",
+        "spelling": "P-L-A-G-I-A-R-I-S-M",
+        "gloss": "抄袭",
+        "tip": ""
+      }
+    ]
+  },
+  {
+    "id": 75,
+    "en": "Urban green spaces contribute to mental health and encourage outdoor physical activity.",
+    "zhAnalysis": "城市绿地有益心理健康并鼓励户外运动。",
+    "vocab": [
+      {
+        "word": "contribute",
+        "spelling": "C-O-N-T-R-I-B-U-T-E",
+        "gloss": "促成",
+        "tip": ""
+      },
+      {
+        "word": "mental",
+        "spelling": "M-E-N-T-A-L",
+        "gloss": "心理的",
+        "tip": ""
+      },
+      {
+        "word": "activity",
+        "spelling": "A-C-T-I-V-I-T-Y",
+        "gloss": "活动",
+        "tip": ""
+      }
+    ]
+  },
+  {
+    "id": 76,
+    "en": "Language proficiency tests measure speaking, writing, reading and listening skills.",
+    "zhAnalysis": "语言熟练度测试测量说、写、读、听技能。",
+    "vocab": [
+      {
+        "word": "proficiency",
+        "spelling": "P-R-O-F-I-C-I-E-N-C-Y",
+        "gloss": "熟练度",
+        "tip": ""
+      },
+      {
+        "word": "measure",
+        "spelling": "M-E-A-S-U-R-E",
+        "gloss": "测量",
+        "tip": ""
+      }
+    ]
+  },
+  {
+    "id": 77,
+    "en": "Funding cuts have forced some departments to reduce elective module offerings.",
+    "zhAnalysis": "经费削减迫使一些系减少选修模块供给。",
+    "vocab": [
+      {
+        "word": "Funding",
+        "spelling": "F-U-N-D-I-N-G",
+        "gloss": "经费",
+        "tip": ""
+      },
+      {
+        "word": "departments",
+        "spelling": "D-E-P-A-R-T-M-E-N-T-S",
+        "gloss": "系",
+        "tip": ""
+      },
+      {
+        "word": "elective",
+        "spelling": "E-L-E-C-T-I-V-E",
+        "gloss": "选修的",
+        "tip": ""
+      }
+    ]
+  },
+  {
+    "id": 78,
+    "en": "Statistical significance does not always indicate practical importance in research findings.",
+    "zhAnalysis": "统计显著性并不总表示研究发现具有实际重要性。",
+    "vocab": [
+      {
+        "word": "Statistical",
+        "spelling": "S-T-A-T-I-S-T-I-C-A-L",
+        "gloss": "统计的",
+        "tip": ""
+      },
+      {
+        "word": "significance",
+        "spelling": "S-I-G-N-I-F-I-C-A-N-C-E",
+        "gloss": "显著性",
+        "tip": ""
+      },
+      {
+        "word": "practical",
+        "spelling": "P-R-A-C-T-I-C-A-L",
+        "gloss": "实际的",
+        "tip": ""
+      }
+    ]
+  },
+  {
+    "id": 79,
+    "en": "Campus sustainability initiatives include recycling programmes and energy-efficient buildings.",
+    "zhAnalysis": "校园可持续倡议包括回收项目与节能建筑。",
+    "vocab": [
+      {
+        "word": "sustainability",
+        "spelling": "S-U-S-T-A-I-N-A-B-I-L-I-T-Y",
+        "gloss": "可持续性",
+        "tip": ""
+      },
+      {
+        "word": "recycling",
+        "spelling": "R-E-C-Y-C-L-I-N-G",
+        "gloss": "回收",
+        "tip": ""
+      },
+      {
+        "word": "energy-efficient",
+        "spelling": "E-N-E-R-G-Y-E-F-F-I-C-I-E-N-T",
+        "gloss": "节能的",
+        "tip": ""
+      }
+    ]
+  },
+  {
+    "id": 80,
+    "en": "Mentoring relationships support academic progress and professional development for students.",
+    "zhAnalysis": "导师关系支持学生的学业进步与专业发展。",
+    "vocab": [
+      {
+        "word": "Mentoring",
+        "spelling": "M-E-N-T-O-R-I-N-G",
+        "gloss": "导师指导",
+        "tip": ""
+      },
+      {
+        "word": "progress",
+        "spelling": "P-R-O-G-R-E-S-S",
+        "gloss": "进步",
+        "tip": ""
+      },
+      {
+        "word": "professional",
+        "spelling": "P-R-O-F-E-S-S-I-O-N-A-L",
+        "gloss": "专业的",
+        "tip": ""
+      }
+    ]
+  },
+  {
+    "id": 81,
+    "en": "Global supply chains face disruption from extreme weather and geopolitical tensions.",
+    "zhAnalysis": "全球供应链面临极端天气与地缘政治紧张带来的中断。",
+    "vocab": [
+      {
+        "word": "supply",
+        "spelling": "S-U-P-P-L-Y",
+        "gloss": "供给",
+        "tip": ""
+      },
+      {
+        "word": "disruption",
+        "spelling": "D-I-S-R-U-P-T-I-O-N",
+        "gloss": "中断",
+        "tip": ""
+      },
+      {
+        "word": "geopolitical",
+        "spelling": "G-E-O-P-O-L-I-T-I-C-A-L",
+        "gloss": "地缘政治的",
+        "tip": ""
+      }
+    ]
+  },
+  {
+    "id": 82,
+    "en": "Concise summaries capture main ideas without reproducing unnecessary detail from sources.",
+    "zhAnalysis": "简洁摘要抓住主旨而不复制来源中不必要细节。",
+    "vocab": [
+      {
+        "word": "Concise",
+        "spelling": "C-O-N-C-I-S-E",
+        "gloss": "简洁的",
+        "tip": ""
+      },
+      {
+        "word": "summaries",
+        "spelling": "S-U-M-M-A-R-I-E-S",
+        "gloss": "摘要",
+        "tip": ""
+      },
+      {
+        "word": "unnecessary",
+        "spelling": "U-N-N-E-C-E-S-S-A-R-Y",
+        "gloss": "不必要的",
+        "tip": ""
+      }
+    ]
   }
 ];
+
   RA_BANK.forEach(function (item) {
     if (!item.sentence && item.en) item.sentence = item.en;
     if (!item.analysis && item.zhAnalysis) item.analysis = item.zhAnalysis;
   });
+
   global.RA_BANK = RA_BANK;
 })(typeof window !== "undefined" ? window : globalThis);

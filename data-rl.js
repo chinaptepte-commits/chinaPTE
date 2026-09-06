@@ -1,6 +1,6 @@
 /**
  * chinaPTE · RL — Retell Lecture
- * Total: 26 items
+ * Total: 52 items
  */
 (function (global) {
   "use strict";
@@ -654,11 +654,663 @@
         "tip": ""
       }
     ]
+  },
+  {
+    "id": 27,
+    "en": "Today we examine how remote work affects productivity. Some studies report higher output when employees control their schedules. Others find collaboration suffers without face-to-face contact. Hybrid models attempt to balance flexibility with teamwork.",
+    "zhAnalysis": "讲座：远程工作与生产率；自主排班或提高产出；缺面谈损协作；混合模式求平衡。",
+    "vocab": [
+      {
+        "word": "remote",
+        "spelling": "R-E-M-O-T-E",
+        "gloss": "远程的",
+        "tip": ""
+      },
+      {
+        "word": "productivity",
+        "spelling": "P-R-O-D-U-C-T-I-V-I-T-Y",
+        "gloss": "生产率",
+        "tip": ""
+      },
+      {
+        "word": "collaboration",
+        "spelling": "C-O-L-L-A-B-O-R-A-T-I-O-N",
+        "gloss": "协作",
+        "tip": ""
+      }
+    ]
+  },
+  {
+    "id": 28,
+    "en": "This lecture introduces the concept of food security. It depends on availability, access, utilisation and stability. Climate shocks and price spikes can undermine all four pillars. Policy responses include storage reserves and social safety nets.",
+    "zhAnalysis": "讲座：粮食安全四支柱；气候与价格冲击；储备与安全网。",
+    "vocab": [
+      {
+        "word": "security",
+        "spelling": "S-E-C-U-R-I-T-Y",
+        "gloss": "安全",
+        "tip": ""
+      },
+      {
+        "word": "availability",
+        "spelling": "A-V-A-I-L-A-B-I-L-I-T-Y",
+        "gloss": "可得性",
+        "tip": ""
+      },
+      {
+        "word": "undermine",
+        "spelling": "U-N-D-E-R-M-I-N-E",
+        "gloss": "削弱",
+        "tip": ""
+      }
+    ]
+  },
+  {
+    "id": 29,
+    "en": "We will discuss cognitive load theory in learning design. Working memory has limited capacity. Instruction should avoid unnecessary complexity. Well-structured materials free attention for deeper understanding.",
+    "zhAnalysis": "讲座：认知负荷；工作记忆有限；减少无关复杂；结构化材料。",
+    "vocab": [
+      {
+        "word": "cognitive",
+        "spelling": "C-O-G-N-I-T-I-V-E",
+        "gloss": "认知的",
+        "tip": ""
+      },
+      {
+        "word": "capacity",
+        "spelling": "C-A-P-A-C-I-T-Y",
+        "gloss": "容量",
+        "tip": ""
+      },
+      {
+        "word": "instruction",
+        "spelling": "I-N-S-T-R-U-C-T-I-O-N",
+        "gloss": "教学",
+        "tip": ""
+      }
+    ]
+  },
+  {
+    "id": 30,
+    "en": "Marine plastic pollution enters oceans from rivers and coastal litter. Microplastics spread through food chains. Cleanup helps but prevention through reduced packaging is more effective long term.",
+    "zhAnalysis": "讲座：海洋塑料；微塑料入食物链；预防优于清理。",
+    "vocab": [
+      {
+        "word": "pollution",
+        "spelling": "P-O-L-L-U-T-I-O-N",
+        "gloss": "污染",
+        "tip": ""
+      },
+      {
+        "word": "Microplastics",
+        "spelling": "M-I-C-R-O-P-L-A-S-T-I-C-S",
+        "gloss": "微塑料",
+        "tip": ""
+      },
+      {
+        "word": "prevention",
+        "spelling": "P-R-E-V-E-N-T-I-O-N",
+        "gloss": "预防",
+        "tip": ""
+      }
+    ]
+  },
+  {
+    "id": 31,
+    "en": "Public health campaigns succeed when messages are clear and culturally appropriate. Trusted messengers matter. Behaviour change also needs supportive environments such as affordable healthy food.",
+    "zhAnalysis": "讲座：公卫宣传；清晰与文化适切；可信传话人；支持性环境。",
+    "vocab": [
+      {
+        "word": "campaigns",
+        "spelling": "C-A-M-P-A-I-G-N-S",
+        "gloss": "宣传",
+        "tip": ""
+      },
+      {
+        "word": "appropriate",
+        "spelling": "A-P-P-R-O-P-R-I-A-T-E",
+        "gloss": "恰当的",
+        "tip": ""
+      },
+      {
+        "word": "environments",
+        "spelling": "E-N-V-I-R-O-N-M-E-N-T-S",
+        "gloss": "环境",
+        "tip": ""
+      }
+    ]
+  },
+  {
+    "id": 32,
+    "en": "Today we explore urban heat islands. Dense concrete absorbs and re-radiates heat. Green roofs and tree cover can lower local temperatures. Planning decisions therefore affect public health in summer.",
+    "zhAnalysis": "讲座：城市热岛；混凝土蓄热；绿屋顶与树木降温。",
+    "vocab": [
+      {
+        "word": "urban",
+        "spelling": "U-R-B-A-N",
+        "gloss": "城市的",
+        "tip": ""
+      },
+      {
+        "word": "absorbs",
+        "spelling": "A-B-S-O-R-B-S",
+        "gloss": "吸收",
+        "tip": ""
+      },
+      {
+        "word": "temperatures",
+        "spelling": "T-E-M-P-E-R-A-T-U-R-E-S",
+        "gloss": "温度",
+        "tip": ""
+      }
+    ]
+  },
+  {
+    "id": 33,
+    "en": "The lecture covers randomised controlled trials. Random assignment reduces selection bias. Blinding limits expectancy effects. Limitations include cost and questions about real-world generalisability.",
+    "zhAnalysis": "讲座：随机对照试验；随机减偏差；盲法；成本与外推局限。",
+    "vocab": [
+      {
+        "word": "randomised",
+        "spelling": "R-A-N-D-O-M-I-S-E-D",
+        "gloss": "随机的",
+        "tip": ""
+      },
+      {
+        "word": "bias",
+        "spelling": "B-I-A-S",
+        "gloss": "偏差",
+        "tip": ""
+      },
+      {
+        "word": "generalisability",
+        "spelling": "G-E-N-E-R-A-L-I-S-A-B-I-L-I-T-Y",
+        "gloss": "可推广性",
+        "tip": ""
+      }
+    ]
+  },
+  {
+    "id": 34,
+    "en": "We examine how algorithms rank online information. Engagement metrics can amplify sensational content. Media literacy helps users evaluate sources. Regulation debates continue worldwide.",
+    "zhAnalysis": "讲座：算法排序；互动指标放大耸动内容；媒介素养；监管辩论。",
+    "vocab": [
+      {
+        "word": "algorithms",
+        "spelling": "A-L-G-O-R-I-T-H-M-S",
+        "gloss": "算法",
+        "tip": ""
+      },
+      {
+        "word": "metrics",
+        "spelling": "M-E-T-R-I-C-S",
+        "gloss": "指标",
+        "tip": ""
+      },
+      {
+        "word": "literacy",
+        "spelling": "L-I-T-E-R-A-C-Y",
+        "gloss": "素养",
+        "tip": ""
+      }
+    ]
+  },
+  {
+    "id": 35,
+    "en": "This session reviews groundwater depletion. Over-extraction for irrigation lowers aquifers. Consequences include land subsidence and higher pumping costs. Sustainable quotas and efficient irrigation are responses.",
+    "zhAnalysis": "讲座：地下水枯竭；灌溉超采；地面沉降；配额与节水。",
+    "vocab": [
+      {
+        "word": "groundwater",
+        "spelling": "G-R-O-U-N-D-W-A-T-E-R",
+        "gloss": "地下水",
+        "tip": ""
+      },
+      {
+        "word": "irrigation",
+        "spelling": "I-R-R-I-G-A-T-I-O-N",
+        "gloss": "灌溉",
+        "tip": ""
+      },
+      {
+        "word": "Sustainable",
+        "spelling": "S-U-S-T-A-I-N-A-B-L-E",
+        "gloss": "可持续的",
+        "tip": ""
+      }
+    ]
+  },
+  {
+    "id": 36,
+    "en": "Today we discuss academic peer review. Reviewers assess originality, methods and clarity. The process improves quality but can be slow and biased. Open peer review is one proposed reform.",
+    "zhAnalysis": "讲座：同行评审；原创方法清晰；慢且或有偏见；开放评审。",
+    "vocab": [
+      {
+        "word": "reviewers",
+        "spelling": "R-E-V-I-E-W-E-R-S",
+        "gloss": "审稿人",
+        "tip": ""
+      },
+      {
+        "word": "originality",
+        "spelling": "O-R-I-G-I-N-A-L-I-T-Y",
+        "gloss": "原创性",
+        "tip": ""
+      },
+      {
+        "word": "biased",
+        "spelling": "B-I-A-S-E-D",
+        "gloss": "有偏见的",
+        "tip": ""
+      }
+    ]
+  },
+  {
+    "id": 37,
+    "en": "Labour market polarisation means growth in high-skill and low-skill jobs while middle roles shrink. Automation and globalisation are drivers. Education systems must adapt training pathways.",
+    "zhAnalysis": "讲座：劳动力市场极化；自动化与全球化；教育需适应。",
+    "vocab": [
+      {
+        "word": "polarisation",
+        "spelling": "P-O-L-A-R-I-S-A-T-I-O-N",
+        "gloss": "极化",
+        "tip": ""
+      },
+      {
+        "word": "Automation",
+        "spelling": "A-U-T-O-M-A-T-I-O-N",
+        "gloss": "自动化",
+        "tip": ""
+      },
+      {
+        "word": "pathways",
+        "spelling": "P-A-T-H-W-A-Y-S",
+        "gloss": "路径",
+        "tip": ""
+      }
+    ]
+  },
+  {
+    "id": 38,
+    "en": "We look at sleep and memory consolidation. Deep sleep supports retention of facts. REM sleep relates to creative problem-solving. Chronic sleep loss impairs attention and mood.",
+    "zhAnalysis": "讲座：睡眠与记忆巩固；深睡与REM；睡眠不足损注意与情绪。",
+    "vocab": [
+      {
+        "word": "consolidation",
+        "spelling": "C-O-N-S-O-L-I-D-A-T-I-O-N",
+        "gloss": "巩固",
+        "tip": ""
+      },
+      {
+        "word": "retention",
+        "spelling": "R-E-T-E-N-T-I-O-N",
+        "gloss": "保持",
+        "tip": ""
+      },
+      {
+        "word": "impairs",
+        "spelling": "I-M-P-A-I-R-S",
+        "gloss": "损害",
+        "tip": ""
+      }
+    ]
+  },
+  {
+    "id": 39,
+    "en": "This lecture outlines circular economy principles. Products are designed for reuse and recycling. Waste becomes input for new production. Barriers include logistics and consumer habits.",
+    "zhAnalysis": "讲座：循环经济；再利用设计；废物变投入；物流与习惯障碍。",
+    "vocab": [
+      {
+        "word": "circular",
+        "spelling": "C-I-R-C-U-L-A-R",
+        "gloss": "循环的",
+        "tip": ""
+      },
+      {
+        "word": "recycling",
+        "spelling": "R-E-C-Y-C-L-I-N-G",
+        "gloss": "回收",
+        "tip": ""
+      },
+      {
+        "word": "logistics",
+        "spelling": "L-O-G-I-S-T-I-C-S",
+        "gloss": "物流",
+        "tip": ""
+      }
+    ]
+  },
+  {
+    "id": 40,
+    "en": "Coastal erosion threatens homes and infrastructure. Sea-level rise and storm surges intensify risks. Soft solutions like wetlands can complement hard sea walls.",
+    "zhAnalysis": "讲座：海岸侵蚀；海平面与风暴潮；湿地与海堤并用。",
+    "vocab": [
+      {
+        "word": "erosion",
+        "spelling": "E-R-O-S-I-O-N",
+        "gloss": "侵蚀",
+        "tip": ""
+      },
+      {
+        "word": "intensify",
+        "spelling": "I-N-T-E-N-S-I-F-Y",
+        "gloss": "加剧",
+        "tip": ""
+      },
+      {
+        "word": "wetlands",
+        "spelling": "W-E-T-L-A-N-D-S",
+        "gloss": "湿地",
+        "tip": ""
+      }
+    ]
+  },
+  {
+    "id": 41,
+    "en": "We examine intrinsic versus extrinsic motivation in education. Intrinsic motivation links to deeper learning. Over-reliance on grades can crowd out curiosity. Well-designed feedback supports both.",
+    "zhAnalysis": "讲座：内在与外在动机；成绩或挤出好奇；反馈兼顾。",
+    "vocab": [
+      {
+        "word": "intrinsic",
+        "spelling": "I-N-T-R-I-N-S-I-C",
+        "gloss": "内在的",
+        "tip": ""
+      },
+      {
+        "word": "extrinsic",
+        "spelling": "E-X-T-R-I-N-S-I-C",
+        "gloss": "外在的",
+        "tip": ""
+      },
+      {
+        "word": "curiosity",
+        "spelling": "C-U-R-I-O-S-I-T-Y",
+        "gloss": "好奇",
+        "tip": ""
+      }
+    ]
+  },
+  {
+    "id": 42,
+    "en": "Antibiotic resistance is a growing global threat. Overuse in medicine and agriculture accelerates it. Stewardship programmes and new drug research are both needed.",
+    "zhAnalysis": "讲座：抗生素耐药；滥用加速；管理计划与新药研发。",
+    "vocab": [
+      {
+        "word": "resistance",
+        "spelling": "R-E-S-I-S-T-A-N-C-E",
+        "gloss": "耐药",
+        "tip": ""
+      },
+      {
+        "word": "accelerates",
+        "spelling": "A-C-C-E-L-E-R-A-T-E-S",
+        "gloss": "加速",
+        "tip": ""
+      },
+      {
+        "word": "Stewardship",
+        "spelling": "S-T-E-W-A-R-D-S-H-I-P",
+        "gloss": "管理",
+        "tip": ""
+      }
+    ]
+  },
+  {
+    "id": 43,
+    "en": "Today we review survey sampling methods. Random samples support generalisation. Convenience samples are cheaper but biased. Sample size affects precision of estimates.",
+    "zhAnalysis": "讲座：抽样方法；随机可推广；便利样本有偏；样本量影响精度。",
+    "vocab": [
+      {
+        "word": "sampling",
+        "spelling": "S-A-M-P-L-I-N-G",
+        "gloss": "抽样",
+        "tip": ""
+      },
+      {
+        "word": "generalisation",
+        "spelling": "G-E-N-E-R-A-L-I-S-A-T-I-O-N",
+        "gloss": "推广",
+        "tip": ""
+      },
+      {
+        "word": "precision",
+        "spelling": "P-R-E-C-I-S-I-O-N",
+        "gloss": "精度",
+        "tip": ""
+      }
+    ]
+  },
+  {
+    "id": 44,
+    "en": "Electric vehicles reduce local air pollution but depend on electricity sources. Battery production has environmental costs. Lifecycle analysis gives a fuller picture.",
+    "zhAnalysis": "讲座：电动车减本地污染；取决于电力来源；电池成本；生命周期分析。",
+    "vocab": [
+      {
+        "word": "Electric",
+        "spelling": "E-L-E-C-T-R-I-C",
+        "gloss": "电动的",
+        "tip": ""
+      },
+      {
+        "word": "pollution",
+        "spelling": "P-O-L-L-U-T-I-O-N",
+        "gloss": "污染",
+        "tip": ""
+      },
+      {
+        "word": "lifecycle",
+        "spelling": "L-I-F-E-C-Y-C-L-E",
+        "gloss": "生命周期",
+        "tip": ""
+      }
+    ]
+  },
+  {
+    "id": 45,
+    "en": "The lecture discusses social capital. Networks of trust facilitate cooperation. Declining civic participation may weaken communities. Schools and associations can rebuild connections.",
+    "zhAnalysis": "讲座：社会资本；信任网络促合作；公民参与下降；学校与社团重建连接。",
+    "vocab": [
+      {
+        "word": "capital",
+        "spelling": "C-A-P-I-T-A-L",
+        "gloss": "资本",
+        "tip": ""
+      },
+      {
+        "word": "facilitate",
+        "spelling": "F-A-C-I-L-I-T-A-T-E",
+        "gloss": "促进",
+        "tip": ""
+      },
+      {
+        "word": "participation",
+        "spelling": "P-A-R-T-I-C-I-P-A-T-I-O-N",
+        "gloss": "参与",
+        "tip": ""
+      }
+    ]
+  },
+  {
+    "id": 46,
+    "en": "We explore desertification processes. Overgrazing and deforestation reduce vegetation cover. Soil loses moisture and fertility. Rehabilitation requires land management and community buy-in.",
+    "zhAnalysis": "讲座：荒漠化；过度放牧与砍伐；土壤失水失肥；需管理与社区认同。",
+    "vocab": [
+      {
+        "word": "desertification",
+        "spelling": "D-E-S-E-R-T-I-F-I-C-A-T-I-O-N",
+        "gloss": "荒漠化",
+        "tip": ""
+      },
+      {
+        "word": "vegetation",
+        "spelling": "V-E-G-E-T-A-T-I-O-N",
+        "gloss": "植被",
+        "tip": ""
+      },
+      {
+        "word": "Rehabilitation",
+        "spelling": "R-E-H-A-B-I-L-I-T-A-T-I-O-N",
+        "gloss": "修复",
+        "tip": ""
+      }
+    ]
+  },
+  {
+    "id": 47,
+    "en": "This session covers open educational resources. Free materials widen access. Quality control remains a concern. Licensing clarity helps educators adapt content legally.",
+    "zhAnalysis": "讲座：开放教育资源；扩大获取；质量控制；许可清晰。",
+    "vocab": [
+      {
+        "word": "educational",
+        "spelling": "E-D-U-C-A-T-I-O-N-A-L",
+        "gloss": "教育的",
+        "tip": ""
+      },
+      {
+        "word": "access",
+        "spelling": "A-C-C-E-S-S",
+        "gloss": "获取",
+        "tip": ""
+      },
+      {
+        "word": "Licensing",
+        "spelling": "L-I-C-E-N-S-I-N-G",
+        "gloss": "许可",
+        "tip": ""
+      }
+    ]
+  },
+  {
+    "id": 48,
+    "en": "Urban food systems rely on complex logistics. Local production can improve resilience. However, cities still need regional and international supply networks.",
+    "zhAnalysis": "讲座：城市食物系统；本地生产提韧性；仍需区域国际供应链。",
+    "vocab": [
+      {
+        "word": "logistics",
+        "spelling": "L-O-G-I-S-T-I-C-S",
+        "gloss": "物流",
+        "tip": ""
+      },
+      {
+        "word": "resilience",
+        "spelling": "R-E-S-I-L-I-E-N-C-E",
+        "gloss": "韧性",
+        "tip": ""
+      },
+      {
+        "word": "regional",
+        "spelling": "R-E-G-I-O-N-A-L",
+        "gloss": "区域的",
+        "tip": ""
+      }
+    ]
+  },
+  {
+    "id": 49,
+    "en": "We discuss measurement error in social science. Poorly worded questions produce unreliable data. Pilot testing and clear coding improve validity.",
+    "zhAnalysis": "讲座：测量误差；措辞不良不可靠；预试与清晰编码提效度。",
+    "vocab": [
+      {
+        "word": "measurement",
+        "spelling": "M-E-A-S-U-R-E-M-E-N-T",
+        "gloss": "测量",
+        "tip": ""
+      },
+      {
+        "word": "unreliable",
+        "spelling": "U-N-R-E-L-I-A-B-L-E",
+        "gloss": "不可靠的",
+        "tip": ""
+      },
+      {
+        "word": "validity",
+        "spelling": "V-A-L-I-D-I-T-Y",
+        "gloss": "效度",
+        "tip": ""
+      }
+    ]
+  },
+  {
+    "id": 50,
+    "en": "Noise pollution affects health beyond hearing loss. Chronic exposure raises stress and sleep disruption. Planning and regulation can reduce urban noise.",
+    "zhAnalysis": "讲座：噪声污染；超听力损失；压力与睡眠；规划监管。",
+    "vocab": [
+      {
+        "word": "Noise",
+        "spelling": "N-O-I-S-E",
+        "gloss": "噪声",
+        "tip": ""
+      },
+      {
+        "word": "exposure",
+        "spelling": "E-X-P-O-S-U-R-E",
+        "gloss": "暴露",
+        "tip": ""
+      },
+      {
+        "word": "disruption",
+        "spelling": "D-I-S-R-U-P-T-I-O-N",
+        "gloss": "中断",
+        "tip": ""
+      }
+    ]
+  },
+  {
+    "id": 51,
+    "en": "Today we examine apprenticeship models. Combining workplace training with classroom study builds skills. Employer engagement is critical for programme success.",
+    "zhAnalysis": "讲座：学徒制；工作与课堂结合；雇主参与关键。",
+    "vocab": [
+      {
+        "word": "apprenticeship",
+        "spelling": "A-P-P-R-E-N-T-I-C-E-S-H-I-P",
+        "gloss": "学徒制",
+        "tip": ""
+      },
+      {
+        "word": "workplace",
+        "spelling": "W-O-R-K-P-L-A-C-E",
+        "gloss": "工作场所",
+        "tip": ""
+      },
+      {
+        "word": "engagement",
+        "spelling": "E-N-G-A-G-E-M-E-N-T",
+        "gloss": "参与",
+        "tip": ""
+      }
+    ]
+  },
+  {
+    "id": 52,
+    "en": "Freshwater biodiversity is declining faster than terrestrial biodiversity in many regions. Dams and pollution fragment habitats. Restoration of river connectivity is a priority.",
+    "zhAnalysis": "讲座：淡水生物多样性下降更快；大坝污染；恢复河流连通性。",
+    "vocab": [
+      {
+        "word": "Freshwater",
+        "spelling": "F-R-E-S-H-W-A-T-E-R",
+        "gloss": "淡水",
+        "tip": ""
+      },
+      {
+        "word": "terrestrial",
+        "spelling": "T-E-R-R-E-S-T-R-I-A-L",
+        "gloss": "陆地的",
+        "tip": ""
+      },
+      {
+        "word": "connectivity",
+        "spelling": "C-O-N-N-E-C-T-I-V-I-T-Y",
+        "gloss": "连通性",
+        "tip": ""
+      }
+    ]
   }
 ];
+
   RL_BANK.forEach(function (item) {
     if (!item.sentence && item.en) item.sentence = item.en;
     if (!item.analysis && item.zhAnalysis) item.analysis = item.zhAnalysis;
   });
+
   global.RL_BANK = RL_BANK;
 })(typeof window !== "undefined" ? window : globalThis);
