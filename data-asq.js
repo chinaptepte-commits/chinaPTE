@@ -1,6 +1,6 @@
 /**
  * chinaPTE · ASQ — Answer Short Question
- * Total: 84 items
+ * Total: 90 items
  */
 (function (global) {
   "use strict";
@@ -676,9 +676,56 @@
     "answer": "peak / summit",
     "zhAnalysis": "山顶。",
     "vocab": []
+  },
+  {
+    "id": 85,
+    "en": "What do you call a book of maps?",
+    "question": "What do you call a book of maps?",
+    "answer": "An atlas",
+    "zhAnalysis": "装订成册的地图集叫什么？图集/地图册。",
+    "vocab": []
+  },
+  {
+    "id": 86,
+    "en": "How many sides does a hexagon have?",
+    "question": "How many sides does a hexagon have?",
+    "answer": "Six",
+    "zhAnalysis": "六边形有几条边？六条。",
+    "vocab": []
+  },
+  {
+    "id": 87,
+    "en": "What instrument is used to measure temperature?",
+    "question": "What instrument is used to measure temperature?",
+    "answer": "A thermometer",
+    "zhAnalysis": "用来测量温度的仪器是什么？温度计。",
+    "vocab": []
+  },
+  {
+    "id": 88,
+    "en": "What is the opposite of artificial?",
+    "question": "What is the opposite of artificial?",
+    "answer": "Natural",
+    "zhAnalysis": "artificial 的反义词是什么？natural（自然的）。",
+    "vocab": []
+  },
+  {
+    "id": 89,
+    "en": "Where do students borrow books on campus?",
+    "question": "Where do students borrow books on campus?",
+    "answer": "The library",
+    "zhAnalysis": "学生在校园哪里借书？图书馆。",
+    "vocab": []
+  },
+  {
+    "id": 90,
+    "en": "What do we call water in solid form?",
+    "question": "What do we call water in solid form?",
+    "answer": "Ice",
+    "zhAnalysis": "固态的水叫什么？冰。",
+    "vocab": []
   }
 ];
-
   ASQ_BANK.forEach(function (item) {
     if (!item.sentence && item.en) item.sentence = item.en;
     if (!item.analysis && item.zhAnalysis) item.analysis = item.zhAnalysis;

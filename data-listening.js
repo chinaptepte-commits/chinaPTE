@@ -1,6 +1,6 @@
 /**
- * chinaPTE · Listening — MCQ / FIB / HCS / SMW
- * Total: 64 items
+ * chinaPTE · Listening practice
+ * Total: 68 items
  */
 (function (global) {
   "use strict";
@@ -516,9 +516,40 @@
     "answer": "inflation",
     "zhAnalysis": "SMW：inflation。",
     "vocab": []
+  },
+  {
+    "id": 65,
+    "type": "FIB",
+    "en": "The speaker emphasises the need for ______ feedback during the drafting stage.",
+    "answer": "formative",
+    "zhAnalysis": "讲话者强调起草阶段需要形成性反馈。",
+    "vocab": []
+  },
+  {
+    "id": 66,
+    "type": "FIB",
+    "en": "According to the lecture, urban ______ can reduce reliance on private vehicles.",
+    "answer": "planning",
+    "zhAnalysis": "根据讲座，城市规划可减少对私家车的依赖。",
+    "vocab": []
+  },
+  {
+    "id": 67,
+    "type": "HIW",
+    "en": "The correct transcript mentions peer review, not peer reviewal, as the standard process.",
+    "answer": "peer review",
+    "zhAnalysis": "正确文本提到同行评审（peer review）为标准流程。",
+    "vocab": []
+  },
+  {
+    "id": 68,
+    "type": "SMW",
+    "en": "Which factor most improved retention in the study? Regular mentoring sessions.",
+    "answer": "Regular mentoring sessions",
+    "zhAnalysis": "研究中最提升留存的因素是什么？定期导师辅导。",
+    "vocab": []
   }
 ];
-
   LISTENING_BANK.forEach(function (item) {
     if (!item.sentence && item.en) item.sentence = item.en;
     if (!item.analysis && item.zhAnalysis) item.analysis = item.zhAnalysis;

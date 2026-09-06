@@ -1,6 +1,6 @@
 /**
- * chinaPTE · Essay — Write Essay
- * Total: 32 items
+ * chinaPTE · Essay prompts
+ * Total: 34 items
  */
 (function (global) {
   "use strict";
@@ -836,9 +836,60 @@
         "tip": ""
       }
     ]
+  },
+  {
+    "id": 33,
+    "en": "Some people believe universities should focus mainly on preparing students for employment. Others argue that a broader liberal education is more valuable. Discuss both views and give your own opinion.",
+    "zhAnalysis": "有人认为大学应主要培养学生就业；另一些人认为更广泛的博雅教育更有价值。讨论双方观点并给出自己的看法。",
+    "vocab": [
+      {
+        "word": "employment",
+        "spelling": "E-M-P-L-O-Y-M-E-N-T",
+        "gloss": "就业",
+        "tip": ""
+      },
+      {
+        "word": "liberal",
+        "spelling": "L-I-B-E-R-A-L",
+        "gloss": "博雅的",
+        "tip": ""
+      },
+      {
+        "word": "valuable",
+        "spelling": "V-A-L-U-A-B-L-E",
+        "gloss": "有价值的",
+        "tip": ""
+      }
+    ],
+    "prompt": "Some people believe universities should focus mainly on preparing students for employment. Others argue that a broader liberal education is more valuable. Discuss both views and give your own opinion."
+  },
+  {
+    "id": 34,
+    "en": "To what extent should governments subsidise public transport to reduce private car use in cities?",
+    "zhAnalysis": "政府应在多大程度上补贴公共交通以减少城市私家车使用？",
+    "vocab": [
+      {
+        "word": "subsidise",
+        "spelling": "S-U-B-S-I-D-I-S-E",
+        "gloss": "补贴",
+        "tip": ""
+      },
+      {
+        "word": "transport",
+        "spelling": "T-R-A-N-S-P-O-R-T",
+        "gloss": "交通",
+        "tip": ""
+      },
+      {
+        "word": "private",
+        "spelling": "P-R-I-V-A-T-E",
+        "gloss": "私人的",
+        "tip": ""
+      }
+    ],
+    "prompt": "To what extent should governments subsidise public transport to reduce private car use in cities?"
   }
 ];
-
   ESSAY_BANK.forEach(function (item) {
     if (!item.sentence && item.en) item.sentence = item.en;
     if (!item.analysis && item.zhAnalysis) item.analysis = item.zhAnalysis;

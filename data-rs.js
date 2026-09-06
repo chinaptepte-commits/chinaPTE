@@ -1,7 +1,7 @@
 /**
  * chinaPTE · RS bank — Repeat Sentence
  * Free, local-only. No network required.
- * Total: 170 items
+ * Total: 200 items
  */
 (function (global) {
   "use strict";
@@ -3853,9 +3853,656 @@
         "tip": ""
       }
     ]
+  },
+  {
+    "id": 171,
+    "en": "The tutorial begins promptly at nine.",
+    "zhAnalysis": "辅导课九点准时开始。",
+    "vocab": [
+      {
+        "word": "tutorial",
+        "spelling": "T-U-T-O-R-I-A-L",
+        "gloss": "辅导课",
+        "tip": ""
+      },
+      {
+        "word": "promptly",
+        "spelling": "P-R-O-M-P-T-L-Y",
+        "gloss": "准时地",
+        "tip": ""
+      }
+    ]
+  },
+  {
+    "id": 172,
+    "en": "Please submit the form before Friday.",
+    "zhAnalysis": "请在周五前提交表格。",
+    "vocab": [
+      {
+        "word": "submit",
+        "spelling": "S-U-B-M-I-T",
+        "gloss": "提交",
+        "tip": ""
+      },
+      {
+        "word": "form",
+        "spelling": "F-O-R-M",
+        "gloss": "表格",
+        "tip": ""
+      }
+    ]
+  },
+  {
+    "id": 173,
+    "en": "The museum opens to the public daily.",
+    "zhAnalysis": "博物馆每天对公众开放。",
+    "vocab": [
+      {
+        "word": "museum",
+        "spelling": "M-U-S-E-U-M",
+        "gloss": "博物馆",
+        "tip": ""
+      },
+      {
+        "word": "public",
+        "spelling": "P-U-B-L-I-C",
+        "gloss": "公众",
+        "tip": ""
+      }
+    ]
+  },
+  {
+    "id": 174,
+    "en": "Revision notes are available online.",
+    "zhAnalysis": "复习笔记可在线获取。",
+    "vocab": [
+      {
+        "word": "Revision",
+        "spelling": "R-E-V-I-S-I-O-N",
+        "gloss": "复习",
+        "tip": ""
+      },
+      {
+        "word": "available",
+        "spelling": "A-V-A-I-L-A-B-L-E",
+        "gloss": "可获得的",
+        "tip": ""
+      }
+    ]
+  },
+  {
+    "id": 175,
+    "en": "The lecture hall seats three hundred.",
+    "zhAnalysis": "阶梯教室可坐三百人。",
+    "vocab": [
+      {
+        "word": "lecture",
+        "spelling": "L-E-C-T-U-R-E",
+        "gloss": "讲座",
+        "tip": ""
+      },
+      {
+        "word": "seats",
+        "spelling": "S-E-A-T-S",
+        "gloss": "容纳",
+        "tip": ""
+      }
+    ]
+  },
+  {
+    "id": 176,
+    "en": "Parking permits must be displayed clearly.",
+    "zhAnalysis": "停车许可证须清晰展示。",
+    "vocab": [
+      {
+        "word": "Parking",
+        "spelling": "P-A-R-K-I-N-G",
+        "gloss": "停车",
+        "tip": ""
+      },
+      {
+        "word": "permits",
+        "spelling": "P-E-R-M-I-T-S",
+        "gloss": "许可证",
+        "tip": ""
+      },
+      {
+        "word": "displayed",
+        "spelling": "D-I-S-P-L-A-Y-E-D",
+        "gloss": "展示",
+        "tip": ""
+      }
+    ]
+  },
+  {
+    "id": 177,
+    "en": "The chemistry lab is locked after six.",
+    "zhAnalysis": "化学实验室六点后上锁。",
+    "vocab": [
+      {
+        "word": "chemistry",
+        "spelling": "C-H-E-M-I-S-T-R-Y",
+        "gloss": "化学",
+        "tip": ""
+      },
+      {
+        "word": "locked",
+        "spelling": "L-O-C-K-E-D",
+        "gloss": "上锁",
+        "tip": ""
+      }
+    ]
+  },
+  {
+    "id": 178,
+    "en": "Group work improves collaborative skills.",
+    "zhAnalysis": "小组作业提升协作技能。",
+    "vocab": [
+      {
+        "word": "collaborative",
+        "spelling": "C-O-L-L-A-B-O-R-A-T-I-V-E",
+        "gloss": "协作的",
+        "tip": ""
+      },
+      {
+        "word": "skills",
+        "spelling": "S-K-I-L-L-S",
+        "gloss": "技能",
+        "tip": ""
+      }
+    ]
+  },
+  {
+    "id": 179,
+    "en": "The registry handles student records.",
+    "zhAnalysis": "注册处处理学生档案。",
+    "vocab": [
+      {
+        "word": "registry",
+        "spelling": "R-E-G-I-S-T-R-Y",
+        "gloss": "注册处",
+        "tip": ""
+      },
+      {
+        "word": "records",
+        "spelling": "R-E-C-O-R-D-S",
+        "gloss": "档案",
+        "tip": ""
+      }
+    ]
+  },
+  {
+    "id": 180,
+    "en": "Please keep noise levels to a minimum.",
+    "zhAnalysis": "请将噪音保持在最低水平。",
+    "vocab": [
+      {
+        "word": "noise",
+        "spelling": "N-O-I-S-E",
+        "gloss": "噪音",
+        "tip": ""
+      },
+      {
+        "word": "minimum",
+        "spelling": "M-I-N-I-M-U-M",
+        "gloss": "最低",
+        "tip": ""
+      }
+    ]
+  },
+  {
+    "id": 181,
+    "en": "The essay must include a clear thesis.",
+    "zhAnalysis": "论文须包含明确论点。",
+    "vocab": [
+      {
+        "word": "essay",
+        "spelling": "E-S-S-A-Y",
+        "gloss": "论文",
+        "tip": ""
+      },
+      {
+        "word": "thesis",
+        "spelling": "T-H-E-S-I-S",
+        "gloss": "论点/论题",
+        "tip": ""
+      }
+    ]
+  },
+  {
+    "id": 182,
+    "en": "Wireless access covers the entire campus.",
+    "zhAnalysis": "无线网络覆盖整个校园。",
+    "vocab": [
+      {
+        "word": "Wireless",
+        "spelling": "W-I-R-E-L-E-S-S",
+        "gloss": "无线的",
+        "tip": ""
+      },
+      {
+        "word": "covers",
+        "spelling": "C-O-V-E-R-S",
+        "gloss": "覆盖",
+        "tip": ""
+      },
+      {
+        "word": "campus",
+        "spelling": "C-A-M-P-U-S",
+        "gloss": "校园",
+        "tip": ""
+      }
+    ]
+  },
+  {
+    "id": 183,
+    "en": "The experiment requires careful measurement.",
+    "zhAnalysis": "实验需要仔细测量。",
+    "vocab": [
+      {
+        "word": "requires",
+        "spelling": "R-E-Q-U-I-R-E-S",
+        "gloss": "需要",
+        "tip": ""
+      },
+      {
+        "word": "measurement",
+        "spelling": "M-E-A-S-U-R-E-M-E-N-T",
+        "gloss": "测量",
+        "tip": ""
+      }
+    ]
+  },
+  {
+    "id": 184,
+    "en": "Office hours are posted on the door.",
+    "zhAnalysis": "答疑时间贴在门上。",
+    "vocab": [
+      {
+        "word": "posted",
+        "spelling": "P-O-S-T-E-D",
+        "gloss": "张贴",
+        "tip": ""
+      },
+      {
+        "word": "door",
+        "spelling": "D-O-O-R",
+        "gloss": "门",
+        "tip": ""
+      }
+    ]
+  },
+  {
+    "id": 185,
+    "en": "The conference attracts international speakers.",
+    "zhAnalysis": "会议吸引国际演讲者。",
+    "vocab": [
+      {
+        "word": "conference",
+        "spelling": "C-O-N-F-E-R-E-N-C-E",
+        "gloss": "会议",
+        "tip": ""
+      },
+      {
+        "word": "attracts",
+        "spelling": "A-T-T-R-A-C-T-S",
+        "gloss": "吸引",
+        "tip": ""
+      },
+      {
+        "word": "speakers",
+        "spelling": "S-P-E-A-K-E-R-S",
+        "gloss": "演讲者",
+        "tip": ""
+      }
+    ]
+  },
+  {
+    "id": 186,
+    "en": "Please cite all sources in your report.",
+    "zhAnalysis": "请在报告中引用所有来源。",
+    "vocab": [
+      {
+        "word": "cite",
+        "spelling": "C-I-T-E",
+        "gloss": "引用",
+        "tip": ""
+      },
+      {
+        "word": "sources",
+        "spelling": "S-O-U-R-C-E-S",
+        "gloss": "来源",
+        "tip": ""
+      },
+      {
+        "word": "report",
+        "spelling": "R-E-P-O-R-T",
+        "gloss": "报告",
+        "tip": ""
+      }
+    ]
+  },
+  {
+    "id": 187,
+    "en": "The shuttle bus runs every fifteen minutes.",
+    "zhAnalysis": "班车每十五分钟一班。",
+    "vocab": [
+      {
+        "word": "shuttle",
+        "spelling": "S-H-U-T-T-L-E",
+        "gloss": "班车",
+        "tip": ""
+      },
+      {
+        "word": "runs",
+        "spelling": "R-U-N-S",
+        "gloss": "运行",
+        "tip": ""
+      }
+    ]
+  },
+  {
+    "id": 188,
+    "en": "Final grades will be released next week.",
+    "zhAnalysis": "最终成绩将于下周公布。",
+    "vocab": [
+      {
+        "word": "grades",
+        "spelling": "G-R-A-D-E-S",
+        "gloss": "成绩",
+        "tip": ""
+      },
+      {
+        "word": "released",
+        "spelling": "R-E-L-E-A-S-E-D",
+        "gloss": "公布",
+        "tip": ""
+      }
+    ]
+  },
+  {
+    "id": 189,
+    "en": "The workshop focuses on academic writing.",
+    "zhAnalysis": "工作坊聚焦学术写作。",
+    "vocab": [
+      {
+        "word": "workshop",
+        "spelling": "W-O-R-K-S-H-O-P",
+        "gloss": "工作坊",
+        "tip": ""
+      },
+      {
+        "word": "focuses",
+        "spelling": "F-O-C-U-S-E-S",
+        "gloss": "聚焦",
+        "tip": ""
+      },
+      {
+        "word": "academic",
+        "spelling": "A-C-A-D-E-M-I-C",
+        "gloss": "学术的",
+        "tip": ""
+      }
+    ]
+  },
+  {
+    "id": 190,
+    "en": "Bring your student card to the exam hall.",
+    "zhAnalysis": "带学生证进入考场。",
+    "vocab": [
+      {
+        "word": "student",
+        "spelling": "S-T-U-D-E-N-T",
+        "gloss": "学生",
+        "tip": ""
+      },
+      {
+        "word": "card",
+        "spelling": "C-A-R-D",
+        "gloss": "卡",
+        "tip": ""
+      },
+      {
+        "word": "exam",
+        "spelling": "E-X-A-M",
+        "gloss": "考试",
+        "tip": ""
+      }
+    ]
+  },
+  {
+    "id": 191,
+    "en": "The hypothesis needs further testing.",
+    "zhAnalysis": "该假设需要进一步检验。",
+    "vocab": [
+      {
+        "word": "hypothesis",
+        "spelling": "H-Y-P-O-T-H-E-S-I-S",
+        "gloss": "假设",
+        "tip": ""
+      },
+      {
+        "word": "further",
+        "spelling": "F-U-R-T-H-E-R",
+        "gloss": "进一步的",
+        "tip": ""
+      }
+    ]
+  },
+  {
+    "id": 192,
+    "en": "Library loans can be renewed online.",
+    "zhAnalysis": "图书馆借阅可在线续借。",
+    "vocab": [
+      {
+        "word": "loans",
+        "spelling": "L-O-A-N-S",
+        "gloss": "借阅",
+        "tip": ""
+      },
+      {
+        "word": "renewed",
+        "spelling": "R-E-N-E-W-E-D",
+        "gloss": "续借",
+        "tip": ""
+      }
+    ]
+  },
+  {
+    "id": 193,
+    "en": "The debate will explore both perspectives.",
+    "zhAnalysis": "辩论将探讨两种观点。",
+    "vocab": [
+      {
+        "word": "debate",
+        "spelling": "D-E-B-A-T-E",
+        "gloss": "辩论",
+        "tip": ""
+      },
+      {
+        "word": "explore",
+        "spelling": "E-X-P-L-O-R-E",
+        "gloss": "探讨",
+        "tip": ""
+      },
+      {
+        "word": "perspectives",
+        "spelling": "P-E-R-S-P-E-C-T-I-V-E-S",
+        "gloss": "观点",
+        "tip": ""
+      }
+    ]
+  },
+  {
+    "id": 194,
+    "en": "Please switch your phone to silent mode.",
+    "zhAnalysis": "请将手机调至静音模式。",
+    "vocab": [
+      {
+        "word": "switch",
+        "spelling": "S-W-I-T-C-H",
+        "gloss": "切换",
+        "tip": ""
+      },
+      {
+        "word": "silent",
+        "spelling": "S-I-L-E-N-T",
+        "gloss": "静音的",
+        "tip": ""
+      }
+    ]
+  },
+  {
+    "id": 195,
+    "en": "The survey closes at midnight tonight.",
+    "zhAnalysis": "调查今晚午夜截止。",
+    "vocab": [
+      {
+        "word": "survey",
+        "spelling": "S-U-R-V-E-Y",
+        "gloss": "调查",
+        "tip": ""
+      },
+      {
+        "word": "closes",
+        "spelling": "C-L-O-S-E-S",
+        "gloss": "截止",
+        "tip": ""
+      },
+      {
+        "word": "midnight",
+        "spelling": "M-I-D-N-I-G-H-T",
+        "gloss": "午夜",
+        "tip": ""
+      }
+    ]
+  },
+  {
+    "id": 196,
+    "en": "Climate change affects coastal communities.",
+    "zhAnalysis": "气候变化影响沿海社区。",
+    "vocab": [
+      {
+        "word": "Climate",
+        "spelling": "C-L-I-M-A-T-E",
+        "gloss": "气候",
+        "tip": ""
+      },
+      {
+        "word": "affects",
+        "spelling": "A-F-F-E-C-T-S",
+        "gloss": "影响",
+        "tip": ""
+      },
+      {
+        "word": "coastal",
+        "spelling": "C-O-A-S-T-A-L",
+        "gloss": "沿海的",
+        "tip": ""
+      }
+    ]
+  },
+  {
+    "id": 197,
+    "en": "The supervisor approved the revised plan.",
+    "zhAnalysis": "导师批准了修改后的计划。",
+    "vocab": [
+      {
+        "word": "supervisor",
+        "spelling": "S-U-P-E-R-V-I-S-O-R",
+        "gloss": "导师",
+        "tip": ""
+      },
+      {
+        "word": "approved",
+        "spelling": "A-P-P-R-O-V-E-D",
+        "gloss": "批准",
+        "tip": ""
+      },
+      {
+        "word": "revised",
+        "spelling": "R-E-V-I-S-E-D",
+        "gloss": "修改的",
+        "tip": ""
+      }
+    ]
+  },
+  {
+    "id": 198,
+    "en": "Attendance is compulsory for all labs.",
+    "zhAnalysis": "所有实验课出勤强制。",
+    "vocab": [
+      {
+        "word": "Attendance",
+        "spelling": "A-T-T-E-N-D-A-N-C-E",
+        "gloss": "出勤",
+        "tip": ""
+      },
+      {
+        "word": "compulsory",
+        "spelling": "C-O-M-P-U-L-S-O-R-Y",
+        "gloss": "强制的",
+        "tip": ""
+      },
+      {
+        "word": "labs",
+        "spelling": "L-A-B-S",
+        "gloss": "实验课",
+        "tip": ""
+      }
+    ]
+  },
+  {
+    "id": 199,
+    "en": "The graph shows a steady upward trend.",
+    "zhAnalysis": "图表显示稳步上升趋势。",
+    "vocab": [
+      {
+        "word": "graph",
+        "spelling": "G-R-A-P-H",
+        "gloss": "图表",
+        "tip": ""
+      },
+      {
+        "word": "steady",
+        "spelling": "S-T-E-A-D-Y",
+        "gloss": "稳步的",
+        "tip": ""
+      },
+      {
+        "word": "trend",
+        "spelling": "T-R-E-N-D",
+        "gloss": "趋势",
+        "tip": ""
+      }
+    ]
+  },
+  {
+    "id": 200,
+    "en": "Please collect your certificates from reception.",
+    "zhAnalysis": "请到前台领取证书。",
+    "vocab": [
+      {
+        "word": "collect",
+        "spelling": "C-O-L-L-E-C-T",
+        "gloss": "领取",
+        "tip": ""
+      },
+      {
+        "word": "certificates",
+        "spelling": "C-E-R-T-I-F-I-C-A-T-E-S",
+        "gloss": "证书",
+        "tip": ""
+      },
+      {
+        "word": "reception",
+        "spelling": "R-E-C-E-P-T-I-O-N",
+        "gloss": "前台",
+        "tip": ""
+      }
+    ]
   }
 ];
-
   RS_BANK.forEach(function (item) {
     if (!item.sentence && item.en) item.sentence = item.en;
     if (!item.analysis && item.zhAnalysis) item.analysis = item.zhAnalysis;

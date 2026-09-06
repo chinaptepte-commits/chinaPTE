@@ -1,6 +1,6 @@
 /**
  * chinaPTE · PTE Academic 高频核心词
- * Total: 680
+ * Total: 730
  * Domains: academic research, campus/admin (WFD/RS), environment/society/economy, dictation verbs/adverbs
  */
 (function (global) {
@@ -9728,6 +9728,706 @@
       "campus"
     ],
     "tier": "core"
+  },
+  {
+    "word": "amendment",
+    "spelling": "A-M-E-N-D-M-E-N-T",
+    "phonetic": "/əˈmendmənt/",
+    "gloss": "修正；修订",
+    "tip": "policy amendment",
+    "example": "Submit the amendment today.",
+    "exampleZh": "今天提交修订。",
+    "tags": [
+      "academic"
+    ],
+    "tier": "high",
+    "id": 681
+  },
+  {
+    "word": "apparatus",
+    "spelling": "A-P-P-A-R-A-T-U-S",
+    "phonetic": "/ˌæpəˈreɪtəs/",
+    "gloss": "仪器；装置",
+    "tip": "lab apparatus",
+    "example": "Check the laboratory apparatus.",
+    "exampleZh": "检查实验室仪器。",
+    "tags": [
+      "science"
+    ],
+    "tier": "high",
+    "id": 682
+  },
+  {
+    "word": "appraisal",
+    "spelling": "A-P-P-R-A-I-S-A-L",
+    "phonetic": "/əˈpreɪzl/",
+    "gloss": "评估",
+    "tip": "performance appraisal",
+    "example": "Staff appraisal occurs yearly.",
+    "exampleZh": "员工评估每年进行。",
+    "tags": [
+      "campus"
+    ],
+    "tier": "mid",
+    "id": 683
+  },
+  {
+    "word": "ascertain",
+    "spelling": "A-S-C-E-R-T-A-I-N",
+    "phonetic": "/ˌæsəˈteɪn/",
+    "gloss": "查明",
+    "tip": "ascertain facts",
+    "example": "Ascertain the cause carefully.",
+    "exampleZh": "仔细查明原因。",
+    "tags": [
+      "academic"
+    ],
+    "tier": "high",
+    "id": 684
+  },
+  {
+    "word": "attainment",
+    "spelling": "A-T-T-A-I-N-M-E-N-T",
+    "phonetic": "/əˈteɪnmənt/",
+    "gloss": "成就；达到",
+    "tip": "academic attainment",
+    "example": "Educational attainment has risen.",
+    "exampleZh": "教育成就已经提高。",
+    "tags": [
+      "academic"
+    ],
+    "tier": "high",
+    "id": 685
+  },
+  {
+    "word": "breadth",
+    "spelling": "B-R-E-A-D-T-H",
+    "phonetic": "/bredθ/",
+    "gloss": "广度",
+    "tip": "breadth of knowledge",
+    "example": "The course has impressive breadth.",
+    "exampleZh": "该课程广度可观。",
+    "tags": [
+      "academic"
+    ],
+    "tier": "mid",
+    "id": 686
+  },
+  {
+    "word": "catalogue",
+    "spelling": "C-A-T-A-L-O-G-U-E",
+    "phonetic": "/ˈkætəlɒɡ/",
+    "gloss": "目录",
+    "tip": "library catalogue",
+    "example": "Search the library catalogue.",
+    "exampleZh": "检索图书馆目录。",
+    "tags": [
+      "campus"
+    ],
+    "tier": "high",
+    "id": 687
+  },
+  {
+    "word": "concurrent",
+    "spelling": "C-O-N-C-U-R-R-E-N-T",
+    "phonetic": "/kənˈkʌrənt/",
+    "gloss": "同时发生的",
+    "tip": "concurrent sessions",
+    "example": "They ran concurrent experiments.",
+    "exampleZh": "他们进行了并行实验。",
+    "tags": [
+      "academic"
+    ],
+    "tier": "mid",
+    "id": 688
+  },
+  {
+    "word": "confine",
+    "spelling": "C-O-N-F-I-N-E",
+    "phonetic": "/kənˈfaɪn/",
+    "gloss": "限制",
+    "tip": "confine to",
+    "example": "Confine discussion to the topic.",
+    "exampleZh": "将讨论限制在主题内。",
+    "tags": [
+      "academic"
+    ],
+    "tier": "mid",
+    "id": 689
+  },
+  {
+    "word": "constrain",
+    "spelling": "C-O-N-S-T-R-A-I-N",
+    "phonetic": "/kənˈstreɪn/",
+    "gloss": "约束",
+    "tip": "constrain growth",
+    "example": "Budgets constrain the project.",
+    "exampleZh": "预算约束该项目。",
+    "tags": [
+      "academic"
+    ],
+    "tier": "high",
+    "id": 690
+  },
+  {
+    "word": "contemplate",
+    "spelling": "C-O-N-T-E-M-P-L-A-T-E",
+    "phonetic": "/ˈkɒntəmpleɪt/",
+    "gloss": "沉思；考虑",
+    "tip": "contemplate options",
+    "example": "Contemplate the long-term effects.",
+    "exampleZh": "考虑长期影响。",
+    "tags": [
+      "academic"
+    ],
+    "tier": "mid",
+    "id": 691
+  },
+  {
+    "word": "counterpart",
+    "spelling": "C-O-U-N-T-E-R-P-A-R-T",
+    "phonetic": "/ˈkaʊntəpɑːt/",
+    "gloss": "对应者；同行",
+    "tip": "counterpart abroad",
+    "example": "Meet your overseas counterpart.",
+    "exampleZh": "会见你的海外同行。",
+    "tags": [
+      "academic"
+    ],
+    "tier": "high",
+    "id": 692
+  },
+  {
+    "word": "deduce",
+    "spelling": "D-E-D-U-C-E",
+    "phonetic": "/dɪˈdjuːs/",
+    "gloss": "推断",
+    "tip": "deduce from",
+    "example": "Deduce the meaning from context.",
+    "exampleZh": "从语境推断含义。",
+    "tags": [
+      "academic"
+    ],
+    "tier": "high",
+    "id": 693
+  },
+  {
+    "word": "depict",
+    "spelling": "D-E-P-I-C-T",
+    "phonetic": "/dɪˈpɪkt/",
+    "gloss": "描绘",
+    "tip": "depict trends",
+    "example": "The chart depicts enrolment growth.",
+    "exampleZh": "图表描绘入学增长。",
+    "tags": [
+      "academic"
+    ],
+    "tier": "high",
+    "id": 694
+  },
+  {
+    "word": "diminish",
+    "spelling": "D-I-M-I-N-I-S-H",
+    "phonetic": "/dɪˈmɪnɪʃ/",
+    "gloss": "减少",
+    "tip": "diminish impact",
+    "example": "Risks diminish with practice.",
+    "exampleZh": "风险随练习而减少。",
+    "tags": [
+      "academic"
+    ],
+    "tier": "high",
+    "id": 695
+  },
+  {
+    "word": "discourse",
+    "spelling": "D-I-S-C-O-U-R-S-E",
+    "phonetic": "/ˈdɪskɔːs/",
+    "gloss": "话语；论述",
+    "tip": "public discourse",
+    "example": "Academic discourse values evidence.",
+    "exampleZh": "学术话语重视证据。",
+    "tags": [
+      "academic"
+    ],
+    "tier": "high",
+    "id": 696
+  },
+  {
+    "word": "discrepancy",
+    "spelling": "D-I-S-C-R-E-P-A-N-C-Y",
+    "phonetic": "/dɪˈskrepənsi/",
+    "gloss": "差异；不符",
+    "tip": "discrepancy between",
+    "example": "Explain the data discrepancy.",
+    "exampleZh": "解释数据差异。",
+    "tags": [
+      "academic"
+    ],
+    "tier": "high",
+    "id": 697
+  },
+  {
+    "word": "embed",
+    "spelling": "E-M-B-E-D",
+    "phonetic": "/ɪmˈbed/",
+    "gloss": "嵌入",
+    "tip": "embed culture",
+    "example": "Embed the chart in your slide.",
+    "exampleZh": "把图表嵌入幻灯片。",
+    "tags": [
+      "academic"
+    ],
+    "tier": "mid",
+    "id": 698
+  },
+  {
+    "word": "endorse",
+    "spelling": "E-N-D-O-R-S-E",
+    "phonetic": "/ɪnˈdɔːs/",
+    "gloss": "赞同；背书",
+    "tip": "endorse a view",
+    "example": "The board endorsed the proposal.",
+    "exampleZh": "董事会赞同该提案。",
+    "tags": [
+      "academic"
+    ],
+    "tier": "high",
+    "id": 699
+  },
+  {
+    "word": "ensue",
+    "spelling": "E-N-S-U-E",
+    "phonetic": "/ɪnˈsjuː/",
+    "gloss": "随之发生",
+    "tip": "chaos ensued",
+    "example": "A heated debate ensued.",
+    "exampleZh": "随之发生激烈辩论。",
+    "tags": [
+      "academic"
+    ],
+    "tier": "mid",
+    "id": 700
+  },
+  {
+    "word": "entail",
+    "spelling": "E-N-T-A-I-L",
+    "phonetic": "/ɪnˈteɪl/",
+    "gloss": "需要；导致",
+    "tip": "entail costs",
+    "example": "The role entails long hours.",
+    "exampleZh": "该职位需要长时间工作。",
+    "tags": [
+      "academic"
+    ],
+    "tier": "high",
+    "id": 701
+  },
+  {
+    "word": "enumerate",
+    "spelling": "E-N-U-M-E-R-A-T-E",
+    "phonetic": "/ɪˈnjuːməreɪt/",
+    "gloss": "列举",
+    "tip": "enumerate reasons",
+    "example": "Enumerate the main findings.",
+    "exampleZh": "列举主要发现。",
+    "tags": [
+      "academic"
+    ],
+    "tier": "mid",
+    "id": 702
+  },
+  {
+    "word": "equate",
+    "spelling": "E-Q-U-A-T-E",
+    "phonetic": "/ɪˈkweɪt/",
+    "gloss": "等同",
+    "tip": "equate with",
+    "example": "Do not equate correlation with cause.",
+    "exampleZh": "不要把相关等同于因果。",
+    "tags": [
+      "academic"
+    ],
+    "tier": "high",
+    "id": 703
+  },
+  {
+    "word": "evoke",
+    "spelling": "E-V-O-K-E",
+    "phonetic": "/ɪˈvəʊk/",
+    "gloss": "唤起",
+    "tip": "evoke memories",
+    "example": "The image evokes strong emotions.",
+    "exampleZh": "该图像唤起强烈情感。",
+    "tags": [
+      "academic"
+    ],
+    "tier": "mid",
+    "id": 704
+  },
+  {
+    "word": "exemplify",
+    "spelling": "E-X-E-M-P-L-I-F-Y",
+    "phonetic": "/ɪɡˈzemplɪfaɪ/",
+    "gloss": "例示",
+    "tip": "exemplify a trend",
+    "example": "This case exemplifies the problem.",
+    "exampleZh": "该案例例示了问题。",
+    "tags": [
+      "academic"
+    ],
+    "tier": "high",
+    "id": 705
+  },
+  {
+    "word": "formulate",
+    "spelling": "F-O-R-M-U-L-A-T-E",
+    "phonetic": "/ˈfɔːmjuleɪt/",
+    "gloss": "制定；表述",
+    "tip": "formulate policy",
+    "example": "Formulate a clear research question.",
+    "exampleZh": "制定清晰的研究问题。",
+    "tags": [
+      "academic"
+    ],
+    "tier": "high",
+    "id": 706
+  },
+  {
+    "word": "hierarchy",
+    "spelling": "H-I-E-R-A-R-C-H-Y",
+    "phonetic": "/ˈhaɪərɑːki/",
+    "gloss": "等级制度",
+    "tip": "social hierarchy",
+    "example": "The hierarchy affects decision-making.",
+    "exampleZh": "等级制度影响决策。",
+    "tags": [
+      "academic"
+    ],
+    "tier": "high",
+    "id": 707
+  },
+  {
+    "word": "induce",
+    "spelling": "I-N-D-U-C-E",
+    "phonetic": "/ɪnˈdjuːs/",
+    "gloss": "引起；诱导",
+    "tip": "induce change",
+    "example": "Stress can induce headaches.",
+    "exampleZh": "压力可引起头痛。",
+    "tags": [
+      "academic"
+    ],
+    "tier": "mid",
+    "id": 708
+  },
+  {
+    "word": "inherent",
+    "spelling": "I-N-H-E-R-E-N-T",
+    "phonetic": "/ɪnˈhɪərənt/",
+    "gloss": "固有的",
+    "tip": "inherent limitations",
+    "example": "Risk is inherent in research.",
+    "exampleZh": "风险是研究固有的。",
+    "tags": [
+      "academic"
+    ],
+    "tier": "high",
+    "id": 709
+  },
+  {
+    "word": "intervene",
+    "spelling": "I-N-T-E-R-V-E-N-E",
+    "phonetic": "/ˌɪntəˈviːn/",
+    "gloss": "干预",
+    "tip": "intervene early",
+    "example": "Teachers may intervene if needed.",
+    "exampleZh": "必要时教师可干预。",
+    "tags": [
+      "academic"
+    ],
+    "tier": "high",
+    "id": 710
+  },
+  {
+    "word": "invoke",
+    "spelling": "I-N-V-O-K-E",
+    "phonetic": "/ɪnˈvəʊk/",
+    "gloss": "援引",
+    "tip": "invoke a rule",
+    "example": "Invoke the relevant regulation.",
+    "exampleZh": "援引相关规定。",
+    "tags": [
+      "academic"
+    ],
+    "tier": "mid",
+    "id": 711
+  },
+  {
+    "word": "magnitude",
+    "spelling": "M-A-G-N-I-T-U-D-E",
+    "phonetic": "/ˈmæɡnɪtjuːd/",
+    "gloss": "量级；重大",
+    "tip": "order of magnitude",
+    "example": "Consider the magnitude of change.",
+    "exampleZh": "考虑变化的量级。",
+    "tags": [
+      "academic"
+    ],
+    "tier": "high",
+    "id": 712
+  },
+  {
+    "word": "manifest",
+    "spelling": "M-A-N-I-F-E-S-T",
+    "phonetic": "/ˈmænɪfest/",
+    "gloss": "表明；明显的",
+    "tip": "manifest itself",
+    "example": "Stress may manifest as fatigue.",
+    "exampleZh": "压力可能表现为疲劳。",
+    "tags": [
+      "academic"
+    ],
+    "tier": "high",
+    "id": 713
+  },
+  {
+    "word": "mediate",
+    "spelling": "M-E-D-I-A-T-E",
+    "phonetic": "/ˈmiːdieɪt/",
+    "gloss": "调解；介导",
+    "tip": "mediate between",
+    "example": "Teachers mediate classroom conflict.",
+    "exampleZh": "教师调解课堂冲突。",
+    "tags": [
+      "academic"
+    ],
+    "tier": "mid",
+    "id": 714
+  },
+  {
+    "word": "notion",
+    "spelling": "N-O-T-I-O-N",
+    "phonetic": "/ˈnəʊʃn/",
+    "gloss": "概念；看法",
+    "tip": "notion of",
+    "example": "Challenge the notion of fixed ability.",
+    "exampleZh": "挑战能力固定的看法。",
+    "tags": [
+      "academic"
+    ],
+    "tier": "high",
+    "id": 715
+  },
+  {
+    "word": "offset",
+    "spelling": "O-F-F-S-E-T",
+    "phonetic": "/ˈɒfset/",
+    "gloss": "抵消",
+    "tip": "carbon offset",
+    "example": "Gains may offset the costs.",
+    "exampleZh": "收益可能抵消成本。",
+    "tags": [
+      "academic"
+    ],
+    "tier": "high",
+    "id": 716
+  },
+  {
+    "word": "prevalent",
+    "spelling": "P-R-E-V-A-L-E-N-T",
+    "phonetic": "/ˈprevələnt/",
+    "gloss": "普遍的",
+    "tip": "prevalent in",
+    "example": "The view is prevalent among experts.",
+    "exampleZh": "该观点在专家中普遍。",
+    "tags": [
+      "academic"
+    ],
+    "tier": "high",
+    "id": 717
+  },
+  {
+    "word": "prohibit",
+    "spelling": "P-R-O-H-I-B-I-T",
+    "phonetic": "/prəˈhɪbɪt/",
+    "gloss": "禁止",
+    "tip": "prohibit from",
+    "example": "Rules prohibit late entries.",
+    "exampleZh": "规则禁止迟到入场。",
+    "tags": [
+      "campus"
+    ],
+    "tier": "high",
+    "id": 718
+  },
+  {
+    "word": "prospective",
+    "spelling": "P-R-O-S-P-E-C-T-I-V-E",
+    "phonetic": "/prəˈspektɪv/",
+    "gloss": "预期的；未来的",
+    "tip": "prospective student",
+    "example": "Prospective students visited campus.",
+    "exampleZh": "准学生参观了校园。",
+    "tags": [
+      "campus"
+    ],
+    "tier": "high",
+    "id": 719
+  },
+  {
+    "word": "reluctant",
+    "spelling": "R-E-L-U-C-T-A-N-T",
+    "phonetic": "/rɪˈlʌktənt/",
+    "gloss": "不情愿的",
+    "tip": "reluctant to",
+    "example": "He was reluctant to comment.",
+    "exampleZh": "他不愿置评。",
+    "tags": [
+      "academic"
+    ],
+    "tier": "mid",
+    "id": 720
+  },
+  {
+    "word": "remedy",
+    "spelling": "R-E-M-E-D-Y",
+    "phonetic": "/ˈremədi/",
+    "gloss": "补救；疗法",
+    "tip": "remedy for",
+    "example": "There is no simple remedy.",
+    "exampleZh": "没有简单的补救办法。",
+    "tags": [
+      "academic"
+    ],
+    "tier": "mid",
+    "id": 721
+  },
+  {
+    "word": "resemble",
+    "spelling": "R-E-S-E-M-B-L-E",
+    "phonetic": "/rɪˈzembl/",
+    "gloss": "类似",
+    "tip": "resemble each other",
+    "example": "The pattern resembles last year.",
+    "exampleZh": "该模式类似去年。",
+    "tags": [
+      "academic"
+    ],
+    "tier": "mid",
+    "id": 722
+  },
+  {
+    "word": "retain",
+    "spelling": "R-E-T-A-I-N",
+    "phonetic": "/rɪˈteɪn/",
+    "gloss": "保留",
+    "tip": "retain information",
+    "example": "Retain copies of all receipts.",
+    "exampleZh": "保留所有收据副本。",
+    "tags": [
+      "academic"
+    ],
+    "tier": "high",
+    "id": 723
+  },
+  {
+    "word": "scrutiny",
+    "spelling": "S-C-R-U-T-I-N-Y",
+    "phonetic": "/ˈskruːtəni/",
+    "gloss": "仔细审查",
+    "tip": "under scrutiny",
+    "example": "The plan faces public scrutiny.",
+    "exampleZh": "该计划面临公众审查。",
+    "tags": [
+      "academic"
+    ],
+    "tier": "high",
+    "id": 724
+  },
+  {
+    "word": "sustain",
+    "spelling": "S-U-S-T-A-I-N",
+    "phonetic": "/səˈsteɪn/",
+    "gloss": "维持",
+    "tip": "sustain momentum",
+    "example": "Can we sustain this growth?",
+    "exampleZh": "我们能否维持这种增长？",
+    "tags": [
+      "academic"
+    ],
+    "tier": "high",
+    "id": 725
+  },
+  {
+    "word": "utilise",
+    "spelling": "U-T-I-L-I-S-E",
+    "phonetic": "/ˈjuːtəlaɪz/",
+    "gloss": "利用",
+    "tip": "utilise resources",
+    "example": "Utilise primary sources carefully.",
+    "exampleZh": "仔细利用一手来源。",
+    "tags": [
+      "academic"
+    ],
+    "tier": "high",
+    "id": 726
+  },
+  {
+    "word": "whereby",
+    "spelling": "W-H-E-R-E-B-Y",
+    "phonetic": "/weəˈbaɪ/",
+    "gloss": "借以；凭此",
+    "tip": "whereby",
+    "example": "A system whereby students vote online.",
+    "exampleZh": "一种学生可在线投票的制度。",
+    "tags": [
+      "academic"
+    ],
+    "tier": "mid",
+    "id": 727
+  },
+  {
+    "word": "accumulate",
+    "spelling": "A-C-C-U-M-U-L-A-T-E",
+    "phonetic": "/əˈkjuːmjəleɪt/",
+    "gloss": "积累",
+    "tip": "accumulate data",
+    "example": "Evidence will accumulate over time.",
+    "exampleZh": "证据会随时间积累。",
+    "tags": [
+      "academic"
+    ],
+    "tier": "high",
+    "id": 728
+  },
+  {
+    "word": "adjacent",
+    "spelling": "A-D-J-A-C-E-N-T",
+    "phonetic": "/əˈdʒeɪsnt/",
+    "gloss": "邻近的",
+    "tip": "adjacent to",
+    "example": "The lab is adjacent to the library.",
+    "exampleZh": "实验室邻近图书馆。",
+    "tags": [
+      "academic"
+    ],
+    "tier": "mid",
+    "id": 729
+  },
+  {
+    "word": "advocate",
+    "spelling": "A-D-V-O-C-A-T-E",
+    "phonetic": "/ˈædvəkeɪt/",
+    "gloss": "倡导；提倡者",
+    "tip": "advocate for",
+    "example": "They advocate open access publishing.",
+    "exampleZh": "他们倡导开放获取出版。",
+    "tags": [
+      "academic"
+    ],
+    "tier": "high",
+    "id": 730
   }
 ];
   global.VOCAB_BANK = VOCAB_BANK;

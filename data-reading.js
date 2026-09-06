@@ -1,6 +1,6 @@
 /**
- * chinaPTE · Reading — FIB / Re-order / MCQ
- * Total: 60 items
+ * chinaPTE · Reading practice
+ * Total: 64 items
  */
 (function (global) {
   "use strict";
@@ -484,9 +484,40 @@
     "answer": "They help students understand grades",
     "zhAnalysis": "MCQ：透明标准帮助理解成绩。",
     "vocab": []
+  },
+  {
+    "id": 61,
+    "type": "RFIB",
+    "en": "Researchers must obtain ______ consent before collecting personal data from participants.",
+    "answer": "informed",
+    "zhAnalysis": "研究者在收集参与者个人数据前须获得知情同意。",
+    "vocab": []
+  },
+  {
+    "id": 62,
+    "type": "RFIB",
+    "en": "The ______ of the study was limited by the small sample size.",
+    "answer": "validity",
+    "zhAnalysis": "该研究的效度受限于较小的样本量。",
+    "vocab": []
+  },
+  {
+    "id": 63,
+    "type": "RWFIB",
+    "en": "Climate ______ has become a central topic in environmental policy debates worldwide.",
+    "answer": "change",
+    "zhAnalysis": "气候变化已成为全球环境政策辩论的中心议题。",
+    "vocab": []
+  },
+  {
+    "id": 64,
+    "type": "RWFIB",
+    "en": "Students are encouraged to ______ critically with academic texts rather than memorise them.",
+    "answer": "engage",
+    "zhAnalysis": "鼓励学生批判性接触学术文本，而非死记硬背。",
+    "vocab": []
   }
 ];
-
   READING_BANK.forEach(function (item) {
     if (!item.sentence && item.en) item.sentence = item.en;
     if (!item.analysis && item.zhAnalysis) item.analysis = item.zhAnalysis;

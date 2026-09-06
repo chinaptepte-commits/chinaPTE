@@ -1,6 +1,6 @@
 /**
  * chinaPTE · RL — Retell Lecture
- * Total: 52 items
+ * Total: 55 items
  */
 (function (global) {
   "use strict";
@@ -1304,9 +1304,101 @@
         "tip": ""
       }
     ]
+  },
+  {
+    "id": 53,
+    "en": "Today we examine peer assessment. Students evaluate each other's work using clear criteria. Benefits include deeper engagement and faster feedback. Challenges involve bias and inconsistent scoring. Training and rubrics improve reliability.",
+    "zhAnalysis": "讲座：同伴互评；用明确标准互评；加深参与与更快反馈；偏见与评分不一致；培训与量规提升信度。",
+    "vocab": [
+      {
+        "word": "assessment",
+        "spelling": "A-S-S-E-S-S-M-E-N-T",
+        "gloss": "评估",
+        "tip": ""
+      },
+      {
+        "word": "criteria",
+        "spelling": "C-R-I-T-E-R-I-A",
+        "gloss": "标准",
+        "tip": ""
+      },
+      {
+        "word": "engagement",
+        "spelling": "E-N-G-A-G-E-M-E-N-T",
+        "gloss": "参与",
+        "tip": ""
+      },
+      {
+        "word": "reliability",
+        "spelling": "R-E-L-I-A-B-I-L-I-T-Y",
+        "gloss": "信度",
+        "tip": ""
+      }
+    ]
+  },
+  {
+    "id": 54,
+    "en": "This lecture covers urban mobility. Congestion raises costs and pollution. Cities invest in transit, cycling lanes and congestion charges. Behaviour change remains difficult without convenient alternatives.",
+    "zhAnalysis": "讲座：城市出行；拥堵增成本与污染；投资公交、骑行道与拥堵费；无便捷替代则行为难变。",
+    "vocab": [
+      {
+        "word": "mobility",
+        "spelling": "M-O-B-I-L-I-T-Y",
+        "gloss": "出行/流动性",
+        "tip": ""
+      },
+      {
+        "word": "Congestion",
+        "spelling": "C-O-N-G-E-S-T-I-O-N",
+        "gloss": "拥堵",
+        "tip": ""
+      },
+      {
+        "word": "transit",
+        "spelling": "T-R-A-N-S-I-T",
+        "gloss": "公共交通",
+        "tip": ""
+      },
+      {
+        "word": "alternatives",
+        "spelling": "A-L-T-E-R-N-A-T-I-V-E-S",
+        "gloss": "替代方案",
+        "tip": ""
+      }
+    ]
+  },
+  {
+    "id": 55,
+    "en": "We discuss open educational resources. Free textbooks lower costs for students. Quality control and updating remain concerns. Institutions may incentivise staff to create shared materials.",
+    "zhAnalysis": "讲座：开放教育资源；免费教材降成本；质量与更新仍存忧；机构可激励教师共享材料。",
+    "vocab": [
+      {
+        "word": "educational",
+        "spelling": "E-D-U-C-A-T-I-O-N-A-L",
+        "gloss": "教育的",
+        "tip": ""
+      },
+      {
+        "word": "resources",
+        "spelling": "R-E-S-O-U-R-C-E-S",
+        "gloss": "资源",
+        "tip": ""
+      },
+      {
+        "word": "incentivise",
+        "spelling": "I-N-C-E-N-T-I-V-I-S-E",
+        "gloss": "激励",
+        "tip": ""
+      },
+      {
+        "word": "materials",
+        "spelling": "M-A-T-E-R-I-A-L-S",
+        "gloss": "材料",
+        "tip": ""
+      }
+    ]
   }
 ];
-
   RL_BANK.forEach(function (item) {
     if (!item.sentence && item.en) item.sentence = item.en;
     if (!item.analysis && item.zhAnalysis) item.analysis = item.zhAnalysis;

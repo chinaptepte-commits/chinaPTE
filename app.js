@@ -201,26 +201,60 @@
     const voices = speechSynthesis.getVoices();
     if (!voices.length) return;
 
-    const enPrefs = ["en-US", "en_US", "en-GB", "en_GB", "en"];
-    const zhPrefs = ["zh-CN", "zh_CN", "zh-Hans", "cmn-Hans", "zh"];
+    function scoreEn(v) {
+      const lang = (v.lang || "").replace(/_/g, "-").toLowerCase();
+      const name = (v.name || "").toLowerCase();
+      if (!/^en\b/.test(lang) && !/^en-/.test(lang)) return -1;
+      let s = 0;
+      if (lang.startsWith("en-gb") || lang.startsWith("en-au")) s += 100;
+      else if (lang.startsWith("en-us")) s += 35;
+      else s += 15;
+      if (/google\s*uk|uk\s*english|english\s*uk|british/.test(name)) s += 55;
+      if (/australian|en-au|google\s*au|australia/.test(name)) s += 50;
+      if (/en-gb/.test(lang) && /google|microsoft|premium|enhanced|neural/.test(name)) s += 20;
+      if (/en-au/.test(lang) && /google|microsoft|premium|enhanced|neural/.test(name)) s += 18;
+      if (v.localService) s += 3;
+      return s;
+    }
 
-    function find(prefs, langPrefix) {
-      for (const p of prefs) {
+    const zhPrefs = ["zh-CN", "zh_CN", "zh-Hans", "cmn-Hans", "zh"];
+    let bestEn = null;
+    let bestScore = -1;
+    for (const v of voices) {
+      const sc = scoreEn(v);
+      if (sc > bestScore) {
+        bestScore = sc;
+        bestEn = v;
+      }
+    }
+    if (!bestEn) {
+      bestEn =
+        voices.find((v) => /^en(-|_)US/i.test(v.lang)) ||
+        voices.find((v) => /en/i.test(v.lang)) ||
+        null;
+    }
+
+    function findZh() {
+      for (const p of zhPrefs) {
         const exact = voices.find(
           (v) => v.lang === p || v.lang.replace("_", "-") === p
         );
         if (exact) return exact;
       }
       return (
-        voices.find((v) =>
-          v.lang.toLowerCase().startsWith(langPrefix.toLowerCase())
-        ) || null
+        voices.find((v) => /zh(-|_)CN|cmn/i.test(v.lang)) ||
+        voices.find((v) => /zh|cmn/i.test(v.lang)) ||
+        null
       );
     }
 
-    state.enVoice = find(enPrefs, "en") || voices.find((v) => /en/i.test(v.lang));
-    state.zhVoice = find(zhPrefs, "zh") || voices.find((v) => /zh|cmn/i.test(v.lang));
+    state.enVoice = bestEn;
+    state.zhVoice = findZh();
     state.voicesReady = true;
+  }
+
+  function enSpeakLang() {
+    return (state.enVoice && state.enVoice.lang) || "en-GB";
   }
 
   let pauseTimer = null;
@@ -433,9 +467,9 @@
       if (!fromVocab) {
         setPhase("en", "英文句子");
         highlightVocab(-1);
-        const enRate = Math.max(0.65, state.rate * 0.9);
+        const enRate = Math.max(0.65, state.rate * 0.88);
         const r1 = await speak(itemEn(item), {
-          lang: "en-US",
+          lang: enSpeakLang(),
           rate: enRate,
           voice: state.enVoice,
         });
@@ -469,8 +503,8 @@
 
         setPhase("vocab-word", `词汇 · ${v.word}`);
         const rw = await speak(v.word, {
-          lang: "en-US",
-          rate: Math.max(0.7, state.rate * 0.95),
+          lang: enSpeakLang(),
+          rate: Math.max(0.7, state.rate * 0.88),
           voice: state.enVoice,
         });
         if (!isActive(token) || (rw && rw.interrupted)) return;
@@ -480,7 +514,7 @@
         setPhase("vocab-spell", `拼写 · ${v.spelling}`);
         const letters = lettersOf(v.spelling);
         const rs = await speak(letters, {
-          lang: "en-US",
+          lang: enSpeakLang(),
           rate: Math.max(0.6, state.rate * 0.75),
           voice: state.enVoice,
         });
@@ -490,7 +524,7 @@
 
         if (state.zhOn && v.gloss) {
           setPhase("vocab-gloss", `释义 · ${v.gloss}`);
-          const glossText = v.gloss;
+          const glossText = v.gloss; // zh-CN gloss only — never speak tip/跟读技巧
           const rg = await speak(glossText, {
             lang: "zh-CN",
             rate: state.rate,

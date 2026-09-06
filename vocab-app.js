@@ -78,10 +78,35 @@
     if (!window.speechSynthesis) return;
     var voices = speechSynthesis.getVoices();
     if (!voices.length) return;
-    state.enVoice = voices.find(function (v) { return /^en(-|_)US/i.test(v.lang); })
-      || voices.find(function (v) { return /^en/i.test(v.lang); }) || null;
+    function scoreEn(v) {
+      var lang = (v.lang || "").replace(/_/g, "-").toLowerCase();
+      var name = (v.name || "").toLowerCase();
+      if (!/^en\b/.test(lang) && !/^en-/.test(lang)) return -1;
+      var s = 0;
+      if (lang.indexOf("en-gb") === 0 || lang.indexOf("en-au") === 0) s += 100;
+      else if (lang.indexOf("en-us") === 0) s += 35;
+      else s += 15;
+      if (/google\s*uk|uk\s*english|english\s*uk|british/.test(name)) s += 55;
+      if (/australian|en-au|google\s*au|australia/.test(name)) s += 50;
+      if (v.localService) s += 3;
+      return s;
+    }
+    var bestEn = null, bestScore = -1, i, sc;
+    for (i = 0; i < voices.length; i++) {
+      sc = scoreEn(voices[i]);
+      if (sc > bestScore) { bestScore = sc; bestEn = voices[i]; }
+    }
+    if (!bestEn) {
+      bestEn = voices.find(function (v) { return /^en(-|_)US/i.test(v.lang); })
+        || voices.find(function (v) { return /^en/i.test(v.lang); }) || null;
+    }
+    state.enVoice = bestEn;
     state.zhVoice = voices.find(function (v) { return /zh(-|_)CN|cmn/i.test(v.lang); })
       || voices.find(function (v) { return /zh|cmn/i.test(v.lang); }) || null;
+  }
+
+  function enSpeakLang() {
+    return (state.enVoice && state.enVoice.lang) || "en-GB";
   }
 
   function cancelSpeech() {
@@ -269,14 +294,14 @@
     if (!it) { stopAll(); return; }
     try {
       setPhase("单词");
-      var r1 = await speak(it.word, { lang: "en-US", rate: Math.max(0.7, state.rate * 0.95), voice: state.enVoice });
+      var r1 = await speak(it.word, { lang: enSpeakLang(), rate: Math.max(0.7, state.rate * 0.88), voice: state.enVoice });
       if (!isActive(token) || (r1 && r1.interrupted)) return;
       await wait(280);
       if (!isActive(token)) return;
 
       if (state.spellOn && it.spelling) {
         setPhase("拼读");
-        var r2 = await speak(lettersOf(it.spelling), { lang: "en-US", rate: Math.max(0.55, state.rate * 0.72), voice: state.enVoice });
+        var r2 = await speak(lettersOf(it.spelling), { lang: enSpeakLang(), rate: Math.max(0.55, state.rate * 0.72), voice: state.enVoice });
         if (!isActive(token) || (r2 && r2.interrupted)) return;
         await wait(280);
         if (!isActive(token)) return;
@@ -293,7 +318,7 @@
 
       if (state.exampleOn && it.example) {
         setPhase("例句");
-        var r4 = await speak(it.example, { lang: "en-US", rate: Math.max(0.7, state.rate * 0.9), voice: state.enVoice });
+        var r4 = await speak(it.example, { lang: enSpeakLang(), rate: Math.max(0.7, state.rate * 0.88), voice: state.enVoice });
         if (!isActive(token) || (r4 && r4.interrupted)) return;
         await wait(250);
         if (!isActive(token)) return;

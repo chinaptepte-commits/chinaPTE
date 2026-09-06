@@ -1,6 +1,6 @@
 /**
  * chinaPTE · HIW — Highlight Incorrect Words
- * Total: 42 items
+ * Total: 45 items
  */
 (function (global) {
   "use strict";
@@ -886,9 +886,86 @@
         "tip": ""
       }
     ]
+  },
+  {
+    "id": 43,
+    "en": "The university library will remain open until midnight during the examination period.",
+    "zhAnalysis": "考试期间大学图书馆将开放至午夜。",
+    "vocab": [
+      {
+        "word": "remain",
+        "spelling": "R-E-M-A-I-N",
+        "gloss": "保持",
+        "tip": ""
+      },
+      {
+        "word": "midnight",
+        "spelling": "M-I-D-N-I-G-H-T",
+        "gloss": "午夜",
+        "tip": ""
+      },
+      {
+        "word": "examination",
+        "spelling": "E-X-A-M-I-N-A-T-I-O-N",
+        "gloss": "考试",
+        "tip": ""
+      }
+    ],
+    "transcript": "The university library will remain open until midnight during the examination period."
+  },
+  {
+    "id": 44,
+    "en": "Participants completed a questionnaire about their daily commuting habits and preferences.",
+    "zhAnalysis": "参与者完成了关于日常通勤习惯与偏好的问卷。",
+    "vocab": [
+      {
+        "word": "Participants",
+        "spelling": "P-A-R-T-I-C-I-P-A-N-T-S",
+        "gloss": "参与者",
+        "tip": ""
+      },
+      {
+        "word": "questionnaire",
+        "spelling": "Q-U-E-S-T-I-O-N-N-A-I-R-E",
+        "gloss": "问卷",
+        "tip": ""
+      },
+      {
+        "word": "commuting",
+        "spelling": "C-O-M-M-U-T-I-N-G",
+        "gloss": "通勤",
+        "tip": ""
+      }
+    ],
+    "transcript": "Participants completed a questionnaire about their daily commuting habits and preferences."
+  },
+  {
+    "id": 45,
+    "en": "Sustainable design aims to minimise waste while maximising energy efficiency in buildings.",
+    "zhAnalysis": "可持续设计旨在最小化废物同时最大化建筑能效。",
+    "vocab": [
+      {
+        "word": "minimise",
+        "spelling": "M-I-N-I-M-I-S-E",
+        "gloss": "最小化",
+        "tip": ""
+      },
+      {
+        "word": "maximising",
+        "spelling": "M-A-X-I-M-I-S-I-N-G",
+        "gloss": "最大化",
+        "tip": ""
+      },
+      {
+        "word": "efficiency",
+        "spelling": "E-F-F-I-C-I-E-N-C-Y",
+        "gloss": "效率",
+        "tip": ""
+      }
+    ],
+    "transcript": "Sustainable design aims to minimise waste while maximising energy efficiency in buildings."
   }
 ];
-
   HIW_BANK.forEach(function (item) {
     if (!item.sentence && item.en) item.sentence = item.en;
     if (!item.analysis && item.zhAnalysis) item.analysis = item.zhAnalysis;

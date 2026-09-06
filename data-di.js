@@ -1,6 +1,6 @@
 /**
  * chinaPTE · DI — Describe Image
- * Total: 42 items
+ * Total: 45 items
  */
 (function (global) {
   "use strict";
@@ -1096,9 +1096,92 @@
         "tip": ""
       }
     ]
+  },
+  {
+    "id": 43,
+    "en": "The bar chart compares average weekly study hours for arts and science students across four years.",
+    "zhAnalysis": "柱状图比较四年间文科与理科学生平均每周学习小时数。",
+    "vocab": [
+      {
+        "word": "compares",
+        "spelling": "C-O-M-P-A-R-E-S",
+        "gloss": "比较",
+        "tip": ""
+      },
+      {
+        "word": "average",
+        "spelling": "A-V-E-R-A-G-E",
+        "gloss": "平均",
+        "tip": ""
+      },
+      {
+        "word": "weekly",
+        "spelling": "W-E-E-K-L-Y",
+        "gloss": "每周的",
+        "tip": ""
+      }
+    ],
+    "scene": "The bar chart compares average weekly study hours for arts and science students across four years."
+  },
+  {
+    "id": 44,
+    "en": "The line graph shows a gradual decline in printed newspaper circulation from 2005 to 2020.",
+    "zhAnalysis": "折线图显示2005至2020年纸质报纸发行量逐渐下降。",
+    "vocab": [
+      {
+        "word": "gradual",
+        "spelling": "G-R-A-D-U-A-L",
+        "gloss": "逐渐的",
+        "tip": ""
+      },
+      {
+        "word": "decline",
+        "spelling": "D-E-C-L-I-N-E",
+        "gloss": "下降",
+        "tip": ""
+      },
+      {
+        "word": "circulation",
+        "spelling": "C-I-R-C-U-L-A-T-I-O-N",
+        "gloss": "发行量",
+        "tip": ""
+      }
+    ],
+    "scene": "The line graph shows a gradual decline in printed newspaper circulation from 2005 to 2020."
+  },
+  {
+    "id": 45,
+    "en": "The pie chart illustrates the proportion of university funding from fees, grants and donations.",
+    "zhAnalysis": "饼图说明大学经费来自学费、拨款与捐赠的比例。",
+    "vocab": [
+      {
+        "word": "illustrates",
+        "spelling": "I-L-L-U-S-T-R-A-T-E-S",
+        "gloss": "说明",
+        "tip": ""
+      },
+      {
+        "word": "proportion",
+        "spelling": "P-R-O-P-O-R-T-I-O-N",
+        "gloss": "比例",
+        "tip": ""
+      },
+      {
+        "word": "funding",
+        "spelling": "F-U-N-D-I-N-G",
+        "gloss": "经费",
+        "tip": ""
+      },
+      {
+        "word": "grants",
+        "spelling": "G-R-A-N-T-S",
+        "gloss": "拨款",
+        "tip": ""
+      }
+    ],
+    "scene": "The pie chart illustrates the proportion of university funding from fees, grants and donations."
   }
 ];
-
   DI_BANK.forEach(function (item) {
     if (!item.sentence && item.en) item.sentence = item.en;
     if (!item.analysis && item.zhAnalysis) item.analysis = item.zhAnalysis;

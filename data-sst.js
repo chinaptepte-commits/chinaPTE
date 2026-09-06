@@ -1,6 +1,6 @@
 /**
  * chinaPTE · SST — Summarize Spoken Text
- * Total: 42 items
+ * Total: 45 items
  */
 (function (global) {
   "use strict";
@@ -958,9 +958,104 @@
         "tip": ""
       }
     ]
+  },
+  {
+    "id": 43,
+    "en": "Researchers compared hybrid and fully online courses across three universities. Hybrid learners reported higher satisfaction and slightly better grades. Access to campus facilities appeared to matter. The study recommends flexible blending rather than fully remote delivery for first-year students.",
+    "zhAnalysis": "总结：混合与全线上课对比→混合满意度与成绩略高→校园设施重要→建议一年级灵活混合而非全远程。",
+    "vocab": [
+      {
+        "word": "hybrid",
+        "spelling": "H-Y-B-R-I-D",
+        "gloss": "混合的",
+        "tip": ""
+      },
+      {
+        "word": "satisfaction",
+        "spelling": "S-A-T-I-S-F-A-C-T-I-O-N",
+        "gloss": "满意度",
+        "tip": ""
+      },
+      {
+        "word": "facilities",
+        "spelling": "F-A-C-I-L-I-T-I-E-S",
+        "gloss": "设施",
+        "tip": ""
+      },
+      {
+        "word": "blending",
+        "spelling": "B-L-E-N-D-I-N-G",
+        "gloss": "混合",
+        "tip": ""
+      }
+    ],
+    "passage": "Researchers compared hybrid and fully online courses across three universities. Hybrid learners reported higher satisfaction and slightly better grades. Access to campus facilities appeared to matter. The study recommends flexible blending rather than fully remote delivery for first-year students."
+  },
+  {
+    "id": 44,
+    "en": "A coastal city piloted permeable pavements to reduce flood risk. Early data showed faster drainage after storms. Maintenance costs were higher than expected. Officials plan a wider rollout with better contractor training.",
+    "zhAnalysis": "总结：透水铺装试点减洪涝→暴雨后排水更快→维护成本偏高→扩大推广并加强承包商培训。",
+    "vocab": [
+      {
+        "word": "permeable",
+        "spelling": "P-E-R-M-E-A-B-L-E",
+        "gloss": "透水的",
+        "tip": ""
+      },
+      {
+        "word": "drainage",
+        "spelling": "D-R-A-I-N-A-G-E",
+        "gloss": "排水",
+        "tip": ""
+      },
+      {
+        "word": "Maintenance",
+        "spelling": "M-A-I-N-T-E-N-A-N-C-E",
+        "gloss": "维护",
+        "tip": ""
+      },
+      {
+        "word": "rollout",
+        "spelling": "R-O-L-L-O-U-T",
+        "gloss": "推广",
+        "tip": ""
+      }
+    ],
+    "passage": "A coastal city piloted permeable pavements to reduce flood risk. Early data showed faster drainage after storms. Maintenance costs were higher than expected. Officials plan a wider rollout with better contractor training."
+  },
+  {
+    "id": 45,
+    "en": "Language support workshops helped international students improve academic writing. Attendance correlated with higher essay scores. Evening sessions attracted more participants than daytime ones. The university will expand the programme next year.",
+    "zhAnalysis": "总结：语言工作坊助国际生写作→出勤与论文分数相关→晚间更受欢迎→明年扩大项目。",
+    "vocab": [
+      {
+        "word": "workshops",
+        "spelling": "W-O-R-K-S-H-O-P-S",
+        "gloss": "工作坊",
+        "tip": ""
+      },
+      {
+        "word": "correlated",
+        "spelling": "C-O-R-R-E-L-A-T-E-D",
+        "gloss": "相关",
+        "tip": ""
+      },
+      {
+        "word": "participants",
+        "spelling": "P-A-R-T-I-C-I-P-A-N-T-S",
+        "gloss": "参与者",
+        "tip": ""
+      },
+      {
+        "word": "expand",
+        "spelling": "E-X-P-A-N-D",
+        "gloss": "扩大",
+        "tip": ""
+      }
+    ],
+    "passage": "Language support workshops helped international students improve academic writing. Attendance correlated with higher essay scores. Evening sessions attracted more participants than daytime ones. The university will expand the programme next year."
   }
 ];
-
   SST_BANK.forEach(function (item) {
     if (!item.sentence && item.en) item.sentence = item.en;
     if (!item.analysis && item.zhAnalysis) item.analysis = item.zhAnalysis;

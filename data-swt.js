@@ -1,6 +1,6 @@
 /**
  * chinaPTE · SWT — Summarize Written Text
- * Total: 40 items
+ * Total: 42 items
  */
 (function (global) {
   "use strict";
@@ -822,9 +822,72 @@
         "tip": ""
       }
     ]
+  },
+  {
+    "id": 41,
+    "en": "Remote invigilation tools monitor exam sessions through webcam and screen capture. Supporters argue they protect integrity for distance learners. Critics raise privacy concerns and unequal access to reliable technology. Clear guidelines and technical support are essential if such systems are used.",
+    "zhAnalysis": "合并：远程监考用摄像头与录屏；支持者认为护诚信；批评者忧隐私与技术不平等；使用需明确指南与技术支持。",
+    "vocab": [
+      {
+        "word": "invigilation",
+        "spelling": "I-N-V-I-G-I-L-A-T-I-O-N",
+        "gloss": "监考",
+        "tip": ""
+      },
+      {
+        "word": "integrity",
+        "spelling": "I-N-T-E-G-R-I-T-Y",
+        "gloss": "诚信",
+        "tip": ""
+      },
+      {
+        "word": "privacy",
+        "spelling": "P-R-I-V-A-C-Y",
+        "gloss": "隐私",
+        "tip": ""
+      },
+      {
+        "word": "guidelines",
+        "spelling": "G-U-I-D-E-L-I-N-E-S",
+        "gloss": "指南",
+        "tip": ""
+      }
+    ],
+    "passage": "Remote invigilation tools monitor exam sessions through webcam and screen capture. Supporters argue they protect integrity for distance learners. Critics raise privacy concerns and unequal access to reliable technology. Clear guidelines and technical support are essential if such systems are used."
+  },
+  {
+    "id": 42,
+    "en": "Community gardens on campus provide fresh produce and informal learning spaces. Volunteers manage planting schedules and composting. Participation has grown among both students and local residents. Limited land remains the main constraint on expansion.",
+    "zhAnalysis": "合并：校园社区花园提供新鲜农产品与非正式学习空间；志愿者管理种植与堆肥；学生与居民参与增加；土地有限制约扩展。",
+    "vocab": [
+      {
+        "word": "produce",
+        "spelling": "P-R-O-D-U-C-E",
+        "gloss": "农产品",
+        "tip": ""
+      },
+      {
+        "word": "Volunteers",
+        "spelling": "V-O-L-U-N-T-E-E-R-S",
+        "gloss": "志愿者",
+        "tip": ""
+      },
+      {
+        "word": "Participation",
+        "spelling": "P-A-R-T-I-C-I-P-A-T-I-O-N",
+        "gloss": "参与",
+        "tip": ""
+      },
+      {
+        "word": "constraint",
+        "spelling": "C-O-N-S-T-R-A-I-N-T",
+        "gloss": "制约",
+        "tip": ""
+      }
+    ],
+    "passage": "Community gardens on campus provide fresh produce and informal learning spaces. Volunteers manage planting schedules and composting. Participation has grown among both students and local residents. Limited land remains the main constraint on expansion."
   }
 ];
-
   SWT_BANK.forEach(function (item) {
     if (!item.sentence && item.en) item.sentence = item.en;
     if (!item.analysis && item.zhAnalysis) item.analysis = item.zhAnalysis;

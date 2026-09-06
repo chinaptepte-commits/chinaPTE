@@ -1,6 +1,6 @@
 /**
  * chinaPTE · RA — Read Aloud
- * Total: 82 items
+ * Total: 90 items
  */
 (function (global) {
   "use strict";
@@ -1796,9 +1796,220 @@
         "tip": ""
       }
     ]
+  },
+  {
+    "id": 83,
+    "en": "Renewable energy investment has accelerated across developed and emerging economies.",
+    "zhAnalysis": "可再生能源投资在发达与新兴经济体中加速。",
+    "vocab": [
+      {
+        "word": "Renewable",
+        "spelling": "R-E-N-E-W-A-B-L-E",
+        "gloss": "可再生的",
+        "tip": ""
+      },
+      {
+        "word": "accelerated",
+        "spelling": "A-C-C-E-L-E-R-A-T-E-D",
+        "gloss": "加速",
+        "tip": ""
+      },
+      {
+        "word": "emerging",
+        "spelling": "E-M-E-R-G-I-N-G",
+        "gloss": "新兴的",
+        "tip": ""
+      }
+    ]
+  },
+  {
+    "id": 84,
+    "en": "Academic integrity policies outline procedures for investigating suspected misconduct.",
+    "zhAnalysis": "学术诚信政策概述调查涉嫌不当行为的程序。",
+    "vocab": [
+      {
+        "word": "integrity",
+        "spelling": "I-N-T-E-G-R-I-T-Y",
+        "gloss": "诚信",
+        "tip": ""
+      },
+      {
+        "word": "outline",
+        "spelling": "O-U-T-L-I-N-E",
+        "gloss": "概述",
+        "tip": ""
+      },
+      {
+        "word": "misconduct",
+        "spelling": "M-I-S-C-O-N-D-U-C-T",
+        "gloss": "不当行为",
+        "tip": ""
+      }
+    ]
+  },
+  {
+    "id": 85,
+    "en": "Urban heat islands intensify during prolonged summer heatwaves in dense cities.",
+    "zhAnalysis": "密集城市中，城市热岛在漫长夏季热浪期间加剧。",
+    "vocab": [
+      {
+        "word": "intensify",
+        "spelling": "I-N-T-E-N-S-I-F-Y",
+        "gloss": "加剧",
+        "tip": ""
+      },
+      {
+        "word": "prolonged",
+        "spelling": "P-R-O-L-O-N-G-E-D",
+        "gloss": "漫长的",
+        "tip": ""
+      },
+      {
+        "word": "heatwaves",
+        "spelling": "H-E-A-T-W-A-V-E-S",
+        "gloss": "热浪",
+        "tip": ""
+      }
+    ]
+  },
+  {
+    "id": 86,
+    "en": "Longitudinal studies track the same participants over extended periods of time.",
+    "zhAnalysis": "纵向研究在较长时期内追踪同一批参与者。",
+    "vocab": [
+      {
+        "word": "Longitudinal",
+        "spelling": "L-O-N-G-I-T-U-D-I-N-A-L",
+        "gloss": "纵向的",
+        "tip": ""
+      },
+      {
+        "word": "track",
+        "spelling": "T-R-A-C-K",
+        "gloss": "追踪",
+        "tip": ""
+      },
+      {
+        "word": "participants",
+        "spelling": "P-A-R-T-I-C-I-P-A-N-T-S",
+        "gloss": "参与者",
+        "tip": ""
+      }
+    ]
+  },
+  {
+    "id": 87,
+    "en": "Digital archives preserve rare manuscripts for future scholarly access worldwide.",
+    "zhAnalysis": "数字档案为全球未来学术获取保存稀有手稿。",
+    "vocab": [
+      {
+        "word": "archives",
+        "spelling": "A-R-C-H-I-V-E-S",
+        "gloss": "档案",
+        "tip": ""
+      },
+      {
+        "word": "preserve",
+        "spelling": "P-R-E-S-E-R-V-E",
+        "gloss": "保存",
+        "tip": ""
+      },
+      {
+        "word": "manuscripts",
+        "spelling": "M-A-N-U-S-C-R-I-P-T-S",
+        "gloss": "手稿",
+        "tip": ""
+      },
+      {
+        "word": "scholarly",
+        "spelling": "S-C-H-O-L-A-R-L-Y",
+        "gloss": "学术的",
+        "tip": ""
+      }
+    ]
+  },
+  {
+    "id": 88,
+    "en": "Effective paraphrasing demonstrates understanding rather than mere substitution of synonyms.",
+    "zhAnalysis": "有效改述体现理解，而非仅仅替换同义词。",
+    "vocab": [
+      {
+        "word": "paraphrasing",
+        "spelling": "P-A-R-A-P-H-R-A-S-I-N-G",
+        "gloss": "改述",
+        "tip": ""
+      },
+      {
+        "word": "demonstrates",
+        "spelling": "D-E-M-O-N-S-T-R-A-T-E-S",
+        "gloss": "体现",
+        "tip": ""
+      },
+      {
+        "word": "substitution",
+        "spelling": "S-U-B-S-T-I-T-U-T-I-O-N",
+        "gloss": "替换",
+        "tip": ""
+      },
+      {
+        "word": "synonyms",
+        "spelling": "S-Y-N-O-N-Y-M-S",
+        "gloss": "同义词",
+        "tip": ""
+      }
+    ]
+  },
+  {
+    "id": 89,
+    "en": "Public health campaigns aim to reduce tobacco use among adolescents and young adults.",
+    "zhAnalysis": "公共卫生运动旨在减少青少年与年轻人的烟草使用。",
+    "vocab": [
+      {
+        "word": "campaigns",
+        "spelling": "C-A-M-P-A-I-G-N-S",
+        "gloss": "运动",
+        "tip": ""
+      },
+      {
+        "word": "reduce",
+        "spelling": "R-E-D-U-C-E",
+        "gloss": "减少",
+        "tip": ""
+      },
+      {
+        "word": "adolescents",
+        "spelling": "A-D-O-L-E-S-C-E-N-T-S",
+        "gloss": "青少年",
+        "tip": ""
+      }
+    ]
+  },
+  {
+    "id": 90,
+    "en": "Interdisciplinary research bridges gaps between traditionally separate academic fields.",
+    "zhAnalysis": "跨学科研究弥合传统上分离的学术领域之间的差距。",
+    "vocab": [
+      {
+        "word": "Interdisciplinary",
+        "spelling": "I-N-T-E-R-D-I-S-C-I-P-L-I-N-A-R-Y",
+        "gloss": "跨学科的",
+        "tip": ""
+      },
+      {
+        "word": "bridges",
+        "spelling": "B-R-I-D-G-E-S",
+        "gloss": "弥合",
+        "tip": ""
+      },
+      {
+        "word": "traditionally",
+        "spelling": "T-R-A-D-I-T-I-O-N-A-L-L-Y",
+        "gloss": "传统上",
+        "tip": ""
+      }
+    ]
   }
 ];
-
   RA_BANK.forEach(function (item) {
     if (!item.sentence && item.en) item.sentence = item.en;
     if (!item.analysis && item.zhAnalysis) item.analysis = item.zhAnalysis;
