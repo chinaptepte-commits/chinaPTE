@@ -14,14 +14,36 @@ chinaPTE · 全题型练习站 — 打开说明
    rs.html    — RS Repeat Sentence（跟读）
    vocab.html — 单词库 / 单词随身听（核心词汇）
 
-3. 单文件双击版（无需整个文件夹）：
+3. 出国劳务引导页（合规信息，软性留资）：
+   labor.html — 「考不过怎么办 / 出国劳务」公开页
+   线上地址：https://chinaptepte-commits.github.io/chinaPTE/labor.html
+   consult.html — 咨询留资表
+
+4. 内容后台（零成本，GitHub Pages 可编辑 labor 文案）：
+   admin/          — 后台入口
+   线上地址：https://chinaptepte-commits.github.io/chinaPTE/admin/
+   默认密码：见 admin/config.js 里的 window.ADMIN_PASSWORD（初次为 chinaPTE2026）
+   ★ 请尽快改成你自己的密码：编辑 admin/config.js 后推送到 main 即可。
+
+   如何创建 GitHub PAT（用于后台「保存到 GitHub」）：
+   a. 登录 GitHub → Settings → Developer settings
+   b. Personal access tokens → Tokens (classic) → Generate new token
+   c. 勾选 repo 权限，生成后复制（只显示一次）
+   d. 在后台粘贴 Token；可选「记住 Token」（仅存你浏览器，勿在公共电脑勾选）
+   e. 无 Token 时可点「本地下载 JSON」，再手动更新仓库 content/labor.json
+
+5. 单文件双击版（无需整个文件夹）：
    chinaPTE-随身听.html       — WFD 单文件
    chinaPTE-RS随身听.html     — RS 单文件
    chinaPTE-单词随身听.html   — 单词库单文件
 
-4. 远程桌面可能听不到声音；请在实体电脑用 Chrome / Edge 打开。
+6. 远程桌面可能听不到声音；请在实体电脑用 Chrome / Edge 打开。
    语音由浏览器 Web Speech API 本地合成，无需联网、无需服务器。
 
-5. 本地预览（可选）：
+7. 本地预览（可选）：
    python3 -m http.server 8080
    浏览器访问 http://127.0.0.1:8080/体验全部功能.html
+   后台预览：http://127.0.0.1:8080/admin/
+
+8. 合规：本站仅提供 PTE 练习与正规出国劳务 / 海外就业信息咨询。
+   禁止任何考试舞弊相关内容与服务。不承诺签证、工作或移民结果。

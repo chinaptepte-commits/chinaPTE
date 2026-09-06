@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+  <meta name="theme-color" content="#0c0f14" />
+  <meta name="description" content="chinaPTE — 考不过 PTE 也可以了解正规出国劳务 / 海外就业咨询。继续免费练习，合规信息入口。" />
+  <title>chinaPTE · 出国劳务 · 考不过怎么办</title>
+  <link rel="stylesheet" href="styles.css" />
+  <style>
+    .labor-section { margin-top: 20px; }
+    .labor-section h2 {
+      font-size: 1.05rem;
+      font-weight: 700;
+      margin-bottom: 10px;
+      letter-spacing: -0.02em;
+    }
+    .labor-intro {
+      color: var(--text-muted);
+      font-size: 0.92rem;
+      line-height: 1.65;
+      margin-top: 8px;
+    }
+    .labor-list {
+      list-style: none;
+      display: flex;
+      flex-direction: column;
+      gap: 8px;
+      margin-top: 4px;
+    }
+    .labor-list li {
+      background: var(--bg-card);
+      border: 1px solid var(--border);
+      border-radius: var(--radius-sm);
+      padding: 12px 14px;
+      font-size: 0.9rem;
+      color: var(--text);
+      line-height: 1.5;
+      position: relative;
+      padding-left: 36px;
+    }
+    .labor-list li::before {
+      content: "·";
+      position: absolute;
+      left: 14px;
+      top: 10px;
+      color: var(--accent);
+      font-weight: 700;
+      font-size: 1.2rem;
+    }
+    .labor-cta-row {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 10px;
+      margin-top: 18px;
+      align-items: center;
+    }
+    .labor-meta {
+      margin-top: 16px;
+      font-size: 0.75rem;
+      color: var(--text-muted);
+    }
+    .labor-wx {
+      margin-top: 14px;
+      padding: 12px 14px;
+      background: var(--bg-elevated);
+      border: 1px dashed var(--border);
+      border-radius: var(--radius-sm);
+      font-size: 0.85rem;
+      color: var(--text-muted);
+    }
+    .labor-wx strong { color: var(--text); }
+    .labor-loading {
+      color: var(--text-muted);
+      padding: 24px 0;
+      text-align: center;
+    }
+  </style>
+</head>
+<body>
+  <div class="app app-wide">
+    <nav class="site-nav" aria-label="站点导航">
+      <a class="site-nav-brand" href="index.html">chinaPTE</a>
+      <ul class="site-nav-links">
+        <li><a href="index.html">首页</a></li>
+        <li><a href="practice.html">练习中心</a></li>
+        <li><a href="wfd.html">WFD</a></li>
+        <li><a href="rs.html">RS</a></li>
+        <li><a href="vocab.html">单词库</a></li>
+        <li><a href="bank.html">题库</a></li>
+        <li><a href="labor.html" class="is-active">出国劳务</a></li>
+        <li><a href="consult.html">出国咨询</a></li>
+      </ul>
+    </nav>
+
+    <div id="laborRoot">
+      <p class="labor-loading" id="laborLoading">加载中…</p>
+    </div>
+
+    <footer class="site-footer">
+      chinaPTE · 出国劳务信息页 · 合规咨询入口<br />
+      继续免费练习 PTE，也可了解海外就业路径
+    </footer>
+  </div>
+
+  <script>
+    (async function () {
+      var root = document.getElementById("laborRoot");
+      var loading = document.getElementById("laborLoading");
+      try {
+        var res = await fetch("content/labor.json", { cache: "no-store" });
+        if (!res.ok) throw new Error("HTTP " + res.status);
+        var data = await res.json();
+        loading.remove();
+
+        function esc(s) {
+          return String(s == null ? "" : s)
+            .replace(/&/g, "&amp;")
+            .replace(/</g, "&lt;")
+            .replace(/>/g, "&gt;")
+            .replace(/"/g, "&quot;");
+        }
+
+        function listHtml(arr) {
+          if (!arr || !arr.length) return "<p class=\"labor-intro\">暂无条目</p>";
+          return (
+            '<ul class="labor-list">' +
+            arr.map(function (item) {
+              return "<li>" + esc(item) + "</li>";
+            }).join("") +
+            "</ul>"
+          );
+        }
+
+        var ctaHref = data.ctaHref || "consult.html";
+        var ctaText = data.ctaText || "去咨询留资";
+        var updated = data.updatedAt
+          ? new Date(data.updatedAt).toLocaleString("zh-CN", { timeZone: "Asia/Shanghai" })
+          : "";
+
+        root.innerHTML =
+          '<section class="home-hero" style="padding-top:8px">' +
+          "<h1>" + esc(data.title || "出国劳务") + "</h1>" +
+          (data.subtitle
+            ? '<p class="tagline">' + esc(data.subtitle) + "</p>"
+            : "") +
+          "</section>" +
+          (data.intro
+            ? '<p class="labor-intro">' + esc(data.intro) + "</p>"
+            : "") +
+          '<div class="labor-section"><h2>适合谁了解</h2>' +
+          listHtml(data.whoFor) +
+          "</div>" +
+          '<div class="labor-section"><h2>我们可以提供什么</h2>' +
+          listHtml(data.whatWeOffer) +
+          "</div>" +
+          '<div class="bridge-card" style="margin-top:20px">' +
+          "<h2>下一步</h2>" +
+          "<p>留下联系方式，顾问会与你沟通出国劳务 / 海外就业相关信息。同时欢迎继续使用本站免费练习 PTE。</p>" +
+          '<div class="labor-cta-row">' +
+          '<a class="btn-soft" href="' + esc(ctaHref) + '">' + esc(ctaText) + "</a>" +
+          '<a class="btn-secondary-link" href="practice.html">继续免费练习</a>' +
+          "</div>" +
+          (data.wechatPlaceholder
+            ? '<div class="labor-wx">顾问微信：<strong>' +
+              esc(data.wechatPlaceholder) +
+              "</strong></div>"
+            : "") +
+          "</div>" +
+          '<p class="disclaimer" style="margin-top:16px">' +
+          esc(data.disclaimer || "") +
+          "</p>" +
+          (updated
+            ? '<p class="labor-meta">内容更新时间：' + esc(updated) + "</p>"
+            : "");
+      } catch (err) {
+        loading.textContent =
+          "内容加载失败。请确认已通过本地服务器或 GitHub Pages 打开（勿直接双击 file://）。";
+        console.error(err);
+      }
+    })();
+  </script>
+</body>
+</html>

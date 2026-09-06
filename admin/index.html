@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+  <meta name="theme-color" content="#0c0f14" />
+  <meta name="robots" content="noindex,nofollow" />
+  <title>chinaPTE · 内容后台</title>
+  <link rel="stylesheet" href="admin.css" />
+</head>
+<body>
+  <div class="admin-wrap">
+    <div class="admin-header">
+      <div>
+        <h1>chinaPTE 内容后台</h1>
+        <p>编辑「出国劳务」引导页 · 零成本 GitHub Pages</p>
+      </div>
+      <div>
+        <a href="../labor.html" target="_blank" rel="noopener">查看前台页</a>
+        ·
+        <a href="../index.html">回首页</a>
+      </div>
+    </div>
+
+    <!-- Login -->
+    <div id="loginPanel" class="card login-box">
+      <h2>登录</h2>
+      <p class="hint" style="margin-bottom:14px">
+        默认密码见 <code>admin/config.js</code> 中的 <code>ADMIN_PASSWORD</code>（初次为 chinaPTE2026）。
+        请登录后尽快改成你自己的密码并重新部署。
+      </p>
+      <form id="loginForm">
+        <label for="loginPass">后台密码</label>
+        <input type="password" id="loginPass" autocomplete="current-password" required placeholder="输入密码" />
+        <div class="btn-row">
+          <button type="submit" class="btn-primary">进入后台</button>
+        </div>
+        <div id="loginStatus" class="status" role="status"></div>
+      </form>
+    </div>
+
+    <!-- Editor -->
+    <div id="editorPanel" class="hidden">
+      <div class="card">
+        <div style="display:flex;justify-content:space-between;align-items:center;gap:8px;flex-wrap:wrap">
+          <h2 style="margin:0">编辑出国劳务页（labor.json）</h2>
+          <button type="button" class="btn-ghost" id="logoutBtn">退出登录</button>
+        </div>
+        <p class="hint" style="margin-top:8px">
+          列表字段请<strong>一行一条</strong>。保存会通过 GitHub API 更新仓库
+          <code>chinaptepte-commits/chinaPTE</code> 的 <code>content/labor.json</code>。
+        </p>
+      </div>
+
+      <form id="laborForm" class="card">
+        <label for="f_title">标题 title</label>
+        <input id="f_title" type="text" maxlength="120" />
+
+        <label for="f_subtitle">副标题 subtitle</label>
+        <input id="f_subtitle" type="text" maxlength="200" />
+
+        <label for="f_intro">引言 intro</label>
+        <textarea id="f_intro" rows="5"></textarea>
+
+        <label for="f_whoFor">适合谁 whoFor（一行一条）</label>
+        <textarea id="f_whoFor" rows="6"></textarea>
+
+        <label for="f_whatWeOffer">我们提供 whatWeOffer（一行一条）</label>
+        <textarea id="f_whatWeOffer" rows="6"></textarea>
+
+        <label for="f_disclaimer">合规声明 disclaimer</label>
+        <textarea id="f_disclaimer" rows="4"></textarea>
+
+        <label for="f_ctaText">按钮文字 ctaText</label>
+        <input id="f_ctaText" type="text" maxlength="40" />
+
+        <label for="f_ctaHref">按钮链接 ctaHref</label>
+        <input id="f_ctaHref" type="text" maxlength="120" placeholder="consult.html" />
+
+        <label for="f_wechatPlaceholder">微信占位 wechatPlaceholder</label>
+        <input id="f_wechatPlaceholder" type="text" maxlength="80" />
+
+        <label for="f_updatedAt">上次更新 updatedAt（保存时自动刷新）</label>
+        <input id="f_updatedAt" type="text" readonly />
+
+        <div class="token-box">
+          <label for="ghToken">GitHub Personal Access Token（仅保存在你浏览器）</label>
+          <p class="hint">
+            到 GitHub → Settings → Developer settings → Personal access tokens → Tokens (classic)
+            新建，勾选 <strong>repo</strong>。Token <strong>不会</strong>上传到本站服务器（本站无后端），只存在你本机 sessionStorage / localStorage。
+          </p>
+          <input id="ghToken" type="password" autocomplete="off" placeholder="ghp_… 粘贴到这里" />
+          <label style="margin-top:10px;display:flex;align-items:center;gap:8px;font-weight:500">
+            <input type="checkbox" id="rememberToken" style="width:auto" />
+            记住 Token（写入 localStorage；公共电脑请勿勾选）
+          </label>
+        </div>
+
+        <div class="btn-row">
+          <button type="submit" class="btn-primary" id="btnSaveGithub">保存到 GitHub</button>
+          <button type="button" class="btn-secondary" id="btnReload">重新加载</button>
+          <button type="button" class="btn-secondary" id="btnDownload">本地下载 JSON</button>
+          <button type="button" class="btn-danger" id="btnClearToken">清除本机 Token</button>
+        </div>
+        <div id="saveStatus" class="status" role="status"></div>
+      </form>
+
+      <p class="footer-note">
+        修改密码：编辑仓库里的 <code>admin/config.js</code>，改 <code>window.ADMIN_PASSWORD</code> 后推送到 main。<br />
+        禁止发布任何考试舞弊相关内容。仅允许正规出国劳务 / 海外就业合规信息。<br />
+        Pages 刷新通常需 1–2 分钟。
+      </p>
+    </div>
+  </div>
+
+  <script src="config.js"></script>
+  <script src="admin.js"></script>
+</body>
+</html>
