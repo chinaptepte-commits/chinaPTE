@@ -1467,6 +1467,35 @@ input:focus-visible {
   border-color: rgba(255, 176, 32, 0.35);
 }
 
+
+/* DI Describe Image — chart / picture */
+.di-image-wrap {
+  width: 100%;
+  margin: 0 0 14px;
+  border-radius: 12px;
+  border: 1px solid var(--border);
+  background: var(--bg-elevated);
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  max-height: 280px;
+}
+.di-image-wrap img {
+  display: block;
+  width: 100%;
+  max-height: 280px;
+  height: auto;
+  object-fit: contain;
+  background: #f8fafc;
+}
+[data-theme="night"] .di-image-wrap img {
+  background: #0f172a;
+}
+[data-theme="night"] .di-image-wrap {
+  background: rgba(255, 255, 255, 0.03);
+}
+
   </style>
 </head>
 <body>
@@ -1501,11 +1530,7 @@ input:focus-visible {
       <div class="streak-pill" style="background:var(--accent-soft);border-color:rgba(91,141,239,0.25);color:var(--accent)">进度自动续听</div>
     </div>
 
-    
-
-    <p class="tip-banner" id="tipBanner">💡 iPhone 关屏后系统仍可能暂停网页朗读；安卓 Chrome 开「息屏续听」通常可继续；或用保持常亮。</p>
-
-    <div class="unsupported" id="speechWarn" role="alert">
+<div class="unsupported" id="speechWarn" role="alert">
       当前浏览器不支持 Web Speech API。请换用 Chrome / Edge / Safari。
     </div>
 
@@ -1586,10 +1611,7 @@ input:focus-visible {
         <span>中文解读</span>
       </button>
     </div>
-
-    <p class="privacy">语音由浏览器 <span>Web Speech API</span> 本地合成 · 不上传 · 零成本</p>
-
-    <div class="lead-blurb">
+<div class="lead-blurb">
       <p><strong>备考之外：</strong>出国劳务 / 海外就业免费评估，不承诺签证结果。</p>
       <a class="btn-soft" href="consult.html">出国咨询留资</a>
     </div>
@@ -12140,14 +12162,6 @@ input:focus-visible {
 
     const kaInit = ensureKeepAlive();
     if (kaInit) kaInit.bindToggles();
-    if (els.tipBanner && !els.tipBanner.dataset.keepAliveTip) {
-      els.tipBanner.dataset.keepAliveTip = "1";
-      const base = (els.tipBanner.textContent || "").trim();
-      const tip =
-        "iPhone 关屏后系统仍可能暂停网页朗读；安卓 Chrome 开「息屏续听」通常可继续；或用保持常亮。";
-      els.tipBanner.textContent = base ? base + " · " + tip : "💡 " + tip;
-    }
-
     state.loopCount = loadLoopCount();
     if (els.loopCount) els.loopCount.value = String(state.loopCount);
     function onLoopInput() {

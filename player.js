@@ -948,14 +948,6 @@
 
       const kaInit = ensureKeepAlive();
       if (kaInit) kaInit.bindToggles();
-      if (els.tipBanner && !els.tipBanner.dataset.keepAliveTip) {
-        els.tipBanner.dataset.keepAliveTip = "1";
-        const base = (els.tipBanner.textContent || "").trim();
-        const tip =
-          "已优先用预生成 MP3 播放，息屏续听更稳；仍可开「息屏续听 / 保持常亮」兜底。";
-        els.tipBanner.textContent = base ? base + " · " + tip : "💡 " + tip;
-      }
-
       state.loopCount = loadLoopCount();
       if (els.loopCount) els.loopCount.value = String(state.loopCount);
       function onLoopInput() {

@@ -905,14 +905,6 @@
 
     const kaInit = ensureKeepAlive();
     if (kaInit) kaInit.bindToggles();
-    if (els.tipBanner && !els.tipBanner.dataset.keepAliveTip) {
-      els.tipBanner.dataset.keepAliveTip = "1";
-      const base = (els.tipBanner.textContent || "").trim();
-      const tip =
-        "iPhone 关屏后系统仍可能暂停网页朗读；安卓 Chrome 开「息屏续听」通常可继续；或用保持常亮。";
-      els.tipBanner.textContent = base ? base + " · " + tip : "💡 " + tip;
-    }
-
     state.loopCount = loadLoopCount();
     if (els.loopCount) els.loopCount.value = String(state.loopCount);
     function onLoopInput() {

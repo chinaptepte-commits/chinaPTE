@@ -563,14 +563,6 @@
     if (!window.speechSynthesis && els.speechWarn) els.speechWarn.style.display = "block";
     var kaInit = ensureKeepAlive();
     if (kaInit) kaInit.bindToggles();
-    var tipEl = document.getElementById("tipBanner") || document.querySelector(".tip-banner");
-    if (tipEl && !tipEl.dataset.keepAliveTip) {
-      tipEl.dataset.keepAliveTip = "1";
-      tipEl.id = tipEl.id || "tipBanner";
-      var base = (tipEl.textContent || "").trim();
-      var tip = "iPhone 关屏后系统仍可能暂停网页朗读；安卓 Chrome 开「息屏续听」通常可继续；或用保持常亮。";
-      tipEl.textContent = base ? base + " · " + tip : "💡 " + tip;
-    }
     if (global.ChinaPTEAudio && global.ChinaPTEAudio.loadManifest) {
     global.ChinaPTEAudio.loadManifest();
   }
