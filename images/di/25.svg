@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 720 420" width="720" height="420" role="img" aria-label="New Metro Line &amp; University Stations">
+  <rect width="720" height="420" fill="#f8fafc" rx="8"/>
+  <rect x="8" y="8" width="704" height="404" fill="#ffffff" rx="10" stroke="#e2e8f0" stroke-width="1"/>
+<text x="360.0" y="36" text-anchor="middle" font-family="Segoe UI,Arial,sans-serif" font-size="16" font-weight="700" fill="#0f172a">New Metro Line &amp; University Stations</text>
+<rect x="60" y="80" width="600" height="280" fill="#f1f5f9" rx="8"/>
+<line x1="100" y1="300" x2="600" y2="120" stroke="#94a3b8" stroke-width="6"/>
+<text x="100" y="320" font-size="11" fill="#64748b" font-family="Segoe UI,Arial,sans-serif">Old Line</text>
+<path d="M80 180 Q280 80 400 200 T640 160" fill="none" stroke="#3d6fd9" stroke-width="6"/>
+<circle cx="120" cy="150" r="10" fill="#fff" stroke="#3d6fd9" stroke-width="3"/>
+<text x="120" y="132" text-anchor="middle" font-size="12" font-weight="600" fill="#0f172a" font-family="Segoe UI,Arial,sans-serif">West</text>
+<circle cx="280" cy="100" r="10" fill="#fff" stroke="#3d6fd9" stroke-width="3"/>
+<text x="280" y="82" text-anchor="middle" font-size="12" font-weight="600" fill="#0f172a" font-family="Segoe UI,Arial,sans-serif">Central</text>
+<circle cx="400" cy="200" r="10" fill="#fff" stroke="#3d6fd9" stroke-width="3"/>
+<text x="400" y="182" text-anchor="middle" font-size="12" font-weight="600" fill="#0f172a" font-family="Segoe UI,Arial,sans-serif">Uni ★</text>
+<circle cx="560" cy="155" r="10" fill="#fff" stroke="#3d6fd9" stroke-width="3"/>
+<text x="560" y="137" text-anchor="middle" font-size="12" font-weight="600" fill="#0f172a" font-family="Segoe UI,Arial,sans-serif">East</text>
+<rect x="40" y="382" width="12" height="12" rx="2" fill="#3d6fd9"/>
+<text x="56" y="392" font-family="Segoe UI,Arial,sans-serif" font-size="11" fill="#64748b">New metro</text>
+<rect x="132.5" y="382" width="12" height="12" rx="2" fill="#94a3b8"/>
+<text x="148.5" y="392" font-family="Segoe UI,Arial,sans-serif" font-size="11" fill="#64748b">Existing line</text>
+<rect x="251.0" y="382" width="12" height="12" rx="2" fill="#3d6fd9"/>
+<text x="267.0" y="392" font-family="Segoe UI,Arial,sans-serif" font-size="11" fill="#64748b">University stop</text>
+</svg>

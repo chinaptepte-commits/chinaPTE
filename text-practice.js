@@ -28,6 +28,8 @@
       next: $("btnNext"),
       reveal: $("btnReveal"),
       speak: $("btnSpeak"),
+      imageWrap: $("itemImageWrap"),
+      image: $("itemImage"),
     };
 
     try {
@@ -73,6 +75,7 @@
         if (els.en) els.en.textContent = "无匹配条目";
         if (els.zh) els.zh.textContent = "";
         if (els.progress) els.progress.textContent = `0 / ${items.length}`;
+        if (els.imageWrap) els.imageWrap.hidden = true;
         return;
       }
       if (els.progress) els.progress.textContent = `${index + 1} / ${items.length}`;
@@ -89,6 +92,19 @@
           if (els.answer) els.answer.textContent = ans;
         } else {
           els.answerBox.hidden = true;
+        }
+      }
+      if (els.imageWrap && els.image) {
+        const src = it.image || it.imageUrl || "";
+        const show = !!(src && (cfg.showImage !== false));
+        if (show) {
+          els.image.src = src;
+          els.image.alt = it.en || it.scene || "Describe Image";
+          els.imageWrap.hidden = false;
+        } else {
+          els.image.removeAttribute("src");
+          els.image.alt = "";
+          els.imageWrap.hidden = true;
         }
       }
       if (els.chips) {

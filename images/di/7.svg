@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 720 420" width="720" height="420" role="img" aria-label="Water Treatment Process (3 Stages)">
+  <rect width="720" height="420" fill="#f8fafc" rx="8"/>
+  <rect x="8" y="8" width="704" height="404" fill="#ffffff" rx="10" stroke="#e2e8f0" stroke-width="1"/>
+<text x="360.0" y="36" text-anchor="middle" font-family="Segoe UI,Arial,sans-serif" font-size="16" font-weight="700" fill="#0f172a">Water Treatment Process (3 Stages)</text>
+<defs><marker id="arrow" markerWidth="8" markerHeight="8" refX="6" refY="3" orient="auto"><path d="M0,0 L6,3 L0,6 Z" fill="#94a3b8"/></marker></defs>
+<rect x="40.0" y="160" width="110" height="70" rx="10" fill="#3d6fd9" opacity="0.15" stroke="#3d6fd9" stroke-width="2"/>
+<text x="95.0" y="188" text-anchor="middle" font-size="12" font-weight="600" fill="#0f172a" font-family="Segoe UI,Arial,sans-serif">Intake</text>
+<circle cx="95.0" cy="140" r="14" fill="#3d6fd9"/>
+<text x="95.0" y="145" text-anchor="middle" font-size="13" font-weight="700" fill="#fff" font-family="Segoe UI,Arial,sans-serif">1</text>
+<line x1="154.0" y1="195" x2="301.0" y2="195" stroke="#94a3b8" stroke-width="2" marker-end="url(#arrow)"/>
+<rect x="305.0" y="160" width="110" height="70" rx="10" fill="#06b6d4" opacity="0.15" stroke="#06b6d4" stroke-width="2"/>
+<text x="360.0" y="188" text-anchor="middle" font-size="12" font-weight="600" fill="#0f172a" font-family="Segoe UI,Arial,sans-serif">Filtration</text>
+<circle cx="360.0" cy="140" r="14" fill="#06b6d4"/>
+<text x="360.0" y="145" text-anchor="middle" font-size="13" font-weight="700" fill="#fff" font-family="Segoe UI,Arial,sans-serif">2</text>
+<line x1="419.0" y1="195" x2="566.0" y2="195" stroke="#94a3b8" stroke-width="2" marker-end="url(#arrow)"/>
+<rect x="570.0" y="160" width="110" height="70" rx="10" fill="#1a9f63" opacity="0.15" stroke="#1a9f63" stroke-width="2"/>
+<text x="625.0" y="188" text-anchor="middle" font-size="12" font-weight="600" fill="#0f172a" font-family="Segoe UI,Arial,sans-serif">Disinfection</text>
+<circle cx="625.0" cy="140" r="14" fill="#1a9f63"/>
+<text x="625.0" y="145" text-anchor="middle" font-size="13" font-weight="700" fill="#fff" font-family="Segoe UI,Arial,sans-serif">3</text>
+<text x="360.0" y="380" text-anchor="middle" font-size="12" fill="#64748b" font-family="Segoe UI,Arial,sans-serif">Output: clean drinking water</text>
+</svg>

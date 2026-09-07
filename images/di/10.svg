@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 720 420" width="720" height="420" role="img" aria-label="Simplified Carbon Cycle">
+  <rect width="720" height="420" fill="#f8fafc" rx="8"/>
+  <rect x="8" y="8" width="704" height="404" fill="#ffffff" rx="10" stroke="#e2e8f0" stroke-width="1"/>
+<text x="360.0" y="36" text-anchor="middle" font-family="Segoe UI,Arial,sans-serif" font-size="16" font-weight="700" fill="#0f172a">Simplified Carbon Cycle</text>
+<circle cx="360.0" cy="120.0" r="42" fill="#06b6d4" opacity="0.9"/>
+<text x="360.0" y="114.0" text-anchor="middle" font-size="11" font-weight="700" fill="#fff" font-family="Segoe UI,Arial,sans-serif">Atmosphere</text>
+<circle cx="470.0" cy="230.0" r="42" fill="#1a9f63" opacity="0.9"/>
+<text x="470.0" y="224.0" text-anchor="middle" font-size="11" font-weight="700" fill="#fff" font-family="Segoe UI,Arial,sans-serif">Plants</text>
+<circle cx="360.0" cy="340.0" r="42" fill="#e6a23c" opacity="0.9"/>
+<text x="360.0" y="334.0" text-anchor="middle" font-size="11" font-weight="700" fill="#fff" font-family="Segoe UI,Arial,sans-serif">Animals</text>
+<circle cx="250.0" cy="230.0" r="42" fill="#64748b" opacity="0.9"/>
+<text x="250.0" y="224.0" text-anchor="middle" font-size="11" font-weight="700" fill="#fff" font-family="Segoe UI,Arial,sans-serif">Soil</text>
+<text x="250.0" y="238.0" text-anchor="middle" font-size="11" font-weight="700" fill="#fff" font-family="Segoe UI,Arial,sans-serif">/</text>
+<circle cx="360" cy="230" r="36" fill="#f1f5f9" stroke="#e2e8f0" stroke-width="2"/>
+<text x="360" y="235" text-anchor="middle" font-size="12" font-weight="700" fill="#0f172a" font-family="Segoe UI,Arial,sans-serif">Cycle</text>
+<circle cx="360" cy="230" r="110" fill="none" stroke="#94a3b8" stroke-width="2" stroke-dasharray="6 8" opacity="0.5"/>
+<text x="360.0" y="390" text-anchor="middle" font-size="12" fill="#64748b" font-family="Segoe UI,Arial,sans-serif">Human emissions disrupt the balance</text>
+</svg>

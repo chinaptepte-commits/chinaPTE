@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 720 420" width="720" height="420" role="img" aria-label="Campus Green Space &amp; Building Layout">
+  <rect width="720" height="420" fill="#f8fafc" rx="8"/>
+  <rect x="8" y="8" width="704" height="404" fill="#ffffff" rx="10" stroke="#e2e8f0" stroke-width="1"/>
+<text x="360.0" y="36" text-anchor="middle" font-family="Segoe UI,Arial,sans-serif" font-size="16" font-weight="700" fill="#0f172a">Campus Green Space &amp; Building Layout</text>
+<rect x="80" y="80" width="560" height="280" fill="#dcfce7" rx="8"/>
+<ellipse cx="360" cy="220" rx="120" ry="80" fill="#86efac"/>
+<text x="360" y="225" text-anchor="middle" font-size="13" font-weight="700" fill="#166534" font-family="Segoe UI,Arial,sans-serif">Central Green</text>
+<rect x="480" y="100" width="140" height="80" rx="6" fill="#3d6fd9"/>
+<text x="550.0" y="145.0" text-anchor="middle" font-size="12" font-weight="700" fill="#fff" font-family="Segoe UI,Arial,sans-serif">Library (E)</text>
+<rect x="100" y="100" width="140" height="80" rx="6" fill="#e6a23c"/>
+<text x="170.0" y="145.0" text-anchor="middle" font-size="12" font-weight="700" fill="#fff" font-family="Segoe UI,Arial,sans-serif">Dorms (W)</text>
+<rect x="100" y="260" width="140" height="70" rx="6" fill="#8b5cf6"/>
+<text x="170.0" y="300.0" text-anchor="middle" font-size="12" font-weight="700" fill="#fff" font-family="Segoe UI,Arial,sans-serif">Sports</text>
+<rect x="480" y="260" width="140" height="70" rx="6" fill="#e85d5d"/>
+<text x="550.0" y="300.0" text-anchor="middle" font-size="12" font-weight="700" fill="#fff" font-family="Segoe UI,Arial,sans-serif">Labs</text>
+<path d="M170 180 L240 220 L480 220 L550 180" fill="none" stroke="#64748b" stroke-width="3" stroke-dasharray="6 4"/>
+<text x="360.0" y="390" text-anchor="middle" font-size="12" fill="#64748b" font-family="Segoe UI,Arial,sans-serif">Pedestrian-first paths around the lawn</text>
+</svg>

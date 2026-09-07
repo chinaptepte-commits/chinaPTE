@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 720 420" width="720" height="420" role="img" aria-label="Thesis Process: Topic to Submission">
+  <rect width="720" height="420" fill="#f8fafc" rx="8"/>
+  <rect x="8" y="8" width="704" height="404" fill="#ffffff" rx="10" stroke="#e2e8f0" stroke-width="1"/>
+<text x="360.0" y="36" text-anchor="middle" font-family="Segoe UI,Arial,sans-serif" font-size="16" font-weight="700" fill="#0f172a">Thesis Process: Topic to Submission</text>
+<defs><marker id="arrow" markerWidth="8" markerHeight="8" refX="6" refY="3" orient="auto"><path d="M0,0 L6,3 L0,6 Z" fill="#94a3b8"/></marker></defs>
+<rect x="40.0" y="160" width="86.66666666666667" height="70" rx="10" fill="#3d6fd9" opacity="0.15" stroke="#3d6fd9" stroke-width="2"/>
+<text x="83.33333333333334" y="188" text-anchor="middle" font-size="12" font-weight="600" fill="#0f172a" font-family="Segoe UI,Arial,sans-serif">Topic</text>
+<circle cx="83.33333333333334" cy="140" r="14" fill="#3d6fd9"/>
+<text x="83.33333333333334" y="145" text-anchor="middle" font-size="13" font-weight="700" fill="#fff" font-family="Segoe UI,Arial,sans-serif">1</text>
+<line x1="130.66666666666669" y1="195" x2="146.66666666666669" y2="195" stroke="#94a3b8" stroke-width="2" marker-end="url(#arrow)"/>
+<rect x="150.66666666666669" y="160" width="86.66666666666667" height="70" rx="10" fill="#06b6d4" opacity="0.15" stroke="#06b6d4" stroke-width="2"/>
+<text x="194.00000000000003" y="188" text-anchor="middle" font-size="12" font-weight="600" fill="#0f172a" font-family="Segoe UI,Arial,sans-serif">Lit. review</text>
+<circle cx="194.00000000000003" cy="140" r="14" fill="#06b6d4"/>
+<text x="194.00000000000003" y="145" text-anchor="middle" font-size="13" font-weight="700" fill="#fff" font-family="Segoe UI,Arial,sans-serif">2</text>
+<line x1="241.33333333333337" y1="195" x2="257.33333333333337" y2="195" stroke="#94a3b8" stroke-width="2" marker-end="url(#arrow)"/>
+<rect x="261.33333333333337" y="160" width="86.66666666666667" height="70" rx="10" fill="#e6a23c" opacity="0.15" stroke="#e6a23c" stroke-width="2"/>
+<text x="304.6666666666667" y="188" text-anchor="middle" font-size="12" font-weight="600" fill="#0f172a" font-family="Segoe UI,Arial,sans-serif">Methods</text>
+<circle cx="304.6666666666667" cy="140" r="14" fill="#e6a23c"/>
+<text x="304.6666666666667" y="145" text-anchor="middle" font-size="13" font-weight="700" fill="#fff" font-family="Segoe UI,Arial,sans-serif">3</text>
+<line x1="352.00000000000006" y1="195" x2="368.00000000000006" y2="195" stroke="#94a3b8" stroke-width="2" marker-end="url(#arrow)"/>
+<rect x="372.0" y="160" width="86.66666666666667" height="70" rx="10" fill="#8b5cf6" opacity="0.15" stroke="#8b5cf6" stroke-width="2"/>
+<text x="415.3333333333333" y="188" text-anchor="middle" font-size="12" font-weight="600" fill="#0f172a" font-family="Segoe UI,Arial,sans-serif">Writing</text>
+<circle cx="415.3333333333333" cy="140" r="14" fill="#8b5cf6"/>
+<text x="415.3333333333333" y="145" text-anchor="middle" font-size="13" font-weight="700" fill="#fff" font-family="Segoe UI,Arial,sans-serif">4</text>
+<line x1="462.6666666666667" y1="195" x2="478.6666666666667" y2="195" stroke="#94a3b8" stroke-width="2" marker-end="url(#arrow)"/>
+<rect x="482.6666666666667" y="160" width="86.66666666666667" height="70" rx="10" fill="#1a9f63" opacity="0.15" stroke="#1a9f63" stroke-width="2"/>
+<text x="526.0" y="188" text-anchor="middle" font-size="12" font-weight="600" fill="#0f172a" font-family="Segoe UI,Arial,sans-serif">Proof</text>
+<circle cx="526.0" cy="140" r="14" fill="#1a9f63"/>
+<text x="526.0" y="145" text-anchor="middle" font-size="13" font-weight="700" fill="#fff" font-family="Segoe UI,Arial,sans-serif">5</text>
+<line x1="573.3333333333334" y1="195" x2="589.3333333333334" y2="195" stroke="#94a3b8" stroke-width="2" marker-end="url(#arrow)"/>
+<rect x="593.3333333333334" y="160" width="86.66666666666667" height="70" rx="10" fill="#e85d5d" opacity="0.15" stroke="#e85d5d" stroke-width="2"/>
+<text x="636.6666666666667" y="188" text-anchor="middle" font-size="12" font-weight="600" fill="#0f172a" font-family="Segoe UI,Arial,sans-serif">Submit</text>
+<circle cx="636.6666666666667" cy="140" r="14" fill="#e85d5d"/>
+<text x="636.6666666666667" y="145" text-anchor="middle" font-size="13" font-weight="700" fill="#fff" font-family="Segoe UI,Arial,sans-serif">6</text>
+<text x="360.0" y="380" text-anchor="middle" font-size="12" fill="#64748b" font-family="Segoe UI,Arial,sans-serif">Feedback loops at writing &amp; proof stages</text>
+</svg>

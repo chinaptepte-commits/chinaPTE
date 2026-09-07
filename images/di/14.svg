@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 720 420" width="720" height="420" role="img" aria-label="Internet Penetration (World Heat Map)">
+  <rect width="720" height="420" fill="#f8fafc" rx="8"/>
+  <rect x="8" y="8" width="704" height="404" fill="#ffffff" rx="10" stroke="#e2e8f0" stroke-width="1"/>
+<text x="360.0" y="36" text-anchor="middle" font-family="Segoe UI,Arial,sans-serif" font-size="16" font-weight="700" fill="#0f172a">Internet Penetration (World Heat Map)</text>
+<rect x="80" y="140" width="120" height="100" rx="8" fill="#1a9f63" opacity="0.75" stroke="#fff" stroke-width="2"/>
+<text x="140.0" y="184.0" text-anchor="middle" font-size="12" font-weight="600" fill="#fff" font-family="Segoe UI,Arial,sans-serif">N. America</text>
+<text x="140.0" y="200.0" text-anchor="middle" font-size="12" font-weight="600" fill="#fff" font-family="Segoe UI,Arial,sans-serif">High</text>
+<rect x="220" y="160" width="80" height="120" rx="8" fill="#86efac" opacity="0.75" stroke="#fff" stroke-width="2"/>
+<text x="260.0" y="214.0" text-anchor="middle" font-size="12" font-weight="600" fill="#fff" font-family="Segoe UI,Arial,sans-serif">S. America</text>
+<text x="260.0" y="230.0" text-anchor="middle" font-size="12" font-weight="600" fill="#fff" font-family="Segoe UI,Arial,sans-serif">Med</text>
+<rect x="320" y="120" width="100" height="90" rx="8" fill="#3d6fd9" opacity="0.75" stroke="#fff" stroke-width="2"/>
+<text x="370.0" y="159.0" text-anchor="middle" font-size="12" font-weight="600" fill="#fff" font-family="Segoe UI,Arial,sans-serif">Europe</text>
+<text x="370.0" y="175.0" text-anchor="middle" font-size="12" font-weight="600" fill="#fff" font-family="Segoe UI,Arial,sans-serif">High</text>
+<rect x="340" y="220" width="80" height="90" rx="8" fill="#fbbf24" opacity="0.75" stroke="#fff" stroke-width="2"/>
+<text x="380.0" y="259.0" text-anchor="middle" font-size="12" font-weight="600" fill="#fff" font-family="Segoe UI,Arial,sans-serif">Africa</text>
+<text x="380.0" y="275.0" text-anchor="middle" font-size="12" font-weight="600" fill="#fff" font-family="Segoe UI,Arial,sans-serif">Low</text>
+<rect x="450" y="130" width="160" height="110" rx="8" fill="#e6a23c" opacity="0.75" stroke="#fff" stroke-width="2"/>
+<text x="530.0" y="179.0" text-anchor="middle" font-size="12" font-weight="600" fill="#fff" font-family="Segoe UI,Arial,sans-serif">Asia</text>
+<text x="530.0" y="195.0" text-anchor="middle" font-size="12" font-weight="600" fill="#fff" font-family="Segoe UI,Arial,sans-serif">Mixed</text>
+<rect x="560" y="260" width="80" height="60" rx="8" fill="#86efac" opacity="0.75" stroke="#fff" stroke-width="2"/>
+<text x="600.0" y="284.0" text-anchor="middle" font-size="12" font-weight="600" fill="#fff" font-family="Segoe UI,Arial,sans-serif">Oceania</text>
+<text x="600.0" y="300.0" text-anchor="middle" font-size="12" font-weight="600" fill="#fff" font-family="Segoe UI,Arial,sans-serif">Med</text>
+<rect x="40" y="382" width="12" height="12" rx="2" fill="#1a9f63"/>
+<text x="56" y="392" font-family="Segoe UI,Arial,sans-serif" font-size="11" fill="#64748b">High &gt;80%</text>
+<rect x="132.5" y="382" width="12" height="12" rx="2" fill="#86efac"/>
+<text x="148.5" y="392" font-family="Segoe UI,Arial,sans-serif" font-size="11" fill="#64748b">Med</text>
+<rect x="186.0" y="382" width="12" height="12" rx="2" fill="#e6a23c"/>
+<text x="202.0" y="392" font-family="Segoe UI,Arial,sans-serif" font-size="11" fill="#64748b">Mixed</text>
+<rect x="252.5" y="382" width="12" height="12" rx="2" fill="#fbbf24"/>
+<text x="268.5" y="392" font-family="Segoe UI,Arial,sans-serif" font-size="11" fill="#64748b">Low &lt;40%</text>
+</svg>

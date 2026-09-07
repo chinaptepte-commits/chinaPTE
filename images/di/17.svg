@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 720 420" width="720" height="420" role="img" aria-label="City Bike Lane Separated from Vehicle Traffic">
+  <rect width="720" height="420" fill="#f8fafc" rx="8"/>
+  <rect x="8" y="8" width="704" height="404" fill="#ffffff" rx="10" stroke="#e2e8f0" stroke-width="1"/>
+<text x="360.0" y="36" text-anchor="middle" font-family="Segoe UI,Arial,sans-serif" font-size="16" font-weight="700" fill="#0f172a">City Bike Lane Separated from Vehicle Traffic</text>
+<rect x="40" y="120" width="640" height="200" fill="#475569" rx="4"/>
+<rect x="40" y="120" width="400" height="200" fill="#64748b"/>
+<line x1="60" y1="220" x2="420" y2="220" stroke="#fbbf24" stroke-width="3" stroke-dasharray="20 15"/>
+<text x="240" y="160" text-anchor="middle" font-size="14" font-weight="700" fill="#fff" font-family="Segoe UI,Arial,sans-serif">Vehicle Lane</text>
+<rect x="440" y="120" width="16" height="200" fill="#e6a23c"/>
+<text x="448" y="110" text-anchor="middle" font-size="10" fill="#92400e" font-family="Segoe UI,Arial,sans-serif">Barrier</text>
+<rect x="456" y="120" width="224" height="200" fill="#1a9f63"/>
+<text x="568" y="200" text-anchor="middle" font-size="14" font-weight="700" fill="#fff" font-family="Segoe UI,Arial,sans-serif">Bike Lane</text>
+<text x="568" y="230" text-anchor="middle" font-size="28">🚴</text>
+<text x="240" y="280" text-anchor="middle" font-size="28">🚗</text>
+<text x="360.0" y="380" text-anchor="middle" font-size="13" fill="#64748b" font-family="Segoe UI,Arial,sans-serif">Physical separation improves cyclist safety</text>
+</svg>

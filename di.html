@@ -44,6 +44,9 @@
     </div>
     <article class="now-card text-practice-card">
       <div class="status-badge is-idle"><span class="dot"></span><span id="typeBadge">练习</span></div>
+      <div class="di-image-wrap" id="itemImageWrap" hidden>
+        <img id="itemImage" alt="" />
+      </div>
       <p class="sentence-en" id="itemEn"></p>
       <p class="sentence-zh" id="itemZh"></p>
       <div class="answer-box" id="answerBox" hidden>
@@ -70,7 +73,8 @@
       bankGlobal: "DI_BANK",
       storageKey: "chinaPTE_di",
       enableTTS: false,
-      typeFilter: false
+      typeFilter: false,
+      showImage: true
     });
   </script>
 </body>

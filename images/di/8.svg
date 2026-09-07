@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 720 420" width="720" height="420" role="img" aria-label="Population Pyramid">
+  <rect width="720" height="420" fill="#f8fafc" rx="8"/>
+  <rect x="8" y="8" width="704" height="404" fill="#ffffff" rx="10" stroke="#e2e8f0" stroke-width="1"/>
+<text x="360.0" y="36" text-anchor="middle" font-family="Segoe UI,Arial,sans-serif" font-size="16" font-weight="700" fill="#0f172a">Population Pyramid · Age Structure</text>
+<rect x="270.2857142857143" y="70.0" width="85.71428571428571" height="48.0" fill="#3d6fd9" rx="2"/>
+<rect x="364" y="70.0" width="78.57142857142857" height="48.0" fill="#e85d5d" rx="2"/>
+<text x="360" y="98.0" text-anchor="middle" font-size="11" fill="#0f172a" font-family="Segoe UI,Arial,sans-serif">0-14</text>
+<text x="264.2857142857143" y="98.0" text-anchor="end" font-size="10" fill="#64748b" font-family="Segoe UI,Arial,sans-serif">12%</text>
+<text x="448.57142857142856" y="98.0" text-anchor="start" font-size="10" fill="#64748b" font-family="Segoe UI,Arial,sans-serif">11%</text>
+<rect x="284.57142857142856" y="126.0" width="71.42857142857143" height="48.0" fill="#3d6fd9" rx="2"/>
+<rect x="364" y="126.0" width="64.28571428571429" height="48.0" fill="#e85d5d" rx="2"/>
+<text x="360" y="154.0" text-anchor="middle" font-size="11" fill="#0f172a" font-family="Segoe UI,Arial,sans-serif">15-24</text>
+<text x="278.57142857142856" y="154.0" text-anchor="end" font-size="10" fill="#64748b" font-family="Segoe UI,Arial,sans-serif">10%</text>
+<text x="434.2857142857143" y="154.0" text-anchor="start" font-size="10" fill="#64748b" font-family="Segoe UI,Arial,sans-serif">9%</text>
+<rect x="156.0" y="182.0" width="200.0" height="48.0" fill="#3d6fd9" rx="2"/>
+<rect x="364" y="182.0" width="192.85714285714286" height="48.0" fill="#e85d5d" rx="2"/>
+<text x="360" y="210.0" text-anchor="middle" font-size="11" fill="#0f172a" font-family="Segoe UI,Arial,sans-serif">25-54</text>
+<text x="150.0" y="210.0" text-anchor="end" font-size="10" fill="#64748b" font-family="Segoe UI,Arial,sans-serif">28%</text>
+<text x="562.8571428571429" y="210.0" text-anchor="start" font-size="10" fill="#64748b" font-family="Segoe UI,Arial,sans-serif">27%</text>
+<rect x="298.8571428571429" y="238.0" width="57.14285714285714" height="48.0" fill="#3d6fd9" rx="2"/>
+<rect x="364" y="238.0" width="64.28571428571429" height="48.0" fill="#e85d5d" rx="2"/>
+<text x="360" y="266.0" text-anchor="middle" font-size="11" fill="#0f172a" font-family="Segoe UI,Arial,sans-serif">55-64</text>
+<text x="292.8571428571429" y="266.0" text-anchor="end" font-size="10" fill="#64748b" font-family="Segoe UI,Arial,sans-serif">8%</text>
+<text x="434.2857142857143" y="266.0" text-anchor="start" font-size="10" fill="#64748b" font-family="Segoe UI,Arial,sans-serif">9%</text>
+<rect x="313.14285714285717" y="294.0" width="42.857142857142854" height="48.0" fill="#3d6fd9" rx="2"/>
+<rect x="364" y="294.0" width="57.14285714285714" height="48.0" fill="#e85d5d" rx="2"/>
+<text x="360" y="322.0" text-anchor="middle" font-size="11" fill="#0f172a" font-family="Segoe UI,Arial,sans-serif">65+</text>
+<text x="307.14285714285717" y="322.0" text-anchor="end" font-size="10" fill="#64748b" font-family="Segoe UI,Arial,sans-serif">6%</text>
+<text x="427.1428571428571" y="322.0" text-anchor="start" font-size="10" fill="#64748b" font-family="Segoe UI,Arial,sans-serif">8%</text>
+<rect x="40" y="382" width="12" height="12" rx="2" fill="#3d6fd9"/>
+<text x="56" y="392" font-family="Segoe UI,Arial,sans-serif" font-size="11" fill="#64748b">Male</text>
+<rect x="100.0" y="382" width="12" height="12" rx="2" fill="#e85d5d"/>
+<text x="116.0" y="392" font-family="Segoe UI,Arial,sans-serif" font-size="11" fill="#64748b">Female</text>
+</svg>

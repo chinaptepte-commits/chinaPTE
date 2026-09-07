@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 720 420" width="720" height="420" role="img" aria-label="Daily Screen Time by Activity">
+  <rect width="720" height="420" fill="#f8fafc" rx="8"/>
+  <rect x="8" y="8" width="704" height="404" fill="#ffffff" rx="10" stroke="#e2e8f0" stroke-width="1"/>
+<text x="360.0" y="36" text-anchor="middle" font-family="Segoe UI,Arial,sans-serif" font-size="16" font-weight="700" fill="#0f172a">Daily Screen Time by Activity</text>
+<rect x="80" y="160" width="229.0909090909091" height="50" fill="#3d6fd9"/>
+<text x="194.54545454545456" y="192" text-anchor="middle" font-size="13" font-weight="700" fill="#fff" font-family="Segoe UI,Arial,sans-serif">4h</text>
+<rect x="309.0909090909091" y="160" width="127.27272727272727" height="50" fill="#8b5cf6"/>
+<text x="372.72727272727275" y="192" text-anchor="middle" font-size="13" font-weight="700" fill="#fff" font-family="Segoe UI,Arial,sans-serif">2h</text>
+<rect x="436.3636363636364" y="160" width="152.72727272727272" height="50" fill="#e6a23c"/>
+<text x="512.7272727272727" y="192" text-anchor="middle" font-size="13" font-weight="700" fill="#fff" font-family="Segoe UI,Arial,sans-serif">3h</text>
+<rect x="589.0909090909091" y="160" width="50.909090909090914" height="50" fill="#64748b"/>
+<text x="614.5454545454546" y="192" text-anchor="middle" font-size="13" font-weight="700" fill="#fff" font-family="Segoe UI,Arial,sans-serif">1h</text>
+<rect x="80" y="160" width="560" height="50" fill="none" stroke="#0f172a" stroke-width="1" rx="0"/>
+<rect x="120" y="250" width="14" height="14" rx="2" fill="#3d6fd9"/>
+<text x="145" y="262" font-size="13" fill="#0f172a" font-family="Segoe UI,Arial,sans-serif">Work — 4.5h/day (41%)</text>
+<rect x="120" y="282" width="14" height="14" rx="2" fill="#8b5cf6"/>
+<text x="145" y="294" font-size="13" fill="#0f172a" font-family="Segoe UI,Arial,sans-serif">Social — 2.5h/day (23%)</text>
+<rect x="120" y="314" width="14" height="14" rx="2" fill="#e6a23c"/>
+<text x="145" y="326" font-size="13" fill="#0f172a" font-family="Segoe UI,Arial,sans-serif">Entertainment — 3.0h/day (27%)</text>
+<rect x="120" y="346" width="14" height="14" rx="2" fill="#64748b"/>
+<text x="145" y="358" font-size="13" fill="#0f172a" font-family="Segoe UI,Arial,sans-serif">Other — 1.0h/day (9%)</text>
+</svg>

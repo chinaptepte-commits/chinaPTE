@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 720 420" width="720" height="420" role="img" aria-label="Traditional Classroom vs Hybrid Learning">
+  <rect width="720" height="420" fill="#f8fafc" rx="8"/>
+  <rect x="8" y="8" width="704" height="404" fill="#ffffff" rx="10" stroke="#e2e8f0" stroke-width="1"/>
+<text x="360.0" y="36" text-anchor="middle" font-family="Segoe UI,Arial,sans-serif" font-size="16" font-weight="700" fill="#0f172a">Traditional Classroom vs Hybrid Learning</text>
+<rect x="40" y="70" width="300" height="290" rx="12" fill="#fef3c7" stroke="#e6a23c" stroke-width="2"/>
+<rect x="380" y="70" width="300" height="290" rx="12" fill="#dbeafe" stroke="#3d6fd9" stroke-width="2"/>
+<text x="190" y="100" text-anchor="middle" font-size="15" font-weight="700" fill="#92400e" font-family="Segoe UI,Arial,sans-serif">Traditional</text>
+<text x="530" y="100" text-anchor="middle" font-size="15" font-weight="700" fill="#1e40af" font-family="Segoe UI,Arial,sans-serif">Hybrid</text>
+<circle cx="70" cy="140" r="6" fill="#e6a23c"/>
+<text x="88" y="145" font-size="13" fill="#0f172a" font-family="Segoe UI,Arial,sans-serif">Face-to-face only</text>
+<circle cx="70" cy="180" r="6" fill="#e6a23c"/>
+<text x="88" y="185" font-size="13" fill="#0f172a" font-family="Segoe UI,Arial,sans-serif">Fixed schedule</text>
+<circle cx="70" cy="220" r="6" fill="#e6a23c"/>
+<text x="88" y="225" font-size="13" fill="#0f172a" font-family="Segoe UI,Arial,sans-serif">Teacher-centred</text>
+<circle cx="70" cy="260" r="6" fill="#e6a23c"/>
+<text x="88" y="265" font-size="13" fill="#0f172a" font-family="Segoe UI,Arial,sans-serif">Limited materials</text>
+<circle cx="410" cy="140" r="6" fill="#3d6fd9"/>
+<text x="428" y="145" font-size="13" fill="#0f172a" font-family="Segoe UI,Arial,sans-serif">Online + discussion</text>
+<circle cx="410" cy="180" r="6" fill="#3d6fd9"/>
+<text x="428" y="185" font-size="13" fill="#0f172a" font-family="Segoe UI,Arial,sans-serif">Flexible timing</text>
+<circle cx="410" cy="220" r="6" fill="#3d6fd9"/>
+<text x="428" y="225" font-size="13" fill="#0f172a" font-family="Segoe UI,Arial,sans-serif">Student-paced</text>
+<circle cx="410" cy="260" r="6" fill="#3d6fd9"/>
+<text x="428" y="265" font-size="13" fill="#0f172a" font-family="Segoe UI,Arial,sans-serif">Needs self-discipline</text>
+<text x="360.0" y="55" text-anchor="middle" font-size="20" fill="#64748b">⟷</text>
+</svg>

@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 720 420" width="720" height="420" role="img" aria-label="Youth Unemployment Rate (10 Years)">
+  <rect width="720" height="420" fill="#f8fafc" rx="8"/>
+  <rect x="8" y="8" width="704" height="404" fill="#ffffff" rx="10" stroke="#e2e8f0" stroke-width="1"/>
+<text x="360.0" y="36" text-anchor="middle" font-family="Segoe UI,Arial,sans-serif" font-size="16" font-weight="700" fill="#0f172a">Youth Unemployment Rate (10 Years)</text>
+<line x1="70" y1="60" x2="70" y2="340" stroke="#94a3b8" stroke-width="1.5"/>
+<line x1="70" y1="340" x2="650" y2="340" stroke="#94a3b8" stroke-width="1.5"/>
+<line x1="70" y1="340.0" x2="650" y2="340.0" stroke="#e2e8f0" stroke-width="1"/>
+<text x="62" y="344.0" text-anchor="end" font-family="Segoe UI,Arial,sans-serif" font-size="10" fill="#64748b">0.0</text>
+<line x1="70" y1="270.0" x2="650" y2="270.0" stroke="#e2e8f0" stroke-width="1"/>
+<text x="62" y="274.0" text-anchor="end" font-family="Segoe UI,Arial,sans-serif" font-size="10" fill="#64748b">5.5</text>
+<line x1="70" y1="200.0" x2="650" y2="200.0" stroke="#e2e8f0" stroke-width="1"/>
+<text x="62" y="204.0" text-anchor="end" font-family="Segoe UI,Arial,sans-serif" font-size="10" fill="#64748b">11</text>
+<line x1="70" y1="130.0" x2="650" y2="130.0" stroke="#e2e8f0" stroke-width="1"/>
+<text x="62" y="134.0" text-anchor="end" font-family="Segoe UI,Arial,sans-serif" font-size="10" fill="#64748b">16</text>
+<line x1="70" y1="60.0" x2="650" y2="60.0" stroke="#e2e8f0" stroke-width="1"/>
+<text x="62" y="64.0" text-anchor="end" font-family="Segoe UI,Arial,sans-serif" font-size="10" fill="#64748b">22</text>
+<text x="118.33333333333334" y="358" text-anchor="middle" font-family="Segoe UI,Arial,sans-serif" font-size="10" fill="#64748b">2014</text>
+<text x="215.0" y="358" text-anchor="middle" font-family="Segoe UI,Arial,sans-serif" font-size="10" fill="#64748b">2016</text>
+<text x="311.6666666666667" y="358" text-anchor="middle" font-family="Segoe UI,Arial,sans-serif" font-size="10" fill="#64748b">2018</text>
+<text x="408.33333333333337" y="358" text-anchor="middle" font-family="Segoe UI,Arial,sans-serif" font-size="10" fill="#64748b">2020</text>
+<text x="505.0" y="358" text-anchor="middle" font-family="Segoe UI,Arial,sans-serif" font-size="10" fill="#64748b">2022</text>
+<text x="601.6666666666667" y="358" text-anchor="middle" font-family="Segoe UI,Arial,sans-serif" font-size="10" fill="#64748b">2024</text>
+<text x="18" y="200.0" text-anchor="middle" transform="rotate(-90 18 200.0)" font-family="Segoe UI,Arial,sans-serif" font-size="11" fill="#64748b">%</text>
+<path d="M 70.0,161.8 L 186.0,187.3 L 302.0,200.0 L 418.0,110.9 L 534.0,149.1 L 650.0,174.5" fill="none" stroke="#e85d5d" stroke-width="2.5" stroke-linejoin="round"/>
+<circle cx="70.0" cy="161.8" r="3.5" fill="#e85d5d" stroke="#fff" stroke-width="1.5"/>
+<circle cx="186.0" cy="187.3" r="3.5" fill="#e85d5d" stroke="#fff" stroke-width="1.5"/>
+<circle cx="302.0" cy="200.0" r="3.5" fill="#e85d5d" stroke="#fff" stroke-width="1.5"/>
+<circle cx="418.0" cy="110.9" r="3.5" fill="#e85d5d" stroke="#fff" stroke-width="1.5"/>
+<circle cx="534.0" cy="149.1" r="3.5" fill="#e85d5d" stroke="#fff" stroke-width="1.5"/>
+<circle cx="650.0" cy="174.5" r="3.5" fill="#e85d5d" stroke="#fff" stroke-width="1.5"/>
+<rect x="40" y="382" width="12" height="12" rx="2" fill="#e85d5d"/>
+<text x="56" y="392" font-family="Segoe UI,Arial,sans-serif" font-size="11" fill="#64748b">Youth %</text>
+</svg>

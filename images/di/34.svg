@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 720 420" width="720" height="420" role="img" aria-label="Household Energy Mix Over Time">
+  <rect width="720" height="420" fill="#f8fafc" rx="8"/>
+  <rect x="8" y="8" width="704" height="404" fill="#ffffff" rx="10" stroke="#e2e8f0" stroke-width="1"/>
+<text x="360.0" y="36" text-anchor="middle" font-family="Segoe UI,Arial,sans-serif" font-size="16" font-weight="700" fill="#0f172a">Household Energy Mix Over Time</text>
+<line x1="70" y1="60" x2="70" y2="340" stroke="#94a3b8" stroke-width="1.5"/>
+<line x1="70" y1="340" x2="650" y2="340" stroke="#94a3b8" stroke-width="1.5"/>
+<line x1="70" y1="340.0" x2="650" y2="340.0" stroke="#e2e8f0" stroke-width="1"/>
+<text x="62" y="344.0" text-anchor="end" font-family="Segoe UI,Arial,sans-serif" font-size="10" fill="#64748b">0</text>
+<line x1="70" y1="270.0" x2="650" y2="270.0" stroke="#e2e8f0" stroke-width="1"/>
+<text x="62" y="274.0" text-anchor="end" font-family="Segoe UI,Arial,sans-serif" font-size="10" fill="#64748b">27</text>
+<line x1="70" y1="200.0" x2="650" y2="200.0" stroke="#e2e8f0" stroke-width="1"/>
+<text x="62" y="204.0" text-anchor="end" font-family="Segoe UI,Arial,sans-serif" font-size="10" fill="#64748b">55</text>
+<line x1="70" y1="130.0" x2="650" y2="130.0" stroke="#e2e8f0" stroke-width="1"/>
+<text x="62" y="134.0" text-anchor="end" font-family="Segoe UI,Arial,sans-serif" font-size="10" fill="#64748b">82</text>
+<line x1="70" y1="60.0" x2="650" y2="60.0" stroke="#e2e8f0" stroke-width="1"/>
+<text x="62" y="64.0" text-anchor="end" font-family="Segoe UI,Arial,sans-serif" font-size="10" fill="#64748b">110</text>
+<text x="142.5" y="358" text-anchor="middle" font-family="Segoe UI,Arial,sans-serif" font-size="10" fill="#64748b">2010</text>
+<text x="287.5" y="358" text-anchor="middle" font-family="Segoe UI,Arial,sans-serif" font-size="10" fill="#64748b">2015</text>
+<text x="432.5" y="358" text-anchor="middle" font-family="Segoe UI,Arial,sans-serif" font-size="10" fill="#64748b">2020</text>
+<text x="577.5" y="358" text-anchor="middle" font-family="Segoe UI,Arial,sans-serif" font-size="10" fill="#64748b">2024</text>
+<text x="18" y="200.0" text-anchor="middle" transform="rotate(-90 18 200.0)" font-family="Segoe UI,Arial,sans-serif" font-size="11" fill="#64748b">Share %</text>
+<rect x="118.5" y="263.6" width="48.0" height="76.4" fill="#3d6fd9"/>
+<rect x="118.5" y="174.5" width="48.0" height="89.1" fill="#e6a23c"/>
+<rect x="118.5" y="98.2" width="48.0" height="76.4" fill="#64748b"/>
+<rect x="118.5" y="85.5" width="48.0" height="12.7" fill="#1a9f63"/>
+<rect x="263.5" y="250.9" width="48.0" height="89.1" fill="#3d6fd9"/>
+<rect x="263.5" y="161.8" width="48.0" height="89.1" fill="#e6a23c"/>
+<rect x="263.5" y="105.8" width="48.0" height="56.0" fill="#64748b"/>
+<rect x="263.5" y="85.5" width="48.0" height="20.4" fill="#1a9f63"/>
+<rect x="408.5" y="233.1" width="48.0" height="106.9" fill="#3d6fd9"/>
+<rect x="408.5" y="149.1" width="48.0" height="84.0" fill="#e6a23c"/>
+<rect x="408.5" y="110.9" width="48.0" height="38.2" fill="#64748b"/>
+<rect x="408.5" y="85.5" width="48.0" height="25.5" fill="#1a9f63"/>
+<rect x="553.5" y="212.7" width="48.0" height="127.3" fill="#3d6fd9"/>
+<rect x="553.5" y="136.4" width="48.0" height="76.4" fill="#e6a23c"/>
+<rect x="553.5" y="116.0" width="48.0" height="20.4" fill="#64748b"/>
+<rect x="553.5" y="85.5" width="48.0" height="30.5" fill="#1a9f63"/>
+<rect x="40" y="382" width="12" height="12" rx="2" fill="#3d6fd9"/>
+<text x="56" y="392" font-family="Segoe UI,Arial,sans-serif" font-size="11" fill="#64748b">Electricity</text>
+<rect x="145.5" y="382" width="12" height="12" rx="2" fill="#e6a23c"/>
+<text x="161.5" y="392" font-family="Segoe UI,Arial,sans-serif" font-size="11" fill="#64748b">Gas</text>
+<rect x="199.0" y="382" width="12" height="12" rx="2" fill="#64748b"/>
+<text x="215.0" y="392" font-family="Segoe UI,Arial,sans-serif" font-size="11" fill="#64748b">Coal</text>
+<rect x="259.0" y="382" width="12" height="12" rx="2" fill="#1a9f63"/>
+<text x="275.0" y="392" font-family="Segoe UI,Arial,sans-serif" font-size="11" fill="#64748b">Other</text>
+</svg>

@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 720 420" width="720" height="420" role="img" aria-label="University Funding Sources">
+  <rect width="720" height="420" fill="#f8fafc" rx="8"/>
+  <rect x="8" y="8" width="704" height="404" fill="#ffffff" rx="10" stroke="#e2e8f0" stroke-width="1"/>
+<text x="360.0" y="36" text-anchor="middle" font-family="Segoe UI,Arial,sans-serif" font-size="16" font-weight="700" fill="#0f172a">University Funding Sources</text>
+<path d="M 300.0 220.0 L 300.0 100.0 A 120 120 0 0 1 315.0 339.1 Z" fill="#3d6fd9" stroke="#fff" stroke-width="2"/>
+<text x="374.3" y="215.3" text-anchor="middle" font-size="12" font-weight="600" fill="#fff" font-family="Segoe UI,Arial,sans-serif">48%</text>
+<path d="M 300.0 220.0 L 315.0 339.1 A 120 120 0 0 1 185.9 182.9 Z" fill="#1a9f63" stroke="#fff" stroke-width="2"/>
+<text x="242.7" y="267.4" text-anchor="middle" font-size="12" font-weight="600" fill="#fff" font-family="Segoe UI,Arial,sans-serif">32%</text>
+<path d="M 300.0 220.0 L 185.9 182.9 A 120 120 0 0 1 300.0 100.0 Z" fill="#e6a23c" stroke="#fff" stroke-width="2"/>
+<text x="256.3" y="159.8" text-anchor="middle" font-size="12" font-weight="600" fill="#fff" font-family="Segoe UI,Arial,sans-serif">20%</text>
+<rect x="520" y="90" width="14" height="14" rx="2" fill="#3d6fd9"/>
+<text x="540" y="101" font-size="12" fill="#0f172a" font-family="Segoe UI,Arial,sans-serif">Tuition fees (48%)</text>
+<rect x="520" y="118" width="14" height="14" rx="2" fill="#1a9f63"/>
+<text x="540" y="129" font-size="12" fill="#0f172a" font-family="Segoe UI,Arial,sans-serif">Grants (32%)</text>
+<rect x="520" y="146" width="14" height="14" rx="2" fill="#e6a23c"/>
+<text x="540" y="157" font-size="12" fill="#0f172a" font-family="Segoe UI,Arial,sans-serif">Donations (20%)</text>
+</svg>

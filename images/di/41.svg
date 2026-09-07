@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 720 420" width="720" height="420" role="img" aria-label="Self-Assessed Language Skills (1–10)">
+  <rect width="720" height="420" fill="#f8fafc" rx="8"/>
+  <rect x="8" y="8" width="704" height="404" fill="#ffffff" rx="10" stroke="#e2e8f0" stroke-width="1"/>
+<text x="360.0" y="36" text-anchor="middle" font-family="Segoe UI,Arial,sans-serif" font-size="16" font-weight="700" fill="#0f172a">Self-Assessed Language Skills (1–10)</text>
+<polygon points="360.0,197.5 390.9,220.0 379.1,256.3 340.9,256.3 329.1,220.0" fill="none" stroke="#e2e8f0" stroke-width="1"/>
+<polygon points="360.0,165.0 421.8,209.9 398.2,282.6 321.8,282.6 298.2,209.9" fill="none" stroke="#e2e8f0" stroke-width="1"/>
+<polygon points="360.0,132.5 452.7,199.9 417.3,308.9 302.7,308.9 267.3,199.9" fill="none" stroke="#e2e8f0" stroke-width="1"/>
+<polygon points="360.0,100.0 483.6,189.8 436.4,335.2 283.6,335.2 236.4,189.8" fill="none" stroke="#e2e8f0" stroke-width="1"/>
+<line x1="360" y1="230" x2="360.0" y2="100.0" stroke="#e2e8f0"/>
+<text x="360.0" y="72.0" text-anchor="middle" font-size="12" font-weight="600" fill="#0f172a" font-family="Segoe UI,Arial,sans-serif">Listening</text>
+<line x1="360" y1="230" x2="483.6" y2="189.8" stroke="#e2e8f0"/>
+<text x="510.3" y="181.2" text-anchor="middle" font-size="12" font-weight="600" fill="#0f172a" font-family="Segoe UI,Arial,sans-serif">Reading</text>
+<line x1="360" y1="230" x2="436.4" y2="335.2" stroke="#e2e8f0"/>
+<text x="452.9" y="357.8" text-anchor="middle" font-size="12" font-weight="600" fill="#0f172a" font-family="Segoe UI,Arial,sans-serif">Writing</text>
+<line x1="360" y1="230" x2="283.6" y2="335.2" stroke="#e2e8f0"/>
+<text x="267.1" y="357.8" text-anchor="middle" font-size="12" font-weight="600" fill="#0f172a" font-family="Segoe UI,Arial,sans-serif">Speaking</text>
+<line x1="360" y1="230" x2="236.4" y2="189.8" stroke="#e2e8f0"/>
+<text x="209.7" y="181.2" text-anchor="middle" font-size="12" font-weight="600" fill="#0f172a" font-family="Segoe UI,Arial,sans-serif">Vocab</text>
+<polygon points="360.0,113.0 446.5,201.9 398.2,282.6 314.2,293.1 273.5,201.9" fill="#3d6fd9" fill-opacity="0.35" stroke="#3d6fd9" stroke-width="2"/>
+<circle cx="360.0" cy="113.0" r="4" fill="#3d6fd9"/>
+<circle cx="446.5" cy="201.9" r="4" fill="#3d6fd9"/>
+<circle cx="398.2" cy="282.6" r="4" fill="#3d6fd9"/>
+<circle cx="314.2" cy="293.1" r="4" fill="#3d6fd9"/>
+<circle cx="273.5" cy="201.9" r="4" fill="#3d6fd9"/>
+</svg>
