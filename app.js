@@ -301,6 +301,9 @@
       clearTimeout(pauseTimer);
       pauseTimer = null;
     }
+    if (window.ChinaPTEAudio) {
+      try { window.ChinaPTEAudio.cancel(); } catch (e) {}
+    }
     if (window.speechSynthesis) {
       speechSynthesis.cancel();
     }
@@ -308,6 +311,22 @@
   }
 
   function speak(text, opts) {
+    opts = opts || {};
+    const engine = window.ChinaPTEAudio;
+    if (engine) {
+      const url = opts.audioUrl || engine.resolveClipUrl(opts.clipKey);
+      if (url) {
+        const pr = opts.playbackRate != null ? opts.playbackRate : state.rate;
+        return engine.speak(text, Object.assign({}, opts, { audioUrl: url, rate: pr })).then((r) => {
+          if (r && r.error) return speakViaTts(text, opts);
+          return r || {};
+        });
+      }
+    }
+    return speakViaTts(text, opts);
+  }
+
+  function speakViaTts(text, opts) {
     return new Promise((resolve, reject) => {
       if (!window.speechSynthesis) {
         reject(new Error("no speechSynthesis"));
@@ -516,6 +535,8 @@
           lang: enSpeakLang(),
           rate: enRate,
           voice: state.enVoice,
+          clipKey: "wfd/" + item.id + "-en",
+          playbackRate: state.rate,
         });
         if (!isActive(token) || (r1 && r1.interrupted)) return;
 
@@ -530,6 +551,8 @@
             lang: "zh-CN",
             rate: state.rate,
             voice: state.zhVoice,
+            clipKey: "wfd/" + item.id + "-zh",
+            playbackRate: state.rate,
           });
           if (!isActive(token) || (r2 && r2.interrupted)) return;
           await wait(400);
@@ -550,6 +573,8 @@
           lang: enSpeakLang(),
           rate: Math.max(0.7, state.rate * 0.88),
           voice: state.enVoice,
+          clipKey: "wfd/" + item.id + "-v" + vi + "-word",
+          playbackRate: state.rate,
         });
         if (!isActive(token) || (rw && rw.interrupted)) return;
         await wait(280);
@@ -561,6 +586,8 @@
           lang: enSpeakLang(),
           rate: Math.max(0.6, state.rate * 0.75),
           voice: state.enVoice,
+          clipKey: "wfd/" + item.id + "-v" + vi + "-spell",
+          playbackRate: state.rate,
         });
         if (!isActive(token) || (rs && rs.interrupted)) return;
         await wait(280);
@@ -573,6 +600,8 @@
             lang: "zh-CN",
             rate: state.rate,
             voice: state.zhVoice,
+            clipKey: "wfd/" + item.id + "-v" + vi + "-gloss",
+            playbackRate: state.rate,
           });
           if (!isActive(token) || (rg && rg.interrupted)) return;
           await wait(350);
@@ -779,6 +808,10 @@
     if (!allItems.length) {
       if (els.sentenceEn) els.sentenceEn.textContent = "暂无数据";
       return;
+    }
+
+    if (window.ChinaPTEAudio && window.ChinaPTEAudio.loadManifest) {
+      window.ChinaPTEAudio.loadManifest();
     }
 
     if (!window.speechSynthesis) {

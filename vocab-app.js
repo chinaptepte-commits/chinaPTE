@@ -162,10 +162,27 @@
 
   function cancelSpeech() {
     if (pauseTimer) { clearTimeout(pauseTimer); pauseTimer = null; }
+    if (global.ChinaPTEAudio) { try { global.ChinaPTEAudio.cancel(); } catch (e) {} }
     if (window.speechSynthesis) speechSynthesis.cancel();
   }
 
   function speak(text, opts) {
+    opts = opts || {};
+    var engine = global.ChinaPTEAudio;
+    if (engine) {
+      var url = opts.audioUrl || engine.resolveClipUrl(opts.clipKey);
+      if (url) {
+        var pr = opts.playbackRate != null ? opts.playbackRate : state.rate;
+        return engine.speak(text, Object.assign({}, opts, { audioUrl: url, rate: pr })).then(function (r) {
+          if (r && r.error) return speakViaTts(text, opts);
+          return r || {};
+        });
+      }
+    }
+    return speakViaTts(text, opts);
+  }
+
+  function speakViaTts(text, opts) {
     return new Promise(function (resolve, reject) {
       if (!window.speechSynthesis) { reject(new Error("no tts")); return; }
       var u = new SpeechSynthesisUtterance(text);
@@ -351,14 +368,14 @@
     if (kaStart) kaStart.onSessionStart(sessionTitle());
     try {
       setPhase("单词");
-      var r1 = await speak(it.word, { lang: enSpeakLang(), rate: Math.max(0.7, state.rate * 0.88), voice: state.enVoice });
+      var r1 = await speak(it.word, { lang: enSpeakLang(), rate: Math.max(0.7, state.rate * 0.88), voice: state.enVoice, clipKey: "vocab/" + it.id + "-word", playbackRate: state.rate });
       if (!isActive(token) || (r1 && r1.interrupted)) return;
       await wait(280);
       if (!isActive(token)) return;
 
       if (state.spellOn && it.spelling) {
         setPhase("拼读");
-        var r2 = await speak(lettersOf(it.spelling), { lang: enSpeakLang(), rate: Math.max(0.55, state.rate * 0.72), voice: state.enVoice });
+        var r2 = await speak(lettersOf(it.spelling), { lang: enSpeakLang(), rate: Math.max(0.55, state.rate * 0.72), voice: state.enVoice, clipKey: "vocab/" + it.id + "-spell", playbackRate: state.rate });
         if (!isActive(token) || (r2 && r2.interrupted)) return;
         await wait(280);
         if (!isActive(token)) return;
@@ -367,7 +384,7 @@
       if (it.gloss) {
         setPhase("释义");
         // Speak gloss only — never tip
-        var r3 = await speak(it.gloss, { lang: "zh-CN", rate: state.rate, voice: state.zhVoice });
+        var r3 = await speak(it.gloss, { lang: "zh-CN", rate: state.rate, voice: state.zhVoice, clipKey: "vocab/" + it.id + "-gloss", playbackRate: state.rate });
         if (!isActive(token) || (r3 && r3.interrupted)) return;
         await wait(320);
         if (!isActive(token)) return;
@@ -375,13 +392,13 @@
 
       if (state.exampleOn && it.example) {
         setPhase("例句");
-        var r4 = await speak(it.example, { lang: enSpeakLang(), rate: Math.max(0.7, state.rate * 0.88), voice: state.enVoice });
+        var r4 = await speak(it.example, { lang: enSpeakLang(), rate: Math.max(0.7, state.rate * 0.88), voice: state.enVoice, clipKey: "vocab/" + it.id + "-ex", playbackRate: state.rate });
         if (!isActive(token) || (r4 && r4.interrupted)) return;
         await wait(250);
         if (!isActive(token)) return;
         if (it.exampleZh) {
           setPhase("例句中文");
-          var r5 = await speak(it.exampleZh, { lang: "zh-CN", rate: state.rate, voice: state.zhVoice });
+          var r5 = await speak(it.exampleZh, { lang: "zh-CN", rate: state.rate, voice: state.zhVoice, clipKey: "vocab/" + it.id + "-exzh", playbackRate: state.rate });
           if (!isActive(token) || (r5 && r5.interrupted)) return;
           await wait(350);
         }
@@ -489,7 +506,11 @@
       var tip = "iPhone 关屏后系统仍可能暂停网页朗读；安卓 Chrome 开「息屏续听」通常可继续；或用保持常亮。";
       tipEl.textContent = base ? base + " · " + tip : "💡 " + tip;
     }
-    pickVoices();
+    if (global.ChinaPTEAudio && global.ChinaPTEAudio.loadManifest) {
+    global.ChinaPTEAudio.loadManifest();
+  }
+
+  pickVoices();
     if (window.speechSynthesis) {
       speechSynthesis.onvoiceschanged = pickVoices;
     }

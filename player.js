@@ -1,7 +1,7 @@
 /**
  * chinaPTE · shared speech player module
  * Used by WFD / RS / RL / ASQ / SST / HIW / RA
- * Zero-cost: Web Speech API + localStorage only
+ * Prefers HTML5 MP3 clips (edge-tts); speechSynthesis fallback + localStorage
  */
 (function (global) {
   "use strict";
@@ -300,11 +300,30 @@
         clearTimeout(pauseTimer);
         pauseTimer = null;
       }
+      if (global.ChinaPTEAudio) {
+        try { global.ChinaPTEAudio.cancel(); } catch (e) {}
+      }
       if (window.speechSynthesis) speechSynthesis.cancel();
       currentUtter = null;
     }
 
     function speak(text, opts) {
+      opts = opts || {};
+      const engine = global.ChinaPTEAudio;
+      if (engine) {
+        const url = opts.audioUrl || engine.resolveClipUrl(opts.clipKey);
+        if (url) {
+          const pr = opts.playbackRate != null ? opts.playbackRate : state.rate;
+          return engine.speak(text, Object.assign({}, opts, { audioUrl: url, rate: pr })).then((r) => {
+            if (r && r.error) return speakViaTts(text, opts);
+            return r || {};
+          });
+        }
+      }
+      return speakViaTts(text, opts);
+    }
+
+    function speakViaTts(text, opts) {
       return new Promise((resolve, reject) => {
         if (!window.speechSynthesis) {
           reject(new Error("no speechSynthesis"));
@@ -503,6 +522,8 @@
           lang: enSpeakLang(),
           rate: Math.max(0.7, state.rate * 0.95),
           voice: state.enVoice,
+          clipKey: mode + "/" + item.id + "-v" + vi + "-word",
+          playbackRate: state.rate,
         });
         if (!isActive(token) || (rw && rw.interrupted)) return false;
         await wait(280);
@@ -514,6 +535,8 @@
             lang: enSpeakLang(),
             rate: Math.max(0.6, state.rate * 0.75),
             voice: state.enVoice,
+            clipKey: mode + "/" + item.id + "-v" + vi + "-spell",
+            playbackRate: state.rate,
           });
           if (!isActive(token) || (rs && rs.interrupted)) return false;
           await wait(280);
@@ -527,6 +550,8 @@
             lang: "zh-CN",
             rate: state.rate,
             voice: state.zhVoice,
+            clipKey: mode + "/" + item.id + "-v" + vi + "-gloss",
+            playbackRate: state.rate,
           });
           if (!isActive(token) || (rg && rg.interrupted)) return false;
           await wait(350);
@@ -566,6 +591,8 @@
             lang: enSpeakLang(),
             rate: enRate,
             voice: state.enVoice,
+            clipKey: mode + "/" + item.id + "-en",
+            playbackRate: state.rate,
           });
           if (!isActive(token) || (r1 && r1.interrupted)) return;
 
@@ -581,6 +608,8 @@
               lang: "zh-CN",
               rate: state.rate,
               voice: state.zhVoice,
+              clipKey: mode + "/" + item.id + "-zh",
+              playbackRate: state.rate,
             });
             if (!isActive(token) || (r2 && r2.interrupted)) return;
             await wait(400);
@@ -821,6 +850,10 @@
         return;
       }
 
+      if (global.ChinaPTEAudio && global.ChinaPTEAudio.loadManifest) {
+        global.ChinaPTEAudio.loadManifest();
+      }
+
       if (!window.speechSynthesis) {
         if (els.speechWarn) els.speechWarn.classList.add("is-visible");
       } else {
@@ -842,7 +875,7 @@
         els.tipBanner.dataset.keepAliveTip = "1";
         const base = (els.tipBanner.textContent || "").trim();
         const tip =
-          "iPhone 关屏后系统仍可能暂停网页朗读；安卓 Chrome 开「息屏续听」通常可继续；或用保持常亮。";
+          "已优先用预生成 MP3 播放，息屏续听更稳；仍可开「息屏续听 / 保持常亮」兜底。";
         els.tipBanner.textContent = base ? base + " · " + tip : "💡 " + tip;
       }
 

@@ -1,8 +1,9 @@
 /**
  * chinaPTE · mobile keep-alive helpers
  * Silent looping HTMLAudio + Media Session + optional Screen Wake Lock.
- * Helps Android Chrome keep Web Speech alive when the screen turns off.
- * iOS Safari may still suspend speechSynthesis on lock — wake lock is the fallback.
+ * Helps Android Chrome keep playback alive when the screen turns off.
+ * Prefer HTML5 MP3 (ChinaPTEAudio); silent loop + Media Session still help between clips.
+ * iOS may still suspend speechSynthesis fallback — wake lock is the fallback.
  */
 (function (global) {
   "use strict";
@@ -210,13 +211,18 @@
         if (wakeLockOn && wantSilent) requestWakeLock();
         if (wantSilent && keepAliveOn) tryPlaySilent();
         if (typeof hooks.isPlaying === "function" && hooks.isPlaying()) {
+          var htmlPlaying =
+            window.ChinaPTEAudio &&
+            typeof window.ChinaPTEAudio.isPlaying === "function" &&
+            window.ChinaPTEAudio.isPlaying();
           var dead =
+            !htmlPlaying &&
             window.speechSynthesis &&
             !speechSynthesis.speaking &&
             !speechSynthesis.pending;
           if (dead && typeof hooks.onResumeSpeech === "function") {
             hooks.onResumeSpeech();
-          } else if (window.speechSynthesis && speechSynthesis.paused) {
+          } else if (!htmlPlaying && window.speechSynthesis && speechSynthesis.paused) {
             try {
               speechSynthesis.resume();
             } catch (e) {}

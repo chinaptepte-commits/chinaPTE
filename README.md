@@ -1,6 +1,6 @@
 # chinaPTE · PTE Academic 全题型零成本练习站
 
-华人 PTE 备考静态站：暗色 UI + 耳机随身听（Web Speech API）+ 出国劳务软性留资。
+华人 PTE 备考静态站：暗色 UI + 耳机随身听（HTML5 MP3 优先 + Web Speech 回退）+ 出国劳务软性留资。
 
 ## 快速打开
 
@@ -59,6 +59,6 @@ cd chinaPTE-wfd-listen && python3 -m http.server 8080
 
 ## 技术
 
-- 纯静态 · 无后端 · Web Speech API · localStorage（按题型分 key）
+- 纯静态 · 无后端 · HTML5 audio（edge-tts MP3）+ Web Speech 回退 · localStorage（按题型分 key）
 - 留资 mock：`consult.html` + `lead.js`
 - 劳务文案：`content/labor.json` + `admin/`（GitHub API 更新）
