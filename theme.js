@@ -38,14 +38,15 @@
   }
 
   function syncButtons(mode) {
-    var root = document.getElementById('themeToggle');
-    if (!root) return;
-    var buttons = root.querySelectorAll('[data-theme-mode]');
-    for (var i = 0; i < buttons.length; i++) {
-      var btn = buttons[i];
-      var on = btn.getAttribute('data-theme-mode') === mode;
-      btn.classList.toggle('is-active', on);
-      btn.setAttribute('aria-pressed', on ? 'true' : 'false');
+    var roots = document.querySelectorAll('.theme-toggle');
+    for (var r = 0; r < roots.length; r++) {
+      var buttons = roots[r].querySelectorAll('[data-theme-mode]');
+      for (var i = 0; i < buttons.length; i++) {
+        var btn = buttons[i];
+        var on = btn.getAttribute('data-theme-mode') === mode;
+        btn.classList.toggle('is-active', on);
+        btn.setAttribute('aria-pressed', on ? 'true' : 'false');
+      }
     }
   }
 
@@ -57,14 +58,21 @@
     syncButtons(mode);
   }
 
-  function buildToggle() {
-    if (document.getElementById('themeToggle')) return;
+  function createToggle(opts) {
     var wrap = document.createElement('div');
-    wrap.className = 'theme-toggle';
-    wrap.id = 'themeToggle';
+    wrap.className = 'theme-toggle' + (opts.extraClass ? ' ' + opts.extraClass : '');
+    if (opts.id) wrap.id = opts.id;
     wrap.setAttribute('role', 'group');
-    wrap.setAttribute('aria-label', '外观主题');
+    wrap.setAttribute('aria-label', '皮肤 / 外观主题');
     wrap.title = '自动：本地时间 06:00–18:59 日间，其余夜间';
+
+    var label = document.createElement('span');
+    label.className = 'theme-toggle-label';
+    label.textContent = '皮肤';
+    wrap.appendChild(label);
+
+    var row = document.createElement('div');
+    row.className = 'theme-toggle-btns';
 
     var modes = [
       { id: 'auto', label: '自动' },
@@ -81,20 +89,36 @@
       btn.addEventListener('click', (function (id) {
         return function () { setMode(id); };
       })(m.id));
-      wrap.appendChild(btn);
+      row.appendChild(btn);
     }
+    wrap.appendChild(row);
 
     var hint = document.createElement('span');
     hint.className = 'theme-toggle-hint';
     hint.textContent = '自动=06:00–18:59 日间';
     wrap.appendChild(hint);
 
+    return wrap;
+  }
+
+  function buildToggle() {
+    // Always mount an obvious fixed sticky control (bottom-right, above Play All / safe area).
+    if (!document.getElementById('themeToggle')) {
+      var sticky = createToggle({
+        id: 'themeToggle',
+        extraClass: 'theme-toggle--sticky'
+      });
+      document.body.appendChild(sticky);
+    }
+
+    // Optional compact mirror in nav on desktop (hidden on small screens via CSS).
     var nav = document.querySelector('.site-nav');
-    if (nav) {
-      nav.appendChild(wrap);
-    } else {
-      wrap.classList.add('theme-toggle--sticky');
-      document.body.appendChild(wrap);
+    if (nav && !document.getElementById('themeToggleNav')) {
+      var navToggle = createToggle({
+        id: 'themeToggleNav',
+        extraClass: 'theme-toggle--nav'
+      });
+      nav.appendChild(navToggle);
     }
   }
 
