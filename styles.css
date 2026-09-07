@@ -533,6 +533,76 @@ textarea:focus {
   color: var(--accent);
 }
 
+.loop-group {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  background: var(--bg-elevated);
+  border: 1px solid var(--border);
+  border-radius: var(--radius-sm);
+  padding: 4px 8px 4px 12px;
+  min-height: 44px;
+}
+
+.loop-label {
+  font-size: 0.78rem;
+  font-weight: 600;
+  color: var(--text-muted);
+  white-space: nowrap;
+}
+
+.loop-step {
+  width: 36px;
+  height: 36px;
+  min-width: 36px;
+  border-radius: 8px;
+  border: 1px solid var(--border);
+  background: var(--bg);
+  color: var(--text);
+  font-size: 1.1rem;
+  font-weight: 700;
+  line-height: 1;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+}
+
+.loop-step:active {
+  background: var(--accent-soft);
+  color: var(--accent);
+}
+
+.loop-input {
+  width: 48px;
+  min-height: 36px;
+  text-align: center;
+  font-weight: 700;
+  font-size: 0.9rem;
+  border: 1px solid var(--border);
+  border-radius: 8px;
+  background: var(--bg);
+  color: var(--text);
+  -moz-appearance: textfield;
+}
+
+.loop-input::-webkit-outer-spin-button,
+.loop-input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+.loop-indicator {
+  font-size: 0.78rem;
+  font-weight: 600;
+  color: var(--accent);
+  white-space: nowrap;
+}
+
+.loop-indicator[hidden] {
+  display: none !important;
+}
+
 .toggle {
   display: flex;
   align-items: center;

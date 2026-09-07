@@ -64,6 +64,7 @@
       <div class="progress-meta">
         <span id="progressText">1 / —</span>
         <span id="phaseText">准备就绪</span>
+        <span id="loopIndicator" class="loop-indicator" hidden></span>
       </div>
       <div class="progress-bar" role="progressbar" aria-valuemin="0" aria-valuemax="100" aria-valuenow="0">
         <div class="progress-fill" id="progressFill"></div>
@@ -97,6 +98,13 @@
         <button type="button" class="speed-btn" data-speed="0.8">0.8×</button>
         <button type="button" class="speed-btn is-active" data-speed="1">1×</button>
         <button type="button" class="speed-btn" data-speed="1.2">1.2×</button>
+      </div>
+
+      <div class="loop-group" role="group" aria-label="单题循环">
+        <span class="loop-label">单题循环</span>
+        <button type="button" class="loop-step" id="btnLoopMinus" aria-label="减少循环次数">−</button>
+        <input type="number" id="loopCount" class="loop-input" min="1" max="20" value="1" inputmode="numeric" aria-label="单题循环次数" />
+        <button type="button" class="loop-step" id="btnLoopPlus" aria-label="增加循环次数">+</button>
       </div>
 
     <div class="options keep-awake-options" aria-label="息屏续听设置">

@@ -11,6 +11,7 @@
   var STORAGE_RESUME = PREFIX + "_resume";
   var STORAGE_MASTERED = PREFIX + "_mastered";
   var STORAGE_NOTEBOOK = PREFIX + "_notebook";
+  var STORAGE_LOOP = "chinaPTE_loop_count";
 
   function $(id) { return document.getElementById(id); }
 
@@ -66,6 +67,8 @@
     filterQuery: "",
     enVoice: null,
     zhVoice: null,
+    loopCount: 1,
+    loopPass: 0,
   };
 
   var els = {};
@@ -355,13 +358,50 @@
     }
   }
 
+
+  function clampLoop(n) {
+    n = parseInt(n, 10);
+    if (isNaN(n) || n < 1) return 1;
+    if (n > 20) return 20;
+    return n;
+  }
+  function loadLoopCount() {
+    try {
+      var raw = localStorage.getItem(STORAGE_LOOP);
+      if (raw == null || raw === "") return 1;
+      return clampLoop(raw);
+    } catch (e) { return 1; }
+  }
+  function saveLoopCount(n) {
+    state.loopCount = clampLoop(n);
+    try { localStorage.setItem(STORAGE_LOOP, String(state.loopCount)); } catch (e) {}
+    if (els.loopCount) els.loopCount.value = String(state.loopCount);
+    updateLoopIndicator();
+  }
+  function updateLoopIndicator() {
+    if (!els.loopIndicator) return;
+    var total = clampLoop(state.loopCount);
+    var pass = state.loopPass || 0;
+    if (state.playing && total > 1 && pass > 0) {
+      els.loopIndicator.hidden = false;
+      els.loopIndicator.textContent = "本轮 " + pass + "/" + total;
+    } else {
+      els.loopIndicator.hidden = true;
+      els.loopIndicator.textContent = "";
+    }
+  }
+
   async function playCurrent(opts) {
     var token = newToken();
     var continueAll = opts && opts.continueAll;
+    var loopTotal = clampLoop(state.loopCount);
+    var loopPass = clampLoop((opts && opts.loopPass) || 1);
     state.playing = true;
     state.paused = false;
     if (continueAll) state.playAll = true;
+    state.loopPass = loopPass;
     updateTransport();
+    updateLoopIndicator();
     var it = current();
     if (!it) { stopAll(); return; }
     var kaStart = ensureKeepAlive();
@@ -404,8 +444,22 @@
         }
       }
 
+      if (loopPass < loopTotal && isActive(token)) {
+        setPhase("本轮 " + loopPass + "/" + loopTotal);
+        updateLoopIndicator();
+        await wait(450);
+        if (!isActive(token)) return;
+        playCurrent({
+          continueAll: !!state.playAll || !!continueAll,
+          loopPass: loopPass + 1,
+        });
+        return;
+      }
+
       bumpToday();
       saveResume();
+      state.loopPass = 0;
+      updateLoopIndicator();
 
       if (state.playAll && isActive(token)) {
         if (state.index < items.length - 1) {
@@ -413,13 +467,14 @@
           renderItem();
           await wait(600);
           if (!isActive(token)) return;
-          playCurrent({ continueAll: true });
+          playCurrent({ continueAll: true, loopPass: 1 });
           return;
         }
         state.playAll = false;
         state.playing = false;
         setPhase("全部完成");
         updateTransport();
+        updateLoopIndicator();
         { var ka = ensureKeepAlive(); if (ka) ka.onSessionStop(); }
         return;
       }
@@ -427,13 +482,16 @@
       state.playAll = false;
       setPhase("本条完成");
       updateTransport();
+      updateLoopIndicator();
       { var ka = ensureKeepAlive(); if (ka) ka.onSessionStop(); }
     } catch (err) {
       console.warn(err);
       state.playing = false;
       state.playAll = false;
+      state.loopPass = 0;
       setPhase("播放中断");
       updateTransport();
+      updateLoopIndicator();
       { var ka = ensureKeepAlive(); if (ka) ka.onSessionStop(); }
     }
   }
@@ -443,9 +501,11 @@
     state.playing = false;
     state.paused = false;
     state.playAll = false;
+    state.loopPass = 0;
     cancelSpeech();
     setPhase("已停止");
     updateTransport();
+    updateLoopIndicator();
     var ka = ensureKeepAlive();
     if (ka) ka.onSessionStop();
   }
@@ -458,6 +518,7 @@
     cancelSpeech();
     setPhase("已暂停");
     updateTransport();
+    updateLoopIndicator();
     var ka = ensureKeepAlive();
     if (ka) ka.onSessionPause();
   }
@@ -493,6 +554,10 @@
       metaStats: $("metaStats"),
       modeBtns: document.querySelectorAll("[data-vocab-mode]"),
       speedBtns: document.querySelectorAll(".speed-btn"),
+      loopCount: $("loopCount"),
+      loopMinus: $("btnLoopMinus"),
+      loopPlus: $("btnLoopPlus"),
+      loopIndicator: $("loopIndicator"),
     };
 
     if (!window.speechSynthesis && els.speechWarn) els.speechWarn.style.display = "block";
@@ -524,6 +589,26 @@
     applyFilter();
     renderItem();
     setPhase("准备就绪");
+
+    state.loopCount = loadLoopCount();
+    if (els.loopCount) els.loopCount.value = String(state.loopCount);
+    function onLoopInput() {
+      saveLoopCount(els.loopCount ? els.loopCount.value : 1);
+    }
+    if (els.loopMinus) {
+      els.loopMinus.addEventListener("click", function () {
+        saveLoopCount(state.loopCount - 1);
+      });
+    }
+    if (els.loopPlus) {
+      els.loopPlus.addEventListener("click", function () {
+        saveLoopCount(state.loopCount + 1);
+      });
+    }
+    if (els.loopCount) {
+      els.loopCount.addEventListener("change", onLoopInput);
+      els.loopCount.addEventListener("input", onLoopInput);
+    }
 
     if (els.playAll) els.playAll.addEventListener("click", function () {
       if (state.playAll && state.playing) { pausePlayback(); return; }

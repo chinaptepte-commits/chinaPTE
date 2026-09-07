@@ -8,6 +8,7 @@
   const STORAGE_TODAY = "chinaPTE_wfd_today";
   const STORAGE_RESUME = "chinaPTE_wfd_resume";
   const STORAGE_STREAK = "chinaPTE_wfd_streak";
+  const STORAGE_LOOP = "chinaPTE_loop_count";
 
   const allItems = window.WFD_BANK || window.WFD_DATA || [];
   let items = allItems.slice();
@@ -25,6 +26,8 @@
     enVoice: null,
     zhVoice: null,
     filterQuery: "",
+    loopCount: 1,
+    loopPass: 0,
   };
 
   const $ = (id) => document.getElementById(id);
@@ -56,6 +59,10 @@
     clearSearch: $("btnClearSearch"),
     tipBanner: $("tipBanner"),
     speedBtns: document.querySelectorAll(".speed-btn"),
+    loopCount: $("loopCount"),
+    loopMinus: $("btnLoopMinus"),
+    loopPlus: $("btnLoopPlus"),
+    loopIndicator: $("loopIndicator"),
   };
 
   let keepAlive = null;
@@ -406,6 +413,7 @@
       "vocab-word": "词汇",
       "vocab-spell": "拼写",
       "vocab-gloss": "释义",
+      loop: "循环",
     };
     return map[phase] || phase;
   }
@@ -507,15 +515,59 @@
     return token === playToken && state.playing;
   }
 
+  function clampLoop(n) {
+    n = parseInt(n, 10);
+    if (isNaN(n) || n < 1) return 1;
+    if (n > 20) return 20;
+    return n;
+  }
+
+  function loadLoopCount() {
+    try {
+      const raw = localStorage.getItem(STORAGE_LOOP);
+      if (raw == null || raw === "") return 1;
+      return clampLoop(raw);
+    } catch (e) {
+      return 1;
+    }
+  }
+
+  function saveLoopCount(n) {
+    state.loopCount = clampLoop(n);
+    try {
+      localStorage.setItem(STORAGE_LOOP, String(state.loopCount));
+    } catch (e) {}
+    if (els.loopCount) els.loopCount.value = String(state.loopCount);
+    updateLoopIndicator();
+  }
+
+  function updateLoopIndicator() {
+    if (!els.loopIndicator) return;
+    const total = clampLoop(state.loopCount);
+    const pass = state.loopPass || 0;
+    if (state.playing && total > 1 && pass > 0) {
+      els.loopIndicator.hidden = false;
+      els.loopIndicator.textContent = "本轮 " + pass + "/" + total;
+    } else {
+      els.loopIndicator.hidden = true;
+      els.loopIndicator.textContent = "";
+    }
+  }
+
   async function playCurrentSequence(opts) {
     const token = newToken();
     const fromVocab = opts && opts.fromVocab;
     const continueAll = opts && opts.continueAll;
+    const loopTotal = clampLoop(state.loopCount);
+    const itemLoop = typeof fromVocab !== "number";
+    const loopPass = itemLoop ? clampLoop((opts && opts.loopPass) || 1) : 1;
 
     state.playing = true;
     state.paused = false;
     if (continueAll) state.playAll = true;
+    state.loopPass = itemLoop ? loopPass : 0;
     updateTransportUI();
+    updateLoopIndicator();
 
     const item = currentItem();
     if (!item) {
@@ -610,8 +662,23 @@
       }
 
       highlightVocab(-1);
+
+      if (itemLoop && loopPass < loopTotal && isActive(token)) {
+        setPhase("loop", "本轮 " + loopPass + "/" + loopTotal);
+        updateLoopIndicator();
+        await wait(450);
+        if (!isActive(token)) return;
+        playCurrentSequence({
+          continueAll: !!state.playAll || !!continueAll,
+          loopPass: loopPass + 1,
+        });
+        return;
+      }
+
       bumpTodayCount();
       saveResume();
+      state.loopPass = 0;
+      updateLoopIndicator();
 
       if (state.playAll && isActive(token)) {
         if (state.index < items.length - 1) {
@@ -619,13 +686,14 @@
           renderItem();
           await wait(700);
           if (!isActive(token)) return;
-          playCurrentSequence({ continueAll: true });
+          playCurrentSequence({ continueAll: true, loopPass: 1 });
           return;
         }
         state.playAll = false;
         state.playing = false;
         setPhase("idle", "全部完成");
         updateTransportUI();
+        updateLoopIndicator();
         { const ka = ensureKeepAlive(); if (ka) ka.onSessionStop(); }
         return;
       }
@@ -634,13 +702,16 @@
       state.playAll = false;
       setPhase("idle", "本句完成");
       updateTransportUI();
+      updateLoopIndicator();
       { const ka = ensureKeepAlive(); if (ka) ka.onSessionStop(); }
     } catch (err) {
       console.warn("speech error", err);
       state.playing = false;
       state.playAll = false;
+      state.loopPass = 0;
       setPhase("idle", "播放中断");
       updateTransportUI();
+      updateLoopIndicator();
       { const ka = ensureKeepAlive(); if (ka) ka.onSessionStop(); }
     }
   }
@@ -650,10 +721,12 @@
     state.playing = false;
     state.paused = false;
     state.playAll = false;
+    state.loopPass = 0;
     cancelSpeech();
     highlightVocab(-1);
     setPhase("idle", "已停止");
     updateTransportUI();
+    updateLoopIndicator();
     const ka = ensureKeepAlive();
     if (ka) ka.onSessionStop();
   }
@@ -666,6 +739,7 @@
     cancelSpeech();
     setPhase("idle", "已暂停");
     updateTransportUI();
+    updateLoopIndicator();
     const ka = ensureKeepAlive();
     if (ka) ka.onSessionPause();
   }
@@ -837,6 +911,26 @@
       const tip =
         "iPhone 关屏后系统仍可能暂停网页朗读；安卓 Chrome 开「息屏续听」通常可继续；或用保持常亮。";
       els.tipBanner.textContent = base ? base + " · " + tip : "💡 " + tip;
+    }
+
+    state.loopCount = loadLoopCount();
+    if (els.loopCount) els.loopCount.value = String(state.loopCount);
+    function onLoopInput() {
+      saveLoopCount(els.loopCount ? els.loopCount.value : 1);
+    }
+    if (els.loopMinus) {
+      els.loopMinus.addEventListener("click", () => {
+        saveLoopCount(state.loopCount - 1);
+      });
+    }
+    if (els.loopPlus) {
+      els.loopPlus.addEventListener("click", () => {
+        saveLoopCount(state.loopCount + 1);
+      });
+    }
+    if (els.loopCount) {
+      els.loopCount.addEventListener("change", onLoopInput);
+      els.loopCount.addEventListener("input", onLoopInput);
     }
 
     if (els.playAll) els.playAll.addEventListener("click", onPlayAll);
