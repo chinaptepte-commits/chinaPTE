@@ -1540,7 +1540,7 @@ input:focus-visible {
       <div class="stats-pill" id="todayStats">今天已听 <strong id="todayCount">0</strong></div>
     </header>
 
-    <p class="tip-banner">💡 戴耳机反复听，不必盯屏 · 英文 → 拼读 → 中文释义 → 例句</p>
+    <p class="tip-banner">💡 戴耳机反复听，不必盯屏 · 中文释义 → 英文 → 拼读 → 例句</p>
 
 <div class="unsupported" id="speechWarn" role="alert" style="display:none">
       当前浏览器不支持 Web Speech API。请换用 Chrome / Edge / Safari。
@@ -1563,7 +1563,7 @@ input:focus-visible {
         <span class="icon" id="playAllIcon">▶</span>
         <span class="label-stack">
           <span id="playAllLabel">单词随身听 · Play All</span>
-          <span class="label-en">单词 → 拼读 → 释义 → 例句</span>
+          <span class="label-en">中文 → 英文 → 拼读 → 例句</span>
         </span>
       </button>
     </section>
@@ -12834,7 +12834,7 @@ input:focus-visible {
 <script>
 /**
  * chinaPTE · 单词库 / 单词随身听
- * Flow: EN word → spelling → Chinese gloss → example → exampleZh → next
+ * Flow: Chinese gloss → EN word → spelling → example → exampleZh → next
  * Does NOT speak tip fields (memory tips shown in UI only).
  */
 (function (global) {
@@ -13241,6 +13241,15 @@ input:focus-visible {
     var kaStart = ensureKeepAlive();
     if (kaStart) kaStart.onSessionStart(sessionTitle());
     try {
+      if (it.gloss) {
+        setPhase("释义");
+        // Speak gloss only — never tip
+        var r3 = await speak(it.gloss, { lang: "zh-CN", rate: state.rate, voice: state.zhVoice, clipKey: "vocab/" + it.id + "-gloss", playbackRate: state.rate });
+        if (!isActive(token) || (r3 && r3.interrupted)) return;
+        await wait(320);
+        if (!isActive(token)) return;
+      }
+
       setPhase("单词");
       var r1 = await speak(it.word, { lang: enSpeakLang(), rate: Math.max(0.7, state.rate * 0.88), voice: state.enVoice, clipKey: "vocab/" + it.id + "-word", playbackRate: state.rate });
       if (!isActive(token) || (r1 && r1.interrupted)) return;
@@ -13252,15 +13261,6 @@ input:focus-visible {
         var r2 = await speak(lettersOf(it.spelling), { lang: enSpeakLang(), rate: Math.max(0.55, state.rate * 0.72), voice: state.enVoice, clipKey: "vocab/" + it.id + "-spell", playbackRate: state.rate });
         if (!isActive(token) || (r2 && r2.interrupted)) return;
         await wait(280);
-        if (!isActive(token)) return;
-      }
-
-      if (it.gloss) {
-        setPhase("释义");
-        // Speak gloss only — never tip
-        var r3 = await speak(it.gloss, { lang: "zh-CN", rate: state.rate, voice: state.zhVoice, clipKey: "vocab/" + it.id + "-gloss", playbackRate: state.rate });
-        if (!isActive(token) || (r3 && r3.interrupted)) return;
-        await wait(320);
         if (!isActive(token)) return;
       }
 

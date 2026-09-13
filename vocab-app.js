@@ -1,6 +1,6 @@
 /**
  * chinaPTE · 单词库 / 单词随身听
- * Flow: EN word → spelling → Chinese gloss → example → exampleZh → next
+ * Flow: Chinese gloss → EN word → spelling → example → exampleZh → next
  * Does NOT speak tip fields (memory tips shown in UI only).
  */
 (function (global) {
@@ -407,6 +407,15 @@
     var kaStart = ensureKeepAlive();
     if (kaStart) kaStart.onSessionStart(sessionTitle());
     try {
+      if (it.gloss) {
+        setPhase("释义");
+        // Speak gloss only — never tip
+        var r3 = await speak(it.gloss, { lang: "zh-CN", rate: state.rate, voice: state.zhVoice, clipKey: "vocab/" + it.id + "-gloss", playbackRate: state.rate });
+        if (!isActive(token) || (r3 && r3.interrupted)) return;
+        await wait(320);
+        if (!isActive(token)) return;
+      }
+
       setPhase("单词");
       var r1 = await speak(it.word, { lang: enSpeakLang(), rate: Math.max(0.7, state.rate * 0.88), voice: state.enVoice, clipKey: "vocab/" + it.id + "-word", playbackRate: state.rate });
       if (!isActive(token) || (r1 && r1.interrupted)) return;
@@ -418,15 +427,6 @@
         var r2 = await speak(lettersOf(it.spelling), { lang: enSpeakLang(), rate: Math.max(0.55, state.rate * 0.72), voice: state.enVoice, clipKey: "vocab/" + it.id + "-spell", playbackRate: state.rate });
         if (!isActive(token) || (r2 && r2.interrupted)) return;
         await wait(280);
-        if (!isActive(token)) return;
-      }
-
-      if (it.gloss) {
-        setPhase("释义");
-        // Speak gloss only — never tip
-        var r3 = await speak(it.gloss, { lang: "zh-CN", rate: state.rate, voice: state.zhVoice, clipKey: "vocab/" + it.id + "-gloss", playbackRate: state.rate });
-        if (!isActive(token) || (r3 && r3.interrupted)) return;
-        await wait(320);
         if (!isActive(token)) return;
       }
 

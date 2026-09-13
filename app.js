@@ -620,6 +620,21 @@
         const v = vocab[vi];
         highlightVocab(vi);
 
+        if (state.zhOn && v.gloss) {
+          setPhase("vocab-gloss", `释义 · ${v.gloss}`);
+          const glossText = v.gloss; // zh-CN gloss only — never speak tip/跟读技巧
+          const rg = await speak(glossText, {
+            lang: "zh-CN",
+            rate: state.rate,
+            voice: state.zhVoice,
+            clipKey: "wfd/" + item.id + "-v" + vi + "-gloss",
+            playbackRate: state.rate,
+          });
+          if (!isActive(token) || (rg && rg.interrupted)) return;
+          await wait(350);
+          if (!isActive(token)) return;
+        }
+
         setPhase("vocab-word", `词汇 · ${v.word}`);
         const rw = await speak(v.word, {
           lang: enSpeakLang(),
@@ -644,21 +659,6 @@
         if (!isActive(token) || (rs && rs.interrupted)) return;
         await wait(280);
         if (!isActive(token)) return;
-
-        if (state.zhOn && v.gloss) {
-          setPhase("vocab-gloss", `释义 · ${v.gloss}`);
-          const glossText = v.gloss; // zh-CN gloss only — never speak tip/跟读技巧
-          const rg = await speak(glossText, {
-            lang: "zh-CN",
-            rate: state.rate,
-            voice: state.zhVoice,
-            clipKey: "wfd/" + item.id + "-v" + vi + "-gloss",
-            playbackRate: state.rate,
-          });
-          if (!isActive(token) || (rg && rg.interrupted)) return;
-          await wait(350);
-          if (!isActive(token)) return;
-        }
       }
 
       highlightVocab(-1);
