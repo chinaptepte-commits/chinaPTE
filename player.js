@@ -429,6 +429,16 @@
         .replace(/"/g, "&quot;");
     }
 
+    function notifyItemChange() {
+      try {
+        document.dispatchEvent(
+          new CustomEvent("chinapte:itemchange", {
+            detail: { mode: mode, item: currentItem(), index: state.index },
+          })
+        );
+      } catch (e) {}
+    }
+
     function renderItem() {
       const item = currentItem();
       if (!item) {
@@ -441,6 +451,7 @@
         }
         if (els.progressText) els.progressText.textContent = `当前 0 / ${allItems.length}`;
         syncProgressControls();
+        notifyItemChange();
         return;
       }
 
@@ -491,6 +502,7 @@
 
       highlightVocab(-1);
       saveResume();
+      notifyItemChange();
     }
 
     function highlightVocab(idx) {
@@ -1154,7 +1166,46 @@
       init();
     }
 
-    return { stopAll, renderItem, state };
+    async function playPromptEn() {
+      const item = currentItem();
+      if (!item) return;
+      stopAll();
+      state.playing = true;
+      state.paused = false;
+      updateTransportUI();
+      setPhase("en", "提示音频");
+      const enRate = Math.max(0.6, state.rate * enRateMul);
+      try {
+        await speak(itemEn(item), {
+          lang: enSpeakLang(),
+          rate: enRate,
+          voice: state.enVoice,
+          clipKey: mode + "/" + item.id + "-en",
+          playbackRate: state.rate,
+        });
+      } finally {
+        state.playing = false;
+        state.paused = false;
+        updateTransportUI();
+        setPhase("idle", "准备跟读");
+      }
+    }
+
+    return {
+      stopAll,
+      renderItem,
+      state,
+      getCurrentItem: currentItem,
+      getTargetText: function () {
+        const it = currentItem();
+        return it ? itemEn(it) : "";
+      },
+      getItemId: function () {
+        const it = currentItem();
+        return it ? it.id : null;
+      },
+      playPromptEn,
+    };
   }
 
   global.ChinaPTEPlayer = { create: createPlayer };

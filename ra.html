@@ -93,6 +93,8 @@
       </div>
     </article>
 
+    <section class="speak-score-wrap" id="speakScoreRoot" aria-label="跟读评分"></section>
+
     <nav class="controls" aria-label="播放控制">
       <button type="button" class="ctrl-btn" id="btnPrev" title="上一条"><span class="ico">⏮</span><span>上一条</span></button>
       <button type="button" class="ctrl-btn is-primary" id="btnPlayPause" title="播放 / 暂停"><span class="ico" id="playPauseIcon">▶</span><span id="playPauseLabel">播放</span></button>
@@ -140,14 +142,26 @@
   <script src="keepalive.js"></script>
   <script src="audio-engine.js"></script>
   <script src="player.js"></script>
+  <script src="speak-score.js"></script>
   <script>
-    ChinaPTEPlayer.create({
-      bankGlobal: "RA_BANK",
-      storagePrefix: "chinaPTE_ra",
-      mode: "ra",
-      enRateMul: 0.85,
-      bankName: "RA_BANK"
-    });
+    (function () {
+      var player = ChinaPTEPlayer.create({
+        bankGlobal: "RA_BANK",
+        storagePrefix: "chinaPTE_ra",
+        mode: "ra",
+        enRateMul: 0.85,
+        bankName: "RA_BANK"
+      });
+      var root = document.getElementById("speakScoreRoot");
+      if (root && window.ChinaPTESpeakScore) {
+        ChinaPTESpeakScore.mount(root, {
+          mode: "ra",
+          getTarget: function () { return player.getTargetText(); },
+          getItemId: function () { return player.getItemId(); },
+          stopPlayer: function () { player.stopAll(); },
+        });
+      }
+    })();
   </script>
 </body>
 </html>
