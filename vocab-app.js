@@ -76,6 +76,8 @@
   var pauseTimer = null;
   var keepAlive = null;
   var resumePending = false;
+  var seekDrag = null;
+  var jumpErrorTimer = null;
 
   function ensureKeepAlive() {
     if (keepAlive) return keepAlive;
@@ -309,14 +311,16 @@
     if (!it) {
       if (els.sentenceEn) els.sentenceEn.textContent = items.length ? "无匹配" : "暂无数据";
       if (els.sentenceZh) els.sentenceZh.textContent = "";
-      if (els.progressText) els.progressText.textContent = "0 / " + allItems.length;
+      if (els.progressText) els.progressText.textContent = "当前 0 / " + allItems.length;
+      syncProgressControls();
       renderList();
       return;
     }
     var n = items.length;
     var i = state.index + 1;
-    if (els.progressText) els.progressText.textContent = i + " / " + n + (state.filterQuery || state.mode !== "all" ? "（筛选）" : "");
+    if (els.progressText) els.progressText.textContent = "当前 " + i + " / " + n + (state.filterQuery || state.mode !== "all" ? "（筛选）" : "");
     if (els.progressFill) els.progressFill.style.width = ((i / Math.max(n, 1)) * 100) + "%";
+    syncProgressControls();
     if (els.sentenceEn) {
       els.sentenceEn.innerHTML = escapeHtml(it.word) +
         (it.phonetic ? ' <span style="color:var(--text-muted);font-size:0.85rem">' + escapeHtml(it.phonetic) + "</span>" : "");
@@ -523,6 +527,113 @@
     if (ka) ka.onSessionPause();
   }
 
+
+  function syncProgressControls() {
+    var n = Math.max(items.length, 1);
+    var i = items.length ? state.index + 1 : 1;
+    if (els.progressRange) {
+      els.progressRange.min = "1";
+      els.progressRange.max = String(n);
+      els.progressRange.value = String(i);
+      els.progressRange.disabled = !items.length;
+    }
+    if (els.jumpInput) {
+      els.jumpInput.min = "1";
+      els.jumpInput.max = String(Math.max(items.length, 1));
+      if (document.activeElement !== els.jumpInput) {
+        els.jumpInput.value = items.length ? String(i) : "";
+      }
+    }
+  }
+
+  function showJumpError(msg) {
+    if (!els.jumpError) return;
+    els.jumpError.textContent = msg || "超出范围";
+    els.jumpError.hidden = false;
+    if (jumpErrorTimer) clearTimeout(jumpErrorTimer);
+    jumpErrorTimer = setTimeout(function () {
+      if (els.jumpError) els.jumpError.hidden = true;
+    }, 1800);
+  }
+
+  function softStopForSeek() {
+    newToken();
+    state.playing = false;
+    state.paused = false;
+    state.playAll = false;
+    state.loopPass = 0;
+    cancelSpeech();
+    setPhase("选题中");
+    updateTransport();
+    updateLoopIndicator();
+    var ka = ensureKeepAlive();
+    if (ka) ka.onSessionStop();
+  }
+
+  function jumpToNumber(num, opts) {
+    opts = opts || {};
+    var n = items.length;
+    if (!n) {
+      showJumpError("暂无条目");
+      return false;
+    }
+    var one = parseInt(num, 10);
+    if (isNaN(one) || one < 1 || one > n) {
+      showJumpError("请输入 1–" + n);
+      return false;
+    }
+    if (els.jumpError) els.jumpError.hidden = true;
+    var wasPlaying = opts.wasPlaying != null ? !!opts.wasPlaying : !!(state.playing && !state.paused);
+    var wasAll = opts.wasAll != null ? !!opts.wasAll : !!state.playAll;
+    stopAll();
+    state.index = one - 1;
+    renderItem();
+    if (wasAll) {
+      state.playAll = true;
+      playCurrent({ continueAll: true });
+    } else if (wasPlaying) {
+      playCurrent({ continueAll: false });
+    } else {
+      setPhase("已跳转");
+    }
+    return true;
+  }
+
+  function onProgressInput() {
+    if (!els.progressRange || !items.length) return;
+    if (!seekDrag) {
+      seekDrag = {
+        wasPlaying: !!(state.playing && !state.paused),
+        wasAll: !!state.playAll,
+      };
+      softStopForSeek();
+    }
+    var one = parseInt(els.progressRange.value, 10);
+    if (!isNaN(one) && one >= 1 && one <= items.length) {
+      state.index = one - 1;
+      renderItem();
+    }
+  }
+
+  function onProgressChange() {
+    if (!els.progressRange || !items.length) return;
+    var drag = seekDrag;
+    seekDrag = null;
+    var one = parseInt(els.progressRange.value, 10);
+    jumpToNumber(one, {
+      wasPlaying: drag ? drag.wasPlaying : !!(state.playing && !state.paused),
+      wasAll: drag ? drag.wasAll : !!state.playAll,
+    });
+  }
+
+  function onJumpSubmit() {
+    var raw = els.jumpInput ? els.jumpInput.value : "";
+    jumpToNumber(raw, {
+      wasPlaying: !!(state.playing && !state.paused),
+      wasAll: !!state.playAll,
+    });
+  }
+
   function bind() {
     els = {
       playAll: $("btnPlayAll"),
@@ -539,6 +650,10 @@
       sentenceZh: $("sentenceZh"),
       progressText: $("progressText"),
       progressFill: $("progressFill"),
+      progressRange: $("progressRange"),
+      jumpInput: $("jumpInput"),
+      btnJump: $("btnJump"),
+      jumpError: $("jumpError"),
       phaseText: $("phaseText"),
       statusBadge: $("statusBadge"),
       statusText: $("statusText"),
@@ -619,6 +734,20 @@
       playCurrent({ continueAll: state.playAll });
     });
     if (els.stop) els.stop.addEventListener("click", stopAll);
+    if (els.progressRange) {
+      els.progressRange.addEventListener("input", onProgressInput);
+      els.progressRange.addEventListener("change", onProgressChange);
+    }
+    if (els.btnJump) els.btnJump.addEventListener("click", onJumpSubmit);
+    if (els.jumpInput) {
+      els.jumpInput.addEventListener("keydown", function (e) {
+        if (e.key === "Enter") {
+          e.preventDefault();
+          onJumpSubmit();
+        }
+      });
+    }
+
     if (els.prev) els.prev.addEventListener("click", function () {
       if (state.index > 0) { state.index -= 1; renderItem(); if (state.playing) { cancelSpeech(); playCurrent({ continueAll: state.playAll }); } }
     });

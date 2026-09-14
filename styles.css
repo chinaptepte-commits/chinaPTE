@@ -469,6 +469,7 @@ textarea:focus {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  gap: 8px;
   margin-bottom: 8px;
   font-size: 0.8rem;
   color: var(--text-muted);
@@ -487,6 +488,133 @@ textarea:focus {
   border-radius: 2px;
   width: 0%;
   transition: width 0.35s ease;
+}
+
+.progress-range {
+  -webkit-appearance: none;
+  appearance: none;
+  width: 100%;
+  height: 28px;
+  margin: 0 0 8px;
+  background: transparent;
+  cursor: pointer;
+}
+
+.progress-range:focus {
+  outline: none;
+}
+
+.progress-range:focus-visible {
+  outline: 2px solid var(--accent);
+  outline-offset: 2px;
+  border-radius: 8px;
+}
+
+.progress-range::-webkit-slider-runnable-track {
+  height: 6px;
+  background: var(--bg-elevated);
+  border-radius: 999px;
+  border: 1px solid var(--border);
+}
+
+.progress-range::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  appearance: none;
+  width: 18px;
+  height: 18px;
+  margin-top: -7px;
+  border-radius: 50%;
+  background: linear-gradient(135deg, var(--accent), var(--success));
+  border: 2px solid var(--bg-card);
+  box-shadow: 0 1px 4px rgba(0, 0, 0, 0.25);
+  cursor: grab;
+}
+
+.progress-range:active::-webkit-slider-thumb {
+  cursor: grabbing;
+}
+
+.progress-range::-moz-range-track {
+  height: 6px;
+  background: var(--bg-elevated);
+  border-radius: 999px;
+  border: 1px solid var(--border);
+}
+
+.progress-range::-moz-range-thumb {
+  width: 18px;
+  height: 18px;
+  border-radius: 50%;
+  background: linear-gradient(135deg, var(--accent), var(--success));
+  border: 2px solid var(--bg-card);
+  box-shadow: 0 1px 4px rgba(0, 0, 0, 0.25);
+  cursor: grab;
+}
+
+.progress-range:disabled {
+  opacity: 0.45;
+  cursor: not-allowed;
+}
+
+.jump-row {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+
+.jump-label {
+  font-size: 0.78rem;
+  font-weight: 600;
+  color: var(--text-muted);
+  white-space: nowrap;
+}
+
+.jump-input {
+  width: 72px;
+  min-height: 36px;
+  text-align: center;
+  font-weight: 700;
+  font-size: 0.9rem;
+  border: 1px solid var(--border);
+  border-radius: 8px;
+  background: var(--bg-elevated);
+  color: var(--text);
+  -moz-appearance: textfield;
+}
+
+.jump-input::-webkit-outer-spin-button,
+.jump-input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+.jump-btn {
+  min-height: 36px;
+  padding: 0 14px;
+  border-radius: 8px;
+  border: 1px solid var(--border);
+  background: var(--bg-elevated);
+  color: var(--text);
+  font-size: 0.85rem;
+  font-weight: 700;
+  cursor: pointer;
+}
+
+.jump-btn:active {
+  background: var(--accent-soft);
+  color: var(--accent);
+}
+
+.jump-error {
+  font-size: 0.75rem;
+  font-weight: 600;
+  color: var(--danger, #e85d5d);
+  white-space: nowrap;
+}
+
+.jump-error[hidden] {
+  display: none !important;
 }
 
 /* Now playing card */

@@ -480,6 +480,7 @@ textarea:focus {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  gap: 8px;
   margin-bottom: 8px;
   font-size: 0.8rem;
   color: var(--text-muted);
@@ -498,6 +499,133 @@ textarea:focus {
   border-radius: 2px;
   width: 0%;
   transition: width 0.35s ease;
+}
+
+.progress-range {
+  -webkit-appearance: none;
+  appearance: none;
+  width: 100%;
+  height: 28px;
+  margin: 0 0 8px;
+  background: transparent;
+  cursor: pointer;
+}
+
+.progress-range:focus {
+  outline: none;
+}
+
+.progress-range:focus-visible {
+  outline: 2px solid var(--accent);
+  outline-offset: 2px;
+  border-radius: 8px;
+}
+
+.progress-range::-webkit-slider-runnable-track {
+  height: 6px;
+  background: var(--bg-elevated);
+  border-radius: 999px;
+  border: 1px solid var(--border);
+}
+
+.progress-range::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  appearance: none;
+  width: 18px;
+  height: 18px;
+  margin-top: -7px;
+  border-radius: 50%;
+  background: linear-gradient(135deg, var(--accent), var(--success));
+  border: 2px solid var(--bg-card);
+  box-shadow: 0 1px 4px rgba(0, 0, 0, 0.25);
+  cursor: grab;
+}
+
+.progress-range:active::-webkit-slider-thumb {
+  cursor: grabbing;
+}
+
+.progress-range::-moz-range-track {
+  height: 6px;
+  background: var(--bg-elevated);
+  border-radius: 999px;
+  border: 1px solid var(--border);
+}
+
+.progress-range::-moz-range-thumb {
+  width: 18px;
+  height: 18px;
+  border-radius: 50%;
+  background: linear-gradient(135deg, var(--accent), var(--success));
+  border: 2px solid var(--bg-card);
+  box-shadow: 0 1px 4px rgba(0, 0, 0, 0.25);
+  cursor: grab;
+}
+
+.progress-range:disabled {
+  opacity: 0.45;
+  cursor: not-allowed;
+}
+
+.jump-row {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+
+.jump-label {
+  font-size: 0.78rem;
+  font-weight: 600;
+  color: var(--text-muted);
+  white-space: nowrap;
+}
+
+.jump-input {
+  width: 72px;
+  min-height: 36px;
+  text-align: center;
+  font-weight: 700;
+  font-size: 0.9rem;
+  border: 1px solid var(--border);
+  border-radius: 8px;
+  background: var(--bg-elevated);
+  color: var(--text);
+  -moz-appearance: textfield;
+}
+
+.jump-input::-webkit-outer-spin-button,
+.jump-input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+.jump-btn {
+  min-height: 36px;
+  padding: 0 14px;
+  border-radius: 8px;
+  border: 1px solid var(--border);
+  background: var(--bg-elevated);
+  color: var(--text);
+  font-size: 0.85rem;
+  font-weight: 700;
+  cursor: pointer;
+}
+
+.jump-btn:active {
+  background: var(--accent-soft);
+  color: var(--accent);
+}
+
+.jump-error {
+  font-size: 0.75rem;
+  font-weight: 600;
+  color: var(--danger, #e85d5d);
+  white-space: nowrap;
+}
+
+.jump-error[hidden] {
+  display: none !important;
 }
 
 /* Now playing card */
@@ -1570,12 +1698,16 @@ input:focus-visible {
 
     <div class="progress-wrap">
       <div class="progress-meta">
-        <span id="progressText">1 / —</span>
+        <span id="progressText">当前 1 / —</span>
         <span id="phaseText">准备就绪</span>
         <span id="loopIndicator" class="loop-indicator" hidden></span>
       </div>
-      <div class="progress-bar" role="progressbar" aria-valuemin="0" aria-valuemax="100" aria-valuenow="0">
-        <div class="progress-fill" id="progressFill"></div>
+      <input type="range" id="progressRange" class="progress-range" min="1" max="1" value="1" step="1" aria-label="拖动选择题号" />
+      <div class="jump-row">
+        <label class="jump-label" for="jumpInput">题号</label>
+        <input type="number" id="jumpInput" class="jump-input" min="1" value="1" inputmode="numeric" aria-label="题号" />
+        <button type="button" class="jump-btn" id="btnJump">跳转</button>
+        <span id="jumpError" class="jump-error" hidden>超出范围</span>
       </div>
     </div>
 
@@ -12910,6 +13042,8 @@ input:focus-visible {
   var pauseTimer = null;
   var keepAlive = null;
   var resumePending = false;
+  var seekDrag = null;
+  var jumpErrorTimer = null;
 
   function ensureKeepAlive() {
     if (keepAlive) return keepAlive;
@@ -13143,14 +13277,16 @@ input:focus-visible {
     if (!it) {
       if (els.sentenceEn) els.sentenceEn.textContent = items.length ? "无匹配" : "暂无数据";
       if (els.sentenceZh) els.sentenceZh.textContent = "";
-      if (els.progressText) els.progressText.textContent = "0 / " + allItems.length;
+      if (els.progressText) els.progressText.textContent = "当前 0 / " + allItems.length;
+      syncProgressControls();
       renderList();
       return;
     }
     var n = items.length;
     var i = state.index + 1;
-    if (els.progressText) els.progressText.textContent = i + " / " + n + (state.filterQuery || state.mode !== "all" ? "（筛选）" : "");
+    if (els.progressText) els.progressText.textContent = "当前 " + i + " / " + n + (state.filterQuery || state.mode !== "all" ? "（筛选）" : "");
     if (els.progressFill) els.progressFill.style.width = ((i / Math.max(n, 1)) * 100) + "%";
+    syncProgressControls();
     if (els.sentenceEn) {
       els.sentenceEn.innerHTML = escapeHtml(it.word) +
         (it.phonetic ? ' <span style="color:var(--text-muted);font-size:0.85rem">' + escapeHtml(it.phonetic) + "</span>" : "");
@@ -13357,6 +13493,113 @@ input:focus-visible {
     if (ka) ka.onSessionPause();
   }
 
+
+  function syncProgressControls() {
+    var n = Math.max(items.length, 1);
+    var i = items.length ? state.index + 1 : 1;
+    if (els.progressRange) {
+      els.progressRange.min = "1";
+      els.progressRange.max = String(n);
+      els.progressRange.value = String(i);
+      els.progressRange.disabled = !items.length;
+    }
+    if (els.jumpInput) {
+      els.jumpInput.min = "1";
+      els.jumpInput.max = String(Math.max(items.length, 1));
+      if (document.activeElement !== els.jumpInput) {
+        els.jumpInput.value = items.length ? String(i) : "";
+      }
+    }
+  }
+
+  function showJumpError(msg) {
+    if (!els.jumpError) return;
+    els.jumpError.textContent = msg || "超出范围";
+    els.jumpError.hidden = false;
+    if (jumpErrorTimer) clearTimeout(jumpErrorTimer);
+    jumpErrorTimer = setTimeout(function () {
+      if (els.jumpError) els.jumpError.hidden = true;
+    }, 1800);
+  }
+
+  function softStopForSeek() {
+    newToken();
+    state.playing = false;
+    state.paused = false;
+    state.playAll = false;
+    state.loopPass = 0;
+    cancelSpeech();
+    setPhase("选题中");
+    updateTransport();
+    updateLoopIndicator();
+    var ka = ensureKeepAlive();
+    if (ka) ka.onSessionStop();
+  }
+
+  function jumpToNumber(num, opts) {
+    opts = opts || {};
+    var n = items.length;
+    if (!n) {
+      showJumpError("暂无条目");
+      return false;
+    }
+    var one = parseInt(num, 10);
+    if (isNaN(one) || one < 1 || one > n) {
+      showJumpError("请输入 1–" + n);
+      return false;
+    }
+    if (els.jumpError) els.jumpError.hidden = true;
+    var wasPlaying = opts.wasPlaying != null ? !!opts.wasPlaying : !!(state.playing && !state.paused);
+    var wasAll = opts.wasAll != null ? !!opts.wasAll : !!state.playAll;
+    stopAll();
+    state.index = one - 1;
+    renderItem();
+    if (wasAll) {
+      state.playAll = true;
+      playCurrent({ continueAll: true });
+    } else if (wasPlaying) {
+      playCurrent({ continueAll: false });
+    } else {
+      setPhase("已跳转");
+    }
+    return true;
+  }
+
+  function onProgressInput() {
+    if (!els.progressRange || !items.length) return;
+    if (!seekDrag) {
+      seekDrag = {
+        wasPlaying: !!(state.playing && !state.paused),
+        wasAll: !!state.playAll,
+      };
+      softStopForSeek();
+    }
+    var one = parseInt(els.progressRange.value, 10);
+    if (!isNaN(one) && one >= 1 && one <= items.length) {
+      state.index = one - 1;
+      renderItem();
+    }
+  }
+
+  function onProgressChange() {
+    if (!els.progressRange || !items.length) return;
+    var drag = seekDrag;
+    seekDrag = null;
+    var one = parseInt(els.progressRange.value, 10);
+    jumpToNumber(one, {
+      wasPlaying: drag ? drag.wasPlaying : !!(state.playing && !state.paused),
+      wasAll: drag ? drag.wasAll : !!state.playAll,
+    });
+  }
+
+  function onJumpSubmit() {
+    var raw = els.jumpInput ? els.jumpInput.value : "";
+    jumpToNumber(raw, {
+      wasPlaying: !!(state.playing && !state.paused),
+      wasAll: !!state.playAll,
+    });
+  }
+
   function bind() {
     els = {
       playAll: $("btnPlayAll"),
@@ -13373,6 +13616,10 @@ input:focus-visible {
       sentenceZh: $("sentenceZh"),
       progressText: $("progressText"),
       progressFill: $("progressFill"),
+      progressRange: $("progressRange"),
+      jumpInput: $("jumpInput"),
+      btnJump: $("btnJump"),
+      jumpError: $("jumpError"),
       phaseText: $("phaseText"),
       statusBadge: $("statusBadge"),
       statusText: $("statusText"),
@@ -13453,6 +13700,20 @@ input:focus-visible {
       playCurrent({ continueAll: state.playAll });
     });
     if (els.stop) els.stop.addEventListener("click", stopAll);
+    if (els.progressRange) {
+      els.progressRange.addEventListener("input", onProgressInput);
+      els.progressRange.addEventListener("change", onProgressChange);
+    }
+    if (els.btnJump) els.btnJump.addEventListener("click", onJumpSubmit);
+    if (els.jumpInput) {
+      els.jumpInput.addEventListener("keydown", function (e) {
+        if (e.key === "Enter") {
+          e.preventDefault();
+          onJumpSubmit();
+        }
+      });
+    }
+
     if (els.prev) els.prev.addEventListener("click", function () {
       if (state.index > 0) { state.index -= 1; renderItem(); if (state.playing) { cancelSpeech(); playCurrent({ continueAll: state.playAll }); } }
     });
