@@ -27,13 +27,17 @@
 | 页面 | 说明 |
 |------|------|
 | `labor.html` | 公开「考不过怎么办 / 出国劳务」引导页（读 `content/labor.json`） |
-| `admin/` | 零成本后台：改文案并用 GitHub Contents API 写回仓库 |
+| `admin/` | 零成本后台：劳务文案 + **单词库审核编辑**（GitHub Contents API） |
 | `admin/config.js` | **改密码**：`window.ADMIN_PASSWORD`（默认 `chinaPTE2026`，请尽快修改） |
+| `content/vocab.json` | 单词库源数据（≥2000 核心词）；前台优先加载 |
+| `data-vocab.js` | 嵌入式词库（与 vocab.json 同步；离线单文件用） |
 
 线上：
 
 - https://chinaptepte-commits.github.io/chinaPTE/labor.html
+- https://chinaptepte-commits.github.io/chinaPTE/vocab.html
 - https://chinaptepte-commits.github.io/chinaPTE/admin/
+- 自定义域：https://chinapte.net/vocab.html · https://chinapte.net/admin/
 
 后台保存需要你自己的 GitHub classic PAT（`repo` scope），Token 只存在浏览器 session/localStorage。
 

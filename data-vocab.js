@@ -1,8 +1,9 @@
 /**
  * chinaPTE · PTE Academic 高频核心词
- * Total: 730
+ * Total: 2300
  * Domains: academic research, campus/admin (WFD/RS), environment/society/economy, dictation verbs/adverbs
  * Fields: word, spelling, phonetic (IPA /slashes/), pos (e.g. n. 名词), gloss, tip, example, exampleZh, tags, tier, id
+ * Admin source of truth: content/vocab.json (keep in sync with this file)
  */
 (function (global) {
   "use strict";
@@ -537,7 +538,7 @@
     "id": 35,
     "word": "analyse",
     "spelling": "A-N-A-L-Y-S-E",
-    "phonetic": "/analyse/",
+    "phonetic": "/ˈænəˌlaɪz/",
     "gloss": "分析",
     "tip": "analyse data",
     "example": "Analyse the data first.",
@@ -2325,7 +2326,7 @@
     "id": 152,
     "word": "counterargument",
     "spelling": "C-O-U-N-T-E-R-A-R-G-U-M-E-N-T",
-    "phonetic": "/counterargument/",
+    "phonetic": "/ˈkaʊntər ˈɑrgjəmənt/",
     "gloss": "反驳论点",
     "tip": "address counterarguments",
     "example": "Address counterarguments clearly.",
@@ -3355,7 +3356,7 @@
     "id": 219,
     "word": "emphasise",
     "spelling": "E-M-P-H-A-S-I-S-E",
-    "phonetic": "/emphasise/",
+    "phonetic": "/ˈɛmfəˌsaɪz/",
     "gloss": "强调",
     "tip": "emphasise the need",
     "example": "Lecturers emphasise clarity.",
@@ -3496,7 +3497,7 @@
     "id": 228,
     "word": "enrol",
     "spelling": "E-N-R-O-L",
-    "phonetic": "/enrol/",
+    "phonetic": "/ɪnˈroʊl/",
     "gloss": "注册；入学",
     "tip": "enrol in",
     "example": "Enrol in the statistics course.",
@@ -7026,7 +7027,7 @@
     "id": 459,
     "word": "postgraduate",
     "spelling": "P-O-S-T-G-R-A-D-U-A-T-E",
-    "phonetic": "/postgraduate/",
+    "phonetic": "/poʊst ˈgræʤəˌweɪt/",
     "gloss": "研究生",
     "tip": "postgraduate research",
     "example": "Postgraduate research needs ethics approval.",
@@ -8967,7 +8968,7 @@
     "id": 586,
     "word": "stabilise",
     "spelling": "S-T-A-B-I-L-I-S-E",
-    "phonetic": "/stabilise/",
+    "phonetic": "/ˈsteɪbəˌlaɪz/",
     "gloss": "稳定",
     "tip": "prices stabilise",
     "example": "Prices stabilised after reform.",
@@ -9256,7 +9257,7 @@
     "id": 605,
     "word": "summarise",
     "spelling": "S-U-M-M-A-R-I-S-E",
-    "phonetic": "/summarise/",
+    "phonetic": "/ˈsəmərˌaɪz/",
     "gloss": "总结",
     "tip": "summarise the lecture",
     "example": "Summarise the lecture in one minute.",
@@ -11160,7 +11161,23946 @@
     "tier": "high",
     "id": 730,
     "pos": "v. 动词"
+  },
+  {
+    "id": 731,
+    "word": "abandon",
+    "spelling": "A-B-A-N-D-O-N",
+    "phonetic": "/əˈbændən/",
+    "gloss": "放弃；抛弃",
+    "tip": "abandon …",
+    "example": "Please abandon the key points.",
+    "exampleZh": "请放弃要点。",
+    "tags": [
+      "academic"
+    ],
+    "tier": "core",
+    "pos": "v. 动词"
+  },
+  {
+    "id": 732,
+    "word": "academy",
+    "spelling": "A-C-A-D-E-M-Y",
+    "phonetic": "/əˈkædəmi/",
+    "gloss": "学院；院校",
+    "tip": "the academy",
+    "example": "Check the academy in the text.",
+    "exampleZh": "核对文本中的学院。",
+    "tags": [
+      "academic"
+    ],
+    "tier": "core",
+    "pos": "n. 名词"
+  },
+  {
+    "id": 733,
+    "word": "accommodate",
+    "spelling": "A-C-C-O-M-M-O-D-A-T-E",
+    "phonetic": "/əˈkɑməˌdeɪt/",
+    "gloss": "使适应；调和",
+    "tip": "accommodate …",
+    "example": "Please accommodate the key points.",
+    "exampleZh": "请使适应要点。",
+    "tags": [
+      "academic",
+      "campus"
+    ],
+    "tier": "core",
+    "pos": "v. 动词"
+  },
+  {
+    "id": 734,
+    "word": "accompany",
+    "spelling": "A-C-C-O-M-P-A-N-Y",
+    "phonetic": "/əˈkəmpəni/",
+    "gloss": "陪伴；伴随",
+    "tip": "accompany …",
+    "example": "Please accompany the key points.",
+    "exampleZh": "请陪伴要点。",
+    "tags": [
+      "academic",
+      "campus"
+    ],
+    "tier": "core",
+    "pos": "v. 动词"
+  },
+  {
+    "id": 735,
+    "word": "administrate",
+    "spelling": "A-D-M-I-N-I-S-T-R-A-T-E",
+    "phonetic": "/ædˈmɪnɪˌstreɪt/",
+    "gloss": "管理；支配",
+    "tip": "administrate …",
+    "example": "Please administrate the key points.",
+    "exampleZh": "请管理要点。",
+    "tags": [
+      "academic"
+    ],
+    "tier": "core",
+    "pos": "v. 动词"
+  },
+  {
+    "id": 736,
+    "word": "adult",
+    "spelling": "A-D-U-L-T",
+    "phonetic": "/ˈædəlt/",
+    "gloss": "成人；成虫",
+    "tip": "the adult",
+    "example": "Check the adult in the text.",
+    "exampleZh": "核对文本中的成人。",
+    "tags": [
+      "academic"
+    ],
+    "tier": "core",
+    "pos": "n. 名词"
+  },
+  {
+    "id": 737,
+    "word": "aggregate",
+    "spelling": "A-G-G-R-E-G-A-T-E",
+    "phonetic": "/ˈægrəgət/",
+    "gloss": "合计；总计",
+    "tip": "aggregate …",
+    "example": "Please aggregate the key points.",
+    "exampleZh": "请合计要点。",
+    "tags": [
+      "academic"
+    ],
+    "tier": "high",
+    "pos": "v. 动词"
+  },
+  {
+    "id": 738,
+    "word": "aid",
+    "spelling": "A-I-D",
+    "phonetic": "/eɪd/",
+    "gloss": "帮助；外援",
+    "tip": "the aid",
+    "example": "Check the aid in the text.",
+    "exampleZh": "核对文本中的帮助。",
+    "tags": [
+      "academic",
+      "campus"
+    ],
+    "tier": "core",
+    "pos": "n. 名词"
+  },
+  {
+    "id": 739,
+    "word": "albeit",
+    "spelling": "A-L-B-E-I-T",
+    "phonetic": "/ɔlˈbiɪt/",
+    "gloss": "尽管；虽然",
+    "tip": "the albeit",
+    "example": "Check the albeit in the text.",
+    "exampleZh": "核对文本中的尽管。",
+    "tags": [
+      "academic"
+    ],
+    "tier": "core",
+    "pos": "n. 名词"
+  },
+  {
+    "id": 740,
+    "word": "alternative",
+    "spelling": "A-L-T-E-R-N-A-T-I-V-E",
+    "phonetic": "/ɔlˈtərnətɪv/",
+    "gloss": "两者择一；供替代的选择",
+    "tip": "a alternative …",
+    "example": "Give a alternative answer.",
+    "exampleZh": "给出两者择一回答。",
+    "tags": [
+      "academic"
+    ],
+    "tier": "core",
+    "pos": "adj. 形容词"
+  },
+  {
+    "id": 741,
+    "word": "analogy",
+    "spelling": "A-N-A-L-O-G-Y",
+    "phonetic": "/əˈnæləʤi/",
+    "gloss": "相似；类似",
+    "tip": "the analogy",
+    "example": "Check the analogy in the text.",
+    "exampleZh": "核对文本中的相似。",
+    "tags": [
+      "academic"
+    ],
+    "tier": "high",
+    "pos": "n. 名词"
+  },
+  {
+    "id": 742,
+    "word": "analyze",
+    "spelling": "A-N-A-L-Y-Z-E",
+    "phonetic": "/ˈænəˌlaɪz/",
+    "gloss": "分析；细察",
+    "tip": "analyze …",
+    "example": "Please analyze the key points.",
+    "exampleZh": "请分析要点。",
+    "tags": [
+      "academic"
+    ],
+    "tier": "core",
+    "pos": "v. 动词"
+  },
+  {
+    "id": 743,
+    "word": "annual",
+    "spelling": "A-N-N-U-A-L",
+    "phonetic": "/ˈænjuəl/",
+    "gloss": "年刊；年报",
+    "tip": "the annual",
+    "example": "Check the annual in the text.",
+    "exampleZh": "核对文本中的年刊。",
+    "tags": [
+      "academic",
+      "campus"
+    ],
+    "tier": "core",
+    "pos": "n. 名词"
+  },
+  {
+    "id": 744,
+    "word": "anticipate",
+    "spelling": "A-N-T-I-C-I-P-A-T-E",
+    "phonetic": "/ænˈtɪsəˌpeɪt/",
+    "gloss": "预期；占先",
+    "tip": "anticipate …",
+    "example": "Please anticipate the key points.",
+    "exampleZh": "请预期要点。",
+    "tags": [
+      "academic",
+      "campus"
+    ],
+    "tier": "core",
+    "pos": "v. 动词"
+  },
+  {
+    "id": 745,
+    "word": "append",
+    "spelling": "A-P-P-E-N-D",
+    "phonetic": "/əˈpɛnd/",
+    "gloss": "附加；增补",
+    "tip": "append …",
+    "example": "Please append the key points.",
+    "exampleZh": "请附加要点。",
+    "tags": [
+      "academic"
+    ],
+    "tier": "core",
+    "pos": "v. 动词"
+  },
+  {
+    "id": 746,
+    "word": "appreciate",
+    "spelling": "A-P-P-R-E-C-I-A-T-E",
+    "phonetic": "/əˈpriʃiˌeɪt/",
+    "gloss": "赏识；鉴别",
+    "tip": "appreciate …",
+    "example": "Please appreciate the key points.",
+    "exampleZh": "请赏识要点。",
+    "tags": [
+      "academic",
+      "campus"
+    ],
+    "tier": "core",
+    "pos": "v. 动词"
+  },
+  {
+    "id": 747,
+    "word": "approximate",
+    "spelling": "A-P-P-R-O-X-I-M-A-T-E",
+    "phonetic": "/əˈprɑksəˌmeɪt/",
+    "gloss": "大约的；接近的",
+    "tip": "approximate …",
+    "example": "Please approximate the key points.",
+    "exampleZh": "请大约要点。",
+    "tags": [
+      "academic"
+    ],
+    "tier": "core",
+    "pos": "v. 动词"
+  },
+  {
+    "id": 748,
+    "word": "arbitrary",
+    "spelling": "A-R-B-I-T-R-A-R-Y",
+    "phonetic": "/ˈɑrbɪˌtrɛri/",
+    "gloss": "任意的；武断的",
+    "tip": "a arbitrary …",
+    "example": "Give a arbitrary answer.",
+    "exampleZh": "给出任意的回答。",
+    "tags": [
+      "academic"
+    ],
+    "tier": "core",
+    "pos": "adj. 形容词"
+  },
+  {
+    "id": 749,
+    "word": "area",
+    "spelling": "A-R-E-A",
+    "phonetic": "/ˈɛriə/",
+    "gloss": "区域；面积",
+    "tip": "the area",
+    "example": "Check the area in the text.",
+    "exampleZh": "核对文本中的区域。",
+    "tags": [
+      "academic"
+    ],
+    "tier": "core",
+    "pos": "n. 名词"
+  },
+  {
+    "id": 750,
+    "word": "assemble",
+    "spelling": "A-S-S-E-M-B-L-E",
+    "phonetic": "/əˈsɛmbəl/",
+    "gloss": "集合；收集",
+    "tip": "assemble …",
+    "example": "Please assemble the key points.",
+    "exampleZh": "请集合要点。",
+    "tags": [
+      "academic"
+    ],
+    "tier": "core",
+    "pos": "v. 动词"
+  },
+  {
+    "id": 751,
+    "word": "assign",
+    "spelling": "A-S-S-I-G-N",
+    "phonetic": "/əˈsaɪn/",
+    "gloss": "分配；指派",
+    "tip": "assign …",
+    "example": "Please assign the key points.",
+    "exampleZh": "请分配要点。",
+    "tags": [
+      "academic"
+    ],
+    "tier": "core",
+    "pos": "v. 动词"
+  },
+  {
+    "id": 752,
+    "word": "assist",
+    "spelling": "A-S-S-I-S-T",
+    "phonetic": "/əˈsɪst/",
+    "gloss": "帮助；协助",
+    "tip": "the assist",
+    "example": "Check the assist in the text.",
+    "exampleZh": "核对文本中的帮助。",
+    "tags": [
+      "academic"
+    ],
+    "tier": "core",
+    "pos": "n. 名词"
+  },
+  {
+    "id": 753,
+    "word": "assure",
+    "spelling": "A-S-S-U-R-E",
+    "phonetic": "/əˈʃʊr/",
+    "gloss": "保证；使确信",
+    "tip": "assure …",
+    "example": "Please assure the key points.",
+    "exampleZh": "请保证要点。",
+    "tags": [
+      "academic"
+    ],
+    "tier": "core",
+    "pos": "v. 动词"
+  },
+  {
+    "id": 754,
+    "word": "automate",
+    "spelling": "A-U-T-O-M-A-T-E",
+    "phonetic": "/ˈɔtəˌmeɪt/",
+    "gloss": "[计] 自动化",
+    "tip": "automate …",
+    "example": "Please automate the key points.",
+    "exampleZh": "请[计] 自动化要点。",
+    "tags": [
+      "campus",
+      "academic"
+    ],
+    "tier": "core",
+    "pos": "v. 动词"
+  },
+  {
+    "id": 755,
+    "word": "aware",
+    "spelling": "A-W-A-R-E",
+    "phonetic": "/əˈwɛr/",
+    "gloss": "知道的；有觉悟的",
+    "tip": "a aware …",
+    "example": "Give a aware answer.",
+    "exampleZh": "给出知道的回答。",
+    "tags": [
+      "academic",
+      "campus"
+    ],
+    "tier": "core",
+    "pos": "adj. 形容词"
+  },
+  {
+    "id": 756,
+    "word": "behalf",
+    "spelling": "B-E-H-A-L-F",
+    "phonetic": "/bɪˈhæf/",
+    "gloss": "利益；方面",
+    "tip": "the behalf",
+    "example": "Check the behalf in the text.",
+    "exampleZh": "核对文本中的利益。",
+    "tags": [
+      "academic"
+    ],
+    "tier": "core",
+    "pos": "n. 名词"
+  },
+  {
+    "id": 757,
+    "word": "bond",
+    "spelling": "B-O-N-D",
+    "phonetic": "/bɑnd/",
+    "gloss": "捆绑物；结合",
+    "tip": "the bond",
+    "example": "Check the bond in the text.",
+    "exampleZh": "核对文本中的捆绑物。",
+    "tags": [
+      "academic"
+    ],
+    "tier": "core",
+    "pos": "n. 名词"
+  },
+  {
+    "id": 758,
+    "word": "bulk",
+    "spelling": "B-U-L-K",
+    "phonetic": "/bəlk/",
+    "gloss": "大小；体积",
+    "tip": "the bulk",
+    "example": "Check the bulk in the text.",
+    "exampleZh": "核对文本中的大小。",
+    "tags": [
+      "academic"
+    ],
+    "tier": "core",
+    "pos": "n. 名词"
+  },
+  {
+    "id": 759,
+    "word": "capable",
+    "spelling": "C-A-P-A-B-L-E",
+    "phonetic": "/ˈkeɪpəbəl/",
+    "gloss": "有能力的；能的",
+    "tip": "a capable …",
+    "example": "Give a capable answer.",
+    "exampleZh": "给出有能力的回答。",
+    "tags": [
+      "academic"
+    ],
+    "tier": "core",
+    "pos": "adj. 形容词"
+  },
+  {
+    "id": 760,
+    "word": "category",
+    "spelling": "C-A-T-E-G-O-R-Y",
+    "phonetic": "/ˈkætəˌgɔri/",
+    "gloss": "种类；类项",
+    "tip": "the category",
+    "example": "Check the category in the text.",
+    "exampleZh": "核对文本中的种类。",
+    "tags": [
+      "academic",
+      "campus"
+    ],
+    "tier": "core",
+    "pos": "n. 名词"
+  },
+  {
+    "id": 761,
+    "word": "cease",
+    "spelling": "C-E-A-S-E",
+    "phonetic": "/sis/",
+    "gloss": "停止；终了",
+    "tip": "the cease",
+    "example": "Check the cease in the text.",
+    "exampleZh": "核对文本中的停止。",
+    "tags": [
+      "academic"
+    ],
+    "tier": "core",
+    "pos": "n. 名词"
+  },
+  {
+    "id": 762,
+    "word": "channel",
+    "spelling": "C-H-A-N-N-E-L",
+    "phonetic": "/ˈʧænəl/",
+    "gloss": "海峡；航道",
+    "tip": "the channel",
+    "example": "Check the channel in the text.",
+    "exampleZh": "核对文本中的海峡。",
+    "tags": [
+      "academic"
+    ],
+    "tier": "core",
+    "pos": "n. 名词"
+  },
+  {
+    "id": 763,
+    "word": "chapter",
+    "spelling": "C-H-A-P-T-E-R",
+    "phonetic": "/ˈʧæptər/",
+    "gloss": "章；篇",
+    "tip": "the chapter",
+    "example": "Check the chapter in the text.",
+    "exampleZh": "核对文本中的章。",
+    "tags": [
+      "academic",
+      "campus"
+    ],
+    "tier": "core",
+    "pos": "n. 名词"
+  },
+  {
+    "id": 764,
+    "word": "chemical",
+    "spelling": "C-H-E-M-I-C-A-L",
+    "phonetic": "/ˈkɛmɪkəl/",
+    "gloss": "化学药品；化学的",
+    "tip": "a chemical …",
+    "example": "Give a chemical answer.",
+    "exampleZh": "给出化学药品回答。",
+    "tags": [
+      "academic",
+      "campus"
+    ],
+    "tier": "core",
+    "pos": "adj. 形容词"
+  },
+  {
+    "id": 765,
+    "word": "circumstance",
+    "spelling": "C-I-R-C-U-M-S-T-A-N-C-E",
+    "phonetic": "/ˈsərkəmˌstæns/",
+    "gloss": "环境；状况",
+    "tip": "the circumstance",
+    "example": "Check the circumstance in the text.",
+    "exampleZh": "核对文本中的环境。",
+    "tags": [
+      "academic",
+      "campus"
+    ],
+    "tier": "core",
+    "pos": "n. 名词"
+  },
+  {
+    "id": 766,
+    "word": "cite",
+    "spelling": "C-I-T-E",
+    "phonetic": "/saɪt/",
+    "gloss": "引用；引证",
+    "tip": "cite …",
+    "example": "Please cite the key points.",
+    "exampleZh": "请引用要点。",
+    "tags": [
+      "academic",
+      "campus"
+    ],
+    "tier": "core",
+    "pos": "v. 动词"
+  },
+  {
+    "id": 767,
+    "word": "civil",
+    "spelling": "C-I-V-I-L",
+    "phonetic": "/ˈsɪvəl/",
+    "gloss": "市民的；公民的",
+    "tip": "a civil …",
+    "example": "Give a civil answer.",
+    "exampleZh": "给出市民的回答。",
+    "tags": [
+      "academic"
+    ],
+    "tier": "core",
+    "pos": "adj. 形容词"
+  },
+  {
+    "id": 768,
+    "word": "clarify",
+    "spelling": "C-L-A-R-I-F-Y",
+    "phonetic": "/ˈklɛrəˌfaɪ/",
+    "gloss": "澄清；阐明",
+    "tip": "clarify …",
+    "example": "Please clarify the key points.",
+    "exampleZh": "请澄清要点。",
+    "tags": [
+      "academic"
+    ],
+    "tier": "core",
+    "pos": "v. 动词"
+  },
+  {
+    "id": 769,
+    "word": "classic",
+    "spelling": "C-L-A-S-S-I-C",
+    "phonetic": "/ˈklæsɪk/",
+    "gloss": "古典作品；杰作",
+    "tip": "the classic",
+    "example": "Check the classic in the text.",
+    "exampleZh": "核对文本中的古典作品。",
+    "tags": [
+      "academic"
+    ],
+    "tier": "core",
+    "pos": "n. 名词"
+  },
+  {
+    "id": 770,
+    "word": "clause",
+    "spelling": "C-L-A-U-S-E",
+    "phonetic": "/klɔz/",
+    "gloss": "子句；条款",
+    "tip": "the clause",
+    "example": "Check the clause in the text.",
+    "exampleZh": "核对文本中的子句。",
+    "tags": [
+      "academic"
+    ],
+    "tier": "core",
+    "pos": "n. 名词"
+  },
+  {
+    "id": 771,
+    "word": "code",
+    "spelling": "C-O-D-E",
+    "phonetic": "/koʊd/",
+    "gloss": "代码；密码",
+    "tip": "the code",
+    "example": "Check the code in the text.",
+    "exampleZh": "核对文本中的代码。",
+    "tags": [
+      "academic"
+    ],
+    "tier": "core",
+    "pos": "n. 名词"
+  },
+  {
+    "id": 772,
+    "word": "coincide",
+    "spelling": "C-O-I-N-C-I-D-E",
+    "phonetic": "/ˌkoʊɪnˈsaɪd/",
+    "gloss": "一致；符合",
+    "tip": "coincide …",
+    "example": "Please coincide the key points.",
+    "exampleZh": "请一致要点。",
+    "tags": [
+      "academic"
+    ],
+    "tier": "high",
+    "pos": "v. 动词"
+  },
+  {
+    "id": 773,
+    "word": "collapse",
+    "spelling": "C-O-L-L-A-P-S-E",
+    "phonetic": "/kəˈlæps/",
+    "gloss": "崩溃；倒塌",
+    "tip": "the collapse",
+    "example": "Check the collapse in the text.",
+    "exampleZh": "核对文本中的崩溃。",
+    "tags": [
+      "academic",
+      "campus"
+    ],
+    "tier": "core",
+    "pos": "n. 名词"
+  },
+  {
+    "id": 774,
+    "word": "colleague",
+    "spelling": "C-O-L-L-E-A-G-U-E",
+    "phonetic": "/ˈkɑlig/",
+    "gloss": "同事；同僚",
+    "tip": "the colleague",
+    "example": "Check the colleague in the text.",
+    "exampleZh": "核对文本中的同事。",
+    "tags": [
+      "academic",
+      "campus"
+    ],
+    "tier": "core",
+    "pos": "n. 名词"
+  },
+  {
+    "id": 775,
+    "word": "commence",
+    "spelling": "C-O-M-M-E-N-C-E",
+    "phonetic": "/kəˈmɛns/",
+    "gloss": "(使)开始；得学位",
+    "tip": "the commence",
+    "example": "Check the commence in the text.",
+    "exampleZh": "核对文本中的(使)开始。",
+    "tags": [
+      "academic",
+      "campus"
+    ],
+    "tier": "core",
+    "pos": "n. 名词"
+  },
+  {
+    "id": 776,
+    "word": "comment",
+    "spelling": "C-O-M-M-E-N-T",
+    "phonetic": "/ˈkɑmɛnt/",
+    "gloss": "注解；批评",
+    "tip": "the comment",
+    "example": "Check the comment in the text.",
+    "exampleZh": "核对文本中的注解。",
+    "tags": [
+      "academic",
+      "campus"
+    ],
+    "tier": "core",
+    "pos": "n. 名词"
+  },
+  {
+    "id": 777,
+    "word": "commission",
+    "spelling": "C-O-M-M-I-S-S-I-O-N",
+    "phonetic": "/kəˈmɪʃən/",
+    "gloss": "委任状；任官令",
+    "tip": "the commission",
+    "example": "Check the commission in the text.",
+    "exampleZh": "核对文本中的委任状。",
+    "tags": [
+      "academic",
+      "campus"
+    ],
+    "tier": "core",
+    "pos": "n. 名词"
+  },
+  {
+    "id": 778,
+    "word": "commit",
+    "spelling": "C-O-M-M-I-T",
+    "phonetic": "/kəˈmɪt/",
+    "gloss": "委托；犯罪",
+    "tip": "commit …",
+    "example": "Please commit the key points.",
+    "exampleZh": "请委托要点。",
+    "tags": [
+      "academic"
+    ],
+    "tier": "core",
+    "pos": "v. 动词"
+  },
+  {
+    "id": 779,
+    "word": "commodity",
+    "spelling": "C-O-M-M-O-D-I-T-Y",
+    "phonetic": "/kəˈmɑdəti/",
+    "gloss": "农产品；商品",
+    "tip": "the commodity",
+    "example": "Check the commodity in the text.",
+    "exampleZh": "核对文本中的农产品。",
+    "tags": [
+      "academic"
+    ],
+    "tier": "high",
+    "pos": "n. 名词"
+  },
+  {
+    "id": 780,
+    "word": "communicate",
+    "spelling": "C-O-M-M-U-N-I-C-A-T-E",
+    "phonetic": "/kəmˈjunəˌkeɪt/",
+    "gloss": "显露；传达",
+    "tip": "communicate …",
+    "example": "Please communicate the key points.",
+    "exampleZh": "请显露要点。",
+    "tags": [
+      "academic"
+    ],
+    "tier": "core",
+    "pos": "v. 动词"
+  },
+  {
+    "id": 781,
+    "word": "compatible",
+    "spelling": "C-O-M-P-A-T-I-B-L-E",
+    "phonetic": "/kəmˈpætəbəl/",
+    "gloss": "能共处的；可并立的",
+    "tip": "a compatible …",
+    "example": "Give a compatible answer.",
+    "exampleZh": "给出能共处的回答。",
+    "tags": [
+      "academic"
+    ],
+    "tier": "high",
+    "pos": "adj. 形容词"
+  },
+  {
+    "id": 782,
+    "word": "compensate",
+    "spelling": "C-O-M-P-E-N-S-A-T-E",
+    "phonetic": "/ˈkɑmpənˌseɪt/",
+    "gloss": "偿还；补偿",
+    "tip": "compensate …",
+    "example": "Please compensate the key points.",
+    "exampleZh": "请偿还要点。",
+    "tags": [
+      "academic"
+    ],
+    "tier": "core",
+    "pos": "v. 动词"
+  },
+  {
+    "id": 783,
+    "word": "compile",
+    "spelling": "C-O-M-P-I-L-E",
+    "phonetic": "/kəmˈpaɪl/",
+    "gloss": "编译；编辑",
+    "tip": "compile …",
+    "example": "Please compile the key points.",
+    "exampleZh": "请编译要点。",
+    "tags": [
+      "academic"
+    ],
+    "tier": "core",
+    "pos": "v. 动词"
+  },
+  {
+    "id": 784,
+    "word": "complement",
+    "spelling": "C-O-M-P-L-E-M-E-N-T",
+    "phonetic": "/ˈkɑmpləmənt/",
+    "gloss": "补足物；补语",
+    "tip": "the complement",
+    "example": "Check the complement in the text.",
+    "exampleZh": "核对文本中的补足物。",
+    "tags": [
+      "academic"
+    ],
+    "tier": "high",
+    "pos": "n. 名词"
+  },
+  {
+    "id": 785,
+    "word": "compound",
+    "spelling": "C-O-M-P-O-U-N-D",
+    "phonetic": "/ˈkɑmpaʊnd/",
+    "gloss": "混合物；复合词",
+    "tip": "the compound",
+    "example": "Check the compound in the text.",
+    "exampleZh": "核对文本中的混合物。",
+    "tags": [
+      "academic",
+      "campus"
+    ],
+    "tier": "core",
+    "pos": "n. 名词"
+  },
+  {
+    "id": 786,
+    "word": "compute",
+    "spelling": "C-O-M-P-U-T-E",
+    "phonetic": "/kəmˈpjut/",
+    "gloss": "计算；估算",
+    "tip": "compute …",
+    "example": "Please compute the key points.",
+    "exampleZh": "请计算要点。",
+    "tags": [
+      "campus",
+      "academic"
+    ],
+    "tier": "core",
+    "pos": "v. 动词"
+  },
+  {
+    "id": 787,
+    "word": "conceive",
+    "spelling": "C-O-N-C-E-I-V-E",
+    "phonetic": "/kənˈsiv/",
+    "gloss": "构思；认为",
+    "tip": "a conceive …",
+    "example": "Give a conceive answer.",
+    "exampleZh": "给出构思回答。",
+    "tags": [
+      "campus",
+      "academic"
+    ],
+    "tier": "core",
+    "pos": "adj. 形容词"
+  },
+  {
+    "id": 788,
+    "word": "concentrate",
+    "spelling": "C-O-N-C-E-N-T-R-A-T-E",
+    "phonetic": "/ˈkɑnsənˌtreɪt/",
+    "gloss": "浓缩；精选",
+    "tip": "concentrate …",
+    "example": "Please concentrate the key points.",
+    "exampleZh": "请浓缩要点。",
+    "tags": [
+      "academic",
+      "campus"
+    ],
+    "tier": "core",
+    "pos": "v. 动词"
+  },
+  {
+    "id": 789,
+    "word": "confer",
+    "spelling": "C-O-N-F-E-R",
+    "phonetic": "/kənˈfər/",
+    "gloss": "授予；带来",
+    "tip": "confer …",
+    "example": "Please confer the key points.",
+    "exampleZh": "请授予要点。",
+    "tags": [
+      "academic"
+    ],
+    "tier": "high",
+    "pos": "v. 动词"
+  },
+  {
+    "id": 790,
+    "word": "conflict",
+    "spelling": "C-O-N-F-L-I-C-T",
+    "phonetic": "/ˈkɑnflɪkt/",
+    "gloss": "战斗；冲突",
+    "tip": "the conflict",
+    "example": "Check the conflict in the text.",
+    "exampleZh": "核对文本中的战斗。",
+    "tags": [
+      "academic",
+      "campus"
+    ],
+    "tier": "core",
+    "pos": "n. 名词"
+  },
+  {
+    "id": 791,
+    "word": "conform",
+    "spelling": "C-O-N-F-O-R-M",
+    "phonetic": "/kənˈfɔrm/",
+    "gloss": "使一致；使遵守",
+    "tip": "conform …",
+    "example": "Please conform the key points.",
+    "exampleZh": "请使一致要点。",
+    "tags": [
+      "academic"
+    ],
+    "tier": "core",
+    "pos": "v. 动词"
+  },
+  {
+    "id": 792,
+    "word": "consequent",
+    "spelling": "C-O-N-S-E-Q-U-E-N-T",
+    "phonetic": "/ˈkɑnsəkwənt/",
+    "gloss": "随后发生的事情；结果",
+    "tip": "the consequent",
+    "example": "Check the consequent in the text.",
+    "exampleZh": "核对文本中的随后发生的事情。",
+    "tags": [
+      "academic"
+    ],
+    "tier": "core",
+    "pos": "n. 名词"
+  },
+  {
+    "id": 793,
+    "word": "constant",
+    "spelling": "C-O-N-S-T-A-N-T",
+    "phonetic": "/ˈkɑnstənt/",
+    "gloss": "常数；恒量",
+    "tip": "the constant",
+    "example": "Check the constant in the text.",
+    "exampleZh": "核对文本中的常数。",
+    "tags": [
+      "academic"
+    ],
+    "tier": "core",
+    "pos": "n. 名词"
+  },
+  {
+    "id": 794,
+    "word": "construct",
+    "spelling": "C-O-N-S-T-R-U-C-T",
+    "phonetic": "/ˈkɑnstrəkt/",
+    "gloss": "构造；建造",
+    "tip": "construct …",
+    "example": "Please construct the key points.",
+    "exampleZh": "请构造要点。",
+    "tags": [
+      "academic",
+      "campus"
+    ],
+    "tier": "core",
+    "pos": "v. 动词"
+  },
+  {
+    "id": 795,
+    "word": "consult",
+    "spelling": "C-O-N-S-U-L-T",
+    "phonetic": "/kənˈsəlt/",
+    "gloss": "商讨；商量",
+    "tip": "consult …",
+    "example": "Please consult the key points.",
+    "exampleZh": "请商讨要点。",
+    "tags": [
+      "academic"
+    ],
+    "tier": "core",
+    "pos": "v. 动词"
+  },
+  {
+    "id": 796,
+    "word": "consume",
+    "spelling": "C-O-N-S-U-M-E",
+    "phonetic": "/kənˈsum/",
+    "gloss": "消耗；消费",
+    "tip": "consume …",
+    "example": "Please consume the key points.",
+    "exampleZh": "请消耗要点。",
+    "tags": [
+      "academic",
+      "campus"
+    ],
+    "tier": "core",
+    "pos": "v. 动词"
+  },
+  {
+    "id": 797,
+    "word": "contact",
+    "spelling": "C-O-N-T-A-C-T",
+    "phonetic": "/ˈkɑnˌtækt/",
+    "gloss": "联系；交际",
+    "tip": "the contact",
+    "example": "Check the contact in the text.",
+    "exampleZh": "核对文本中的联系。",
+    "tags": [
+      "academic",
+      "campus"
+    ],
+    "tier": "core",
+    "pos": "n. 名词"
+  },
+  {
+    "id": 798,
+    "word": "contract",
+    "spelling": "C-O-N-T-R-A-C-T",
+    "phonetic": "/ˈkɑnˌtrækt/",
+    "gloss": "合约；婚约",
+    "tip": "the contract",
+    "example": "Check the contract in the text.",
+    "exampleZh": "核对文本中的合约。",
+    "tags": [
+      "academic",
+      "campus"
+    ],
+    "tier": "core",
+    "pos": "n. 名词"
+  },
+  {
+    "id": 799,
+    "word": "contradict",
+    "spelling": "C-O-N-T-R-A-D-I-C-T",
+    "phonetic": "/ˌkɑntrəˈdɪkt/",
+    "gloss": "反驳；与...抵触",
+    "tip": "contradict …",
+    "example": "Please contradict the key points.",
+    "exampleZh": "请反驳要点。",
+    "tags": [
+      "academic",
+      "campus"
+    ],
+    "tier": "core",
+    "pos": "v. 动词"
+  },
+  {
+    "id": 800,
+    "word": "contrary",
+    "spelling": "C-O-N-T-R-A-R-Y",
+    "phonetic": "/ˈkɑntrɛri/",
+    "gloss": "相反的；矛盾的",
+    "tip": "a contrary …",
+    "example": "Give a contrary answer.",
+    "exampleZh": "给出相反的回答。",
+    "tags": [
+      "academic"
+    ],
+    "tier": "core",
+    "pos": "adj. 形容词"
+  },
+  {
+    "id": 801,
+    "word": "convene",
+    "spelling": "C-O-N-V-E-N-E",
+    "phonetic": "/kənˈvin/",
+    "gloss": "集合；召集",
+    "tip": "convene …",
+    "example": "Please convene the key points.",
+    "exampleZh": "请集合要点。",
+    "tags": [
+      "academic"
+    ],
+    "tier": "mid",
+    "pos": "v. 动词"
+  },
+  {
+    "id": 802,
+    "word": "converse",
+    "spelling": "C-O-N-V-E-R-S-E",
+    "phonetic": "/ˈkɑnvərs/",
+    "gloss": "相反的事物；倒",
+    "tip": "the converse",
+    "example": "Check the converse in the text.",
+    "exampleZh": "核对文本中的相反的事物。",
+    "tags": [
+      "academic"
+    ],
+    "tier": "core",
+    "pos": "n. 名词"
+  },
+  {
+    "id": 803,
+    "word": "convert",
+    "spelling": "C-O-N-V-E-R-T",
+    "phonetic": "/ˈkɑnvərt/",
+    "gloss": "皈依者；改变宗教信仰者",
+    "tip": "the convert",
+    "example": "Check the convert in the text.",
+    "exampleZh": "核对文本中的皈依者。",
+    "tags": [
+      "academic",
+      "campus"
+    ],
+    "tier": "core",
+    "pos": "n. 名词"
+  },
+  {
+    "id": 804,
+    "word": "convince",
+    "spelling": "C-O-N-V-I-N-C-E",
+    "phonetic": "/kənˈvɪns/",
+    "gloss": "说服；使相信",
+    "tip": "convince …",
+    "example": "Please convince the key points.",
+    "exampleZh": "请说服要点。",
+    "tags": [
+      "academic",
+      "campus"
+    ],
+    "tier": "core",
+    "pos": "v. 动词"
+  },
+  {
+    "id": 805,
+    "word": "cooperate",
+    "spelling": "C-O-O-P-E-R-A-T-E",
+    "phonetic": "/kˈwɑpərˌeɪt/",
+    "gloss": "合作；协力",
+    "tip": "cooperate …",
+    "example": "Please cooperate the key points.",
+    "exampleZh": "请合作要点。",
+    "tags": [
+      "academic"
+    ],
+    "tier": "core",
+    "pos": "v. 动词"
+  },
+  {
+    "id": 806,
+    "word": "coordinate",
+    "spelling": "C-O-O-R-D-I-N-A-T-E",
+    "phonetic": "/koʊˈɔrdəˌneɪt/",
+    "gloss": "同等的人；坐标",
+    "tip": "coordinate …",
+    "example": "Please coordinate the key points.",
+    "exampleZh": "请同等的人要点。",
+    "tags": [
+      "academic"
+    ],
+    "tier": "core",
+    "pos": "v. 动词"
+  },
+  {
+    "id": 807,
+    "word": "core",
+    "spelling": "C-O-R-E",
+    "phonetic": "/kɔr/",
+    "gloss": "核心；果心",
+    "tip": "the core",
+    "example": "Check the core in the text.",
+    "exampleZh": "核对文本中的核心。",
+    "tags": [
+      "academic",
+      "campus"
+    ],
+    "tier": "core",
+    "pos": "n. 名词"
+  },
+  {
+    "id": 808,
+    "word": "corporate",
+    "spelling": "C-O-R-P-O-R-A-T-E",
+    "phonetic": "/ˈkɔrpərət/",
+    "gloss": "社团的；合伙的",
+    "tip": "corporate …",
+    "example": "Please corporate the key points.",
+    "exampleZh": "请社团要点。",
+    "tags": [
+      "academic"
+    ],
+    "tier": "core",
+    "pos": "v. 动词"
+  },
+  {
+    "id": 809,
+    "word": "correspond",
+    "spelling": "C-O-R-R-E-S-P-O-N-D",
+    "phonetic": "/ˌkɔrəˈspɑnd/",
+    "gloss": "符合；通信",
+    "tip": "correspond …",
+    "example": "Please correspond the key points.",
+    "exampleZh": "请符合要点。",
+    "tags": [
+      "academic"
+    ],
+    "tier": "core",
+    "pos": "v. 动词"
+  },
+  {
+    "id": 810,
+    "word": "couple",
+    "spelling": "C-O-U-P-L-E",
+    "phonetic": "/ˈkəpəl/",
+    "gloss": "对；夫妇",
+    "tip": "the couple",
+    "example": "Check the couple in the text.",
+    "exampleZh": "核对文本中的对。",
+    "tags": [
+      "academic"
+    ],
+    "tier": "core",
+    "pos": "n. 名词"
+  },
+  {
+    "id": 811,
+    "word": "create",
+    "spelling": "C-R-E-A-T-E",
+    "phonetic": "/kriˈeɪt/",
+    "gloss": "创造；建造",
+    "tip": "create …",
+    "example": "Please create the key points.",
+    "exampleZh": "请创造要点。",
+    "tags": [
+      "academic",
+      "campus"
+    ],
+    "tier": "core",
+    "pos": "v. 动词"
+  },
+  {
+    "id": 812,
+    "word": "currency",
+    "spelling": "C-U-R-R-E-N-C-Y",
+    "phonetic": "/ˈkərənsi/",
+    "gloss": "货币；通货",
+    "tip": "the currency",
+    "example": "Check the currency in the text.",
+    "exampleZh": "核对文本中的货币。",
+    "tags": [
+      "academic",
+      "campus",
+      "econ"
+    ],
+    "tier": "core",
+    "pos": "n. 名词"
+  },
+  {
+    "id": 813,
+    "word": "cycle",
+    "spelling": "C-Y-C-L-E",
+    "phonetic": "/ˈsaɪkəl/",
+    "gloss": "周期；循环",
+    "tip": "the cycle",
+    "example": "Check the cycle in the text.",
+    "exampleZh": "核对文本中的周期。",
+    "tags": [
+      "academic"
+    ],
+    "tier": "core",
+    "pos": "n. 名词"
+  },
+  {
+    "id": 814,
+    "word": "decade",
+    "spelling": "D-E-C-A-D-E",
+    "phonetic": "/ˈdɛkeɪd/",
+    "gloss": "十年；十",
+    "tip": "the decade",
+    "example": "Check the decade in the text.",
+    "exampleZh": "核对文本中的十年。",
+    "tags": [
+      "academic"
+    ],
+    "tier": "core",
+    "pos": "n. 名词"
+  },
+  {
+    "id": 815,
+    "word": "declare",
+    "spelling": "D-E-C-L-A-R-E",
+    "phonetic": "/dɪˈklɛr/",
+    "gloss": "宣布；声明",
+    "tip": "declare …",
+    "example": "Please declare the key points.",
+    "exampleZh": "请宣布要点。",
+    "tags": [
+      "academic"
+    ],
+    "tier": "mid",
+    "pos": "v. 动词"
+  },
+  {
+    "id": 816,
+    "word": "define",
+    "spelling": "D-E-F-I-N-E",
+    "phonetic": "/dɪˈfaɪn/",
+    "gloss": "定义；规定",
+    "tip": "define …",
+    "example": "Please define the key points.",
+    "exampleZh": "请定义要点。",
+    "tags": [
+      "academic",
+      "campus"
+    ],
+    "tier": "core",
+    "pos": "v. 动词"
+  },
+  {
+    "id": 817,
+    "word": "definite",
+    "spelling": "D-E-F-I-N-I-T-E",
+    "phonetic": "/ˈdɛfənət/",
+    "gloss": "明确的；一定的",
+    "tip": "a definite …",
+    "example": "Give a definite answer.",
+    "exampleZh": "给出明确的回答。",
+    "tags": [
+      "academic"
+    ],
+    "tier": "core",
+    "pos": "adj. 形容词"
+  },
+  {
+    "id": 818,
+    "word": "denote",
+    "spelling": "D-E-N-O-T-E",
+    "phonetic": "/dɪˈnoʊt/",
+    "gloss": "指示；表示",
+    "tip": "denote …",
+    "example": "Please denote the key points.",
+    "exampleZh": "请指示要点。",
+    "tags": [
+      "academic"
+    ],
+    "tier": "core",
+    "pos": "v. 动词"
+  },
+  {
+    "id": 819,
+    "word": "deny",
+    "spelling": "D-E-N-Y",
+    "phonetic": "/dɪˈnaɪ/",
+    "gloss": "否认；拒绝",
+    "tip": "deny …",
+    "example": "Please deny the key points.",
+    "exampleZh": "请否认要点。",
+    "tags": [
+      "academic"
+    ],
+    "tier": "core",
+    "pos": "v. 动词"
+  },
+  {
+    "id": 820,
+    "word": "depress",
+    "spelling": "D-E-P-R-E-S-S",
+    "phonetic": "/dɪˈprɛs/",
+    "gloss": "使沮丧；压低",
+    "tip": "depress …",
+    "example": "Please depress the key points.",
+    "exampleZh": "请使沮丧要点。",
+    "tags": [
+      "academic"
+    ],
+    "tier": "core",
+    "pos": "v. 动词"
+  },
+  {
+    "id": 821,
+    "word": "design",
+    "spelling": "D-E-S-I-G-N",
+    "phonetic": "/dɪˈzaɪn/",
+    "gloss": "设计；图样",
+    "tip": "the design",
+    "example": "Check the design in the text.",
+    "exampleZh": "核对文本中的设计。",
+    "tags": [
+      "academic",
+      "campus"
+    ],
+    "tier": "core",
+    "pos": "n. 名词"
+  },
+  {
+    "id": 822,
+    "word": "deviate",
+    "spelling": "D-E-V-I-A-T-E",
+    "phonetic": "/ˈdiviˌeɪt/",
+    "gloss": "脱离；偏离",
+    "tip": "deviate …",
+    "example": "Please deviate the key points.",
+    "exampleZh": "请脱离要点。",
+    "tags": [
+      "academic"
+    ],
+    "tier": "core",
+    "pos": "v. 动词"
+  },
+  {
+    "id": 823,
+    "word": "device",
+    "spelling": "D-E-V-I-C-E",
+    "phonetic": "/dɪˈvaɪs/",
+    "gloss": "装置；设计",
+    "tip": "the device",
+    "example": "Check the device in the text.",
+    "exampleZh": "核对文本中的装置。",
+    "tags": [
+      "academic"
+    ],
+    "tier": "core",
+    "pos": "n. 名词"
+  },
+  {
+    "id": 824,
+    "word": "devote",
+    "spelling": "D-E-V-O-T-E",
+    "phonetic": "/dɪˈvoʊt/",
+    "gloss": "投入于；献身",
+    "tip": "devote …",
+    "example": "Please devote the key points.",
+    "exampleZh": "请投入于要点。",
+    "tags": [
+      "academic"
+    ],
+    "tier": "core",
+    "pos": "v. 动词"
+  },
+  {
+    "id": 825,
+    "word": "discrete",
+    "spelling": "D-I-S-C-R-E-T-E",
+    "phonetic": "/dɪˈskrit/",
+    "gloss": "不连续的；离散的",
+    "tip": "a discrete …",
+    "example": "Give a discrete answer.",
+    "exampleZh": "给出不连续的回答。",
+    "tags": [
+      "academic"
+    ],
+    "tier": "high",
+    "pos": "adj. 形容词"
+  },
+  {
+    "id": 826,
+    "word": "discriminate",
+    "spelling": "D-I-S-C-R-I-M-I-N-A-T-E",
+    "phonetic": "/dɪˈskrɪməˌneɪt/",
+    "gloss": "区别；差别待遇",
+    "tip": "discriminate …",
+    "example": "Please discriminate the key points.",
+    "exampleZh": "请区别要点。",
+    "tags": [
+      "academic"
+    ],
+    "tier": "core",
+    "pos": "v. 动词"
+  },
+  {
+    "id": 827,
+    "word": "displace",
+    "spelling": "D-I-S-P-L-A-C-E",
+    "phonetic": "/dɪˈspleɪs/",
+    "gloss": "移置；替换",
+    "tip": "displace …",
+    "example": "Please displace the key points.",
+    "exampleZh": "请移置要点。",
+    "tags": [
+      "academic"
+    ],
+    "tier": "high",
+    "pos": "v. 动词"
+  },
+  {
+    "id": 828,
+    "word": "display",
+    "spelling": "D-I-S-P-L-A-Y",
+    "phonetic": "/dɪˈspleɪ/",
+    "gloss": "显示；陈列",
+    "tip": "the display",
+    "example": "Check the display in the text.",
+    "exampleZh": "核对文本中的显示。",
+    "tags": [
+      "academic",
+      "campus"
+    ],
+    "tier": "core",
+    "pos": "n. 名词"
+  },
+  {
+    "id": 829,
+    "word": "dispose",
+    "spelling": "D-I-S-P-O-S-E",
+    "phonetic": "/dɪˈspoʊz/",
+    "gloss": "处理；排列",
+    "tip": "dispose …",
+    "example": "Please dispose the key points.",
+    "exampleZh": "请处理要点。",
+    "tags": [
+      "academic"
+    ],
+    "tier": "core",
+    "pos": "v. 动词"
+  },
+  {
+    "id": 830,
+    "word": "distort",
+    "spelling": "D-I-S-T-O-R-T",
+    "phonetic": "/dɪˈstɔrt/",
+    "gloss": "扭曲；歪曲",
+    "tip": "distort …",
+    "example": "Please distort the key points.",
+    "exampleZh": "请扭曲要点。",
+    "tags": [
+      "academic"
+    ],
+    "tier": "core",
+    "pos": "v. 动词"
+  },
+  {
+    "id": 831,
+    "word": "document",
+    "spelling": "D-O-C-U-M-E-N-T",
+    "phonetic": "/ˈdɑkjəmɛnt/",
+    "gloss": "文件；公文",
+    "tip": "the document",
+    "example": "Check the document in the text.",
+    "exampleZh": "核对文本中的文件。",
+    "tags": [
+      "academic"
+    ],
+    "tier": "core",
+    "pos": "n. 名词"
+  },
+  {
+    "id": 832,
+    "word": "domain",
+    "spelling": "D-O-M-A-I-N",
+    "phonetic": "/doʊˈmeɪn/",
+    "gloss": "领域；领土",
+    "tip": "the domain",
+    "example": "Check the domain in the text.",
+    "exampleZh": "核对文本中的领域。",
+    "tags": [
+      "academic"
+    ],
+    "tier": "high",
+    "pos": "n. 名词"
+  },
+  {
+    "id": 833,
+    "word": "dominate",
+    "spelling": "D-O-M-I-N-A-T-E",
+    "phonetic": "/ˈdɑməˌneɪt/",
+    "gloss": "支配；占优势",
+    "tip": "dominate …",
+    "example": "Please dominate the key points.",
+    "exampleZh": "请支配要点。",
+    "tags": [
+      "academic"
+    ],
+    "tier": "core",
+    "pos": "v. 动词"
+  },
+  {
+    "id": 834,
+    "word": "drama",
+    "spelling": "D-R-A-M-A",
+    "phonetic": "/ˈdrɑmə/",
+    "gloss": "戏剧；戏剧艺术",
+    "tip": "the drama",
+    "example": "Check the drama in the text.",
+    "exampleZh": "核对文本中的戏剧。",
+    "tags": [
+      "academic"
+    ],
+    "tier": "core",
+    "pos": "n. 名词"
+  },
+  {
+    "id": 835,
+    "word": "duration",
+    "spelling": "D-U-R-A-T-I-O-N",
+    "phonetic": "/ˈdʊˈreɪʃən/",
+    "gloss": "持续时间；持续",
+    "tip": "the duration",
+    "example": "Check the duration in the text.",
+    "exampleZh": "核对文本中的持续时间。",
+    "tags": [
+      "academic"
+    ],
+    "tier": "core",
+    "pos": "n. 名词"
+  },
+  {
+    "id": 836,
+    "word": "dynamic",
+    "spelling": "D-Y-N-A-M-I-C",
+    "phonetic": "/daɪˈnæmɪk/",
+    "gloss": "动态的；有活力的",
+    "tip": "a dynamic …",
+    "example": "Give a dynamic answer.",
+    "exampleZh": "给出动态的回答。",
+    "tags": [
+      "academic"
+    ],
+    "tier": "core",
+    "pos": "adj. 形容词"
+  },
+  {
+    "id": 837,
+    "word": "edit",
+    "spelling": "E-D-I-T",
+    "phonetic": "/ˈɛdət/",
+    "gloss": "编辑；编校",
+    "tip": "edit …",
+    "example": "Please edit the key points.",
+    "exampleZh": "请编辑要点。",
+    "tags": [
+      "campus",
+      "academic"
+    ],
+    "tier": "core",
+    "pos": "v. 动词"
+  },
+  {
+    "id": 838,
+    "word": "eliminate",
+    "spelling": "E-L-I-M-I-N-A-T-E",
+    "phonetic": "/ɪˈlɪməˌneɪt/",
+    "gloss": "除去；排除",
+    "tip": "eliminate …",
+    "example": "Please eliminate the key points.",
+    "exampleZh": "请除去要点。",
+    "tags": [
+      "academic"
+    ],
+    "tier": "core",
+    "pos": "v. 动词"
+  },
+  {
+    "id": 839,
+    "word": "encounter",
+    "spelling": "E-N-C-O-U-N-T-E-R",
+    "phonetic": "/ɪnˈkaʊnər/",
+    "gloss": "相会；相遇",
+    "tip": "the encounter",
+    "example": "Check the encounter in the text.",
+    "exampleZh": "核对文本中的相会。",
+    "tags": [
+      "academic"
+    ],
+    "tier": "core",
+    "pos": "n. 名词"
+  },
+  {
+    "id": 840,
+    "word": "energy",
+    "spelling": "E-N-E-R-G-Y",
+    "phonetic": "/ˈɛnərʤi/",
+    "gloss": "精力；精神",
+    "tip": "the energy",
+    "example": "Check the energy in the text.",
+    "exampleZh": "核对文本中的精力。",
+    "tags": [
+      "academic"
+    ],
+    "tier": "high",
+    "pos": "n. 名词"
+  },
+  {
+    "id": 841,
+    "word": "enforce",
+    "spelling": "E-N-F-O-R-C-E",
+    "phonetic": "/ɛnˈfɔrs/",
+    "gloss": "强迫；执行",
+    "tip": "enforce …",
+    "example": "Please enforce the key points.",
+    "exampleZh": "请强迫要点。",
+    "tags": [
+      "academic"
+    ],
+    "tier": "core",
+    "pos": "v. 动词"
+  },
+  {
+    "id": 842,
+    "word": "enormous",
+    "spelling": "E-N-O-R-M-O-U-S",
+    "phonetic": "/ɪˈnɔrmɪs/",
+    "gloss": "巨大的；庞大的",
+    "tip": "a enormous …",
+    "example": "Give a enormous answer.",
+    "exampleZh": "给出巨大的回答。",
+    "tags": [
+      "academic",
+      "campus"
+    ],
+    "tier": "core",
+    "pos": "adj. 形容词"
+  },
+  {
+    "id": 843,
+    "word": "entity",
+    "spelling": "E-N-T-I-T-Y",
+    "phonetic": "/ˈɛntɪti/",
+    "gloss": "实体；实存物",
+    "tip": "the entity",
+    "example": "Check the entity in the text.",
+    "exampleZh": "核对文本中的实体。",
+    "tags": [
+      "academic"
+    ],
+    "tier": "high",
+    "pos": "n. 名词"
+  },
+  {
+    "id": 844,
+    "word": "environment",
+    "spelling": "E-N-V-I-R-O-N-M-E-N-T",
+    "phonetic": "/ɪnˈvaɪrənmənt/",
+    "gloss": "环境；外界",
+    "tip": "the environment",
+    "example": "Check the environment in the text.",
+    "exampleZh": "核对文本中的环境。",
+    "tags": [
+      "academic",
+      "campus",
+      "env"
+    ],
+    "tier": "core",
+    "pos": "n. 名词"
+  },
+  {
+    "id": 845,
+    "word": "equip",
+    "spelling": "E-Q-U-I-P",
+    "phonetic": "/ɪkˈwɪp/",
+    "gloss": "装备；配备",
+    "tip": "equip …",
+    "example": "Please equip the key points.",
+    "exampleZh": "请装备要点。",
+    "tags": [
+      "academic",
+      "campus"
+    ],
+    "tier": "core",
+    "pos": "v. 动词"
+  },
+  {
+    "id": 846,
+    "word": "equivalent",
+    "spelling": "E-Q-U-I-V-A-L-E-N-T",
+    "phonetic": "/ɪkˈwɪvələnt/",
+    "gloss": "同等物；等价物",
+    "tip": "the equivalent",
+    "example": "Check the equivalent in the text.",
+    "exampleZh": "核对文本中的同等物。",
+    "tags": [
+      "academic"
+    ],
+    "tier": "core",
+    "pos": "n. 名词"
+  },
+  {
+    "id": 847,
+    "word": "erode",
+    "spelling": "E-R-O-D-E",
+    "phonetic": "/ˈiroʊd/",
+    "gloss": "腐蚀；侵蚀",
+    "tip": "erode …",
+    "example": "Please erode the key points.",
+    "exampleZh": "请腐蚀要点。",
+    "tags": [
+      "academic"
+    ],
+    "tier": "high",
+    "pos": "v. 动词"
+  },
+  {
+    "id": 848,
+    "word": "error",
+    "spelling": "E-R-R-O-R",
+    "phonetic": "/ˈɛrər/",
+    "gloss": "错误；过失",
+    "tip": "the error",
+    "example": "Check the error in the text.",
+    "exampleZh": "核对文本中的错误。",
+    "tags": [
+      "academic"
+    ],
+    "tier": "core",
+    "pos": "n. 名词"
+  },
+  {
+    "id": 849,
+    "word": "estate",
+    "spelling": "E-S-T-A-T-E",
+    "phonetic": "/ɛˈsteɪt/",
+    "gloss": "不动产；(人生的)阶段",
+    "tip": "estate …",
+    "example": "Please estate the key points.",
+    "exampleZh": "请不动产要点。",
+    "tags": [
+      "academic"
+    ],
+    "tier": "core",
+    "pos": "v. 动词"
+  },
+  {
+    "id": 850,
+    "word": "ethnic",
+    "spelling": "E-T-H-N-I-C",
+    "phonetic": "/ˈɛθnɪk/",
+    "gloss": "人种的；种族的",
+    "tip": "a ethnic …",
+    "example": "Give a ethnic answer.",
+    "exampleZh": "给出人种的回答。",
+    "tags": [
+      "academic"
+    ],
+    "tier": "core",
+    "pos": "adj. 形容词"
+  },
+  {
+    "id": 851,
+    "word": "eventual",
+    "spelling": "E-V-E-N-T-U-A-L",
+    "phonetic": "/əˈvɛnʧuəl/",
+    "gloss": "最后的；终于的",
+    "tip": "a eventual …",
+    "example": "Give a eventual answer.",
+    "exampleZh": "给出最后的回答。",
+    "tags": [
+      "campus",
+      "academic"
+    ],
+    "tier": "core",
+    "pos": "adj. 形容词"
+  },
+  {
+    "id": 852,
+    "word": "evolve",
+    "spelling": "E-V-O-L-V-E",
+    "phonetic": "/ɪˈvɑlv/",
+    "gloss": "进展；进化",
+    "tip": "evolve …",
+    "example": "Please evolve the key points.",
+    "exampleZh": "请进展要点。",
+    "tags": [
+      "academic"
+    ],
+    "tier": "core",
+    "pos": "v. 动词"
+  },
+  {
+    "id": 853,
+    "word": "exhibit",
+    "spelling": "E-X-H-I-B-I-T",
+    "phonetic": "/ɪgˈzɪbɪt/",
+    "gloss": "显示；显现",
+    "tip": "the exhibit",
+    "example": "Check the exhibit in the text.",
+    "exampleZh": "核对文本中的显示。",
+    "tags": [
+      "academic",
+      "campus"
+    ],
+    "tier": "core",
+    "pos": "n. 名词"
+  },
+  {
+    "id": 854,
+    "word": "expert",
+    "spelling": "E-X-P-E-R-T",
+    "phonetic": "/ˈɛkspərt/",
+    "gloss": "专家；行家",
+    "tip": "the expert",
+    "example": "Check the expert in the text.",
+    "exampleZh": "核对文本中的专家。",
+    "tags": [
+      "academic",
+      "campus"
+    ],
+    "tier": "core",
+    "pos": "n. 名词"
+  },
+  {
+    "id": 855,
+    "word": "exploit",
+    "spelling": "E-X-P-L-O-I-T",
+    "phonetic": "/ˌɛkˈsplɔɪt/",
+    "gloss": "功绩；勋绩",
+    "tip": "the exploit",
+    "example": "Check the exploit in the text.",
+    "exampleZh": "核对文本中的功绩。",
+    "tags": [
+      "academic"
+    ],
+    "tier": "core",
+    "pos": "n. 名词"
+  },
+  {
+    "id": 856,
+    "word": "external",
+    "spelling": "E-X-T-E-R-N-A-L",
+    "phonetic": "/ɪkˈstərnəl/",
+    "gloss": "外部；外面",
+    "tip": "the external",
+    "example": "Check the external in the text.",
+    "exampleZh": "核对文本中的外部。",
+    "tags": [
+      "academic",
+      "campus"
+    ],
+    "tier": "core",
+    "pos": "n. 名词"
+  },
+  {
+    "id": 857,
+    "word": "extract",
+    "spelling": "E-X-T-R-A-C-T",
+    "phonetic": "/ˈɛkˌstrækt/",
+    "gloss": "榨出物；精汁",
+    "tip": "the extract",
+    "example": "Check the extract in the text.",
+    "exampleZh": "核对文本中的榨出物。",
+    "tags": [
+      "academic",
+      "campus"
+    ],
+    "tier": "core",
+    "pos": "n. 名词"
+  },
+  {
+    "id": 858,
+    "word": "federal",
+    "spelling": "F-E-D-E-R-A-L",
+    "phonetic": "/ˈfɛdərəl/",
+    "gloss": "联邦的；联合的",
+    "tip": "a federal …",
+    "example": "Give a federal answer.",
+    "exampleZh": "给出联邦的回答。",
+    "tags": [
+      "academic"
+    ],
+    "tier": "core",
+    "pos": "adj. 形容词"
+  },
+  {
+    "id": 859,
+    "word": "file",
+    "spelling": "F-I-L-E",
+    "phonetic": "/faɪl/",
+    "gloss": "档案；公文箱",
+    "tip": "the file",
+    "example": "Check the file in the text.",
+    "exampleZh": "核对文本中的档案。",
+    "tags": [
+      "campus",
+      "academic"
+    ],
+    "tier": "core",
+    "pos": "n. 名词"
+  },
+  {
+    "id": 860,
+    "word": "final",
+    "spelling": "F-I-N-A-L",
+    "phonetic": "/ˈfaɪnəl/",
+    "gloss": "期末考试；结局",
+    "tip": "the final",
+    "example": "Check the final in the text.",
+    "exampleZh": "核对文本中的期末考试。",
+    "tags": [
+      "campus",
+      "academic"
+    ],
+    "tier": "core",
+    "pos": "n. 名词"
+  },
+  {
+    "id": 861,
+    "word": "finance",
+    "spelling": "F-I-N-A-N-C-E",
+    "phonetic": "/ˈfaɪˌnæns/",
+    "gloss": "财政；财务",
+    "tip": "the finance",
+    "example": "Check the finance in the text.",
+    "exampleZh": "核对文本中的财政。",
+    "tags": [
+      "academic",
+      "campus",
+      "econ"
+    ],
+    "tier": "core",
+    "pos": "n. 名词"
+  },
+  {
+    "id": 862,
+    "word": "finite",
+    "spelling": "F-I-N-I-T-E",
+    "phonetic": "/ˈfaɪˌnaɪt/",
+    "gloss": "有限的；有穷的",
+    "tip": "a finite …",
+    "example": "Give a finite answer.",
+    "exampleZh": "给出有限的回答。",
+    "tags": [
+      "academic"
+    ],
+    "tier": "high",
+    "pos": "adj. 形容词"
+  },
+  {
+    "id": 863,
+    "word": "format",
+    "spelling": "F-O-R-M-A-T",
+    "phonetic": "/ˈfɔrˌmæt/",
+    "gloss": "开本；版式",
+    "tip": "the format",
+    "example": "Check the format in the text.",
+    "exampleZh": "核对文本中的开本。",
+    "tags": [
+      "academic"
+    ],
+    "tier": "core",
+    "pos": "n. 名词"
+  },
+  {
+    "id": 864,
+    "word": "formula",
+    "spelling": "F-O-R-M-U-L-A",
+    "phonetic": "/ˈfɔrmjələ/",
+    "gloss": "客套语；公式",
+    "tip": "the formula",
+    "example": "Check the formula in the text.",
+    "exampleZh": "核对文本中的客套语。",
+    "tags": [
+      "academic"
+    ],
+    "tier": "core",
+    "pos": "n. 名词"
+  },
+  {
+    "id": 865,
+    "word": "forthcoming",
+    "spelling": "F-O-R-T-H-C-O-M-I-N-G",
+    "phonetic": "/ˈfɔrθˈkəmɪŋ/",
+    "gloss": "即将来临的；来临",
+    "tip": "a forthcoming …",
+    "example": "Give a forthcoming answer.",
+    "exampleZh": "给出即将来临的回答。",
+    "tags": [
+      "academic"
+    ],
+    "tier": "core",
+    "pos": "adj. 形容词"
+  },
+  {
+    "id": 866,
+    "word": "foundation",
+    "spelling": "F-O-U-N-D-A-T-I-O-N",
+    "phonetic": "/faʊnˈdeɪʃən/",
+    "gloss": "基础；根据",
+    "tip": "the foundation",
+    "example": "Check the foundation in the text.",
+    "exampleZh": "核对文本中的基础。",
+    "tags": [
+      "academic",
+      "campus"
+    ],
+    "tier": "core",
+    "pos": "n. 名词"
+  },
+  {
+    "id": 867,
+    "word": "founded",
+    "spelling": "F-O-U-N-D-E-D",
+    "phonetic": "/ˈfaʊndɪd/",
+    "gloss": "有基础的；创办",
+    "tip": "a founded …",
+    "example": "Give a founded answer.",
+    "exampleZh": "给出有基础的回答。",
+    "tags": [
+      "academic"
+    ],
+    "tier": "core",
+    "pos": "adj. 形容词"
+  },
+  {
+    "id": 868,
+    "word": "fund",
+    "spelling": "F-U-N-D",
+    "phonetic": "/fənd/",
+    "gloss": "基金；资金",
+    "tip": "the fund",
+    "example": "Check the fund in the text.",
+    "exampleZh": "核对文本中的基金。",
+    "tags": [
+      "academic",
+      "campus"
+    ],
+    "tier": "core",
+    "pos": "n. 名词"
+  },
+  {
+    "id": 869,
+    "word": "gender",
+    "spelling": "G-E-N-D-E-R",
+    "phonetic": "/ˈʤɛndər/",
+    "gloss": "性；产生",
+    "tip": "the gender",
+    "example": "Check the gender in the text.",
+    "exampleZh": "核对文本中的性。",
+    "tags": [
+      "academic",
+      "campus"
+    ],
+    "tier": "core",
+    "pos": "n. 名词"
+  },
+  {
+    "id": 870,
+    "word": "generation",
+    "spelling": "G-E-N-E-R-A-T-I-O-N",
+    "phonetic": "/ˌʤɛnərˈeɪʃən/",
+    "gloss": "一代；一世",
+    "tip": "the generation",
+    "example": "Check the generation in the text.",
+    "exampleZh": "核对文本中的一代。",
+    "tags": [
+      "academic"
+    ],
+    "tier": "high",
+    "pos": "n. 名词"
+  },
+  {
+    "id": 871,
+    "word": "globe",
+    "spelling": "G-L-O-B-E",
+    "phonetic": "/gloʊb/",
+    "gloss": "球；球状物",
+    "tip": "the globe",
+    "example": "Check the globe in the text.",
+    "exampleZh": "核对文本中的球。",
+    "tags": [
+      "academic"
+    ],
+    "tier": "core",
+    "pos": "n. 名词"
+  },
+  {
+    "id": 872,
+    "word": "guarantee",
+    "spelling": "G-U-A-R-A-N-T-E-E",
+    "phonetic": "/ˌgɛrənˈti/",
+    "gloss": "担保；抵押品",
+    "tip": "the guarantee",
+    "example": "Check the guarantee in the text.",
+    "exampleZh": "核对文本中的担保。",
+    "tags": [
+      "academic"
+    ],
+    "tier": "high",
+    "pos": "n. 名词"
+  },
+  {
+    "id": 873,
+    "word": "ideology",
+    "spelling": "I-D-E-O-L-O-G-Y",
+    "phonetic": "/ˌaɪdiˈɑləʤi/",
+    "gloss": "思想体系；意识形态",
+    "tip": "the ideology",
+    "example": "Check the ideology in the text.",
+    "exampleZh": "核对文本中的思想体系。",
+    "tags": [
+      "academic"
+    ],
+    "tier": "high",
+    "pos": "n. 名词"
+  },
+  {
+    "id": 874,
+    "word": "ignorance",
+    "spelling": "I-G-N-O-R-A-N-C-E",
+    "phonetic": "/ˈɪgnərəns/",
+    "gloss": "无知；愚味",
+    "tip": "the ignorance",
+    "example": "Check the ignorance in the text.",
+    "exampleZh": "核对文本中的无知。",
+    "tags": [
+      "academic"
+    ],
+    "tier": "core",
+    "pos": "n. 名词"
+  },
+  {
+    "id": 875,
+    "word": "image",
+    "spelling": "I-M-A-G-E",
+    "phonetic": "/ˈɪmɪʤ/",
+    "gloss": "影像；肖像",
+    "tip": "the image",
+    "example": "Check the image in the text.",
+    "exampleZh": "核对文本中的影像。",
+    "tags": [
+      "academic",
+      "campus"
+    ],
+    "tier": "core",
+    "pos": "n. 名词"
+  },
+  {
+    "id": 876,
+    "word": "immigrate",
+    "spelling": "I-M-M-I-G-R-A-T-E",
+    "phonetic": "/ˈɪməˌgreɪt/",
+    "gloss": "使移居入境；移入",
+    "tip": "immigrate …",
+    "example": "Please immigrate the key points.",
+    "exampleZh": "请使移居入境要点。",
+    "tags": [
+      "academic"
+    ],
+    "tier": "core",
+    "pos": "v. 动词"
+  },
+  {
+    "id": 877,
+    "word": "implicate",
+    "spelling": "I-M-P-L-I-C-A-T-E",
+    "phonetic": "/ˈɪmplɪˌkeɪt/",
+    "gloss": "涉及；含意",
+    "tip": "implicate …",
+    "example": "Please implicate the key points.",
+    "exampleZh": "请涉及要点。",
+    "tags": [
+      "academic"
+    ],
+    "tier": "core",
+    "pos": "v. 动词"
+  },
+  {
+    "id": 878,
+    "word": "impose",
+    "spelling": "I-M-P-O-S-E",
+    "phonetic": "/ˌɪmˈpoʊz/",
+    "gloss": "征；把...强加于",
+    "tip": "impose …",
+    "example": "Please impose the key points.",
+    "exampleZh": "请征要点。",
+    "tags": [
+      "academic"
+    ],
+    "tier": "core",
+    "pos": "v. 动词"
+  },
+  {
+    "id": 879,
+    "word": "incidence",
+    "spelling": "I-N-C-I-D-E-N-C-E",
+    "phonetic": "/ˈɪnsɪdəns/",
+    "gloss": "发生；发生率",
+    "tip": "the incidence",
+    "example": "Check the incidence in the text.",
+    "exampleZh": "核对文本中的发生。",
+    "tags": [
+      "academic"
+    ],
+    "tier": "high",
+    "pos": "n. 名词"
+  },
+  {
+    "id": 880,
+    "word": "incline",
+    "spelling": "I-N-C-L-I-N-E",
+    "phonetic": "/ˌɪnˈklaɪn/",
+    "gloss": "倾斜；斜坡",
+    "tip": "the incline",
+    "example": "Check the incline in the text.",
+    "exampleZh": "核对文本中的倾斜。",
+    "tags": [
+      "academic"
+    ],
+    "tier": "core",
+    "pos": "n. 名词"
+  },
+  {
+    "id": 881,
+    "word": "index",
+    "spelling": "I-N-D-E-X",
+    "phonetic": "/ˈɪndɛks/",
+    "gloss": "索引；指针",
+    "tip": "the index",
+    "example": "Check the index in the text.",
+    "exampleZh": "核对文本中的索引。",
+    "tags": [
+      "academic"
+    ],
+    "tier": "core",
+    "pos": "n. 名词"
+  },
+  {
+    "id": 882,
+    "word": "individual",
+    "spelling": "I-N-D-I-V-I-D-U-A-L",
+    "phonetic": "/ˌɪndəˈvɪʤəwəl/",
+    "gloss": "人；个人",
+    "tip": "the individual",
+    "example": "Check the individual in the text.",
+    "exampleZh": "核对文本中的人。",
+    "tags": [
+      "academic",
+      "campus"
+    ],
+    "tier": "core",
+    "pos": "n. 名词"
+  },
+  {
+    "id": 883,
+    "word": "initiate",
+    "spelling": "I-N-I-T-I-A-T-E",
+    "phonetic": "/ˌɪˈnɪʃiˌeɪt/",
+    "gloss": "入会；开始",
+    "tip": "initiate …",
+    "example": "Please initiate the key points.",
+    "exampleZh": "请入会要点。",
+    "tags": [
+      "academic"
+    ],
+    "tier": "high",
+    "pos": "v. 动词"
+  },
+  {
+    "id": 884,
+    "word": "injure",
+    "spelling": "I-N-J-U-R-E",
+    "phonetic": "/ˈɪnʤər/",
+    "gloss": "伤害；损害",
+    "tip": "injure …",
+    "example": "Please injure the key points.",
+    "exampleZh": "请伤害要点。",
+    "tags": [
+      "academic"
+    ],
+    "tier": "core",
+    "pos": "v. 动词"
+  },
+  {
+    "id": 885,
+    "word": "innovate",
+    "spelling": "I-N-N-O-V-A-T-E",
+    "phonetic": "/ˈɪnəˌveɪt/",
+    "gloss": "改革；创新",
+    "tip": "innovate …",
+    "example": "Please innovate the key points.",
+    "exampleZh": "请改革要点。",
+    "tags": [
+      "academic"
+    ],
+    "tier": "high",
+    "pos": "v. 动词"
+  },
+  {
+    "id": 886,
+    "word": "input",
+    "spelling": "I-N-P-U-T",
+    "phonetic": "/ˈɪnˌpʊt/",
+    "gloss": "输入；输入电路",
+    "tip": "the input",
+    "example": "Check the input in the text.",
+    "exampleZh": "核对文本中的输入。",
+    "tags": [
+      "academic",
+      "campus"
+    ],
+    "tier": "core",
+    "pos": "n. 名词"
+  },
+  {
+    "id": 887,
+    "word": "insert",
+    "spelling": "I-N-S-E-R-T",
+    "phonetic": "/ˌɪnˈsərt/",
+    "gloss": "插入物；插入",
+    "tip": "the insert",
+    "example": "Check the insert in the text.",
+    "exampleZh": "核对文本中的插入物。",
+    "tags": [
+      "academic"
+    ],
+    "tier": "core",
+    "pos": "n. 名词"
+  },
+  {
+    "id": 888,
+    "word": "insight",
+    "spelling": "I-N-S-I-G-H-T",
+    "phonetic": "/ˈɪnˌsaɪt/",
+    "gloss": "察看；洞察力",
+    "tip": "the insight",
+    "example": "Check the insight in the text.",
+    "exampleZh": "核对文本中的察看。",
+    "tags": [
+      "academic",
+      "campus"
+    ],
+    "tier": "core",
+    "pos": "n. 名词"
+  },
+  {
+    "id": 889,
+    "word": "inspect",
+    "spelling": "I-N-S-P-E-C-T",
+    "phonetic": "/ˌɪnˈspɛkt/",
+    "gloss": "检查；检阅",
+    "tip": "inspect …",
+    "example": "Please inspect the key points.",
+    "exampleZh": "请检查要点。",
+    "tags": [
+      "academic"
+    ],
+    "tier": "core",
+    "pos": "v. 动词"
+  },
+  {
+    "id": 890,
+    "word": "instance",
+    "spelling": "I-N-S-T-A-N-C-E",
+    "phonetic": "/ˈɪnstəns/",
+    "gloss": "建议；情况",
+    "tip": "the instance",
+    "example": "Check the instance in the text.",
+    "exampleZh": "核对文本中的建议。",
+    "tags": [
+      "academic"
+    ],
+    "tier": "core",
+    "pos": "n. 名词"
+  },
+  {
+    "id": 891,
+    "word": "institute",
+    "spelling": "I-N-S-T-I-T-U-T-E",
+    "phonetic": "/ˈɪnstɪˌtut/",
+    "gloss": "学会；学院",
+    "tip": "the institute",
+    "example": "Check the institute in the text.",
+    "exampleZh": "核对文本中的学会。",
+    "tags": [
+      "academic"
+    ],
+    "tier": "core",
+    "pos": "n. 名词"
+  },
+  {
+    "id": 892,
+    "word": "instruct",
+    "spelling": "I-N-S-T-R-U-C-T",
+    "phonetic": "/ˌɪnˈstrəkt/",
+    "gloss": "教；教育",
+    "tip": "instruct …",
+    "example": "Please instruct the key points.",
+    "exampleZh": "请教要点。",
+    "tags": [
+      "academic",
+      "campus"
+    ],
+    "tier": "core",
+    "pos": "v. 动词"
+  },
+  {
+    "id": 893,
+    "word": "integral",
+    "spelling": "I-N-T-E-G-R-A-L",
+    "phonetic": "/ˈɪnəgrəl/",
+    "gloss": "整体；积分",
+    "tip": "the integral",
+    "example": "Check the integral in the text.",
+    "exampleZh": "核对文本中的整体。",
+    "tags": [
+      "academic"
+    ],
+    "tier": "high",
+    "pos": "n. 名词"
+  },
+  {
+    "id": 894,
+    "word": "intelligence",
+    "spelling": "I-N-T-E-L-L-I-G-E-N-C-E",
+    "phonetic": "/ˌɪnˈtɛləʤəns/",
+    "gloss": "智力；情报",
+    "tip": "the intelligence",
+    "example": "Check the intelligence in the text.",
+    "exampleZh": "核对文本中的智力。",
+    "tags": [
+      "academic",
+      "campus"
+    ],
+    "tier": "core",
+    "pos": "n. 名词"
+  },
+  {
+    "id": 895,
+    "word": "intense",
+    "spelling": "I-N-T-E-N-S-E",
+    "phonetic": "/ˌɪnˈtɛns/",
+    "gloss": "非常的；强烈的",
+    "tip": "a intense …",
+    "example": "Give a intense answer.",
+    "exampleZh": "给出非常的回答。",
+    "tags": [
+      "academic"
+    ],
+    "tier": "core",
+    "pos": "adj. 形容词"
+  },
+  {
+    "id": 896,
+    "word": "interact",
+    "spelling": "I-N-T-E-R-A-C-T",
+    "phonetic": "/ˌɪnərˈækt/",
+    "gloss": "互相影响；交互作用",
+    "tip": "interact …",
+    "example": "Please interact the key points.",
+    "exampleZh": "请互相影响要点。",
+    "tags": [
+      "academic"
+    ],
+    "tier": "core",
+    "pos": "v. 动词"
+  },
+  {
+    "id": 897,
+    "word": "intermediate",
+    "spelling": "I-N-T-E-R-M-E-D-I-A-T-E",
+    "phonetic": "/ˌɪnərˈmidiɪt/",
+    "gloss": "中间物；调停者",
+    "tip": "intermediate …",
+    "example": "Please intermediate the key points.",
+    "exampleZh": "请中间物要点。",
+    "tags": [
+      "academic"
+    ],
+    "tier": "core",
+    "pos": "v. 动词"
+  },
+  {
+    "id": 898,
+    "word": "internal",
+    "spelling": "I-N-T-E-R-N-A-L",
+    "phonetic": "/ˌɪnˈtərnəl/",
+    "gloss": "内在的；国内的",
+    "tip": "a internal …",
+    "example": "Give a internal answer.",
+    "exampleZh": "给出内在的回答。",
+    "tags": [
+      "academic",
+      "campus"
+    ],
+    "tier": "core",
+    "pos": "adj. 形容词"
+  },
+  {
+    "id": 899,
+    "word": "interval",
+    "spelling": "I-N-T-E-R-V-A-L",
+    "phonetic": "/ˈɪntərvəl/",
+    "gloss": "间隔；距离",
+    "tip": "the interval",
+    "example": "Check the interval in the text.",
+    "exampleZh": "核对文本中的间隔。",
+    "tags": [
+      "academic"
+    ],
+    "tier": "core",
+    "pos": "n. 名词"
+  },
+  {
+    "id": 900,
+    "word": "intrinsic",
+    "spelling": "I-N-T-R-I-N-S-I-C",
+    "phonetic": "/ˌɪnˈtrɪnsɪk/",
+    "gloss": "本质的；原有的",
+    "tip": "a intrinsic …",
+    "example": "Give a intrinsic answer.",
+    "exampleZh": "给出本质的回答。",
+    "tags": [
+      "academic"
+    ],
+    "tier": "core",
+    "pos": "adj. 形容词"
+  },
+  {
+    "id": 901,
+    "word": "invest",
+    "spelling": "I-N-V-E-S-T",
+    "phonetic": "/ˌɪnˈvɛst/",
+    "gloss": "投资；花费",
+    "tip": "invest …",
+    "example": "Please invest the key points.",
+    "exampleZh": "请投资要点。",
+    "tags": [
+      "academic",
+      "campus"
+    ],
+    "tier": "core",
+    "pos": "v. 动词"
+  },
+  {
+    "id": 902,
+    "word": "involve",
+    "spelling": "I-N-V-O-L-V-E",
+    "phonetic": "/ˌɪnˈvɑlv/",
+    "gloss": "包括；使陷于",
+    "tip": "involve …",
+    "example": "Please involve the key points.",
+    "exampleZh": "请包括要点。",
+    "tags": [
+      "academic",
+      "campus"
+    ],
+    "tier": "core",
+    "pos": "v. 动词"
+  },
+  {
+    "id": 903,
+    "word": "isolate",
+    "spelling": "I-S-O-L-A-T-E",
+    "phonetic": "/ˈaɪsəˌleɪt/",
+    "gloss": "使隔离；使孤立",
+    "tip": "isolate …",
+    "example": "Please isolate the key points.",
+    "exampleZh": "请使隔离要点。",
+    "tags": [
+      "academic"
+    ],
+    "tier": "core",
+    "pos": "v. 动词"
+  },
+  {
+    "id": 904,
+    "word": "item",
+    "spelling": "I-T-E-M",
+    "phonetic": "/ˈaɪtəm/",
+    "gloss": "项目；条款",
+    "tip": "the item",
+    "example": "Check the item in the text.",
+    "exampleZh": "核对文本中的项目。",
+    "tags": [
+      "academic",
+      "campus"
+    ],
+    "tier": "core",
+    "pos": "n. 名词"
+  },
+  {
+    "id": 905,
+    "word": "job",
+    "spelling": "J-O-B",
+    "phonetic": "/ʤɑb/",
+    "gloss": "工作；零活",
+    "tip": "the job",
+    "example": "Check the job in the text.",
+    "exampleZh": "核对文本中的工作。",
+    "tags": [
+      "academic"
+    ],
+    "tier": "core",
+    "pos": "n. 名词"
+  },
+  {
+    "id": 906,
+    "word": "label",
+    "spelling": "L-A-B-E-L",
+    "phonetic": "/ˈleɪbəl/",
+    "gloss": "标签；称号",
+    "tip": "the label",
+    "example": "Check the label in the text.",
+    "exampleZh": "核对文本中的标签。",
+    "tags": [
+      "academic"
+    ],
+    "tier": "core",
+    "pos": "n. 名词"
+  },
+  {
+    "id": 907,
+    "word": "labor",
+    "spelling": "L-A-B-O-R",
+    "phonetic": "/ˈleɪbər/",
+    "gloss": "劳动；努力",
+    "tip": "the labor",
+    "example": "Check the labor in the text.",
+    "exampleZh": "核对文本中的劳动。",
+    "tags": [
+      "academic"
+    ],
+    "tier": "core",
+    "pos": "n. 名词"
+  },
+  {
+    "id": 908,
+    "word": "layer",
+    "spelling": "L-A-Y-E-R",
+    "phonetic": "/leɪər/",
+    "gloss": "层；产卵鸡",
+    "tip": "the layer",
+    "example": "Check the layer in the text.",
+    "exampleZh": "核对文本中的层。",
+    "tags": [
+      "academic",
+      "campus"
+    ],
+    "tier": "core",
+    "pos": "n. 名词"
+  },
+  {
+    "id": 909,
+    "word": "legal",
+    "spelling": "L-E-G-A-L",
+    "phonetic": "/ˈligəl/",
+    "gloss": "法律的；法定的",
+    "tip": "a legal …",
+    "example": "Give a legal answer.",
+    "exampleZh": "给出法律的回答。",
+    "tags": [
+      "academic",
+      "campus"
+    ],
+    "tier": "core",
+    "pos": "adj. 形容词"
+  },
+  {
+    "id": 910,
+    "word": "legislate",
+    "spelling": "L-E-G-I-S-L-A-T-E",
+    "phonetic": "/ˈlɛʤɪsˌleɪt/",
+    "gloss": "制定法律；用立法规定",
+    "tip": "legislate …",
+    "example": "Please legislate the key points.",
+    "exampleZh": "请制定法律要点。",
+    "tags": [
+      "academic"
+    ],
+    "tier": "core",
+    "pos": "v. 动词"
+  },
+  {
+    "id": 911,
+    "word": "levy",
+    "spelling": "L-E-V-Y",
+    "phonetic": "/ˈlɛvi/",
+    "gloss": "税款；所征的人数",
+    "tip": "the levy",
+    "example": "Check the levy in the text.",
+    "exampleZh": "核对文本中的税款。",
+    "tags": [
+      "academic"
+    ],
+    "tier": "high",
+    "pos": "n. 名词"
+  },
+  {
+    "id": 912,
+    "word": "liberal",
+    "spelling": "L-I-B-E-R-A-L",
+    "phonetic": "/ˈlɪˌbərəl/",
+    "gloss": "自由主义者；慷慨",
+    "tip": "the liberal",
+    "example": "Check the liberal in the text.",
+    "exampleZh": "核对文本中的自由主义者。",
+    "tags": [
+      "academic"
+    ],
+    "tier": "core",
+    "pos": "n. 名词"
+  },
+  {
+    "id": 913,
+    "word": "licence",
+    "spelling": "L-I-C-E-N-C-E",
+    "phonetic": "/ˈlaɪsəns/",
+    "gloss": "执照；许可证",
+    "tip": "the licence",
+    "example": "Check the licence in the text.",
+    "exampleZh": "核对文本中的执照。",
+    "tags": [
+      "academic"
+    ],
+    "tier": "core",
+    "pos": "n. 名词"
+  },
+  {
+    "id": 914,
+    "word": "license",
+    "spelling": "L-I-C-E-N-S-E",
+    "phonetic": "/ˈlaɪsəns/",
+    "gloss": "执照；许可证",
+    "tip": "the license",
+    "example": "Check the license in the text.",
+    "exampleZh": "核对文本中的执照。",
+    "tags": [
+      "academic"
+    ],
+    "tier": "high",
+    "pos": "n. 名词"
+  },
+  {
+    "id": 915,
+    "word": "likewise",
+    "spelling": "L-I-K-E-W-I-S-E",
+    "phonetic": "/ˈlaɪkˌwaɪz/",
+    "gloss": "同样地；也",
+    "tip": "likewise …",
+    "example": "Please likewise the key points.",
+    "exampleZh": "请同样地要点。",
+    "tags": [
+      "academic"
+    ],
+    "tier": "core",
+    "pos": "v. 动词"
+  },
+  {
+    "id": 916,
+    "word": "link",
+    "spelling": "L-I-N-K",
+    "phonetic": "/lɪŋk/",
+    "gloss": "环；连结物",
+    "tip": "the link",
+    "example": "Check the link in the text.",
+    "exampleZh": "核对文本中的环。",
+    "tags": [
+      "academic"
+    ],
+    "tier": "core",
+    "pos": "n. 名词"
+  },
+  {
+    "id": 917,
+    "word": "logic",
+    "spelling": "L-O-G-I-C",
+    "phonetic": "/ˈlɑʤɪk/",
+    "gloss": "逻辑；逻辑学",
+    "tip": "the logic",
+    "example": "Check the logic in the text.",
+    "exampleZh": "核对文本中的逻辑。",
+    "tags": [
+      "academic",
+      "campus"
+    ],
+    "tier": "core",
+    "pos": "n. 名词"
+  },
+  {
+    "id": 918,
+    "word": "major",
+    "spelling": "M-A-J-O-R",
+    "phonetic": "/ˈmeɪʤər/",
+    "gloss": "主修课；成年人",
+    "tip": "the major",
+    "example": "Check the major in the text.",
+    "exampleZh": "核对文本中的主修课。",
+    "tags": [
+      "academic",
+      "campus"
+    ],
+    "tier": "core",
+    "pos": "n. 名词"
+  },
+  {
+    "id": 919,
+    "word": "manipulate",
+    "spelling": "M-A-N-I-P-U-L-A-T-E",
+    "phonetic": "/məˈnɪpjəˌleɪt/",
+    "gloss": "操纵；利用",
+    "tip": "manipulate …",
+    "example": "Please manipulate the key points.",
+    "exampleZh": "请操纵要点。",
+    "tags": [
+      "academic"
+    ],
+    "tier": "high",
+    "pos": "v. 动词"
+  },
+  {
+    "id": 920,
+    "word": "manual",
+    "spelling": "M-A-N-U-A-L",
+    "phonetic": "/ˈmænjuəl/",
+    "gloss": "手册；指南",
+    "tip": "the manual",
+    "example": "Check the manual in the text.",
+    "exampleZh": "核对文本中的手册。",
+    "tags": [
+      "academic"
+    ],
+    "tier": "core",
+    "pos": "n. 名词"
+  },
+  {
+    "id": 921,
+    "word": "margin",
+    "spelling": "M-A-R-G-I-N",
+    "phonetic": "/ˈmɑrʤən/",
+    "gloss": "页边的空白；边缘",
+    "tip": "the margin",
+    "example": "Check the margin in the text.",
+    "exampleZh": "核对文本中的页边的空白。",
+    "tags": [
+      "academic"
+    ],
+    "tier": "core",
+    "pos": "n. 名词"
+  },
+  {
+    "id": 922,
+    "word": "mature",
+    "spelling": "M-A-T-U-R-E",
+    "phonetic": "/məˈʧʊr/",
+    "gloss": "成熟的；到期的",
+    "tip": "a mature …",
+    "example": "Give a mature answer.",
+    "exampleZh": "给出成熟的回答。",
+    "tags": [
+      "academic",
+      "campus"
+    ],
+    "tier": "core",
+    "pos": "adj. 形容词"
+  },
+  {
+    "id": 923,
+    "word": "maximise",
+    "spelling": "M-A-X-I-M-I-S-E",
+    "phonetic": "/'mæksimaiz/",
+    "gloss": "把...增加到最大限度；把...扩大到最大限度",
+    "tip": "maximise …",
+    "example": "Please maximise the key points.",
+    "exampleZh": "请把...增加到最大限度要点。",
+    "tags": [
+      "academic"
+    ],
+    "tier": "high",
+    "pos": "v. 动词"
+  },
+  {
+    "id": 924,
+    "word": "maximize",
+    "spelling": "M-A-X-I-M-I-Z-E",
+    "phonetic": "/ˈmæksəˌmaɪz/",
+    "gloss": "取...最大值；使增加(或扩大)到最大限度",
+    "tip": "maximize …",
+    "example": "Please maximize the key points.",
+    "exampleZh": "请取...最大值要点。",
+    "tags": [
+      "academic"
+    ],
+    "tier": "core",
+    "pos": "v. 动词"
+  },
+  {
+    "id": 925,
+    "word": "medical",
+    "spelling": "M-E-D-I-C-A-L",
+    "phonetic": "/ˈmɛdɪkəl/",
+    "gloss": "医生；体格检查",
+    "tip": "a medical …",
+    "example": "Give a medical answer.",
+    "exampleZh": "给出医生回答。",
+    "tags": [
+      "academic"
+    ],
+    "tier": "high",
+    "pos": "adj. 形容词"
+  },
+  {
+    "id": 926,
+    "word": "medium",
+    "spelling": "M-E-D-I-U-M",
+    "phonetic": "/ˈmidiəm/",
+    "gloss": "媒体；方法",
+    "tip": "the medium",
+    "example": "Check the medium in the text.",
+    "exampleZh": "核对文本中的媒体。",
+    "tags": [
+      "academic"
+    ],
+    "tier": "core",
+    "pos": "n. 名词"
+  },
+  {
+    "id": 927,
+    "word": "mental",
+    "spelling": "M-E-N-T-A-L",
+    "phonetic": "/ˈmɛntəl/",
+    "gloss": "心智的；精神病的",
+    "tip": "a mental …",
+    "example": "Give a mental answer.",
+    "exampleZh": "给出心智的回答。",
+    "tags": [
+      "academic",
+      "campus"
+    ],
+    "tier": "core",
+    "pos": "adj. 形容词"
+  },
+  {
+    "id": 928,
+    "word": "method",
+    "spelling": "M-E-T-H-O-D",
+    "phonetic": "/ˈmɛθəd/",
+    "gloss": "方法；办法",
+    "tip": "the method",
+    "example": "Check the method in the text.",
+    "exampleZh": "核对文本中的方法。",
+    "tags": [
+      "academic"
+    ],
+    "tier": "high",
+    "pos": "n. 名词"
+  },
+  {
+    "id": 929,
+    "word": "migrate",
+    "spelling": "M-I-G-R-A-T-E",
+    "phonetic": "/ˈmaɪˌgreɪt/",
+    "gloss": "移动；移往",
+    "tip": "migrate …",
+    "example": "Please migrate the key points.",
+    "exampleZh": "请移动要点。",
+    "tags": [
+      "academic",
+      "campus"
+    ],
+    "tier": "core",
+    "pos": "v. 动词"
+  },
+  {
+    "id": 930,
+    "word": "military",
+    "spelling": "M-I-L-I-T-A-R-Y",
+    "phonetic": "/ˈmɪlɪˌtɛri/",
+    "gloss": "军队；军事",
+    "tip": "the military",
+    "example": "Check the military in the text.",
+    "exampleZh": "核对文本中的军队。",
+    "tags": [
+      "academic"
+    ],
+    "tier": "core",
+    "pos": "n. 名词"
+  },
+  {
+    "id": 931,
+    "word": "minimal",
+    "spelling": "M-I-N-I-M-A-L",
+    "phonetic": "/ˈmɪnəməl/",
+    "gloss": "最小的；极微的",
+    "tip": "a minimal …",
+    "example": "Give a minimal answer.",
+    "exampleZh": "给出最小的回答。",
+    "tags": [
+      "campus",
+      "academic"
+    ],
+    "tier": "core",
+    "pos": "adj. 形容词"
+  },
+  {
+    "id": 932,
+    "word": "minimise",
+    "spelling": "M-I-N-I-M-I-S-E",
+    "phonetic": "/ˈmɪnəˌmaɪz/",
+    "gloss": "使减到最少/最小；使降到最低限度",
+    "tip": "minimise …",
+    "example": "Please minimise the key points.",
+    "exampleZh": "请使减到最少/最小要点。",
+    "tags": [
+      "academic"
+    ],
+    "tier": "high",
+    "pos": "v. 动词"
+  },
+  {
+    "id": 933,
+    "word": "minimize",
+    "spelling": "M-I-N-I-M-I-Z-E",
+    "phonetic": "/ˈmɪnəˌmaɪz/",
+    "gloss": "将...减到最少；最小化",
+    "tip": "minimize …",
+    "example": "Please minimize the key points.",
+    "exampleZh": "请将...减到最少要点。",
+    "tags": [
+      "academic"
+    ],
+    "tier": "high",
+    "pos": "v. 动词"
+  },
+  {
+    "id": 934,
+    "word": "ministry",
+    "spelling": "M-I-N-I-S-T-R-Y",
+    "phonetic": "/ˈmɪnɪstri/",
+    "gloss": "部；内阁",
+    "tip": "the ministry",
+    "example": "Check the ministry in the text.",
+    "exampleZh": "核对文本中的部。",
+    "tags": [
+      "academic"
+    ],
+    "tier": "core",
+    "pos": "n. 名词"
+  },
+  {
+    "id": 935,
+    "word": "minor",
+    "spelling": "M-I-N-O-R",
+    "phonetic": "/ˈmaɪnər/",
+    "gloss": "未成年人；副修科目",
+    "tip": "the minor",
+    "example": "Check the minor in the text.",
+    "exampleZh": "核对文本中的未成年人。",
+    "tags": [
+      "academic"
+    ],
+    "tier": "core",
+    "pos": "n. 名词"
+  },
+  {
+    "id": 936,
+    "word": "mode",
+    "spelling": "M-O-D-E",
+    "phonetic": "/moʊd/",
+    "gloss": "模态；调式",
+    "tip": "the mode",
+    "example": "Check the mode in the text.",
+    "exampleZh": "核对文本中的模态。",
+    "tags": [
+      "academic"
+    ],
+    "tier": "core",
+    "pos": "n. 名词"
+  },
+  {
+    "id": 937,
+    "word": "mutual",
+    "spelling": "M-U-T-U-A-L",
+    "phonetic": "/mˈjuʧuəl/",
+    "gloss": "相互的；共有的",
+    "tip": "a mutual …",
+    "example": "Give a mutual answer.",
+    "exampleZh": "给出相互的回答。",
+    "tags": [
+      "academic"
+    ],
+    "tier": "core",
+    "pos": "adj. 形容词"
+  },
+  {
+    "id": 938,
+    "word": "negate",
+    "spelling": "N-E-G-A-T-E",
+    "phonetic": "/nɪˈgeɪt/",
+    "gloss": "否定；否认",
+    "tip": "negate …",
+    "example": "Please negate the key points.",
+    "exampleZh": "请否定要点。",
+    "tags": [
+      "academic"
+    ],
+    "tier": "high",
+    "pos": "v. 动词"
+  },
+  {
+    "id": 939,
+    "word": "network",
+    "spelling": "N-E-T-W-O-R-K",
+    "phonetic": "/ˈnɛtˌwərk/",
+    "gloss": "网络；广播网",
+    "tip": "the network",
+    "example": "Check the network in the text.",
+    "exampleZh": "核对文本中的网络。",
+    "tags": [
+      "academic"
+    ],
+    "tier": "core",
+    "pos": "n. 名词"
+  },
+  {
+    "id": 940,
+    "word": "nonetheless",
+    "spelling": "N-O-N-E-T-H-E-L-E-S-S",
+    "phonetic": "/ˌnənðəˈlɛs/",
+    "gloss": "然而；尽管",
+    "tip": "a nonetheless …",
+    "example": "Give a nonetheless answer.",
+    "exampleZh": "给出然而回答。",
+    "tags": [
+      "academic"
+    ],
+    "tier": "high",
+    "pos": "adj. 形容词"
+  },
+  {
+    "id": 941,
+    "word": "norm",
+    "spelling": "N-O-R-M",
+    "phonetic": "/nɔrm/",
+    "gloss": "基准；模范",
+    "tip": "the norm",
+    "example": "Check the norm in the text.",
+    "exampleZh": "核对文本中的基准。",
+    "tags": [
+      "academic",
+      "campus"
+    ],
+    "tier": "core",
+    "pos": "n. 名词"
+  },
+  {
+    "id": 942,
+    "word": "normal",
+    "spelling": "N-O-R-M-A-L",
+    "phonetic": "/ˈnɔrməl/",
+    "gloss": "常态；标准",
+    "tip": "the normal",
+    "example": "Check the normal in the text.",
+    "exampleZh": "核对文本中的常态。",
+    "tags": [
+      "academic",
+      "campus"
+    ],
+    "tier": "core",
+    "pos": "n. 名词"
+  },
+  {
+    "id": 943,
+    "word": "notwithstanding",
+    "spelling": "N-O-T-W-I-T-H-S-T-A-N-D-I-N-G",
+    "phonetic": "/ˌnɑtwɪθˈstændɪŋ/",
+    "gloss": "虽然；尽管",
+    "tip": "notwithstanding …",
+    "example": "Answer notwithstanding and clearly.",
+    "exampleZh": "请虽然且清楚地回答。",
+    "tags": [
+      "academic"
+    ],
+    "tier": "core",
+    "pos": "adv. 副词"
+  },
+  {
+    "id": 944,
+    "word": "nuclear",
+    "spelling": "N-U-C-L-E-A-R",
+    "phonetic": "/ˈnukliər/",
+    "gloss": "核子的；原子能的",
+    "tip": "a nuclear …",
+    "example": "Give a nuclear answer.",
+    "exampleZh": "给出核子的回答。",
+    "tags": [
+      "academic"
+    ],
+    "tier": "core",
+    "pos": "adj. 形容词"
+  },
+  {
+    "id": 945,
+    "word": "obvious",
+    "spelling": "O-B-V-I-O-U-S",
+    "phonetic": "/ˈɑbviəs/",
+    "gloss": "明显的；明白的",
+    "tip": "a obvious …",
+    "example": "Give a obvious answer.",
+    "exampleZh": "给出明显的回答。",
+    "tags": [
+      "academic"
+    ],
+    "tier": "core",
+    "pos": "adj. 形容词"
+  },
+  {
+    "id": 946,
+    "word": "occupy",
+    "spelling": "O-C-C-U-P-Y",
+    "phonetic": "/ˈɑkjəˌpaɪ/",
+    "gloss": "占领；占(时间",
+    "tip": "occupy …",
+    "example": "Please occupy the key points.",
+    "exampleZh": "请占领要点。",
+    "tags": [
+      "academic"
+    ],
+    "tier": "core",
+    "pos": "v. 动词"
+  },
+  {
+    "id": 947,
+    "word": "occur",
+    "spelling": "O-C-C-U-R",
+    "phonetic": "/əˈkər/",
+    "gloss": "发生；被想到",
+    "tip": "occur …",
+    "example": "Please occur the key points.",
+    "exampleZh": "请发生要点。",
+    "tags": [
+      "academic",
+      "campus"
+    ],
+    "tier": "core",
+    "pos": "v. 动词"
+  },
+  {
+    "id": 948,
+    "word": "odd",
+    "spelling": "O-D-D",
+    "phonetic": "/ɑd/",
+    "gloss": "奇数的；古怪的",
+    "tip": "a odd …",
+    "example": "Give a odd answer.",
+    "exampleZh": "给出奇数的回答。",
+    "tags": [
+      "academic"
+    ],
+    "tier": "core",
+    "pos": "adj. 形容词"
+  },
+  {
+    "id": 949,
+    "word": "option",
+    "spelling": "O-P-T-I-O-N",
+    "phonetic": "/ˈɔpʃən/",
+    "gloss": "选择权；挑选",
+    "tip": "the option",
+    "example": "Check the option in the text.",
+    "exampleZh": "核对文本中的选择权。",
+    "tags": [
+      "academic",
+      "campus"
+    ],
+    "tier": "core",
+    "pos": "n. 名词"
+  },
+  {
+    "id": 950,
+    "word": "orient",
+    "spelling": "O-R-I-E-N-T",
+    "phonetic": "/ˈɔriˌɛnt/",
+    "gloss": "东方；东方诸国",
+    "tip": "the orient",
+    "example": "Check the orient in the text.",
+    "exampleZh": "核对文本中的东方。",
+    "tags": [
+      "academic"
+    ],
+    "tier": "high",
+    "pos": "n. 名词"
+  },
+  {
+    "id": 951,
+    "word": "output",
+    "spelling": "O-U-T-P-U-T",
+    "phonetic": "/ˈaʊtˌpʊt/",
+    "gloss": "输出；产品",
+    "tip": "the output",
+    "example": "Check the output in the text.",
+    "exampleZh": "核对文本中的输出。",
+    "tags": [
+      "academic",
+      "campus"
+    ],
+    "tier": "core",
+    "pos": "n. 名词"
+  },
+  {
+    "id": 952,
+    "word": "overlap",
+    "spelling": "O-V-E-R-L-A-P",
+    "phonetic": "/ˈoʊvərˌlæp/",
+    "gloss": "重叠；重复",
+    "tip": "the overlap",
+    "example": "Check the overlap in the text.",
+    "exampleZh": "核对文本中的重叠。",
+    "tags": [
+      "campus",
+      "academic"
+    ],
+    "tier": "core",
+    "pos": "n. 名词"
+  },
+  {
+    "id": 953,
+    "word": "overseas",
+    "spelling": "O-V-E-R-S-E-A-S",
+    "phonetic": "/ˈoʊvərˈsiz/",
+    "gloss": "海外的；国外的",
+    "tip": "a overseas …",
+    "example": "Give a overseas answer.",
+    "exampleZh": "给出海外的回答。",
+    "tags": [
+      "academic",
+      "campus"
+    ],
+    "tier": "core",
+    "pos": "adj. 形容词"
+  },
+  {
+    "id": 954,
+    "word": "panel",
+    "spelling": "P-A-N-E-L",
+    "phonetic": "/ˈpænəl/",
+    "gloss": "嵌板；仪表板",
+    "tip": "the panel",
+    "example": "Check the panel in the text.",
+    "exampleZh": "核对文本中的嵌板。",
+    "tags": [
+      "academic"
+    ],
+    "tier": "core",
+    "pos": "n. 名词"
+  },
+  {
+    "id": 955,
+    "word": "parallel",
+    "spelling": "P-A-R-A-L-L-E-L",
+    "phonetic": "/ˈpɛrəˌlɛl/",
+    "gloss": "平行；对比",
+    "tip": "the parallel",
+    "example": "Check the parallel in the text.",
+    "exampleZh": "核对文本中的平行。",
+    "tags": [
+      "academic"
+    ],
+    "tier": "core",
+    "pos": "n. 名词"
+  },
+  {
+    "id": 956,
+    "word": "parameter",
+    "spelling": "P-A-R-A-M-E-T-E-R",
+    "phonetic": "/pərˈæmətər/",
+    "gloss": "参变数；参变量",
+    "tip": "the parameter",
+    "example": "Check the parameter in the text.",
+    "exampleZh": "核对文本中的参变数。",
+    "tags": [
+      "academic"
+    ],
+    "tier": "high",
+    "pos": "n. 名词"
+  },
+  {
+    "id": 957,
+    "word": "participate",
+    "spelling": "P-A-R-T-I-C-I-P-A-T-E",
+    "phonetic": "/pɑrˈtɪsəˌpeɪt/",
+    "gloss": "参加；分享",
+    "tip": "participate …",
+    "example": "Please participate the key points.",
+    "exampleZh": "请参加要点。",
+    "tags": [
+      "academic",
+      "campus"
+    ],
+    "tier": "core",
+    "pos": "v. 动词"
+  },
+  {
+    "id": 958,
+    "word": "partner",
+    "spelling": "P-A-R-T-N-E-R",
+    "phonetic": "/ˈpɑrtnər/",
+    "gloss": "合伙人；股东",
+    "tip": "the partner",
+    "example": "Check the partner in the text.",
+    "exampleZh": "核对文本中的合伙人。",
+    "tags": [
+      "academic"
+    ],
+    "tier": "core",
+    "pos": "n. 名词"
+  },
+  {
+    "id": 959,
+    "word": "passive",
+    "spelling": "P-A-S-S-I-V-E",
+    "phonetic": "/ˈpæsɪv/",
+    "gloss": "消极的；被动的",
+    "tip": "a passive …",
+    "example": "Give a passive answer.",
+    "exampleZh": "给出消极的回答。",
+    "tags": [
+      "academic"
+    ],
+    "tier": "core",
+    "pos": "adj. 形容词"
+  },
+  {
+    "id": 960,
+    "word": "perceive",
+    "spelling": "P-E-R-C-E-I-V-E",
+    "phonetic": "/pərˈsiv/",
+    "gloss": "感觉；认知",
+    "tip": "a perceive …",
+    "example": "Give a perceive answer.",
+    "exampleZh": "给出感觉回答。",
+    "tags": [
+      "academic"
+    ],
+    "tier": "core",
+    "pos": "adj. 形容词"
+  },
+  {
+    "id": 961,
+    "word": "percent",
+    "spelling": "P-E-R-C-E-N-T",
+    "phonetic": "/pərˈsɛnt/",
+    "gloss": "百分比；百分数",
+    "tip": "the percent",
+    "example": "Check the percent in the text.",
+    "exampleZh": "核对文本中的百分比。",
+    "tags": [
+      "academic"
+    ],
+    "tier": "core",
+    "pos": "n. 名词"
+  },
+  {
+    "id": 962,
+    "word": "period",
+    "spelling": "P-E-R-I-O-D",
+    "phonetic": "/ˈpɪriəd/",
+    "gloss": "时期；节段",
+    "tip": "the period",
+    "example": "Check the period in the text.",
+    "exampleZh": "核对文本中的时期。",
+    "tags": [
+      "academic"
+    ],
+    "tier": "high",
+    "pos": "n. 名词"
+  },
+  {
+    "id": 963,
+    "word": "persist",
+    "spelling": "P-E-R-S-I-S-T",
+    "phonetic": "/pərˈsɪst/",
+    "gloss": "坚持；固执",
+    "tip": "persist …",
+    "example": "Please persist the key points.",
+    "exampleZh": "请坚持要点。",
+    "tags": [
+      "academic"
+    ],
+    "tier": "core",
+    "pos": "v. 动词"
+  },
+  {
+    "id": 964,
+    "word": "phase",
+    "spelling": "P-H-A-S-E",
+    "phonetic": "/feɪz/",
+    "gloss": "时期；局面",
+    "tip": "the phase",
+    "example": "Check the phase in the text.",
+    "exampleZh": "核对文本中的时期。",
+    "tags": [
+      "academic",
+      "campus"
+    ],
+    "tier": "core",
+    "pos": "n. 名词"
+  },
+  {
+    "id": 965,
+    "word": "phenomenon",
+    "spelling": "P-H-E-N-O-M-E-N-O-N",
+    "phonetic": "/fəˈnɑməˌnɑn/",
+    "gloss": "现象；迹象",
+    "tip": "the phenomenon",
+    "example": "Check the phenomenon in the text.",
+    "exampleZh": "核对文本中的现象。",
+    "tags": [
+      "academic",
+      "campus"
+    ],
+    "tier": "core",
+    "pos": "n. 名词"
+  },
+  {
+    "id": 966,
+    "word": "philosophy",
+    "spelling": "P-H-I-L-O-S-O-P-H-Y",
+    "phonetic": "/fəˈlɑsəfi/",
+    "gloss": "哲学；人生观",
+    "tip": "the philosophy",
+    "example": "Check the philosophy in the text.",
+    "exampleZh": "核对文本中的哲学。",
+    "tags": [
+      "academic",
+      "campus"
+    ],
+    "tier": "core",
+    "pos": "n. 名词"
+  },
+  {
+    "id": 967,
+    "word": "physical",
+    "spelling": "P-H-Y-S-I-C-A-L",
+    "phonetic": "/ˈfɪzɪkəl/",
+    "gloss": "身体的；物质的",
+    "tip": "a physical …",
+    "example": "Give a physical answer.",
+    "exampleZh": "给出身体的回答。",
+    "tags": [
+      "academic",
+      "campus"
+    ],
+    "tier": "core",
+    "pos": "adj. 形容词"
+  },
+  {
+    "id": 968,
+    "word": "plus",
+    "spelling": "P-L-U-S",
+    "phonetic": "/pləs/",
+    "gloss": "加上；加",
+    "tip": "the plus",
+    "example": "Check the plus in the text.",
+    "exampleZh": "核对文本中的加上。",
+    "tags": [
+      "academic"
+    ],
+    "tier": "core",
+    "pos": "n. 名词"
+  },
+  {
+    "id": 969,
+    "word": "portion",
+    "spelling": "P-O-R-T-I-O-N",
+    "phonetic": "/ˈpɔrʃən/",
+    "gloss": "部分；一份",
+    "tip": "the portion",
+    "example": "Check the portion in the text.",
+    "exampleZh": "核对文本中的部分。",
+    "tags": [
+      "academic",
+      "campus"
+    ],
+    "tier": "core",
+    "pos": "n. 名词"
+  },
+  {
+    "id": 970,
+    "word": "pose",
+    "spelling": "P-O-S-E",
+    "phonetic": "/poʊz/",
+    "gloss": "姿势；姿态",
+    "tip": "the pose",
+    "example": "Check the pose in the text.",
+    "exampleZh": "核对文本中的姿势。",
+    "tags": [
+      "academic",
+      "campus"
+    ],
+    "tier": "core",
+    "pos": "n. 名词"
+  },
+  {
+    "id": 971,
+    "word": "practitioner",
+    "spelling": "P-R-A-C-T-I-T-I-O-N-E-R",
+    "phonetic": "/prækˈtɪʃənər/",
+    "gloss": "从业者；开业者",
+    "tip": "the practitioner",
+    "example": "Check the practitioner in the text.",
+    "exampleZh": "核对文本中的从业者。",
+    "tags": [
+      "academic"
+    ],
+    "tier": "high",
+    "pos": "n. 名词"
+  },
+  {
+    "id": 972,
+    "word": "precede",
+    "spelling": "P-R-E-C-E-D-E",
+    "phonetic": "/prɪˈsid/",
+    "gloss": "在...之前；优于",
+    "tip": "precede …",
+    "example": "Please precede the key points.",
+    "exampleZh": "请在...之前要点。",
+    "tags": [
+      "academic"
+    ],
+    "tier": "core",
+    "pos": "v. 动词"
+  },
+  {
+    "id": 973,
+    "word": "predominant",
+    "spelling": "P-R-E-D-O-M-I-N-A-N-T",
+    "phonetic": "/prɪˈdɑmənənt/",
+    "gloss": "占主导地位的；卓越的",
+    "tip": "a predominant …",
+    "example": "Give a predominant answer.",
+    "exampleZh": "给出占主导地位的回答。",
+    "tags": [
+      "campus",
+      "academic"
+    ],
+    "tier": "core",
+    "pos": "adj. 形容词"
+  },
+  {
+    "id": 974,
+    "word": "presume",
+    "spelling": "P-R-E-S-U-M-E",
+    "phonetic": "/prɪˈzum/",
+    "gloss": "假定；推测",
+    "tip": "presume …",
+    "example": "Please presume the key points.",
+    "exampleZh": "请假定要点。",
+    "tags": [
+      "academic"
+    ],
+    "tier": "high",
+    "pos": "v. 动词"
+  },
+  {
+    "id": 975,
+    "word": "prime",
+    "spelling": "P-R-I-M-E",
+    "phonetic": "/praɪm/",
+    "gloss": "最佳部分；初期",
+    "tip": "the prime",
+    "example": "Check the prime in the text.",
+    "exampleZh": "核对文本中的最佳部分。",
+    "tags": [
+      "academic"
+    ],
+    "tier": "core",
+    "pos": "n. 名词"
+  },
+  {
+    "id": 976,
+    "word": "principal",
+    "spelling": "P-R-I-N-C-I-P-A-L",
+    "phonetic": "/ˈprɪnsəpəl/",
+    "gloss": "校长；首长",
+    "tip": "the principal",
+    "example": "Check the principal in the text.",
+    "exampleZh": "核对文本中的校长。",
+    "tags": [
+      "academic"
+    ],
+    "tier": "core",
+    "pos": "n. 名词"
+  },
+  {
+    "id": 977,
+    "word": "prior",
+    "spelling": "P-R-I-O-R",
+    "phonetic": "/praɪər/",
+    "gloss": "更重要的；较早的",
+    "tip": "a prior …",
+    "example": "Give a prior answer.",
+    "exampleZh": "给出更重要的回答。",
+    "tags": [
+      "academic"
+    ],
+    "tier": "core",
+    "pos": "adj. 形容词"
+  },
+  {
+    "id": 978,
+    "word": "proceed",
+    "spelling": "P-R-O-C-E-E-D",
+    "phonetic": "/pərˈsid/",
+    "gloss": "继续进行；进行",
+    "tip": "proceed …",
+    "example": "Please proceed the key points.",
+    "exampleZh": "请继续进行要点。",
+    "tags": [
+      "academic"
+    ],
+    "tier": "core",
+    "pos": "v. 动词"
+  },
+  {
+    "id": 979,
+    "word": "professional",
+    "spelling": "P-R-O-F-E-S-S-I-O-N-A-L",
+    "phonetic": "/prəˈfɛʃənəl/",
+    "gloss": "专业人才；专业",
+    "tip": "the professional",
+    "example": "Check the professional in the text.",
+    "exampleZh": "核对文本中的专业人才。",
+    "tags": [
+      "academic"
+    ],
+    "tier": "core",
+    "pos": "n. 名词"
+  },
+  {
+    "id": 980,
+    "word": "project",
+    "spelling": "P-R-O-J-E-C-T",
+    "phonetic": "/ˈprɑʤɛkt/",
+    "gloss": "计划；设计",
+    "tip": "the project",
+    "example": "Check the project in the text.",
+    "exampleZh": "核对文本中的计划。",
+    "tags": [
+      "academic"
+    ],
+    "tier": "core",
+    "pos": "n. 名词"
+  },
+  {
+    "id": 981,
+    "word": "prospect",
+    "spelling": "P-R-O-S-P-E-C-T",
+    "phonetic": "/ˈprɑspɛkt/",
+    "gloss": "景色；展望",
+    "tip": "the prospect",
+    "example": "Check the prospect in the text.",
+    "exampleZh": "核对文本中的景色。",
+    "tags": [
+      "academic"
+    ],
+    "tier": "core",
+    "pos": "n. 名词"
+  },
+  {
+    "id": 982,
+    "word": "psychology",
+    "spelling": "P-S-Y-C-H-O-L-O-G-Y",
+    "phonetic": "/saɪˈkɑləʤi/",
+    "gloss": "心理学；心理状态",
+    "tip": "the psychology",
+    "example": "Check the psychology in the text.",
+    "exampleZh": "核对文本中的心理学。",
+    "tags": [
+      "academic",
+      "campus"
+    ],
+    "tier": "core",
+    "pos": "n. 名词"
+  },
+  {
+    "id": 983,
+    "word": "purchase",
+    "spelling": "P-U-R-C-H-A-S-E",
+    "phonetic": "/ˈpərʧəs/",
+    "gloss": "购买；购买品",
+    "tip": "the purchase",
+    "example": "Check the purchase in the text.",
+    "exampleZh": "核对文本中的购买。",
+    "tags": [
+      "academic",
+      "campus"
+    ],
+    "tier": "core",
+    "pos": "n. 名词"
+  },
+  {
+    "id": 984,
+    "word": "quote",
+    "spelling": "Q-U-O-T-E",
+    "phonetic": "/kwoʊt/",
+    "gloss": "引用；引述",
+    "tip": "the quote",
+    "example": "Check the quote in the text.",
+    "exampleZh": "核对文本中的引用。",
+    "tags": [
+      "academic"
+    ],
+    "tier": "core",
+    "pos": "n. 名词"
+  },
+  {
+    "id": 985,
+    "word": "radical",
+    "spelling": "R-A-D-I-C-A-L",
+    "phonetic": "/ˈrædɪkəl/",
+    "gloss": "激进分子；词根",
+    "tip": "a radical …",
+    "example": "Give a radical answer.",
+    "exampleZh": "给出激进分子回答。",
+    "tags": [
+      "academic"
+    ],
+    "tier": "core",
+    "pos": "adj. 形容词"
+  },
+  {
+    "id": 986,
+    "word": "rational",
+    "spelling": "R-A-T-I-O-N-A-L",
+    "phonetic": "/ˈræʃənəl/",
+    "gloss": "理性的；合理的",
+    "tip": "a rational …",
+    "example": "Give a rational answer.",
+    "exampleZh": "给出理性的回答。",
+    "tags": [
+      "academic",
+      "campus"
+    ],
+    "tier": "core",
+    "pos": "adj. 形容词"
+  },
+  {
+    "id": 987,
+    "word": "react",
+    "spelling": "R-E-A-C-T",
+    "phonetic": "/riækt/",
+    "gloss": "起反应；起作用",
+    "tip": "react …",
+    "example": "Please react the key points.",
+    "exampleZh": "请起反应要点。",
+    "tags": [
+      "academic",
+      "campus"
+    ],
+    "tier": "core",
+    "pos": "v. 动词"
+  },
+  {
+    "id": 988,
+    "word": "recover",
+    "spelling": "R-E-C-O-V-E-R",
+    "phonetic": "/rɪˈkəvər/",
+    "gloss": "重新获得；恢复",
+    "tip": "recover …",
+    "example": "Please recover the key points.",
+    "exampleZh": "请重新获得要点。",
+    "tags": [
+      "academic"
+    ],
+    "tier": "core",
+    "pos": "v. 动词"
+  },
+  {
+    "id": 989,
+    "word": "refine",
+    "spelling": "R-E-F-I-N-E",
+    "phonetic": "/rɪˈfaɪn/",
+    "gloss": "精炼；净化",
+    "tip": "refine …",
+    "example": "Please refine the key points.",
+    "exampleZh": "请精炼要点。",
+    "tags": [
+      "academic"
+    ],
+    "tier": "core",
+    "pos": "v. 动词"
+  },
+  {
+    "id": 990,
+    "word": "regime",
+    "spelling": "R-E-G-I-M-E",
+    "phonetic": "/rəˈʒim/",
+    "gloss": "政权；当权期间",
+    "tip": "the regime",
+    "example": "Check the regime in the text.",
+    "exampleZh": "核对文本中的政权。",
+    "tags": [
+      "academic"
+    ],
+    "tier": "high",
+    "pos": "n. 名词"
+  },
+  {
+    "id": 991,
+    "word": "region",
+    "spelling": "R-E-G-I-O-N",
+    "phonetic": "/ˈriʤən/",
+    "gloss": "区域；地带",
+    "tip": "the region",
+    "example": "Check the region in the text.",
+    "exampleZh": "核对文本中的区域。",
+    "tags": [
+      "academic",
+      "campus"
+    ],
+    "tier": "core",
+    "pos": "n. 名词"
+  },
+  {
+    "id": 992,
+    "word": "register",
+    "spelling": "R-E-G-I-S-T-E-R",
+    "phonetic": "/ˈrɛʤɪstər/",
+    "gloss": "寄存器；记录",
+    "tip": "the register",
+    "example": "Check the register in the text.",
+    "exampleZh": "核对文本中的寄存器。",
+    "tags": [
+      "academic",
+      "campus"
+    ],
+    "tier": "core",
+    "pos": "n. 名词"
+  },
+  {
+    "id": 993,
+    "word": "regulate",
+    "spelling": "R-E-G-U-L-A-T-E",
+    "phonetic": "/ˈrɛgjəˌleɪt/",
+    "gloss": "管理；控制",
+    "tip": "regulate …",
+    "example": "Please regulate the key points.",
+    "exampleZh": "请管理要点。",
+    "tags": [
+      "academic"
+    ],
+    "tier": "core",
+    "pos": "v. 动词"
+  },
+  {
+    "id": 994,
+    "word": "relax",
+    "spelling": "R-E-L-A-X",
+    "phonetic": "/rɪˈlæks/",
+    "gloss": "放松；松懈",
+    "tip": "relax …",
+    "example": "Please relax the key points.",
+    "exampleZh": "请放松要点。",
+    "tags": [
+      "academic"
+    ],
+    "tier": "core",
+    "pos": "v. 动词"
+  },
+  {
+    "id": 995,
+    "word": "reluctance",
+    "spelling": "R-E-L-U-C-T-A-N-C-E",
+    "phonetic": "/rɪˈləktəns/",
+    "gloss": "不情愿；勉强",
+    "tip": "the reluctance",
+    "example": "Check the reluctance in the text.",
+    "exampleZh": "核对文本中的不情愿。",
+    "tags": [
+      "academic"
+    ],
+    "tier": "core",
+    "pos": "n. 名词"
+  },
+  {
+    "id": 996,
+    "word": "rely",
+    "spelling": "R-E-L-Y",
+    "phonetic": "/rɪˈlaɪ/",
+    "gloss": "信赖；依赖",
+    "tip": "rely …",
+    "example": "Please rely the key points.",
+    "exampleZh": "请信赖要点。",
+    "tags": [
+      "academic",
+      "campus"
+    ],
+    "tier": "core",
+    "pos": "v. 动词"
+  },
+  {
+    "id": 997,
+    "word": "remove",
+    "spelling": "R-E-M-O-V-E",
+    "phonetic": "/riˈmuv/",
+    "gloss": "移动；调动",
+    "tip": "remove …",
+    "example": "Please remove the key points.",
+    "exampleZh": "请移动要点。",
+    "tags": [
+      "academic"
+    ],
+    "tier": "high",
+    "pos": "v. 动词"
+  },
+  {
+    "id": 998,
+    "word": "research",
+    "spelling": "R-E-S-E-A-R-C-H",
+    "phonetic": "/ˈrisərʧ/",
+    "gloss": "研究；调查",
+    "tip": "the research",
+    "example": "Check the research in the text.",
+    "exampleZh": "核对文本中的研究。",
+    "tags": [
+      "academic"
+    ],
+    "tier": "core",
+    "pos": "n. 名词"
+  },
+  {
+    "id": 999,
+    "word": "reside",
+    "spelling": "R-E-S-I-D-E",
+    "phonetic": "/rɪˈzaɪd/",
+    "gloss": "住；居留",
+    "tip": "reside …",
+    "example": "Please reside the key points.",
+    "exampleZh": "请住要点。",
+    "tags": [
+      "academic"
+    ],
+    "tier": "high",
+    "pos": "v. 动词"
+  },
+  {
+    "id": 1000,
+    "word": "respond",
+    "spelling": "R-E-S-P-O-N-D",
+    "phonetic": "/rɪˈspɑnd/",
+    "gloss": "以...回答；回答",
+    "tip": "respond …",
+    "example": "Please respond the key points.",
+    "exampleZh": "请以...回答要点。",
+    "tags": [
+      "academic",
+      "campus"
+    ],
+    "tier": "core",
+    "pos": "v. 动词"
+  },
+  {
+    "id": 1001,
+    "word": "restore",
+    "spelling": "R-E-S-T-O-R-E",
+    "phonetic": "/rɪˈstɔr/",
+    "gloss": "回复；恢复",
+    "tip": "restore …",
+    "example": "Please restore the key points.",
+    "exampleZh": "请回复要点。",
+    "tags": [
+      "academic"
+    ],
+    "tier": "core",
+    "pos": "v. 动词"
+  },
+  {
+    "id": 1002,
+    "word": "restrain",
+    "spelling": "R-E-S-T-R-A-I-N",
+    "phonetic": "/riˈstreɪn/",
+    "gloss": "抑制；阻止",
+    "tip": "restrain …",
+    "example": "Please restrain the key points.",
+    "exampleZh": "请抑制要点。",
+    "tags": [
+      "academic"
+    ],
+    "tier": "core",
+    "pos": "v. 动词"
+  },
+  {
+    "id": 1003,
+    "word": "restrict",
+    "spelling": "R-E-S-T-R-I-C-T",
+    "phonetic": "/riˈstrɪkt/",
+    "gloss": "限制；限定",
+    "tip": "restrict …",
+    "example": "Please restrict the key points.",
+    "exampleZh": "请限制要点。",
+    "tags": [
+      "academic"
+    ],
+    "tier": "core",
+    "pos": "v. 动词"
+  },
+  {
+    "id": 1004,
+    "word": "reverse",
+    "spelling": "R-E-V-E-R-S-E",
+    "phonetic": "/rɪˈvərs/",
+    "gloss": "相反；背面",
+    "tip": "the reverse",
+    "example": "Check the reverse in the text.",
+    "exampleZh": "核对文本中的相反。",
+    "tags": [
+      "academic"
+    ],
+    "tier": "core",
+    "pos": "n. 名词"
+  },
+  {
+    "id": 1005,
+    "word": "revolution",
+    "spelling": "R-E-V-O-L-U-T-I-O-N",
+    "phonetic": "/ˌrɛvəˈluʃən/",
+    "gloss": "革命；大变革",
+    "tip": "the revolution",
+    "example": "Check the revolution in the text.",
+    "exampleZh": "核对文本中的革命。",
+    "tags": [
+      "academic",
+      "campus"
+    ],
+    "tier": "core",
+    "pos": "n. 名词"
+  },
+  {
+    "id": 1006,
+    "word": "rigid",
+    "spelling": "R-I-G-I-D",
+    "phonetic": "/ˈrɪʤɪd/",
+    "gloss": "坚硬的；刚性的",
+    "tip": "a rigid …",
+    "example": "Give a rigid answer.",
+    "exampleZh": "给出坚硬的回答。",
+    "tags": [
+      "academic"
+    ],
+    "tier": "core",
+    "pos": "adj. 形容词"
+  },
+  {
+    "id": 1007,
+    "word": "route",
+    "spelling": "R-O-U-T-E",
+    "phonetic": "/rut/",
+    "gloss": "路径；途径",
+    "tip": "the route",
+    "example": "Check the route in the text.",
+    "exampleZh": "核对文本中的路径。",
+    "tags": [
+      "academic"
+    ],
+    "tier": "core",
+    "pos": "n. 名词"
+  },
+  {
+    "id": 1008,
+    "word": "scenario",
+    "spelling": "S-C-E-N-A-R-I-O",
+    "phonetic": "/sɪˈnɛrioʊ/",
+    "gloss": "剧本提纲；情节",
+    "tip": "the scenario",
+    "example": "Check the scenario in the text.",
+    "exampleZh": "核对文本中的剧本提纲。",
+    "tags": [
+      "academic"
+    ],
+    "tier": "high",
+    "pos": "n. 名词"
+  },
+  {
+    "id": 1009,
+    "word": "scheme",
+    "spelling": "S-C-H-E-M-E",
+    "phonetic": "/skim/",
+    "gloss": "方案；计划",
+    "tip": "the scheme",
+    "example": "Check the scheme in the text.",
+    "exampleZh": "核对文本中的方案。",
+    "tags": [
+      "academic"
+    ],
+    "tier": "core",
+    "pos": "n. 名词"
+  },
+  {
+    "id": 1010,
+    "word": "section",
+    "spelling": "S-E-C-T-I-O-N",
+    "phonetic": "/ˈsɛkʃən/",
+    "gloss": "区段；部分",
+    "tip": "the section",
+    "example": "Check the section in the text.",
+    "exampleZh": "核对文本中的区段。",
+    "tags": [
+      "academic",
+      "campus"
+    ],
+    "tier": "core",
+    "pos": "n. 名词"
+  },
+  {
+    "id": 1011,
+    "word": "secure",
+    "spelling": "S-E-C-U-R-E",
+    "phonetic": "/sɪˈkjʊr/",
+    "gloss": "无虑的；安心的",
+    "tip": "a secure …",
+    "example": "Give a secure answer.",
+    "exampleZh": "给出无虑的回答。",
+    "tags": [
+      "academic",
+      "campus"
+    ],
+    "tier": "core",
+    "pos": "adj. 形容词"
+  },
+  {
+    "id": 1012,
+    "word": "seek",
+    "spelling": "S-E-E-K",
+    "phonetic": "/sik/",
+    "gloss": "寻求；寻找",
+    "tip": "seek …",
+    "example": "Please seek the key points.",
+    "exampleZh": "请寻求要点。",
+    "tags": [
+      "campus",
+      "academic"
+    ],
+    "tier": "core",
+    "pos": "v. 动词"
+  },
+  {
+    "id": 1013,
+    "word": "sequence",
+    "spelling": "S-E-Q-U-E-N-C-E",
+    "phonetic": "/ˈsikwəns/",
+    "gloss": "序列；续发事件",
+    "tip": "the sequence",
+    "example": "Check the sequence in the text.",
+    "exampleZh": "核对文本中的序列。",
+    "tags": [
+      "academic"
+    ],
+    "tier": "core",
+    "pos": "n. 名词"
+  },
+  {
+    "id": 1014,
+    "word": "series",
+    "spelling": "S-E-R-I-E-S",
+    "phonetic": "/ˈsɪriz/",
+    "gloss": "串联；序列",
+    "tip": "the series",
+    "example": "Check the series in the text.",
+    "exampleZh": "核对文本中的串联。",
+    "tags": [
+      "academic",
+      "campus"
+    ],
+    "tier": "core",
+    "pos": "n. 名词"
+  },
+  {
+    "id": 1015,
+    "word": "sex",
+    "spelling": "S-E-X",
+    "phonetic": "/sɛks/",
+    "gloss": "性别；性欲",
+    "tip": "the sex",
+    "example": "Check the sex in the text.",
+    "exampleZh": "核对文本中的性别。",
+    "tags": [
+      "academic"
+    ],
+    "tier": "high",
+    "pos": "n. 名词"
+  },
+  {
+    "id": 1016,
+    "word": "simulate",
+    "spelling": "S-I-M-U-L-A-T-E",
+    "phonetic": "/ˈsɪmjəˌleɪt/",
+    "gloss": "模拟；假装",
+    "tip": "simulate …",
+    "example": "Please simulate the key points.",
+    "exampleZh": "请模拟要点。",
+    "tags": [
+      "academic"
+    ],
+    "tier": "high",
+    "pos": "v. 动词"
+  },
+  {
+    "id": 1017,
+    "word": "site",
+    "spelling": "S-I-T-E",
+    "phonetic": "/saɪt/",
+    "gloss": "位置；场所",
+    "tip": "the site",
+    "example": "Check the site in the text.",
+    "exampleZh": "核对文本中的位置。",
+    "tags": [
+      "academic",
+      "campus"
+    ],
+    "tier": "core",
+    "pos": "n. 名词"
+  },
+  {
+    "id": 1018,
+    "word": "so-called",
+    "spelling": "S-O-C-A-L-L-E-D",
+    "phonetic": "/ˈsoʊˈkɔld/",
+    "gloss": "所谓的；号称的",
+    "tip": "a so-called …",
+    "example": "Give a so-called answer.",
+    "exampleZh": "给出所谓的回答。",
+    "tags": [
+      "academic"
+    ],
+    "tier": "core",
+    "pos": "adj. 形容词"
+  },
+  {
+    "id": 1019,
+    "word": "solely",
+    "spelling": "S-O-L-E-L-Y",
+    "phonetic": "/ˈsoʊəli/",
+    "gloss": "仅仅；单独地",
+    "tip": "solely …",
+    "example": "Answer solely and clearly.",
+    "exampleZh": "请仅仅且清楚地回答。",
+    "tags": [
+      "academic"
+    ],
+    "tier": "core",
+    "pos": "adv. 副词"
+  },
+  {
+    "id": 1020,
+    "word": "somewhat",
+    "spelling": "S-O-M-E-W-H-A-T",
+    "phonetic": "/ˈsəmˈwət/",
+    "gloss": "某物；几分",
+    "tip": "the somewhat",
+    "example": "Check the somewhat in the text.",
+    "exampleZh": "核对文本中的某物。",
+    "tags": [
+      "academic"
+    ],
+    "tier": "core",
+    "pos": "n. 名词"
+  },
+  {
+    "id": 1021,
+    "word": "specify",
+    "spelling": "S-P-E-C-I-F-Y",
+    "phonetic": "/ˈspɛsəˌfaɪ/",
+    "gloss": "详列；指定",
+    "tip": "specify …",
+    "example": "Please specify the key points.",
+    "exampleZh": "请详列要点。",
+    "tags": [
+      "academic"
+    ],
+    "tier": "core",
+    "pos": "v. 动词"
+  },
+  {
+    "id": 1022,
+    "word": "sphere",
+    "spelling": "S-P-H-E-R-E",
+    "phonetic": "/sfɪr/",
+    "gloss": "球；球面",
+    "tip": "the sphere",
+    "example": "Check the sphere in the text.",
+    "exampleZh": "核对文本中的球。",
+    "tags": [
+      "academic"
+    ],
+    "tier": "core",
+    "pos": "n. 名词"
+  },
+  {
+    "id": 1023,
+    "word": "status",
+    "spelling": "S-T-A-T-U-S",
+    "phonetic": "/ˈstætəs/",
+    "gloss": "状态；情形",
+    "tip": "the status",
+    "example": "Check the status in the text.",
+    "exampleZh": "核对文本中的状态。",
+    "tags": [
+      "academic",
+      "campus"
+    ],
+    "tier": "core",
+    "pos": "n. 名词"
+  },
+  {
+    "id": 1024,
+    "word": "straight",
+    "spelling": "S-T-R-A-I-G-H-T",
+    "phonetic": "/streɪt/",
+    "gloss": "直线；直",
+    "tip": "the straight",
+    "example": "Check the straight in the text.",
+    "exampleZh": "核对文本中的直线。",
+    "tags": [
+      "academic"
+    ],
+    "tier": "high",
+    "pos": "n. 名词"
+  },
+  {
+    "id": 1025,
+    "word": "style",
+    "spelling": "S-T-Y-L-E",
+    "phonetic": "/staɪl/",
+    "gloss": "风格；时尚",
+    "tip": "the style",
+    "example": "Check the style in the text.",
+    "exampleZh": "核对文本中的风格。",
+    "tags": [
+      "academic"
+    ],
+    "tier": "high",
+    "pos": "n. 名词"
+  },
+  {
+    "id": 1026,
+    "word": "subordinate",
+    "spelling": "S-U-B-O-R-D-I-N-A-T-E",
+    "phonetic": "/səˈbɔrdəˌneɪt/",
+    "gloss": "属下；附属物",
+    "tip": "subordinate …",
+    "example": "Please subordinate the key points.",
+    "exampleZh": "请属下要点。",
+    "tags": [
+      "academic"
+    ],
+    "tier": "core",
+    "pos": "v. 动词"
+  },
+  {
+    "id": 1027,
+    "word": "substitute",
+    "spelling": "S-U-B-S-T-I-T-U-T-E",
+    "phonetic": "/ˈsəbstəˌtut/",
+    "gloss": "代理；代理人",
+    "tip": "the substitute",
+    "example": "Check the substitute in the text.",
+    "exampleZh": "核对文本中的代理。",
+    "tags": [
+      "academic"
+    ],
+    "tier": "core",
+    "pos": "n. 名词"
+  },
+  {
+    "id": 1028,
+    "word": "successor",
+    "spelling": "S-U-C-C-E-S-S-O-R",
+    "phonetic": "/səkˈsɛsər/",
+    "gloss": "继承者；接任者",
+    "tip": "the successor",
+    "example": "Check the successor in the text.",
+    "exampleZh": "核对文本中的继承者。",
+    "tags": [
+      "academic"
+    ],
+    "tier": "core",
+    "pos": "n. 名词"
+  },
+  {
+    "id": 1029,
+    "word": "sum",
+    "spelling": "S-U-M",
+    "phonetic": "/səm/",
+    "gloss": "总数；总和",
+    "tip": "the sum",
+    "example": "Check the sum in the text.",
+    "exampleZh": "核对文本中的总数。",
+    "tags": [
+      "academic"
+    ],
+    "tier": "core",
+    "pos": "n. 名词"
+  },
+  {
+    "id": 1030,
+    "word": "supplement",
+    "spelling": "S-U-P-P-L-E-M-E-N-T",
+    "phonetic": "/ˌsəpləˈmɛnt/",
+    "gloss": "补充物；增刊",
+    "tip": "the supplement",
+    "example": "Check the supplement in the text.",
+    "exampleZh": "核对文本中的补充物。",
+    "tags": [
+      "academic"
+    ],
+    "tier": "core",
+    "pos": "n. 名词"
+  },
+  {
+    "id": 1031,
+    "word": "survive",
+    "spelling": "S-U-R-V-I-V-E",
+    "phonetic": "/sərˈvaɪv/",
+    "gloss": "比...活得长；生存",
+    "tip": "a survive …",
+    "example": "Give a survive answer.",
+    "exampleZh": "给出比...活得长回答。",
+    "tags": [
+      "academic"
+    ],
+    "tier": "core",
+    "pos": "adj. 形容词"
+  },
+  {
+    "id": 1032,
+    "word": "suspend",
+    "spelling": "S-U-S-P-E-N-D",
+    "phonetic": "/səˈspɛnd/",
+    "gloss": "悬；吊",
+    "tip": "suspend …",
+    "example": "Please suspend the key points.",
+    "exampleZh": "请悬要点。",
+    "tags": [
+      "academic"
+    ],
+    "tier": "core",
+    "pos": "v. 动词"
+  },
+  {
+    "id": 1033,
+    "word": "symbol",
+    "spelling": "S-Y-M-B-O-L",
+    "phonetic": "/ˈsɪmbəl/",
+    "gloss": "符号；象征",
+    "tip": "the symbol",
+    "example": "Check the symbol in the text.",
+    "exampleZh": "核对文本中的符号。",
+    "tags": [
+      "academic"
+    ],
+    "tier": "core",
+    "pos": "n. 名词"
+  },
+  {
+    "id": 1034,
+    "word": "tape",
+    "spelling": "T-A-P-E",
+    "phonetic": "/teɪp/",
+    "gloss": "带子；录音带",
+    "tip": "the tape",
+    "example": "Check the tape in the text.",
+    "exampleZh": "核对文本中的带子。",
+    "tags": [
+      "academic"
+    ],
+    "tier": "core",
+    "pos": "n. 名词"
+  },
+  {
+    "id": 1035,
+    "word": "task",
+    "spelling": "T-A-S-K",
+    "phonetic": "/tæsk/",
+    "gloss": "工作；任务",
+    "tip": "the task",
+    "example": "Check the task in the text.",
+    "exampleZh": "核对文本中的工作。",
+    "tags": [
+      "academic"
+    ],
+    "tier": "high",
+    "pos": "n. 名词"
+  },
+  {
+    "id": 1036,
+    "word": "team",
+    "spelling": "T-E-A-M",
+    "phonetic": "/tim/",
+    "gloss": "队；组",
+    "tip": "the team",
+    "example": "Check the team in the text.",
+    "exampleZh": "核对文本中的队。",
+    "tags": [
+      "campus",
+      "academic"
+    ],
+    "tier": "core",
+    "pos": "n. 名词"
+  },
+  {
+    "id": 1037,
+    "word": "technical",
+    "spelling": "T-E-C-H-N-I-C-A-L",
+    "phonetic": "/ˈtɛknɪkəl/",
+    "gloss": "技术上的；专门的",
+    "tip": "a technical …",
+    "example": "Give a technical answer.",
+    "exampleZh": "给出技术上的回答。",
+    "tags": [
+      "academic"
+    ],
+    "tier": "high",
+    "pos": "adj. 形容词"
+  },
+  {
+    "id": 1038,
+    "word": "technique",
+    "spelling": "T-E-C-H-N-I-Q-U-E",
+    "phonetic": "/tɛkˈnik/",
+    "gloss": "技巧；技术",
+    "tip": "the technique",
+    "example": "Check the technique in the text.",
+    "exampleZh": "核对文本中的技巧。",
+    "tags": [
+      "academic",
+      "campus"
+    ],
+    "tier": "core",
+    "pos": "n. 名词"
+  },
+  {
+    "id": 1039,
+    "word": "tense",
+    "spelling": "T-E-N-S-E",
+    "phonetic": "/tɛns/",
+    "gloss": "紧张的；拉紧的",
+    "tip": "a tense …",
+    "example": "Give a tense answer.",
+    "exampleZh": "给出紧张的回答。",
+    "tags": [
+      "academic",
+      "campus"
+    ],
+    "tier": "core",
+    "pos": "adj. 形容词"
+  },
+  {
+    "id": 1040,
+    "word": "terminate",
+    "spelling": "T-E-R-M-I-N-A-T-E",
+    "phonetic": "/ˈtərməˌneɪt/",
+    "gloss": "有结尾的；(可)结束的",
+    "tip": "terminate …",
+    "example": "Please terminate the key points.",
+    "exampleZh": "请有结尾要点。",
+    "tags": [
+      "academic"
+    ],
+    "tier": "core",
+    "pos": "v. 动词"
+  },
+  {
+    "id": 1041,
+    "word": "text",
+    "spelling": "T-E-X-T",
+    "phonetic": "/tɛkst/",
+    "gloss": "文本；正文",
+    "tip": "the text",
+    "example": "Check the text in the text.",
+    "exampleZh": "核对文本中的文本。",
+    "tags": [
+      "academic"
+    ],
+    "tier": "high",
+    "pos": "n. 名词"
+  },
+  {
+    "id": 1042,
+    "word": "thereby",
+    "spelling": "T-H-E-R-E-B-Y",
+    "phonetic": "/ˈðɛrˈbaɪ/",
+    "gloss": "因此",
+    "tip": "thereby …",
+    "example": "Answer thereby and clearly.",
+    "exampleZh": "请因此且清楚地回答。",
+    "tags": [
+      "academic"
+    ],
+    "tier": "core",
+    "pos": "adv. 副词"
+  },
+  {
+    "id": 1043,
+    "word": "trace",
+    "spelling": "T-R-A-C-E",
+    "phonetic": "/treɪs/",
+    "gloss": "痕迹；踪迹",
+    "tip": "the trace",
+    "example": "Check the trace in the text.",
+    "exampleZh": "核对文本中的痕迹。",
+    "tags": [
+      "academic"
+    ],
+    "tier": "core",
+    "pos": "n. 名词"
+  },
+  {
+    "id": 1044,
+    "word": "transfer",
+    "spelling": "T-R-A-N-S-F-E-R",
+    "phonetic": "/ˈtrænsfər/",
+    "gloss": "迁移；移动",
+    "tip": "the transfer",
+    "example": "Check the transfer in the text.",
+    "exampleZh": "核对文本中的迁移。",
+    "tags": [
+      "academic"
+    ],
+    "tier": "core",
+    "pos": "n. 名词"
+  },
+  {
+    "id": 1045,
+    "word": "transit",
+    "spelling": "T-R-A-N-S-I-T",
+    "phonetic": "/ˈtrænzɪt/",
+    "gloss": "经过；通行",
+    "tip": "the transit",
+    "example": "Check the transit in the text.",
+    "exampleZh": "核对文本中的经过。",
+    "tags": [
+      "academic"
+    ],
+    "tier": "core",
+    "pos": "n. 名词"
+  },
+  {
+    "id": 1046,
+    "word": "transmit",
+    "spelling": "T-R-A-N-S-M-I-T",
+    "phonetic": "/trænzˈmɪt/",
+    "gloss": "传输；传染",
+    "tip": "transmit …",
+    "example": "Please transmit the key points.",
+    "exampleZh": "请传输要点。",
+    "tags": [
+      "academic",
+      "campus"
+    ],
+    "tier": "core",
+    "pos": "v. 动词"
+  },
+  {
+    "id": 1047,
+    "word": "trigger",
+    "spelling": "T-R-I-G-G-E-R",
+    "phonetic": "/ˈtrɪgər/",
+    "gloss": "触发器；扳机",
+    "tip": "the trigger",
+    "example": "Check the trigger in the text.",
+    "exampleZh": "核对文本中的触发器。",
+    "tags": [
+      "academic",
+      "campus"
+    ],
+    "tier": "core",
+    "pos": "n. 名词"
+  },
+  {
+    "id": 1048,
+    "word": "ultimate",
+    "spelling": "U-L-T-I-M-A-T-E",
+    "phonetic": "/ˈəltəmət/",
+    "gloss": "终极；根本",
+    "tip": "ultimate …",
+    "example": "Please ultimate the key points.",
+    "exampleZh": "请终极要点。",
+    "tags": [
+      "academic"
+    ],
+    "tier": "core",
+    "pos": "v. 动词"
+  },
+  {
+    "id": 1049,
+    "word": "undergo",
+    "spelling": "U-N-D-E-R-G-O",
+    "phonetic": "/ˌəndərˈgoʊ/",
+    "gloss": "遭受；经历",
+    "tip": "undergo …",
+    "example": "Please undergo the key points.",
+    "exampleZh": "请遭受要点。",
+    "tags": [
+      "academic",
+      "campus"
+    ],
+    "tier": "core",
+    "pos": "v. 动词"
+  },
+  {
+    "id": 1050,
+    "word": "underlie",
+    "spelling": "U-N-D-E-R-L-I-E",
+    "phonetic": "/ˌəndərˈlaɪ/",
+    "gloss": "位于...之下；成为...的基础",
+    "tip": "underlie …",
+    "example": "Please underlie the key points.",
+    "exampleZh": "请位于...之下要点。",
+    "tags": [
+      "academic",
+      "campus"
+    ],
+    "tier": "core",
+    "pos": "v. 动词"
+  },
+  {
+    "id": 1051,
+    "word": "uniform",
+    "spelling": "U-N-I-F-O-R-M",
+    "phonetic": "/ˈjunəˌfɔrm/",
+    "gloss": "制服；统一",
+    "tip": "the uniform",
+    "example": "Check the uniform in the text.",
+    "exampleZh": "核对文本中的制服。",
+    "tags": [
+      "academic"
+    ],
+    "tier": "core",
+    "pos": "n. 名词"
+  },
+  {
+    "id": 1052,
+    "word": "unify",
+    "spelling": "U-N-I-F-Y",
+    "phonetic": "/ˈjunəˌfaɪ/",
+    "gloss": "统一；使成一体",
+    "tip": "unify …",
+    "example": "Please unify the key points.",
+    "exampleZh": "请统一要点。",
+    "tags": [
+      "academic"
+    ],
+    "tier": "core",
+    "pos": "v. 动词"
+  },
+  {
+    "id": 1053,
+    "word": "unique",
+    "spelling": "U-N-I-Q-U-E",
+    "phonetic": "/juˈnik/",
+    "gloss": "独一无二的；独特的",
+    "tip": "a unique …",
+    "example": "Give a unique answer.",
+    "exampleZh": "给出独一无二的回答。",
+    "tags": [
+      "academic",
+      "campus"
+    ],
+    "tier": "core",
+    "pos": "adj. 形容词"
+  },
+  {
+    "id": 1054,
+    "word": "utilize",
+    "spelling": "U-T-I-L-I-Z-E",
+    "phonetic": "/ˈjutəˌlaɪz/",
+    "gloss": "利用",
+    "tip": "utilize …",
+    "example": "Please utilize the key points.",
+    "exampleZh": "请利用要点。",
+    "tags": [
+      "academic"
+    ],
+    "tier": "high",
+    "pos": "v. 动词"
+  },
+  {
+    "id": 1055,
+    "word": "valid",
+    "spelling": "V-A-L-I-D",
+    "phonetic": "/ˈvælɪd/",
+    "gloss": "有确实根据的；有法律效力的",
+    "tip": "a valid …",
+    "example": "Give a valid answer.",
+    "exampleZh": "给出有确实根据的回答。",
+    "tags": [
+      "academic"
+    ],
+    "tier": "core",
+    "pos": "adj. 形容词"
+  },
+  {
+    "id": 1056,
+    "word": "vary",
+    "spelling": "V-A-R-Y",
+    "phonetic": "/ˈvɛri/",
+    "gloss": "改变；使多样化",
+    "tip": "vary …",
+    "example": "Please vary the key points.",
+    "exampleZh": "请改变要点。",
+    "tags": [
+      "academic",
+      "campus"
+    ],
+    "tier": "core",
+    "pos": "v. 动词"
+  },
+  {
+    "id": 1057,
+    "word": "vehicle",
+    "spelling": "V-E-H-I-C-L-E",
+    "phonetic": "/ˈviɪkəl/",
+    "gloss": "交通工具；车辆",
+    "tip": "the vehicle",
+    "example": "Check the vehicle in the text.",
+    "exampleZh": "核对文本中的交通工具。",
+    "tags": [
+      "academic"
+    ],
+    "tier": "core",
+    "pos": "n. 名词"
+  },
+  {
+    "id": 1058,
+    "word": "version",
+    "spelling": "V-E-R-S-I-O-N",
+    "phonetic": "/ˈvərʒən/",
+    "gloss": "一种描述；版本",
+    "tip": "the version",
+    "example": "Check the version in the text.",
+    "exampleZh": "核对文本中的一种描述。",
+    "tags": [
+      "academic"
+    ],
+    "tier": "core",
+    "pos": "n. 名词"
+  },
+  {
+    "id": 1059,
+    "word": "via",
+    "spelling": "V-I-A",
+    "phonetic": "/ˈviə/",
+    "gloss": "经由；经过",
+    "tip": "the via",
+    "example": "Check the via in the text.",
+    "exampleZh": "核对文本中的经由。",
+    "tags": [
+      "academic",
+      "campus"
+    ],
+    "tier": "core",
+    "pos": "n. 名词"
+  },
+  {
+    "id": 1060,
+    "word": "violate",
+    "spelling": "V-I-O-L-A-T-E",
+    "phonetic": "/ˈvaɪəleɪt/",
+    "gloss": "违犯；亵渎",
+    "tip": "violate …",
+    "example": "Please violate the key points.",
+    "exampleZh": "请违犯要点。",
+    "tags": [
+      "academic"
+    ],
+    "tier": "core",
+    "pos": "v. 动词"
+  },
+  {
+    "id": 1061,
+    "word": "visible",
+    "spelling": "V-I-S-I-B-L-E",
+    "phonetic": "/ˈvɪzəbəl/",
+    "gloss": "看得见的；明显的",
+    "tip": "a visible …",
+    "example": "Give a visible answer.",
+    "exampleZh": "给出看得见的回答。",
+    "tags": [
+      "academic"
+    ],
+    "tier": "core",
+    "pos": "adj. 形容词"
+  },
+  {
+    "id": 1062,
+    "word": "vision",
+    "spelling": "V-I-S-I-O-N",
+    "phonetic": "/ˈvɪʒən/",
+    "gloss": "视觉；眼光",
+    "tip": "the vision",
+    "example": "Check the vision in the text.",
+    "exampleZh": "核对文本中的视觉。",
+    "tags": [
+      "academic"
+    ],
+    "tier": "core",
+    "pos": "n. 名词"
+  },
+  {
+    "id": 1063,
+    "word": "visual",
+    "spelling": "V-I-S-U-A-L",
+    "phonetic": "/ˈvɪʒəwəl/",
+    "gloss": "视觉的；[医] 视觉的",
+    "tip": "a visual …",
+    "example": "Give a visual answer.",
+    "exampleZh": "给出视觉的回答。",
+    "tags": [
+      "academic",
+      "campus"
+    ],
+    "tier": "core",
+    "pos": "adj. 形容词"
+  },
+  {
+    "id": 1064,
+    "word": "volume",
+    "spelling": "V-O-L-U-M-E",
+    "phonetic": "/ˈvɑljum/",
+    "gloss": "册；卷",
+    "tip": "the volume",
+    "example": "Check the volume in the text.",
+    "exampleZh": "核对文本中的册。",
+    "tags": [
+      "academic"
+    ],
+    "tier": "core",
+    "pos": "n. 名词"
+  },
+  {
+    "id": 1065,
+    "word": "exhaust",
+    "spelling": "E-X-H-A-U-S-T",
+    "phonetic": "/ɪgˈzɔst/",
+    "gloss": "排气；排气装置",
+    "tip": "the exhaust",
+    "example": "Check the exhaust in the text.",
+    "exampleZh": "核对文本中的排气。",
+    "tags": [
+      "academic"
+    ],
+    "tier": "core",
+    "pos": "n. 名词"
+  },
+  {
+    "id": 1066,
+    "word": "nucleus",
+    "spelling": "N-U-C-L-E-U-S",
+    "phonetic": "/ˈnukliəs/",
+    "gloss": "核心；核子",
+    "tip": "the nucleus",
+    "example": "Check the nucleus in the text.",
+    "exampleZh": "核对文本中的核心。",
+    "tags": [
+      "academic"
+    ],
+    "tier": "core",
+    "pos": "n. 名词"
+  },
+  {
+    "id": 1067,
+    "word": "understand",
+    "spelling": "U-N-D-E-R-S-T-A-N-D",
+    "phonetic": "/ˌəndərˈstænd/",
+    "gloss": "理解；了解",
+    "tip": "understand …",
+    "example": "Please understand the key points.",
+    "exampleZh": "请理解要点。",
+    "tags": [
+      "academic"
+    ],
+    "tier": "core",
+    "pos": "v. 动词"
+  },
+  {
+    "id": 1068,
+    "word": "intellectual",
+    "spelling": "I-N-T-E-L-L-E-C-T-U-A-L",
+    "phonetic": "/ˌɪnəˈlɛkʧuəl/",
+    "gloss": "有知识者；知识分子",
+    "tip": "the intellectual",
+    "example": "Check the intellectual in the text.",
+    "exampleZh": "核对文本中的有知识者。",
+    "tags": [
+      "academic"
+    ],
+    "tier": "core",
+    "pos": "n. 名词"
+  },
+  {
+    "id": 1069,
+    "word": "disorder",
+    "spelling": "D-I-S-O-R-D-E-R",
+    "phonetic": "/dɪˈsɔrdər/",
+    "gloss": "杂乱；混乱",
+    "tip": "the disorder",
+    "example": "Check the disorder in the text.",
+    "exampleZh": "核对文本中的杂乱。",
+    "tags": [
+      "academic"
+    ],
+    "tier": "core",
+    "pos": "n. 名词"
+  },
+  {
+    "id": 1070,
+    "word": "circular",
+    "spelling": "C-I-R-C-U-L-A-R",
+    "phonetic": "/ˈsərkjələr/",
+    "gloss": "圆形的；循环的",
+    "tip": "a circular …",
+    "example": "Give a circular answer.",
+    "exampleZh": "给出圆形的回答。",
+    "tags": [
+      "academic"
+    ],
+    "tier": "core",
+    "pos": "adj. 形容词"
+  },
+  {
+    "id": 1071,
+    "word": "appearance",
+    "spelling": "A-P-P-E-A-R-A-N-C-E",
+    "phonetic": "/əˈpɪrəns/",
+    "gloss": "出现；露面",
+    "tip": "the appearance",
+    "example": "Check the appearance in the text.",
+    "exampleZh": "核对文本中的出现。",
+    "tags": [
+      "academic"
+    ],
+    "tier": "core",
+    "pos": "n. 名词"
+  },
+  {
+    "id": 1072,
+    "word": "bat",
+    "spelling": "B-A-T",
+    "phonetic": "/bæt/",
+    "gloss": "蝙蝠；球棒",
+    "tip": "the bat",
+    "example": "Check the bat in the text.",
+    "exampleZh": "核对文本中的蝙蝠。",
+    "tags": [
+      "academic"
+    ],
+    "tier": "core",
+    "pos": "n. 名词"
+  },
+  {
+    "id": 1073,
+    "word": "exposure",
+    "spelling": "E-X-P-O-S-U-R-E",
+    "phonetic": "/ɪkˈspoʊʒər/",
+    "gloss": "暴露；揭发",
+    "tip": "the exposure",
+    "example": "Check the exposure in the text.",
+    "exampleZh": "核对文本中的暴露。",
+    "tags": [
+      "academic"
+    ],
+    "tier": "core",
+    "pos": "n. 名词"
+  },
+  {
+    "id": 1074,
+    "word": "explore",
+    "spelling": "E-X-P-L-O-R-E",
+    "phonetic": "/ɪkˈsplɔr/",
+    "gloss": "探险；探测",
+    "tip": "explore …",
+    "example": "Please explore the key points.",
+    "exampleZh": "请探险要点。",
+    "tags": [
+      "academic",
+      "campus"
+    ],
+    "tier": "core",
+    "pos": "v. 动词"
+  },
+  {
+    "id": 1075,
+    "word": "effort",
+    "spelling": "E-F-F-O-R-T",
+    "phonetic": "/ˈɛfərt/",
+    "gloss": "努力；成就",
+    "tip": "the effort",
+    "example": "Check the effort in the text.",
+    "exampleZh": "核对文本中的努力。",
+    "tags": [
+      "academic",
+      "campus"
+    ],
+    "tier": "core",
+    "pos": "n. 名词"
+  },
+  {
+    "id": 1076,
+    "word": "remain",
+    "spelling": "R-E-M-A-I-N",
+    "phonetic": "/rɪˈmeɪn/",
+    "gloss": "保持；逗留",
+    "tip": "remain …",
+    "example": "Please remain the key points.",
+    "exampleZh": "请保持要点。",
+    "tags": [
+      "academic"
+    ],
+    "tier": "core",
+    "pos": "v. 动词"
+  },
+  {
+    "id": 1077,
+    "word": "reflect",
+    "spelling": "R-E-F-L-E-C-T",
+    "phonetic": "/rɪˈflɛkt/",
+    "gloss": "反射；反映",
+    "tip": "reflect …",
+    "example": "Please reflect the key points.",
+    "exampleZh": "请反射要点。",
+    "tags": [
+      "academic"
+    ],
+    "tier": "core",
+    "pos": "v. 动词"
+  },
+  {
+    "id": 1078,
+    "word": "competent",
+    "spelling": "C-O-M-P-E-T-E-N-T",
+    "phonetic": "/ˈkɑmpətɪnt/",
+    "gloss": "能干的；胜任的",
+    "tip": "a competent …",
+    "example": "Give a competent answer.",
+    "exampleZh": "给出能干的回答。",
+    "tags": [
+      "academic"
+    ],
+    "tier": "core",
+    "pos": "adj. 形容词"
+  },
+  {
+    "id": 1079,
+    "word": "force",
+    "spelling": "F-O-R-C-E",
+    "phonetic": "/fɔrs/",
+    "gloss": "力量；武力",
+    "tip": "the force",
+    "example": "Check the force in the text.",
+    "exampleZh": "核对文本中的力量。",
+    "tags": [
+      "academic"
+    ],
+    "tier": "core",
+    "pos": "n. 名词"
+  },
+  {
+    "id": 1080,
+    "word": "allow",
+    "spelling": "A-L-L-O-W",
+    "phonetic": "/əˈlaʊ/",
+    "gloss": "允许；同意给予",
+    "tip": "allow …",
+    "example": "Please allow the key points.",
+    "exampleZh": "请允许要点。",
+    "tags": [
+      "academic"
+    ],
+    "tier": "core",
+    "pos": "v. 动词"
+  },
+  {
+    "id": 1081,
+    "word": "damp",
+    "spelling": "D-A-M-P",
+    "phonetic": "/dæmp/",
+    "gloss": "潮湿；湿气",
+    "tip": "the damp",
+    "example": "Check the damp in the text.",
+    "exampleZh": "核对文本中的潮湿。",
+    "tags": [
+      "academic"
+    ],
+    "tier": "core",
+    "pos": "n. 名词"
+  },
+  {
+    "id": 1082,
+    "word": "ingredient",
+    "spelling": "I-N-G-R-E-D-I-E-N-T",
+    "phonetic": "/ˌɪnˈgridiənt/",
+    "gloss": "成分；因素",
+    "tip": "the ingredient",
+    "example": "Check the ingredient in the text.",
+    "exampleZh": "核对文本中的成分。",
+    "tags": [
+      "academic",
+      "campus"
+    ],
+    "tier": "core",
+    "pos": "n. 名词"
+  },
+  {
+    "id": 1083,
+    "word": "write",
+    "spelling": "W-R-I-T-E",
+    "phonetic": "/raɪt/",
+    "gloss": "书写；著述",
+    "tip": "write …",
+    "example": "Please write the key points.",
+    "exampleZh": "请书写要点。",
+    "tags": [
+      "academic"
+    ],
+    "tier": "core",
+    "pos": "v. 动词"
+  },
+  {
+    "id": 1084,
+    "word": "combine",
+    "spelling": "C-O-M-B-I-N-E",
+    "phonetic": "/ˈkɑmbaɪn/",
+    "gloss": "(使)联合；(使)结合",
+    "tip": "combine …",
+    "example": "Please combine the key points.",
+    "exampleZh": "请(使)联合要点。",
+    "tags": [
+      "academic",
+      "campus"
+    ],
+    "tier": "core",
+    "pos": "v. 动词"
+  },
+  {
+    "id": 1085,
+    "word": "industrial",
+    "spelling": "I-N-D-U-S-T-R-I-A-L",
+    "phonetic": "/ˌɪnˈdəstriəl/",
+    "gloss": "工业的；供工业用的",
+    "tip": "a industrial …",
+    "example": "Give a industrial answer.",
+    "exampleZh": "给出工业的回答。",
+    "tags": [
+      "academic",
+      "campus"
+    ],
+    "tier": "core",
+    "pos": "adj. 形容词"
+  },
+  {
+    "id": 1086,
+    "word": "local",
+    "spelling": "L-O-C-A-L",
+    "phonetic": "/ˈloʊkəl/",
+    "gloss": "地方性的；当地的",
+    "tip": "a local …",
+    "example": "Give a local answer.",
+    "exampleZh": "给出地方性的回答。",
+    "tags": [
+      "academic"
+    ],
+    "tier": "core",
+    "pos": "adj. 形容词"
+  },
+  {
+    "id": 1087,
+    "word": "lead",
+    "spelling": "L-E-A-D",
+    "phonetic": "/lɛd/",
+    "gloss": "铅；铅条",
+    "tip": "the lead",
+    "example": "Check the lead in the text.",
+    "exampleZh": "核对文本中的铅。",
+    "tags": [
+      "academic"
+    ],
+    "tier": "core",
+    "pos": "n. 名词"
+  },
+  {
+    "id": 1088,
+    "word": "solar",
+    "spelling": "S-O-L-A-R",
+    "phonetic": "/ˈsoʊlər/",
+    "gloss": "太阳的；日光的",
+    "tip": "a solar …",
+    "example": "Give a solar answer.",
+    "exampleZh": "给出太阳的回答。",
+    "tags": [
+      "academic",
+      "campus"
+    ],
+    "tier": "core",
+    "pos": "adj. 形容词"
+  },
+  {
+    "id": 1089,
+    "word": "scientific",
+    "spelling": "S-C-I-E-N-T-I-F-I-C",
+    "phonetic": "/ˌsaɪənˈtɪfɪk/",
+    "gloss": "科学的；系统的",
+    "tip": "a scientific …",
+    "example": "Give a scientific answer.",
+    "exampleZh": "给出科学的回答。",
+    "tags": [
+      "academic",
+      "campus"
+    ],
+    "tier": "core",
+    "pos": "adj. 形容词"
+  },
+  {
+    "id": 1090,
+    "word": "miss",
+    "spelling": "M-I-S-S",
+    "phonetic": "/mɪs/",
+    "gloss": "失误；避免",
+    "tip": "the miss",
+    "example": "Check the miss in the text.",
+    "exampleZh": "核对文本中的失误。",
+    "tags": [
+      "academic"
+    ],
+    "tier": "core",
+    "pos": "n. 名词"
+  },
+  {
+    "id": 1091,
+    "word": "ambitious",
+    "spelling": "A-M-B-I-T-I-O-U-S",
+    "phonetic": "/æmˈbɪʃəs/",
+    "gloss": "有野心的；抱负不凡的",
+    "tip": "a ambitious …",
+    "example": "Give a ambitious answer.",
+    "exampleZh": "给出有野心的回答。",
+    "tags": [
+      "academic"
+    ],
+    "tier": "core",
+    "pos": "adj. 形容词"
+  },
+  {
+    "id": 1092,
+    "word": "contest",
+    "spelling": "C-O-N-T-E-S-T",
+    "phonetic": "/ˈkɑntɛst/",
+    "gloss": "竞赛；争论",
+    "tip": "the contest",
+    "example": "Check the contest in the text.",
+    "exampleZh": "核对文本中的竞赛。",
+    "tags": [
+      "academic",
+      "campus"
+    ],
+    "tier": "core",
+    "pos": "n. 名词"
+  },
+  {
+    "id": 1093,
+    "word": "immense",
+    "spelling": "I-M-M-E-N-S-E",
+    "phonetic": "/ˌɪˈmɛns/",
+    "gloss": "极广大的；无边的",
+    "tip": "a immense …",
+    "example": "Give a immense answer.",
+    "exampleZh": "给出极广大的回答。",
+    "tags": [
+      "academic"
+    ],
+    "tier": "core",
+    "pos": "adj. 形容词"
+  },
+  {
+    "id": 1094,
+    "word": "vulnerable",
+    "spelling": "V-U-L-N-E-R-A-B-L-E",
+    "phonetic": "/ˈvəlnərəbəl/",
+    "gloss": "易受伤害的；有弱点的",
+    "tip": "a vulnerable …",
+    "example": "Give a vulnerable answer.",
+    "exampleZh": "给出易受伤害的回答。",
+    "tags": [
+      "academic",
+      "campus"
+    ],
+    "tier": "core",
+    "pos": "adj. 形容词"
+  },
+  {
+    "id": 1095,
+    "word": "usage",
+    "spelling": "U-S-A-G-E",
+    "phonetic": "/ˈjusɪʤ/",
+    "gloss": "用法；使用",
+    "tip": "the usage",
+    "example": "Check the usage in the text.",
+    "exampleZh": "核对文本中的用法。",
+    "tags": [
+      "academic"
+    ],
+    "tier": "core",
+    "pos": "n. 名词"
+  },
+  {
+    "id": 1096,
+    "word": "be",
+    "spelling": "B-E",
+    "phonetic": "/bi/",
+    "gloss": "是；表示",
+    "tip": "be …",
+    "example": "Please be the key points.",
+    "exampleZh": "请是要点。",
+    "tags": [
+      "academic"
+    ],
+    "tier": "core",
+    "pos": "v. 动词"
+  },
+  {
+    "id": 1097,
+    "word": "opponent",
+    "spelling": "O-P-P-O-N-E-N-T",
+    "phonetic": "/əˈpoʊnənt/",
+    "gloss": "对手；敌手",
+    "tip": "the opponent",
+    "example": "Check the opponent in the text.",
+    "exampleZh": "核对文本中的对手。",
+    "tags": [
+      "academic"
+    ],
+    "tier": "core",
+    "pos": "n. 名词"
+  },
+  {
+    "id": 1098,
+    "word": "launch",
+    "spelling": "L-A-U-N-C-H",
+    "phonetic": "/lɔnʧ/",
+    "gloss": "下水；汽艇",
+    "tip": "the launch",
+    "example": "Check the launch in the text.",
+    "exampleZh": "核对文本中的下水。",
+    "tags": [
+      "academic",
+      "campus"
+    ],
+    "tier": "core",
+    "pos": "n. 名词"
+  },
+  {
+    "id": 1099,
+    "word": "interest",
+    "spelling": "I-N-T-E-R-E-S-T",
+    "phonetic": "/ˈɪntəˌrɛst/",
+    "gloss": "兴趣；嗜好",
+    "tip": "the interest",
+    "example": "Check the interest in the text.",
+    "exampleZh": "核对文本中的兴趣。",
+    "tags": [
+      "academic"
+    ],
+    "tier": "core",
+    "pos": "n. 名词"
+  },
+  {
+    "id": 1100,
+    "word": "electric",
+    "spelling": "E-L-E-C-T-R-I-C",
+    "phonetic": "/ɪˈlɛktrɪk/",
+    "gloss": "电的；导电的",
+    "tip": "a electric …",
+    "example": "Give a electric answer.",
+    "exampleZh": "给出电的回答。",
+    "tags": [
+      "academic",
+      "campus"
+    ],
+    "tier": "core",
+    "pos": "adj. 形容词"
+  },
+  {
+    "id": 1101,
+    "word": "manufacturer",
+    "spelling": "M-A-N-U-F-A-C-T-U-R-E-R",
+    "phonetic": "/ˌmænjəˈfækʧərər/",
+    "gloss": "制造业者；厂商",
+    "tip": "the manufacturer",
+    "example": "Check the manufacturer in the text.",
+    "exampleZh": "核对文本中的制造业者。",
+    "tags": [
+      "academic",
+      "campus"
+    ],
+    "tier": "core",
+    "pos": "n. 名词"
+  },
+  {
+    "id": 1102,
+    "word": "qualify",
+    "spelling": "Q-U-A-L-I-F-Y",
+    "phonetic": "/kˈwɑləˌfaɪ/",
+    "gloss": "取得资格；有资格",
+    "tip": "qualify …",
+    "example": "Please qualify the key points.",
+    "exampleZh": "请取得资格要点。",
+    "tags": [
+      "academic",
+      "campus"
+    ],
+    "tier": "core",
+    "pos": "v. 动词"
+  },
+  {
+    "id": 1103,
+    "word": "readily",
+    "spelling": "R-E-A-D-I-L-Y",
+    "phonetic": "/ˈrɛdəli/",
+    "gloss": "迅速地；轻易地",
+    "tip": "readily …",
+    "example": "Answer readily and clearly.",
+    "exampleZh": "请迅速地且清楚地回答。",
+    "tags": [
+      "academic"
+    ],
+    "tier": "core",
+    "pos": "adv. 副词"
+  },
+  {
+    "id": 1104,
+    "word": "sensible",
+    "spelling": "S-E-N-S-I-B-L-E",
+    "phonetic": "/ˈsɛnsəbəl/",
+    "gloss": "有感觉的；敏感的",
+    "tip": "a sensible …",
+    "example": "Give a sensible answer.",
+    "exampleZh": "给出有感觉的回答。",
+    "tags": [
+      "academic"
+    ],
+    "tier": "core",
+    "pos": "adj. 形容词"
+  },
+  {
+    "id": 1105,
+    "word": "x-ray",
+    "spelling": "X-R-A-Y",
+    "phonetic": "/ˈɛksˌreɪ/",
+    "gloss": "X射线的；用X光检查",
+    "tip": "a x-ray …",
+    "example": "Give a x-ray answer.",
+    "exampleZh": "给出X射线的回答。",
+    "tags": [
+      "academic"
+    ],
+    "tier": "core",
+    "pos": "adj. 形容词"
+  },
+  {
+    "id": 1106,
+    "word": "ban",
+    "spelling": "B-A-N",
+    "phonetic": "/bæn/",
+    "gloss": "禁令；禁止",
+    "tip": "the ban",
+    "example": "Check the ban in the text.",
+    "exampleZh": "核对文本中的禁令。",
+    "tags": [
+      "academic"
+    ],
+    "tier": "core",
+    "pos": "n. 名词"
+  },
+  {
+    "id": 1107,
+    "word": "determine",
+    "spelling": "D-E-T-E-R-M-I-N-E",
+    "phonetic": "/dɪˈtərmən/",
+    "gloss": "决定；决心",
+    "tip": "determine …",
+    "example": "Please determine the key points.",
+    "exampleZh": "请决定要点。",
+    "tags": [
+      "academic"
+    ],
+    "tier": "core",
+    "pos": "v. 动词"
+  },
+  {
+    "id": 1108,
+    "word": "species",
+    "spelling": "S-P-E-C-I-E-S",
+    "phonetic": "/ˈspiʃiz/",
+    "gloss": "种；类",
+    "tip": "the species",
+    "example": "Check the species in the text.",
+    "exampleZh": "核对文本中的种。",
+    "tags": [
+      "academic",
+      "campus"
+    ],
+    "tier": "core",
+    "pos": "n. 名词"
+  },
+  {
+    "id": 1109,
+    "word": "result",
+    "spelling": "R-E-S-U-L-T",
+    "phonetic": "/rɪˈzəlt/",
+    "gloss": "结果；成绩",
+    "tip": "the result",
+    "example": "Check the result in the text.",
+    "exampleZh": "核对文本中的结果。",
+    "tags": [
+      "academic"
+    ],
+    "tier": "core",
+    "pos": "n. 名词"
+  },
+  {
+    "id": 1110,
+    "word": "financial",
+    "spelling": "F-I-N-A-N-C-I-A-L",
+    "phonetic": "/ˌfaɪˈnænʃəl/",
+    "gloss": "财政的；金融的",
+    "tip": "a financial …",
+    "example": "Give a financial answer.",
+    "exampleZh": "给出财政的回答。",
+    "tags": [
+      "academic",
+      "campus",
+      "econ"
+    ],
+    "tier": "core",
+    "pos": "adj. 形容词"
+  },
+  {
+    "id": 1111,
+    "word": "cope",
+    "spelling": "C-O-P-E",
+    "phonetic": "/koʊp/",
+    "gloss": "竞争；应付",
+    "tip": "cope …",
+    "example": "Please cope the key points.",
+    "exampleZh": "请竞争要点。",
+    "tags": [
+      "academic"
+    ],
+    "tier": "core",
+    "pos": "v. 动词"
+  },
+  {
+    "id": 1112,
+    "word": "rotten",
+    "spelling": "R-O-T-T-E-N",
+    "phonetic": "/ˈrɑtən/",
+    "gloss": "腐烂的；恶臭的",
+    "tip": "a rotten …",
+    "example": "Give a rotten answer.",
+    "exampleZh": "给出腐烂的回答。",
+    "tags": [
+      "academic"
+    ],
+    "tier": "core",
+    "pos": "adj. 形容词"
+  },
+  {
+    "id": 1113,
+    "word": "tour",
+    "spelling": "T-O-U-R",
+    "phonetic": "/tʊr/",
+    "gloss": "旅游；观光旅行",
+    "tip": "the tour",
+    "example": "Check the tour in the text.",
+    "exampleZh": "核对文本中的旅游。",
+    "tags": [
+      "academic"
+    ],
+    "tier": "core",
+    "pos": "n. 名词"
+  },
+  {
+    "id": 1114,
+    "word": "gesture",
+    "spelling": "G-E-S-T-U-R-E",
+    "phonetic": "/ˈʤɛsʧər/",
+    "gloss": "手势；姿态",
+    "tip": "the gesture",
+    "example": "Check the gesture in the text.",
+    "exampleZh": "核对文本中的手势。",
+    "tags": [
+      "academic"
+    ],
+    "tier": "core",
+    "pos": "n. 名词"
+  },
+  {
+    "id": 1115,
+    "word": "glimpse",
+    "spelling": "G-L-I-M-P-S-E",
+    "phonetic": "/glɪmps/",
+    "gloss": "一瞥；一闪",
+    "tip": "the glimpse",
+    "example": "Check the glimpse in the text.",
+    "exampleZh": "核对文本中的一瞥。",
+    "tags": [
+      "academic"
+    ],
+    "tier": "core",
+    "pos": "n. 名词"
+  },
+  {
+    "id": 1116,
+    "word": "engine",
+    "spelling": "E-N-G-I-N-E",
+    "phonetic": "/ˈɪnʤən/",
+    "gloss": "引擎；发动机",
+    "tip": "the engine",
+    "example": "Check the engine in the text.",
+    "exampleZh": "核对文本中的引擎。",
+    "tags": [
+      "academic"
+    ],
+    "tier": "core",
+    "pos": "n. 名词"
+  },
+  {
+    "id": 1117,
+    "word": "accordance",
+    "spelling": "A-C-C-O-R-D-A-N-C-E",
+    "phonetic": "/əˈkɔrdəns/",
+    "gloss": "一致；和谐",
+    "tip": "the accordance",
+    "example": "Check the accordance in the text.",
+    "exampleZh": "核对文本中的一致。",
+    "tags": [
+      "academic"
+    ],
+    "tier": "core",
+    "pos": "n. 名词"
+  },
+  {
+    "id": 1118,
+    "word": "necessarily",
+    "spelling": "N-E-C-E-S-S-A-R-I-L-Y",
+    "phonetic": "/ˌnɛsəˈsɛrəli/",
+    "gloss": "必然地；必须地",
+    "tip": "necessarily …",
+    "example": "Answer necessarily and clearly.",
+    "exampleZh": "请必然地且清楚地回答。",
+    "tags": [
+      "academic",
+      "campus"
+    ],
+    "tier": "core",
+    "pos": "adv. 副词"
+  },
+  {
+    "id": 1119,
+    "word": "responsible",
+    "spelling": "R-E-S-P-O-N-S-I-B-L-E",
+    "phonetic": "/riˈspɑnsəbəl/",
+    "gloss": "有责任的；负责的",
+    "tip": "a responsible …",
+    "example": "Give a responsible answer.",
+    "exampleZh": "给出有责任的回答。",
+    "tags": [
+      "academic"
+    ],
+    "tier": "core",
+    "pos": "adj. 形容词"
+  },
+  {
+    "id": 1120,
+    "word": "give",
+    "spelling": "G-I-V-E",
+    "phonetic": "/gɪv/",
+    "gloss": "弹性；适应性",
+    "tip": "a give …",
+    "example": "Give a give answer.",
+    "exampleZh": "给出弹性回答。",
+    "tags": [
+      "academic"
+    ],
+    "tier": "core",
+    "pos": "adj. 形容词"
+  },
+  {
+    "id": 1121,
+    "word": "pond",
+    "spelling": "P-O-N-D",
+    "phonetic": "/pɑnd/",
+    "gloss": "池塘；筑成池塘",
+    "tip": "the pond",
+    "example": "Check the pond in the text.",
+    "exampleZh": "核对文本中的池塘。",
+    "tags": [
+      "academic"
+    ],
+    "tier": "core",
+    "pos": "n. 名词"
+  },
+  {
+    "id": 1122,
+    "word": "ability",
+    "spelling": "A-B-I-L-I-T-Y",
+    "phonetic": "/əˈbɪləˌti/",
+    "gloss": "能力；才干",
+    "tip": "the ability",
+    "example": "Check the ability in the text.",
+    "exampleZh": "核对文本中的能力。",
+    "tags": [
+      "academic"
+    ],
+    "tier": "core",
+    "pos": "n. 名词"
+  },
+  {
+    "id": 1123,
+    "word": "oral",
+    "spelling": "O-R-A-L",
+    "phonetic": "/ˈɔrəl/",
+    "gloss": "口试；口头",
+    "tip": "the oral",
+    "example": "Check the oral in the text.",
+    "exampleZh": "核对文本中的口试。",
+    "tags": [
+      "academic"
+    ],
+    "tier": "core",
+    "pos": "n. 名词"
+  },
+  {
+    "id": 1124,
+    "word": "hardship",
+    "spelling": "H-A-R-D-S-H-I-P",
+    "phonetic": "/ˈhɑrdʃɪp/",
+    "gloss": "艰难；辛苦",
+    "tip": "the hardship",
+    "example": "Check the hardship in the text.",
+    "exampleZh": "核对文本中的艰难。",
+    "tags": [
+      "academic"
+    ],
+    "tier": "core",
+    "pos": "n. 名词"
+  },
+  {
+    "id": 1125,
+    "word": "desperate",
+    "spelling": "D-E-S-P-E-R-A-T-E",
+    "phonetic": "/ˈdɛspərɪt/",
+    "gloss": "不顾一切的；危急的",
+    "tip": "desperate …",
+    "example": "Please desperate the key points.",
+    "exampleZh": "请不顾一切要点。",
+    "tags": [
+      "academic"
+    ],
+    "tier": "core",
+    "pos": "v. 动词"
+  },
+  {
+    "id": 1126,
+    "word": "division",
+    "spelling": "D-I-V-I-S-I-O-N",
+    "phonetic": "/dɪˈvɪʒən/",
+    "gloss": "分；分开",
+    "tip": "the division",
+    "example": "Check the division in the text.",
+    "exampleZh": "核对文本中的分。",
+    "tags": [
+      "academic"
+    ],
+    "tier": "core",
+    "pos": "n. 名词"
+  },
+  {
+    "id": 1127,
+    "word": "management",
+    "spelling": "M-A-N-A-G-E-M-E-N-T",
+    "phonetic": "/ˈmænɪʤmənt/",
+    "gloss": "经营；支配",
+    "tip": "the management",
+    "example": "Check the management in the text.",
+    "exampleZh": "核对文本中的经营。",
+    "tags": [
+      "academic",
+      "campus"
+    ],
+    "tier": "core",
+    "pos": "n. 名词"
+  },
+  {
+    "id": 1128,
+    "word": "preparation",
+    "spelling": "P-R-E-P-A-R-A-T-I-O-N",
+    "phonetic": "/ˌprɛpərˈeɪʃən/",
+    "gloss": "准备；预备",
+    "tip": "the preparation",
+    "example": "Check the preparation in the text.",
+    "exampleZh": "核对文本中的准备。",
+    "tags": [
+      "academic",
+      "campus"
+    ],
+    "tier": "core",
+    "pos": "n. 名词"
+  },
+  {
+    "id": 1129,
+    "word": "beneath",
+    "spelling": "B-E-N-E-A-T-H",
+    "phonetic": "/bɪˈniθ/",
+    "gloss": "在...下方",
+    "tip": "the beneath",
+    "example": "Check the beneath in the text.",
+    "exampleZh": "核对文本中的在...下方。",
+    "tags": [
+      "academic"
+    ],
+    "tier": "core",
+    "pos": "n. 名词"
+  },
+  {
+    "id": 1130,
+    "word": "breed",
+    "spelling": "B-R-E-E-D",
+    "phonetic": "/brid/",
+    "gloss": "种类；品种",
+    "tip": "the breed",
+    "example": "Check the breed in the text.",
+    "exampleZh": "核对文本中的种类。",
+    "tags": [
+      "academic"
+    ],
+    "tier": "core",
+    "pos": "n. 名词"
+  },
+  {
+    "id": 1131,
+    "word": "achievement",
+    "spelling": "A-C-H-I-E-V-E-M-E-N-T",
+    "phonetic": "/əˈʧivmənt/",
+    "gloss": "完成；成就",
+    "tip": "the achievement",
+    "example": "Check the achievement in the text.",
+    "exampleZh": "核对文本中的完成。",
+    "tags": [
+      "academic"
+    ],
+    "tier": "core",
+    "pos": "n. 名词"
+  },
+  {
+    "id": 1132,
+    "word": "weaken",
+    "spelling": "W-E-A-K-E-N",
+    "phonetic": "/ˈwikən/",
+    "gloss": "削弱；减弱",
+    "tip": "weaken …",
+    "example": "Please weaken the key points.",
+    "exampleZh": "请削弱要点。",
+    "tags": [
+      "academic"
+    ],
+    "tier": "core",
+    "pos": "v. 动词"
+  },
+  {
+    "id": 1133,
+    "word": "strengthen",
+    "spelling": "S-T-R-E-N-G-T-H-E-N",
+    "phonetic": "/ˈstrɛŋθən/",
+    "gloss": "加强；变坚固",
+    "tip": "strengthen …",
+    "example": "Please strengthen the key points.",
+    "exampleZh": "请加强要点。",
+    "tags": [
+      "academic"
+    ],
+    "tier": "core",
+    "pos": "v. 动词"
+  },
+  {
+    "id": 1134,
+    "word": "union",
+    "spelling": "U-N-I-O-N",
+    "phonetic": "/ˈjunjən/",
+    "gloss": "联盟；联合",
+    "tip": "the union",
+    "example": "Check the union in the text.",
+    "exampleZh": "核对文本中的联盟。",
+    "tags": [
+      "academic",
+      "campus"
+    ],
+    "tier": "core",
+    "pos": "n. 名词"
+  },
+  {
+    "id": 1135,
+    "word": "necessity",
+    "spelling": "N-E-C-E-S-S-I-T-Y",
+    "phonetic": "/nəˈsɛsɪti/",
+    "gloss": "需要；必需品",
+    "tip": "the necessity",
+    "example": "Check the necessity in the text.",
+    "exampleZh": "核对文本中的需要。",
+    "tags": [
+      "academic"
+    ],
+    "tier": "core",
+    "pos": "n. 名词"
+  },
+  {
+    "id": 1136,
+    "word": "powerful",
+    "spelling": "P-O-W-E-R-F-U-L",
+    "phonetic": "/ˈpaʊərfəl/",
+    "gloss": "有力的；有权力的",
+    "tip": "a powerful …",
+    "example": "Give a powerful answer.",
+    "exampleZh": "给出有力的回答。",
+    "tags": [
+      "academic"
+    ],
+    "tier": "core",
+    "pos": "adj. 形容词"
+  },
+  {
+    "id": 1137,
+    "word": "generator",
+    "spelling": "G-E-N-E-R-A-T-O-R",
+    "phonetic": "/ˈʤɛnərˌeɪtər/",
+    "gloss": "产生器；发电机",
+    "tip": "the generator",
+    "example": "Check the generator in the text.",
+    "exampleZh": "核对文本中的产生器。",
+    "tags": [
+      "academic"
+    ],
+    "tier": "core",
+    "pos": "n. 名词"
+  },
+  {
+    "id": 1138,
+    "word": "motor",
+    "spelling": "M-O-T-O-R",
+    "phonetic": "/ˈmoʊtər/",
+    "gloss": "马达；发动机",
+    "tip": "the motor",
+    "example": "Check the motor in the text.",
+    "exampleZh": "核对文本中的马达。",
+    "tags": [
+      "academic"
+    ],
+    "tier": "core",
+    "pos": "n. 名词"
+  },
+  {
+    "id": 1139,
+    "word": "humor",
+    "spelling": "H-U-M-O-R",
+    "phonetic": "/ˈhjumər/",
+    "gloss": "幽默；诙谐",
+    "tip": "the humor",
+    "example": "Check the humor in the text.",
+    "exampleZh": "核对文本中的幽默。",
+    "tags": [
+      "academic"
+    ],
+    "tier": "core",
+    "pos": "n. 名词"
+  },
+  {
+    "id": 1140,
+    "word": "optimistic",
+    "spelling": "O-P-T-I-M-I-S-T-I-C",
+    "phonetic": "/ˌɑptɪˈmɪstɪk/",
+    "gloss": "乐观的；乐观主义的",
+    "tip": "a optimistic …",
+    "example": "Give a optimistic answer.",
+    "exampleZh": "给出乐观的回答。",
+    "tags": [
+      "academic"
+    ],
+    "tier": "core",
+    "pos": "adj. 形容词"
+  },
+  {
+    "id": 1141,
+    "word": "temper",
+    "spelling": "T-E-M-P-E-R",
+    "phonetic": "/ˈtɛmpər/",
+    "gloss": "(钢等的)硬度；脾气",
+    "tip": "the temper",
+    "example": "Check the temper in the text.",
+    "exampleZh": "核对文本中的(钢等的)硬度。",
+    "tags": [
+      "academic"
+    ],
+    "tier": "core",
+    "pos": "n. 名词"
+  },
+  {
+    "id": 1142,
+    "word": "puzzle",
+    "spelling": "P-U-Z-Z-L-E",
+    "phonetic": "/ˈpəzəl/",
+    "gloss": "难题；迷惑",
+    "tip": "the puzzle",
+    "example": "Check the puzzle in the text.",
+    "exampleZh": "核对文本中的难题。",
+    "tags": [
+      "academic"
+    ],
+    "tier": "core",
+    "pos": "n. 名词"
+  },
+  {
+    "id": 1143,
+    "word": "relative",
+    "spelling": "R-E-L-A-T-I-V-E",
+    "phonetic": "/ˈrɛlətɪv/",
+    "gloss": "亲戚；关系词",
+    "tip": "a relative …",
+    "example": "Give a relative answer.",
+    "exampleZh": "给出亲戚回答。",
+    "tags": [
+      "academic"
+    ],
+    "tier": "core",
+    "pos": "adj. 形容词"
+  },
+  {
+    "id": 1144,
+    "word": "virtually",
+    "spelling": "V-I-R-T-U-A-L-L-Y",
+    "phonetic": "/ˈvərʧuəli/",
+    "gloss": "事实上",
+    "tip": "virtually …",
+    "example": "Answer virtually and clearly.",
+    "exampleZh": "请事实上且清楚地回答。",
+    "tags": [
+      "academic"
+    ],
+    "tier": "core",
+    "pos": "adv. 副词"
+  },
+  {
+    "id": 1145,
+    "word": "invariably",
+    "spelling": "I-N-V-A-R-I-A-B-L-Y",
+    "phonetic": "/ˌɪnˈvɛriəbli/",
+    "gloss": "不变化地；恒定地",
+    "tip": "invariably …",
+    "example": "Answer invariably and clearly.",
+    "exampleZh": "请不变化地且清楚地回答。",
+    "tags": [
+      "academic"
+    ],
+    "tier": "core",
+    "pos": "adv. 副词"
+  },
+  {
+    "id": 1146,
+    "word": "hip",
+    "spelling": "H-I-P",
+    "phonetic": "/hɪp/",
+    "gloss": "臀部；蔷薇果",
+    "tip": "the hip",
+    "example": "Check the hip in the text.",
+    "exampleZh": "核对文本中的臀部。",
+    "tags": [
+      "academic"
+    ],
+    "tier": "core",
+    "pos": "n. 名词"
+  },
+  {
+    "id": 1147,
+    "word": "elbow",
+    "spelling": "E-L-B-O-W",
+    "phonetic": "/ˈɛlˌboʊ/",
+    "gloss": "手肘；弯头",
+    "tip": "the elbow",
+    "example": "Check the elbow in the text.",
+    "exampleZh": "核对文本中的手肘。",
+    "tags": [
+      "academic"
+    ],
+    "tier": "core",
+    "pos": "n. 名词"
+  },
+  {
+    "id": 1148,
+    "word": "outward",
+    "spelling": "O-U-T-W-A-R-D",
+    "phonetic": "/ˈaʊtwərd/",
+    "gloss": "向外的；表面的",
+    "tip": "a outward …",
+    "example": "Give a outward answer.",
+    "exampleZh": "给出向外的回答。",
+    "tags": [
+      "academic"
+    ],
+    "tier": "core",
+    "pos": "adj. 形容词"
+  },
+  {
+    "id": 1149,
+    "word": "signal",
+    "spelling": "S-I-G-N-A-L",
+    "phonetic": "/ˈsɪgnəl/",
+    "gloss": "信号；暗号",
+    "tip": "the signal",
+    "example": "Check the signal in the text.",
+    "exampleZh": "核对文本中的信号。",
+    "tags": [
+      "academic"
+    ],
+    "tier": "core",
+    "pos": "n. 名词"
+  },
+  {
+    "id": 1150,
+    "word": "alliance",
+    "spelling": "A-L-L-I-A-N-C-E",
+    "phonetic": "/əˈlaɪəns/",
+    "gloss": "联盟；联合",
+    "tip": "the alliance",
+    "example": "Check the alliance in the text.",
+    "exampleZh": "核对文本中的联盟。",
+    "tags": [
+      "academic"
+    ],
+    "tier": "core",
+    "pos": "n. 名词"
+  },
+  {
+    "id": 1151,
+    "word": "protection",
+    "spelling": "P-R-O-T-E-C-T-I-O-N",
+    "phonetic": "/prəˈtɛkʃən/",
+    "gloss": "保护；防卫",
+    "tip": "the protection",
+    "example": "Check the protection in the text.",
+    "exampleZh": "核对文本中的保护。",
+    "tags": [
+      "academic"
+    ],
+    "tier": "core",
+    "pos": "n. 名词"
+  },
+  {
+    "id": 1152,
+    "word": "exchange",
+    "spelling": "E-X-C-H-A-N-G-E",
+    "phonetic": "/ɪksˈʧeɪnʤ/",
+    "gloss": "交换；(电话)交换局",
+    "tip": "the exchange",
+    "example": "Check the exchange in the text.",
+    "exampleZh": "核对文本中的交换。",
+    "tags": [
+      "academic"
+    ],
+    "tier": "core",
+    "pos": "n. 名词"
+  },
+  {
+    "id": 1153,
+    "word": "flesh",
+    "spelling": "F-L-E-S-H",
+    "phonetic": "/flɛʃ/",
+    "gloss": "肉；肉体",
+    "tip": "the flesh",
+    "example": "Check the flesh in the text.",
+    "exampleZh": "核对文本中的肉。",
+    "tags": [
+      "academic"
+    ],
+    "tier": "core",
+    "pos": "n. 名词"
+  },
+  {
+    "id": 1154,
+    "word": "grand",
+    "spelling": "G-R-A-N-D",
+    "phonetic": "/grænd/",
+    "gloss": "庄重的；壮观的",
+    "tip": "a grand …",
+    "example": "Give a grand answer.",
+    "exampleZh": "给出庄重的回答。",
+    "tags": [
+      "academic"
+    ],
+    "tier": "core",
+    "pos": "adj. 形容词"
+  },
+  {
+    "id": 1155,
+    "word": "pregnant",
+    "spelling": "P-R-E-G-N-A-N-T",
+    "phonetic": "/ˈprɛgnənt/",
+    "gloss": "怀孕的；充满的",
+    "tip": "a pregnant …",
+    "example": "Give a pregnant answer.",
+    "exampleZh": "给出怀孕的回答。",
+    "tags": [
+      "academic"
+    ],
+    "tier": "core",
+    "pos": "adj. 形容词"
+  },
+  {
+    "id": 1156,
+    "word": "mood",
+    "spelling": "M-O-O-D",
+    "phonetic": "/mud/",
+    "gloss": "心情；气氛",
+    "tip": "the mood",
+    "example": "Check the mood in the text.",
+    "exampleZh": "核对文本中的心情。",
+    "tags": [
+      "academic",
+      "campus"
+    ],
+    "tier": "core",
+    "pos": "n. 名词"
+  },
+  {
+    "id": 1157,
+    "word": "influence",
+    "spelling": "I-N-F-L-U-E-N-C-E",
+    "phonetic": "/ˈɪnfluəns/",
+    "gloss": "影响力；权力",
+    "tip": "the influence",
+    "example": "Check the influence in the text.",
+    "exampleZh": "核对文本中的影响力。",
+    "tags": [
+      "academic"
+    ],
+    "tier": "core",
+    "pos": "n. 名词"
+  },
+  {
+    "id": 1158,
+    "word": "recruit",
+    "spelling": "R-E-C-R-U-I-T",
+    "phonetic": "/rɪˈkrut/",
+    "gloss": "新兵；新手",
+    "tip": "the recruit",
+    "example": "Check the recruit in the text.",
+    "exampleZh": "核对文本中的新兵。",
+    "tags": [
+      "academic"
+    ],
+    "tier": "core",
+    "pos": "n. 名词"
+  },
+  {
+    "id": 1159,
+    "word": "alphabet",
+    "spelling": "A-L-P-H-A-B-E-T",
+    "phonetic": "/ˈælfəˌbɛt/",
+    "gloss": "字母；[计] 字母表",
+    "tip": "the alphabet",
+    "example": "Check the alphabet in the text.",
+    "exampleZh": "核对文本中的字母。",
+    "tags": [
+      "academic"
+    ],
+    "tier": "core",
+    "pos": "n. 名词"
+  },
+  {
+    "id": 1160,
+    "word": "spell",
+    "spelling": "S-P-E-L-L",
+    "phonetic": "/spɛl/",
+    "gloss": "符咒；魅力",
+    "tip": "the spell",
+    "example": "Check the spell in the text.",
+    "exampleZh": "核对文本中的符咒。",
+    "tags": [
+      "academic"
+    ],
+    "tier": "core",
+    "pos": "n. 名词"
+  },
+  {
+    "id": 1161,
+    "word": "condition",
+    "spelling": "C-O-N-D-I-T-I-O-N",
+    "phonetic": "/kənˈdɪʃən/",
+    "gloss": "情况；条件",
+    "tip": "the condition",
+    "example": "Check the condition in the text.",
+    "exampleZh": "核对文本中的情况。",
+    "tags": [
+      "academic"
+    ],
+    "tier": "core",
+    "pos": "n. 名词"
+  },
+  {
+    "id": 1162,
+    "word": "limit",
+    "spelling": "L-I-M-I-T",
+    "phonetic": "/ˈlɪmət/",
+    "gloss": "界限；边界",
+    "tip": "the limit",
+    "example": "Check the limit in the text.",
+    "exampleZh": "核对文本中的界限。",
+    "tags": [
+      "academic",
+      "campus"
+    ],
+    "tier": "core",
+    "pos": "n. 名词"
+  },
+  {
+    "id": 1163,
+    "word": "spite",
+    "spelling": "S-P-I-T-E",
+    "phonetic": "/spaɪt/",
+    "gloss": "恶意；怨恨",
+    "tip": "the spite",
+    "example": "Check the spite in the text.",
+    "exampleZh": "核对文本中的恶意。",
+    "tags": [
+      "academic"
+    ],
+    "tier": "core",
+    "pos": "n. 名词"
+  },
+  {
+    "id": 1164,
+    "word": "significance",
+    "spelling": "S-I-G-N-I-F-I-C-A-N-C-E",
+    "phonetic": "/sɪgˈnɪfɪkəns/",
+    "gloss": "重要性；意义",
+    "tip": "the significance",
+    "example": "Check the significance in the text.",
+    "exampleZh": "核对文本中的重要性。",
+    "tags": [
+      "academic"
+    ],
+    "tier": "core",
+    "pos": "n. 名词"
+  },
+  {
+    "id": 1165,
+    "word": "efficiency",
+    "spelling": "E-F-F-I-C-I-E-N-C-Y",
+    "phonetic": "/ɪˈfɪʃənsi/",
+    "gloss": "效率；效能",
+    "tip": "the efficiency",
+    "example": "Check the efficiency in the text.",
+    "exampleZh": "核对文本中的效率。",
+    "tags": [
+      "academic",
+      "campus"
+    ],
+    "tier": "core",
+    "pos": "n. 名词"
+  },
+  {
+    "id": 1166,
+    "word": "represent",
+    "spelling": "R-E-P-R-E-S-E-N-T",
+    "phonetic": "/ˌrɛprɪˈzɛnt/",
+    "gloss": "表现；表示",
+    "tip": "represent …",
+    "example": "Please represent the key points.",
+    "exampleZh": "请表现要点。",
+    "tags": [
+      "academic",
+      "campus"
+    ],
+    "tier": "core",
+    "pos": "v. 动词"
+  },
+  {
+    "id": 1167,
+    "word": "single",
+    "spelling": "S-I-N-G-L-E",
+    "phonetic": "/ˈsɪŋgəl/",
+    "gloss": "单身的；单程的",
+    "tip": "a single …",
+    "example": "Give a single answer.",
+    "exampleZh": "给出单身的回答。",
+    "tags": [
+      "academic",
+      "campus"
+    ],
+    "tier": "core",
+    "pos": "adj. 形容词"
+  },
+  {
+    "id": 1168,
+    "word": "debt",
+    "spelling": "D-E-B-T",
+    "phonetic": "/dɛt/",
+    "gloss": "债务；罪过",
+    "tip": "the debt",
+    "example": "Check the debt in the text.",
+    "exampleZh": "核对文本中的债务。",
+    "tags": [
+      "academic"
+    ],
+    "tier": "core",
+    "pos": "n. 名词"
+  },
+  {
+    "id": 1169,
+    "word": "truly",
+    "spelling": "T-R-U-L-Y",
+    "phonetic": "/ˈtruli/",
+    "gloss": "真实地；不假",
+    "tip": "truly …",
+    "example": "Answer truly and clearly.",
+    "exampleZh": "请真实地且清楚地回答。",
+    "tags": [
+      "academic"
+    ],
+    "tier": "core",
+    "pos": "adv. 副词"
+  },
+  {
+    "id": 1170,
+    "word": "loan",
+    "spelling": "L-O-A-N",
+    "phonetic": "/loʊn/",
+    "gloss": "贷款；借出",
+    "tip": "the loan",
+    "example": "Check the loan in the text.",
+    "exampleZh": "核对文本中的贷款。",
+    "tags": [
+      "academic",
+      "campus"
+    ],
+    "tier": "core",
+    "pos": "n. 名词"
+  },
+  {
+    "id": 1171,
+    "word": "insult",
+    "spelling": "I-N-S-U-L-T",
+    "phonetic": "/ˌɪnˈsəlt/",
+    "gloss": "侮辱；无礼",
+    "tip": "the insult",
+    "example": "Check the insult in the text.",
+    "exampleZh": "核对文本中的侮辱。",
+    "tags": [
+      "academic"
+    ],
+    "tier": "core",
+    "pos": "n. 名词"
+  },
+  {
+    "id": 1172,
+    "word": "criticism",
+    "spelling": "C-R-I-T-I-C-I-S-M",
+    "phonetic": "/ˈkrɪtɪˌsɪzəm/",
+    "gloss": "批评；评论",
+    "tip": "the criticism",
+    "example": "Check the criticism in the text.",
+    "exampleZh": "核对文本中的批评。",
+    "tags": [
+      "academic"
+    ],
+    "tier": "core",
+    "pos": "n. 名词"
+  },
+  {
+    "id": 1173,
+    "word": "unexpected",
+    "spelling": "U-N-E-X-P-E-C-T-E-D",
+    "phonetic": "/ˌənɪkˈspɛktɪd/",
+    "gloss": "料想不到的；突然的",
+    "tip": "a unexpected …",
+    "example": "Give a unexpected answer.",
+    "exampleZh": "给出料想不到的回答。",
+    "tags": [
+      "academic"
+    ],
+    "tier": "core",
+    "pos": "adj. 形容词"
+  },
+  {
+    "id": 1174,
+    "word": "enthusiasm",
+    "spelling": "E-N-T-H-U-S-I-A-S-M",
+    "phonetic": "/ɪnˈθuziˌæzəm/",
+    "gloss": "巨大的热情；热心",
+    "tip": "the enthusiasm",
+    "example": "Check the enthusiasm in the text.",
+    "exampleZh": "核对文本中的巨大的热情。",
+    "tags": [
+      "academic"
+    ],
+    "tier": "core",
+    "pos": "n. 名词"
+  },
+  {
+    "id": 1175,
+    "word": "competition",
+    "spelling": "C-O-M-P-E-T-I-T-I-O-N",
+    "phonetic": "/ˌkɑmpəˈtɪʃən/",
+    "gloss": "竞争；竞赛",
+    "tip": "the competition",
+    "example": "Check the competition in the text.",
+    "exampleZh": "核对文本中的竞争。",
+    "tags": [
+      "academic"
+    ],
+    "tier": "core",
+    "pos": "n. 名词"
+  },
+  {
+    "id": 1176,
+    "word": "fame",
+    "spelling": "F-A-M-E",
+    "phonetic": "/feɪm/",
+    "gloss": "名望；名声",
+    "tip": "the fame",
+    "example": "Check the fame in the text.",
+    "exampleZh": "核对文本中的名望。",
+    "tags": [
+      "academic"
+    ],
+    "tier": "core",
+    "pos": "n. 名词"
+  },
+  {
+    "id": 1177,
+    "word": "paw",
+    "spelling": "P-A-W",
+    "phonetic": "/pɔ/",
+    "gloss": "爪；以蹄扒地",
+    "tip": "the paw",
+    "example": "Check the paw in the text.",
+    "exampleZh": "核对文本中的爪。",
+    "tags": [
+      "academic"
+    ],
+    "tier": "core",
+    "pos": "n. 名词"
+  },
+  {
+    "id": 1178,
+    "word": "bake",
+    "spelling": "B-A-K-E",
+    "phonetic": "/beɪk/",
+    "gloss": "烘焙；烤",
+    "tip": "bake …",
+    "example": "Please bake the key points.",
+    "exampleZh": "请烘焙要点。",
+    "tags": [
+      "academic"
+    ],
+    "tier": "core",
+    "pos": "v. 动词"
+  },
+  {
+    "id": 1179,
+    "word": "patient",
+    "spelling": "P-A-T-I-E-N-T",
+    "phonetic": "/ˈpeɪʃənt/",
+    "gloss": "病人；承受者",
+    "tip": "the patient",
+    "example": "Check the patient in the text.",
+    "exampleZh": "核对文本中的病人。",
+    "tags": [
+      "academic"
+    ],
+    "tier": "core",
+    "pos": "n. 名词"
+  },
+  {
+    "id": 1180,
+    "word": "drink",
+    "spelling": "D-R-I-N-K",
+    "phonetic": "/drɪŋk/",
+    "gloss": "饮料；酒",
+    "tip": "the drink",
+    "example": "Check the drink in the text.",
+    "exampleZh": "核对文本中的饮料。",
+    "tags": [
+      "academic"
+    ],
+    "tier": "core",
+    "pos": "n. 名词"
+  },
+  {
+    "id": 1181,
+    "word": "criminal",
+    "spelling": "C-R-I-M-I-N-A-L",
+    "phonetic": "/ˈkrɪmənəl/",
+    "gloss": "罪犯；犯人",
+    "tip": "the criminal",
+    "example": "Check the criminal in the text.",
+    "exampleZh": "核对文本中的罪犯。",
+    "tags": [
+      "academic"
+    ],
+    "tier": "core",
+    "pos": "n. 名词"
+  },
+  {
+    "id": 1182,
+    "word": "substance",
+    "spelling": "S-U-B-S-T-A-N-C-E",
+    "phonetic": "/ˈsəbstəns/",
+    "gloss": "物质；实质",
+    "tip": "the substance",
+    "example": "Check the substance in the text.",
+    "exampleZh": "核对文本中的物质。",
+    "tags": [
+      "academic"
+    ],
+    "tier": "core",
+    "pos": "n. 名词"
+  },
+  {
+    "id": 1183,
+    "word": "loose",
+    "spelling": "L-O-O-S-E",
+    "phonetic": "/lus/",
+    "gloss": "发射；放任",
+    "tip": "the loose",
+    "example": "Check the loose in the text.",
+    "exampleZh": "核对文本中的发射。",
+    "tags": [
+      "academic"
+    ],
+    "tier": "core",
+    "pos": "n. 名词"
+  },
+  {
+    "id": 1184,
+    "word": "product",
+    "spelling": "P-R-O-D-U-C-T",
+    "phonetic": "/ˈprɑdəkt/",
+    "gloss": "产品；结果",
+    "tip": "the product",
+    "example": "Check the product in the text.",
+    "exampleZh": "核对文本中的产品。",
+    "tags": [
+      "academic"
+    ],
+    "tier": "core",
+    "pos": "n. 名词"
+  },
+  {
+    "id": 1185,
+    "word": "unite",
+    "spelling": "U-N-I-T-E",
+    "phonetic": "/ˈjuˌnaɪt/",
+    "gloss": "联合；接合",
+    "tip": "unite …",
+    "example": "Please unite the key points.",
+    "exampleZh": "请联合要点。",
+    "tags": [
+      "academic",
+      "campus"
+    ],
+    "tier": "core",
+    "pos": "v. 动词"
+  },
+  {
+    "id": 1186,
+    "word": "comparison",
+    "spelling": "C-O-M-P-A-R-I-S-O-N",
+    "phonetic": "/kəmˈpɛrəsən/",
+    "gloss": "比较；对照",
+    "tip": "the comparison",
+    "example": "Check the comparison in the text.",
+    "exampleZh": "核对文本中的比较。",
+    "tags": [
+      "academic",
+      "campus"
+    ],
+    "tier": "core",
+    "pos": "n. 名词"
+  },
+  {
+    "id": 1187,
+    "word": "regard",
+    "spelling": "R-E-G-A-R-D",
+    "phonetic": "/rɪˈgɑrd/",
+    "gloss": "关心；注意",
+    "tip": "the regard",
+    "example": "Check the regard in the text.",
+    "exampleZh": "核对文本中的关心。",
+    "tags": [
+      "academic"
+    ],
+    "tier": "core",
+    "pos": "n. 名词"
+  },
+  {
+    "id": 1188,
+    "word": "universal",
+    "spelling": "U-N-I-V-E-R-S-A-L",
+    "phonetic": "/ˌjunəˈvərsəl/",
+    "gloss": "全世界的；普遍的",
+    "tip": "a universal …",
+    "example": "Give a universal answer.",
+    "exampleZh": "给出全世界的回答。",
+    "tags": [
+      "academic"
+    ],
+    "tier": "core",
+    "pos": "adj. 形容词"
+  },
+  {
+    "id": 1189,
+    "word": "support",
+    "spelling": "S-U-P-P-O-R-T",
+    "phonetic": "/səˈpɔrt/",
+    "gloss": "支持；支撑",
+    "tip": "the support",
+    "example": "Check the support in the text.",
+    "exampleZh": "核对文本中的支持。",
+    "tags": [
+      "academic"
+    ],
+    "tier": "core",
+    "pos": "n. 名词"
+  },
+  {
+    "id": 1190,
+    "word": "writer",
+    "spelling": "W-R-I-T-E-R",
+    "phonetic": "/ˈraɪtər/",
+    "gloss": "作家；撰稿者",
+    "tip": "the writer",
+    "example": "Check the writer in the text.",
+    "exampleZh": "核对文本中的作家。",
+    "tags": [
+      "academic"
+    ],
+    "tier": "core",
+    "pos": "n. 名词"
+  },
+  {
+    "id": 1191,
+    "word": "characteristic",
+    "spelling": "C-H-A-R-A-C-T-E-R-I-S-T-I-C",
+    "phonetic": "/ˌkɛrɪktərˈɪstɪk/",
+    "gloss": "特性；特征",
+    "tip": "the characteristic",
+    "example": "Check the characteristic in the text.",
+    "exampleZh": "核对文本中的特性。",
+    "tags": [
+      "academic",
+      "campus"
+    ],
+    "tier": "core",
+    "pos": "n. 名词"
+  },
+  {
+    "id": 1192,
+    "word": "pulse",
+    "spelling": "P-U-L-S-E",
+    "phonetic": "/pəls/",
+    "gloss": "脉冲；脉搏",
+    "tip": "the pulse",
+    "example": "Check the pulse in the text.",
+    "exampleZh": "核对文本中的脉冲。",
+    "tags": [
+      "academic"
+    ],
+    "tier": "core",
+    "pos": "n. 名词"
+  },
+  {
+    "id": 1193,
+    "word": "billion",
+    "spelling": "B-I-L-L-I-O-N",
+    "phonetic": "/ˈbɪljən/",
+    "gloss": "十亿；十亿个",
+    "tip": "the billion",
+    "example": "Check the billion in the text.",
+    "exampleZh": "核对文本中的十亿。",
+    "tags": [
+      "academic",
+      "campus"
+    ],
+    "tier": "core",
+    "pos": "n. 名词"
+  },
+  {
+    "id": 1194,
+    "word": "click",
+    "spelling": "C-L-I-C-K",
+    "phonetic": "/klɪk/",
+    "gloss": "咔哒声；啪嗒声",
+    "tip": "the click",
+    "example": "Check the click in the text.",
+    "exampleZh": "核对文本中的咔哒声。",
+    "tags": [
+      "academic",
+      "campus"
+    ],
+    "tier": "core",
+    "pos": "n. 名词"
+  },
+  {
+    "id": 1195,
+    "word": "chief",
+    "spelling": "C-H-I-E-F",
+    "phonetic": "/ʧif/",
+    "gloss": "领袖；酋长",
+    "tip": "the chief",
+    "example": "Check the chief in the text.",
+    "exampleZh": "核对文本中的领袖。",
+    "tags": [
+      "academic",
+      "campus"
+    ],
+    "tier": "core",
+    "pos": "n. 名词"
+  },
+  {
+    "id": 1196,
+    "word": "executive",
+    "spelling": "E-X-E-C-U-T-I-V-E",
+    "phonetic": "/ɪgˈzɛkjətɪv/",
+    "gloss": "执行部门；执行委员会",
+    "tip": "a executive …",
+    "example": "Give a executive answer.",
+    "exampleZh": "给出执行部门回答。",
+    "tags": [
+      "academic",
+      "campus"
+    ],
+    "tier": "core",
+    "pos": "adj. 形容词"
+  },
+  {
+    "id": 1197,
+    "word": "balance",
+    "spelling": "B-A-L-A-N-C-E",
+    "phonetic": "/ˈbæləns/",
+    "gloss": "平衡；差额",
+    "tip": "the balance",
+    "example": "Check the balance in the text.",
+    "exampleZh": "核对文本中的平衡。",
+    "tags": [
+      "academic",
+      "campus"
+    ],
+    "tier": "core",
+    "pos": "n. 名词"
+  },
+  {
+    "id": 1198,
+    "word": "staff",
+    "spelling": "S-T-A-F-F",
+    "phonetic": "/stæf/",
+    "gloss": "员工；职员",
+    "tip": "the staff",
+    "example": "Check the staff in the text.",
+    "exampleZh": "核对文本中的员工。",
+    "tags": [
+      "academic"
+    ],
+    "tier": "core",
+    "pos": "n. 名词"
+  },
+  {
+    "id": 1199,
+    "word": "cheerful",
+    "spelling": "C-H-E-E-R-F-U-L",
+    "phonetic": "/ˈʧɪrfəl/",
+    "gloss": "快活的；高兴的",
+    "tip": "a cheerful …",
+    "example": "Give a cheerful answer.",
+    "exampleZh": "给出快活的回答。",
+    "tags": [
+      "academic"
+    ],
+    "tier": "core",
+    "pos": "adj. 形容词"
+  },
+  {
+    "id": 1200,
+    "word": "concentration",
+    "spelling": "C-O-N-C-E-N-T-R-A-T-I-O-N",
+    "phonetic": "/ˌkɑnsənˈtreɪʃən/",
+    "gloss": "集中；专心",
+    "tip": "the concentration",
+    "example": "Check the concentration in the text.",
+    "exampleZh": "核对文本中的集中。",
+    "tags": [
+      "academic"
+    ],
+    "tier": "core",
+    "pos": "n. 名词"
+  },
+  {
+    "id": 1201,
+    "word": "pad",
+    "spelling": "P-A-D",
+    "phonetic": "/pæd/",
+    "gloss": "填补；衬垫",
+    "tip": "the pad",
+    "example": "Check the pad in the text.",
+    "exampleZh": "核对文本中的填补。",
+    "tags": [
+      "academic"
+    ],
+    "tier": "core",
+    "pos": "n. 名词"
+  },
+  {
+    "id": 1202,
+    "word": "philosopher",
+    "spelling": "P-H-I-L-O-S-O-P-H-E-R",
+    "phonetic": "/fəˈlɑsəfər/",
+    "gloss": "哲学家；哲人",
+    "tip": "the philosopher",
+    "example": "Check the philosopher in the text.",
+    "exampleZh": "核对文本中的哲学家。",
+    "tags": [
+      "academic",
+      "campus"
+    ],
+    "tier": "core",
+    "pos": "n. 名词"
+  },
+  {
+    "id": 1203,
+    "word": "describe",
+    "spelling": "D-E-S-C-R-I-B-E",
+    "phonetic": "/dɪˈskraɪb/",
+    "gloss": "描述；描绘",
+    "tip": "describe …",
+    "example": "Please describe the key points.",
+    "exampleZh": "请描述要点。",
+    "tags": [
+      "academic"
+    ],
+    "tier": "core",
+    "pos": "v. 动词"
+  },
+  {
+    "id": 1204,
+    "word": "emotional",
+    "spelling": "E-M-O-T-I-O-N-A-L",
+    "phonetic": "/ˈiˌmoʊʃənəl/",
+    "gloss": "情绪的；情感的",
+    "tip": "a emotional …",
+    "example": "Give a emotional answer.",
+    "exampleZh": "给出情绪的回答。",
+    "tags": [
+      "academic",
+      "campus"
+    ],
+    "tier": "core",
+    "pos": "adj. 形容词"
+  },
+  {
+    "id": 1205,
+    "word": "deliberate",
+    "spelling": "D-E-L-I-B-E-R-A-T-E",
+    "phonetic": "/dɪˈlɪbərˌeɪt/",
+    "gloss": "深思熟虑的；故意的",
+    "tip": "deliberate …",
+    "example": "Please deliberate the key points.",
+    "exampleZh": "请深思熟虑要点。",
+    "tags": [
+      "academic"
+    ],
+    "tier": "core",
+    "pos": "v. 动词"
+  },
+  {
+    "id": 1206,
+    "word": "tune",
+    "spelling": "T-U-N-E",
+    "phonetic": "/tun/",
+    "gloss": "歌曲；主旋律",
+    "tip": "the tune",
+    "example": "Check the tune in the text.",
+    "exampleZh": "核对文本中的歌曲。",
+    "tags": [
+      "academic"
+    ],
+    "tier": "core",
+    "pos": "n. 名词"
+  },
+  {
+    "id": 1207,
+    "word": "blend",
+    "spelling": "B-L-E-N-D",
+    "phonetic": "/blɛnd/",
+    "gloss": "混合",
+    "tip": "blend …",
+    "example": "Please blend the key points.",
+    "exampleZh": "请混合要点。",
+    "tags": [
+      "academic"
+    ],
+    "tier": "core",
+    "pos": "v. 动词"
+  },
+  {
+    "id": 1208,
+    "word": "divide",
+    "spelling": "D-I-V-I-D-E",
+    "phonetic": "/dɪˈvaɪd/",
+    "gloss": "分开；分配",
+    "tip": "divide …",
+    "example": "Please divide the key points.",
+    "exampleZh": "请分开要点。",
+    "tags": [
+      "academic"
+    ],
+    "tier": "core",
+    "pos": "v. 动词"
+  },
+  {
+    "id": 1209,
+    "word": "creative",
+    "spelling": "C-R-E-A-T-I-V-E",
+    "phonetic": "/kriˈeɪtɪv/",
+    "gloss": "有创造力的；创作的",
+    "tip": "a creative …",
+    "example": "Give a creative answer.",
+    "exampleZh": "给出有创造力的回答。",
+    "tags": [
+      "academic"
+    ],
+    "tier": "core",
+    "pos": "adj. 形容词"
+  },
+  {
+    "id": 1210,
+    "word": "logical",
+    "spelling": "L-O-G-I-C-A-L",
+    "phonetic": "/ˈlɑʤɪkəl/",
+    "gloss": "合乎逻辑的；合理的",
+    "tip": "a logical …",
+    "example": "Give a logical answer.",
+    "exampleZh": "给出合乎逻辑的回答。",
+    "tags": [
+      "academic",
+      "campus"
+    ],
+    "tier": "core",
+    "pos": "adj. 形容词"
+  },
+  {
+    "id": 1211,
+    "word": "tendency",
+    "spelling": "T-E-N-D-E-N-C-Y",
+    "phonetic": "/ˈtɛndənsi/",
+    "gloss": "趋向；倾向",
+    "tip": "the tendency",
+    "example": "Check the tendency in the text.",
+    "exampleZh": "核对文本中的趋向。",
+    "tags": [
+      "academic"
+    ],
+    "tier": "core",
+    "pos": "n. 名词"
+  },
+  {
+    "id": 1212,
+    "word": "tend",
+    "spelling": "T-E-N-D",
+    "phonetic": "/tɛnd/",
+    "gloss": "走向；有某种的倾向",
+    "tip": "tend …",
+    "example": "Please tend the key points.",
+    "exampleZh": "请走向要点。",
+    "tags": [
+      "academic",
+      "campus"
+    ],
+    "tier": "core",
+    "pos": "v. 动词"
+  },
+  {
+    "id": 1213,
+    "word": "crowd",
+    "spelling": "C-R-O-W-D",
+    "phonetic": "/kraʊd/",
+    "gloss": "群众；一伙人",
+    "tip": "the crowd",
+    "example": "Check the crowd in the text.",
+    "exampleZh": "核对文本中的群众。",
+    "tags": [
+      "academic"
+    ],
+    "tier": "core",
+    "pos": "n. 名词"
+  },
+  {
+    "id": 1214,
+    "word": "atmosphere",
+    "spelling": "A-T-M-O-S-P-H-E-R-E",
+    "phonetic": "/ˈætməsˌfɪr/",
+    "gloss": "大气；空气",
+    "tip": "the atmosphere",
+    "example": "Check the atmosphere in the text.",
+    "exampleZh": "核对文本中的大气。",
+    "tags": [
+      "academic",
+      "campus"
+    ],
+    "tier": "core",
+    "pos": "n. 名词"
+  },
+  {
+    "id": 1215,
+    "word": "concern",
+    "spelling": "C-O-N-C-E-R-N",
+    "phonetic": "/kənˈsərn/",
+    "gloss": "关心；忧虑",
+    "tip": "the concern",
+    "example": "Check the concern in the text.",
+    "exampleZh": "核对文本中的关心。",
+    "tags": [
+      "academic",
+      "campus"
+    ],
+    "tier": "core",
+    "pos": "n. 名词"
+  },
+  {
+    "id": 1216,
+    "word": "official",
+    "spelling": "O-F-F-I-C-I-A-L",
+    "phonetic": "/əˈfɪʃəl/",
+    "gloss": "官员；公务员",
+    "tip": "the official",
+    "example": "Check the official in the text.",
+    "exampleZh": "核对文本中的官员。",
+    "tags": [
+      "academic"
+    ],
+    "tier": "core",
+    "pos": "n. 名词"
+  },
+  {
+    "id": 1217,
+    "word": "greenhouse",
+    "spelling": "G-R-E-E-N-H-O-U-S-E",
+    "phonetic": "/ˈgrinˌhaʊs/",
+    "gloss": "温室",
+    "tip": "the greenhouse",
+    "example": "Check the greenhouse in the text.",
+    "exampleZh": "核对文本中的温室。",
+    "tags": [
+      "academic",
+      "campus"
+    ],
+    "tier": "core",
+    "pos": "n. 名词"
+  },
+  {
+    "id": 1218,
+    "word": "personnel",
+    "spelling": "P-E-R-S-O-N-N-E-L",
+    "phonetic": "/ˌpərsəˈnɛl/",
+    "gloss": "人员；人事部门",
+    "tip": "the personnel",
+    "example": "Check the personnel in the text.",
+    "exampleZh": "核对文本中的人员。",
+    "tags": [
+      "academic",
+      "campus"
+    ],
+    "tier": "core",
+    "pos": "n. 名词"
+  },
+  {
+    "id": 1219,
+    "word": "attack",
+    "spelling": "A-T-T-A-C-K",
+    "phonetic": "/əˈtæk/",
+    "gloss": "攻击；抨击",
+    "tip": "the attack",
+    "example": "Check the attack in the text.",
+    "exampleZh": "核对文本中的攻击。",
+    "tags": [
+      "academic"
+    ],
+    "tier": "core",
+    "pos": "n. 名词"
+  },
+  {
+    "id": 1220,
+    "word": "datum",
+    "spelling": "D-A-T-U-M",
+    "phonetic": "/ˈdætəm/",
+    "gloss": "论据；材料",
+    "tip": "the datum",
+    "example": "Check the datum in the text.",
+    "exampleZh": "核对文本中的论据。",
+    "tags": [
+      "academic",
+      "campus"
+    ],
+    "tier": "core",
+    "pos": "n. 名词"
+  },
+  {
+    "id": 1221,
+    "word": "agency",
+    "spelling": "A-G-E-N-C-Y",
+    "phonetic": "/ˈeɪʤənsi/",
+    "gloss": "代理机构；经销商",
+    "tip": "the agency",
+    "example": "Check the agency in the text.",
+    "exampleZh": "核对文本中的代理机构。",
+    "tags": [
+      "academic"
+    ],
+    "tier": "core",
+    "pos": "n. 名词"
+  },
+  {
+    "id": 1222,
+    "word": "republican",
+    "spelling": "R-E-P-U-B-L-I-C-A-N",
+    "phonetic": "/rɪˈpəblɪkən/",
+    "gloss": "共和主义者；共和党员",
+    "tip": "the republican",
+    "example": "Check the republican in the text.",
+    "exampleZh": "核对文本中的共和主义者。",
+    "tags": [
+      "academic"
+    ],
+    "tier": "core",
+    "pos": "n. 名词"
+  },
+  {
+    "id": 1223,
+    "word": "pack",
+    "spelling": "P-A-C-K",
+    "phonetic": "/pæk/",
+    "gloss": "包裹；一伙",
+    "tip": "the pack",
+    "example": "Check the pack in the text.",
+    "exampleZh": "核对文本中的包裹。",
+    "tags": [
+      "academic"
+    ],
+    "tier": "core",
+    "pos": "n. 名词"
+  },
+  {
+    "id": 1224,
+    "word": "male",
+    "spelling": "M-A-L-E",
+    "phonetic": "/meɪl/",
+    "gloss": "男人；雄性动物",
+    "tip": "the male",
+    "example": "Check the male in the text.",
+    "exampleZh": "核对文本中的男人。",
+    "tags": [
+      "academic",
+      "campus"
+    ],
+    "tier": "core",
+    "pos": "n. 名词"
+  },
+  {
+    "id": 1225,
+    "word": "candidate",
+    "spelling": "C-A-N-D-I-D-A-T-E",
+    "phonetic": "/ˈkænədɪt/",
+    "gloss": "候选人；投考者",
+    "tip": "candidate …",
+    "example": "Please candidate the key points.",
+    "exampleZh": "请候选人要点。",
+    "tags": [
+      "academic",
+      "campus"
+    ],
+    "tier": "core",
+    "pos": "v. 动词"
+  },
+  {
+    "id": 1226,
+    "word": "politics",
+    "spelling": "P-O-L-I-T-I-C-S",
+    "phonetic": "/ˈpɑləˌtɪks/",
+    "gloss": "政治；政治学",
+    "tip": "the politics",
+    "example": "Check the politics in the text.",
+    "exampleZh": "核对文本中的政治。",
+    "tags": [
+      "academic",
+      "campus"
+    ],
+    "tier": "core",
+    "pos": "n. 名词"
+  },
+  {
+    "id": 1227,
+    "word": "response",
+    "spelling": "R-E-S-P-O-N-S-E",
+    "phonetic": "/rɪˈspɑns/",
+    "gloss": "反应；回答",
+    "tip": "the response",
+    "example": "Check the response in the text.",
+    "exampleZh": "核对文本中的反应。",
+    "tags": [
+      "academic"
+    ],
+    "tier": "core",
+    "pos": "n. 名词"
+  },
+  {
+    "id": 1228,
+    "word": "reduction",
+    "spelling": "R-E-D-U-C-T-I-O-N",
+    "phonetic": "/rɪˈdəkʃən/",
+    "gloss": "减少；缩影",
+    "tip": "the reduction",
+    "example": "Check the reduction in the text.",
+    "exampleZh": "核对文本中的减少。",
+    "tags": [
+      "academic"
+    ],
+    "tier": "core",
+    "pos": "n. 名词"
+  },
+  {
+    "id": 1229,
+    "word": "fuel",
+    "spelling": "F-U-E-L",
+    "phonetic": "/fjuəl/",
+    "gloss": "燃料；木炭",
+    "tip": "the fuel",
+    "example": "Check the fuel in the text.",
+    "exampleZh": "核对文本中的燃料。",
+    "tags": [
+      "academic",
+      "campus"
+    ],
+    "tier": "core",
+    "pos": "n. 名词"
+  },
+  {
+    "id": 1230,
+    "word": "replace",
+    "spelling": "R-E-P-L-A-C-E",
+    "phonetic": "/ˌriˈpleɪs/",
+    "gloss": "代替；替换",
+    "tip": "replace …",
+    "example": "Please replace the key points.",
+    "exampleZh": "请代替要点。",
+    "tags": [
+      "academic"
+    ],
+    "tier": "core",
+    "pos": "v. 动词"
+  },
+  {
+    "id": 1231,
+    "word": "electrical",
+    "spelling": "E-L-E-C-T-R-I-C-A-L",
+    "phonetic": "/ɪˈlɛktrɪkəl/",
+    "gloss": "电的；有关电的",
+    "tip": "a electrical …",
+    "example": "Give a electrical answer.",
+    "exampleZh": "给出电的回答。",
+    "tags": [
+      "academic"
+    ],
+    "tier": "core",
+    "pos": "adj. 形容词"
+  },
+  {
+    "id": 1232,
+    "word": "border",
+    "spelling": "B-O-R-D-E-R",
+    "phonetic": "/ˈbɔrdər/",
+    "gloss": "边缘；边境",
+    "tip": "the border",
+    "example": "Check the border in the text.",
+    "exampleZh": "核对文本中的边缘。",
+    "tags": [
+      "academic"
+    ],
+    "tier": "core",
+    "pos": "n. 名词"
+  },
+  {
+    "id": 1233,
+    "word": "span",
+    "spelling": "S-P-A-N",
+    "phonetic": "/spæn/",
+    "gloss": "指距；全长",
+    "tip": "the span",
+    "example": "Check the span in the text.",
+    "exampleZh": "核对文本中的指距。",
+    "tags": [
+      "academic"
+    ],
+    "tier": "core",
+    "pos": "n. 名词"
+  },
+  {
+    "id": 1234,
+    "word": "illegal",
+    "spelling": "I-L-L-E-G-A-L",
+    "phonetic": "/ˌɪˈligəl/",
+    "gloss": "违法的；不合规定的",
+    "tip": "a illegal …",
+    "example": "Give a illegal answer.",
+    "exampleZh": "给出违法的回答。",
+    "tags": [
+      "academic"
+    ],
+    "tier": "core",
+    "pos": "adj. 形容词"
+  },
+  {
+    "id": 1235,
+    "word": "cross",
+    "spelling": "C-R-O-S-S",
+    "phonetic": "/krɔs/",
+    "gloss": "十字架；十字架形物件",
+    "tip": "the cross",
+    "example": "Check the cross in the text.",
+    "exampleZh": "核对文本中的十字架。",
+    "tags": [
+      "academic"
+    ],
+    "tier": "core",
+    "pos": "n. 名词"
+  },
+  {
+    "id": 1236,
+    "word": "crime",
+    "spelling": "C-R-I-M-E",
+    "phonetic": "/kraɪm/",
+    "gloss": "犯罪；罪行",
+    "tip": "the crime",
+    "example": "Check the crime in the text.",
+    "exampleZh": "核对文本中的犯罪。",
+    "tags": [
+      "academic"
+    ],
+    "tier": "core",
+    "pos": "n. 名词"
+  },
+  {
+    "id": 1237,
+    "word": "interfere",
+    "spelling": "I-N-T-E-R-F-E-R-E",
+    "phonetic": "/ˌɪnərˈfɪr/",
+    "gloss": "妨碍；冲突",
+    "tip": "interfere …",
+    "example": "Please interfere the key points.",
+    "exampleZh": "请妨碍要点。",
+    "tags": [
+      "academic"
+    ],
+    "tier": "core",
+    "pos": "v. 动词"
+  },
+  {
+    "id": 1238,
+    "word": "apply",
+    "spelling": "A-P-P-L-Y",
+    "phonetic": "/əˈplaɪ/",
+    "gloss": "涂；应用",
+    "tip": "apply …",
+    "example": "Answer apply and clearly.",
+    "exampleZh": "请涂且清楚地回答。",
+    "tags": [
+      "academic",
+      "campus"
+    ],
+    "tier": "core",
+    "pos": "adv. 副词"
+  },
+  {
+    "id": 1239,
+    "word": "unlike",
+    "spelling": "U-N-L-I-K-E",
+    "phonetic": "/ənˈlaɪk/",
+    "gloss": "不像的；不同的",
+    "tip": "a unlike …",
+    "example": "Give a unlike answer.",
+    "exampleZh": "给出不像的回答。",
+    "tags": [
+      "academic",
+      "campus"
+    ],
+    "tier": "core",
+    "pos": "adj. 形容词"
+  },
+  {
+    "id": 1240,
+    "word": "kingdom",
+    "spelling": "K-I-N-G-D-O-M",
+    "phonetic": "/ˈkɪŋdəm/",
+    "gloss": "王国；领域",
+    "tip": "the kingdom",
+    "example": "Check the kingdom in the text.",
+    "exampleZh": "核对文本中的王国。",
+    "tags": [
+      "academic"
+    ],
+    "tier": "core",
+    "pos": "n. 名词"
+  },
+  {
+    "id": 1241,
+    "word": "possession",
+    "spelling": "P-O-S-S-E-S-S-I-O-N",
+    "phonetic": "/pəˈzɛʃən/",
+    "gloss": "拥有；占有",
+    "tip": "the possession",
+    "example": "Check the possession in the text.",
+    "exampleZh": "核对文本中的拥有。",
+    "tags": [
+      "academic",
+      "campus"
+    ],
+    "tier": "core",
+    "pos": "n. 名词"
+  },
+  {
+    "id": 1242,
+    "word": "interpretation",
+    "spelling": "I-N-T-E-R-P-R-E-T-A-T-I-O-N",
+    "phonetic": "/ˌɪnˌtərprɪˈteɪʃən/",
+    "gloss": "解释；演出",
+    "tip": "the interpretation",
+    "example": "Check the interpretation in the text.",
+    "exampleZh": "核对文本中的解释。",
+    "tags": [
+      "academic"
+    ],
+    "tier": "core",
+    "pos": "n. 名词"
+  },
+  {
+    "id": 1243,
+    "word": "bear",
+    "spelling": "B-E-A-R",
+    "phonetic": "/bɛr/",
+    "gloss": "熊；忍受",
+    "tip": "the bear",
+    "example": "Check the bear in the text.",
+    "exampleZh": "核对文本中的熊。",
+    "tags": [
+      "academic"
+    ],
+    "tier": "core",
+    "pos": "n. 名词"
+  },
+  {
+    "id": 1244,
+    "word": "machinery",
+    "spelling": "M-A-C-H-I-N-E-R-Y",
+    "phonetic": "/məˈʃinəri/",
+    "gloss": "机器；机械装置",
+    "tip": "the machinery",
+    "example": "Check the machinery in the text.",
+    "exampleZh": "核对文本中的机器。",
+    "tags": [
+      "academic"
+    ],
+    "tier": "core",
+    "pos": "n. 名词"
+  },
+  {
+    "id": 1245,
+    "word": "commonplace",
+    "spelling": "C-O-M-M-O-N-P-L-A-C-E",
+    "phonetic": "/ˈkɑmənˌpleɪs/",
+    "gloss": "寻常事；老生常谈",
+    "tip": "the commonplace",
+    "example": "Check the commonplace in the text.",
+    "exampleZh": "核对文本中的寻常事。",
+    "tags": [
+      "academic"
+    ],
+    "tier": "core",
+    "pos": "n. 名词"
+  },
+  {
+    "id": 1246,
+    "word": "skilled",
+    "spelling": "S-K-I-L-L-E-D",
+    "phonetic": "/skɪld/",
+    "gloss": "熟练的；[经] 熟练的",
+    "tip": "a skilled …",
+    "example": "Give a skilled answer.",
+    "exampleZh": "给出熟练的回答。",
+    "tags": [
+      "academic",
+      "campus"
+    ],
+    "tier": "core",
+    "pos": "adj. 形容词"
+  },
+  {
+    "id": 1247,
+    "word": "bargain",
+    "spelling": "B-A-R-G-A-I-N",
+    "phonetic": "/ˈbɑrgɪn/",
+    "gloss": "交易；买卖协定",
+    "tip": "the bargain",
+    "example": "Check the bargain in the text.",
+    "exampleZh": "核对文本中的交易。",
+    "tags": [
+      "academic"
+    ],
+    "tier": "core",
+    "pos": "n. 名词"
+  },
+  {
+    "id": 1248,
+    "word": "engage",
+    "spelling": "E-N-G-A-G-E",
+    "phonetic": "/ɪnˈgeɪʤ/",
+    "gloss": "答应；从事",
+    "tip": "engage …",
+    "example": "Please engage the key points.",
+    "exampleZh": "请答应要点。",
+    "tags": [
+      "academic",
+      "campus"
+    ],
+    "tier": "core",
+    "pos": "v. 动词"
+  },
+  {
+    "id": 1249,
+    "word": "sexual",
+    "spelling": "S-E-X-U-A-L",
+    "phonetic": "/ˈsɛkʃuəl/",
+    "gloss": "性的；性别的",
+    "tip": "a sexual …",
+    "example": "Give a sexual answer.",
+    "exampleZh": "给出性的回答。",
+    "tags": [
+      "academic"
+    ],
+    "tier": "core",
+    "pos": "adj. 形容词"
+  },
+  {
+    "id": 1250,
+    "word": "racial",
+    "spelling": "R-A-C-I-A-L",
+    "phonetic": "/ˈreɪʃəl/",
+    "gloss": "人种的；种族的",
+    "tip": "a racial …",
+    "example": "Give a racial answer.",
+    "exampleZh": "给出人种的回答。",
+    "tags": [
+      "academic"
+    ],
+    "tier": "core",
+    "pos": "adj. 形容词"
+  },
+  {
+    "id": 1251,
+    "word": "fascinate",
+    "spelling": "F-A-S-C-I-N-A-T-E",
+    "phonetic": "/ˈfæsəˌneɪt/",
+    "gloss": "令人入神；使着迷",
+    "tip": "fascinate …",
+    "example": "Please fascinate the key points.",
+    "exampleZh": "请令人入神要点。",
+    "tags": [
+      "academic"
+    ],
+    "tier": "core",
+    "pos": "v. 动词"
+  },
+  {
+    "id": 1252,
+    "word": "magnificent",
+    "spelling": "M-A-G-N-I-F-I-C-E-N-T",
+    "phonetic": "/mægˈnɪfɪsənt/",
+    "gloss": "华丽的；高尚的",
+    "tip": "a magnificent …",
+    "example": "Give a magnificent answer.",
+    "exampleZh": "给出华丽的回答。",
+    "tags": [
+      "academic"
+    ],
+    "tier": "core",
+    "pos": "adj. 形容词"
+  },
+  {
+    "id": 1253,
+    "word": "museum",
+    "spelling": "M-U-S-E-U-M",
+    "phonetic": "/mˈjuziəm/",
+    "gloss": "博物馆",
+    "tip": "the museum",
+    "example": "Check the museum in the text.",
+    "exampleZh": "核对文本中的博物馆。",
+    "tags": [
+      "academic"
+    ],
+    "tier": "core",
+    "pos": "n. 名词"
+  },
+  {
+    "id": 1254,
+    "word": "collection",
+    "spelling": "C-O-L-L-E-C-T-I-O-N",
+    "phonetic": "/kəˈlɛkʃən/",
+    "gloss": "收集；采集",
+    "tip": "the collection",
+    "example": "Check the collection in the text.",
+    "exampleZh": "核对文本中的收集。",
+    "tags": [
+      "academic",
+      "campus"
+    ],
+    "tier": "core",
+    "pos": "n. 名词"
+  },
+  {
+    "id": 1255,
+    "word": "security",
+    "spelling": "S-E-C-U-R-I-T-Y",
+    "phonetic": "/sɪˈkjʊrəti/",
+    "gloss": "安全；安全性",
+    "tip": "the security",
+    "example": "Check the security in the text.",
+    "exampleZh": "核对文本中的安全。",
+    "tags": [
+      "academic",
+      "campus"
+    ],
+    "tier": "core",
+    "pos": "n. 名词"
+  },
+  {
+    "id": 1256,
+    "word": "object",
+    "spelling": "O-B-J-E-C-T",
+    "phonetic": "/ˈɑbʤɛkt/",
+    "gloss": "物体；目标",
+    "tip": "the object",
+    "example": "Check the object in the text.",
+    "exampleZh": "核对文本中的物体。",
+    "tags": [
+      "academic"
+    ],
+    "tier": "core",
+    "pos": "n. 名词"
+  },
+  {
+    "id": 1257,
+    "word": "outside",
+    "spelling": "O-U-T-S-I-D-E",
+    "phonetic": "/ˈaʊtˈsaɪd/",
+    "gloss": "外面；外表",
+    "tip": "the outside",
+    "example": "Check the outside in the text.",
+    "exampleZh": "核对文本中的外面。",
+    "tags": [
+      "academic"
+    ],
+    "tier": "core",
+    "pos": "n. 名词"
+  },
+  {
+    "id": 1258,
+    "word": "improve",
+    "spelling": "I-M-P-R-O-V-E",
+    "phonetic": "/ˌɪmˈpruv/",
+    "gloss": "改良；提高...的价值",
+    "tip": "improve …",
+    "example": "Please improve the key points.",
+    "exampleZh": "请改良要点。",
+    "tags": [
+      "academic"
+    ],
+    "tier": "core",
+    "pos": "v. 动词"
+  },
+  {
+    "id": 1259,
+    "word": "rank",
+    "spelling": "R-A-N-K",
+    "phonetic": "/ræŋk/",
+    "gloss": "等级；排",
+    "tip": "the rank",
+    "example": "Check the rank in the text.",
+    "exampleZh": "核对文本中的等级。",
+    "tags": [
+      "academic"
+    ],
+    "tier": "core",
+    "pos": "n. 名词"
+  },
+  {
+    "id": 1260,
+    "word": "pace",
+    "spelling": "P-A-C-E",
+    "phonetic": "/peɪs/",
+    "gloss": "速度；步调",
+    "tip": "the pace",
+    "example": "Check the pace in the text.",
+    "exampleZh": "核对文本中的速度。",
+    "tags": [
+      "academic",
+      "campus"
+    ],
+    "tier": "core",
+    "pos": "n. 名词"
+  },
+  {
+    "id": 1261,
+    "word": "overtake",
+    "spelling": "O-V-E-R-T-A-K-E",
+    "phonetic": "/ˈoʊvərˌteɪk/",
+    "gloss": "赶上；突然降临于",
+    "tip": "overtake …",
+    "example": "Please overtake the key points.",
+    "exampleZh": "请赶上要点。",
+    "tags": [
+      "academic"
+    ],
+    "tier": "core",
+    "pos": "v. 动词"
+  },
+  {
+    "id": 1262,
+    "word": "accord",
+    "spelling": "A-C-C-O-R-D",
+    "phonetic": "/əˈkɔrd/",
+    "gloss": "一致；调和",
+    "tip": "the accord",
+    "example": "Check the accord in the text.",
+    "exampleZh": "核对文本中的一致。",
+    "tags": [
+      "academic"
+    ],
+    "tier": "core",
+    "pos": "n. 名词"
+  },
+  {
+    "id": 1263,
+    "word": "complain",
+    "spelling": "C-O-M-P-L-A-I-N",
+    "phonetic": "/kəmˈpleɪn/",
+    "gloss": "抱怨；抗议",
+    "tip": "complain …",
+    "example": "Please complain the key points.",
+    "exampleZh": "请抱怨要点。",
+    "tags": [
+      "academic"
+    ],
+    "tier": "core",
+    "pos": "v. 动词"
+  },
+  {
+    "id": 1264,
+    "word": "grind",
+    "spelling": "G-R-I-N-D",
+    "phonetic": "/graɪnd/",
+    "gloss": "磨；碾",
+    "tip": "the grind",
+    "example": "Check the grind in the text.",
+    "exampleZh": "核对文本中的磨。",
+    "tags": [
+      "academic"
+    ],
+    "tier": "core",
+    "pos": "n. 名词"
+  },
+  {
+    "id": 1265,
+    "word": "absent",
+    "spelling": "A-B-S-E-N-T",
+    "phonetic": "/ˈæbsənt/",
+    "gloss": "缺席的；不在的",
+    "tip": "a absent …",
+    "example": "Give a absent answer.",
+    "exampleZh": "给出缺席的回答。",
+    "tags": [
+      "academic"
+    ],
+    "tier": "core",
+    "pos": "adj. 形容词"
+  },
+  {
+    "id": 1266,
+    "word": "genuine",
+    "spelling": "G-E-N-U-I-N-E",
+    "phonetic": "/ˈʤɛnjuˌaɪn/",
+    "gloss": "真正的；真实的",
+    "tip": "a genuine …",
+    "example": "Give a genuine answer.",
+    "exampleZh": "给出真正的回答。",
+    "tags": [
+      "academic"
+    ],
+    "tier": "core",
+    "pos": "adj. 形容词"
+  },
+  {
+    "id": 1267,
+    "word": "impress",
+    "spelling": "I-M-P-R-E-S-S",
+    "phonetic": "/ˌɪmˈprɛs/",
+    "gloss": "印象；特征",
+    "tip": "the impress",
+    "example": "Check the impress in the text.",
+    "exampleZh": "核对文本中的印象。",
+    "tags": [
+      "academic"
+    ],
+    "tier": "core",
+    "pos": "n. 名词"
+  },
+  {
+    "id": 1268,
+    "word": "apart",
+    "spelling": "A-P-A-R-T",
+    "phonetic": "/əˈpɑrt/",
+    "gloss": "成零碎；成距离",
+    "tip": "apart …",
+    "example": "Answer apart and clearly.",
+    "exampleZh": "请成零碎且清楚地回答。",
+    "tags": [
+      "academic"
+    ],
+    "tier": "core",
+    "pos": "adv. 副词"
+  },
+  {
+    "id": 1269,
+    "word": "impressive",
+    "spelling": "I-M-P-R-E-S-S-I-V-E",
+    "phonetic": "/ˌɪmˈprɛsɪv/",
+    "gloss": "给人深刻印象的；威严的",
+    "tip": "a impressive …",
+    "example": "Give a impressive answer.",
+    "exampleZh": "给出给人深刻印象的回答。",
+    "tags": [
+      "academic"
+    ],
+    "tier": "core",
+    "pos": "adj. 形容词"
+  },
+  {
+    "id": 1270,
+    "word": "filter",
+    "spelling": "F-I-L-T-E-R",
+    "phonetic": "/ˈfɪltər/",
+    "gloss": "滤波器；过滤器",
+    "tip": "the filter",
+    "example": "Check the filter in the text.",
+    "exampleZh": "核对文本中的滤波器。",
+    "tags": [
+      "academic"
+    ],
+    "tier": "core",
+    "pos": "n. 名词"
+  },
+  {
+    "id": 1271,
+    "word": "excess",
+    "spelling": "E-X-C-E-S-S",
+    "phonetic": "/ˈɛkˌsɛs/",
+    "gloss": "过度；剩于",
+    "tip": "the excess",
+    "example": "Check the excess in the text.",
+    "exampleZh": "核对文本中的过度。",
+    "tags": [
+      "academic"
+    ],
+    "tier": "core",
+    "pos": "n. 名词"
+  },
+  {
+    "id": 1272,
+    "word": "flood",
+    "spelling": "F-L-O-O-D",
+    "phonetic": "/fləd/",
+    "gloss": "洪水；大量之水",
+    "tip": "the flood",
+    "example": "Check the flood in the text.",
+    "exampleZh": "核对文本中的洪水。",
+    "tags": [
+      "academic"
+    ],
+    "tier": "core",
+    "pos": "n. 名词"
+  },
+  {
+    "id": 1273,
+    "word": "erosion",
+    "spelling": "E-R-O-S-I-O-N",
+    "phonetic": "/ɪˈroʊʒən/",
+    "gloss": "腐蚀；冲蚀",
+    "tip": "the erosion",
+    "example": "Check the erosion in the text.",
+    "exampleZh": "核对文本中的腐蚀。",
+    "tags": [
+      "academic"
+    ],
+    "tier": "core",
+    "pos": "n. 名词"
+  },
+  {
+    "id": 1274,
+    "word": "save",
+    "spelling": "S-A-V-E",
+    "phonetic": "/seɪv/",
+    "gloss": "救球；解救",
+    "tip": "the save",
+    "example": "Check the save in the text.",
+    "exampleZh": "核对文本中的救球。",
+    "tags": [
+      "academic"
+    ],
+    "tier": "core",
+    "pos": "n. 名词"
+  },
+  {
+    "id": 1275,
+    "word": "mobile",
+    "spelling": "M-O-B-I-L-E",
+    "phonetic": "/ˈmoʊbəl/",
+    "gloss": "移动的；易变的",
+    "tip": "a mobile …",
+    "example": "Give a mobile answer.",
+    "exampleZh": "给出移动的回答。",
+    "tags": [
+      "academic"
+    ],
+    "tier": "core",
+    "pos": "adj. 形容词"
+  },
+  {
+    "id": 1276,
+    "word": "commerce",
+    "spelling": "C-O-M-M-E-R-C-E",
+    "phonetic": "/ˈkɑmərs/",
+    "gloss": "商业；商务",
+    "tip": "the commerce",
+    "example": "Check the commerce in the text.",
+    "exampleZh": "核对文本中的商业。",
+    "tags": [
+      "academic"
+    ],
+    "tier": "core",
+    "pos": "n. 名词"
+  },
+  {
+    "id": 1277,
+    "word": "assistant",
+    "spelling": "A-S-S-I-S-T-A-N-T",
+    "phonetic": "/əˈsɪstənt/",
+    "gloss": "助手；助理",
+    "tip": "the assistant",
+    "example": "Check the assistant in the text.",
+    "exampleZh": "核对文本中的助手。",
+    "tags": [
+      "academic",
+      "campus"
+    ],
+    "tier": "core",
+    "pos": "n. 名词"
+  },
+  {
+    "id": 1278,
+    "word": "commercial",
+    "spelling": "C-O-M-M-E-R-C-I-A-L",
+    "phonetic": "/kəˈmərʃəl/",
+    "gloss": "商业的；商用的",
+    "tip": "a commercial …",
+    "example": "Give a commercial answer.",
+    "exampleZh": "给出商业的回答。",
+    "tags": [
+      "academic",
+      "campus"
+    ],
+    "tier": "core",
+    "pos": "adj. 形容词"
+  },
+  {
+    "id": 1279,
+    "word": "location",
+    "spelling": "L-O-C-A-T-I-O-N",
+    "phonetic": "/loʊˈkeɪʃən/",
+    "gloss": "位置；场所",
+    "tip": "the location",
+    "example": "Check the location in the text.",
+    "exampleZh": "核对文本中的位置。",
+    "tags": [
+      "academic"
+    ],
+    "tier": "core",
+    "pos": "n. 名词"
+  },
+  {
+    "id": 1280,
+    "word": "zone",
+    "spelling": "Z-O-N-E",
+    "phonetic": "/zoʊn/",
+    "gloss": "地带；带",
+    "tip": "the zone",
+    "example": "Check the zone in the text.",
+    "exampleZh": "核对文本中的地带。",
+    "tags": [
+      "academic"
+    ],
+    "tier": "core",
+    "pos": "n. 名词"
+  },
+  {
+    "id": 1281,
+    "word": "flash",
+    "spelling": "F-L-A-S-H",
+    "phonetic": "/flæʃ/",
+    "gloss": "闪光；闪现",
+    "tip": "the flash",
+    "example": "Check the flash in the text.",
+    "exampleZh": "核对文本中的闪光。",
+    "tags": [
+      "academic"
+    ],
+    "tier": "core",
+    "pos": "n. 名词"
+  },
+  {
+    "id": 1282,
+    "word": "prove",
+    "spelling": "P-R-O-V-E",
+    "phonetic": "/pruv/",
+    "gloss": "证明；查验",
+    "tip": "prove …",
+    "example": "Please prove the key points.",
+    "exampleZh": "请证明要点。",
+    "tags": [
+      "academic",
+      "campus"
+    ],
+    "tier": "core",
+    "pos": "v. 动词"
+  },
+  {
+    "id": 1283,
+    "word": "convey",
+    "spelling": "C-O-N-V-E-Y",
+    "phonetic": "/kənˈveɪ/",
+    "gloss": "传达；运输",
+    "tip": "convey …",
+    "example": "Please convey the key points.",
+    "exampleZh": "请传达要点。",
+    "tags": [
+      "academic"
+    ],
+    "tier": "core",
+    "pos": "v. 动词"
+  },
+  {
+    "id": 1284,
+    "word": "character",
+    "spelling": "C-H-A-R-A-C-T-E-R",
+    "phonetic": "/ˈkɛrɪktər/",
+    "gloss": "个性；字符",
+    "tip": "the character",
+    "example": "Check the character in the text.",
+    "exampleZh": "核对文本中的个性。",
+    "tags": [
+      "academic"
+    ],
+    "tier": "core",
+    "pos": "n. 名词"
+  },
+  {
+    "id": 1285,
+    "word": "imaginative",
+    "spelling": "I-M-A-G-I-N-A-T-I-V-E",
+    "phonetic": "/ˌɪˈmæʤənətɪv/",
+    "gloss": "想像的；虚构的",
+    "tip": "a imaginative …",
+    "example": "Give a imaginative answer.",
+    "exampleZh": "给出想像的回答。",
+    "tags": [
+      "academic"
+    ],
+    "tier": "core",
+    "pos": "adj. 形容词"
+  },
+  {
+    "id": 1286,
+    "word": "sympathy",
+    "spelling": "S-Y-M-P-A-T-H-Y",
+    "phonetic": "/ˈsɪmpəθi/",
+    "gloss": "同情；赞同",
+    "tip": "the sympathy",
+    "example": "Check the sympathy in the text.",
+    "exampleZh": "核对文本中的同情。",
+    "tags": [
+      "academic",
+      "campus"
+    ],
+    "tier": "core",
+    "pos": "n. 名词"
+  },
+  {
+    "id": 1287,
+    "word": "entertainment",
+    "spelling": "E-N-T-E-R-T-A-I-N-M-E-N-T",
+    "phonetic": "/ˌɛnərˈteɪnmənt/",
+    "gloss": "娱乐；款待",
+    "tip": "the entertainment",
+    "example": "Check the entertainment in the text.",
+    "exampleZh": "核对文本中的娱乐。",
+    "tags": [
+      "academic",
+      "campus"
+    ],
+    "tier": "core",
+    "pos": "n. 名词"
+  },
+  {
+    "id": 1288,
+    "word": "rarely",
+    "spelling": "R-A-R-E-L-Y",
+    "phonetic": "/ˈrɛrli/",
+    "gloss": "很少地；罕有地",
+    "tip": "rarely …",
+    "example": "Answer rarely and clearly.",
+    "exampleZh": "请很少地且清楚地回答。",
+    "tags": [
+      "academic"
+    ],
+    "tier": "core",
+    "pos": "adv. 副词"
+  },
+  {
+    "id": 1289,
+    "word": "possibility",
+    "spelling": "P-O-S-S-I-B-I-L-I-T-Y",
+    "phonetic": "/ˌpɑsəˈbɪləˌti/",
+    "gloss": "可能性；可能的事",
+    "tip": "the possibility",
+    "example": "Check the possibility in the text.",
+    "exampleZh": "核对文本中的可能性。",
+    "tags": [
+      "academic"
+    ],
+    "tier": "core",
+    "pos": "n. 名词"
+  },
+  {
+    "id": 1290,
+    "word": "definitely",
+    "spelling": "D-E-F-I-N-I-T-E-L-Y",
+    "phonetic": "/ˈdɛfənətli/",
+    "gloss": "明确无疑地；清楚地",
+    "tip": "definitely …",
+    "example": "Answer definitely and clearly.",
+    "exampleZh": "请明确无疑地且清楚地回答。",
+    "tags": [
+      "academic"
+    ],
+    "tier": "core",
+    "pos": "adv. 副词"
+  },
+  {
+    "id": 1291,
+    "word": "relate",
+    "spelling": "R-E-L-A-T-E",
+    "phonetic": "/rɪˈleɪt/",
+    "gloss": "讲；叙述",
+    "tip": "relate …",
+    "example": "Please relate the key points.",
+    "exampleZh": "请讲要点。",
+    "tags": [
+      "academic",
+      "campus"
+    ],
+    "tier": "core",
+    "pos": "v. 动词"
+  },
+  {
+    "id": 1292,
+    "word": "competitive",
+    "spelling": "C-O-M-P-E-T-I-T-I-V-E",
+    "phonetic": "/kəmˈpɛtɪtɪv/",
+    "gloss": "竞争的；[经] 竞争的",
+    "tip": "a competitive …",
+    "example": "Give a competitive answer.",
+    "exampleZh": "给出竞争的回答。",
+    "tags": [
+      "academic",
+      "campus"
+    ],
+    "tier": "core",
+    "pos": "adj. 形容词"
+  },
+  {
+    "id": 1293,
+    "word": "furniture",
+    "spelling": "F-U-R-N-I-T-U-R-E",
+    "phonetic": "/ˈfərnɪʧər/",
+    "gloss": "家具；帆具",
+    "tip": "the furniture",
+    "example": "Check the furniture in the text.",
+    "exampleZh": "核对文本中的家具。",
+    "tags": [
+      "academic"
+    ],
+    "tier": "core",
+    "pos": "n. 名词"
+  },
+  {
+    "id": 1294,
+    "word": "civilize",
+    "spelling": "C-I-V-I-L-I-Z-E",
+    "phonetic": "/ˈsɪvəˌlaɪz/",
+    "gloss": "使开化；使文明",
+    "tip": "civilize …",
+    "example": "Please civilize the key points.",
+    "exampleZh": "请使开化要点。",
+    "tags": [
+      "academic"
+    ],
+    "tier": "core",
+    "pos": "v. 动词"
+  },
+  {
+    "id": 1295,
+    "word": "settle",
+    "spelling": "S-E-T-T-L-E",
+    "phonetic": "/ˈsɛtəl/",
+    "gloss": "有背长椅；决定",
+    "tip": "the settle",
+    "example": "Check the settle in the text.",
+    "exampleZh": "核对文本中的有背长椅。",
+    "tags": [
+      "academic"
+    ],
+    "tier": "core",
+    "pos": "n. 名词"
+  },
+  {
+    "id": 1296,
+    "word": "parliament",
+    "spelling": "P-A-R-L-I-A-M-E-N-T",
+    "phonetic": "/ˈpɑrləmɛnt/",
+    "gloss": "国会；议会",
+    "tip": "the parliament",
+    "example": "Check the parliament in the text.",
+    "exampleZh": "核对文本中的国会。",
+    "tags": [
+      "academic",
+      "campus"
+    ],
+    "tier": "core",
+    "pos": "n. 名词"
+  },
+  {
+    "id": 1297,
+    "word": "crown",
+    "spelling": "C-R-O-W-N",
+    "phonetic": "/kraʊn/",
+    "gloss": "王冠；王权",
+    "tip": "the crown",
+    "example": "Check the crown in the text.",
+    "exampleZh": "核对文本中的王冠。",
+    "tags": [
+      "academic",
+      "campus"
+    ],
+    "tier": "core",
+    "pos": "n. 名词"
+  },
+  {
+    "id": 1298,
+    "word": "ancient",
+    "spelling": "A-N-C-I-E-N-T",
+    "phonetic": "/ˈeɪnʧənt/",
+    "gloss": "古代的；古老的",
+    "tip": "a ancient …",
+    "example": "Give a ancient answer.",
+    "exampleZh": "给出古代的回答。",
+    "tags": [
+      "academic"
+    ],
+    "tier": "core",
+    "pos": "adj. 形容词"
+  },
+  {
+    "id": 1299,
+    "word": "planet",
+    "spelling": "P-L-A-N-E-T",
+    "phonetic": "/ˈplænət/",
+    "gloss": "行星；命运星辰",
+    "tip": "the planet",
+    "example": "Check the planet in the text.",
+    "exampleZh": "核对文本中的行星。",
+    "tags": [
+      "academic"
+    ],
+    "tier": "core",
+    "pos": "n. 名词"
+  },
+  {
+    "id": 1300,
+    "word": "gear",
+    "spelling": "G-E-A-R",
+    "phonetic": "/gɪr/",
+    "gloss": "齿轮；工具",
+    "tip": "the gear",
+    "example": "Check the gear in the text.",
+    "exampleZh": "核对文本中的齿轮。",
+    "tags": [
+      "academic"
+    ],
+    "tier": "core",
+    "pos": "n. 名词"
+  },
+  {
+    "id": 1301,
+    "word": "molecule",
+    "spelling": "M-O-L-E-C-U-L-E",
+    "phonetic": "/ˈmɑləˌkjul/",
+    "gloss": "分子；些微",
+    "tip": "the molecule",
+    "example": "Check the molecule in the text.",
+    "exampleZh": "核对文本中的分子。",
+    "tags": [
+      "academic",
+      "campus"
+    ],
+    "tier": "core",
+    "pos": "n. 名词"
+  },
+  {
+    "id": 1302,
+    "word": "bacteria",
+    "spelling": "B-A-C-T-E-R-I-A",
+    "phonetic": "/bækˈtɪriə/",
+    "gloss": "细菌；[医] 细菌",
+    "tip": "the bacteria",
+    "example": "Check the bacteria in the text.",
+    "exampleZh": "核对文本中的细菌。",
+    "tags": [
+      "academic",
+      "campus"
+    ],
+    "tier": "core",
+    "pos": "n. 名词"
+  },
+  {
+    "id": 1303,
+    "word": "virus",
+    "spelling": "V-I-R-U-S",
+    "phonetic": "/ˈvaɪrəs/",
+    "gloss": "病毒；滤过性病毒",
+    "tip": "the virus",
+    "example": "Check the virus in the text.",
+    "exampleZh": "核对文本中的病毒。",
+    "tags": [
+      "academic"
+    ],
+    "tier": "core",
+    "pos": "n. 名词"
+  },
+  {
+    "id": 1304,
+    "word": "activity",
+    "spelling": "A-C-T-I-V-I-T-Y",
+    "phonetic": "/ækˈtɪvɪti/",
+    "gloss": "活动；行动",
+    "tip": "the activity",
+    "example": "Check the activity in the text.",
+    "exampleZh": "核对文本中的活动。",
+    "tags": [
+      "academic"
+    ],
+    "tier": "core",
+    "pos": "n. 名词"
+  },
+  {
+    "id": 1305,
+    "word": "belief",
+    "spelling": "B-E-L-I-E-F",
+    "phonetic": "/bɪˈlif/",
+    "gloss": "信念；相信",
+    "tip": "the belief",
+    "example": "Check the belief in the text.",
+    "exampleZh": "核对文本中的信念。",
+    "tags": [
+      "academic"
+    ],
+    "tier": "core",
+    "pos": "n. 名词"
+  },
+  {
+    "id": 1306,
+    "word": "cancer",
+    "spelling": "C-A-N-C-E-R",
+    "phonetic": "/ˈkænsər/",
+    "gloss": "癌；恶性肿瘤",
+    "tip": "the cancer",
+    "example": "Check the cancer in the text.",
+    "exampleZh": "核对文本中的癌。",
+    "tags": [
+      "academic"
+    ],
+    "tier": "core",
+    "pos": "n. 名词"
+  },
+  {
+    "id": 1307,
+    "word": "hunt",
+    "spelling": "H-U-N-T",
+    "phonetic": "/hənt/",
+    "gloss": "狩猎；追捕",
+    "tip": "the hunt",
+    "example": "Check the hunt in the text.",
+    "exampleZh": "核对文本中的狩猎。",
+    "tags": [
+      "academic"
+    ],
+    "tier": "core",
+    "pos": "n. 名词"
+  },
+  {
+    "id": 1308,
+    "word": "avoid",
+    "spelling": "A-V-O-I-D",
+    "phonetic": "/əˈvɔɪd/",
+    "gloss": "避免；防止",
+    "tip": "avoid …",
+    "example": "Please avoid the key points.",
+    "exampleZh": "请避免要点。",
+    "tags": [
+      "academic"
+    ],
+    "tier": "core",
+    "pos": "v. 动词"
+  },
+  {
+    "id": 1309,
+    "word": "trail",
+    "spelling": "T-R-A-I-L",
+    "phonetic": "/treɪl/",
+    "gloss": "踪迹；痕迹",
+    "tip": "the trail",
+    "example": "Check the trail in the text.",
+    "exampleZh": "核对文本中的踪迹。",
+    "tags": [
+      "academic"
+    ],
+    "tier": "core",
+    "pos": "n. 名词"
+  },
+  {
+    "id": 1310,
+    "word": "whale",
+    "spelling": "W-H-A-L-E",
+    "phonetic": "/weɪl/",
+    "gloss": "鲸；捕鲸",
+    "tip": "the whale",
+    "example": "Check the whale in the text.",
+    "exampleZh": "核对文本中的鲸。",
+    "tags": [
+      "academic"
+    ],
+    "tier": "core",
+    "pos": "n. 名词"
+  },
+  {
+    "id": 1311,
+    "word": "adopt",
+    "spelling": "A-D-O-P-T",
+    "phonetic": "/əˈdɑpt/",
+    "gloss": "采用；正式通过",
+    "tip": "adopt …",
+    "example": "Please adopt the key points.",
+    "exampleZh": "请采用要点。",
+    "tags": [
+      "academic",
+      "campus"
+    ],
+    "tier": "core",
+    "pos": "v. 动词"
+  },
+  {
+    "id": 1312,
+    "word": "reproduce",
+    "spelling": "R-E-P-R-O-D-U-C-E",
+    "phonetic": "/ˌriprəˈdus/",
+    "gloss": "繁殖；再生",
+    "tip": "reproduce …",
+    "example": "Please reproduce the key points.",
+    "exampleZh": "请繁殖要点。",
+    "tags": [
+      "academic",
+      "campus"
+    ],
+    "tier": "core",
+    "pos": "v. 动词"
+  },
+  {
+    "id": 1313,
+    "word": "threat",
+    "spelling": "T-H-R-E-A-T",
+    "phonetic": "/θrɛt/",
+    "gloss": "恐吓；恶兆",
+    "tip": "the threat",
+    "example": "Check the threat in the text.",
+    "exampleZh": "核对文本中的恐吓。",
+    "tags": [
+      "academic",
+      "campus"
+    ],
+    "tier": "core",
+    "pos": "n. 名词"
+  },
+  {
+    "id": 1314,
+    "word": "mystery",
+    "spelling": "M-Y-S-T-E-R-Y",
+    "phonetic": "/ˈmɪstəri/",
+    "gloss": "秘密；神秘",
+    "tip": "the mystery",
+    "example": "Check the mystery in the text.",
+    "exampleZh": "核对文本中的秘密。",
+    "tags": [
+      "academic"
+    ],
+    "tier": "core",
+    "pos": "n. 名词"
+  },
+  {
+    "id": 1315,
+    "word": "glorious",
+    "spelling": "G-L-O-R-I-O-U-S",
+    "phonetic": "/ˈglɔriəs/",
+    "gloss": "光荣的",
+    "tip": "a glorious …",
+    "example": "Give a glorious answer.",
+    "exampleZh": "给出光荣的回答。",
+    "tags": [
+      "academic"
+    ],
+    "tier": "core",
+    "pos": "adj. 形容词"
+  },
+  {
+    "id": 1316,
+    "word": "empire",
+    "spelling": "E-M-P-I-R-E",
+    "phonetic": "/ˈɛmpaɪər/",
+    "gloss": "帝国；帝权",
+    "tip": "the empire",
+    "example": "Check the empire in the text.",
+    "exampleZh": "核对文本中的帝国。",
+    "tags": [
+      "academic"
+    ],
+    "tier": "core",
+    "pos": "n. 名词"
+  },
+  {
+    "id": 1317,
+    "word": "ruin",
+    "spelling": "R-U-I-N",
+    "phonetic": "/ruɪn/",
+    "gloss": "毁灭；推翻",
+    "tip": "the ruin",
+    "example": "Check the ruin in the text.",
+    "exampleZh": "核对文本中的毁灭。",
+    "tags": [
+      "academic"
+    ],
+    "tier": "core",
+    "pos": "n. 名词"
+  },
+  {
+    "id": 1318,
+    "word": "marine",
+    "spelling": "M-A-R-I-N-E",
+    "phonetic": "/mərˈin/",
+    "gloss": "舰队；水兵",
+    "tip": "the marine",
+    "example": "Check the marine in the text.",
+    "exampleZh": "核对文本中的舰队。",
+    "tags": [
+      "academic",
+      "campus"
+    ],
+    "tier": "core",
+    "pos": "n. 名词"
+  },
+  {
+    "id": 1319,
+    "word": "transportation",
+    "spelling": "T-R-A-N-S-P-O-R-T-A-T-I-O-N",
+    "phonetic": "/ˌtrænspərˈteɪʃən/",
+    "gloss": "运输；输送",
+    "tip": "the transportation",
+    "example": "Check the transportation in the text.",
+    "exampleZh": "核对文本中的运输。",
+    "tags": [
+      "academic"
+    ],
+    "tier": "core",
+    "pos": "n. 名词"
+  },
+  {
+    "id": 1320,
+    "word": "cargo",
+    "spelling": "C-A-R-G-O",
+    "phonetic": "/ˈkɑrˌgoʊ/",
+    "gloss": "货物；[经] 货柜",
+    "tip": "the cargo",
+    "example": "Check the cargo in the text.",
+    "exampleZh": "核对文本中的货物。",
+    "tags": [
+      "academic"
+    ],
+    "tier": "core",
+    "pos": "n. 名词"
+  },
+  {
+    "id": 1321,
+    "word": "rub",
+    "spelling": "R-U-B",
+    "phonetic": "/rəb/",
+    "gloss": "摩擦；困难",
+    "tip": "the rub",
+    "example": "Check the rub in the text.",
+    "exampleZh": "核对文本中的摩擦。",
+    "tags": [
+      "academic"
+    ],
+    "tier": "core",
+    "pos": "n. 名词"
+  },
+  {
+    "id": 1322,
+    "word": "myth",
+    "spelling": "M-Y-T-H",
+    "phonetic": "/mɪθ/",
+    "gloss": "神话；虚构的事",
+    "tip": "the myth",
+    "example": "Check the myth in the text.",
+    "exampleZh": "核对文本中的神话。",
+    "tags": [
+      "academic"
+    ],
+    "tier": "core",
+    "pos": "n. 名词"
+  },
+  {
+    "id": 1323,
+    "word": "besides",
+    "spelling": "B-E-S-I-D-E-S",
+    "phonetic": "/ˌbiˈsaɪdz/",
+    "gloss": "除...之外；而且",
+    "tip": "the besides",
+    "example": "Check the besides in the text.",
+    "exampleZh": "核对文本中的除...之外。",
+    "tags": [
+      "academic"
+    ],
+    "tier": "core",
+    "pos": "n. 名词"
+  },
+  {
+    "id": 1324,
+    "word": "detail",
+    "spelling": "D-E-T-A-I-L",
+    "phonetic": "/ˈditeɪl/",
+    "gloss": "细节；详情",
+    "tip": "the detail",
+    "example": "Check the detail in the text.",
+    "exampleZh": "核对文本中的细节。",
+    "tags": [
+      "academic",
+      "campus"
+    ],
+    "tier": "core",
+    "pos": "n. 名词"
+  },
+  {
+    "id": 1325,
+    "word": "indication",
+    "spelling": "I-N-D-I-C-A-T-I-O-N",
+    "phonetic": "/ˌɪndəˈkeɪʃən/",
+    "gloss": "指示；象征",
+    "tip": "the indication",
+    "example": "Check the indication in the text.",
+    "exampleZh": "核对文本中的指示。",
+    "tags": [
+      "academic"
+    ],
+    "tier": "core",
+    "pos": "n. 名词"
+  },
+  {
+    "id": 1326,
+    "word": "owner",
+    "spelling": "O-W-N-E-R",
+    "phonetic": "/ˈoʊnər/",
+    "gloss": "拥有者；物主",
+    "tip": "the owner",
+    "example": "Check the owner in the text.",
+    "exampleZh": "核对文本中的拥有者。",
+    "tags": [
+      "academic"
+    ],
+    "tier": "core",
+    "pos": "n. 名词"
+  },
+  {
+    "id": 1327,
+    "word": "highly",
+    "spelling": "H-I-G-H-L-Y",
+    "phonetic": "/ˈhaɪli/",
+    "gloss": "非常；非常赞许地",
+    "tip": "highly …",
+    "example": "Answer highly and clearly.",
+    "exampleZh": "请非常且清楚地回答。",
+    "tags": [
+      "academic",
+      "campus"
+    ],
+    "tier": "core",
+    "pos": "adv. 副词"
+  },
+  {
+    "id": 1328,
+    "word": "abundance",
+    "spelling": "A-B-U-N-D-A-N-C-E",
+    "phonetic": "/əˈbəndəns/",
+    "gloss": "丰富；充足",
+    "tip": "the abundance",
+    "example": "Check the abundance in the text.",
+    "exampleZh": "核对文本中的丰富。",
+    "tags": [
+      "academic"
+    ],
+    "tier": "core",
+    "pos": "n. 名词"
+  },
+  {
+    "id": 1329,
+    "word": "nearby",
+    "spelling": "N-E-A-R-B-Y",
+    "phonetic": "/ˈnɪrˈbaɪ/",
+    "gloss": "附近的；近旁的",
+    "tip": "a nearby …",
+    "example": "Give a nearby answer.",
+    "exampleZh": "给出附近的回答。",
+    "tags": [
+      "academic",
+      "campus"
+    ],
+    "tier": "core",
+    "pos": "adj. 形容词"
+  },
+  {
+    "id": 1330,
+    "word": "density",
+    "spelling": "D-E-N-S-I-T-Y",
+    "phonetic": "/ˈdɛnsɪti/",
+    "gloss": "密度；[化] 密度",
+    "tip": "the density",
+    "example": "Check the density in the text.",
+    "exampleZh": "核对文本中的密度。",
+    "tags": [
+      "academic"
+    ],
+    "tier": "core",
+    "pos": "n. 名词"
+  },
+  {
+    "id": 1331,
+    "word": "tissue",
+    "spelling": "T-I-S-S-U-E",
+    "phonetic": "/ˈtɪʃu/",
+    "gloss": "薄的织物；薄纱",
+    "tip": "the tissue",
+    "example": "Check the tissue in the text.",
+    "exampleZh": "核对文本中的薄的织物。",
+    "tags": [
+      "academic"
+    ],
+    "tier": "core",
+    "pos": "n. 名词"
+  },
+  {
+    "id": 1332,
+    "word": "sticky",
+    "spelling": "S-T-I-C-K-Y",
+    "phonetic": "/ˈstɪki/",
+    "gloss": "粘的；有粘性的",
+    "tip": "a sticky …",
+    "example": "Give a sticky answer.",
+    "exampleZh": "给出粘的回答。",
+    "tags": [
+      "academic"
+    ],
+    "tier": "core",
+    "pos": "adj. 形容词"
+  },
+  {
+    "id": 1333,
+    "word": "clap",
+    "spelling": "C-L-A-P",
+    "phonetic": "/klæp/",
+    "gloss": "拍手；拍手声",
+    "tip": "the clap",
+    "example": "Check the clap in the text.",
+    "exampleZh": "核对文本中的拍手。",
+    "tags": [
+      "academic"
+    ],
+    "tier": "core",
+    "pos": "n. 名词"
+  },
+  {
+    "id": 1334,
+    "word": "snap",
+    "spelling": "S-N-A-P",
+    "phonetic": "/snæp/",
+    "gloss": "使突然中断；猛咬",
+    "tip": "snap …",
+    "example": "Please snap the key points.",
+    "exampleZh": "请使突然中断要点。",
+    "tags": [
+      "academic"
+    ],
+    "tier": "core",
+    "pos": "v. 动词"
+  },
+  {
+    "id": 1335,
+    "word": "pitch",
+    "spelling": "P-I-T-C-H",
+    "phonetic": "/pɪʧ/",
+    "gloss": "程度；坡度",
+    "tip": "the pitch",
+    "example": "Check the pitch in the text.",
+    "exampleZh": "核对文本中的程度。",
+    "tags": [
+      "academic"
+    ],
+    "tier": "core",
+    "pos": "n. 名词"
+  },
+  {
+    "id": 1336,
+    "word": "courtesy",
+    "spelling": "C-O-U-R-T-E-S-Y",
+    "phonetic": "/ˈkərtəsi/",
+    "gloss": "礼貌；谦恭",
+    "tip": "the courtesy",
+    "example": "Check the courtesy in the text.",
+    "exampleZh": "核对文本中的礼貌。",
+    "tags": [
+      "academic"
+    ],
+    "tier": "core",
+    "pos": "n. 名词"
+  },
+  {
+    "id": 1337,
+    "word": "burst",
+    "spelling": "B-U-R-S-T",
+    "phonetic": "/bərst/",
+    "gloss": "破裂；突发",
+    "tip": "the burst",
+    "example": "Check the burst in the text.",
+    "exampleZh": "核对文本中的破裂。",
+    "tags": [
+      "academic"
+    ],
+    "tier": "core",
+    "pos": "n. 名词"
+  },
+  {
+    "id": 1338,
+    "word": "nest",
+    "spelling": "N-E-S-T",
+    "phonetic": "/nɛst/",
+    "gloss": "巢；窝",
+    "tip": "the nest",
+    "example": "Check the nest in the text.",
+    "exampleZh": "核对文本中的巢。",
+    "tags": [
+      "academic"
+    ],
+    "tier": "core",
+    "pos": "n. 名词"
+  },
+  {
+    "id": 1339,
+    "word": "curl",
+    "spelling": "C-U-R-L",
+    "phonetic": "/kərl/",
+    "gloss": "拳曲；鬈发",
+    "tip": "the curl",
+    "example": "Check the curl in the text.",
+    "exampleZh": "核对文本中的拳曲。",
+    "tags": [
+      "academic"
+    ],
+    "tier": "core",
+    "pos": "n. 名词"
+  },
+  {
+    "id": 1340,
+    "word": "switch",
+    "spelling": "S-W-I-T-C-H",
+    "phonetic": "/swɪʧ/",
+    "gloss": "开关；电闸",
+    "tip": "the switch",
+    "example": "Check the switch in the text.",
+    "exampleZh": "核对文本中的开关。",
+    "tags": [
+      "academic",
+      "campus"
+    ],
+    "tier": "core",
+    "pos": "n. 名词"
+  },
+  {
+    "id": 1341,
+    "word": "formation",
+    "spelling": "F-O-R-M-A-T-I-O-N",
+    "phonetic": "/fɔrˈmeɪʃən/",
+    "gloss": "形成；构造",
+    "tip": "the formation",
+    "example": "Check the formation in the text.",
+    "exampleZh": "核对文本中的形成。",
+    "tags": [
+      "academic"
+    ],
+    "tier": "core",
+    "pos": "n. 名词"
+  },
+  {
+    "id": 1342,
+    "word": "earthquake",
+    "spelling": "E-A-R-T-H-Q-U-A-K-E",
+    "phonetic": "/ˈərθkˌweɪk/",
+    "gloss": "地震",
+    "tip": "the earthquake",
+    "example": "Check the earthquake in the text.",
+    "exampleZh": "核对文本中的地震。",
+    "tags": [
+      "academic"
+    ],
+    "tier": "core",
+    "pos": "n. 名词"
+  },
+  {
+    "id": 1343,
+    "word": "strike",
+    "spelling": "S-T-R-I-K-E",
+    "phonetic": "/straɪk/",
+    "gloss": "罢工；打击",
+    "tip": "the strike",
+    "example": "Check the strike in the text.",
+    "exampleZh": "核对文本中的罢工。",
+    "tags": [
+      "academic",
+      "campus"
+    ],
+    "tier": "core",
+    "pos": "n. 名词"
+  },
+  {
+    "id": 1344,
+    "word": "resident",
+    "spelling": "R-E-S-I-D-E-N-T",
+    "phonetic": "/ˈrɛzɪdənt/",
+    "gloss": "居民；常驻程序",
+    "tip": "the resident",
+    "example": "Check the resident in the text.",
+    "exampleZh": "核对文本中的居民。",
+    "tags": [
+      "academic"
+    ],
+    "tier": "core",
+    "pos": "n. 名词"
+  },
+  {
+    "id": 1345,
+    "word": "bang",
+    "spelling": "B-A-N-G",
+    "phonetic": "/bæŋ/",
+    "gloss": "重击；突然巨响",
+    "tip": "the bang",
+    "example": "Check the bang in the text.",
+    "exampleZh": "核对文本中的重击。",
+    "tags": [
+      "academic"
+    ],
+    "tier": "core",
+    "pos": "n. 名词"
+  },
+  {
+    "id": 1346,
+    "word": "profit",
+    "spelling": "P-R-O-F-I-T",
+    "phonetic": "/ˈprɑfɪt/",
+    "gloss": "利润；赢利",
+    "tip": "the profit",
+    "example": "Check the profit in the text.",
+    "exampleZh": "核对文本中的利润。",
+    "tags": [
+      "academic",
+      "campus"
+    ],
+    "tier": "core",
+    "pos": "n. 名词"
+  },
+  {
+    "id": 1347,
+    "word": "foster",
+    "spelling": "F-O-S-T-E-R",
+    "phonetic": "/ˈfɑstər/",
+    "gloss": "收养的；养育的",
+    "tip": "a foster …",
+    "example": "Give a foster answer.",
+    "exampleZh": "给出收养的回答。",
+    "tags": [
+      "academic"
+    ],
+    "tier": "core",
+    "pos": "adj. 形容词"
+  },
+  {
+    "id": 1348,
+    "word": "threaten",
+    "spelling": "T-H-R-E-A-T-E-N",
+    "phonetic": "/θˈrɛtən/",
+    "gloss": "恐吓；威胁",
+    "tip": "threaten …",
+    "example": "Please threaten the key points.",
+    "exampleZh": "请恐吓要点。",
+    "tags": [
+      "academic",
+      "campus"
+    ],
+    "tier": "core",
+    "pos": "v. 动词"
+  },
+  {
+    "id": 1349,
+    "word": "basis",
+    "spelling": "B-A-S-I-S",
+    "phonetic": "/ˈbeɪsɪs/",
+    "gloss": "基础；主要成分",
+    "tip": "the basis",
+    "example": "Check the basis in the text.",
+    "exampleZh": "核对文本中的基础。",
+    "tags": [
+      "academic"
+    ],
+    "tier": "core",
+    "pos": "n. 名词"
+  },
+  {
+    "id": 1350,
+    "word": "behave",
+    "spelling": "B-E-H-A-V-E",
+    "phonetic": "/bɪˈheɪv/",
+    "gloss": "举止端正；行为规矩",
+    "tip": "behave …",
+    "example": "Please behave the key points.",
+    "exampleZh": "请举止端正要点。",
+    "tags": [
+      "academic"
+    ],
+    "tier": "core",
+    "pos": "v. 动词"
+  },
+  {
+    "id": 1351,
+    "word": "outer",
+    "spelling": "O-U-T-E-R",
+    "phonetic": "/ˈaʊtər/",
+    "gloss": "外部的；外面的",
+    "tip": "a outer …",
+    "example": "Give a outer answer.",
+    "exampleZh": "给出外部的回答。",
+    "tags": [
+      "academic"
+    ],
+    "tier": "core",
+    "pos": "adj. 形容词"
+  },
+  {
+    "id": 1352,
+    "word": "bind",
+    "spelling": "B-I-N-D",
+    "phonetic": "/baɪnd/",
+    "gloss": "绑；约束",
+    "tip": "bind …",
+    "example": "Please bind the key points.",
+    "exampleZh": "请绑要点。",
+    "tags": [
+      "academic"
+    ],
+    "tier": "core",
+    "pos": "v. 动词"
+  },
+  {
+    "id": 1353,
+    "word": "magnetic",
+    "spelling": "M-A-G-N-E-T-I-C",
+    "phonetic": "/mægˈnɛtɪk/",
+    "gloss": "有磁性的；有吸引力的",
+    "tip": "a magnetic …",
+    "example": "Give a magnetic answer.",
+    "exampleZh": "给出有磁性的回答。",
+    "tags": [
+      "academic"
+    ],
+    "tier": "core",
+    "pos": "adj. 形容词"
+  },
+  {
+    "id": 1354,
+    "word": "magnet",
+    "spelling": "M-A-G-N-E-T",
+    "phonetic": "/ˈmægnət/",
+    "gloss": "磁铁；有吸引力之人",
+    "tip": "the magnet",
+    "example": "Check the magnet in the text.",
+    "exampleZh": "核对文本中的磁铁。",
+    "tags": [
+      "academic"
+    ],
+    "tier": "core",
+    "pos": "n. 名词"
+  },
+  {
+    "id": 1355,
+    "word": "oxygen",
+    "spelling": "O-X-Y-G-E-N",
+    "phonetic": "/ˈɑksɪʤən/",
+    "gloss": "氧；[化] 氧O-2",
+    "tip": "the oxygen",
+    "example": "Check the oxygen in the text.",
+    "exampleZh": "核对文本中的氧。",
+    "tags": [
+      "academic",
+      "campus"
+    ],
+    "tier": "core",
+    "pos": "n. 名词"
+  },
+  {
+    "id": 1356,
+    "word": "bubble",
+    "spelling": "B-U-B-B-L-E",
+    "phonetic": "/ˈbəbəl/",
+    "gloss": "泡沫；冒泡",
+    "tip": "the bubble",
+    "example": "Check the bubble in the text.",
+    "exampleZh": "核对文本中的泡沫。",
+    "tags": [
+      "academic"
+    ],
+    "tier": "core",
+    "pos": "n. 名词"
+  },
+  {
+    "id": 1357,
+    "word": "tube",
+    "spelling": "T-U-B-E",
+    "phonetic": "/tub/",
+    "gloss": "管；软管",
+    "tip": "the tube",
+    "example": "Check the tube in the text.",
+    "exampleZh": "核对文本中的管。",
+    "tags": [
+      "academic",
+      "campus"
+    ],
+    "tier": "core",
+    "pos": "n. 名词"
+  },
+  {
+    "id": 1358,
+    "word": "timely",
+    "spelling": "T-I-M-E-L-Y",
+    "phonetic": "/ˈtaɪmli/",
+    "gloss": "及时的；适时的",
+    "tip": "timely …",
+    "example": "Answer timely and clearly.",
+    "exampleZh": "请及时且清楚地回答。",
+    "tags": [
+      "academic"
+    ],
+    "tier": "core",
+    "pos": "adv. 副词"
+  },
+  {
+    "id": 1359,
+    "word": "weekly",
+    "spelling": "W-E-E-K-L-Y",
+    "phonetic": "/ˈwikli/",
+    "gloss": "周刊；周报",
+    "tip": "weekly …",
+    "example": "Answer weekly and clearly.",
+    "exampleZh": "请周刊且清楚地回答。",
+    "tags": [
+      "academic"
+    ],
+    "tier": "core",
+    "pos": "adv. 副词"
+  },
+  {
+    "id": 1360,
+    "word": "normally",
+    "spelling": "N-O-R-M-A-L-L-Y",
+    "phonetic": "/ˈnɔrməli/",
+    "gloss": "正规地；合规则",
+    "tip": "normally …",
+    "example": "Answer normally and clearly.",
+    "exampleZh": "请正规地且清楚地回答。",
+    "tags": [
+      "academic"
+    ],
+    "tier": "core",
+    "pos": "adv. 副词"
+  },
+  {
+    "id": 1361,
+    "word": "indoor",
+    "spelling": "I-N-D-O-O-R",
+    "phonetic": "/ˈɪnˌdɔr/",
+    "gloss": "户内的；室内的",
+    "tip": "a indoor …",
+    "example": "Give a indoor answer.",
+    "exampleZh": "给出户内的回答。",
+    "tags": [
+      "academic"
+    ],
+    "tier": "core",
+    "pos": "adj. 形容词"
+  },
+  {
+    "id": 1362,
+    "word": "sponsor",
+    "spelling": "S-P-O-N-S-O-R",
+    "phonetic": "/ˈspɑnsər/",
+    "gloss": "保证人；赞助者",
+    "tip": "the sponsor",
+    "example": "Check the sponsor in the text.",
+    "exampleZh": "核对文本中的保证人。",
+    "tags": [
+      "academic"
+    ],
+    "tier": "core",
+    "pos": "n. 名词"
+  },
+  {
+    "id": 1363,
+    "word": "vast",
+    "spelling": "V-A-S-T",
+    "phonetic": "/væst/",
+    "gloss": "巨大的；广大的",
+    "tip": "a vast …",
+    "example": "Give a vast answer.",
+    "exampleZh": "给出巨大的回答。",
+    "tags": [
+      "academic"
+    ],
+    "tier": "core",
+    "pos": "adj. 形容词"
+  },
+  {
+    "id": 1364,
+    "word": "original",
+    "spelling": "O-R-I-G-I-N-A-L",
+    "phonetic": "/ərˈɪʤənəl/",
+    "gloss": "最初的；原始的",
+    "tip": "a original …",
+    "example": "Give a original answer.",
+    "exampleZh": "给出最初的回答。",
+    "tags": [
+      "academic",
+      "campus"
+    ],
+    "tier": "core",
+    "pos": "adj. 形容词"
+  },
+  {
+    "id": 1365,
+    "word": "democracy",
+    "spelling": "D-E-M-O-C-R-A-C-Y",
+    "phonetic": "/dɪˈmɑkrəsi/",
+    "gloss": "民主政治；民主主义",
+    "tip": "the democracy",
+    "example": "Check the democracy in the text.",
+    "exampleZh": "核对文本中的民主政治。",
+    "tags": [
+      "academic",
+      "campus"
+    ],
+    "tier": "core",
+    "pos": "n. 名词"
+  },
+  {
+    "id": 1366,
+    "word": "appliance",
+    "spelling": "A-P-P-L-I-A-N-C-E",
+    "phonetic": "/əˈplaɪəns/",
+    "gloss": "器械；用具",
+    "tip": "the appliance",
+    "example": "Check the appliance in the text.",
+    "exampleZh": "核对文本中的器械。",
+    "tags": [
+      "academic"
+    ],
+    "tier": "core",
+    "pos": "n. 名词"
+  },
+  {
+    "id": 1367,
+    "word": "explosive",
+    "spelling": "E-X-P-L-O-S-I-V-E",
+    "phonetic": "/ɪkˈsploʊsɪv/",
+    "gloss": "炸药；爆破音",
+    "tip": "a explosive …",
+    "example": "Give a explosive answer.",
+    "exampleZh": "给出炸药回答。",
+    "tags": [
+      "academic"
+    ],
+    "tier": "core",
+    "pos": "adj. 形容词"
+  },
+  {
+    "id": 1368,
+    "word": "correspondent",
+    "spelling": "C-O-R-R-E-S-P-O-N-D-E-N-T",
+    "phonetic": "/ˌkɔrəˈspɑndənt/",
+    "gloss": "通讯记者；通信者",
+    "tip": "the correspondent",
+    "example": "Check the correspondent in the text.",
+    "exampleZh": "核对文本中的通讯记者。",
+    "tags": [
+      "academic"
+    ],
+    "tier": "core",
+    "pos": "n. 名词"
+  },
+  {
+    "id": 1369,
+    "word": "tackle",
+    "spelling": "T-A-C-K-L-E",
+    "phonetic": "/ˈtækəl/",
+    "gloss": "工具；复滑车",
+    "tip": "the tackle",
+    "example": "Check the tackle in the text.",
+    "exampleZh": "核对文本中的工具。",
+    "tags": [
+      "academic"
+    ],
+    "tier": "core",
+    "pos": "n. 名词"
+  },
+  {
+    "id": 1370,
+    "word": "stock",
+    "spelling": "S-T-O-C-K",
+    "phonetic": "/stɑk/",
+    "gloss": "树干；祖先",
+    "tip": "the stock",
+    "example": "Check the stock in the text.",
+    "exampleZh": "核对文本中的树干。",
+    "tags": [
+      "academic",
+      "campus"
+    ],
+    "tier": "core",
+    "pos": "n. 名词"
+  },
+  {
+    "id": 1371,
+    "word": "lean",
+    "spelling": "L-E-A-N",
+    "phonetic": "/lin/",
+    "gloss": "瘦肉；倾斜",
+    "tip": "the lean",
+    "example": "Check the lean in the text.",
+    "exampleZh": "核对文本中的瘦肉。",
+    "tags": [
+      "academic"
+    ],
+    "tier": "core",
+    "pos": "n. 名词"
+  },
+  {
+    "id": 1372,
+    "word": "recognise",
+    "spelling": "R-E-C-O-G-N-I-S-E",
+    "phonetic": "/ˈrɛkəgˌnaɪz/",
+    "gloss": "认识；辩认",
+    "tip": "recognise …",
+    "example": "Please recognise the key points.",
+    "exampleZh": "请认识要点。",
+    "tags": [
+      "academic",
+      "campus"
+    ],
+    "tier": "core",
+    "pos": "v. 动词"
+  },
+  {
+    "id": 1373,
+    "word": "stroke",
+    "spelling": "S-T-R-O-K-E",
+    "phonetic": "/stroʊk/",
+    "gloss": "笔划；打",
+    "tip": "the stroke",
+    "example": "Check the stroke in the text.",
+    "exampleZh": "核对文本中的笔划。",
+    "tags": [
+      "academic"
+    ],
+    "tier": "core",
+    "pos": "n. 名词"
+  },
+  {
+    "id": 1374,
+    "word": "durable",
+    "spelling": "D-U-R-A-B-L-E",
+    "phonetic": "/ˈdʊrəbəl/",
+    "gloss": "持久的；耐用的",
+    "tip": "a durable …",
+    "example": "Give a durable answer.",
+    "exampleZh": "给出持久的回答。",
+    "tags": [
+      "academic",
+      "campus"
+    ],
+    "tier": "core",
+    "pos": "adj. 形容词"
+  },
+  {
+    "id": 1375,
+    "word": "creature",
+    "spelling": "C-R-E-A-T-U-R-E",
+    "phonetic": "/ˈkriʧər/",
+    "gloss": "人；动物",
+    "tip": "the creature",
+    "example": "Check the creature in the text.",
+    "exampleZh": "核对文本中的人。",
+    "tags": [
+      "academic",
+      "campus"
+    ],
+    "tier": "core",
+    "pos": "n. 名词"
+  },
+  {
+    "id": 1376,
+    "word": "attempt",
+    "spelling": "A-T-T-E-M-P-T",
+    "phonetic": "/əˈtɛmpt/",
+    "gloss": "尝试；企图",
+    "tip": "the attempt",
+    "example": "Check the attempt in the text.",
+    "exampleZh": "核对文本中的尝试。",
+    "tags": [
+      "academic",
+      "campus"
+    ],
+    "tier": "core",
+    "pos": "n. 名词"
+  },
+  {
+    "id": 1377,
+    "word": "origin",
+    "spelling": "O-R-I-G-I-N",
+    "phonetic": "/ˈɔrəʤən/",
+    "gloss": "起源；起因",
+    "tip": "the origin",
+    "example": "Check the origin in the text.",
+    "exampleZh": "核对文本中的起源。",
+    "tags": [
+      "academic"
+    ],
+    "tier": "core",
+    "pos": "n. 名词"
+  },
+  {
+    "id": 1378,
+    "word": "scale",
+    "spelling": "S-C-A-L-E",
+    "phonetic": "/skeɪl/",
+    "gloss": "刻度；衡量",
+    "tip": "the scale",
+    "example": "Check the scale in the text.",
+    "exampleZh": "核对文本中的刻度。",
+    "tags": [
+      "academic",
+      "campus"
+    ],
+    "tier": "core",
+    "pos": "n. 名词"
+  },
+  {
+    "id": 1379,
+    "word": "remote",
+    "spelling": "R-E-M-O-T-E",
+    "phonetic": "/rɪˈmoʊt/",
+    "gloss": "遥远的；偏僻的",
+    "tip": "a remote …",
+    "example": "Give a remote answer.",
+    "exampleZh": "给出遥远的回答。",
+    "tags": [
+      "academic"
+    ],
+    "tier": "core",
+    "pos": "adj. 形容词"
+  },
+  {
+    "id": 1380,
+    "word": "journey",
+    "spelling": "J-O-U-R-N-E-Y",
+    "phonetic": "/ˈʤərni/",
+    "gloss": "旅程；旅行",
+    "tip": "the journey",
+    "example": "Check the journey in the text.",
+    "exampleZh": "核对文本中的旅程。",
+    "tags": [
+      "academic"
+    ],
+    "tier": "core",
+    "pos": "n. 名词"
+  },
+  {
+    "id": 1381,
+    "word": "disguise",
+    "spelling": "D-I-S-G-U-I-S-E",
+    "phonetic": "/dɪsˈgaɪz/",
+    "gloss": "假面目；假装",
+    "tip": "disguise …",
+    "example": "Please disguise the key points.",
+    "exampleZh": "请假面目要点。",
+    "tags": [
+      "academic"
+    ],
+    "tier": "core",
+    "pos": "v. 动词"
+  },
+  {
+    "id": 1382,
+    "word": "crisis",
+    "spelling": "C-R-I-S-I-S",
+    "phonetic": "/ˈkraɪsəs/",
+    "gloss": "危机；危险期",
+    "tip": "the crisis",
+    "example": "Check the crisis in the text.",
+    "exampleZh": "核对文本中的危机。",
+    "tags": [
+      "academic",
+      "campus"
+    ],
+    "tier": "core",
+    "pos": "n. 名词"
+  },
+  {
+    "id": 1383,
+    "word": "suffer",
+    "spelling": "S-U-F-F-E-R",
+    "phonetic": "/ˈsəfər/",
+    "gloss": "遭受；经历",
+    "tip": "suffer …",
+    "example": "Please suffer the key points.",
+    "exampleZh": "请遭受要点。",
+    "tags": [
+      "academic",
+      "campus"
+    ],
+    "tier": "core",
+    "pos": "v. 动词"
+  },
+  {
+    "id": 1384,
+    "word": "solution",
+    "spelling": "S-O-L-U-T-I-O-N",
+    "phonetic": "/səˈluʃən/",
+    "gloss": "解决；解答",
+    "tip": "the solution",
+    "example": "Check the solution in the text.",
+    "exampleZh": "核对文本中的解决。",
+    "tags": [
+      "academic",
+      "campus"
+    ],
+    "tier": "core",
+    "pos": "n. 名词"
+  },
+  {
+    "id": 1385,
+    "word": "execute",
+    "spelling": "E-X-E-C-U-T-E",
+    "phonetic": "/ˈɛksəˌkjut/",
+    "gloss": "执行；实行",
+    "tip": "execute …",
+    "example": "Please execute the key points.",
+    "exampleZh": "请执行要点。",
+    "tags": [
+      "academic"
+    ],
+    "tier": "core",
+    "pos": "v. 动词"
+  },
+  {
+    "id": 1386,
+    "word": "disaster",
+    "spelling": "D-I-S-A-S-T-E-R",
+    "phonetic": "/dɪˈzæstər/",
+    "gloss": "灾祸；不幸",
+    "tip": "the disaster",
+    "example": "Check the disaster in the text.",
+    "exampleZh": "核对文本中的灾祸。",
+    "tags": [
+      "academic"
+    ],
+    "tier": "core",
+    "pos": "n. 名词"
+  },
+  {
+    "id": 1387,
+    "word": "various",
+    "spelling": "V-A-R-I-O-U-S",
+    "phonetic": "/ˈvɛriəs/",
+    "gloss": "不同的；各种的",
+    "tip": "a various …",
+    "example": "Give a various answer.",
+    "exampleZh": "给出不同的回答。",
+    "tags": [
+      "academic",
+      "campus"
+    ],
+    "tier": "core",
+    "pos": "adj. 形容词"
+  },
+  {
+    "id": 1388,
+    "word": "incident",
+    "spelling": "I-N-C-I-D-E-N-T",
+    "phonetic": "/ˈɪnsədənt/",
+    "gloss": "事件；事变",
+    "tip": "the incident",
+    "example": "Check the incident in the text.",
+    "exampleZh": "核对文本中的事件。",
+    "tags": [
+      "academic"
+    ],
+    "tier": "core",
+    "pos": "n. 名词"
+  },
+  {
+    "id": 1389,
+    "word": "alert",
+    "spelling": "A-L-E-R-T",
+    "phonetic": "/əˈlərt/",
+    "gloss": "警觉的；灵敏的",
+    "tip": "a alert …",
+    "example": "Give a alert answer.",
+    "exampleZh": "给出警觉的回答。",
+    "tags": [
+      "academic"
+    ],
+    "tier": "core",
+    "pos": "adj. 形容词"
+  },
+  {
+    "id": 1390,
+    "word": "outlook",
+    "spelling": "O-U-T-L-O-O-K",
+    "phonetic": "/ˈaʊˌtlʊk/",
+    "gloss": "观点；景色",
+    "tip": "the outlook",
+    "example": "Check the outlook in the text.",
+    "exampleZh": "核对文本中的观点。",
+    "tags": [
+      "academic"
+    ],
+    "tier": "core",
+    "pos": "n. 名词"
+  },
+  {
+    "id": 1391,
+    "word": "campaign",
+    "spelling": "C-A-M-P-A-I-G-N",
+    "phonetic": "/kæmˈpeɪn/",
+    "gloss": "战役；运动",
+    "tip": "the campaign",
+    "example": "Check the campaign in the text.",
+    "exampleZh": "核对文本中的战役。",
+    "tags": [
+      "academic"
+    ],
+    "tier": "core",
+    "pos": "n. 名词"
+  },
+  {
+    "id": 1392,
+    "word": "ribbon",
+    "spelling": "R-I-B-B-O-N",
+    "phonetic": "/ˈrɪbən/",
+    "gloss": "缎带；色带",
+    "tip": "the ribbon",
+    "example": "Check the ribbon in the text.",
+    "exampleZh": "核对文本中的缎带。",
+    "tags": [
+      "academic"
+    ],
+    "tier": "core",
+    "pos": "n. 名词"
+  },
+  {
+    "id": 1393,
+    "word": "colony",
+    "spelling": "C-O-L-O-N-Y",
+    "phonetic": "/ˈkɑləni/",
+    "gloss": "殖民地；移民队",
+    "tip": "the colony",
+    "example": "Check the colony in the text.",
+    "exampleZh": "核对文本中的殖民地。",
+    "tags": [
+      "academic"
+    ],
+    "tier": "core",
+    "pos": "n. 名词"
+  },
+  {
+    "id": 1394,
+    "word": "tradition",
+    "spelling": "T-R-A-D-I-T-I-O-N",
+    "phonetic": "/trəˈdɪʃən/",
+    "gloss": "传说；传统",
+    "tip": "the tradition",
+    "example": "Check the tradition in the text.",
+    "exampleZh": "核对文本中的传说。",
+    "tags": [
+      "academic",
+      "campus"
+    ],
+    "tier": "core",
+    "pos": "n. 名词"
+  },
+  {
+    "id": 1395,
+    "word": "account",
+    "spelling": "A-C-C-O-U-N-T",
+    "phonetic": "/əˈkaʊnt/",
+    "gloss": "报告；解释",
+    "tip": "the account",
+    "example": "Check the account in the text.",
+    "exampleZh": "核对文本中的报告。",
+    "tags": [
+      "academic",
+      "campus"
+    ],
+    "tier": "core",
+    "pos": "n. 名词"
+  },
+  {
+    "id": 1396,
+    "word": "event",
+    "spelling": "E-V-E-N-T",
+    "phonetic": "/ɪˈvɛnt/",
+    "gloss": "事件；结果",
+    "tip": "the event",
+    "example": "Check the event in the text.",
+    "exampleZh": "核对文本中的事件。",
+    "tags": [
+      "academic"
+    ],
+    "tier": "core",
+    "pos": "n. 名词"
+  },
+  {
+    "id": 1397,
+    "word": "explosion",
+    "spelling": "E-X-P-L-O-S-I-O-N",
+    "phonetic": "/ɪkˈsploʊʒən/",
+    "gloss": "爆发；激增",
+    "tip": "the explosion",
+    "example": "Check the explosion in the text.",
+    "exampleZh": "核对文本中的爆发。",
+    "tags": [
+      "academic"
+    ],
+    "tier": "core",
+    "pos": "n. 名词"
+  },
+  {
+    "id": 1398,
+    "word": "advance",
+    "spelling": "A-D-V-A-N-C-E",
+    "phonetic": "/ədˈvæns/",
+    "gloss": "前进；进展",
+    "tip": "the advance",
+    "example": "Check the advance in the text.",
+    "exampleZh": "核对文本中的前进。",
+    "tags": [
+      "academic",
+      "campus"
+    ],
+    "tier": "core",
+    "pos": "n. 名词"
+  },
+  {
+    "id": 1399,
+    "word": "connect",
+    "spelling": "C-O-N-N-E-C-T",
+    "phonetic": "/kəˈnɛkt/",
+    "gloss": "连接；联合",
+    "tip": "connect …",
+    "example": "Please connect the key points.",
+    "exampleZh": "请连接要点。",
+    "tags": [
+      "academic"
+    ],
+    "tier": "core",
+    "pos": "v. 动词"
+  },
+  {
+    "id": 1400,
+    "word": "feather",
+    "spelling": "F-E-A-T-H-E-R",
+    "phonetic": "/ˈfɛðər/",
+    "gloss": "羽毛；长羽毛",
+    "tip": "the feather",
+    "example": "Check the feather in the text.",
+    "exampleZh": "核对文本中的羽毛。",
+    "tags": [
+      "academic"
+    ],
+    "tier": "core",
+    "pos": "n. 名词"
+  },
+  {
+    "id": 1401,
+    "word": "precious",
+    "spelling": "P-R-E-C-I-O-U-S",
+    "phonetic": "/ˈprɛʃəs/",
+    "gloss": "宝贵的；珍贵的",
+    "tip": "a precious …",
+    "example": "Give a precious answer.",
+    "exampleZh": "给出宝贵的回答。",
+    "tags": [
+      "academic"
+    ],
+    "tier": "core",
+    "pos": "adj. 形容词"
+  },
+  {
+    "id": 1402,
+    "word": "horizon",
+    "spelling": "H-O-R-I-Z-O-N",
+    "phonetic": "/hərˈaɪzən/",
+    "gloss": "地平线；眼界",
+    "tip": "the horizon",
+    "example": "Check the horizon in the text.",
+    "exampleZh": "核对文本中的地平线。",
+    "tags": [
+      "academic"
+    ],
+    "tier": "core",
+    "pos": "n. 名词"
+  },
+  {
+    "id": 1403,
+    "word": "comedy",
+    "spelling": "C-O-M-E-D-Y",
+    "phonetic": "/ˈkɑmədi/",
+    "gloss": "喜剧；有趣的事情",
+    "tip": "the comedy",
+    "example": "Check the comedy in the text.",
+    "exampleZh": "核对文本中的喜剧。",
+    "tags": [
+      "academic"
+    ],
+    "tier": "core",
+    "pos": "n. 名词"
+  },
+  {
+    "id": 1404,
+    "word": "hire",
+    "spelling": "H-I-R-E",
+    "phonetic": "/haɪər/",
+    "gloss": "租金；租用",
+    "tip": "the hire",
+    "example": "Check the hire in the text.",
+    "exampleZh": "核对文本中的租金。",
+    "tags": [
+      "academic",
+      "campus"
+    ],
+    "tier": "core",
+    "pos": "n. 名词"
+  },
+  {
+    "id": 1405,
+    "word": "salary",
+    "spelling": "S-A-L-A-R-Y",
+    "phonetic": "/ˈsæləri/",
+    "gloss": "薪水；给...加薪",
+    "tip": "the salary",
+    "example": "Check the salary in the text.",
+    "exampleZh": "核对文本中的薪水。",
+    "tags": [
+      "academic"
+    ],
+    "tier": "core",
+    "pos": "n. 名词"
+  },
+  {
+    "id": 1406,
+    "word": "senior",
+    "spelling": "S-E-N-I-O-R",
+    "phonetic": "/ˈsinjər/",
+    "gloss": "年长者；资深者",
+    "tip": "the senior",
+    "example": "Check the senior in the text.",
+    "exampleZh": "核对文本中的年长者。",
+    "tags": [
+      "academic"
+    ],
+    "tier": "core",
+    "pos": "n. 名词"
+  },
+  {
+    "id": 1407,
+    "word": "bankrupt",
+    "spelling": "B-A-N-K-R-U-P-T",
+    "phonetic": "/ˈbæŋkrəpt/",
+    "gloss": "破产者；破产",
+    "tip": "the bankrupt",
+    "example": "Check the bankrupt in the text.",
+    "exampleZh": "核对文本中的破产者。",
+    "tags": [
+      "academic"
+    ],
+    "tier": "core",
+    "pos": "n. 名词"
+  },
+  {
+    "id": 1408,
+    "word": "overlook",
+    "spelling": "O-V-E-R-L-O-O-K",
+    "phonetic": "/ˈoʊvərˌlʊk/",
+    "gloss": "俯瞰；远眺",
+    "tip": "overlook …",
+    "example": "Please overlook the key points.",
+    "exampleZh": "请俯瞰要点。",
+    "tags": [
+      "academic",
+      "campus"
+    ],
+    "tier": "core",
+    "pos": "v. 动词"
+  },
+  {
+    "id": 1409,
+    "word": "divorce",
+    "spelling": "D-I-V-O-R-C-E",
+    "phonetic": "/dɪˈvɔrs/",
+    "gloss": "离婚；与...离婚",
+    "tip": "the divorce",
+    "example": "Check the divorce in the text.",
+    "exampleZh": "核对文本中的离婚。",
+    "tags": [
+      "academic"
+    ],
+    "tier": "core",
+    "pos": "n. 名词"
+  },
+  {
+    "id": 1410,
+    "word": "invention",
+    "spelling": "I-N-V-E-N-T-I-O-N",
+    "phonetic": "/ˌɪnˈvɛnʃən/",
+    "gloss": "发明；创作能力",
+    "tip": "the invention",
+    "example": "Check the invention in the text.",
+    "exampleZh": "核对文本中的发明。",
+    "tags": [
+      "academic"
+    ],
+    "tier": "core",
+    "pos": "n. 名词"
+  },
+  {
+    "id": 1411,
+    "word": "household",
+    "spelling": "H-O-U-S-E-H-O-L-D",
+    "phonetic": "/ˈhaʊsˌhoʊld/",
+    "gloss": "一家人；家庭",
+    "tip": "the household",
+    "example": "Check the household in the text.",
+    "exampleZh": "核对文本中的一家人。",
+    "tags": [
+      "academic"
+    ],
+    "tier": "core",
+    "pos": "n. 名词"
+  },
+  {
+    "id": 1412,
+    "word": "charge",
+    "spelling": "C-H-A-R-G-E",
+    "phonetic": "/ʧɑrʤ/",
+    "gloss": "指控；费用",
+    "tip": "the charge",
+    "example": "Check the charge in the text.",
+    "exampleZh": "核对文本中的指控。",
+    "tags": [
+      "academic",
+      "campus"
+    ],
+    "tier": "core",
+    "pos": "n. 名词"
+  },
+  {
+    "id": 1413,
+    "word": "curiosity",
+    "spelling": "C-U-R-I-O-S-I-T-Y",
+    "phonetic": "/ˌkjʊriˈɑsəti/",
+    "gloss": "好奇心；新奇的事物",
+    "tip": "the curiosity",
+    "example": "Check the curiosity in the text.",
+    "exampleZh": "核对文本中的好奇心。",
+    "tags": [
+      "academic"
+    ],
+    "tier": "core",
+    "pos": "n. 名词"
+  },
+  {
+    "id": 1414,
+    "word": "think",
+    "spelling": "T-H-I-N-K",
+    "phonetic": "/θɪŋk/",
+    "gloss": "想；考虑",
+    "tip": "think …",
+    "example": "Please think the key points.",
+    "exampleZh": "请想要点。",
+    "tags": [
+      "academic"
+    ],
+    "tier": "core",
+    "pos": "v. 动词"
+  },
+  {
+    "id": 1415,
+    "word": "deposit",
+    "spelling": "D-E-P-O-S-I-T",
+    "phonetic": "/dɪˈpɑzət/",
+    "gloss": "存款；定金",
+    "tip": "the deposit",
+    "example": "Check the deposit in the text.",
+    "exampleZh": "核对文本中的存款。",
+    "tags": [
+      "academic",
+      "campus"
+    ],
+    "tier": "core",
+    "pos": "n. 名词"
+  },
+  {
+    "id": 1416,
+    "word": "render",
+    "spelling": "R-E-N-D-E-R",
+    "phonetic": "/ˈrɛndər/",
+    "gloss": "回报；给于",
+    "tip": "render …",
+    "example": "Please render the key points.",
+    "exampleZh": "请回报要点。",
+    "tags": [
+      "academic"
+    ],
+    "tier": "core",
+    "pos": "v. 动词"
+  },
+  {
+    "id": 1417,
+    "word": "expectation",
+    "spelling": "E-X-P-E-C-T-A-T-I-O-N",
+    "phonetic": "/ˌɛkspɛkˈteɪʃən/",
+    "gloss": "期待；指望",
+    "tip": "the expectation",
+    "example": "Check the expectation in the text.",
+    "exampleZh": "核对文本中的期待。",
+    "tags": [
+      "academic",
+      "campus"
+    ],
+    "tier": "core",
+    "pos": "n. 名词"
+  },
+  {
+    "id": 1418,
+    "word": "engineer",
+    "spelling": "E-N-G-I-N-E-E-R",
+    "phonetic": "/ˈɛnʤəˈnɪr/",
+    "gloss": "工程师；工兵",
+    "tip": "the engineer",
+    "example": "Check the engineer in the text.",
+    "exampleZh": "核对文本中的工程师。",
+    "tags": [
+      "academic",
+      "campus"
+    ],
+    "tier": "core",
+    "pos": "n. 名词"
+  },
+  {
+    "id": 1419,
+    "word": "conscious",
+    "spelling": "C-O-N-S-C-I-O-U-S",
+    "phonetic": "/ˈkɑnʃəs/",
+    "gloss": "有意识的；知觉的",
+    "tip": "a conscious …",
+    "example": "Give a conscious answer.",
+    "exampleZh": "给出有意识的回答。",
+    "tags": [
+      "academic"
+    ],
+    "tier": "core",
+    "pos": "adj. 形容词"
+  },
+  {
+    "id": 1420,
+    "word": "raw",
+    "spelling": "R-A-W",
+    "phonetic": "/rɑ/",
+    "gloss": "擦伤处；半成品",
+    "tip": "the raw",
+    "example": "Check the raw in the text.",
+    "exampleZh": "核对文本中的擦伤处。",
+    "tags": [
+      "academic",
+      "campus"
+    ],
+    "tier": "core",
+    "pos": "n. 名词"
+  },
+  {
+    "id": 1421,
+    "word": "presumably",
+    "spelling": "P-R-E-S-U-M-A-B-L-Y",
+    "phonetic": "/prɪˈzuməbli/",
+    "gloss": "推测上；大概",
+    "tip": "presumably …",
+    "example": "Answer presumably and clearly.",
+    "exampleZh": "请推测上且清楚地回答。",
+    "tags": [
+      "academic"
+    ],
+    "tier": "core",
+    "pos": "adv. 副词"
+  },
+  {
+    "id": 1422,
+    "word": "muscle",
+    "spelling": "M-U-S-C-L-E",
+    "phonetic": "/ˈməsəl/",
+    "gloss": "肌肉；臂力",
+    "tip": "the muscle",
+    "example": "Check the muscle in the text.",
+    "exampleZh": "核对文本中的肌肉。",
+    "tags": [
+      "academic",
+      "campus"
+    ],
+    "tier": "core",
+    "pos": "n. 名词"
+  },
+  {
+    "id": 1423,
+    "word": "mention",
+    "spelling": "M-E-N-T-I-O-N",
+    "phonetic": "/ˈmɛnʃən/",
+    "gloss": "提到；言及",
+    "tip": "the mention",
+    "example": "Check the mention in the text.",
+    "exampleZh": "核对文本中的提到。",
+    "tags": [
+      "academic"
+    ],
+    "tier": "core",
+    "pos": "n. 名词"
+  },
+  {
+    "id": 1424,
+    "word": "universe",
+    "spelling": "U-N-I-V-E-R-S-E",
+    "phonetic": "/ˈjunəˌvərs/",
+    "gloss": "宇宙；星系",
+    "tip": "the universe",
+    "example": "Check the universe in the text.",
+    "exampleZh": "核对文本中的宇宙。",
+    "tags": [
+      "academic",
+      "campus"
+    ],
+    "tier": "core",
+    "pos": "n. 名词"
+  },
+  {
+    "id": 1425,
+    "word": "find",
+    "spelling": "F-I-N-D",
+    "phonetic": "/faɪnd/",
+    "gloss": "发现；感到",
+    "tip": "find …",
+    "example": "Please find the key points.",
+    "exampleZh": "请发现要点。",
+    "tags": [
+      "academic"
+    ],
+    "tier": "core",
+    "pos": "v. 动词"
+  },
+  {
+    "id": 1426,
+    "word": "arrow",
+    "spelling": "A-R-R-O-W",
+    "phonetic": "/ˈɛroʊ/",
+    "gloss": "箭；箭状物",
+    "tip": "the arrow",
+    "example": "Check the arrow in the text.",
+    "exampleZh": "核对文本中的箭。",
+    "tags": [
+      "academic"
+    ],
+    "tier": "core",
+    "pos": "n. 名词"
+  },
+  {
+    "id": 1427,
+    "word": "scrape",
+    "spelling": "S-C-R-A-P-E",
+    "phonetic": "/skreɪp/",
+    "gloss": "刮；擦",
+    "tip": "the scrape",
+    "example": "Check the scrape in the text.",
+    "exampleZh": "核对文本中的刮。",
+    "tags": [
+      "academic"
+    ],
+    "tier": "core",
+    "pos": "n. 名词"
+  },
+  {
+    "id": 1428,
+    "word": "applause",
+    "spelling": "A-P-P-L-A-U-S-E",
+    "phonetic": "/əˈplɔz/",
+    "gloss": "鼓掌；喝彩",
+    "tip": "the applause",
+    "example": "Check the applause in the text.",
+    "exampleZh": "核对文本中的鼓掌。",
+    "tags": [
+      "academic"
+    ],
+    "tier": "core",
+    "pos": "n. 名词"
+  },
+  {
+    "id": 1429,
+    "word": "surround",
+    "spelling": "S-U-R-R-O-U-N-D",
+    "phonetic": "/səraʊnd/",
+    "gloss": "包围；环绕",
+    "tip": "surround …",
+    "example": "Please surround the key points.",
+    "exampleZh": "请包围要点。",
+    "tags": [
+      "academic"
+    ],
+    "tier": "core",
+    "pos": "v. 动词"
+  },
+  {
+    "id": 1430,
+    "word": "well-known",
+    "spelling": "W-E-L-L-K-N-O-W-N",
+    "phonetic": "/ˈwɛlˈnoʊn/",
+    "gloss": "众所周知的；有名的",
+    "tip": "a well-known …",
+    "example": "Give a well-known answer.",
+    "exampleZh": "给出众所周知的回答。",
+    "tags": [
+      "academic"
+    ],
+    "tier": "core",
+    "pos": "adj. 形容词"
+  },
+  {
+    "id": 1431,
+    "word": "selection",
+    "spelling": "S-E-L-E-C-T-I-O-N",
+    "phonetic": "/səˈlɛkʃən/",
+    "gloss": "选择；选文",
+    "tip": "the selection",
+    "example": "Check the selection in the text.",
+    "exampleZh": "核对文本中的选择。",
+    "tags": [
+      "academic",
+      "campus"
+    ],
+    "tier": "core",
+    "pos": "n. 名词"
+  },
+  {
+    "id": 1432,
+    "word": "survival",
+    "spelling": "S-U-R-V-I-V-A-L",
+    "phonetic": "/sərˈvaɪvəl/",
+    "gloss": "生存；残存",
+    "tip": "the survival",
+    "example": "Check the survival in the text.",
+    "exampleZh": "核对文本中的生存。",
+    "tags": [
+      "academic"
+    ],
+    "tier": "core",
+    "pos": "n. 名词"
+  },
+  {
+    "id": 1433,
+    "word": "inherit",
+    "spelling": "I-N-H-E-R-I-T",
+    "phonetic": "/ˌɪnˈhɛrət/",
+    "gloss": "继承；遗传",
+    "tip": "inherit …",
+    "example": "Please inherit the key points.",
+    "exampleZh": "请继承要点。",
+    "tags": [
+      "academic"
+    ],
+    "tier": "core",
+    "pos": "v. 动词"
+  },
+  {
+    "id": 1434,
+    "word": "acid",
+    "spelling": "A-C-I-D",
+    "phonetic": "/ˈæsəd/",
+    "gloss": "酸；酸类物质",
+    "tip": "the acid",
+    "example": "Check the acid in the text.",
+    "exampleZh": "核对文本中的酸。",
+    "tags": [
+      "academic",
+      "campus"
+    ],
+    "tier": "core",
+    "pos": "n. 名词"
+  },
+  {
+    "id": 1435,
+    "word": "ore",
+    "spelling": "O-R-E",
+    "phonetic": "/ɔr/",
+    "gloss": "矿石；[经] 矿",
+    "tip": "the ore",
+    "example": "Check the ore in the text.",
+    "exampleZh": "核对文本中的矿石。",
+    "tags": [
+      "academic"
+    ],
+    "tier": "core",
+    "pos": "n. 名词"
+  },
+  {
+    "id": 1436,
+    "word": "stream",
+    "spelling": "S-T-R-E-A-M",
+    "phonetic": "/strim/",
+    "gloss": "水流；小河",
+    "tip": "the stream",
+    "example": "Check the stream in the text.",
+    "exampleZh": "核对文本中的水流。",
+    "tags": [
+      "academic",
+      "campus"
+    ],
+    "tier": "core",
+    "pos": "n. 名词"
+  },
+  {
+    "id": 1437,
+    "word": "sailor",
+    "spelling": "S-A-I-L-O-R",
+    "phonetic": "/ˈseɪlər/",
+    "gloss": "水手；船员",
+    "tip": "the sailor",
+    "example": "Check the sailor in the text.",
+    "exampleZh": "核对文本中的水手。",
+    "tags": [
+      "academic"
+    ],
+    "tier": "core",
+    "pos": "n. 名词"
+  },
+  {
+    "id": 1438,
+    "word": "marriage",
+    "spelling": "M-A-R-R-I-A-G-E",
+    "phonetic": "/ˈmɛrɪʤ/",
+    "gloss": "婚姻；结婚",
+    "tip": "the marriage",
+    "example": "Check the marriage in the text.",
+    "exampleZh": "核对文本中的婚姻。",
+    "tags": [
+      "academic"
+    ],
+    "tier": "core",
+    "pos": "n. 名词"
+  },
+  {
+    "id": 1439,
+    "word": "marry",
+    "spelling": "M-A-R-R-Y",
+    "phonetic": "/ˈmɛri/",
+    "gloss": "与...结婚；娶",
+    "tip": "marry …",
+    "example": "Please marry the key points.",
+    "exampleZh": "请与...结婚要点。",
+    "tags": [
+      "academic"
+    ],
+    "tier": "core",
+    "pos": "v. 动词"
+  },
+  {
+    "id": 1440,
+    "word": "associate",
+    "spelling": "A-S-S-O-C-I-A-T-E",
+    "phonetic": "/əˈsoʊʃiˌeɪt/",
+    "gloss": "同伴；伙伴",
+    "tip": "associate …",
+    "example": "Please associate the key points.",
+    "exampleZh": "请同伴要点。",
+    "tags": [
+      "academic",
+      "campus"
+    ],
+    "tier": "core",
+    "pos": "v. 动词"
+  },
+  {
+    "id": 1441,
+    "word": "reception",
+    "spelling": "R-E-C-E-P-T-I-O-N",
+    "phonetic": "/rɪˈsɛpʃən/",
+    "gloss": "接待；接受",
+    "tip": "the reception",
+    "example": "Check the reception in the text.",
+    "exampleZh": "核对文本中的接待。",
+    "tags": [
+      "academic",
+      "campus"
+    ],
+    "tier": "core",
+    "pos": "n. 名词"
+  },
+  {
+    "id": 1442,
+    "word": "teenager",
+    "spelling": "T-E-E-N-A-G-E-R",
+    "phonetic": "/ˈtiˌneɪʤər/",
+    "gloss": "十三岁到十九岁的少年",
+    "tip": "the teenager",
+    "example": "Check the teenager in the text.",
+    "exampleZh": "核对文本中的十三岁到十九岁的少年。",
+    "tags": [
+      "academic"
+    ],
+    "tier": "core",
+    "pos": "n. 名词"
+  },
+  {
+    "id": 1443,
+    "word": "knot",
+    "spelling": "K-N-O-T",
+    "phonetic": "/nɑt/",
+    "gloss": "结；群",
+    "tip": "the knot",
+    "example": "Check the knot in the text.",
+    "exampleZh": "核对文本中的结。",
+    "tags": [
+      "academic"
+    ],
+    "tier": "core",
+    "pos": "n. 名词"
+  },
+  {
+    "id": 1444,
+    "word": "mission",
+    "spelling": "M-I-S-S-I-O-N",
+    "phonetic": "/ˈmɪʃən/",
+    "gloss": "任务；代表团",
+    "tip": "the mission",
+    "example": "Check the mission in the text.",
+    "exampleZh": "核对文本中的任务。",
+    "tags": [
+      "academic"
+    ],
+    "tier": "core",
+    "pos": "n. 名词"
+  },
+  {
+    "id": 1445,
+    "word": "instead",
+    "spelling": "I-N-S-T-E-A-D",
+    "phonetic": "/ˌɪnˈstɛd/",
+    "gloss": "作为替代；反而",
+    "tip": "instead …",
+    "example": "Answer instead and clearly.",
+    "exampleZh": "请作为替代且清楚地回答。",
+    "tags": [
+      "academic"
+    ],
+    "tier": "core",
+    "pos": "adv. 副词"
+  },
+  {
+    "id": 1446,
+    "word": "rare",
+    "spelling": "R-A-R-E",
+    "phonetic": "/rɛr/",
+    "gloss": "稀罕的；罕有的",
+    "tip": "a rare …",
+    "example": "Give a rare answer.",
+    "exampleZh": "给出稀罕的回答。",
+    "tags": [
+      "academic"
+    ],
+    "tier": "core",
+    "pos": "adj. 形容词"
+  },
+  {
+    "id": 1447,
+    "word": "nature",
+    "spelling": "N-A-T-U-R-E",
+    "phonetic": "/ˈneɪʧər/",
+    "gloss": "自然；大自然",
+    "tip": "the nature",
+    "example": "Check the nature in the text.",
+    "exampleZh": "核对文本中的自然。",
+    "tags": [
+      "academic"
+    ],
+    "tier": "core",
+    "pos": "n. 名词"
+  },
+  {
+    "id": 1448,
+    "word": "spoil",
+    "spelling": "S-P-O-I-L",
+    "phonetic": "/spɔɪl/",
+    "gloss": "战利品；赃物",
+    "tip": "the spoil",
+    "example": "Check the spoil in the text.",
+    "exampleZh": "核对文本中的战利品。",
+    "tags": [
+      "academic"
+    ],
+    "tier": "core",
+    "pos": "n. 名词"
+  },
+  {
+    "id": 1449,
+    "word": "purple",
+    "spelling": "P-U-R-P-L-E",
+    "phonetic": "/ˈpərpəl/",
+    "gloss": "紫色；帝位",
+    "tip": "the purple",
+    "example": "Check the purple in the text.",
+    "exampleZh": "核对文本中的紫色。",
+    "tags": [
+      "academic"
+    ],
+    "tier": "core",
+    "pos": "n. 名词"
+  },
+  {
+    "id": 1450,
+    "word": "dye",
+    "spelling": "D-Y-E",
+    "phonetic": "/daɪ/",
+    "gloss": "颜料；染料",
+    "tip": "the dye",
+    "example": "Check the dye in the text.",
+    "exampleZh": "核对文本中的颜料。",
+    "tags": [
+      "academic"
+    ],
+    "tier": "core",
+    "pos": "n. 名词"
+  },
+  {
+    "id": 1451,
+    "word": "appetite",
+    "spelling": "A-P-P-E-T-I-T-E",
+    "phonetic": "/ˈæpəˌtaɪt/",
+    "gloss": "食欲；欲望",
+    "tip": "the appetite",
+    "example": "Check the appetite in the text.",
+    "exampleZh": "核对文本中的食欲。",
+    "tags": [
+      "academic"
+    ],
+    "tier": "core",
+    "pos": "n. 名词"
+  },
+  {
+    "id": 1452,
+    "word": "disease",
+    "spelling": "D-I-S-E-A-S-E",
+    "phonetic": "/dɪˈziz/",
+    "gloss": "疾病；弊病",
+    "tip": "the disease",
+    "example": "Check the disease in the text.",
+    "exampleZh": "核对文本中的疾病。",
+    "tags": [
+      "academic",
+      "campus"
+    ],
+    "tier": "core",
+    "pos": "n. 名词"
+  },
+  {
+    "id": 1453,
+    "word": "joint",
+    "spelling": "J-O-I-N-T",
+    "phonetic": "/ʤɔɪnt/",
+    "gloss": "连接处；接合",
+    "tip": "the joint",
+    "example": "Check the joint in the text.",
+    "exampleZh": "核对文本中的连接处。",
+    "tags": [
+      "academic"
+    ],
+    "tier": "core",
+    "pos": "n. 名词"
+  },
+  {
+    "id": 1454,
+    "word": "precaution",
+    "spelling": "P-R-E-C-A-U-T-I-O-N",
+    "phonetic": "/priˈkɔʃən/",
+    "gloss": "预防；留心",
+    "tip": "the precaution",
+    "example": "Check the precaution in the text.",
+    "exampleZh": "核对文本中的预防。",
+    "tags": [
+      "academic"
+    ],
+    "tier": "core",
+    "pos": "n. 名词"
+  },
+  {
+    "id": 1455,
+    "word": "absolute",
+    "spelling": "A-B-S-O-L-U-T-E",
+    "phonetic": "/ˈæbsəˌlut/",
+    "gloss": "绝对的；专制的",
+    "tip": "a absolute …",
+    "example": "Give a absolute answer.",
+    "exampleZh": "给出绝对的回答。",
+    "tags": [
+      "academic"
+    ],
+    "tier": "core",
+    "pos": "adj. 形容词"
+  },
+  {
+    "id": 1456,
+    "word": "senate",
+    "spelling": "S-E-N-A-T-E",
+    "phonetic": "/ˈsɛnɪt/",
+    "gloss": "参议院；立法机构",
+    "tip": "senate …",
+    "example": "Please senate the key points.",
+    "exampleZh": "请参议院要点。",
+    "tags": [
+      "academic"
+    ],
+    "tier": "core",
+    "pos": "v. 动词"
+  },
+  {
+    "id": 1457,
+    "word": "council",
+    "spelling": "C-O-U-N-C-I-L",
+    "phonetic": "/ˈkaʊnsəl/",
+    "gloss": "会议；委员会",
+    "tip": "the council",
+    "example": "Check the council in the text.",
+    "exampleZh": "核对文本中的会议。",
+    "tags": [
+      "academic"
+    ],
+    "tier": "core",
+    "pos": "n. 名词"
+  },
+  {
+    "id": 1458,
+    "word": "respect",
+    "spelling": "R-E-S-P-E-C-T",
+    "phonetic": "/rɪˈspɛkt/",
+    "gloss": "尊敬；尊重",
+    "tip": "the respect",
+    "example": "Check the respect in the text.",
+    "exampleZh": "核对文本中的尊敬。",
+    "tags": [
+      "academic"
+    ],
+    "tier": "core",
+    "pos": "n. 名词"
+  },
+  {
+    "id": 1459,
+    "word": "retire",
+    "spelling": "R-E-T-I-R-E",
+    "phonetic": "/ˌriˈtaɪər/",
+    "gloss": "隐居；引退",
+    "tip": "the retire",
+    "example": "Check the retire in the text.",
+    "exampleZh": "核对文本中的隐居。",
+    "tags": [
+      "academic"
+    ],
+    "tier": "core",
+    "pos": "n. 名词"
+  },
+  {
+    "id": 1460,
+    "word": "loyalty",
+    "spelling": "L-O-Y-A-L-T-Y",
+    "phonetic": "/ˈlɔɪəlti/",
+    "gloss": "忠贞；忠诚",
+    "tip": "the loyalty",
+    "example": "Check the loyalty in the text.",
+    "exampleZh": "核对文本中的忠贞。",
+    "tags": [
+      "academic"
+    ],
+    "tier": "core",
+    "pos": "n. 名词"
+  },
+  {
+    "id": 1461,
+    "word": "employee",
+    "spelling": "E-M-P-L-O-Y-E-E",
+    "phonetic": "/ɪmˈplɔɪi/",
+    "gloss": "职员；员工",
+    "tip": "the employee",
+    "example": "Check the employee in the text.",
+    "exampleZh": "核对文本中的职员。",
+    "tags": [
+      "academic",
+      "campus"
+    ],
+    "tier": "core",
+    "pos": "n. 名词"
+  },
+  {
+    "id": 1462,
+    "word": "profitable",
+    "spelling": "P-R-O-F-I-T-A-B-L-E",
+    "phonetic": "/ˈprɑfətəbəl/",
+    "gloss": "有利润的；有利益的",
+    "tip": "a profitable …",
+    "example": "Give a profitable answer.",
+    "exampleZh": "给出有利润的回答。",
+    "tags": [
+      "academic"
+    ],
+    "tier": "core",
+    "pos": "adj. 形容词"
+  },
+  {
+    "id": 1463,
+    "word": "beneficial",
+    "spelling": "B-E-N-E-F-I-C-I-A-L",
+    "phonetic": "/ˌbɛnəˈfɪʃəl/",
+    "gloss": "有益的；受益的",
+    "tip": "a beneficial …",
+    "example": "Give a beneficial answer.",
+    "exampleZh": "给出有益的回答。",
+    "tags": [
+      "academic",
+      "campus"
+    ],
+    "tier": "core",
+    "pos": "adj. 形容词"
+  },
+  {
+    "id": 1464,
+    "word": "experimental",
+    "spelling": "E-X-P-E-R-I-M-E-N-T-A-L",
+    "phonetic": "/ɪkˌspɛrɪˈmɛntəl/",
+    "gloss": "实验的；根据实验的",
+    "tip": "a experimental …",
+    "example": "Give a experimental answer.",
+    "exampleZh": "给出实验的回答。",
+    "tags": [
+      "academic",
+      "campus"
+    ],
+    "tier": "core",
+    "pos": "adj. 形容词"
+  },
+  {
+    "id": 1465,
+    "word": "strain",
+    "spelling": "S-T-R-A-I-N",
+    "phonetic": "/streɪn/",
+    "gloss": "紧张；拉紧",
+    "tip": "the strain",
+    "example": "Check the strain in the text.",
+    "exampleZh": "核对文本中的紧张。",
+    "tags": [
+      "academic",
+      "campus"
+    ],
+    "tier": "core",
+    "pos": "n. 名词"
+  },
+  {
+    "id": 1466,
+    "word": "resistant",
+    "spelling": "R-E-S-I-S-T-A-N-T",
+    "phonetic": "/rɪˈzɪstənt/",
+    "gloss": "抵抗者；反抗者",
+    "tip": "the resistant",
+    "example": "Check the resistant in the text.",
+    "exampleZh": "核对文本中的抵抗者。",
+    "tags": [
+      "academic"
+    ],
+    "tier": "core",
+    "pos": "n. 名词"
+  },
+  {
+    "id": 1467,
+    "word": "productive",
+    "spelling": "P-R-O-D-U-C-T-I-V-E",
+    "phonetic": "/pərˈdəktɪv/",
+    "gloss": "能生产的；有生产价值的",
+    "tip": "a productive …",
+    "example": "Give a productive answer.",
+    "exampleZh": "给出能生产的回答。",
+    "tags": [
+      "academic"
+    ],
+    "tier": "core",
+    "pos": "adj. 形容词"
+  },
+  {
+    "id": 1468,
+    "word": "beyond",
+    "spelling": "B-E-Y-O-N-D",
+    "phonetic": "/bɪɔnd/",
+    "gloss": "超过；在那一边",
+    "tip": "the beyond",
+    "example": "Check the beyond in the text.",
+    "exampleZh": "核对文本中的超过。",
+    "tags": [
+      "academic",
+      "campus"
+    ],
+    "tier": "core",
+    "pos": "n. 名词"
+  },
+  {
+    "id": 1469,
+    "word": "assembly",
+    "spelling": "A-S-S-E-M-B-L-Y",
+    "phonetic": "/əˈsɛmbli/",
+    "gloss": "与会者；集会",
+    "tip": "assembly …",
+    "example": "Answer assembly and clearly.",
+    "exampleZh": "请与会者且清楚地回答。",
+    "tags": [
+      "academic",
+      "campus"
+    ],
+    "tier": "core",
+    "pos": "adv. 副词"
+  },
+  {
+    "id": 1470,
+    "word": "academic",
+    "spelling": "A-C-A-D-E-M-I-C",
+    "phonetic": "/ˌækəˈdɛmɪk/",
+    "gloss": "学院的；学术的",
+    "tip": "a academic …",
+    "example": "Give a academic answer.",
+    "exampleZh": "给出学院的回答。",
+    "tags": [
+      "academic",
+      "campus"
+    ],
+    "tier": "core",
+    "pos": "adj. 形容词"
+  },
+  {
+    "id": 1471,
+    "word": "acute",
+    "spelling": "A-C-U-T-E",
+    "phonetic": "/əˈkjut/",
+    "gloss": "尖锐的；敏锐的",
+    "tip": "a acute …",
+    "example": "Give a acute answer.",
+    "exampleZh": "给出尖锐的回答。",
+    "tags": [
+      "academic"
+    ],
+    "tier": "core",
+    "pos": "adj. 形容词"
+  },
+  {
+    "id": 1472,
+    "word": "injury",
+    "spelling": "I-N-J-U-R-Y",
+    "phonetic": "/ˈɪnʤəri/",
+    "gloss": "伤害；侮辱",
+    "tip": "the injury",
+    "example": "Check the injury in the text.",
+    "exampleZh": "核对文本中的伤害。",
+    "tags": [
+      "academic"
+    ],
+    "tier": "core",
+    "pos": "n. 名词"
+  },
+  {
+    "id": 1473,
+    "word": "perform",
+    "spelling": "P-E-R-F-O-R-M",
+    "phonetic": "/pərˈfɔrm/",
+    "gloss": "进行；履行",
+    "tip": "perform …",
+    "example": "Please perform the key points.",
+    "exampleZh": "请进行要点。",
+    "tags": [
+      "academic"
+    ],
+    "tier": "core",
+    "pos": "v. 动词"
+  },
+  {
+    "id": 1474,
+    "word": "intensity",
+    "spelling": "I-N-T-E-N-S-I-T-Y",
+    "phonetic": "/ˌɪnˈtɛnsɪti/",
+    "gloss": "强烈；紧张",
+    "tip": "the intensity",
+    "example": "Check the intensity in the text.",
+    "exampleZh": "核对文本中的强烈。",
+    "tags": [
+      "academic"
+    ],
+    "tier": "core",
+    "pos": "n. 名词"
+  },
+  {
+    "id": 1475,
+    "word": "crack",
+    "spelling": "C-R-A-C-K",
+    "phonetic": "/kræk/",
+    "gloss": "裂缝；爆裂声",
+    "tip": "the crack",
+    "example": "Check the crack in the text.",
+    "exampleZh": "核对文本中的裂缝。",
+    "tags": [
+      "academic"
+    ],
+    "tier": "core",
+    "pos": "n. 名词"
+  },
+  {
+    "id": 1476,
+    "word": "merely",
+    "spelling": "M-E-R-E-L-Y",
+    "phonetic": "/ˈmɪrli/",
+    "gloss": "只",
+    "tip": "merely …",
+    "example": "Answer merely and clearly.",
+    "exampleZh": "请只且清楚地回答。",
+    "tags": [
+      "academic"
+    ],
+    "tier": "core",
+    "pos": "adv. 副词"
+  },
+  {
+    "id": 1477,
+    "word": "pollute",
+    "spelling": "P-O-L-L-U-T-E",
+    "phonetic": "/pəˈlut/",
+    "gloss": "污染；弄脏",
+    "tip": "pollute …",
+    "example": "Please pollute the key points.",
+    "exampleZh": "请污染要点。",
+    "tags": [
+      "academic"
+    ],
+    "tier": "core",
+    "pos": "v. 动词"
+  },
+  {
+    "id": 1478,
+    "word": "capture",
+    "spelling": "C-A-P-T-U-R-E",
+    "phonetic": "/ˈkæpʧər/",
+    "gloss": "抓取；战利品",
+    "tip": "the capture",
+    "example": "Check the capture in the text.",
+    "exampleZh": "核对文本中的抓取。",
+    "tags": [
+      "academic"
+    ],
+    "tier": "core",
+    "pos": "n. 名词"
+  },
+  {
+    "id": 1479,
+    "word": "harm",
+    "spelling": "H-A-R-M",
+    "phonetic": "/hɑrm/",
+    "gloss": "伤害；害处",
+    "tip": "the harm",
+    "example": "Check the harm in the text.",
+    "exampleZh": "核对文本中的伤害。",
+    "tags": [
+      "academic",
+      "campus"
+    ],
+    "tier": "core",
+    "pos": "n. 名词"
+  },
+  {
+    "id": 1480,
+    "word": "consideration",
+    "spelling": "C-O-N-S-I-D-E-R-A-T-I-O-N",
+    "phonetic": "/kənˌsɪdərˈeɪʃən/",
+    "gloss": "考虑；原因",
+    "tip": "the consideration",
+    "example": "Check the consideration in the text.",
+    "exampleZh": "核对文本中的考虑。",
+    "tags": [
+      "academic",
+      "campus"
+    ],
+    "tier": "core",
+    "pos": "n. 名词"
+  },
+  {
+    "id": 1481,
+    "word": "endure",
+    "spelling": "E-N-D-U-R-E",
+    "phonetic": "/ɪnˈdʊr/",
+    "gloss": "忍受；忍耐",
+    "tip": "endure …",
+    "example": "Please endure the key points.",
+    "exampleZh": "请忍受要点。",
+    "tags": [
+      "academic"
+    ],
+    "tier": "core",
+    "pos": "v. 动词"
+  },
+  {
+    "id": 1482,
+    "word": "decrease",
+    "spelling": "D-E-C-R-E-A-S-E",
+    "phonetic": "/ˈdiˌkris/",
+    "gloss": "减少；减少量",
+    "tip": "the decrease",
+    "example": "Check the decrease in the text.",
+    "exampleZh": "核对文本中的减少。",
+    "tags": [
+      "academic",
+      "campus"
+    ],
+    "tier": "core",
+    "pos": "n. 名词"
+  },
+  {
+    "id": 1483,
+    "word": "sophisticate",
+    "spelling": "S-O-P-H-I-S-T-I-C-A-T-E",
+    "phonetic": "/səˈfɪstəˌkeɪt/",
+    "gloss": "久经世故的人；精于...之道的人",
+    "tip": "sophisticate …",
+    "example": "Please sophisticate the key points.",
+    "exampleZh": "请久经世故的人要点。",
+    "tags": [
+      "academic",
+      "campus"
+    ],
+    "tier": "core",
+    "pos": "v. 动词"
+  },
+  {
+    "id": 1484,
+    "word": "reward",
+    "spelling": "R-E-W-A-R-D",
+    "phonetic": "/rɪˈwɔrd/",
+    "gloss": "报酬；酬谢",
+    "tip": "the reward",
+    "example": "Check the reward in the text.",
+    "exampleZh": "核对文本中的报酬。",
+    "tags": [
+      "academic",
+      "campus"
+    ],
+    "tier": "core",
+    "pos": "n. 名词"
+  },
+  {
+    "id": 1485,
+    "word": "per",
+    "spelling": "P-E-R",
+    "phonetic": "/pər/",
+    "gloss": "每一；通过",
+    "tip": "the per",
+    "example": "Check the per in the text.",
+    "exampleZh": "核对文本中的每一。",
+    "tags": [
+      "academic",
+      "campus"
+    ],
+    "tier": "core",
+    "pos": "n. 名词"
+  },
+  {
+    "id": 1486,
+    "word": "carbon",
+    "spelling": "C-A-R-B-O-N",
+    "phonetic": "/ˈkɑrbən/",
+    "gloss": "碳；副本",
+    "tip": "the carbon",
+    "example": "Check the carbon in the text.",
+    "exampleZh": "核对文本中的碳。",
+    "tags": [
+      "academic",
+      "campus",
+      "env"
+    ],
+    "tier": "core",
+    "pos": "n. 名词"
+  },
+  {
+    "id": 1487,
+    "word": "politician",
+    "spelling": "P-O-L-I-T-I-C-I-A-N",
+    "phonetic": "/ˌpɑləˈtɪʃən/",
+    "gloss": "政客；政治家",
+    "tip": "the politician",
+    "example": "Check the politician in the text.",
+    "exampleZh": "核对文本中的政客。",
+    "tags": [
+      "academic",
+      "campus"
+    ],
+    "tier": "core",
+    "pos": "n. 名词"
+  },
+  {
+    "id": 1488,
+    "word": "pretend",
+    "spelling": "P-R-E-T-E-N-D",
+    "phonetic": "/priˈtɛnd/",
+    "gloss": "假装；伪称",
+    "tip": "pretend …",
+    "example": "Please pretend the key points.",
+    "exampleZh": "请假装要点。",
+    "tags": [
+      "academic"
+    ],
+    "tier": "core",
+    "pos": "v. 动词"
+  },
+  {
+    "id": 1489,
+    "word": "action",
+    "spelling": "A-C-T-I-O-N",
+    "phonetic": "/ˈækʃən/",
+    "gloss": "行动；活动",
+    "tip": "the action",
+    "example": "Check the action in the text.",
+    "exampleZh": "核对文本中的行动。",
+    "tags": [
+      "academic"
+    ],
+    "tier": "core",
+    "pos": "n. 名词"
+  },
+  {
+    "id": 1490,
+    "word": "humanity",
+    "spelling": "H-U-M-A-N-I-T-Y",
+    "phonetic": "/juˈmænɪti/",
+    "gloss": "人性；人类",
+    "tip": "the humanity",
+    "example": "Check the humanity in the text.",
+    "exampleZh": "核对文本中的人性。",
+    "tags": [
+      "academic"
+    ],
+    "tier": "core",
+    "pos": "n. 名词"
+  },
+  {
+    "id": 1491,
+    "word": "dispute",
+    "spelling": "D-I-S-P-U-T-E",
+    "phonetic": "/dɪˈspjut/",
+    "gloss": "争论",
+    "tip": "the dispute",
+    "example": "Check the dispute in the text.",
+    "exampleZh": "核对文本中的争论。",
+    "tags": [
+      "academic"
+    ],
+    "tier": "core",
+    "pos": "n. 名词"
+  },
+  {
+    "id": 1492,
+    "word": "mass",
+    "spelling": "M-A-S-S",
+    "phonetic": "/mæs/",
+    "gloss": "块；大多数",
+    "tip": "the mass",
+    "example": "Check the mass in the text.",
+    "exampleZh": "核对文本中的块。",
+    "tags": [
+      "academic",
+      "campus"
+    ],
+    "tier": "core",
+    "pos": "n. 名词"
+  },
+  {
+    "id": 1493,
+    "word": "tremendous",
+    "spelling": "T-R-E-M-E-N-D-O-U-S",
+    "phonetic": "/trɪˈmɛndəs/",
+    "gloss": "巨大的；非常的",
+    "tip": "a tremendous …",
+    "example": "Give a tremendous answer.",
+    "exampleZh": "给出巨大的回答。",
+    "tags": [
+      "academic"
+    ],
+    "tier": "core",
+    "pos": "adj. 形容词"
+  },
+  {
+    "id": 1494,
+    "word": "satellite",
+    "spelling": "S-A-T-E-L-L-I-T-E",
+    "phonetic": "/ˈsætəˌlaɪt/",
+    "gloss": "人造卫星；[医] 伴行静脉",
+    "tip": "the satellite",
+    "example": "Check the satellite in the text.",
+    "exampleZh": "核对文本中的人造卫星。",
+    "tags": [
+      "academic"
+    ],
+    "tier": "core",
+    "pos": "n. 名词"
+  },
+  {
+    "id": 1495,
+    "word": "orbit",
+    "spelling": "O-R-B-I-T",
+    "phonetic": "/ˈɔrbət/",
+    "gloss": "轨道；常轨",
+    "tip": "the orbit",
+    "example": "Check the orbit in the text.",
+    "exampleZh": "核对文本中的轨道。",
+    "tags": [
+      "academic"
+    ],
+    "tier": "core",
+    "pos": "n. 名词"
+  },
+  {
+    "id": 1496,
+    "word": "era",
+    "spelling": "E-R-A",
+    "phonetic": "/ˈɪrə/",
+    "gloss": "时代；纪元",
+    "tip": "the era",
+    "example": "Check the era in the text.",
+    "exampleZh": "核对文本中的时代。",
+    "tags": [
+      "academic",
+      "campus"
+    ],
+    "tier": "core",
+    "pos": "n. 名词"
+  },
+  {
+    "id": 1497,
+    "word": "territory",
+    "spelling": "T-E-R-R-I-T-O-R-Y",
+    "phonetic": "/ˈtɛrɪˌtɔri/",
+    "gloss": "领土；领地",
+    "tip": "the territory",
+    "example": "Check the territory in the text.",
+    "exampleZh": "核对文本中的领土。",
+    "tags": [
+      "academic"
+    ],
+    "tier": "core",
+    "pos": "n. 名词"
+  },
+  {
+    "id": 1498,
+    "word": "leader",
+    "spelling": "L-E-A-D-E-R",
+    "phonetic": "/ˈlidər/",
+    "gloss": "领导者；社论",
+    "tip": "the leader",
+    "example": "Check the leader in the text.",
+    "exampleZh": "核对文本中的领导者。",
+    "tags": [
+      "academic"
+    ],
+    "tier": "core",
+    "pos": "n. 名词"
+  },
+  {
+    "id": 1499,
+    "word": "invade",
+    "spelling": "I-N-V-A-D-E",
+    "phonetic": "/ˌɪnˈveɪd/",
+    "gloss": "侵入；拥入",
+    "tip": "invade …",
+    "example": "Please invade the key points.",
+    "exampleZh": "请侵入要点。",
+    "tags": [
+      "academic"
+    ],
+    "tier": "core",
+    "pos": "v. 动词"
+  },
+  {
+    "id": 1500,
+    "word": "motion",
+    "spelling": "M-O-T-I-O-N",
+    "phonetic": "/ˈmoʊʃən/",
+    "gloss": "移动；手势",
+    "tip": "the motion",
+    "example": "Check the motion in the text.",
+    "exampleZh": "核对文本中的移动。",
+    "tags": [
+      "academic"
+    ],
+    "tier": "core",
+    "pos": "n. 名词"
+  },
+  {
+    "id": 1501,
+    "word": "protein",
+    "spelling": "P-R-O-T-E-I-N",
+    "phonetic": "/ˈproʊˌtin/",
+    "gloss": "蛋白质",
+    "tip": "the protein",
+    "example": "Check the protein in the text.",
+    "exampleZh": "核对文本中的蛋白质。",
+    "tags": [
+      "academic"
+    ],
+    "tier": "core",
+    "pos": "n. 名词"
+  },
+  {
+    "id": 1502,
+    "word": "stimulate",
+    "spelling": "S-T-I-M-U-L-A-T-E",
+    "phonetic": "/ˈstɪmjəˌleɪt/",
+    "gloss": "刺激；激励",
+    "tip": "stimulate …",
+    "example": "Please stimulate the key points.",
+    "exampleZh": "请刺激要点。",
+    "tags": [
+      "academic"
+    ],
+    "tier": "core",
+    "pos": "v. 动词"
+  },
+  {
+    "id": 1503,
+    "word": "bunch",
+    "spelling": "B-U-N-C-H",
+    "phonetic": "/bənʧ/",
+    "gloss": "串；束",
+    "tip": "the bunch",
+    "example": "Check the bunch in the text.",
+    "exampleZh": "核对文本中的串。",
+    "tags": [
+      "academic"
+    ],
+    "tier": "core",
+    "pos": "n. 名词"
+  },
+  {
+    "id": 1504,
+    "word": "comparative",
+    "spelling": "C-O-M-P-A-R-A-T-I-V-E",
+    "phonetic": "/kəmˈpærətɪv/",
+    "gloss": "比较的；相对的",
+    "tip": "a comparative …",
+    "example": "Give a comparative answer.",
+    "exampleZh": "给出比较的回答。",
+    "tags": [
+      "academic"
+    ],
+    "tier": "core",
+    "pos": "adj. 形容词"
+  },
+  {
+    "id": 1505,
+    "word": "gene",
+    "spelling": "G-E-N-E",
+    "phonetic": "/ʤin/",
+    "gloss": "基因；[化] 基因",
+    "tip": "the gene",
+    "example": "Check the gene in the text.",
+    "exampleZh": "核对文本中的基因。",
+    "tags": [
+      "academic"
+    ],
+    "tier": "core",
+    "pos": "n. 名词"
+  },
+  {
+    "id": 1506,
+    "word": "symptom",
+    "spelling": "S-Y-M-P-T-O-M",
+    "phonetic": "/ˈsɪmptəm/",
+    "gloss": "症状；征候",
+    "tip": "the symptom",
+    "example": "Check the symptom in the text.",
+    "exampleZh": "核对文本中的症状。",
+    "tags": [
+      "academic"
+    ],
+    "tier": "core",
+    "pos": "n. 名词"
+  },
+  {
+    "id": 1507,
+    "word": "violence",
+    "spelling": "V-I-O-L-E-N-C-E",
+    "phonetic": "/ˈvaɪələns/",
+    "gloss": "猛烈；暴力",
+    "tip": "the violence",
+    "example": "Check the violence in the text.",
+    "exampleZh": "核对文本中的猛烈。",
+    "tags": [
+      "academic"
+    ],
+    "tier": "core",
+    "pos": "n. 名词"
+  },
+  {
+    "id": 1508,
+    "word": "sensitive",
+    "spelling": "S-E-N-S-I-T-I-V-E",
+    "phonetic": "/ˈsɛnsɪtɪv/",
+    "gloss": "敏感的；易感的",
+    "tip": "a sensitive …",
+    "example": "Give a sensitive answer.",
+    "exampleZh": "给出敏感的回答。",
+    "tags": [
+      "academic"
+    ],
+    "tier": "core",
+    "pos": "adj. 形容词"
+  },
+  {
+    "id": 1509,
+    "word": "fearful",
+    "spelling": "F-E-A-R-F-U-L",
+    "phonetic": "/ˈfɪrfəl/",
+    "gloss": "可怕的；恐怕的",
+    "tip": "a fearful …",
+    "example": "Give a fearful answer.",
+    "exampleZh": "给出可怕的回答。",
+    "tags": [
+      "academic"
+    ],
+    "tier": "core",
+    "pos": "adj. 形容词"
+  },
+  {
+    "id": 1510,
+    "word": "aggressive",
+    "spelling": "A-G-G-R-E-S-S-I-V-E",
+    "phonetic": "/əˈgrɛsɪv/",
+    "gloss": "侵略的；挑畔的",
+    "tip": "a aggressive …",
+    "example": "Give a aggressive answer.",
+    "exampleZh": "给出侵略的回答。",
+    "tags": [
+      "academic"
+    ],
+    "tier": "core",
+    "pos": "adj. 形容词"
+  },
+  {
+    "id": 1511,
+    "word": "manner",
+    "spelling": "M-A-N-N-E-R",
+    "phonetic": "/ˈmænər/",
+    "gloss": "样子；礼貌",
+    "tip": "the manner",
+    "example": "Check the manner in the text.",
+    "exampleZh": "核对文本中的样子。",
+    "tags": [
+      "academic"
+    ],
+    "tier": "core",
+    "pos": "n. 名词"
+  },
+  {
+    "id": 1512,
+    "word": "remarkable",
+    "spelling": "R-E-M-A-R-K-A-B-L-E",
+    "phonetic": "/rɪˈmɑrkəbəl/",
+    "gloss": "不平常的；值得注意的",
+    "tip": "a remarkable …",
+    "example": "Give a remarkable answer.",
+    "exampleZh": "给出不平常的回答。",
+    "tags": [
+      "academic"
+    ],
+    "tier": "core",
+    "pos": "adj. 形容词"
+  },
+  {
+    "id": 1513,
+    "word": "undoubtedly",
+    "spelling": "U-N-D-O-U-B-T-E-D-L-Y",
+    "phonetic": "/ənˈdaʊtɪdli/",
+    "gloss": "无疑；必定",
+    "tip": "undoubtedly …",
+    "example": "Answer undoubtedly and clearly.",
+    "exampleZh": "请无疑且清楚地回答。",
+    "tags": [
+      "academic"
+    ],
+    "tier": "core",
+    "pos": "adv. 副词"
+  },
+  {
+    "id": 1514,
+    "word": "youngster",
+    "spelling": "Y-O-U-N-G-S-T-E-R",
+    "phonetic": "/ˈjəŋstər/",
+    "gloss": "小孩；年轻人",
+    "tip": "the youngster",
+    "example": "Check the youngster in the text.",
+    "exampleZh": "核对文本中的小孩。",
+    "tags": [
+      "academic"
+    ],
+    "tier": "core",
+    "pos": "n. 名词"
+  },
+  {
+    "id": 1515,
+    "word": "minus",
+    "spelling": "M-I-N-U-S",
+    "phonetic": "/ˈmaɪnəs/",
+    "gloss": "负号；不足",
+    "tip": "the minus",
+    "example": "Check the minus in the text.",
+    "exampleZh": "核对文本中的负号。",
+    "tags": [
+      "academic"
+    ],
+    "tier": "core",
+    "pos": "n. 名词"
+  },
+  {
+    "id": 1516,
+    "word": "compose",
+    "spelling": "C-O-M-P-O-S-E",
+    "phonetic": "/kəmˈpoʊz/",
+    "gloss": "组成；写作",
+    "tip": "compose …",
+    "example": "Please compose the key points.",
+    "exampleZh": "请组成要点。",
+    "tags": [
+      "academic",
+      "campus"
+    ],
+    "tier": "core",
+    "pos": "v. 动词"
+  },
+  {
+    "id": 1517,
+    "word": "organ",
+    "spelling": "O-R-G-A-N",
+    "phonetic": "/ˈɔrgən/",
+    "gloss": "风琴；器官",
+    "tip": "the organ",
+    "example": "Check the organ in the text.",
+    "exampleZh": "核对文本中的风琴。",
+    "tags": [
+      "academic",
+      "campus"
+    ],
+    "tier": "core",
+    "pos": "n. 名词"
+  },
+  {
+    "id": 1518,
+    "word": "organism",
+    "spelling": "O-R-G-A-N-I-S-M",
+    "phonetic": "/ˈɔrgəˌnɪzəm/",
+    "gloss": "生物；有机体",
+    "tip": "the organism",
+    "example": "Check the organism in the text.",
+    "exampleZh": "核对文本中的生物。",
+    "tags": [
+      "academic",
+      "campus"
+    ],
+    "tier": "core",
+    "pos": "n. 名词"
+  },
+  {
+    "id": 1519,
+    "word": "insect",
+    "spelling": "I-N-S-E-C-T",
+    "phonetic": "/ˈɪnˌsɛkt/",
+    "gloss": "昆虫；卑鄙的人",
+    "tip": "the insect",
+    "example": "Check the insect in the text.",
+    "exampleZh": "核对文本中的昆虫。",
+    "tags": [
+      "academic"
+    ],
+    "tier": "core",
+    "pos": "n. 名词"
+  },
+  {
+    "id": 1520,
+    "word": "withstand",
+    "spelling": "W-I-T-H-S-T-A-N-D",
+    "phonetic": "/wɪθˈstænd/",
+    "gloss": "抵住；顶住",
+    "tip": "withstand …",
+    "example": "Please withstand the key points.",
+    "exampleZh": "请抵住要点。",
+    "tags": [
+      "academic"
+    ],
+    "tier": "core",
+    "pos": "v. 动词"
+  },
+  {
+    "id": 1521,
+    "word": "sunlight",
+    "spelling": "S-U-N-L-I-G-H-T",
+    "phonetic": "/ˈsənˌlaɪt/",
+    "gloss": "日光；[医] 日光",
+    "tip": "the sunlight",
+    "example": "Check the sunlight in the text.",
+    "exampleZh": "核对文本中的日光。",
+    "tags": [
+      "academic"
+    ],
+    "tier": "core",
+    "pos": "n. 名词"
+  },
+  {
+    "id": 1522,
+    "word": "plentiful",
+    "spelling": "P-L-E-N-T-I-F-U-L",
+    "phonetic": "/ˈplɛnɪfəl/",
+    "gloss": "许多的；丰富的",
+    "tip": "a plentiful …",
+    "example": "Give a plentiful answer.",
+    "exampleZh": "给出许多的回答。",
+    "tags": [
+      "academic"
+    ],
+    "tier": "core",
+    "pos": "adj. 形容词"
+  },
+  {
+    "id": 1523,
+    "word": "exclusive",
+    "spelling": "E-X-C-L-U-S-I-V-E",
+    "phonetic": "/ɪkˈsklusɪv/",
+    "gloss": "排外的；独占的",
+    "tip": "a exclusive …",
+    "example": "Give a exclusive answer.",
+    "exampleZh": "给出排外的回答。",
+    "tags": [
+      "academic",
+      "campus"
+    ],
+    "tier": "core",
+    "pos": "adj. 形容词"
+  },
+  {
+    "id": 1524,
+    "word": "digest",
+    "spelling": "D-I-G-E-S-T",
+    "phonetic": "/ˈdaɪʤɛst/",
+    "gloss": "文摘；消化",
+    "tip": "the digest",
+    "example": "Check the digest in the text.",
+    "exampleZh": "核对文本中的文摘。",
+    "tags": [
+      "academic"
+    ],
+    "tier": "core",
+    "pos": "n. 名词"
+  },
+  {
+    "id": 1525,
+    "word": "gallon",
+    "spelling": "G-A-L-L-O-N",
+    "phonetic": "/ˈgælən/",
+    "gloss": "加仑；[医] 加仑",
+    "tip": "the gallon",
+    "example": "Check the gallon in the text.",
+    "exampleZh": "核对文本中的加仑。",
+    "tags": [
+      "academic"
+    ],
+    "tier": "core",
+    "pos": "n. 名词"
+  },
+  {
+    "id": 1526,
+    "word": "artistic",
+    "spelling": "A-R-T-I-S-T-I-C",
+    "phonetic": "/ɑrˈtɪstɪk/",
+    "gloss": "艺术的；艺术家的",
+    "tip": "a artistic …",
+    "example": "Give a artistic answer.",
+    "exampleZh": "给出艺术的回答。",
+    "tags": [
+      "academic",
+      "campus"
+    ],
+    "tier": "core",
+    "pos": "adj. 形容词"
+  },
+  {
+    "id": 1527,
+    "word": "background",
+    "spelling": "B-A-C-K-G-R-O-U-N-D",
+    "phonetic": "/ˈbækˌgraʊnd/",
+    "gloss": "背景；背景资料",
+    "tip": "the background",
+    "example": "Check the background in the text.",
+    "exampleZh": "核对文本中的背景。",
+    "tags": [
+      "academic"
+    ],
+    "tier": "core",
+    "pos": "n. 名词"
+  },
+  {
+    "id": 1528,
+    "word": "pension",
+    "spelling": "P-E-N-S-I-O-N",
+    "phonetic": "/ˈpɛnʃən/",
+    "gloss": "养老金；退休金",
+    "tip": "the pension",
+    "example": "Check the pension in the text.",
+    "exampleZh": "核对文本中的养老金。",
+    "tags": [
+      "academic"
+    ],
+    "tier": "core",
+    "pos": "n. 名词"
+  },
+  {
+    "id": 1529,
+    "word": "sunshine",
+    "spelling": "S-U-N-S-H-I-N-E",
+    "phonetic": "/ˈsənˌʃaɪn/",
+    "gloss": "阳光；光明",
+    "tip": "the sunshine",
+    "example": "Check the sunshine in the text.",
+    "exampleZh": "核对文本中的阳光。",
+    "tags": [
+      "academic"
+    ],
+    "tier": "core",
+    "pos": "n. 名词"
+  },
+  {
+    "id": 1530,
+    "word": "cast",
+    "spelling": "C-A-S-T",
+    "phonetic": "/kæst/",
+    "gloss": "演员阵容；投掷",
+    "tip": "the cast",
+    "example": "Check the cast in the text.",
+    "exampleZh": "核对文本中的演员阵容。",
+    "tags": [
+      "academic"
+    ],
+    "tier": "core",
+    "pos": "n. 名词"
+  },
+  {
+    "id": 1531,
+    "word": "primitive",
+    "spelling": "P-R-I-M-I-T-I-V-E",
+    "phonetic": "/ˈprɪmɪtɪv/",
+    "gloss": "原始人；早期艺术家",
+    "tip": "a primitive …",
+    "example": "Give a primitive answer.",
+    "exampleZh": "给出原始人回答。",
+    "tags": [
+      "academic"
+    ],
+    "tier": "core",
+    "pos": "adj. 形容词"
+  },
+  {
+    "id": 1532,
+    "word": "elsewhere",
+    "spelling": "E-L-S-E-W-H-E-R-E",
+    "phonetic": "/ˈɛlsˌwɛr/",
+    "gloss": "在别处",
+    "tip": "elsewhere …",
+    "example": "Answer elsewhere and clearly.",
+    "exampleZh": "请在别处且清楚地回答。",
+    "tags": [
+      "academic"
+    ],
+    "tier": "core",
+    "pos": "adv. 副词"
+  },
+  {
+    "id": 1533,
+    "word": "childhood",
+    "spelling": "C-H-I-L-D-H-O-O-D",
+    "phonetic": "/ˈʧaɪlˌdhʊd/",
+    "gloss": "孩童时期；[医] 儿童期",
+    "tip": "the childhood",
+    "example": "Check the childhood in the text.",
+    "exampleZh": "核对文本中的孩童时期。",
+    "tags": [
+      "academic"
+    ],
+    "tier": "core",
+    "pos": "n. 名词"
+  },
+  {
+    "id": 1534,
+    "word": "infant",
+    "spelling": "I-N-F-A-N-T",
+    "phonetic": "/ˈɪnfənt/",
+    "gloss": "婴儿；儿童",
+    "tip": "the infant",
+    "example": "Check the infant in the text.",
+    "exampleZh": "核对文本中的婴儿。",
+    "tags": [
+      "academic"
+    ],
+    "tier": "core",
+    "pos": "n. 名词"
+  },
+  {
+    "id": 1535,
+    "word": "historical",
+    "spelling": "H-I-S-T-O-R-I-C-A-L",
+    "phonetic": "/hɪˈstɔrɪkəl/",
+    "gloss": "历史的；史实的",
+    "tip": "a historical …",
+    "example": "Give a historical answer.",
+    "exampleZh": "给出历史的回答。",
+    "tags": [
+      "academic",
+      "campus"
+    ],
+    "tier": "core",
+    "pos": "adj. 形容词"
+  },
+  {
+    "id": 1536,
+    "word": "famine",
+    "spelling": "F-A-M-I-N-E",
+    "phonetic": "/ˈfæmən/",
+    "gloss": "饥荒；缺乏",
+    "tip": "the famine",
+    "example": "Check the famine in the text.",
+    "exampleZh": "核对文本中的饥荒。",
+    "tags": [
+      "academic"
+    ],
+    "tier": "core",
+    "pos": "n. 名词"
+  },
+  {
+    "id": 1537,
+    "word": "consequence",
+    "spelling": "C-O-N-S-E-Q-U-E-N-C-E",
+    "phonetic": "/ˈkɑnsəkwəns/",
+    "gloss": "结果；重要性",
+    "tip": "the consequence",
+    "example": "Check the consequence in the text.",
+    "exampleZh": "核对文本中的结果。",
+    "tags": [
+      "academic",
+      "campus"
+    ],
+    "tier": "core",
+    "pos": "n. 名词"
+  },
+  {
+    "id": 1538,
+    "word": "failure",
+    "spelling": "F-A-I-L-U-R-E",
+    "phonetic": "/ˈfeɪljər/",
+    "gloss": "失败；失败者",
+    "tip": "the failure",
+    "example": "Check the failure in the text.",
+    "exampleZh": "核对文本中的失败。",
+    "tags": [
+      "academic",
+      "campus"
+    ],
+    "tier": "core",
+    "pos": "n. 名词"
+  },
+  {
+    "id": 1539,
+    "word": "amateur",
+    "spelling": "A-M-A-T-E-U-R",
+    "phonetic": "/ˈæməˌʧər/",
+    "gloss": "业余爱好者；外行",
+    "tip": "the amateur",
+    "example": "Check the amateur in the text.",
+    "exampleZh": "核对文本中的业余爱好者。",
+    "tags": [
+      "academic"
+    ],
+    "tier": "core",
+    "pos": "n. 名词"
+  },
+  {
+    "id": 1540,
+    "word": "recovery",
+    "spelling": "R-E-C-O-V-E-R-Y",
+    "phonetic": "/rɪˈkəvəri/",
+    "gloss": "恢复；复原",
+    "tip": "the recovery",
+    "example": "Check the recovery in the text.",
+    "exampleZh": "核对文本中的恢复。",
+    "tags": [
+      "academic",
+      "campus"
+    ],
+    "tier": "core",
+    "pos": "n. 名词"
+  },
+  {
+    "id": 1541,
+    "word": "compete",
+    "spelling": "C-O-M-P-E-T-E",
+    "phonetic": "/kəmˈpit/",
+    "gloss": "竞争；对抗",
+    "tip": "compete …",
+    "example": "Please compete the key points.",
+    "exampleZh": "请竞争要点。",
+    "tags": [
+      "academic"
+    ],
+    "tier": "core",
+    "pos": "v. 动词"
+  },
+  {
+    "id": 1542,
+    "word": "consumer",
+    "spelling": "C-O-N-S-U-M-E-R",
+    "phonetic": "/kənˈsumər/",
+    "gloss": "消费者；[经] 消费者",
+    "tip": "the consumer",
+    "example": "Check the consumer in the text.",
+    "exampleZh": "核对文本中的消费者。",
+    "tags": [
+      "academic",
+      "campus"
+    ],
+    "tier": "core",
+    "pos": "n. 名词"
+  },
+  {
+    "id": 1543,
+    "word": "elderly",
+    "spelling": "E-L-D-E-R-L-Y",
+    "phonetic": "/ˈɛldərli/",
+    "gloss": "过了中年的；稍老的",
+    "tip": "elderly …",
+    "example": "Answer elderly and clearly.",
+    "exampleZh": "请过了中年且清楚地回答。",
+    "tags": [
+      "academic",
+      "campus"
+    ],
+    "tier": "core",
+    "pos": "adv. 副词"
+  },
+  {
+    "id": 1544,
+    "word": "stability",
+    "spelling": "S-T-A-B-I-L-I-T-Y",
+    "phonetic": "/stəˈbɪlɪti/",
+    "gloss": "安定；稳定性",
+    "tip": "the stability",
+    "example": "Check the stability in the text.",
+    "exampleZh": "核对文本中的安定。",
+    "tags": [
+      "academic"
+    ],
+    "tier": "core",
+    "pos": "n. 名词"
+  },
+  {
+    "id": 1545,
+    "word": "amongst",
+    "spelling": "A-M-O-N-G-S-T",
+    "phonetic": "/əˈməŋst/",
+    "gloss": "在...当中；在...之间",
+    "tip": "the amongst",
+    "example": "Check the amongst in the text.",
+    "exampleZh": "核对文本中的在...当中。",
+    "tags": [
+      "academic"
+    ],
+    "tier": "core",
+    "pos": "n. 名词"
+  },
+  {
+    "id": 1546,
+    "word": "assistance",
+    "spelling": "A-S-S-I-S-T-A-N-C-E",
+    "phonetic": "/əˈsɪstəns/",
+    "gloss": "协助；援助",
+    "tip": "the assistance",
+    "example": "Check the assistance in the text.",
+    "exampleZh": "核对文本中的协助。",
+    "tags": [
+      "academic",
+      "campus"
+    ],
+    "tier": "core",
+    "pos": "n. 名词"
+  },
+  {
+    "id": 1547,
+    "word": "saddle",
+    "spelling": "S-A-D-D-L-E",
+    "phonetic": "/ˈsædəl/",
+    "gloss": "鞍；马鞍",
+    "tip": "the saddle",
+    "example": "Check the saddle in the text.",
+    "exampleZh": "核对文本中的鞍。",
+    "tags": [
+      "academic"
+    ],
+    "tier": "core",
+    "pos": "n. 名词"
+  },
+  {
+    "id": 1548,
+    "word": "weapon",
+    "spelling": "W-E-A-P-O-N",
+    "phonetic": "/ˈwɛpən/",
+    "gloss": "武器；兵器",
+    "tip": "the weapon",
+    "example": "Check the weapon in the text.",
+    "exampleZh": "核对文本中的武器。",
+    "tags": [
+      "academic"
+    ],
+    "tier": "core",
+    "pos": "n. 名词"
+  },
+  {
+    "id": 1549,
+    "word": "liquid",
+    "spelling": "L-I-Q-U-I-D",
+    "phonetic": "/ˈlɪkwɪd/",
+    "gloss": "液体；流体",
+    "tip": "the liquid",
+    "example": "Check the liquid in the text.",
+    "exampleZh": "核对文本中的液体。",
+    "tags": [
+      "academic"
+    ],
+    "tier": "core",
+    "pos": "n. 名词"
+  },
+  {
+    "id": 1550,
+    "word": "crust",
+    "spelling": "C-R-U-S-T",
+    "phonetic": "/krəst/",
+    "gloss": "外壳；坚硬外皮",
+    "tip": "the crust",
+    "example": "Check the crust in the text.",
+    "exampleZh": "核对文本中的外壳。",
+    "tags": [
+      "academic"
+    ],
+    "tier": "core",
+    "pos": "n. 名词"
+  },
+  {
+    "id": 1551,
+    "word": "harsh",
+    "spelling": "H-A-R-S-H",
+    "phonetic": "/hɑrʃ/",
+    "gloss": "粗糙的；刺耳的",
+    "tip": "a harsh …",
+    "example": "Give a harsh answer.",
+    "exampleZh": "给出粗糙的回答。",
+    "tags": [
+      "academic",
+      "campus"
+    ],
+    "tier": "core",
+    "pos": "adj. 形容词"
+  },
+  {
+    "id": 1552,
+    "word": "shed",
+    "spelling": "S-H-E-D",
+    "phonetic": "/ʃɛd/",
+    "gloss": "车棚；小屋",
+    "tip": "the shed",
+    "example": "Check the shed in the text.",
+    "exampleZh": "核对文本中的车棚。",
+    "tags": [
+      "academic"
+    ],
+    "tier": "core",
+    "pos": "n. 名词"
+  },
+  {
+    "id": 1553,
+    "word": "multiple",
+    "spelling": "M-U-L-T-I-P-L-E",
+    "phonetic": "/ˈməltəpəl/",
+    "gloss": "倍数；并联",
+    "tip": "the multiple",
+    "example": "Check the multiple in the text.",
+    "exampleZh": "核对文本中的倍数。",
+    "tags": [
+      "academic",
+      "campus"
+    ],
+    "tier": "core",
+    "pos": "n. 名词"
+  },
+  {
+    "id": 1554,
+    "word": "athlete",
+    "spelling": "A-T-H-L-E-T-E",
+    "phonetic": "/ˈæθˌlit/",
+    "gloss": "运动员；运动选手",
+    "tip": "the athlete",
+    "example": "Check the athlete in the text.",
+    "exampleZh": "核对文本中的运动员。",
+    "tags": [
+      "academic"
+    ],
+    "tier": "core",
+    "pos": "n. 名词"
+  },
+  {
+    "id": 1555,
+    "word": "intend",
+    "spelling": "I-N-T-E-N-D",
+    "phonetic": "/ˌɪnˈtɛnd/",
+    "gloss": "计划；打算",
+    "tip": "intend …",
+    "example": "Please intend the key points.",
+    "exampleZh": "请计划要点。",
+    "tags": [
+      "academic",
+      "campus"
+    ],
+    "tier": "core",
+    "pos": "v. 动词"
+  },
+  {
+    "id": 1556,
+    "word": "suppose",
+    "spelling": "S-U-P-P-O-S-E",
+    "phonetic": "/səˈpoʊz/",
+    "gloss": "推想；假设",
+    "tip": "suppose …",
+    "example": "Please suppose the key points.",
+    "exampleZh": "请推想要点。",
+    "tags": [
+      "academic"
+    ],
+    "tier": "core",
+    "pos": "v. 动词"
+  },
+  {
+    "id": 1557,
+    "word": "ignore",
+    "spelling": "I-G-N-O-R-E",
+    "phonetic": "/ˌɪgˈnɔr/",
+    "gloss": "不理睬；忽视",
+    "tip": "ignore …",
+    "example": "Please ignore the key points.",
+    "exampleZh": "请不理睬要点。",
+    "tags": [
+      "academic",
+      "campus"
+    ],
+    "tier": "core",
+    "pos": "v. 动词"
+  },
+  {
+    "id": 1558,
+    "word": "triumph",
+    "spelling": "T-R-I-U-M-P-H",
+    "phonetic": "/traɪəmf/",
+    "gloss": "凯旋；胜利",
+    "tip": "the triumph",
+    "example": "Check the triumph in the text.",
+    "exampleZh": "核对文本中的凯旋。",
+    "tags": [
+      "academic"
+    ],
+    "tier": "core",
+    "pos": "n. 名词"
+  },
+  {
+    "id": 1559,
+    "word": "prejudice",
+    "spelling": "P-R-E-J-U-D-I-C-E",
+    "phonetic": "/ˈprɛʤədɪs/",
+    "gloss": "偏见；成见",
+    "tip": "the prejudice",
+    "example": "Check the prejudice in the text.",
+    "exampleZh": "核对文本中的偏见。",
+    "tags": [
+      "academic"
+    ],
+    "tier": "core",
+    "pos": "n. 名词"
+  },
+  {
+    "id": 1560,
+    "word": "entire",
+    "spelling": "E-N-T-I-R-E",
+    "phonetic": "/ɪnˈtaɪər/",
+    "gloss": "整个；全部",
+    "tip": "the entire",
+    "example": "Check the entire in the text.",
+    "exampleZh": "核对文本中的整个。",
+    "tags": [
+      "academic",
+      "campus"
+    ],
+    "tier": "core",
+    "pos": "n. 名词"
+  },
+  {
+    "id": 1561,
+    "word": "unusual",
+    "spelling": "U-N-U-S-U-A-L",
+    "phonetic": "/ənˈjuˌʒuəl/",
+    "gloss": "不寻常的；罕见的",
+    "tip": "a unusual …",
+    "example": "Give a unusual answer.",
+    "exampleZh": "给出不寻常的回答。",
+    "tags": [
+      "academic"
+    ],
+    "tier": "core",
+    "pos": "adj. 形容词"
+  },
+  {
+    "id": 1562,
+    "word": "calendar",
+    "spelling": "C-A-L-E-N-D-A-R",
+    "phonetic": "/ˈkæləndər/",
+    "gloss": "日历；日程表",
+    "tip": "the calendar",
+    "example": "Check the calendar in the text.",
+    "exampleZh": "核对文本中的日历。",
+    "tags": [
+      "academic"
+    ],
+    "tier": "core",
+    "pos": "n. 名词"
+  },
+  {
+    "id": 1563,
+    "word": "declaration",
+    "spelling": "D-E-C-L-A-R-A-T-I-O-N",
+    "phonetic": "/ˌdɛklərˈeɪʃən/",
+    "gloss": "宣告；说明",
+    "tip": "the declaration",
+    "example": "Check the declaration in the text.",
+    "exampleZh": "核对文本中的宣告。",
+    "tags": [
+      "academic"
+    ],
+    "tier": "core",
+    "pos": "n. 名词"
+  },
+  {
+    "id": 1564,
+    "word": "resolution",
+    "spelling": "R-E-S-O-L-U-T-I-O-N",
+    "phonetic": "/ˌrɛzəˈluʃən/",
+    "gloss": "解析；决心",
+    "tip": "the resolution",
+    "example": "Check the resolution in the text.",
+    "exampleZh": "核对文本中的解析。",
+    "tags": [
+      "academic"
+    ],
+    "tier": "core",
+    "pos": "n. 名词"
+  },
+  {
+    "id": 1565,
+    "word": "congress",
+    "spelling": "C-O-N-G-R-E-S-S",
+    "phonetic": "/ˈkɑŋgrəs/",
+    "gloss": "国会；会议",
+    "tip": "the congress",
+    "example": "Check the congress in the text.",
+    "exampleZh": "核对文本中的国会。",
+    "tags": [
+      "academic"
+    ],
+    "tier": "core",
+    "pos": "n. 名词"
+  },
+  {
+    "id": 1566,
+    "word": "meantime",
+    "spelling": "M-E-A-N-T-I-M-E",
+    "phonetic": "/ˈminˌtaɪm/",
+    "gloss": "间隔时间；其时",
+    "tip": "the meantime",
+    "example": "Check the meantime in the text.",
+    "exampleZh": "核对文本中的间隔时间。",
+    "tags": [
+      "academic"
+    ],
+    "tier": "core",
+    "pos": "n. 名词"
+  },
+  {
+    "id": 1567,
+    "word": "sigh",
+    "spelling": "S-I-G-H",
+    "phonetic": "/saɪ/",
+    "gloss": "叹息；渴望",
+    "tip": "the sigh",
+    "example": "Check the sigh in the text.",
+    "exampleZh": "核对文本中的叹息。",
+    "tags": [
+      "academic"
+    ],
+    "tier": "core",
+    "pos": "n. 名词"
+  },
+  {
+    "id": 1568,
+    "word": "relief",
+    "spelling": "R-E-L-I-E-F",
+    "phonetic": "/rɪˈlif/",
+    "gloss": "减轻；解除",
+    "tip": "the relief",
+    "example": "Check the relief in the text.",
+    "exampleZh": "核对文本中的减轻。",
+    "tags": [
+      "academic"
+    ],
+    "tier": "core",
+    "pos": "n. 名词"
+  },
+  {
+    "id": 1569,
+    "word": "crew",
+    "spelling": "C-R-E-W",
+    "phonetic": "/kru/",
+    "gloss": "全体人员；一群人",
+    "tip": "the crew",
+    "example": "Check the crew in the text.",
+    "exampleZh": "核对文本中的全体人员。",
+    "tags": [
+      "academic"
+    ],
+    "tier": "core",
+    "pos": "n. 名词"
+  },
+  {
+    "id": 1570,
+    "word": "emergency",
+    "spelling": "E-M-E-R-G-E-N-C-Y",
+    "phonetic": "/ˈimərʤənsi/",
+    "gloss": "紧急状况；紧急事件",
+    "tip": "the emergency",
+    "example": "Check the emergency in the text.",
+    "exampleZh": "核对文本中的紧急状况。",
+    "tags": [
+      "academic"
+    ],
+    "tier": "core",
+    "pos": "n. 名词"
+  },
+  {
+    "id": 1571,
+    "word": "ease",
+    "spelling": "E-A-S-E",
+    "phonetic": "/iz/",
+    "gloss": "安乐；安逸",
+    "tip": "the ease",
+    "example": "Check the ease in the text.",
+    "exampleZh": "核对文本中的安乐。",
+    "tags": [
+      "academic"
+    ],
+    "tier": "core",
+    "pos": "n. 名词"
+  },
+  {
+    "id": 1572,
+    "word": "overnight",
+    "spelling": "O-V-E-R-N-I-G-H-T",
+    "phonetic": "/ˈoʊvərˈnaɪt/",
+    "gloss": "前一天晚上；一夜的逗留",
+    "tip": "the overnight",
+    "example": "Check the overnight in the text.",
+    "exampleZh": "核对文本中的前一天晚上。",
+    "tags": [
+      "academic"
+    ],
+    "tier": "core",
+    "pos": "n. 名词"
+  },
+  {
+    "id": 1573,
+    "word": "approval",
+    "spelling": "A-P-P-R-O-V-A-L",
+    "phonetic": "/əˈpruvəl/",
+    "gloss": "赞成；批准",
+    "tip": "the approval",
+    "example": "Check the approval in the text.",
+    "exampleZh": "核对文本中的赞成。",
+    "tags": [
+      "academic"
+    ],
+    "tier": "core",
+    "pos": "n. 名词"
+  },
+  {
+    "id": 1574,
+    "word": "favour",
+    "spelling": "F-A-V-O-U-R",
+    "phonetic": "/ˈfeɪvər/",
+    "gloss": "好感；偏爱",
+    "tip": "the favour",
+    "example": "Check the favour in the text.",
+    "exampleZh": "核对文本中的好感。",
+    "tags": [
+      "academic"
+    ],
+    "tier": "core",
+    "pos": "n. 名词"
+  },
+  {
+    "id": 1575,
+    "word": "trap",
+    "spelling": "T-R-A-P",
+    "phonetic": "/træp/",
+    "gloss": "圈套；陷阱",
+    "tip": "the trap",
+    "example": "Check the trap in the text.",
+    "exampleZh": "核对文本中的圈套。",
+    "tags": [
+      "academic"
+    ],
+    "tier": "core",
+    "pos": "n. 名词"
+  },
+  {
+    "id": 1576,
+    "word": "comparable",
+    "spelling": "C-O-M-P-A-R-A-B-L-E",
+    "phonetic": "/ˈkɑmprəbəl/",
+    "gloss": "可比较的；比得上的",
+    "tip": "a comparable …",
+    "example": "Give a comparable answer.",
+    "exampleZh": "给出可比较的回答。",
+    "tags": [
+      "academic"
+    ],
+    "tier": "core",
+    "pos": "adj. 形容词"
+  },
+  {
+    "id": 1577,
+    "word": "idle",
+    "spelling": "I-D-L-E",
+    "phonetic": "/ˈaɪdəl/",
+    "gloss": "懒惰的；闲散的",
+    "tip": "a idle …",
+    "example": "Give a idle answer.",
+    "exampleZh": "给出懒惰的回答。",
+    "tags": [
+      "academic"
+    ],
+    "tier": "core",
+    "pos": "adj. 形容词"
+  },
+  {
+    "id": 1578,
+    "word": "patch",
+    "spelling": "P-A-T-C-H",
+    "phonetic": "/pæʧ/",
+    "gloss": "片；补缀",
+    "tip": "the patch",
+    "example": "Check the patch in the text.",
+    "exampleZh": "核对文本中的片。",
+    "tags": [
+      "academic"
+    ],
+    "tier": "core",
+    "pos": "n. 名词"
+  },
+  {
+    "id": 1579,
+    "word": "centre",
+    "spelling": "C-E-N-T-R-E",
+    "phonetic": "/ˈsɛntər/",
+    "gloss": "中心；中心点",
+    "tip": "the centre",
+    "example": "Check the centre in the text.",
+    "exampleZh": "核对文本中的中心。",
+    "tags": [
+      "academic",
+      "campus"
+    ],
+    "tier": "core",
+    "pos": "n. 名词"
+  },
+  {
+    "id": 1580,
+    "word": "distress",
+    "spelling": "D-I-S-T-R-E-S-S",
+    "phonetic": "/dɪˈstrɛs/",
+    "gloss": "苦恼；贫困",
+    "tip": "the distress",
+    "example": "Check the distress in the text.",
+    "exampleZh": "核对文本中的苦恼。",
+    "tags": [
+      "academic"
+    ],
+    "tier": "core",
+    "pos": "n. 名词"
+  },
+  {
+    "id": 1581,
+    "word": "dissolve",
+    "spelling": "D-I-S-S-O-L-V-E",
+    "phonetic": "/dɪˈzɑlv/",
+    "gloss": "溶解；解散",
+    "tip": "dissolve …",
+    "example": "Please dissolve the key points.",
+    "exampleZh": "请溶解要点。",
+    "tags": [
+      "academic"
+    ],
+    "tier": "core",
+    "pos": "v. 动词"
+  },
+  {
+    "id": 1582,
+    "word": "immediately",
+    "spelling": "I-M-M-E-D-I-A-T-E-L-Y",
+    "phonetic": "/ˌɪˈmiˌdiətli/",
+    "gloss": "直接地；立刻",
+    "tip": "immediately …",
+    "example": "Answer immediately and clearly.",
+    "exampleZh": "请直接地且清楚地回答。",
+    "tags": [
+      "academic",
+      "campus"
+    ],
+    "tier": "core",
+    "pos": "adv. 副词"
+  },
+  {
+    "id": 1583,
+    "word": "pit",
+    "spelling": "P-I-T",
+    "phonetic": "/pɪt/",
+    "gloss": "深坑；矿井",
+    "tip": "the pit",
+    "example": "Check the pit in the text.",
+    "exampleZh": "核对文本中的深坑。",
+    "tags": [
+      "academic"
+    ],
+    "tier": "core",
+    "pos": "n. 名词"
+  },
+  {
+    "id": 1584,
+    "word": "bet",
+    "spelling": "B-E-T",
+    "phonetic": "/bɛt/",
+    "gloss": "打赌；赌注",
+    "tip": "the bet",
+    "example": "Check the bet in the text.",
+    "exampleZh": "核对文本中的打赌。",
+    "tags": [
+      "academic"
+    ],
+    "tier": "core",
+    "pos": "n. 名词"
+  },
+  {
+    "id": 1585,
+    "word": "herd",
+    "spelling": "H-E-R-D",
+    "phonetic": "/hərd/",
+    "gloss": "兽群；人群",
+    "tip": "the herd",
+    "example": "Check the herd in the text.",
+    "exampleZh": "核对文本中的兽群。",
+    "tags": [
+      "academic"
+    ],
+    "tier": "core",
+    "pos": "n. 名词"
+  },
+  {
+    "id": 1586,
+    "word": "ugly",
+    "spelling": "U-G-L-Y",
+    "phonetic": "/ˈəgli/",
+    "gloss": "丑陋的；邪恶的",
+    "tip": "a ugly …",
+    "example": "Give a ugly answer.",
+    "exampleZh": "给出丑陋的回答。",
+    "tags": [
+      "academic"
+    ],
+    "tier": "core",
+    "pos": "adj. 形容词"
+  },
+  {
+    "id": 1587,
+    "word": "fragment",
+    "spelling": "F-R-A-G-M-E-N-T",
+    "phonetic": "/ˈfrægmənt/",
+    "gloss": "碎片；破片",
+    "tip": "the fragment",
+    "example": "Check the fragment in the text.",
+    "exampleZh": "核对文本中的碎片。",
+    "tags": [
+      "academic"
+    ],
+    "tier": "core",
+    "pos": "n. 名词"
+  },
+  {
+    "id": 1588,
+    "word": "stake",
+    "spelling": "S-T-A-K-E",
+    "phonetic": "/steɪk/",
+    "gloss": "桩；炮烙刑",
+    "tip": "the stake",
+    "example": "Check the stake in the text.",
+    "exampleZh": "核对文本中的桩。",
+    "tags": [
+      "academic"
+    ],
+    "tier": "core",
+    "pos": "n. 名词"
+  },
+  {
+    "id": 1589,
+    "word": "combat",
+    "spelling": "C-O-M-B-A-T",
+    "phonetic": "/ˈkɑmbæt/",
+    "gloss": "争斗；战斗",
+    "tip": "the combat",
+    "example": "Check the combat in the text.",
+    "exampleZh": "核对文本中的争斗。",
+    "tags": [
+      "academic"
+    ],
+    "tier": "core",
+    "pos": "n. 名词"
+  },
+  {
+    "id": 1590,
+    "word": "elementary",
+    "spelling": "E-L-E-M-E-N-T-A-R-Y",
+    "phonetic": "/ˌɛləˈmɛnʧri/",
+    "gloss": "初步的；基本的",
+    "tip": "a elementary …",
+    "example": "Give a elementary answer.",
+    "exampleZh": "给出初步的回答。",
+    "tags": [
+      "academic"
+    ],
+    "tier": "core",
+    "pos": "adj. 形容词"
+  },
+  {
+    "id": 1591,
+    "word": "maintenance",
+    "spelling": "M-A-I-N-T-E-N-A-N-C-E",
+    "phonetic": "/ˈmeɪntənəns/",
+    "gloss": "维护；保持",
+    "tip": "the maintenance",
+    "example": "Check the maintenance in the text.",
+    "exampleZh": "核对文本中的维护。",
+    "tags": [
+      "academic"
+    ],
+    "tier": "core",
+    "pos": "n. 名词"
+  },
+  {
+    "id": 1592,
+    "word": "interior",
+    "spelling": "I-N-T-E-R-I-O-R",
+    "phonetic": "/ˌɪnˈtɪriər/",
+    "gloss": "内部；内政",
+    "tip": "the interior",
+    "example": "Check the interior in the text.",
+    "exampleZh": "核对文本中的内部。",
+    "tags": [
+      "academic"
+    ],
+    "tier": "core",
+    "pos": "n. 名词"
+  },
+  {
+    "id": 1593,
+    "word": "exterior",
+    "spelling": "E-X-T-E-R-I-O-R",
+    "phonetic": "/ɪkˈstɪriər/",
+    "gloss": "外部；表面",
+    "tip": "the exterior",
+    "example": "Check the exterior in the text.",
+    "exampleZh": "核对文本中的外部。",
+    "tags": [
+      "academic"
+    ],
+    "tier": "core",
+    "pos": "n. 名词"
+  },
+  {
+    "id": 1594,
+    "word": "leak",
+    "spelling": "L-E-A-K",
+    "phonetic": "/lik/",
+    "gloss": "漏洞；漏处",
+    "tip": "the leak",
+    "example": "Check the leak in the text.",
+    "exampleZh": "核对文本中的漏洞。",
+    "tags": [
+      "academic"
+    ],
+    "tier": "core",
+    "pos": "n. 名词"
+  },
+  {
+    "id": 1595,
+    "word": "oven",
+    "spelling": "O-V-E-N",
+    "phonetic": "/ˈəvən/",
+    "gloss": "烤箱；灶",
+    "tip": "the oven",
+    "example": "Check the oven in the text.",
+    "exampleZh": "核对文本中的烤箱。",
+    "tags": [
+      "academic"
+    ],
+    "tier": "core",
+    "pos": "n. 名词"
+  },
+  {
+    "id": 1596,
+    "word": "landlord",
+    "spelling": "L-A-N-D-L-O-R-D",
+    "phonetic": "/ˈlænˌdlɔrd/",
+    "gloss": "房东；地主",
+    "tip": "the landlord",
+    "example": "Check the landlord in the text.",
+    "exampleZh": "核对文本中的房东。",
+    "tags": [
+      "academic"
+    ],
+    "tier": "core",
+    "pos": "n. 名词"
+  },
+  {
+    "id": 1597,
+    "word": "compress",
+    "spelling": "C-O-M-P-R-E-S-S",
+    "phonetic": "/ˈkɑmprɛs/",
+    "gloss": "压缩；压紧",
+    "tip": "compress …",
+    "example": "Please compress the key points.",
+    "exampleZh": "请压缩要点。",
+    "tags": [
+      "academic"
+    ],
+    "tier": "core",
+    "pos": "v. 动词"
+  },
+  {
+    "id": 1598,
+    "word": "chamber",
+    "spelling": "C-H-A-M-B-E-R",
+    "phonetic": "/ˈʧeɪmbər/",
+    "gloss": "室；房间",
+    "tip": "the chamber",
+    "example": "Check the chamber in the text.",
+    "exampleZh": "核对文本中的室。",
+    "tags": [
+      "academic"
+    ],
+    "tier": "core",
+    "pos": "n. 名词"
+  },
+  {
+    "id": 1599,
+    "word": "dense",
+    "spelling": "D-E-N-S-E",
+    "phonetic": "/dɛns/",
+    "gloss": "密集的；浓厚的",
+    "tip": "a dense …",
+    "example": "Give a dense answer.",
+    "exampleZh": "给出密集的回答。",
+    "tags": [
+      "academic"
+    ],
+    "tier": "core",
+    "pos": "adj. 形容词"
+  },
+  {
+    "id": 1600,
+    "word": "tract",
+    "spelling": "T-R-A-C-T",
+    "phonetic": "/trækt/",
+    "gloss": "大片土地；地带",
+    "tip": "the tract",
+    "example": "Check the tract in the text.",
+    "exampleZh": "核对文本中的大片土地。",
+    "tags": [
+      "academic"
+    ],
+    "tier": "core",
+    "pos": "n. 名词"
+  },
+  {
+    "id": 1601,
+    "word": "lung",
+    "spelling": "L-U-N-G",
+    "phonetic": "/ləŋ/",
+    "gloss": "肺；肺脏",
+    "tip": "the lung",
+    "example": "Check the lung in the text.",
+    "exampleZh": "核对文本中的肺。",
+    "tags": [
+      "academic"
+    ],
+    "tier": "core",
+    "pos": "n. 名词"
+  },
+  {
+    "id": 1602,
+    "word": "invisible",
+    "spelling": "I-N-V-I-S-I-B-L-E",
+    "phonetic": "/ˌɪnˈvɪzəbəl/",
+    "gloss": "看不见的；无形的",
+    "tip": "a invisible …",
+    "example": "Give a invisible answer.",
+    "exampleZh": "给出看不见的回答。",
+    "tags": [
+      "academic"
+    ],
+    "tier": "core",
+    "pos": "adj. 形容词"
+  },
+  {
+    "id": 1603,
+    "word": "frame",
+    "spelling": "F-R-A-M-E",
+    "phonetic": "/freɪm/",
+    "gloss": "框；结构",
+    "tip": "the frame",
+    "example": "Check the frame in the text.",
+    "exampleZh": "核对文本中的框。",
+    "tags": [
+      "academic"
+    ],
+    "tier": "core",
+    "pos": "n. 名词"
+  },
+  {
+    "id": 1604,
+    "word": "collective",
+    "spelling": "C-O-L-L-E-C-T-I-V-E",
+    "phonetic": "/kəˈlɛktɪv/",
+    "gloss": "集体的；聚集的",
+    "tip": "a collective …",
+    "example": "Give a collective answer.",
+    "exampleZh": "给出集体的回答。",
+    "tags": [
+      "academic"
+    ],
+    "tier": "core",
+    "pos": "adj. 形容词"
+  },
+  {
+    "id": 1605,
+    "word": "tolerate",
+    "spelling": "T-O-L-E-R-A-T-E",
+    "phonetic": "/ˈtɑlərˌeɪt/",
+    "gloss": "宽容；容许",
+    "tip": "tolerate …",
+    "example": "Please tolerate the key points.",
+    "exampleZh": "请宽容要点。",
+    "tags": [
+      "academic"
+    ],
+    "tier": "core",
+    "pos": "v. 动词"
+  },
+  {
+    "id": 1606,
+    "word": "elevator",
+    "spelling": "E-L-E-V-A-T-O-R",
+    "phonetic": "/ˈɛləˌveɪtər/",
+    "gloss": "电梯；升降机",
+    "tip": "the elevator",
+    "example": "Check the elevator in the text.",
+    "exampleZh": "核对文本中的电梯。",
+    "tags": [
+      "academic",
+      "campus"
+    ],
+    "tier": "core",
+    "pos": "n. 名词"
+  },
+  {
+    "id": 1607,
+    "word": "swear",
+    "spelling": "S-W-E-A-R",
+    "phonetic": "/swɛr/",
+    "gloss": "发誓；咒骂",
+    "tip": "swear …",
+    "example": "Please swear the key points.",
+    "exampleZh": "请发誓要点。",
+    "tags": [
+      "academic"
+    ],
+    "tier": "core",
+    "pos": "v. 动词"
+  },
+  {
+    "id": 1608,
+    "word": "frown",
+    "spelling": "F-R-O-W-N",
+    "phonetic": "/fraʊn/",
+    "gloss": "皱眉；皱眉头",
+    "tip": "the frown",
+    "example": "Check the frown in the text.",
+    "exampleZh": "核对文本中的皱眉。",
+    "tags": [
+      "academic"
+    ],
+    "tier": "core",
+    "pos": "n. 名词"
+  },
+  {
+    "id": 1609,
+    "word": "throat",
+    "spelling": "T-H-R-O-A-T",
+    "phonetic": "/θroʊt/",
+    "gloss": "咽喉；喉咙",
+    "tip": "the throat",
+    "example": "Check the throat in the text.",
+    "exampleZh": "核对文本中的咽喉。",
+    "tags": [
+      "academic"
+    ],
+    "tier": "core",
+    "pos": "n. 名词"
+  },
+  {
+    "id": 1610,
+    "word": "suck",
+    "spelling": "S-U-C-K",
+    "phonetic": "/sək/",
+    "gloss": "吸；吮",
+    "tip": "suck …",
+    "example": "Please suck the key points.",
+    "exampleZh": "请吸要点。",
+    "tags": [
+      "academic"
+    ],
+    "tier": "core",
+    "pos": "v. 动词"
+  },
+  {
+    "id": 1611,
+    "word": "video",
+    "spelling": "V-I-D-E-O",
+    "phonetic": "/ˈvɪdioʊ/",
+    "gloss": "影像；电视",
+    "tip": "the video",
+    "example": "Check the video in the text.",
+    "exampleZh": "核对文本中的影像。",
+    "tags": [
+      "academic"
+    ],
+    "tier": "core",
+    "pos": "n. 名词"
+  },
+  {
+    "id": 1612,
+    "word": "bloody",
+    "spelling": "B-L-O-O-D-Y",
+    "phonetic": "/ˈblədi/",
+    "gloss": "血腥的；嗜杀的",
+    "tip": "a bloody …",
+    "example": "Give a bloody answer.",
+    "exampleZh": "给出血腥的回答。",
+    "tags": [
+      "academic"
+    ],
+    "tier": "core",
+    "pos": "adj. 形容词"
+  },
+  {
+    "id": 1613,
+    "word": "airline",
+    "spelling": "A-I-R-L-I-N-E",
+    "phonetic": "/ˈɛˌrlaɪn/",
+    "gloss": "航线；航线的设备",
+    "tip": "the airline",
+    "example": "Check the airline in the text.",
+    "exampleZh": "核对文本中的航线。",
+    "tags": [
+      "academic"
+    ],
+    "tier": "core",
+    "pos": "n. 名词"
+  },
+  {
+    "id": 1614,
+    "word": "dose",
+    "spelling": "D-O-S-E",
+    "phonetic": "/doʊs/",
+    "gloss": "剂量；服用量",
+    "tip": "the dose",
+    "example": "Check the dose in the text.",
+    "exampleZh": "核对文本中的剂量。",
+    "tags": [
+      "academic"
+    ],
+    "tier": "core",
+    "pos": "n. 名词"
+  },
+  {
+    "id": 1615,
+    "word": "bid",
+    "spelling": "B-I-D",
+    "phonetic": "/bɪd/",
+    "gloss": "出价；命令",
+    "tip": "the bid",
+    "example": "Check the bid in the text.",
+    "exampleZh": "核对文本中的出价。",
+    "tags": [
+      "academic"
+    ],
+    "tier": "core",
+    "pos": "n. 名词"
+  },
+  {
+    "id": 1616,
+    "word": "tax",
+    "spelling": "T-A-X",
+    "phonetic": "/tæks/",
+    "gloss": "税；税款",
+    "tip": "the tax",
+    "example": "Check the tax in the text.",
+    "exampleZh": "核对文本中的税。",
+    "tags": [
+      "academic",
+      "campus"
+    ],
+    "tier": "core",
+    "pos": "n. 名词"
+  },
+  {
+    "id": 1617,
+    "word": "shell",
+    "spelling": "S-H-E-L-L",
+    "phonetic": "/ʃɛl/",
+    "gloss": "贝壳；壳",
+    "tip": "the shell",
+    "example": "Check the shell in the text.",
+    "exampleZh": "核对文本中的贝壳。",
+    "tags": [
+      "academic"
+    ],
+    "tier": "core",
+    "pos": "n. 名词"
+  },
+  {
+    "id": 1618,
+    "word": "court",
+    "spelling": "C-O-U-R-T",
+    "phonetic": "/kɔrt/",
+    "gloss": "法院；庭院",
+    "tip": "the court",
+    "example": "Check the court in the text.",
+    "exampleZh": "核对文本中的法院。",
+    "tags": [
+      "academic",
+      "campus"
+    ],
+    "tier": "core",
+    "pos": "n. 名词"
+  },
+  {
+    "id": 1619,
+    "word": "arrest",
+    "spelling": "A-R-R-E-S-T",
+    "phonetic": "/ərˈɛst/",
+    "gloss": "逮捕；监禁",
+    "tip": "the arrest",
+    "example": "Check the arrest in the text.",
+    "exampleZh": "核对文本中的逮捕。",
+    "tags": [
+      "academic",
+      "campus"
+    ],
+    "tier": "core",
+    "pos": "n. 名词"
+  },
+  {
+    "id": 1620,
+    "word": "abuse",
+    "spelling": "A-B-U-S-E",
+    "phonetic": "/əˈbjuz/",
+    "gloss": "滥用；虐待",
+    "tip": "the abuse",
+    "example": "Check the abuse in the text.",
+    "exampleZh": "核对文本中的滥用。",
+    "tags": [
+      "academic"
+    ],
+    "tier": "core",
+    "pos": "n. 名词"
+  },
+  {
+    "id": 1621,
+    "word": "scandal",
+    "spelling": "S-C-A-N-D-A-L",
+    "phonetic": "/ˈskændəl/",
+    "gloss": "丑闻；中伤",
+    "tip": "the scandal",
+    "example": "Check the scandal in the text.",
+    "exampleZh": "核对文本中的丑闻。",
+    "tags": [
+      "academic"
+    ],
+    "tier": "core",
+    "pos": "n. 名词"
+  },
+  {
+    "id": 1622,
+    "word": "board",
+    "spelling": "B-O-A-R-D",
+    "phonetic": "/bɔrd/",
+    "gloss": "木板；甲板",
+    "tip": "the board",
+    "example": "Check the board in the text.",
+    "exampleZh": "核对文本中的木板。",
+    "tags": [
+      "academic"
+    ],
+    "tier": "core",
+    "pos": "n. 名词"
+  },
+  {
+    "id": 1623,
+    "word": "telescope",
+    "spelling": "T-E-L-E-S-C-O-P-E",
+    "phonetic": "/ˈtɛləˌskoʊp/",
+    "gloss": "望远镜；叠缩",
+    "tip": "the telescope",
+    "example": "Check the telescope in the text.",
+    "exampleZh": "核对文本中的望远镜。",
+    "tags": [
+      "academic"
+    ],
+    "tier": "core",
+    "pos": "n. 名词"
+  },
+  {
+    "id": 1624,
+    "word": "depression",
+    "spelling": "D-E-P-R-E-S-S-I-O-N",
+    "phonetic": "/dɪˈprɛʃən/",
+    "gloss": "不景气；消沉",
+    "tip": "the depression",
+    "example": "Check the depression in the text.",
+    "exampleZh": "核对文本中的不景气。",
+    "tags": [
+      "academic"
+    ],
+    "tier": "core",
+    "pos": "n. 名词"
+  },
+  {
+    "id": 1625,
+    "word": "suicide",
+    "spelling": "S-U-I-C-I-D-E",
+    "phonetic": "/ˈsuɪˌsaɪd/",
+    "gloss": "自杀；自杀者",
+    "tip": "the suicide",
+    "example": "Check the suicide in the text.",
+    "exampleZh": "核对文本中的自杀。",
+    "tags": [
+      "academic"
+    ],
+    "tier": "core",
+    "pos": "n. 名词"
+  },
+  {
+    "id": 1626,
+    "word": "manufacture",
+    "spelling": "M-A-N-U-F-A-C-T-U-R-E",
+    "phonetic": "/ˌmænjəˈfækʧər/",
+    "gloss": "产品；制造",
+    "tip": "the manufacture",
+    "example": "Check the manufacture in the text.",
+    "exampleZh": "核对文本中的产品。",
+    "tags": [
+      "academic",
+      "campus"
+    ],
+    "tier": "core",
+    "pos": "n. 名词"
+  },
+  {
+    "id": 1627,
+    "word": "sausage",
+    "spelling": "S-A-U-S-A-G-E",
+    "phonetic": "/ˈsɔsɪʤ/",
+    "gloss": "香肠；腊肠",
+    "tip": "the sausage",
+    "example": "Check the sausage in the text.",
+    "exampleZh": "核对文本中的香肠。",
+    "tags": [
+      "academic"
+    ],
+    "tier": "core",
+    "pos": "n. 名词"
+  },
+  {
+    "id": 1628,
+    "word": "brand",
+    "spelling": "B-R-A-N-D",
+    "phonetic": "/brænd/",
+    "gloss": "商标；牌子",
+    "tip": "the brand",
+    "example": "Check the brand in the text.",
+    "exampleZh": "核对文本中的商标。",
+    "tags": [
+      "academic"
+    ],
+    "tier": "core",
+    "pos": "n. 名词"
+  },
+  {
+    "id": 1629,
+    "word": "asset",
+    "spelling": "A-S-S-E-T",
+    "phonetic": "/ˈæˌsɛt/",
+    "gloss": "资产；有益的东西",
+    "tip": "the asset",
+    "example": "Check the asset in the text.",
+    "exampleZh": "核对文本中的资产。",
+    "tags": [
+      "academic"
+    ],
+    "tier": "core",
+    "pos": "n. 名词"
+  },
+  {
+    "id": 1630,
+    "word": "explode",
+    "spelling": "E-X-P-L-O-D-E",
+    "phonetic": "/ɪkˈsploʊd/",
+    "gloss": "爆炸；爆发",
+    "tip": "explode …",
+    "example": "Please explode the key points.",
+    "exampleZh": "请爆炸要点。",
+    "tags": [
+      "academic"
+    ],
+    "tier": "core",
+    "pos": "v. 动词"
+  },
+  {
+    "id": 1631,
+    "word": "blast",
+    "spelling": "B-L-A-S-T",
+    "phonetic": "/blæst/",
+    "gloss": "一阵风；爆炸",
+    "tip": "the blast",
+    "example": "Check the blast in the text.",
+    "exampleZh": "核对文本中的一阵风。",
+    "tags": [
+      "academic"
+    ],
+    "tier": "core",
+    "pos": "n. 名词"
+  },
+  {
+    "id": 1632,
+    "word": "mount",
+    "spelling": "M-O-U-N-T",
+    "phonetic": "/maʊnt/",
+    "gloss": "乘骑用马；框",
+    "tip": "the mount",
+    "example": "Check the mount in the text.",
+    "exampleZh": "核对文本中的乘骑用马。",
+    "tags": [
+      "academic"
+    ],
+    "tier": "core",
+    "pos": "n. 名词"
+  },
+  {
+    "id": 1633,
+    "word": "leap",
+    "spelling": "L-E-A-P",
+    "phonetic": "/lip/",
+    "gloss": "跳跃；剧增",
+    "tip": "the leap",
+    "example": "Check the leap in the text.",
+    "exampleZh": "核对文本中的跳跃。",
+    "tags": [
+      "academic"
+    ],
+    "tier": "core",
+    "pos": "n. 名词"
+  },
+  {
+    "id": 1634,
+    "word": "frog",
+    "spelling": "F-R-O-G",
+    "phonetic": "/frɑg/",
+    "gloss": "青蛙；[医] 蛙",
+    "tip": "the frog",
+    "example": "Check the frog in the text.",
+    "exampleZh": "核对文本中的青蛙。",
+    "tags": [
+      "academic"
+    ],
+    "tier": "core",
+    "pos": "n. 名词"
+  },
+  {
+    "id": 1635,
+    "word": "gap",
+    "spelling": "G-A-P",
+    "phonetic": "/gæp/",
+    "gloss": "缝隙；缺口",
+    "tip": "the gap",
+    "example": "Check the gap in the text.",
+    "exampleZh": "核对文本中的缝隙。",
+    "tags": [
+      "academic",
+      "campus"
+    ],
+    "tier": "core",
+    "pos": "n. 名词"
+  },
+  {
+    "id": 1636,
+    "word": "preserve",
+    "spelling": "P-R-E-S-E-R-V-E",
+    "phonetic": "/prɪˈzərv/",
+    "gloss": "保护；保持",
+    "tip": "preserve …",
+    "example": "Please preserve the key points.",
+    "exampleZh": "请保护要点。",
+    "tags": [
+      "academic"
+    ],
+    "tier": "core",
+    "pos": "v. 动词"
+  },
+  {
+    "id": 1637,
+    "word": "hydrogen",
+    "spelling": "H-Y-D-R-O-G-E-N",
+    "phonetic": "/ˈhaɪdrəʤən/",
+    "gloss": "氢；[化] 氢H-2",
+    "tip": "the hydrogen",
+    "example": "Check the hydrogen in the text.",
+    "exampleZh": "核对文本中的氢。",
+    "tags": [
+      "academic",
+      "campus"
+    ],
+    "tier": "core",
+    "pos": "n. 名词"
+  },
+  {
+    "id": 1638,
+    "word": "influential",
+    "spelling": "I-N-F-L-U-E-N-T-I-A-L",
+    "phonetic": "/ˌɪnfluˈɛnʃəl/",
+    "gloss": "有影响的；有势力的",
+    "tip": "a influential …",
+    "example": "Give a influential answer.",
+    "exampleZh": "给出有影响的回答。",
+    "tags": [
+      "academic"
+    ],
+    "tier": "core",
+    "pos": "adj. 形容词"
+  },
+  {
+    "id": 1639,
+    "word": "minister",
+    "spelling": "M-I-N-I-S-T-E-R",
+    "phonetic": "/ˈmɪnɪstər/",
+    "gloss": "部长；牧师",
+    "tip": "the minister",
+    "example": "Check the minister in the text.",
+    "exampleZh": "核对文本中的部长。",
+    "tags": [
+      "academic"
+    ],
+    "tier": "core",
+    "pos": "n. 名词"
+  },
+  {
+    "id": 1640,
+    "word": "cabinet",
+    "spelling": "C-A-B-I-N-E-T",
+    "phonetic": "/ˈkæbənət/",
+    "gloss": "橱柜；内阁",
+    "tip": "the cabinet",
+    "example": "Check the cabinet in the text.",
+    "exampleZh": "核对文本中的橱柜。",
+    "tags": [
+      "academic"
+    ],
+    "tier": "core",
+    "pos": "n. 名词"
+  },
+  {
+    "id": 1641,
+    "word": "slight",
+    "spelling": "S-L-I-G-H-T",
+    "phonetic": "/slaɪt/",
+    "gloss": "轻蔑；怠慢",
+    "tip": "the slight",
+    "example": "Check the slight in the text.",
+    "exampleZh": "核对文本中的轻蔑。",
+    "tags": [
+      "academic"
+    ],
+    "tier": "core",
+    "pos": "n. 名词"
+  },
+  {
+    "id": 1642,
+    "word": "pill",
+    "spelling": "P-I-L-L",
+    "phonetic": "/pɪl/",
+    "gloss": "药丸；弹丸",
+    "tip": "the pill",
+    "example": "Check the pill in the text.",
+    "exampleZh": "核对文本中的药丸。",
+    "tags": [
+      "academic"
+    ],
+    "tier": "core",
+    "pos": "n. 名词"
+  },
+  {
+    "id": 1643,
+    "word": "recognition",
+    "spelling": "R-E-C-O-G-N-I-T-I-O-N",
+    "phonetic": "/ˌrɛkɪgˈnɪʃən/",
+    "gloss": "赞誉；认得",
+    "tip": "the recognition",
+    "example": "Check the recognition in the text.",
+    "exampleZh": "核对文本中的赞誉。",
+    "tags": [
+      "academic",
+      "campus"
+    ],
+    "tier": "core",
+    "pos": "n. 名词"
+  },
+  {
+    "id": 1644,
+    "word": "reality",
+    "spelling": "R-E-A-L-I-T-Y",
+    "phonetic": "/ˌriˈæləˌti/",
+    "gloss": "实在；事实",
+    "tip": "the reality",
+    "example": "Check the reality in the text.",
+    "exampleZh": "核对文本中的实在。",
+    "tags": [
+      "academic"
+    ],
+    "tier": "core",
+    "pos": "n. 名词"
+  },
+  {
+    "id": 1645,
+    "word": "abroad",
+    "spelling": "A-B-R-O-A-D",
+    "phonetic": "/əˈbrɔd/",
+    "gloss": "往国外；到室外",
+    "tip": "abroad …",
+    "example": "Answer abroad and clearly.",
+    "exampleZh": "请往国外且清楚地回答。",
+    "tags": [
+      "academic"
+    ],
+    "tier": "core",
+    "pos": "adv. 副词"
+  },
+  {
+    "id": 1646,
+    "word": "wealthy",
+    "spelling": "W-E-A-L-T-H-Y",
+    "phonetic": "/ˈwɛlθi/",
+    "gloss": "富有的；丰裕的",
+    "tip": "a wealthy …",
+    "example": "Give a wealthy answer.",
+    "exampleZh": "给出富有的回答。",
+    "tags": [
+      "academic"
+    ],
+    "tier": "core",
+    "pos": "adj. 形容词"
+  },
+  {
+    "id": 1647,
+    "word": "generally",
+    "spelling": "G-E-N-E-R-A-L-L-Y",
+    "phonetic": "/ˈʤɛnərəli/",
+    "gloss": "通常；逐渐地",
+    "tip": "generally …",
+    "example": "Answer generally and clearly.",
+    "exampleZh": "请通常且清楚地回答。",
+    "tags": [
+      "academic",
+      "campus"
+    ],
+    "tier": "core",
+    "pos": "adv. 副词"
+  },
+  {
+    "id": 1648,
+    "word": "jean",
+    "spelling": "J-E-A-N",
+    "phonetic": "/ʤin/",
+    "gloss": "牛仔裤；牛仔布",
+    "tip": "the jean",
+    "example": "Check the jean in the text.",
+    "exampleZh": "核对文本中的牛仔裤。",
+    "tags": [
+      "academic"
+    ],
+    "tier": "core",
+    "pos": "n. 名词"
+  },
+  {
+    "id": 1649,
+    "word": "personality",
+    "spelling": "P-E-R-S-O-N-A-L-I-T-Y",
+    "phonetic": "/ˌpərsəˈnælɪti/",
+    "gloss": "个性；人格",
+    "tip": "the personality",
+    "example": "Check the personality in the text.",
+    "exampleZh": "核对文本中的个性。",
+    "tags": [
+      "academic",
+      "campus"
+    ],
+    "tier": "core",
+    "pos": "n. 名词"
+  },
+  {
+    "id": 1650,
+    "word": "talent",
+    "spelling": "T-A-L-E-N-T",
+    "phonetic": "/ˈtælənt/",
+    "gloss": "天才；才能",
+    "tip": "the talent",
+    "example": "Check the talent in the text.",
+    "exampleZh": "核对文本中的天才。",
+    "tags": [
+      "academic"
+    ],
+    "tier": "core",
+    "pos": "n. 名词"
+  },
+  {
+    "id": 1651,
+    "word": "infinite",
+    "spelling": "I-N-F-I-N-I-T-E",
+    "phonetic": "/ˈɪnfənət/",
+    "gloss": "无限；神",
+    "tip": "the infinite",
+    "example": "Check the infinite in the text.",
+    "exampleZh": "核对文本中的无限。",
+    "tags": [
+      "academic"
+    ],
+    "tier": "core",
+    "pos": "n. 名词"
+  },
+  {
+    "id": 1652,
+    "word": "variation",
+    "spelling": "V-A-R-I-A-T-I-O-N",
+    "phonetic": "/ˌvɛriˈeɪʃən/",
+    "gloss": "变更；变化",
+    "tip": "the variation",
+    "example": "Check the variation in the text.",
+    "exampleZh": "核对文本中的变更。",
+    "tags": [
+      "academic"
+    ],
+    "tier": "core",
+    "pos": "n. 名词"
+  },
+  {
+    "id": 1653,
+    "word": "handle",
+    "spelling": "H-A-N-D-L-E",
+    "phonetic": "/ˈhændəl/",
+    "gloss": "柄；把手",
+    "tip": "the handle",
+    "example": "Check the handle in the text.",
+    "exampleZh": "核对文本中的柄。",
+    "tags": [
+      "academic",
+      "campus"
+    ],
+    "tier": "core",
+    "pos": "n. 名词"
+  },
+  {
+    "id": 1654,
+    "word": "private",
+    "spelling": "P-R-I-V-A-T-E",
+    "phonetic": "/ˈpraɪvət/",
+    "gloss": "私人的；秘密的",
+    "tip": "private …",
+    "example": "Please private the key points.",
+    "exampleZh": "请私人要点。",
+    "tags": [
+      "academic"
+    ],
+    "tier": "core",
+    "pos": "v. 动词"
+  },
+  {
+    "id": 1655,
+    "word": "auto",
+    "spelling": "A-U-T-O",
+    "phonetic": "/ˈɔtoʊ/",
+    "gloss": "汽车；\"本身\"",
+    "tip": "the auto",
+    "example": "Check the auto in the text.",
+    "exampleZh": "核对文本中的汽车。",
+    "tags": [
+      "academic"
+    ],
+    "tier": "core",
+    "pos": "n. 名词"
+  },
+  {
+    "id": 1656,
+    "word": "drag",
+    "spelling": "D-R-A-G",
+    "phonetic": "/dræg/",
+    "gloss": "拖；拖累",
+    "tip": "the drag",
+    "example": "Check the drag in the text.",
+    "exampleZh": "核对文本中的拖。",
+    "tags": [
+      "academic"
+    ],
+    "tier": "core",
+    "pos": "n. 名词"
+  },
+  {
+    "id": 1657,
+    "word": "wreck",
+    "spelling": "W-R-E-C-K",
+    "phonetic": "/rɛk/",
+    "gloss": "失事；残骸",
+    "tip": "the wreck",
+    "example": "Check the wreck in the text.",
+    "exampleZh": "核对文本中的失事。",
+    "tags": [
+      "academic",
+      "campus"
+    ],
+    "tier": "core",
+    "pos": "n. 名词"
+  },
+  {
+    "id": 1658,
+    "word": "rival",
+    "spelling": "R-I-V-A-L",
+    "phonetic": "/ˈraɪvəl/",
+    "gloss": "对手；竞争者",
+    "tip": "the rival",
+    "example": "Check the rival in the text.",
+    "exampleZh": "核对文本中的对手。",
+    "tags": [
+      "academic"
+    ],
+    "tier": "core",
+    "pos": "n. 名词"
+  },
+  {
+    "id": 1659,
+    "word": "attract",
+    "spelling": "A-T-T-R-A-C-T",
+    "phonetic": "/əˈtrækt/",
+    "gloss": "吸引；诱惑",
+    "tip": "attract …",
+    "example": "Please attract the key points.",
+    "exampleZh": "请吸引要点。",
+    "tags": [
+      "academic",
+      "campus"
+    ],
+    "tier": "core",
+    "pos": "v. 动词"
+  },
+  {
+    "id": 1660,
+    "word": "package",
+    "spelling": "P-A-C-K-A-G-E",
+    "phonetic": "/ˈpækɪʤ/",
+    "gloss": "包裹；套装软件",
+    "tip": "the package",
+    "example": "Check the package in the text.",
+    "exampleZh": "核对文本中的包裹。",
+    "tags": [
+      "academic",
+      "campus"
+    ],
+    "tier": "core",
+    "pos": "n. 名词"
+  },
+  {
+    "id": 1661,
+    "word": "plastic",
+    "spelling": "P-L-A-S-T-I-C",
+    "phonetic": "/ˈplæstɪk/",
+    "gloss": "塑料；可塑体",
+    "tip": "the plastic",
+    "example": "Check the plastic in the text.",
+    "exampleZh": "核对文本中的塑料。",
+    "tags": [
+      "academic"
+    ],
+    "tier": "core",
+    "pos": "n. 名词"
+  },
+  {
+    "id": 1662,
+    "word": "instrument",
+    "spelling": "I-N-S-T-R-U-M-E-N-T",
+    "phonetic": "/ˈɪnstrəmənt/",
+    "gloss": "工具；手段",
+    "tip": "the instrument",
+    "example": "Check the instrument in the text.",
+    "exampleZh": "核对文本中的工具。",
+    "tags": [
+      "academic"
+    ],
+    "tier": "core",
+    "pos": "n. 名词"
+  },
+  {
+    "id": 1663,
+    "word": "establishment",
+    "spelling": "E-S-T-A-B-L-I-S-H-M-E-N-T",
+    "phonetic": "/ɪˈstæblɪʃmənt/",
+    "gloss": "确立；制定",
+    "tip": "the establishment",
+    "example": "Check the establishment in the text.",
+    "exampleZh": "核对文本中的确立。",
+    "tags": [
+      "academic"
+    ],
+    "tier": "core",
+    "pos": "n. 名词"
+  },
+  {
+    "id": 1664,
+    "word": "apartment",
+    "spelling": "A-P-A-R-T-M-E-N-T",
+    "phonetic": "/əˈpɑrtmənt/",
+    "gloss": "房间；公寓",
+    "tip": "the apartment",
+    "example": "Check the apartment in the text.",
+    "exampleZh": "核对文本中的房间。",
+    "tags": [
+      "academic",
+      "campus"
+    ],
+    "tier": "core",
+    "pos": "n. 名词"
+  },
+  {
+    "id": 1665,
+    "word": "forbid",
+    "spelling": "F-O-R-B-I-D",
+    "phonetic": "/fərˈbɪd/",
+    "gloss": "禁止；不准",
+    "tip": "forbid …",
+    "example": "Please forbid the key points.",
+    "exampleZh": "请禁止要点。",
+    "tags": [
+      "academic"
+    ],
+    "tier": "core",
+    "pos": "v. 动词"
+  },
+  {
+    "id": 1666,
+    "word": "ownership",
+    "spelling": "O-W-N-E-R-S-H-I-P",
+    "phonetic": "/ˈoʊnərˌʃɪp/",
+    "gloss": "所有权；物主身份",
+    "tip": "the ownership",
+    "example": "Check the ownership in the text.",
+    "exampleZh": "核对文本中的所有权。",
+    "tags": [
+      "academic"
+    ],
+    "tier": "core",
+    "pos": "n. 名词"
+  },
+  {
+    "id": 1667,
+    "word": "typical",
+    "spelling": "T-Y-P-I-C-A-L",
+    "phonetic": "/ˈtɪpɪkəl/",
+    "gloss": "典型的；象征性的",
+    "tip": "a typical …",
+    "example": "Give a typical answer.",
+    "exampleZh": "给出典型的回答。",
+    "tags": [
+      "academic"
+    ],
+    "tier": "core",
+    "pos": "adj. 形容词"
+  },
+  {
+    "id": 1668,
+    "word": "affection",
+    "spelling": "A-F-F-E-C-T-I-O-N",
+    "phonetic": "/əˈfɛkʃən/",
+    "gloss": "影响；病",
+    "tip": "the affection",
+    "example": "Check the affection in the text.",
+    "exampleZh": "核对文本中的影响。",
+    "tags": [
+      "academic"
+    ],
+    "tier": "core",
+    "pos": "n. 名词"
+  },
+  {
+    "id": 1669,
+    "word": "mankind",
+    "spelling": "M-A-N-K-I-N-D",
+    "phonetic": "/ˈmænˈkaɪnd/",
+    "gloss": "人类；男性",
+    "tip": "the mankind",
+    "example": "Check the mankind in the text.",
+    "exampleZh": "核对文本中的人类。",
+    "tags": [
+      "academic"
+    ],
+    "tier": "core",
+    "pos": "n. 名词"
+  },
+  {
+    "id": 1670,
+    "word": "quest",
+    "spelling": "Q-U-E-S-T",
+    "phonetic": "/kwɛst/",
+    "gloss": "探索；寻求",
+    "tip": "the quest",
+    "example": "Check the quest in the text.",
+    "exampleZh": "核对文本中的探索。",
+    "tags": [
+      "academic"
+    ],
+    "tier": "core",
+    "pos": "n. 名词"
+  },
+  {
+    "id": 1671,
+    "word": "copyright",
+    "spelling": "C-O-P-Y-R-I-G-H-T",
+    "phonetic": "/ˈkɑpiˌraɪt/",
+    "gloss": "版权；著作权",
+    "tip": "the copyright",
+    "example": "Check the copyright in the text.",
+    "exampleZh": "核对文本中的版权。",
+    "tags": [
+      "academic"
+    ],
+    "tier": "core",
+    "pos": "n. 名词"
+  },
+  {
+    "id": 1672,
+    "word": "electronic",
+    "spelling": "E-L-E-C-T-R-O-N-I-C",
+    "phonetic": "/ˌɪˌlɛkˈtrɑnɪk/",
+    "gloss": "电子的；[计] 电子工业协会接口",
+    "tip": "a electronic …",
+    "example": "Give a electronic answer.",
+    "exampleZh": "给出电子的回答。",
+    "tags": [
+      "academic"
+    ],
+    "tier": "core",
+    "pos": "adj. 形容词"
+  },
+  {
+    "id": 1673,
+    "word": "reserve",
+    "spelling": "R-E-S-E-R-V-E",
+    "phonetic": "/rɪˈzərv/",
+    "gloss": "储备品；贮量",
+    "tip": "the reserve",
+    "example": "Check the reserve in the text.",
+    "exampleZh": "核对文本中的储备品。",
+    "tags": [
+      "academic",
+      "campus"
+    ],
+    "tier": "core",
+    "pos": "n. 名词"
+  },
+  {
+    "id": 1674,
+    "word": "keyboard",
+    "spelling": "K-E-Y-B-O-A-R-D",
+    "phonetic": "/ˈkiˌbɔrd/",
+    "gloss": "键盘；[计] 键盘",
+    "tip": "the keyboard",
+    "example": "Check the keyboard in the text.",
+    "exampleZh": "核对文本中的键盘。",
+    "tags": [
+      "academic"
+    ],
+    "tier": "core",
+    "pos": "n. 名词"
+  },
+  {
+    "id": 1675,
+    "word": "creation",
+    "spelling": "C-R-E-A-T-I-O-N",
+    "phonetic": "/kriˈeɪʃən/",
+    "gloss": "创造；创作物",
+    "tip": "the creation",
+    "example": "Check the creation in the text.",
+    "exampleZh": "核对文本中的创造。",
+    "tags": [
+      "academic"
+    ],
+    "tier": "core",
+    "pos": "n. 名词"
+  },
+  {
+    "id": 1676,
+    "word": "software",
+    "spelling": "S-O-F-T-W-A-R-E",
+    "phonetic": "/ˈsɔfˌwɛr/",
+    "gloss": "软件；[计] 软设备",
+    "tip": "the software",
+    "example": "Check the software in the text.",
+    "exampleZh": "核对文本中的软件。",
+    "tags": [
+      "academic",
+      "campus"
+    ],
+    "tier": "core",
+    "pos": "n. 名词"
+  },
+  {
+    "id": 1677,
+    "word": "nowhere",
+    "spelling": "N-O-W-H-E-R-E",
+    "phonetic": "/ˈnoʊˌwɛr/",
+    "gloss": "无处；到处都无",
+    "tip": "nowhere …",
+    "example": "Answer nowhere and clearly.",
+    "exampleZh": "请无处且清楚地回答。",
+    "tags": [
+      "academic"
+    ],
+    "tier": "core",
+    "pos": "adv. 副词"
+  },
+  {
+    "id": 1678,
+    "word": "extraordinary",
+    "spelling": "E-X-T-R-A-O-R-D-I-N-A-R-Y",
+    "phonetic": "/ˌɛkstrəˈɔrdəˌnɛri/",
+    "gloss": "非常的；特别的",
+    "tip": "a extraordinary …",
+    "example": "Give a extraordinary answer.",
+    "exampleZh": "给出非常的回答。",
+    "tags": [
+      "academic"
+    ],
+    "tier": "core",
+    "pos": "adj. 形容词"
+  },
+  {
+    "id": 1679,
+    "word": "steep",
+    "spelling": "S-T-E-E-P",
+    "phonetic": "/stip/",
+    "gloss": "浸渍；悬崖",
+    "tip": "the steep",
+    "example": "Check the steep in the text.",
+    "exampleZh": "核对文本中的浸渍。",
+    "tags": [
+      "academic"
+    ],
+    "tier": "core",
+    "pos": "n. 名词"
+  },
+  {
+    "id": 1680,
+    "word": "clif",
+    "spelling": "C-L-I-F",
+    "phonetic": "/klɪf/",
+    "gloss": "医；克隆形成抑制因子",
+    "tip": "the clif",
+    "example": "Check the clif in the text.",
+    "exampleZh": "核对文本中的医。",
+    "tags": [
+      "academic"
+    ],
+    "tier": "core",
+    "pos": "n. 名词"
+  },
+  {
+    "id": 1681,
+    "word": "specimen",
+    "spelling": "S-P-E-C-I-M-E-N",
+    "phonetic": "/ˈspɛsəmən/",
+    "gloss": "样品；标本",
+    "tip": "the specimen",
+    "example": "Check the specimen in the text.",
+    "exampleZh": "核对文本中的样品。",
+    "tags": [
+      "academic"
+    ],
+    "tier": "core",
+    "pos": "n. 名词"
+  },
+  {
+    "id": 1682,
+    "word": "liver",
+    "spelling": "L-I-V-E-R",
+    "phonetic": "/ˈlɪvər/",
+    "gloss": "肝脏；生活者",
+    "tip": "the liver",
+    "example": "Check the liver in the text.",
+    "exampleZh": "核对文本中的肝脏。",
+    "tags": [
+      "academic"
+    ],
+    "tier": "core",
+    "pos": "n. 名词"
+  },
+  {
+    "id": 1683,
+    "word": "cable",
+    "spelling": "C-A-B-L-E",
+    "phonetic": "/ˈkeɪbəl/",
+    "gloss": "电缆；海底电报",
+    "tip": "a cable …",
+    "example": "Give a cable answer.",
+    "exampleZh": "给出电缆回答。",
+    "tags": [
+      "academic"
+    ],
+    "tier": "core",
+    "pos": "adj. 形容词"
+  },
+  {
+    "id": 1684,
+    "word": "jet",
+    "spelling": "J-E-T",
+    "phonetic": "/ʤɛt/",
+    "gloss": "喷射流；喷嘴",
+    "tip": "the jet",
+    "example": "Check the jet in the text.",
+    "exampleZh": "核对文本中的喷射流。",
+    "tags": [
+      "academic"
+    ],
+    "tier": "core",
+    "pos": "n. 名词"
+  },
+  {
+    "id": 1685,
+    "word": "exception",
+    "spelling": "E-X-C-E-P-T-I-O-N",
+    "phonetic": "/ɪkˈsɛpʃən/",
+    "gloss": "例外；除外",
+    "tip": "the exception",
+    "example": "Check the exception in the text.",
+    "exampleZh": "核对文本中的例外。",
+    "tags": [
+      "academic",
+      "campus"
+    ],
+    "tier": "core",
+    "pos": "n. 名词"
+  },
+  {
+    "id": 1686,
+    "word": "adventure",
+    "spelling": "A-D-V-E-N-T-U-R-E",
+    "phonetic": "/ədˈvɛnʧər/",
+    "gloss": "冒险；冒险经历",
+    "tip": "the adventure",
+    "example": "Check the adventure in the text.",
+    "exampleZh": "核对文本中的冒险。",
+    "tags": [
+      "academic"
+    ],
+    "tier": "core",
+    "pos": "n. 名词"
+  },
+  {
+    "id": 1687,
+    "word": "interrupt",
+    "spelling": "I-N-T-E-R-R-U-P-T",
+    "phonetic": "/ˌɪntərˈəpt/",
+    "gloss": "中断；妨碍",
+    "tip": "interrupt …",
+    "example": "Please interrupt the key points.",
+    "exampleZh": "请中断要点。",
+    "tags": [
+      "academic"
+    ],
+    "tier": "core",
+    "pos": "v. 动词"
+  },
+  {
+    "id": 1688,
+    "word": "variety",
+    "spelling": "V-A-R-I-E-T-Y",
+    "phonetic": "/vərˈaɪəti/",
+    "gloss": "多样；种类",
+    "tip": "the variety",
+    "example": "Check the variety in the text.",
+    "exampleZh": "核对文本中的多样。",
+    "tags": [
+      "academic",
+      "campus"
+    ],
+    "tier": "core",
+    "pos": "n. 名词"
+  },
+  {
+    "id": 1689,
+    "word": "semiconductor",
+    "spelling": "S-E-M-I-C-O-N-D-U-C-T-O-R",
+    "phonetic": "/ˌsɛmɪkənˈdəktər/",
+    "gloss": "半导体；[化] 半导体",
+    "tip": "the semiconductor",
+    "example": "Check the semiconductor in the text.",
+    "exampleZh": "核对文本中的半导体。",
+    "tags": [
+      "academic"
+    ],
+    "tier": "core",
+    "pos": "n. 名词"
+  },
+  {
+    "id": 1690,
+    "word": "argue",
+    "spelling": "A-R-G-U-E",
+    "phonetic": "/ˈɑrgju/",
+    "gloss": "提出理由；争论",
+    "tip": "argue …",
+    "example": "Please argue the key points.",
+    "exampleZh": "请提出理由要点。",
+    "tags": [
+      "academic"
+    ],
+    "tier": "core",
+    "pos": "v. 动词"
+  },
+  {
+    "id": 1691,
+    "word": "practically",
+    "spelling": "P-R-A-C-T-I-C-A-L-L-Y",
+    "phonetic": "/ˈpræktɪkəli/",
+    "gloss": "几乎；差不多",
+    "tip": "practically …",
+    "example": "Answer practically and clearly.",
+    "exampleZh": "请几乎且清楚地回答。",
+    "tags": [
+      "academic"
+    ],
+    "tier": "core",
+    "pos": "adv. 副词"
+  },
+  {
+    "id": 1692,
+    "word": "submerge",
+    "spelling": "S-U-B-M-E-R-G-E",
+    "phonetic": "/səbˈmərʤ/",
+    "gloss": "使浸水；使陷入",
+    "tip": "submerge …",
+    "example": "Please submerge the key points.",
+    "exampleZh": "请使浸水要点。",
+    "tags": [
+      "academic"
+    ],
+    "tier": "core",
+    "pos": "v. 动词"
+  },
+  {
+    "id": 1693,
+    "word": "amaze",
+    "spelling": "A-M-A-Z-E",
+    "phonetic": "/əˈmeɪz/",
+    "gloss": "使吃惊",
+    "tip": "amaze …",
+    "example": "Please amaze the key points.",
+    "exampleZh": "请使吃惊要点。",
+    "tags": [
+      "academic"
+    ],
+    "tier": "core",
+    "pos": "v. 动词"
+  },
+  {
+    "id": 1694,
+    "word": "bay",
+    "spelling": "B-A-Y",
+    "phonetic": "/beɪ/",
+    "gloss": "海湾；狗吠声",
+    "tip": "the bay",
+    "example": "Check the bay in the text.",
+    "exampleZh": "核对文本中的海湾。",
+    "tags": [
+      "academic",
+      "campus"
+    ],
+    "tier": "core",
+    "pos": "n. 名词"
+  },
+  {
+    "id": 1695,
+    "word": "existence",
+    "spelling": "E-X-I-S-T-E-N-C-E",
+    "phonetic": "/ɪgˈzɪstəns/",
+    "gloss": "存在；生存",
+    "tip": "the existence",
+    "example": "Check the existence in the text.",
+    "exampleZh": "核对文本中的存在。",
+    "tags": [
+      "academic"
+    ],
+    "tier": "core",
+    "pos": "n. 名词"
+  },
+  {
+    "id": 1696,
+    "word": "shield",
+    "spelling": "S-H-I-E-L-D",
+    "phonetic": "/ʃild/",
+    "gloss": "盾；防卫物",
+    "tip": "the shield",
+    "example": "Check the shield in the text.",
+    "exampleZh": "核对文本中的盾。",
+    "tags": [
+      "academic"
+    ],
+    "tier": "core",
+    "pos": "n. 名词"
+  },
+  {
+    "id": 1697,
+    "word": "complicate",
+    "spelling": "C-O-M-P-L-I-C-A-T-E",
+    "phonetic": "/ˈkɑmpləˌkeɪt/",
+    "gloss": "弄复杂；使错综",
+    "tip": "complicate …",
+    "example": "Please complicate the key points.",
+    "exampleZh": "请弄复杂要点。",
+    "tags": [
+      "academic"
+    ],
+    "tier": "core",
+    "pos": "v. 动词"
+  },
+  {
+    "id": 1698,
+    "word": "landscape",
+    "spelling": "L-A-N-D-S-C-A-P-E",
+    "phonetic": "/ˈlænˌskeɪp/",
+    "gloss": "风景；山水",
+    "tip": "the landscape",
+    "example": "Check the landscape in the text.",
+    "exampleZh": "核对文本中的风景。",
+    "tags": [
+      "academic"
+    ],
+    "tier": "core",
+    "pos": "n. 名词"
+  },
+  {
+    "id": 1699,
+    "word": "uncover",
+    "spelling": "U-N-C-O-V-E-R",
+    "phonetic": "/ənˈkəvər/",
+    "gloss": "揭露；揭开",
+    "tip": "uncover …",
+    "example": "Please uncover the key points.",
+    "exampleZh": "请揭露要点。",
+    "tags": [
+      "academic"
+    ],
+    "tier": "core",
+    "pos": "v. 动词"
+  },
+  {
+    "id": 1700,
+    "word": "grab",
+    "spelling": "G-R-A-B",
+    "phonetic": "/græb/",
+    "gloss": "抓握；掠夺",
+    "tip": "the grab",
+    "example": "Check the grab in the text.",
+    "exampleZh": "核对文本中的抓握。",
+    "tags": [
+      "academic"
+    ],
+    "tier": "core",
+    "pos": "n. 名词"
+  },
+  {
+    "id": 1701,
+    "word": "tray",
+    "spelling": "T-R-A-Y",
+    "phonetic": "/treɪ/",
+    "gloss": "托盘；公文盘",
+    "tip": "the tray",
+    "example": "Check the tray in the text.",
+    "exampleZh": "核对文本中的托盘。",
+    "tags": [
+      "academic"
+    ],
+    "tier": "core",
+    "pos": "n. 名词"
+  },
+  {
+    "id": 1702,
+    "word": "counter",
+    "spelling": "C-O-U-N-T-E-R",
+    "phonetic": "/ˈkaʊntər/",
+    "gloss": "计算器；计算者",
+    "tip": "the counter",
+    "example": "Check the counter in the text.",
+    "exampleZh": "核对文本中的计算器。",
+    "tags": [
+      "academic",
+      "campus"
+    ],
+    "tier": "core",
+    "pos": "n. 名词"
+  },
+  {
+    "id": 1703,
+    "word": "misunderstand",
+    "spelling": "M-I-S-U-N-D-E-R-S-T-A-N-D",
+    "phonetic": "/ˌmɪsəndərˈstænd/",
+    "gloss": "误解；误会",
+    "tip": "misunderstand …",
+    "example": "Please misunderstand the key points.",
+    "exampleZh": "请误解要点。",
+    "tags": [
+      "academic",
+      "campus"
+    ],
+    "tier": "core",
+    "pos": "v. 动词"
+  },
+  {
+    "id": 1704,
+    "word": "romantic",
+    "spelling": "R-O-M-A-N-T-I-C",
+    "phonetic": "/roʊˈmæntɪk/",
+    "gloss": "浪漫的；风流的",
+    "tip": "a romantic …",
+    "example": "Give a romantic answer.",
+    "exampleZh": "给出浪漫的回答。",
+    "tags": [
+      "academic"
+    ],
+    "tier": "core",
+    "pos": "adj. 形容词"
+  },
+  {
+    "id": 1705,
+    "word": "entry",
+    "spelling": "E-N-T-R-Y",
+    "phonetic": "/ˈɛntri/",
+    "gloss": "登录；条目",
+    "tip": "the entry",
+    "example": "Check the entry in the text.",
+    "exampleZh": "核对文本中的登录。",
+    "tags": [
+      "academic"
+    ],
+    "tier": "core",
+    "pos": "n. 名词"
+  },
+  {
+    "id": 1706,
+    "word": "award",
+    "spelling": "A-W-A-R-D",
+    "phonetic": "/əˈwɔrd/",
+    "gloss": "奖品；裁定",
+    "tip": "the award",
+    "example": "Check the award in the text.",
+    "exampleZh": "核对文本中的奖品。",
+    "tags": [
+      "academic"
+    ],
+    "tier": "core",
+    "pos": "n. 名词"
+  },
+  {
+    "id": 1707,
+    "word": "theoretical",
+    "spelling": "T-H-E-O-R-E-T-I-C-A-L",
+    "phonetic": "/ˌθiərˈɛtɪkəl/",
+    "gloss": "理论的；理论上的",
+    "tip": "a theoretical …",
+    "example": "Give a theoretical answer.",
+    "exampleZh": "给出理论的回答。",
+    "tags": [
+      "academic"
+    ],
+    "tier": "core",
+    "pos": "adj. 形容词"
+  },
+  {
+    "id": 1708,
+    "word": "mathematics",
+    "spelling": "M-A-T-H-E-M-A-T-I-C-S",
+    "phonetic": "/ˌmæθəˈmætɪks/",
+    "gloss": "数学；[机] 数学",
+    "tip": "the mathematics",
+    "example": "Check the mathematics in the text.",
+    "exampleZh": "核对文本中的数学。",
+    "tags": [
+      "academic",
+      "campus"
+    ],
+    "tier": "core",
+    "pos": "n. 名词"
+  },
+  {
+    "id": 1709,
+    "word": "spot",
+    "spelling": "S-P-O-T",
+    "phonetic": "/spɑt/",
+    "gloss": "污点；地点",
+    "tip": "the spot",
+    "example": "Check the spot in the text.",
+    "exampleZh": "核对文本中的污点。",
+    "tags": [
+      "academic"
+    ],
+    "tier": "core",
+    "pos": "n. 名词"
+  },
+  {
+    "id": 1710,
+    "word": "prominent",
+    "spelling": "P-R-O-M-I-N-E-N-T",
+    "phonetic": "/ˈprɑmənənt/",
+    "gloss": "卓越的；显著的",
+    "tip": "a prominent …",
+    "example": "Give a prominent answer.",
+    "exampleZh": "给出卓越的回答。",
+    "tags": [
+      "academic",
+      "campus"
+    ],
+    "tier": "core",
+    "pos": "adj. 形容词"
+  },
+  {
+    "id": 1711,
+    "word": "nerve",
+    "spelling": "N-E-R-V-E",
+    "phonetic": "/nərv/",
+    "gloss": "精神；勇气",
+    "tip": "the nerve",
+    "example": "Check the nerve in the text.",
+    "exampleZh": "核对文本中的精神。",
+    "tags": [
+      "academic"
+    ],
+    "tier": "core",
+    "pos": "n. 名词"
+  },
+  {
+    "id": 1712,
+    "word": "female",
+    "spelling": "F-E-M-A-L-E",
+    "phonetic": "/ˈfiˌmeɪl/",
+    "gloss": "女性；女人",
+    "tip": "the female",
+    "example": "Check the female in the text.",
+    "exampleZh": "核对文本中的女性。",
+    "tags": [
+      "academic",
+      "campus"
+    ],
+    "tier": "core",
+    "pos": "n. 名词"
+  },
+  {
+    "id": 1713,
+    "word": "desirable",
+    "spelling": "D-E-S-I-R-A-B-L-E",
+    "phonetic": "/dɪˈzaɪərəbəl/",
+    "gloss": "令人想望的；可取的",
+    "tip": "a desirable …",
+    "example": "Give a desirable answer.",
+    "exampleZh": "给出令人想望的回答。",
+    "tags": [
+      "academic",
+      "campus"
+    ],
+    "tier": "core",
+    "pos": "adj. 形容词"
+  },
+  {
+    "id": 1714,
+    "word": "preference",
+    "spelling": "P-R-E-F-E-R-E-N-C-E",
+    "phonetic": "/ˈprɛfərəns/",
+    "gloss": "偏爱；优先",
+    "tip": "the preference",
+    "example": "Check the preference in the text.",
+    "exampleZh": "核对文本中的偏爱。",
+    "tags": [
+      "academic"
+    ],
+    "tier": "core",
+    "pos": "n. 名词"
+  },
+  {
+    "id": 1715,
+    "word": "tone",
+    "spelling": "T-O-N-E",
+    "phonetic": "/toʊn/",
+    "gloss": "音调；音质",
+    "tip": "the tone",
+    "example": "Check the tone in the text.",
+    "exampleZh": "核对文本中的音调。",
+    "tags": [
+      "academic"
+    ],
+    "tier": "core",
+    "pos": "n. 名词"
+  },
+  {
+    "id": 1716,
+    "word": "social",
+    "spelling": "S-O-C-I-A-L",
+    "phonetic": "/ˈsoʊʃəl/",
+    "gloss": "社会的；群居的",
+    "tip": "a social …",
+    "example": "Give a social answer.",
+    "exampleZh": "给出社会的回答。",
+    "tags": [
+      "academic"
+    ],
+    "tier": "core",
+    "pos": "adj. 形容词"
+  },
+  {
+    "id": 1717,
+    "word": "similarly",
+    "spelling": "S-I-M-I-L-A-R-L-Y",
+    "phonetic": "/ˈsɪmələrli/",
+    "gloss": "相像地；类似于",
+    "tip": "similarly …",
+    "example": "Answer similarly and clearly.",
+    "exampleZh": "请相像地且清楚地回答。",
+    "tags": [
+      "academic"
+    ],
+    "tier": "core",
+    "pos": "adv. 副词"
+  },
+  {
+    "id": 1718,
+    "word": "provision",
+    "spelling": "P-R-O-V-I-S-I-O-N",
+    "phonetic": "/prəˈvɪʒən/",
+    "gloss": "(政府提供的)钱和设备；准备",
+    "tip": "the provision",
+    "example": "Check the provision in the text.",
+    "exampleZh": "核对文本中的(政府提供的)钱和设备。",
+    "tags": [
+      "academic"
+    ],
+    "tier": "core",
+    "pos": "n. 名词"
+  },
+  {
+    "id": 1719,
+    "word": "payment",
+    "spelling": "P-A-Y-M-E-N-T",
+    "phonetic": "/ˈpeɪmənt/",
+    "gloss": "付款；支付的款项",
+    "tip": "the payment",
+    "example": "Check the payment in the text.",
+    "exampleZh": "核对文本中的付款。",
+    "tags": [
+      "academic"
+    ],
+    "tier": "core",
+    "pos": "n. 名词"
+  },
+  {
+    "id": 1720,
+    "word": "erect",
+    "spelling": "E-R-E-C-T",
+    "phonetic": "/ɪˈrɛkt/",
+    "gloss": "直立的；竖立的",
+    "tip": "a erect …",
+    "example": "Give a erect answer.",
+    "exampleZh": "给出直立的回答。",
+    "tags": [
+      "academic"
+    ],
+    "tier": "core",
+    "pos": "adj. 形容词"
+  },
+  {
+    "id": 1721,
+    "word": "boundary",
+    "spelling": "B-O-U-N-D-A-R-Y",
+    "phonetic": "/ˈbaʊndəri/",
+    "gloss": "边界；分界线",
+    "tip": "the boundary",
+    "example": "Check the boundary in the text.",
+    "exampleZh": "核对文本中的边界。",
+    "tags": [
+      "academic",
+      "campus"
+    ],
+    "tier": "core",
+    "pos": "n. 名词"
+  },
+  {
+    "id": 1722,
+    "word": "conversely",
+    "spelling": "C-O-N-V-E-R-S-E-L-Y",
+    "phonetic": "/ˈkɑnvərsli/",
+    "gloss": "相反；逆",
+    "tip": "conversely …",
+    "example": "Answer conversely and clearly.",
+    "exampleZh": "请相反且清楚地回答。",
+    "tags": [
+      "academic"
+    ],
+    "tier": "core",
+    "pos": "adv. 副词"
+  },
+  {
+    "id": 1723,
+    "word": "accomplish",
+    "spelling": "A-C-C-O-M-P-L-I-S-H",
+    "phonetic": "/əˈkɑmplɪʃ/",
+    "gloss": "完成；达到",
+    "tip": "accomplish …",
+    "example": "Please accomplish the key points.",
+    "exampleZh": "请完成要点。",
+    "tags": [
+      "academic"
+    ],
+    "tier": "core",
+    "pos": "v. 动词"
+  },
+  {
+    "id": 1724,
+    "word": "nursery",
+    "spelling": "N-U-R-S-E-R-Y",
+    "phonetic": "/ˈnərsəri/",
+    "gloss": "托儿所；苗圃",
+    "tip": "the nursery",
+    "example": "Check the nursery in the text.",
+    "exampleZh": "核对文本中的托儿所。",
+    "tags": [
+      "academic"
+    ],
+    "tier": "core",
+    "pos": "n. 名词"
+  },
+  {
+    "id": 1725,
+    "word": "evolution",
+    "spelling": "E-V-O-L-U-T-I-O-N",
+    "phonetic": "/ˌɛvəˈluʃən/",
+    "gloss": "进化；发展",
+    "tip": "the evolution",
+    "example": "Check the evolution in the text.",
+    "exampleZh": "核对文本中的进化。",
+    "tags": [
+      "academic",
+      "campus"
+    ],
+    "tier": "core",
+    "pos": "n. 名词"
+  },
+  {
+    "id": 1726,
+    "word": "massive",
+    "spelling": "M-A-S-S-I-V-E",
+    "phonetic": "/ˈmæsɪv/",
+    "gloss": "大而重的；宽大的",
+    "tip": "a massive …",
+    "example": "Give a massive answer.",
+    "exampleZh": "给出大而重的回答。",
+    "tags": [
+      "academic",
+      "campus"
+    ],
+    "tier": "core",
+    "pos": "adj. 形容词"
+  },
+  {
+    "id": 1727,
+    "word": "hazard",
+    "spelling": "H-A-Z-A-R-D",
+    "phonetic": "/ˈhæzərd/",
+    "gloss": "冒险；危险",
+    "tip": "the hazard",
+    "example": "Check the hazard in the text.",
+    "exampleZh": "核对文本中的冒险。",
+    "tags": [
+      "academic"
+    ],
+    "tier": "core",
+    "pos": "n. 名词"
+  },
+  {
+    "id": 1728,
+    "word": "organic",
+    "spelling": "O-R-G-A-N-I-C",
+    "phonetic": "/ɔrˈgænɪk/",
+    "gloss": "器官的；有机的",
+    "tip": "a organic …",
+    "example": "Give a organic answer.",
+    "exampleZh": "给出器官的回答。",
+    "tags": [
+      "academic",
+      "campus"
+    ],
+    "tier": "core",
+    "pos": "adj. 形容词"
+  },
+  {
+    "id": 1729,
+    "word": "artificial",
+    "spelling": "A-R-T-I-F-I-C-I-A-L",
+    "phonetic": "/ˌɑrtəˈfɪʃəl/",
+    "gloss": "人造的；假的",
+    "tip": "a artificial …",
+    "example": "Give a artificial answer.",
+    "exampleZh": "给出人造的回答。",
+    "tags": [
+      "academic",
+      "campus"
+    ],
+    "tier": "core",
+    "pos": "adj. 形容词"
+  },
+  {
+    "id": 1730,
+    "word": "distinction",
+    "spelling": "D-I-S-T-I-N-C-T-I-O-N",
+    "phonetic": "/dɪˈstɪŋkʃən/",
+    "gloss": "区别",
+    "tip": "the distinction",
+    "example": "Check the distinction in the text.",
+    "exampleZh": "核对文本中的区别。",
+    "tags": [
+      "academic"
+    ],
+    "tier": "core",
+    "pos": "n. 名词"
+  },
+  {
+    "id": 1731,
+    "word": "terminal",
+    "spelling": "T-E-R-M-I-N-A-L",
+    "phonetic": "/ˈtərmənəl/",
+    "gloss": "终端机；终点",
+    "tip": "the terminal",
+    "example": "Check the terminal in the text.",
+    "exampleZh": "核对文本中的终端机。",
+    "tags": [
+      "academic"
+    ],
+    "tier": "core",
+    "pos": "n. 名词"
+  },
+  {
+    "id": 1732,
+    "word": "commitment",
+    "spelling": "C-O-M-M-I-T-M-E-N-T",
+    "phonetic": "/kəˈmɪtmənt/",
+    "gloss": "委托；交押",
+    "tip": "the commitment",
+    "example": "Check the commitment in the text.",
+    "exampleZh": "核对文本中的委托。",
+    "tags": [
+      "academic",
+      "campus"
+    ],
+    "tier": "core",
+    "pos": "n. 名词"
+  },
+  {
+    "id": 1733,
+    "word": "screen",
+    "spelling": "S-C-R-E-E-N",
+    "phonetic": "/skrin/",
+    "gloss": "幕；银幕",
+    "tip": "the screen",
+    "example": "Check the screen in the text.",
+    "exampleZh": "核对文本中的幕。",
+    "tags": [
+      "academic"
+    ],
+    "tier": "core",
+    "pos": "n. 名词"
+  },
+  {
+    "id": 1734,
+    "word": "directly",
+    "spelling": "D-I-R-E-C-T-L-Y",
+    "phonetic": "/dɪˈrɛkli/",
+    "gloss": "径直地；直接地",
+    "tip": "directly …",
+    "example": "Answer directly and clearly.",
+    "exampleZh": "请径直地且清楚地回答。",
+    "tags": [
+      "academic",
+      "campus"
+    ],
+    "tier": "core",
+    "pos": "adv. 副词"
+  },
+  {
+    "id": 1735,
+    "word": "arrange",
+    "spelling": "A-R-R-A-N-G-E",
+    "phonetic": "/əreɪnʤ/",
+    "gloss": "安排；排列",
+    "tip": "arrange …",
+    "example": "Please arrange the key points.",
+    "exampleZh": "请安排要点。",
+    "tags": [
+      "academic"
+    ],
+    "tier": "core",
+    "pos": "v. 动词"
+  },
+  {
+    "id": 1736,
+    "word": "ceremony",
+    "spelling": "C-E-R-E-M-O-N-Y",
+    "phonetic": "/ˈsɛrəˌmoʊni/",
+    "gloss": "典礼；仪式",
+    "tip": "the ceremony",
+    "example": "Check the ceremony in the text.",
+    "exampleZh": "核对文本中的典礼。",
+    "tags": [
+      "academic"
+    ],
+    "tier": "core",
+    "pos": "n. 名词"
+  },
+  {
+    "id": 1737,
+    "word": "whichever",
+    "spelling": "W-H-I-C-H-E-V-E-R",
+    "phonetic": "/wɪˈʧɛvər/",
+    "gloss": "无论那一个；任何一个",
+    "tip": "the whichever",
+    "example": "Check the whichever in the text.",
+    "exampleZh": "核对文本中的无论那一个。",
+    "tags": [
+      "academic"
+    ],
+    "tier": "core",
+    "pos": "n. 名词"
+  },
+  {
+    "id": 1738,
+    "word": "eagle",
+    "spelling": "E-A-G-L-E",
+    "phonetic": "/ˈigəl/",
+    "gloss": "鹰；鹰状标饰",
+    "tip": "the eagle",
+    "example": "Check the eagle in the text.",
+    "exampleZh": "核对文本中的鹰。",
+    "tags": [
+      "academic"
+    ],
+    "tier": "core",
+    "pos": "n. 名词"
+  },
+  {
+    "id": 1739,
+    "word": "dramatic",
+    "spelling": "D-R-A-M-A-T-I-C",
+    "phonetic": "/drəˈmætɪk/",
+    "gloss": "戏剧性的；生动的",
+    "tip": "a dramatic …",
+    "example": "Give a dramatic answer.",
+    "exampleZh": "给出戏剧性的回答。",
+    "tags": [
+      "academic"
+    ],
+    "tier": "core",
+    "pos": "adj. 形容词"
+  },
+  {
+    "id": 1740,
+    "word": "inner",
+    "spelling": "I-N-N-E-R",
+    "phonetic": "/ˈɪnər/",
+    "gloss": "内部的；内心的",
+    "tip": "a inner …",
+    "example": "Give a inner answer.",
+    "exampleZh": "给出内部的回答。",
+    "tags": [
+      "academic"
+    ],
+    "tier": "core",
+    "pos": "adj. 形容词"
+  },
+  {
+    "id": 1741,
+    "word": "disappear",
+    "spelling": "D-I-S-A-P-P-E-A-R",
+    "phonetic": "/ˌdɪsəˈpɪr/",
+    "gloss": "消失；不见",
+    "tip": "disappear …",
+    "example": "Please disappear the key points.",
+    "exampleZh": "请消失要点。",
+    "tags": [
+      "academic",
+      "campus"
+    ],
+    "tier": "core",
+    "pos": "v. 动词"
+  },
+  {
+    "id": 1742,
+    "word": "slogan",
+    "spelling": "S-L-O-G-A-N",
+    "phonetic": "/sˈloʊgən/",
+    "gloss": "呐喊声；标语",
+    "tip": "the slogan",
+    "example": "Check the slogan in the text.",
+    "exampleZh": "核对文本中的呐喊声。",
+    "tags": [
+      "academic"
+    ],
+    "tier": "core",
+    "pos": "n. 名词"
+  },
+  {
+    "id": 1743,
+    "word": "expression",
+    "spelling": "E-X-P-R-E-S-S-I-O-N",
+    "phonetic": "/ɪkˈsprɛʃən/",
+    "gloss": "表达；表现",
+    "tip": "the expression",
+    "example": "Check the expression in the text.",
+    "exampleZh": "核对文本中的表达。",
+    "tags": [
+      "academic"
+    ],
+    "tier": "core",
+    "pos": "n. 名词"
+  },
+  {
+    "id": 1744,
+    "word": "solve",
+    "spelling": "S-O-L-V-E",
+    "phonetic": "/sɑlv/",
+    "gloss": "解决；付给",
+    "tip": "solve …",
+    "example": "Please solve the key points.",
+    "exampleZh": "请解决要点。",
+    "tags": [
+      "academic"
+    ],
+    "tier": "core",
+    "pos": "v. 动词"
+  },
+  {
+    "id": 1745,
+    "word": "disgust",
+    "spelling": "D-I-S-G-U-S-T",
+    "phonetic": "/dɪsˈgəst/",
+    "gloss": "厌恶；嫌恶",
+    "tip": "the disgust",
+    "example": "Check the disgust in the text.",
+    "exampleZh": "核对文本中的厌恶。",
+    "tags": [
+      "academic"
+    ],
+    "tier": "core",
+    "pos": "n. 名词"
+  },
+  {
+    "id": 1746,
+    "word": "painter",
+    "spelling": "P-A-I-N-T-E-R",
+    "phonetic": "/ˈpeɪnər/",
+    "gloss": "画家；油漆匠",
+    "tip": "the painter",
+    "example": "Check the painter in the text.",
+    "exampleZh": "核对文本中的画家。",
+    "tags": [
+      "academic"
+    ],
+    "tier": "core",
+    "pos": "n. 名词"
+  },
+  {
+    "id": 1747,
+    "word": "afford",
+    "spelling": "A-F-F-O-R-D",
+    "phonetic": "/əˈfɔrd/",
+    "gloss": "买得起；足以",
+    "tip": "afford …",
+    "example": "Please afford the key points.",
+    "exampleZh": "请买得起要点。",
+    "tags": [
+      "academic"
+    ],
+    "tier": "core",
+    "pos": "v. 动词"
+  },
+  {
+    "id": 1748,
+    "word": "unless",
+    "spelling": "U-N-L-E-S-S",
+    "phonetic": "/ənˈlɛs/",
+    "gloss": "除非；除...之外",
+    "tip": "a unless …",
+    "example": "Give a unless answer.",
+    "exampleZh": "给出除非回答。",
+    "tags": [
+      "academic"
+    ],
+    "tier": "core",
+    "pos": "adj. 形容词"
+  },
+  {
+    "id": 1749,
+    "word": "extra",
+    "spelling": "E-X-T-R-A",
+    "phonetic": "/ˈɛkstrə/",
+    "gloss": "额外的事物；另外的收费",
+    "tip": "the extra",
+    "example": "Check the extra in the text.",
+    "exampleZh": "核对文本中的额外的事物。",
+    "tags": [
+      "academic"
+    ],
+    "tier": "core",
+    "pos": "n. 名词"
+  },
+  {
+    "id": 1750,
+    "word": "lane",
+    "spelling": "L-A-N-E",
+    "phonetic": "/leɪn/",
+    "gloss": "小路；巷",
+    "tip": "the lane",
+    "example": "Check the lane in the text.",
+    "exampleZh": "核对文本中的小路。",
+    "tags": [
+      "academic"
+    ],
+    "tier": "core",
+    "pos": "n. 名词"
+  },
+  {
+    "id": 1751,
+    "word": "leisure",
+    "spelling": "L-E-I-S-U-R-E",
+    "phonetic": "/ˈlɛʒər/",
+    "gloss": "空闲；闲暇",
+    "tip": "the leisure",
+    "example": "Check the leisure in the text.",
+    "exampleZh": "核对文本中的空闲。",
+    "tags": [
+      "academic",
+      "campus"
+    ],
+    "tier": "core",
+    "pos": "n. 名词"
+  },
+  {
+    "id": 1752,
+    "word": "alarm",
+    "spelling": "A-L-A-R-M",
+    "phonetic": "/əˈlɑrm/",
+    "gloss": "惊恐；警报",
+    "tip": "the alarm",
+    "example": "Check the alarm in the text.",
+    "exampleZh": "核对文本中的惊恐。",
+    "tags": [
+      "academic"
+    ],
+    "tier": "core",
+    "pos": "n. 名词"
+  },
+  {
+    "id": 1753,
+    "word": "excessive",
+    "spelling": "E-X-C-E-S-S-I-V-E",
+    "phonetic": "/ɪkˈsɛsɪv/",
+    "gloss": "过度的；过多的",
+    "tip": "a excessive …",
+    "example": "Give a excessive answer.",
+    "exampleZh": "给出过度的回答。",
+    "tags": [
+      "academic"
+    ],
+    "tier": "core",
+    "pos": "adj. 形容词"
+  },
+  {
+    "id": 1754,
+    "word": "gallery",
+    "spelling": "G-A-L-L-E-R-Y",
+    "phonetic": "/ˈgæləri/",
+    "gloss": "走廊；最高楼座",
+    "tip": "the gallery",
+    "example": "Check the gallery in the text.",
+    "exampleZh": "核对文本中的走廊。",
+    "tags": [
+      "academic",
+      "campus"
+    ],
+    "tier": "core",
+    "pos": "n. 名词"
+  },
+  {
+    "id": 1755,
+    "word": "studio",
+    "spelling": "S-T-U-D-I-O",
+    "phonetic": "/ˈstudiˌoʊ/",
+    "gloss": "工作室；画室",
+    "tip": "the studio",
+    "example": "Check the studio in the text.",
+    "exampleZh": "核对文本中的工作室。",
+    "tags": [
+      "academic"
+    ],
+    "tier": "core",
+    "pos": "n. 名词"
+  },
+  {
+    "id": 1756,
+    "word": "architecture",
+    "spelling": "A-R-C-H-I-T-E-C-T-U-R-E",
+    "phonetic": "/ˈɑrkəˌtɛkʧər/",
+    "gloss": "建筑学；建筑式样",
+    "tip": "the architecture",
+    "example": "Check the architecture in the text.",
+    "exampleZh": "核对文本中的建筑学。",
+    "tags": [
+      "academic",
+      "campus"
+    ],
+    "tier": "core",
+    "pos": "n. 名词"
+  },
+  {
+    "id": 1757,
+    "word": "fatigue",
+    "spelling": "F-A-T-I-G-U-E",
+    "phonetic": "/fəˈtig/",
+    "gloss": "疲乏；疲劳",
+    "tip": "the fatigue",
+    "example": "Check the fatigue in the text.",
+    "exampleZh": "核对文本中的疲乏。",
+    "tags": [
+      "academic"
+    ],
+    "tier": "core",
+    "pos": "n. 名词"
+  },
+  {
+    "id": 1758,
+    "word": "accident",
+    "spelling": "A-C-C-I-D-E-N-T",
+    "phonetic": "/ˈæksədənt/",
+    "gloss": "意外事件；机遇",
+    "tip": "the accident",
+    "example": "Check the accident in the text.",
+    "exampleZh": "核对文本中的意外事件。",
+    "tags": [
+      "academic"
+    ],
+    "tier": "core",
+    "pos": "n. 名词"
+  },
+  {
+    "id": 1759,
+    "word": "govern",
+    "spelling": "G-O-V-E-R-N",
+    "phonetic": "/ˈgəvərn/",
+    "gloss": "统治；支配",
+    "tip": "govern …",
+    "example": "Please govern the key points.",
+    "exampleZh": "请统治要点。",
+    "tags": [
+      "academic"
+    ],
+    "tier": "core",
+    "pos": "v. 动词"
+  },
+  {
+    "id": 1760,
+    "word": "fortunately",
+    "spelling": "F-O-R-T-U-N-A-T-E-L-Y",
+    "phonetic": "/ˈfɔrʧənətli/",
+    "gloss": "幸运地；幸亏",
+    "tip": "fortunately …",
+    "example": "Answer fortunately and clearly.",
+    "exampleZh": "请幸运地且清楚地回答。",
+    "tags": [
+      "academic"
+    ],
+    "tier": "core",
+    "pos": "adv. 副词"
+  },
+  {
+    "id": 1761,
+    "word": "auction",
+    "spelling": "A-U-C-T-I-O-N",
+    "phonetic": "/ˈɔkʃən/",
+    "gloss": "拍卖",
+    "tip": "the auction",
+    "example": "Check the auction in the text.",
+    "exampleZh": "核对文本中的拍卖。",
+    "tags": [
+      "academic"
+    ],
+    "tier": "core",
+    "pos": "n. 名词"
+  },
+  {
+    "id": 1762,
+    "word": "session",
+    "spelling": "S-E-S-S-I-O-N",
+    "phonetic": "/ˈsɛʃən/",
+    "gloss": "期间；开庭期",
+    "tip": "the session",
+    "example": "Check the session in the text.",
+    "exampleZh": "核对文本中的期间。",
+    "tags": [
+      "academic"
+    ],
+    "tier": "core",
+    "pos": "n. 名词"
+  },
+  {
+    "id": 1763,
+    "word": "emotion",
+    "spelling": "E-M-O-T-I-O-N",
+    "phonetic": "/ˈiˌmoʊʃən/",
+    "gloss": "情绪；激动",
+    "tip": "the emotion",
+    "example": "Check the emotion in the text.",
+    "exampleZh": "核对文本中的情绪。",
+    "tags": [
+      "academic"
+    ],
+    "tier": "core",
+    "pos": "n. 名词"
+  },
+  {
+    "id": 1764,
+    "word": "anyway",
+    "spelling": "A-N-Y-W-A-Y",
+    "phonetic": "/ˈɛniˌweɪ/",
+    "gloss": "无论如何；至少",
+    "tip": "anyway …",
+    "example": "Answer anyway and clearly.",
+    "exampleZh": "请无论如何且清楚地回答。",
+    "tags": [
+      "academic"
+    ],
+    "tier": "core",
+    "pos": "adv. 副词"
+  },
+  {
+    "id": 1765,
+    "word": "depart",
+    "spelling": "D-E-P-A-R-T",
+    "phonetic": "/dɪˈpɑrt/",
+    "gloss": "离开；出发",
+    "tip": "depart …",
+    "example": "Please depart the key points.",
+    "exampleZh": "请离开要点。",
+    "tags": [
+      "academic"
+    ],
+    "tier": "core",
+    "pos": "v. 动词"
+  },
+  {
+    "id": 1766,
+    "word": "basically",
+    "spelling": "B-A-S-I-C-A-L-L-Y",
+    "phonetic": "/ˈbeɪsɪkli/",
+    "gloss": "基本上；主要地",
+    "tip": "basically …",
+    "example": "Answer basically and clearly.",
+    "exampleZh": "请基本上且清楚地回答。",
+    "tags": [
+      "academic"
+    ],
+    "tier": "core",
+    "pos": "adv. 副词"
+  },
+  {
+    "id": 1767,
+    "word": "vote",
+    "spelling": "V-O-T-E",
+    "phonetic": "/voʊt/",
+    "gloss": "投票；选举",
+    "tip": "the vote",
+    "example": "Check the vote in the text.",
+    "exampleZh": "核对文本中的投票。",
+    "tags": [
+      "academic",
+      "campus"
+    ],
+    "tier": "core",
+    "pos": "n. 名词"
+  },
+  {
+    "id": 1768,
+    "word": "election",
+    "spelling": "E-L-E-C-T-I-O-N",
+    "phonetic": "/ɪˈlɛkʃən/",
+    "gloss": "选举；当选",
+    "tip": "the election",
+    "example": "Check the election in the text.",
+    "exampleZh": "核对文本中的选举。",
+    "tags": [
+      "academic",
+      "campus"
+    ],
+    "tier": "core",
+    "pos": "n. 名词"
+  },
+  {
+    "id": 1769,
+    "word": "unfortunately",
+    "spelling": "U-N-F-O-R-T-U-N-A-T-E-L-Y",
+    "phonetic": "/ənˈfɔrʧənətli/",
+    "gloss": "恐怕；不幸的是",
+    "tip": "unfortunately …",
+    "example": "Answer unfortunately and clearly.",
+    "exampleZh": "请恐怕且清楚地回答。",
+    "tags": [
+      "academic"
+    ],
+    "tier": "core",
+    "pos": "adv. 副词"
+  },
+  {
+    "id": 1770,
+    "word": "active",
+    "spelling": "A-C-T-I-V-E",
+    "phonetic": "/ˈæktɪv/",
+    "gloss": "活跃的；起作用的",
+    "tip": "a active …",
+    "example": "Give a active answer.",
+    "exampleZh": "给出活跃的回答。",
+    "tags": [
+      "academic"
+    ],
+    "tier": "core",
+    "pos": "adj. 形容词"
+  },
+  {
+    "id": 1771,
+    "word": "mislead",
+    "spelling": "M-I-S-L-E-A-D",
+    "phonetic": "/mɪsˈlid/",
+    "gloss": "误导",
+    "tip": "mislead …",
+    "example": "Please mislead the key points.",
+    "exampleZh": "请误导要点。",
+    "tags": [
+      "academic",
+      "campus"
+    ],
+    "tier": "core",
+    "pos": "v. 动词"
+  },
+  {
+    "id": 1772,
+    "word": "infect",
+    "spelling": "I-N-F-E-C-T",
+    "phonetic": "/ˌɪnˈfɛkt/",
+    "gloss": "传染；感染",
+    "tip": "infect …",
+    "example": "Please infect the key points.",
+    "exampleZh": "请传染要点。",
+    "tags": [
+      "academic",
+      "campus"
+    ],
+    "tier": "core",
+    "pos": "v. 动词"
+  },
+  {
+    "id": 1773,
+    "word": "automatic",
+    "spelling": "A-U-T-O-M-A-T-I-C",
+    "phonetic": "/ˌɔtəˈmætɪk/",
+    "gloss": "自动手枪；自动机械",
+    "tip": "the automatic",
+    "example": "Check the automatic in the text.",
+    "exampleZh": "核对文本中的自动手枪。",
+    "tags": [
+      "academic",
+      "campus"
+    ],
+    "tier": "core",
+    "pos": "n. 名词"
+  },
+  {
+    "id": 1774,
+    "word": "translation",
+    "spelling": "T-R-A-N-S-L-A-T-I-O-N",
+    "phonetic": "/trænzˈleɪʃən/",
+    "gloss": "翻译；译文",
+    "tip": "the translation",
+    "example": "Check the translation in the text.",
+    "exampleZh": "核对文本中的翻译。",
+    "tags": [
+      "academic"
+    ],
+    "tier": "core",
+    "pos": "n. 名词"
+  },
+  {
+    "id": 1775,
+    "word": "volcano",
+    "spelling": "V-O-L-C-A-N-O",
+    "phonetic": "/vɑlˈkeɪnoʊ/",
+    "gloss": "火山",
+    "tip": "the volcano",
+    "example": "Check the volcano in the text.",
+    "exampleZh": "核对文本中的火山。",
+    "tags": [
+      "academic"
+    ],
+    "tier": "core",
+    "pos": "n. 名词"
+  },
+  {
+    "id": 1776,
+    "word": "glow",
+    "spelling": "G-L-O-W",
+    "phonetic": "/gloʊ/",
+    "gloss": "赤热；光辉",
+    "tip": "the glow",
+    "example": "Check the glow in the text.",
+    "exampleZh": "核对文本中的赤热。",
+    "tags": [
+      "academic"
+    ],
+    "tier": "core",
+    "pos": "n. 名词"
+  },
+  {
+    "id": 1777,
+    "word": "melt",
+    "spelling": "M-E-L-T",
+    "phonetic": "/mɛlt/",
+    "gloss": "熔化；熔化物",
+    "tip": "the melt",
+    "example": "Check the melt in the text.",
+    "exampleZh": "核对文本中的熔化。",
+    "tags": [
+      "academic"
+    ],
+    "tier": "core",
+    "pos": "n. 名词"
+  },
+  {
+    "id": 1778,
+    "word": "creep",
+    "spelling": "C-R-E-E-P",
+    "phonetic": "/krip/",
+    "gloss": "爬；徐行",
+    "tip": "the creep",
+    "example": "Check the creep in the text.",
+    "exampleZh": "核对文本中的爬。",
+    "tags": [
+      "academic"
+    ],
+    "tier": "core",
+    "pos": "n. 名词"
+  },
+  {
+    "id": 1779,
+    "word": "inland",
+    "spelling": "I-N-L-A-N-D",
+    "phonetic": "/ˈɪnˌlænd/",
+    "gloss": "内陆的；国内的",
+    "tip": "a inland …",
+    "example": "Give a inland answer.",
+    "exampleZh": "给出内陆的回答。",
+    "tags": [
+      "academic"
+    ],
+    "tier": "core",
+    "pos": "adj. 形容词"
+  },
+  {
+    "id": 1780,
+    "word": "junior",
+    "spelling": "J-U-N-I-O-R",
+    "phonetic": "/ˈʤunjər/",
+    "gloss": "年少者；地位较低者",
+    "tip": "the junior",
+    "example": "Check the junior in the text.",
+    "exampleZh": "核对文本中的年少者。",
+    "tags": [
+      "academic"
+    ],
+    "tier": "core",
+    "pos": "n. 名词"
+  },
+  {
+    "id": 1781,
+    "word": "quit",
+    "spelling": "Q-U-I-T",
+    "phonetic": "/kwɪt/",
+    "gloss": "离开；辞职",
+    "tip": "quit …",
+    "example": "Please quit the key points.",
+    "exampleZh": "请离开要点。",
+    "tags": [
+      "academic"
+    ],
+    "tier": "core",
+    "pos": "v. 动词"
+  },
+  {
+    "id": 1782,
+    "word": "motive",
+    "spelling": "M-O-T-I-V-E",
+    "phonetic": "/ˈmoʊtɪv/",
+    "gloss": "动机；目的",
+    "tip": "a motive …",
+    "example": "Give a motive answer.",
+    "exampleZh": "给出动机回答。",
+    "tags": [
+      "academic"
+    ],
+    "tier": "core",
+    "pos": "adj. 形容词"
+  },
+  {
+    "id": 1783,
+    "word": "prosperous",
+    "spelling": "P-R-O-S-P-E-R-O-U-S",
+    "phonetic": "/ˈprɑspərəs/",
+    "gloss": "成功的；繁盛的",
+    "tip": "a prosperous …",
+    "example": "Give a prosperous answer.",
+    "exampleZh": "给出成功的回答。",
+    "tags": [
+      "academic"
+    ],
+    "tier": "core",
+    "pos": "adj. 形容词"
+  },
+  {
+    "id": 1784,
+    "word": "guidance",
+    "spelling": "G-U-I-D-A-N-C-E",
+    "phonetic": "/ˈgaɪdəns/",
+    "gloss": "指导；领导",
+    "tip": "the guidance",
+    "example": "Check the guidance in the text.",
+    "exampleZh": "核对文本中的指导。",
+    "tags": [
+      "academic"
+    ],
+    "tier": "core",
+    "pos": "n. 名词"
+  },
+  {
+    "id": 1785,
+    "word": "facility",
+    "spelling": "F-A-C-I-L-I-T-Y",
+    "phonetic": "/fəˈsɪlɪti/",
+    "gloss": "容易；灵巧",
+    "tip": "the facility",
+    "example": "Check the facility in the text.",
+    "exampleZh": "核对文本中的容易。",
+    "tags": [
+      "academic",
+      "campus"
+    ],
+    "tier": "core",
+    "pos": "n. 名词"
+  },
+  {
+    "id": 1786,
+    "word": "invasion",
+    "spelling": "I-N-V-A-S-I-O-N",
+    "phonetic": "/ˌɪnˈveɪʒən/",
+    "gloss": "侵犯；侵入",
+    "tip": "the invasion",
+    "example": "Check the invasion in the text.",
+    "exampleZh": "核对文本中的侵犯。",
+    "tags": [
+      "academic"
+    ],
+    "tier": "core",
+    "pos": "n. 名词"
+  },
+  {
+    "id": 1787,
+    "word": "leather",
+    "spelling": "L-E-A-T-H-E-R",
+    "phonetic": "/ˈlɛðər/",
+    "gloss": "皮革；皮制品",
+    "tip": "the leather",
+    "example": "Check the leather in the text.",
+    "exampleZh": "核对文本中的皮革。",
+    "tags": [
+      "academic"
+    ],
+    "tier": "core",
+    "pos": "n. 名词"
+  },
+  {
+    "id": 1788,
+    "word": "discount",
+    "spelling": "D-I-S-C-O-U-N-T",
+    "phonetic": "/ˈdɪskaʊnt/",
+    "gloss": "折扣；贴现率",
+    "tip": "the discount",
+    "example": "Check the discount in the text.",
+    "exampleZh": "核对文本中的折扣。",
+    "tags": [
+      "academic",
+      "campus"
+    ],
+    "tier": "core",
+    "pos": "n. 名词"
+  },
+  {
+    "id": 1789,
+    "word": "delegate",
+    "spelling": "D-E-L-E-G-A-T-E",
+    "phonetic": "/ˈdɛləˌgeɪt/",
+    "gloss": "代表；委派...为代表",
+    "tip": "delegate …",
+    "example": "Please delegate the key points.",
+    "exampleZh": "请代表要点。",
+    "tags": [
+      "academic"
+    ],
+    "tier": "core",
+    "pos": "v. 动词"
+  },
+  {
+    "id": 1790,
+    "word": "client",
+    "spelling": "C-L-I-E-N-T",
+    "phonetic": "/klaɪənt/",
+    "gloss": "客户；顾客",
+    "tip": "the client",
+    "example": "Check the client in the text.",
+    "exampleZh": "核对文本中的客户。",
+    "tags": [
+      "academic"
+    ],
+    "tier": "core",
+    "pos": "n. 名词"
+  },
+  {
+    "id": 1791,
+    "word": "instinct",
+    "spelling": "I-N-S-T-I-N-C-T",
+    "phonetic": "/ˈɪnstɪŋkt/",
+    "gloss": "本能；直觉",
+    "tip": "the instinct",
+    "example": "Check the instinct in the text.",
+    "exampleZh": "核对文本中的本能。",
+    "tags": [
+      "academic"
+    ],
+    "tier": "core",
+    "pos": "n. 名词"
+  },
+  {
+    "id": 1792,
+    "word": "reaction",
+    "spelling": "R-E-A-C-T-I-O-N",
+    "phonetic": "/riˈækʃən/",
+    "gloss": "反应；反作用",
+    "tip": "the reaction",
+    "example": "Check the reaction in the text.",
+    "exampleZh": "核对文本中的反应。",
+    "tags": [
+      "academic",
+      "campus"
+    ],
+    "tier": "core",
+    "pos": "n. 名词"
+  },
+  {
+    "id": 1793,
+    "word": "festival",
+    "spelling": "F-E-S-T-I-V-A-L",
+    "phonetic": "/ˈfɛstɪvəl/",
+    "gloss": "节日的；喜庆的",
+    "tip": "a festival …",
+    "example": "Give a festival answer.",
+    "exampleZh": "给出节日的回答。",
+    "tags": [
+      "academic"
+    ],
+    "tier": "core",
+    "pos": "adj. 形容词"
+  },
+  {
+    "id": 1794,
+    "word": "snack",
+    "spelling": "S-N-A-C-K",
+    "phonetic": "/snæk/",
+    "gloss": "小吃；点心",
+    "tip": "the snack",
+    "example": "Check the snack in the text.",
+    "exampleZh": "核对文本中的小吃。",
+    "tags": [
+      "academic"
+    ],
+    "tier": "core",
+    "pos": "n. 名词"
+  },
+  {
+    "id": 1795,
+    "word": "reliable",
+    "spelling": "R-E-L-I-A-B-L-E",
+    "phonetic": "/rɪˈlaɪəbəl/",
+    "gloss": "可靠的；可信赖的",
+    "tip": "a reliable …",
+    "example": "Give a reliable answer.",
+    "exampleZh": "给出可靠的回答。",
+    "tags": [
+      "academic"
+    ],
+    "tier": "core",
+    "pos": "adj. 形容词"
+  },
+  {
+    "id": 1796,
+    "word": "shortly",
+    "spelling": "S-H-O-R-T-L-Y",
+    "phonetic": "/ˈʃɔrtli/",
+    "gloss": "不久；简短",
+    "tip": "shortly …",
+    "example": "Answer shortly and clearly.",
+    "exampleZh": "请不久且清楚地回答。",
+    "tags": [
+      "academic"
+    ],
+    "tier": "core",
+    "pos": "adv. 副词"
+  },
+  {
+    "id": 1797,
+    "word": "detection",
+    "spelling": "D-E-T-E-C-T-I-O-N",
+    "phonetic": "/dɪˈtɛkʃən/",
+    "gloss": "发现；察觉",
+    "tip": "the detection",
+    "example": "Check the detection in the text.",
+    "exampleZh": "核对文本中的发现。",
+    "tags": [
+      "academic",
+      "campus"
+    ],
+    "tier": "core",
+    "pos": "n. 名词"
+  },
+  {
+    "id": 1798,
+    "word": "crystal",
+    "spelling": "C-R-Y-S-T-A-L",
+    "phonetic": "/ˈkrɪstəl/",
+    "gloss": "水晶；水晶装饰品",
+    "tip": "the crystal",
+    "example": "Check the crystal in the text.",
+    "exampleZh": "核对文本中的水晶。",
+    "tags": [
+      "academic"
+    ],
+    "tier": "core",
+    "pos": "n. 名词"
+  },
+  {
+    "id": 1799,
+    "word": "identification",
+    "spelling": "I-D-E-N-T-I-F-I-C-A-T-I-O-N",
+    "phonetic": "/aɪˌdɛntəfəˈkeɪʃən/",
+    "gloss": "识别；身份证明",
+    "tip": "the identification",
+    "example": "Check the identification in the text.",
+    "exampleZh": "核对文本中的识别。",
+    "tags": [
+      "academic",
+      "campus"
+    ],
+    "tier": "core",
+    "pos": "n. 名词"
+  },
+  {
+    "id": 1800,
+    "word": "religious",
+    "spelling": "R-E-L-I-G-I-O-U-S",
+    "phonetic": "/rɪˈlɪʤəs/",
+    "gloss": "宗教性的；虔诚的",
+    "tip": "a religious …",
+    "example": "Give a religious answer.",
+    "exampleZh": "给出宗教性的回答。",
+    "tags": [
+      "academic"
+    ],
+    "tier": "core",
+    "pos": "adj. 形容词"
+  },
+  {
+    "id": 1801,
+    "word": "convenience",
+    "spelling": "C-O-N-V-E-N-I-E-N-C-E",
+    "phonetic": "/kənˈvinjəns/",
+    "gloss": "方便；便利的事物",
+    "tip": "the convenience",
+    "example": "Check the convenience in the text.",
+    "exampleZh": "核对文本中的方便。",
+    "tags": [
+      "academic"
+    ],
+    "tier": "core",
+    "pos": "n. 名词"
+  },
+  {
+    "id": 1802,
+    "word": "clash",
+    "spelling": "C-L-A-S-H",
+    "phonetic": "/klæʃ/",
+    "gloss": "冲突；撞击声",
+    "tip": "the clash",
+    "example": "Check the clash in the text.",
+    "exampleZh": "核对文本中的冲突。",
+    "tags": [
+      "academic"
+    ],
+    "tier": "core",
+    "pos": "n. 名词"
+  },
+  {
+    "id": 1803,
+    "word": "leadership",
+    "spelling": "L-E-A-D-E-R-S-H-I-P",
+    "phonetic": "/ˈlidərˌʃɪp/",
+    "gloss": "领导能力；领导阶层",
+    "tip": "the leadership",
+    "example": "Check the leadership in the text.",
+    "exampleZh": "核对文本中的领导能力。",
+    "tags": [
+      "academic",
+      "campus"
+    ],
+    "tier": "core",
+    "pos": "n. 名词"
+  },
+  {
+    "id": 1804,
+    "word": "mechanical",
+    "spelling": "M-E-C-H-A-N-I-C-A-L",
+    "phonetic": "/məˈkænɪkəl/",
+    "gloss": "机械的；机械性的",
+    "tip": "a mechanical …",
+    "example": "Give a mechanical answer.",
+    "exampleZh": "给出机械的回答。",
+    "tags": [
+      "academic",
+      "campus"
+    ],
+    "tier": "core",
+    "pos": "adj. 形容词"
+  },
+  {
+    "id": 1805,
+    "word": "jury",
+    "spelling": "J-U-R-Y",
+    "phonetic": "/ˈʤʊri/",
+    "gloss": "陪审团；评判委员会",
+    "tip": "the jury",
+    "example": "Check the jury in the text.",
+    "exampleZh": "核对文本中的陪审团。",
+    "tags": [
+      "academic"
+    ],
+    "tier": "core",
+    "pos": "n. 名词"
+  },
+  {
+    "id": 1806,
+    "word": "log",
+    "spelling": "L-O-G",
+    "phonetic": "/lɔg/",
+    "gloss": "记录；圆木",
+    "tip": "the log",
+    "example": "Check the log in the text.",
+    "exampleZh": "核对文本中的记录。",
+    "tags": [
+      "academic"
+    ],
+    "tier": "core",
+    "pos": "n. 名词"
+  },
+  {
+    "id": 1807,
+    "word": "corridor",
+    "spelling": "C-O-R-R-I-D-O-R",
+    "phonetic": "/ˈkɔrɪdər/",
+    "gloss": "走廊；回廊",
+    "tip": "the corridor",
+    "example": "Check the corridor in the text.",
+    "exampleZh": "核对文本中的走廊。",
+    "tags": [
+      "academic"
+    ],
+    "tier": "core",
+    "pos": "n. 名词"
+  },
+  {
+    "id": 1808,
+    "word": "crash",
+    "spelling": "C-R-A-S-H",
+    "phonetic": "/kræʃ/",
+    "gloss": "哗啦声；猛撞",
+    "tip": "the crash",
+    "example": "Check the crash in the text.",
+    "exampleZh": "核对文本中的哗啦声。",
+    "tags": [
+      "academic"
+    ],
+    "tier": "core",
+    "pos": "n. 名词"
+  },
+  {
+    "id": 1809,
+    "word": "physician",
+    "spelling": "P-H-Y-S-I-C-I-A-N",
+    "phonetic": "/fəˈzɪʃən/",
+    "gloss": "医师；内科医师",
+    "tip": "the physician",
+    "example": "Check the physician in the text.",
+    "exampleZh": "核对文本中的医师。",
+    "tags": [
+      "academic"
+    ],
+    "tier": "core",
+    "pos": "n. 名词"
+  },
+  {
+    "id": 1810,
+    "word": "scare",
+    "spelling": "S-C-A-R-E",
+    "phonetic": "/skɛr/",
+    "gloss": "惊吓；恐慌",
+    "tip": "the scare",
+    "example": "Check the scare in the text.",
+    "exampleZh": "核对文本中的惊吓。",
+    "tags": [
+      "academic"
+    ],
+    "tier": "core",
+    "pos": "n. 名词"
+  },
+  {
+    "id": 1811,
+    "word": "residence",
+    "spelling": "R-E-S-I-D-E-N-C-E",
+    "phonetic": "/ˈrɛzɪdəns/",
+    "gloss": "住宅；居留",
+    "tip": "the residence",
+    "example": "Check the residence in the text.",
+    "exampleZh": "核对文本中的住宅。",
+    "tags": [
+      "academic",
+      "campus"
+    ],
+    "tier": "core",
+    "pos": "n. 名词"
+  },
+  {
+    "id": 1812,
+    "word": "critic",
+    "spelling": "C-R-I-T-I-C",
+    "phonetic": "/ˈkrɪtɪk/",
+    "gloss": "批评家；鉴定家",
+    "tip": "the critic",
+    "example": "Check the critic in the text.",
+    "exampleZh": "核对文本中的批评家。",
+    "tags": [
+      "academic",
+      "campus"
+    ],
+    "tier": "core",
+    "pos": "n. 名词"
+  },
+  {
+    "id": 1813,
+    "word": "biology",
+    "spelling": "B-I-O-L-O-G-Y",
+    "phonetic": "/baɪˈɑləʤi/",
+    "gloss": "生物学；[化] 生物",
+    "tip": "the biology",
+    "example": "Check the biology in the text.",
+    "exampleZh": "核对文本中的生物学。",
+    "tags": [
+      "academic",
+      "campus"
+    ],
+    "tier": "core",
+    "pos": "n. 名词"
+  },
+  {
+    "id": 1814,
+    "word": "tough",
+    "spelling": "T-O-U-G-H",
+    "phonetic": "/təf/",
+    "gloss": "恶棍；强硬",
+    "tip": "the tough",
+    "example": "Check the tough in the text.",
+    "exampleZh": "核对文本中的恶棍。",
+    "tags": [
+      "academic",
+      "campus"
+    ],
+    "tier": "core",
+    "pos": "n. 名词"
+  },
+  {
+    "id": 1815,
+    "word": "quotation",
+    "spelling": "Q-U-O-T-A-T-I-O-N",
+    "phonetic": "/kwoʊˈteɪʃən/",
+    "gloss": "引用语；语录",
+    "tip": "the quotation",
+    "example": "Check the quotation in the text.",
+    "exampleZh": "核对文本中的引用语。",
+    "tags": [
+      "academic"
+    ],
+    "tier": "core",
+    "pos": "n. 名词"
+  },
+  {
+    "id": 1816,
+    "word": "corporation",
+    "spelling": "C-O-R-P-O-R-A-T-I-O-N",
+    "phonetic": "/ˌkɔrpərˈeɪʃən/",
+    "gloss": "公司；合作",
+    "tip": "the corporation",
+    "example": "Check the corporation in the text.",
+    "exampleZh": "核对文本中的公司。",
+    "tags": [
+      "academic"
+    ],
+    "tier": "core",
+    "pos": "n. 名词"
+  },
+  {
+    "id": 1817,
+    "word": "formal",
+    "spelling": "F-O-R-M-A-L",
+    "phonetic": "/ˈfɔrməl/",
+    "gloss": "正式的；形式的",
+    "tip": "a formal …",
+    "example": "Give a formal answer.",
+    "exampleZh": "给出正式的回答。",
+    "tags": [
+      "academic",
+      "campus"
+    ],
+    "tier": "core",
+    "pos": "adj. 形容词"
+  },
+  {
+    "id": 1818,
+    "word": "fulfil",
+    "spelling": "F-U-L-F-I-L",
+    "phonetic": "/ful'fil/",
+    "gloss": "实践；履行",
+    "tip": "fulfil …",
+    "example": "Please fulfil the key points.",
+    "exampleZh": "请实践要点。",
+    "tags": [
+      "academic"
+    ],
+    "tier": "core",
+    "pos": "v. 动词"
+  },
+  {
+    "id": 1819,
+    "word": "fertile",
+    "spelling": "F-E-R-T-I-L-E",
+    "phonetic": "/ˈfərtəl/",
+    "gloss": "可繁殖的；肥沃的",
+    "tip": "a fertile …",
+    "example": "Give a fertile answer.",
+    "exampleZh": "给出可繁殖的回答。",
+    "tags": [
+      "academic"
+    ],
+    "tier": "core",
+    "pos": "adj. 形容词"
+  },
+  {
+    "id": 1820,
+    "word": "flaw",
+    "spelling": "F-L-A-W",
+    "phonetic": "/flɔ/",
+    "gloss": "缺点；裂纹",
+    "tip": "the flaw",
+    "example": "Check the flaw in the text.",
+    "exampleZh": "核对文本中的缺点。",
+    "tags": [
+      "academic",
+      "campus"
+    ],
+    "tier": "core",
+    "pos": "n. 名词"
+  },
+  {
+    "id": 1821,
+    "word": "proposal",
+    "spelling": "P-R-O-P-O-S-A-L",
+    "phonetic": "/prəˈpoʊzəl/",
+    "gloss": "提议；计划",
+    "tip": "the proposal",
+    "example": "Check the proposal in the text.",
+    "exampleZh": "核对文本中的提议。",
+    "tags": [
+      "academic"
+    ],
+    "tier": "core",
+    "pos": "n. 名词"
+  },
+  {
+    "id": 1822,
+    "word": "volunteer",
+    "spelling": "V-O-L-U-N-T-E-E-R",
+    "phonetic": "/ˌvɑlənˈtɪr/",
+    "gloss": "志愿者；志愿",
+    "tip": "the volunteer",
+    "example": "Check the volunteer in the text.",
+    "exampleZh": "核对文本中的志愿者。",
+    "tags": [
+      "academic"
+    ],
+    "tier": "core",
+    "pos": "n. 名词"
+  },
+  {
+    "id": 1823,
+    "word": "thorough",
+    "spelling": "T-H-O-R-O-U-G-H",
+    "phonetic": "/θəroʊ/",
+    "gloss": "十分的；彻底的",
+    "tip": "a thorough …",
+    "example": "Give a thorough answer.",
+    "exampleZh": "给出十分的回答。",
+    "tags": [
+      "academic",
+      "campus"
+    ],
+    "tier": "core",
+    "pos": "adj. 形容词"
+  },
+  {
+    "id": 1824,
+    "word": "imagination",
+    "spelling": "I-M-A-G-I-N-A-T-I-O-N",
+    "phonetic": "/ˌɪˌmæʤəˈneɪʃən/",
+    "gloss": "想像；听觉",
+    "tip": "the imagination",
+    "example": "Check the imagination in the text.",
+    "exampleZh": "核对文本中的想像。",
+    "tags": [
+      "academic",
+      "campus"
+    ],
+    "tier": "core",
+    "pos": "n. 名词"
+  },
+  {
+    "id": 1825,
+    "word": "viewpoint",
+    "spelling": "V-I-E-W-P-O-I-N-T",
+    "phonetic": "/vˈjuˌpɔɪnt/",
+    "gloss": "观点",
+    "tip": "the viewpoint",
+    "example": "Check the viewpoint in the text.",
+    "exampleZh": "核对文本中的观点。",
+    "tags": [
+      "academic"
+    ],
+    "tier": "core",
+    "pos": "n. 名词"
+  },
+  {
+    "id": 1826,
+    "word": "fiction",
+    "spelling": "F-I-C-T-I-O-N",
+    "phonetic": "/ˈfɪkʃən/",
+    "gloss": "小说；虚构故事",
+    "tip": "the fiction",
+    "example": "Check the fiction in the text.",
+    "exampleZh": "核对文本中的小说。",
+    "tags": [
+      "academic"
+    ],
+    "tier": "core",
+    "pos": "n. 名词"
+  },
+  {
+    "id": 1827,
+    "word": "slide",
+    "spelling": "S-L-I-D-E",
+    "phonetic": "/slaɪd/",
+    "gloss": "滑；滑道",
+    "tip": "the slide",
+    "example": "Check the slide in the text.",
+    "exampleZh": "核对文本中的滑。",
+    "tags": [
+      "academic",
+      "campus"
+    ],
+    "tier": "core",
+    "pos": "n. 名词"
+  },
+  {
+    "id": 1828,
+    "word": "stain",
+    "spelling": "S-T-A-I-N",
+    "phonetic": "/steɪn/",
+    "gloss": "污染；污点",
+    "tip": "the stain",
+    "example": "Check the stain in the text.",
+    "exampleZh": "核对文本中的污染。",
+    "tags": [
+      "academic"
+    ],
+    "tier": "core",
+    "pos": "n. 名词"
+  },
+  {
+    "id": 1829,
+    "word": "vacation",
+    "spelling": "V-A-C-A-T-I-O-N",
+    "phonetic": "/veɪˈkeɪʃən/",
+    "gloss": "假期；休假",
+    "tip": "the vacation",
+    "example": "Check the vacation in the text.",
+    "exampleZh": "核对文本中的假期。",
+    "tags": [
+      "academic"
+    ],
+    "tier": "core",
+    "pos": "n. 名词"
+  },
+  {
+    "id": 1830,
+    "word": "speculate",
+    "spelling": "S-P-E-C-U-L-A-T-E",
+    "phonetic": "/ˈspɛkjəˌleɪt/",
+    "gloss": "深思；推测",
+    "tip": "speculate …",
+    "example": "Please speculate the key points.",
+    "exampleZh": "请深思要点。",
+    "tags": [
+      "academic"
+    ],
+    "tier": "core",
+    "pos": "v. 动词"
+  },
+  {
+    "id": 1831,
+    "word": "numerous",
+    "spelling": "N-U-M-E-R-O-U-S",
+    "phonetic": "/ˈnumərəs/",
+    "gloss": "很多的；数目众多的",
+    "tip": "a numerous …",
+    "example": "Give a numerous answer.",
+    "exampleZh": "给出很多的回答。",
+    "tags": [
+      "academic",
+      "campus"
+    ],
+    "tier": "core",
+    "pos": "adj. 形容词"
+  },
+  {
+    "id": 1832,
+    "word": "folk",
+    "spelling": "F-O-L-K",
+    "phonetic": "/foʊk/",
+    "gloss": "人们；家人",
+    "tip": "the folk",
+    "example": "Check the folk in the text.",
+    "exampleZh": "核对文本中的人们。",
+    "tags": [
+      "academic"
+    ],
+    "tier": "core",
+    "pos": "n. 名词"
+  },
+  {
+    "id": 1833,
+    "word": "additional",
+    "spelling": "A-D-D-I-T-I-O-N-A-L",
+    "phonetic": "/əˈdɪʃənəl/",
+    "gloss": "附加的；另外的",
+    "tip": "a additional …",
+    "example": "Give a additional answer.",
+    "exampleZh": "给出附加的回答。",
+    "tags": [
+      "academic",
+      "campus"
+    ],
+    "tier": "core",
+    "pos": "adj. 形容词"
+  },
+  {
+    "id": 1834,
+    "word": "vessel",
+    "spelling": "V-E-S-S-E-L",
+    "phonetic": "/ˈvɛsəl/",
+    "gloss": "船；容器",
+    "tip": "the vessel",
+    "example": "Check the vessel in the text.",
+    "exampleZh": "核对文本中的船。",
+    "tags": [
+      "academic"
+    ],
+    "tier": "core",
+    "pos": "n. 名词"
+  },
+  {
+    "id": 1835,
+    "word": "cash",
+    "spelling": "C-A-S-H",
+    "phonetic": "/kæʃ/",
+    "gloss": "现金；兑现",
+    "tip": "the cash",
+    "example": "Check the cash in the text.",
+    "exampleZh": "核对文本中的现金。",
+    "tags": [
+      "academic",
+      "campus"
+    ],
+    "tier": "core",
+    "pos": "n. 名词"
+  },
+  {
+    "id": 1836,
+    "word": "occurrence",
+    "spelling": "O-C-C-U-R-R-E-N-C-E",
+    "phonetic": "/əˈkərəns/",
+    "gloss": "发生；事件",
+    "tip": "the occurrence",
+    "example": "Check the occurrence in the text.",
+    "exampleZh": "核对文本中的发生。",
+    "tags": [
+      "academic"
+    ],
+    "tier": "core",
+    "pos": "n. 名词"
+  },
+  {
+    "id": 1837,
+    "word": "transmission",
+    "spelling": "T-R-A-N-S-M-I-S-S-I-O-N",
+    "phonetic": "/trænzˈmɪʃən/",
+    "gloss": "传输；传送",
+    "tip": "the transmission",
+    "example": "Check the transmission in the text.",
+    "exampleZh": "核对文本中的传输。",
+    "tags": [
+      "academic"
+    ],
+    "tier": "core",
+    "pos": "n. 名词"
+  },
+  {
+    "id": 1838,
+    "word": "tension",
+    "spelling": "T-E-N-S-I-O-N",
+    "phonetic": "/ˈtɛnʃən/",
+    "gloss": "紧张；不安",
+    "tip": "the tension",
+    "example": "Check the tension in the text.",
+    "exampleZh": "核对文本中的紧张。",
+    "tags": [
+      "academic"
+    ],
+    "tier": "core",
+    "pos": "n. 名词"
+  },
+  {
+    "id": 1839,
+    "word": "hardware",
+    "spelling": "H-A-R-D-W-A-R-E",
+    "phonetic": "/ˈhɑrdˌwɛr/",
+    "gloss": "硬件；五金器具",
+    "tip": "the hardware",
+    "example": "Check the hardware in the text.",
+    "exampleZh": "核对文本中的硬件。",
+    "tags": [
+      "academic"
+    ],
+    "tier": "core",
+    "pos": "n. 名词"
+  },
+  {
+    "id": 1840,
+    "word": "receipt",
+    "spelling": "R-E-C-E-I-P-T",
+    "phonetic": "/rɪˈsit/",
+    "gloss": "收据；收入",
+    "tip": "the receipt",
+    "example": "Check the receipt in the text.",
+    "exampleZh": "核对文本中的收据。",
+    "tags": [
+      "academic",
+      "campus"
+    ],
+    "tier": "core",
+    "pos": "n. 名词"
+  },
+  {
+    "id": 1841,
+    "word": "imitate",
+    "spelling": "I-M-I-T-A-T-E",
+    "phonetic": "/ˈɪməˌteɪt/",
+    "gloss": "模仿；效法",
+    "tip": "imitate …",
+    "example": "Please imitate the key points.",
+    "exampleZh": "请模仿要点。",
+    "tags": [
+      "academic"
+    ],
+    "tier": "core",
+    "pos": "v. 动词"
+  },
+  {
+    "id": 1842,
+    "word": "accent",
+    "spelling": "A-C-C-E-N-T",
+    "phonetic": "/ˈækˌsɛnt/",
+    "gloss": "重音；口音",
+    "tip": "the accent",
+    "example": "Check the accent in the text.",
+    "exampleZh": "核对文本中的重音。",
+    "tags": [
+      "academic"
+    ],
+    "tier": "core",
+    "pos": "n. 名词"
+  },
+  {
+    "id": 1843,
+    "word": "relativity",
+    "spelling": "R-E-L-A-T-I-V-I-T-Y",
+    "phonetic": "/ˌrɛləˈtɪvəti/",
+    "gloss": "有关系；相关性",
+    "tip": "the relativity",
+    "example": "Check the relativity in the text.",
+    "exampleZh": "核对文本中的有关系。",
+    "tags": [
+      "academic"
+    ],
+    "tier": "core",
+    "pos": "n. 名词"
+  },
+  {
+    "id": 1844,
+    "word": "editor",
+    "spelling": "E-D-I-T-O-R",
+    "phonetic": "/ˈɛdɪtər/",
+    "gloss": "编者；编辑",
+    "tip": "the editor",
+    "example": "Check the editor in the text.",
+    "exampleZh": "核对文本中的编者。",
+    "tags": [
+      "academic",
+      "campus"
+    ],
+    "tier": "core",
+    "pos": "n. 名词"
+  },
+  {
+    "id": 1845,
+    "word": "poetry",
+    "spelling": "P-O-E-T-R-Y",
+    "phonetic": "/ˈpoʊətri/",
+    "gloss": "诗；韵文",
+    "tip": "the poetry",
+    "example": "Check the poetry in the text.",
+    "exampleZh": "核对文本中的诗。",
+    "tags": [
+      "academic",
+      "campus"
+    ],
+    "tier": "core",
+    "pos": "n. 名词"
+  },
+  {
+    "id": 1846,
+    "word": "convention",
+    "spelling": "C-O-N-V-E-N-T-I-O-N",
+    "phonetic": "/kənˈvɛnʃən/",
+    "gloss": "大会；协定",
+    "tip": "the convention",
+    "example": "Check the convention in the text.",
+    "exampleZh": "核对文本中的大会。",
+    "tags": [
+      "academic",
+      "campus"
+    ],
+    "tier": "core",
+    "pos": "n. 名词"
+  },
+  {
+    "id": 1847,
+    "word": "rhythm",
+    "spelling": "R-H-Y-T-H-M",
+    "phonetic": "/ˈrɪðəm/",
+    "gloss": "旋律；节奏",
+    "tip": "the rhythm",
+    "example": "Check the rhythm in the text.",
+    "exampleZh": "核对文本中的旋律。",
+    "tags": [
+      "academic"
+    ],
+    "tier": "core",
+    "pos": "n. 名词"
+  },
+  {
+    "id": 1848,
+    "word": "grasp",
+    "spelling": "G-R-A-S-P",
+    "phonetic": "/græsp/",
+    "gloss": "把握；抓紧",
+    "tip": "the grasp",
+    "example": "Check the grasp in the text.",
+    "exampleZh": "核对文本中的把握。",
+    "tags": [
+      "academic"
+    ],
+    "tier": "core",
+    "pos": "n. 名词"
+  },
+  {
+    "id": 1849,
+    "word": "enquire",
+    "spelling": "E-N-Q-U-I-R-E",
+    "phonetic": "/ɪnkˈwaɪər/",
+    "gloss": "询问",
+    "tip": "enquire …",
+    "example": "Please enquire the key points.",
+    "exampleZh": "请询问要点。",
+    "tags": [
+      "academic"
+    ],
+    "tier": "core",
+    "pos": "v. 动词"
+  },
+  {
+    "id": 1850,
+    "word": "noticeable",
+    "spelling": "N-O-T-I-C-E-A-B-L-E",
+    "phonetic": "/ˈnoʊtəsəbəl/",
+    "gloss": "显而易见的；显著的",
+    "tip": "a noticeable …",
+    "example": "Give a noticeable answer.",
+    "exampleZh": "给出显而易见的回答。",
+    "tags": [
+      "academic"
+    ],
+    "tier": "core",
+    "pos": "adj. 形容词"
+  },
+  {
+    "id": 1851,
+    "word": "flourish",
+    "spelling": "F-L-O-U-R-I-S-H",
+    "phonetic": "/flərɪʃ/",
+    "gloss": "繁荣；茂盛",
+    "tip": "flourish …",
+    "example": "Please flourish the key points.",
+    "exampleZh": "请繁荣要点。",
+    "tags": [
+      "academic"
+    ],
+    "tier": "core",
+    "pos": "v. 动词"
+  },
+  {
+    "id": 1852,
+    "word": "objection",
+    "spelling": "O-B-J-E-C-T-I-O-N",
+    "phonetic": "/əˈbʤɛkʃən/",
+    "gloss": "异议；反对",
+    "tip": "the objection",
+    "example": "Check the objection in the text.",
+    "exampleZh": "核对文本中的异议。",
+    "tags": [
+      "academic"
+    ],
+    "tier": "core",
+    "pos": "n. 名词"
+  },
+  {
+    "id": 1853,
+    "word": "hesitate",
+    "spelling": "H-E-S-I-T-A-T-E",
+    "phonetic": "/ˈhɛzəˌteɪt/",
+    "gloss": "犹豫；迟疑",
+    "tip": "hesitate …",
+    "example": "Please hesitate the key points.",
+    "exampleZh": "请犹豫要点。",
+    "tags": [
+      "academic"
+    ],
+    "tier": "core",
+    "pos": "v. 动词"
+  },
+  {
+    "id": 1854,
+    "word": "electricity",
+    "spelling": "E-L-E-C-T-R-I-C-I-T-Y",
+    "phonetic": "/ɪˌlɛkˈtrɪsəti/",
+    "gloss": "电；电流",
+    "tip": "the electricity",
+    "example": "Check the electricity in the text.",
+    "exampleZh": "核对文本中的电。",
+    "tags": [
+      "academic"
+    ],
+    "tier": "core",
+    "pos": "n. 名词"
+  },
+  {
+    "id": 1855,
+    "word": "giant",
+    "spelling": "G-I-A-N-T",
+    "phonetic": "/ʤaɪənt/",
+    "gloss": "巨人；大力士",
+    "tip": "the giant",
+    "example": "Check the giant in the text.",
+    "exampleZh": "核对文本中的巨人。",
+    "tags": [
+      "academic"
+    ],
+    "tier": "core",
+    "pos": "n. 名词"
+  },
+  {
+    "id": 1856,
+    "word": "up-to-date",
+    "spelling": "U-P-T-O-D-A-T-E",
+    "phonetic": "/'ʌptә'deit/",
+    "gloss": "直到现在的；最近的",
+    "tip": "up-to-date …",
+    "example": "Please up-to-date the key points.",
+    "exampleZh": "请直到现在要点。",
+    "tags": [
+      "academic"
+    ],
+    "tier": "core",
+    "pos": "v. 动词"
+  },
+  {
+    "id": 1857,
+    "word": "mathematical",
+    "spelling": "M-A-T-H-E-M-A-T-I-C-A-L",
+    "phonetic": "/ˌmæθəˈmætɪkəl/",
+    "gloss": "数学的；精确的",
+    "tip": "a mathematical …",
+    "example": "Give a mathematical answer.",
+    "exampleZh": "给出数学的回答。",
+    "tags": [
+      "academic",
+      "campus"
+    ],
+    "tier": "core",
+    "pos": "adj. 形容词"
+  },
+  {
+    "id": 1858,
+    "word": "organise",
+    "spelling": "O-R-G-A-N-I-S-E",
+    "phonetic": "/'ɒ:gәnaiz/",
+    "gloss": "组织；有机化",
+    "tip": "organise …",
+    "example": "Please organise the key points.",
+    "exampleZh": "请组织要点。",
+    "tags": [
+      "academic",
+      "campus"
+    ],
+    "tier": "core",
+    "pos": "v. 动词"
+  },
+  {
+    "id": 1859,
+    "word": "particle",
+    "spelling": "P-A-R-T-I-C-L-E",
+    "phonetic": "/ˈpɑrtɪkəl/",
+    "gloss": "颗粒；粒子",
+    "tip": "the particle",
+    "example": "Check the particle in the text.",
+    "exampleZh": "核对文本中的颗粒。",
+    "tags": [
+      "academic"
+    ],
+    "tier": "core",
+    "pos": "n. 名词"
+  },
+  {
+    "id": 1860,
+    "word": "equation",
+    "spelling": "E-Q-U-A-T-I-O-N",
+    "phonetic": "/ɪkˈweɪʒən/",
+    "gloss": "相等；等式",
+    "tip": "the equation",
+    "example": "Check the equation in the text.",
+    "exampleZh": "核对文本中的相等。",
+    "tags": [
+      "academic"
+    ],
+    "tier": "core",
+    "pos": "n. 名词"
+  },
+  {
+    "id": 1861,
+    "word": "electron",
+    "spelling": "E-L-E-C-T-R-O-N",
+    "phonetic": "/ˌɪˈlɛktrɑn/",
+    "gloss": "电子；[化] 电子",
+    "tip": "the electron",
+    "example": "Check the electron in the text.",
+    "exampleZh": "核对文本中的电子。",
+    "tags": [
+      "academic"
+    ],
+    "tier": "core",
+    "pos": "n. 名词"
+  },
+  {
+    "id": 1862,
+    "word": "frequent",
+    "spelling": "F-R-E-Q-U-E-N-T",
+    "phonetic": "/ˈfrikˌwɛnt/",
+    "gloss": "时常发生的；频繁的",
+    "tip": "a frequent …",
+    "example": "Give a frequent answer.",
+    "exampleZh": "给出时常发生的回答。",
+    "tags": [
+      "academic",
+      "campus"
+    ],
+    "tier": "core",
+    "pos": "adj. 形容词"
+  },
+  {
+    "id": 1863,
+    "word": "thick",
+    "spelling": "T-H-I-C-K",
+    "phonetic": "/θɪk/",
+    "gloss": "厚的；粗壮的",
+    "tip": "a thick …",
+    "example": "Give a thick answer.",
+    "exampleZh": "给出厚的回答。",
+    "tags": [
+      "academic"
+    ],
+    "tier": "core",
+    "pos": "adj. 形容词"
+  },
+  {
+    "id": 1864,
+    "word": "fog",
+    "spelling": "F-O-G",
+    "phonetic": "/fɔg/",
+    "gloss": "雾；迷惑",
+    "tip": "the fog",
+    "example": "Check the fog in the text.",
+    "exampleZh": "核对文本中的雾。",
+    "tags": [
+      "academic"
+    ],
+    "tier": "core",
+    "pos": "n. 名词"
+  },
+  {
+    "id": 1865,
+    "word": "severe",
+    "spelling": "S-E-V-E-R-E",
+    "phonetic": "/səˈvɪr/",
+    "gloss": "严格的；尖锐的",
+    "tip": "a severe …",
+    "example": "Give a severe answer.",
+    "exampleZh": "给出严格的回答。",
+    "tags": [
+      "academic",
+      "campus"
+    ],
+    "tier": "core",
+    "pos": "adj. 形容词"
+  },
+  {
+    "id": 1866,
+    "word": "lorry",
+    "spelling": "L-O-R-R-Y",
+    "phonetic": "/ˈlɔri/",
+    "gloss": "卡车；货车",
+    "tip": "the lorry",
+    "example": "Check the lorry in the text.",
+    "exampleZh": "核对文本中的卡车。",
+    "tags": [
+      "academic"
+    ],
+    "tier": "core",
+    "pos": "n. 名词"
+  },
+  {
+    "id": 1867,
+    "word": "oppose",
+    "spelling": "O-P-P-O-S-E",
+    "phonetic": "/əˈpoʊz/",
+    "gloss": "反对；以...对抗",
+    "tip": "oppose …",
+    "example": "Please oppose the key points.",
+    "exampleZh": "请反对要点。",
+    "tags": [
+      "academic"
+    ],
+    "tier": "core",
+    "pos": "v. 动词"
+  },
+  {
+    "id": 1868,
+    "word": "intelligent",
+    "spelling": "I-N-T-E-L-L-I-G-E-N-T",
+    "phonetic": "/ˌɪnˈtɛləʤənt/",
+    "gloss": "聪明的；智能的",
+    "tip": "a intelligent …",
+    "example": "Give a intelligent answer.",
+    "exampleZh": "给出聪明的回答。",
+    "tags": [
+      "academic"
+    ],
+    "tier": "core",
+    "pos": "adj. 形容词"
+  },
+  {
+    "id": 1869,
+    "word": "remind",
+    "spelling": "R-E-M-I-N-D",
+    "phonetic": "/riˈmaɪnd/",
+    "gloss": "提醒；使想起",
+    "tip": "remind …",
+    "example": "Please remind the key points.",
+    "exampleZh": "请提醒要点。",
+    "tags": [
+      "academic"
+    ],
+    "tier": "core",
+    "pos": "v. 动词"
+  },
+  {
+    "id": 1870,
+    "word": "trash",
+    "spelling": "T-R-A-S-H",
+    "phonetic": "/træʃ/",
+    "gloss": "垃圾；废物",
+    "tip": "the trash",
+    "example": "Check the trash in the text.",
+    "exampleZh": "核对文本中的垃圾。",
+    "tags": [
+      "academic"
+    ],
+    "tier": "core",
+    "pos": "n. 名词"
+  },
+  {
+    "id": 1871,
+    "word": "destructive",
+    "spelling": "D-E-S-T-R-U-C-T-I-V-E",
+    "phonetic": "/dɪˈstrəktɪv/",
+    "gloss": "毁灭性的；破坏的",
+    "tip": "a destructive …",
+    "example": "Give a destructive answer.",
+    "exampleZh": "给出毁灭性的回答。",
+    "tags": [
+      "academic"
+    ],
+    "tier": "core",
+    "pos": "adj. 形容词"
+  },
+  {
+    "id": 1872,
+    "word": "petrol",
+    "spelling": "P-E-T-R-O-L",
+    "phonetic": "/ˈpɛtroʊl/",
+    "gloss": "汽油；[经] 汽油",
+    "tip": "the petrol",
+    "example": "Check the petrol in the text.",
+    "exampleZh": "核对文本中的汽油。",
+    "tags": [
+      "academic"
+    ],
+    "tier": "core",
+    "pos": "n. 名词"
+  },
+  {
+    "id": 1873,
+    "word": "ambulance",
+    "spelling": "A-M-B-U-L-A-N-C-E",
+    "phonetic": "/ˈæmbjələns/",
+    "gloss": "救护车；[医] 救护车",
+    "tip": "the ambulance",
+    "example": "Check the ambulance in the text.",
+    "exampleZh": "核对文本中的救护车。",
+    "tags": [
+      "academic"
+    ],
+    "tier": "core",
+    "pos": "n. 名词"
+  },
+  {
+    "id": 1874,
+    "word": "delivery",
+    "spelling": "D-E-L-I-V-E-R-Y",
+    "phonetic": "/dɪˈlɪvəri/",
+    "gloss": "递送；交付",
+    "tip": "the delivery",
+    "example": "Check the delivery in the text.",
+    "exampleZh": "核对文本中的递送。",
+    "tags": [
+      "academic"
+    ],
+    "tier": "core",
+    "pos": "n. 名词"
+  },
+  {
+    "id": 1875,
+    "word": "renew",
+    "spelling": "R-E-N-E-W",
+    "phonetic": "/rɪˈnu/",
+    "gloss": "使更新；使恢复",
+    "tip": "renew …",
+    "example": "Please renew the key points.",
+    "exampleZh": "请使更新要点。",
+    "tags": [
+      "academic"
+    ],
+    "tier": "core",
+    "pos": "v. 动词"
+  },
+  {
+    "id": 1876,
+    "word": "imperative",
+    "spelling": "I-M-P-E-R-A-T-I-V-E",
+    "phonetic": "/ˌɪmˈpɛrətɪv/",
+    "gloss": "命令；必要的事",
+    "tip": "a imperative …",
+    "example": "Give a imperative answer.",
+    "exampleZh": "给出命令回答。",
+    "tags": [
+      "academic"
+    ],
+    "tier": "core",
+    "pos": "adj. 形容词"
+  },
+  {
+    "id": 1877,
+    "word": "destruction",
+    "spelling": "D-E-S-T-R-U-C-T-I-O-N",
+    "phonetic": "/dɪˈstrəkʃən/",
+    "gloss": "破坏；毁灭",
+    "tip": "the destruction",
+    "example": "Check the destruction in the text.",
+    "exampleZh": "核对文本中的破坏。",
+    "tags": [
+      "academic"
+    ],
+    "tier": "core",
+    "pos": "n. 名词"
+  },
+  {
+    "id": 1878,
+    "word": "desire",
+    "spelling": "D-E-S-I-R-E",
+    "phonetic": "/dɪˈzaɪər/",
+    "gloss": "欲望；要求",
+    "tip": "the desire",
+    "example": "Check the desire in the text.",
+    "exampleZh": "核对文本中的欲望。",
+    "tags": [
+      "academic"
+    ],
+    "tier": "core",
+    "pos": "n. 名词"
+  },
+  {
+    "id": 1879,
+    "word": "frank",
+    "spelling": "F-R-A-N-K",
+    "phonetic": "/fræŋk/",
+    "gloss": "坦白的；率直的",
+    "tip": "a frank …",
+    "example": "Give a frank answer.",
+    "exampleZh": "给出坦白的回答。",
+    "tags": [
+      "academic"
+    ],
+    "tier": "core",
+    "pos": "adj. 形容词"
+  },
+  {
+    "id": 1880,
+    "word": "architect",
+    "spelling": "A-R-C-H-I-T-E-C-T",
+    "phonetic": "/ˈɑrkəˌtɛkt/",
+    "gloss": "建筑师；设计者",
+    "tip": "the architect",
+    "example": "Check the architect in the text.",
+    "exampleZh": "核对文本中的建筑师。",
+    "tags": [
+      "academic",
+      "campus"
+    ],
+    "tier": "core",
+    "pos": "n. 名词"
+  },
+  {
+    "id": 1881,
+    "word": "balcony",
+    "spelling": "B-A-L-C-O-N-Y",
+    "phonetic": "/ˈbælkəni/",
+    "gloss": "阳台；戏院楼厅",
+    "tip": "the balcony",
+    "example": "Check the balcony in the text.",
+    "exampleZh": "核对文本中的阳台。",
+    "tags": [
+      "academic"
+    ],
+    "tier": "core",
+    "pos": "n. 名词"
+  },
+  {
+    "id": 1882,
+    "word": "curve",
+    "spelling": "C-U-R-V-E",
+    "phonetic": "/kərv/",
+    "gloss": "曲线；弯曲",
+    "tip": "the curve",
+    "example": "Check the curve in the text.",
+    "exampleZh": "核对文本中的曲线。",
+    "tags": [
+      "academic"
+    ],
+    "tier": "core",
+    "pos": "n. 名词"
+  },
+  {
+    "id": 1883,
+    "word": "forth",
+    "spelling": "F-O-R-T-H",
+    "phonetic": "/fɔrθ/",
+    "gloss": "往前；以后",
+    "tip": "forth …",
+    "example": "Answer forth and clearly.",
+    "exampleZh": "请往前且清楚地回答。",
+    "tags": [
+      "academic"
+    ],
+    "tier": "core",
+    "pos": "adv. 副词"
+  },
+  {
+    "id": 1884,
+    "word": "combination",
+    "spelling": "C-O-M-B-I-N-A-T-I-O-N",
+    "phonetic": "/ˌkɑmbəˈneɪʃən/",
+    "gloss": "组合；合并",
+    "tip": "the combination",
+    "example": "Check the combination in the text.",
+    "exampleZh": "核对文本中的组合。",
+    "tags": [
+      "academic",
+      "campus"
+    ],
+    "tier": "core",
+    "pos": "n. 名词"
+  },
+  {
+    "id": 1885,
+    "word": "string",
+    "spelling": "S-T-R-I-N-G",
+    "phonetic": "/strɪŋ/",
+    "gloss": "线；细绳",
+    "tip": "the string",
+    "example": "Check the string in the text.",
+    "exampleZh": "核对文本中的线。",
+    "tags": [
+      "academic"
+    ],
+    "tier": "core",
+    "pos": "n. 名词"
+  },
+  {
+    "id": 1886,
+    "word": "penetrate",
+    "spelling": "P-E-N-E-T-R-A-T-E",
+    "phonetic": "/ˈpɛnəˌtreɪt/",
+    "gloss": "穿透；刺穿",
+    "tip": "penetrate …",
+    "example": "Please penetrate the key points.",
+    "exampleZh": "请穿透要点。",
+    "tags": [
+      "academic"
+    ],
+    "tier": "core",
+    "pos": "v. 动词"
+  },
+  {
+    "id": 1887,
+    "word": "gravity",
+    "spelling": "G-R-A-V-I-T-Y",
+    "phonetic": "/ˈgrævɪti/",
+    "gloss": "地心引力；重力",
+    "tip": "the gravity",
+    "example": "Check the gravity in the text.",
+    "exampleZh": "核对文本中的地心引力。",
+    "tags": [
+      "academic",
+      "campus"
+    ],
+    "tier": "core",
+    "pos": "n. 名词"
+  },
+  {
+    "id": 1888,
+    "word": "ankle",
+    "spelling": "A-N-K-L-E",
+    "phonetic": "/ˈæŋkəl/",
+    "gloss": "踝；[医] 踝",
+    "tip": "the ankle",
+    "example": "Check the ankle in the text.",
+    "exampleZh": "核对文本中的踝。",
+    "tags": [
+      "academic"
+    ],
+    "tier": "core",
+    "pos": "n. 名词"
+  },
+  {
+    "id": 1889,
+    "word": "radiation",
+    "spelling": "R-A-D-I-A-T-I-O-N",
+    "phonetic": "/ˌreɪdiˈeɪʃən/",
+    "gloss": "辐射；[化] 放射",
+    "tip": "the radiation",
+    "example": "Check the radiation in the text.",
+    "exampleZh": "核对文本中的辐射。",
+    "tags": [
+      "academic"
+    ],
+    "tier": "core",
+    "pos": "n. 名词"
+  },
+  {
+    "id": 1890,
+    "word": "decay",
+    "spelling": "D-E-C-A-Y",
+    "phonetic": "/dɪˈkeɪ/",
+    "gloss": "衰退；腐败",
+    "tip": "the decay",
+    "example": "Check the decay in the text.",
+    "exampleZh": "核对文本中的衰退。",
+    "tags": [
+      "academic"
+    ],
+    "tier": "core",
+    "pos": "n. 名词"
+  },
+  {
+    "id": 1891,
+    "word": "ideal",
+    "spelling": "I-D-E-A-L",
+    "phonetic": "/aɪˈdil/",
+    "gloss": "理想；典范",
+    "tip": "the ideal",
+    "example": "Check the ideal in the text.",
+    "exampleZh": "核对文本中的理想。",
+    "tags": [
+      "academic"
+    ],
+    "tier": "core",
+    "pos": "n. 名词"
+  },
+  {
+    "id": 1892,
+    "word": "fancy",
+    "spelling": "F-A-N-C-Y",
+    "phonetic": "/ˈfænsi/",
+    "gloss": "想象力；幻想",
+    "tip": "the fancy",
+    "example": "Check the fancy in the text.",
+    "exampleZh": "核对文本中的想象力。",
+    "tags": [
+      "academic"
+    ],
+    "tier": "core",
+    "pos": "n. 名词"
+  },
+  {
+    "id": 1893,
+    "word": "presence",
+    "spelling": "P-R-E-S-E-N-C-E",
+    "phonetic": "/ˈprɛzəns/",
+    "gloss": "出席；面前",
+    "tip": "the presence",
+    "example": "Check the presence in the text.",
+    "exampleZh": "核对文本中的出席。",
+    "tags": [
+      "academic"
+    ],
+    "tier": "core",
+    "pos": "n. 名词"
+  },
+  {
+    "id": 1894,
+    "word": "continual",
+    "spelling": "C-O-N-T-I-N-U-A-L",
+    "phonetic": "/kənˈtɪnjuəl/",
+    "gloss": "持续不断的；继续的",
+    "tip": "a continual …",
+    "example": "Give a continual answer.",
+    "exampleZh": "给出持续不断的回答。",
+    "tags": [
+      "academic"
+    ],
+    "tier": "core",
+    "pos": "adj. 形容词"
+  },
+  {
+    "id": 1895,
+    "word": "fountain",
+    "spelling": "F-O-U-N-T-A-I-N",
+    "phonetic": "/ˈfaʊntən/",
+    "gloss": "水源；源",
+    "tip": "the fountain",
+    "example": "Check the fountain in the text.",
+    "exampleZh": "核对文本中的水源。",
+    "tags": [
+      "academic"
+    ],
+    "tier": "core",
+    "pos": "n. 名词"
+  },
+  {
+    "id": 1896,
+    "word": "invent",
+    "spelling": "I-N-V-E-N-T",
+    "phonetic": "/ˌɪnˈvɛnt/",
+    "gloss": "发明；创作",
+    "tip": "invent …",
+    "example": "Please invent the key points.",
+    "exampleZh": "请发明要点。",
+    "tags": [
+      "academic"
+    ],
+    "tier": "core",
+    "pos": "v. 动词"
+  },
+  {
+    "id": 1897,
+    "word": "typewriter",
+    "spelling": "T-Y-P-E-W-R-I-T-E-R",
+    "phonetic": "/ˈtaɪˌpraɪtər/",
+    "gloss": "打字机",
+    "tip": "the typewriter",
+    "example": "Check the typewriter in the text.",
+    "exampleZh": "核对文本中的打字机。",
+    "tags": [
+      "academic"
+    ],
+    "tier": "core",
+    "pos": "n. 名词"
+  },
+  {
+    "id": 1898,
+    "word": "journalist",
+    "spelling": "J-O-U-R-N-A-L-I-S-T",
+    "phonetic": "/ˈʤərnəlɪst/",
+    "gloss": "新闻记者；从事新闻杂志业的人",
+    "tip": "the journalist",
+    "example": "Check the journalist in the text.",
+    "exampleZh": "核对文本中的新闻记者。",
+    "tags": [
+      "academic",
+      "campus"
+    ],
+    "tier": "core",
+    "pos": "n. 名词"
+  },
+  {
+    "id": 1899,
+    "word": "recorder",
+    "spelling": "R-E-C-O-R-D-E-R",
+    "phonetic": "/rɪˈkɔrdər/",
+    "gloss": "记录员；录音机",
+    "tip": "the recorder",
+    "example": "Check the recorder in the text.",
+    "exampleZh": "核对文本中的记录员。",
+    "tags": [
+      "academic"
+    ],
+    "tier": "core",
+    "pos": "n. 名词"
+  },
+  {
+    "id": 1900,
+    "word": "tide",
+    "spelling": "T-I-D-E",
+    "phonetic": "/taɪd/",
+    "gloss": "潮；潮汐",
+    "tip": "the tide",
+    "example": "Check the tide in the text.",
+    "exampleZh": "核对文本中的潮。",
+    "tags": [
+      "academic"
+    ],
+    "tier": "core",
+    "pos": "n. 名词"
+  },
+  {
+    "id": 1901,
+    "word": "oblige",
+    "spelling": "O-B-L-I-G-E",
+    "phonetic": "/əˈblaɪʤ/",
+    "gloss": "强制；施恩惠于",
+    "tip": "oblige …",
+    "example": "Please oblige the key points.",
+    "exampleZh": "请强制要点。",
+    "tags": [
+      "academic"
+    ],
+    "tier": "core",
+    "pos": "v. 动词"
+  },
+  {
+    "id": 1902,
+    "word": "obligation",
+    "spelling": "O-B-L-I-G-A-T-I-O-N",
+    "phonetic": "/ˌɑbləˈgeɪʃən/",
+    "gloss": "义务；责任",
+    "tip": "the obligation",
+    "example": "Check the obligation in the text.",
+    "exampleZh": "核对文本中的义务。",
+    "tags": [
+      "academic"
+    ],
+    "tier": "core",
+    "pos": "n. 名词"
+  },
+  {
+    "id": 1903,
+    "word": "initiative",
+    "spelling": "I-N-I-T-I-A-T-I-V-E",
+    "phonetic": "/ˌɪˈnɪʃətɪv/",
+    "gloss": "主动行动；首创精神",
+    "tip": "a initiative …",
+    "example": "Give a initiative answer.",
+    "exampleZh": "给出主动行动回答。",
+    "tags": [
+      "academic"
+    ],
+    "tier": "core",
+    "pos": "adj. 形容词"
+  },
+  {
+    "id": 1904,
+    "word": "residential",
+    "spelling": "R-E-S-I-D-E-N-T-I-A-L",
+    "phonetic": "/ˌrɛzɪˈdɛnʃəl/",
+    "gloss": "住宅的；与居住有关的",
+    "tip": "a residential …",
+    "example": "Give a residential answer.",
+    "exampleZh": "给出住宅的回答。",
+    "tags": [
+      "academic"
+    ],
+    "tier": "core",
+    "pos": "adj. 形容词"
+  },
+  {
+    "id": 1905,
+    "word": "psychological",
+    "spelling": "P-S-Y-C-H-O-L-O-G-I-C-A-L",
+    "phonetic": "/ˌsaɪkəˈlɑʤɪkəl/",
+    "gloss": "心理学的；精神上的",
+    "tip": "a psychological …",
+    "example": "Give a psychological answer.",
+    "exampleZh": "给出心理学的回答。",
+    "tags": [
+      "academic"
+    ],
+    "tier": "core",
+    "pos": "adj. 形容词"
+  },
+  {
+    "id": 1906,
+    "word": "extreme",
+    "spelling": "E-X-T-R-E-M-E",
+    "phonetic": "/ɪkˈstrim/",
+    "gloss": "极端；末端",
+    "tip": "the extreme",
+    "example": "Check the extreme in the text.",
+    "exampleZh": "核对文本中的极端。",
+    "tags": [
+      "academic",
+      "campus"
+    ],
+    "tier": "core",
+    "pos": "n. 名词"
+  },
+  {
+    "id": 1907,
+    "word": "camel",
+    "spelling": "C-A-M-E-L",
+    "phonetic": "/ˈkæməl/",
+    "gloss": "骆驼；打捞浮筒",
+    "tip": "the camel",
+    "example": "Check the camel in the text.",
+    "exampleZh": "核对文本中的骆驼。",
+    "tags": [
+      "academic"
+    ],
+    "tier": "core",
+    "pos": "n. 名词"
+  },
+  {
+    "id": 1908,
+    "word": "conquer",
+    "spelling": "C-O-N-Q-U-E-R",
+    "phonetic": "/ˈkɑŋkər/",
+    "gloss": "克服；征服",
+    "tip": "conquer …",
+    "example": "Please conquer the key points.",
+    "exampleZh": "请克服要点。",
+    "tags": [
+      "academic",
+      "campus"
+    ],
+    "tier": "core",
+    "pos": "v. 动词"
+  },
+  {
+    "id": 1909,
+    "word": "attraction",
+    "spelling": "A-T-T-R-A-C-T-I-O-N",
+    "phonetic": "/əˈtrækʃən/",
+    "gloss": "吸引；吸引人的事物",
+    "tip": "the attraction",
+    "example": "Check the attraction in the text.",
+    "exampleZh": "核对文本中的吸引。",
+    "tags": [
+      "academic"
+    ],
+    "tier": "core",
+    "pos": "n. 名词"
+  },
+  {
+    "id": 1910,
+    "word": "geometry",
+    "spelling": "G-E-O-M-E-T-R-Y",
+    "phonetic": "/ʤiˈɑmətri/",
+    "gloss": "几何学；[机] 几何学",
+    "tip": "the geometry",
+    "example": "Check the geometry in the text.",
+    "exampleZh": "核对文本中的几何学。",
+    "tags": [
+      "academic"
+    ],
+    "tier": "core",
+    "pos": "n. 名词"
+  },
+  {
+    "id": 1911,
+    "word": "keen",
+    "spelling": "K-E-E-N",
+    "phonetic": "/kin/",
+    "gloss": "锋利的；敏锐的",
+    "tip": "a keen …",
+    "example": "Give a keen answer.",
+    "exampleZh": "给出锋利的回答。",
+    "tags": [
+      "academic"
+    ],
+    "tier": "core",
+    "pos": "adj. 形容词"
+  },
+  {
+    "id": 1912,
+    "word": "specialist",
+    "spelling": "S-P-E-C-I-A-L-I-S-T",
+    "phonetic": "/ˈspɛʃəlɪst/",
+    "gloss": "专门医师；专家",
+    "tip": "the specialist",
+    "example": "Check the specialist in the text.",
+    "exampleZh": "核对文本中的专门医师。",
+    "tags": [
+      "academic",
+      "campus"
+    ],
+    "tier": "core",
+    "pos": "n. 名词"
+  },
+  {
+    "id": 1913,
+    "word": "riot",
+    "spelling": "R-I-O-T",
+    "phonetic": "/raɪət/",
+    "gloss": "暴动；喧闹",
+    "tip": "the riot",
+    "example": "Check the riot in the text.",
+    "exampleZh": "核对文本中的暴动。",
+    "tags": [
+      "academic"
+    ],
+    "tier": "core",
+    "pos": "n. 名词"
+  },
+  {
+    "id": 1914,
+    "word": "suspect",
+    "spelling": "S-U-S-P-E-C-T",
+    "phonetic": "/ˈsəˌspɛkt/",
+    "gloss": "被怀疑者；嫌疑犯",
+    "tip": "the suspect",
+    "example": "Check the suspect in the text.",
+    "exampleZh": "核对文本中的被怀疑者。",
+    "tags": [
+      "academic"
+    ],
+    "tier": "core",
+    "pos": "n. 名词"
+  },
+  {
+    "id": 1915,
+    "word": "absorb",
+    "spelling": "A-B-S-O-R-B",
+    "phonetic": "/əbˈzɔrb/",
+    "gloss": "吸收；使全神贯注",
+    "tip": "absorb …",
+    "example": "Please absorb the key points.",
+    "exampleZh": "请吸收要点。",
+    "tags": [
+      "academic",
+      "campus"
+    ],
+    "tier": "core",
+    "pos": "v. 动词"
+  },
+  {
+    "id": 1916,
+    "word": "worthwhile",
+    "spelling": "W-O-R-T-H-W-H-I-L-E",
+    "phonetic": "/ˈwərθˈwaɪl/",
+    "gloss": "值得花时间的；值得做的",
+    "tip": "a worthwhile …",
+    "example": "Give a worthwhile answer.",
+    "exampleZh": "给出值得花时间的回答。",
+    "tags": [
+      "academic"
+    ],
+    "tier": "core",
+    "pos": "adj. 形容词"
+  },
+  {
+    "id": 1917,
+    "word": "fabric",
+    "spelling": "F-A-B-R-I-C",
+    "phonetic": "/ˈfæbrɪk/",
+    "gloss": "织物；布",
+    "tip": "the fabric",
+    "example": "Check the fabric in the text.",
+    "exampleZh": "核对文本中的织物。",
+    "tags": [
+      "academic"
+    ],
+    "tier": "core",
+    "pos": "n. 名词"
+  },
+  {
+    "id": 1918,
+    "word": "horn",
+    "spelling": "H-O-R-N",
+    "phonetic": "/hɔrn/",
+    "gloss": "角；角质",
+    "tip": "the horn",
+    "example": "Check the horn in the text.",
+    "exampleZh": "核对文本中的角。",
+    "tags": [
+      "academic"
+    ],
+    "tier": "core",
+    "pos": "n. 名词"
+  },
+  {
+    "id": 1919,
+    "word": "lord",
+    "spelling": "L-O-R-D",
+    "phonetic": "/lɔrd/",
+    "gloss": "统治者；阁下",
+    "tip": "the lord",
+    "example": "Check the lord in the text.",
+    "exampleZh": "核对文本中的统治者。",
+    "tags": [
+      "academic"
+    ],
+    "tier": "core",
+    "pos": "n. 名词"
+  },
+  {
+    "id": 1920,
+    "word": "passion",
+    "spelling": "P-A-S-S-I-O-N",
+    "phonetic": "/ˈpæʃən/",
+    "gloss": "激情；酷爱",
+    "tip": "the passion",
+    "example": "Check the passion in the text.",
+    "exampleZh": "核对文本中的激情。",
+    "tags": [
+      "academic"
+    ],
+    "tier": "core",
+    "pos": "n. 名词"
+  },
+  {
+    "id": 1921,
+    "word": "scout",
+    "spelling": "S-C-O-U-T",
+    "phonetic": "/skaʊt/",
+    "gloss": "守候；侦察",
+    "tip": "the scout",
+    "example": "Check the scout in the text.",
+    "exampleZh": "核对文本中的守候。",
+    "tags": [
+      "academic"
+    ],
+    "tier": "core",
+    "pos": "n. 名词"
+  },
+  {
+    "id": 1922,
+    "word": "fairly",
+    "spelling": "F-A-I-R-L-Y",
+    "phonetic": "/ˈfɛrli/",
+    "gloss": "美观地；公平地",
+    "tip": "fairly …",
+    "example": "Answer fairly and clearly.",
+    "exampleZh": "请美观地且清楚地回答。",
+    "tags": [
+      "academic",
+      "campus"
+    ],
+    "tier": "core",
+    "pos": "adv. 副词"
+  },
+  {
+    "id": 1923,
+    "word": "slice",
+    "spelling": "S-L-I-C-E",
+    "phonetic": "/slaɪs/",
+    "gloss": "薄的切片；一部分",
+    "tip": "the slice",
+    "example": "Check the slice in the text.",
+    "exampleZh": "核对文本中的薄的切片。",
+    "tags": [
+      "academic"
+    ],
+    "tier": "core",
+    "pos": "n. 名词"
+  },
+  {
+    "id": 1924,
+    "word": "vitamin",
+    "spelling": "V-I-T-A-M-I-N",
+    "phonetic": "/ˈvaɪtəmən/",
+    "gloss": "维生素；[化] 维生素",
+    "tip": "the vitamin",
+    "example": "Check the vitamin in the text.",
+    "exampleZh": "核对文本中的维生素。",
+    "tags": [
+      "academic",
+      "campus"
+    ],
+    "tier": "core",
+    "pos": "n. 名词"
+  },
+  {
+    "id": 1925,
+    "word": "naked",
+    "spelling": "N-A-K-E-D",
+    "phonetic": "/ˈneɪkəd/",
+    "gloss": "裸体的；无装饰的",
+    "tip": "a naked …",
+    "example": "Give a naked answer.",
+    "exampleZh": "给出裸体的回答。",
+    "tags": [
+      "academic"
+    ],
+    "tier": "core",
+    "pos": "adj. 形容词"
+  },
+  {
+    "id": 1926,
+    "word": "abundant",
+    "spelling": "A-B-U-N-D-A-N-T",
+    "phonetic": "/əˈbəndənt/",
+    "gloss": "丰富的；充分的",
+    "tip": "a abundant …",
+    "example": "Give a abundant answer.",
+    "exampleZh": "给出丰富的回答。",
+    "tags": [
+      "academic"
+    ],
+    "tier": "core",
+    "pos": "adj. 形容词"
+  },
+  {
+    "id": 1927,
+    "word": "mushroom",
+    "spelling": "M-U-S-H-R-O-O-M",
+    "phonetic": "/ˈməʃrum/",
+    "gloss": "蘑菇形物；蘑菇",
+    "tip": "the mushroom",
+    "example": "Check the mushroom in the text.",
+    "exampleZh": "核对文本中的蘑菇形物。",
+    "tags": [
+      "academic"
+    ],
+    "tier": "core",
+    "pos": "n. 名词"
+  },
+  {
+    "id": 1928,
+    "word": "alcohol",
+    "spelling": "A-L-C-O-H-O-L",
+    "phonetic": "/ˈælkəˌhɑl/",
+    "gloss": "酒精；酒",
+    "tip": "the alcohol",
+    "example": "Check the alcohol in the text.",
+    "exampleZh": "核对文本中的酒精。",
+    "tags": [
+      "academic"
+    ],
+    "tier": "core",
+    "pos": "n. 名词"
+  },
+  {
+    "id": 1929,
+    "word": "faulty",
+    "spelling": "F-A-U-L-T-Y",
+    "phonetic": "/ˈfɔlti/",
+    "gloss": "有过失的；有缺点的",
+    "tip": "a faulty …",
+    "example": "Give a faulty answer.",
+    "exampleZh": "给出有过失的回答。",
+    "tags": [
+      "academic"
+    ],
+    "tier": "core",
+    "pos": "adj. 形容词"
+  },
+  {
+    "id": 1930,
+    "word": "agent",
+    "spelling": "A-G-E-N-T",
+    "phonetic": "/ˈeɪʤənt/",
+    "gloss": "代理商；政府代表",
+    "tip": "the agent",
+    "example": "Check the agent in the text.",
+    "exampleZh": "核对文本中的代理商。",
+    "tags": [
+      "academic"
+    ],
+    "tier": "core",
+    "pos": "n. 名词"
+  },
+  {
+    "id": 1931,
+    "word": "poll",
+    "spelling": "P-O-L-L",
+    "phonetic": "/poʊl/",
+    "gloss": "投票；民意测验",
+    "tip": "the poll",
+    "example": "Check the poll in the text.",
+    "exampleZh": "核对文本中的投票。",
+    "tags": [
+      "academic"
+    ],
+    "tier": "core",
+    "pos": "n. 名词"
+  },
+  {
+    "id": 1932,
+    "word": "elect",
+    "spelling": "E-L-E-C-T",
+    "phonetic": "/ɪˈlɛkt/",
+    "gloss": "当选人；被选的人",
+    "tip": "the elect",
+    "example": "Check the elect in the text.",
+    "exampleZh": "核对文本中的当选人。",
+    "tags": [
+      "academic"
+    ],
+    "tier": "core",
+    "pos": "n. 名词"
+  },
+  {
+    "id": 1933,
+    "word": "democratic",
+    "spelling": "D-E-M-O-C-R-A-T-I-C",
+    "phonetic": "/ˌdɛməˈkrætɪk/",
+    "gloss": "民主的；[法] 民主的",
+    "tip": "a democratic …",
+    "example": "Give a democratic answer.",
+    "exampleZh": "给出民主的回答。",
+    "tags": [
+      "academic"
+    ],
+    "tier": "core",
+    "pos": "adj. 形容词"
+  },
+  {
+    "id": 1934,
+    "word": "textile",
+    "spelling": "T-E-X-T-I-L-E",
+    "phonetic": "/ˈtɛkˌstaɪl/",
+    "gloss": "纺织品；纺织业",
+    "tip": "the textile",
+    "example": "Check the textile in the text.",
+    "exampleZh": "核对文本中的纺织品。",
+    "tags": [
+      "academic",
+      "campus"
+    ],
+    "tier": "core",
+    "pos": "n. 名词"
+  },
+  {
+    "id": 1935,
+    "word": "classification",
+    "spelling": "C-L-A-S-S-I-F-I-C-A-T-I-O-N",
+    "phonetic": "/ˌklæsəfəˈkeɪʃən/",
+    "gloss": "分类；分级",
+    "tip": "the classification",
+    "example": "Check the classification in the text.",
+    "exampleZh": "核对文本中的分类。",
+    "tags": [
+      "academic"
+    ],
+    "tier": "core",
+    "pos": "n. 名词"
+  },
+  {
+    "id": 1936,
+    "word": "cognitive",
+    "spelling": "C-O-G-N-I-T-I-V-E",
+    "phonetic": "/ˈkɑgnɪtɪv/",
+    "gloss": "认知的；认识的",
+    "tip": "a cognitive …",
+    "example": "Give a cognitive answer.",
+    "exampleZh": "给出认知的回答。",
+    "tags": [
+      "academic"
+    ],
+    "tier": "core",
+    "pos": "adj. 形容词"
+  },
+  {
+    "id": 1937,
+    "word": "underneath",
+    "spelling": "U-N-D-E-R-N-E-A-T-H",
+    "phonetic": "/ˌəndərˈniθ/",
+    "gloss": "在下面；在...的下面",
+    "tip": "underneath …",
+    "example": "Answer underneath and clearly.",
+    "exampleZh": "请在下面且清楚地回答。",
+    "tags": [
+      "academic"
+    ],
+    "tier": "core",
+    "pos": "adv. 副词"
+  },
+  {
+    "id": 1938,
+    "word": "scholar",
+    "spelling": "S-C-H-O-L-A-R",
+    "phonetic": "/ˈskɑlər/",
+    "gloss": "学者；奖学金获得者",
+    "tip": "the scholar",
+    "example": "Check the scholar in the text.",
+    "exampleZh": "核对文本中的学者。",
+    "tags": [
+      "academic"
+    ],
+    "tier": "core",
+    "pos": "n. 名词"
+  },
+  {
+    "id": 1939,
+    "word": "reconcile",
+    "spelling": "R-E-C-O-N-C-I-L-E",
+    "phonetic": "/ˈrɛkənˌsaɪl/",
+    "gloss": "使和解；调停",
+    "tip": "reconcile …",
+    "example": "Please reconcile the key points.",
+    "exampleZh": "请使和解要点。",
+    "tags": [
+      "academic"
+    ],
+    "tier": "core",
+    "pos": "v. 动词"
+  },
+  {
+    "id": 1940,
+    "word": "prestige",
+    "spelling": "P-R-E-S-T-I-G-E",
+    "phonetic": "/prɛˈstiʒ/",
+    "gloss": "声望；威望",
+    "tip": "the prestige",
+    "example": "Check the prestige in the text.",
+    "exampleZh": "核对文本中的声望。",
+    "tags": [
+      "academic"
+    ],
+    "tier": "core",
+    "pos": "n. 名词"
+  },
+  {
+    "id": 1941,
+    "word": "stadium",
+    "spelling": "S-T-A-D-I-U-M",
+    "phonetic": "/ˈsteɪdiəm/",
+    "gloss": "露天大型运动场；[医] 期",
+    "tip": "the stadium",
+    "example": "Check the stadium in the text.",
+    "exampleZh": "核对文本中的露天大型运动场。",
+    "tags": [
+      "academic"
+    ],
+    "tier": "core",
+    "pos": "n. 名词"
+  },
+  {
+    "id": 1942,
+    "word": "salesman",
+    "spelling": "S-A-L-E-S-M-A-N",
+    "phonetic": "/ˈseɪlzmən/",
+    "gloss": "售货员；推销员",
+    "tip": "the salesman",
+    "example": "Check the salesman in the text.",
+    "exampleZh": "核对文本中的售货员。",
+    "tags": [
+      "academic"
+    ],
+    "tier": "core",
+    "pos": "n. 名词"
+  },
+  {
+    "id": 1943,
+    "word": "coach",
+    "spelling": "C-O-A-C-H",
+    "phonetic": "/koʊʧ/",
+    "gloss": "四轮大马车；教练",
+    "tip": "the coach",
+    "example": "Check the coach in the text.",
+    "exampleZh": "核对文本中的四轮大马车。",
+    "tags": [
+      "academic"
+    ],
+    "tier": "core",
+    "pos": "n. 名词"
+  },
+  {
+    "id": 1944,
+    "word": "brilliant",
+    "spelling": "B-R-I-L-L-I-A-N-T",
+    "phonetic": "/ˈbrɪljənt/",
+    "gloss": "光辉的；灿烂的",
+    "tip": "a brilliant …",
+    "example": "Give a brilliant answer.",
+    "exampleZh": "给出光辉的回答。",
+    "tags": [
+      "academic"
+    ],
+    "tier": "core",
+    "pos": "adj. 形容词"
+  },
+  {
+    "id": 1945,
+    "word": "entertain",
+    "spelling": "E-N-T-E-R-T-A-I-N",
+    "phonetic": "/ˌɛnərˈteɪn/",
+    "gloss": "娱乐；招待",
+    "tip": "entertain …",
+    "example": "Please entertain the key points.",
+    "exampleZh": "请娱乐要点。",
+    "tags": [
+      "academic"
+    ],
+    "tier": "core",
+    "pos": "v. 动词"
+  },
+  {
+    "id": 1946,
+    "word": "amuse",
+    "spelling": "A-M-U-S-E",
+    "phonetic": "/əmˈjuz/",
+    "gloss": "消遣；娱乐",
+    "tip": "amuse …",
+    "example": "Please amuse the key points.",
+    "exampleZh": "请消遣要点。",
+    "tags": [
+      "academic"
+    ],
+    "tier": "core",
+    "pos": "v. 动词"
+  },
+  {
+    "id": 1947,
+    "word": "moral",
+    "spelling": "M-O-R-A-L",
+    "phonetic": "/ˈmɔrəl/",
+    "gloss": "道德；品行",
+    "tip": "the moral",
+    "example": "Check the moral in the text.",
+    "exampleZh": "核对文本中的道德。",
+    "tags": [
+      "academic"
+    ],
+    "tier": "core",
+    "pos": "n. 名词"
+  },
+  {
+    "id": 1948,
+    "word": "admire",
+    "spelling": "A-D-M-I-R-E",
+    "phonetic": "/ædˈmaɪr/",
+    "gloss": "赞美；钦佩",
+    "tip": "admire …",
+    "example": "Please admire the key points.",
+    "exampleZh": "请赞美要点。",
+    "tags": [
+      "academic"
+    ],
+    "tier": "core",
+    "pos": "v. 动词"
+  },
+  {
+    "id": 1949,
+    "word": "fairy",
+    "spelling": "F-A-I-R-Y",
+    "phonetic": "/ˈfɛri/",
+    "gloss": "仙女；精灵",
+    "tip": "the fairy",
+    "example": "Check the fairy in the text.",
+    "exampleZh": "核对文本中的仙女。",
+    "tags": [
+      "academic"
+    ],
+    "tier": "core",
+    "pos": "n. 名词"
+  },
+  {
+    "id": 1950,
+    "word": "somehow",
+    "spelling": "S-O-M-E-H-O-W",
+    "phonetic": "/ˈsəmˌhaʊ/",
+    "gloss": "不知何故",
+    "tip": "somehow …",
+    "example": "Answer somehow and clearly.",
+    "exampleZh": "请不知何故且清楚地回答。",
+    "tags": [
+      "academic"
+    ],
+    "tier": "core",
+    "pos": "adv. 副词"
+  },
+  {
+    "id": 1951,
+    "word": "butterfly",
+    "spelling": "B-U-T-T-E-R-F-L-Y",
+    "phonetic": "/ˈbətərˌflaɪ/",
+    "gloss": "蝴蝶；[医] 蝶式棉块",
+    "tip": "butterfly …",
+    "example": "Answer butterfly and clearly.",
+    "exampleZh": "请蝴蝶且清楚地回答。",
+    "tags": [
+      "academic"
+    ],
+    "tier": "core",
+    "pos": "adv. 副词"
+  },
+  {
+    "id": 1952,
+    "word": "worm",
+    "spelling": "W-O-R-M",
+    "phonetic": "/wərm/",
+    "gloss": "虫；蠕虫",
+    "tip": "the worm",
+    "example": "Check the worm in the text.",
+    "exampleZh": "核对文本中的虫。",
+    "tags": [
+      "academic"
+    ],
+    "tier": "core",
+    "pos": "n. 名词"
+  },
+  {
+    "id": 1953,
+    "word": "physicist",
+    "spelling": "P-H-Y-S-I-C-I-S-T",
+    "phonetic": "/ˈfɪzɪsɪst/",
+    "gloss": "物理学家；机械唯物论者",
+    "tip": "the physicist",
+    "example": "Check the physicist in the text.",
+    "exampleZh": "核对文本中的物理学家。",
+    "tags": [
+      "academic"
+    ],
+    "tier": "core",
+    "pos": "n. 名词"
+  },
+  {
+    "id": 1954,
+    "word": "resistance",
+    "spelling": "R-E-S-I-S-T-A-N-C-E",
+    "phonetic": "/rɪˈzɪstəns/",
+    "gloss": "抵抗力；反抗",
+    "tip": "the resistance",
+    "example": "Check the resistance in the text.",
+    "exampleZh": "核对文本中的抵抗力。",
+    "tags": [
+      "academic"
+    ],
+    "tier": "core",
+    "pos": "n. 名词"
+  },
+  {
+    "id": 1955,
+    "word": "independence",
+    "spelling": "I-N-D-E-P-E-N-D-E-N-C-E",
+    "phonetic": "/ˌɪndɪˈpɛndəns/",
+    "gloss": "独立；自立",
+    "tip": "the independence",
+    "example": "Check the independence in the text.",
+    "exampleZh": "核对文本中的独立。",
+    "tags": [
+      "academic"
+    ],
+    "tier": "core",
+    "pos": "n. 名词"
+  },
+  {
+    "id": 1956,
+    "word": "loyal",
+    "spelling": "L-O-Y-A-L",
+    "phonetic": "/lɔɪəl/",
+    "gloss": "忠诚的；忠实的",
+    "tip": "a loyal …",
+    "example": "Give a loyal answer.",
+    "exampleZh": "给出忠诚的回答。",
+    "tags": [
+      "academic"
+    ],
+    "tier": "core",
+    "pos": "adj. 形容词"
+  },
+  {
+    "id": 1957,
+    "word": "ambassador",
+    "spelling": "A-M-B-A-S-S-A-D-O-R",
+    "phonetic": "/æmˈbæsədər/",
+    "gloss": "大使；[法] 大使",
+    "tip": "the ambassador",
+    "example": "Check the ambassador in the text.",
+    "exampleZh": "核对文本中的大使。",
+    "tags": [
+      "academic"
+    ],
+    "tier": "core",
+    "pos": "n. 名词"
+  },
+  {
+    "id": 1958,
+    "word": "tropical",
+    "spelling": "T-R-O-P-I-C-A-L",
+    "phonetic": "/ˈtrɑpɪkəl/",
+    "gloss": "热带的；热情的",
+    "tip": "a tropical …",
+    "example": "Give a tropical answer.",
+    "exampleZh": "给出热带的回答。",
+    "tags": [
+      "academic",
+      "campus"
+    ],
+    "tier": "core",
+    "pos": "adj. 形容词"
+  },
+  {
+    "id": 1959,
+    "word": "pole",
+    "spelling": "P-O-L-E",
+    "phonetic": "/poʊl/",
+    "gloss": "波兰人；极点",
+    "tip": "the pole",
+    "example": "Check the pole in the text.",
+    "exampleZh": "核对文本中的波兰人。",
+    "tags": [
+      "academic"
+    ],
+    "tier": "core",
+    "pos": "n. 名词"
+  },
+  {
+    "id": 1960,
+    "word": "descend",
+    "spelling": "D-E-S-C-E-N-D",
+    "phonetic": "/dɪˈsɛnd/",
+    "gloss": "下降；世代相传",
+    "tip": "descend …",
+    "example": "Please descend the key points.",
+    "exampleZh": "请下降要点。",
+    "tags": [
+      "academic"
+    ],
+    "tier": "core",
+    "pos": "v. 动词"
+  },
+  {
+    "id": 1961,
+    "word": "extend",
+    "spelling": "E-X-T-E-N-D",
+    "phonetic": "/ɪkˈstɛnd/",
+    "gloss": "扩充；延伸",
+    "tip": "extend …",
+    "example": "Please extend the key points.",
+    "exampleZh": "请扩充要点。",
+    "tags": [
+      "academic",
+      "campus"
+    ],
+    "tier": "core",
+    "pos": "v. 动词"
+  },
+  {
+    "id": 1962,
+    "word": "rat",
+    "spelling": "R-A-T",
+    "phonetic": "/ræt/",
+    "gloss": "鼠；卑鄙的人",
+    "tip": "the rat",
+    "example": "Check the rat in the text.",
+    "exampleZh": "核对文本中的鼠。",
+    "tags": [
+      "academic"
+    ],
+    "tier": "core",
+    "pos": "n. 名词"
+  },
+  {
+    "id": 1963,
+    "word": "constitution",
+    "spelling": "C-O-N-S-T-I-T-U-T-I-O-N",
+    "phonetic": "/ˌkɑnstəˈtuʃən/",
+    "gloss": "构成；宪法",
+    "tip": "the constitution",
+    "example": "Check the constitution in the text.",
+    "exampleZh": "核对文本中的构成。",
+    "tags": [
+      "academic"
+    ],
+    "tier": "core",
+    "pos": "n. 名词"
+  },
+  {
+    "id": 1964,
+    "word": "emperor",
+    "spelling": "E-M-P-E-R-O-R",
+    "phonetic": "/ˈɛmpərər/",
+    "gloss": "皇帝；君主",
+    "tip": "the emperor",
+    "example": "Check the emperor in the text.",
+    "exampleZh": "核对文本中的皇帝。",
+    "tags": [
+      "academic"
+    ],
+    "tier": "core",
+    "pos": "n. 名词"
+  },
+  {
+    "id": 1965,
+    "word": "protest",
+    "spelling": "P-R-O-T-E-S-T",
+    "phonetic": "/ˈproʊˌtɛst/",
+    "gloss": "抗议；反对",
+    "tip": "the protest",
+    "example": "Check the protest in the text.",
+    "exampleZh": "核对文本中的抗议。",
+    "tags": [
+      "academic",
+      "campus"
+    ],
+    "tier": "core",
+    "pos": "n. 名词"
+  },
+  {
+    "id": 1966,
+    "word": "steady",
+    "spelling": "S-T-E-A-D-Y",
+    "phonetic": "/ˈstɛdi/",
+    "gloss": "稳定的；不动摇的",
+    "tip": "a steady …",
+    "example": "Give a steady answer.",
+    "exampleZh": "给出稳定的回答。",
+    "tags": [
+      "academic"
+    ],
+    "tier": "core",
+    "pos": "adj. 形容词"
+  },
+  {
+    "id": 1967,
+    "word": "grain",
+    "spelling": "G-R-A-I-N",
+    "phonetic": "/greɪn/",
+    "gloss": "谷粒；颗粒",
+    "tip": "the grain",
+    "example": "Check the grain in the text.",
+    "exampleZh": "核对文本中的谷粒。",
+    "tags": [
+      "academic"
+    ],
+    "tier": "core",
+    "pos": "n. 名词"
+  },
+  {
+    "id": 1968,
+    "word": "stale",
+    "spelling": "S-T-A-L-E",
+    "phonetic": "/steɪl/",
+    "gloss": "尿；不新鲜",
+    "tip": "the stale",
+    "example": "Check the stale in the text.",
+    "exampleZh": "核对文本中的尿。",
+    "tags": [
+      "academic"
+    ],
+    "tier": "core",
+    "pos": "n. 名词"
+  },
+  {
+    "id": 1969,
+    "word": "province",
+    "spelling": "P-R-O-V-I-N-C-E",
+    "phonetic": "/ˈprɑvɪns/",
+    "gloss": "省；地方",
+    "tip": "the province",
+    "example": "Check the province in the text.",
+    "exampleZh": "核对文本中的省。",
+    "tags": [
+      "academic"
+    ],
+    "tier": "core",
+    "pos": "n. 名词"
+  },
+  {
+    "id": 1970,
+    "word": "complaint",
+    "spelling": "C-O-M-P-L-A-I-N-T",
+    "phonetic": "/kəmˈpleɪnt/",
+    "gloss": "诉苦；抱怨",
+    "tip": "the complaint",
+    "example": "Check the complaint in the text.",
+    "exampleZh": "核对文本中的诉苦。",
+    "tags": [
+      "academic",
+      "campus"
+    ],
+    "tier": "core",
+    "pos": "n. 名词"
+  },
+  {
+    "id": 1971,
+    "word": "rail",
+    "spelling": "R-A-I-L",
+    "phonetic": "/reɪl/",
+    "gloss": "横杆；围栏",
+    "tip": "the rail",
+    "example": "Check the rail in the text.",
+    "exampleZh": "核对文本中的横杆。",
+    "tags": [
+      "academic",
+      "campus"
+    ],
+    "tier": "core",
+    "pos": "n. 名词"
+  },
+  {
+    "id": 1972,
+    "word": "inhabitant",
+    "spelling": "I-N-H-A-B-I-T-A-N-T",
+    "phonetic": "/ˌɪnˈhæbɪtənt/",
+    "gloss": "居民；居住者",
+    "tip": "the inhabitant",
+    "example": "Check the inhabitant in the text.",
+    "exampleZh": "核对文本中的居民。",
+    "tags": [
+      "academic",
+      "campus"
+    ],
+    "tier": "core",
+    "pos": "n. 名词"
+  },
+  {
+    "id": 1973,
+    "word": "differ",
+    "spelling": "D-I-F-F-E-R",
+    "phonetic": "/ˈdɪfər/",
+    "gloss": "不一致；不同",
+    "tip": "differ …",
+    "example": "Please differ the key points.",
+    "exampleZh": "请不一致要点。",
+    "tags": [
+      "academic"
+    ],
+    "tier": "core",
+    "pos": "v. 动词"
+  },
+  {
+    "id": 1974,
+    "word": "shortcoming",
+    "spelling": "S-H-O-R-T-C-O-M-I-N-G",
+    "phonetic": "/ˈʃɔrtˌkəmɪŋ/",
+    "gloss": "缺点；短处",
+    "tip": "the shortcoming",
+    "example": "Check the shortcoming in the text.",
+    "exampleZh": "核对文本中的缺点。",
+    "tags": [
+      "academic"
+    ],
+    "tier": "core",
+    "pos": "n. 名词"
+  },
+  {
+    "id": 1975,
+    "word": "shelter",
+    "spelling": "S-H-E-L-T-E-R",
+    "phonetic": "/ˈʃɛltər/",
+    "gloss": "庇护所；避难所",
+    "tip": "the shelter",
+    "example": "Check the shelter in the text.",
+    "exampleZh": "核对文本中的庇护所。",
+    "tags": [
+      "academic",
+      "campus"
+    ],
+    "tier": "core",
+    "pos": "n. 名词"
+  },
+  {
+    "id": 1976,
+    "word": "tag",
+    "spelling": "T-A-G",
+    "phonetic": "/tæg/",
+    "gloss": "标签；附属物",
+    "tip": "the tag",
+    "example": "Check the tag in the text.",
+    "exampleZh": "核对文本中的标签。",
+    "tags": [
+      "academic"
+    ],
+    "tier": "core",
+    "pos": "n. 名词"
+  },
+  {
+    "id": 1977,
+    "word": "monument",
+    "spelling": "M-O-N-U-M-E-N-T",
+    "phonetic": "/ˈmɑnjəmənt/",
+    "gloss": "纪念碑；纪念物",
+    "tip": "the monument",
+    "example": "Check the monument in the text.",
+    "exampleZh": "核对文本中的纪念碑。",
+    "tags": [
+      "academic"
+    ],
+    "tier": "core",
+    "pos": "n. 名词"
+  },
+  {
+    "id": 1978,
+    "word": "humble",
+    "spelling": "H-U-M-B-L-E",
+    "phonetic": "/ˈhəmbəl/",
+    "gloss": "低下的；谦逊的",
+    "tip": "a humble …",
+    "example": "Give a humble answer.",
+    "exampleZh": "给出低下的回答。",
+    "tags": [
+      "academic"
+    ],
+    "tier": "core",
+    "pos": "adj. 形容词"
+  },
+  {
+    "id": 1979,
+    "word": "subway",
+    "spelling": "S-U-B-W-A-Y",
+    "phonetic": "/ˈsəbˌweɪ/",
+    "gloss": "地铁；地道",
+    "tip": "the subway",
+    "example": "Check the subway in the text.",
+    "exampleZh": "核对文本中的地铁。",
+    "tags": [
+      "academic"
+    ],
+    "tier": "core",
+    "pos": "n. 名词"
+  },
+  {
+    "id": 1980,
+    "word": "embrace",
+    "spelling": "E-M-B-R-A-C-E",
+    "phonetic": "/ɪmˈbreɪs/",
+    "gloss": "拥抱；互相拥抱",
+    "tip": "the embrace",
+    "example": "Check the embrace in the text.",
+    "exampleZh": "核对文本中的拥抱。",
+    "tags": [
+      "academic"
+    ],
+    "tier": "core",
+    "pos": "n. 名词"
+  },
+  {
+    "id": 1981,
+    "word": "inspire",
+    "spelling": "I-N-S-P-I-R-E",
+    "phonetic": "/ˌɪnˈspaɪr/",
+    "gloss": "使感动；激发",
+    "tip": "inspire …",
+    "example": "Please inspire the key points.",
+    "exampleZh": "请使感动要点。",
+    "tags": [
+      "academic",
+      "campus"
+    ],
+    "tier": "core",
+    "pos": "v. 动词"
+  },
+  {
+    "id": 1982,
+    "word": "educate",
+    "spelling": "E-D-U-C-A-T-E",
+    "phonetic": "/ˈɛʤəˌkeɪt/",
+    "gloss": "教育；培养",
+    "tip": "educate …",
+    "example": "Please educate the key points.",
+    "exampleZh": "请教育要点。",
+    "tags": [
+      "academic"
+    ],
+    "tier": "core",
+    "pos": "v. 动词"
+  },
+  {
+    "id": 1983,
+    "word": "concrete",
+    "spelling": "C-O-N-C-R-E-T-E",
+    "phonetic": "/ˈkɑnkrit/",
+    "gloss": "凝结物；混凝土",
+    "tip": "the concrete",
+    "example": "Check the concrete in the text.",
+    "exampleZh": "核对文本中的凝结物。",
+    "tags": [
+      "academic"
+    ],
+    "tier": "core",
+    "pos": "n. 名词"
+  },
+  {
+    "id": 1984,
+    "word": "strategic",
+    "spelling": "S-T-R-A-T-E-G-I-C",
+    "phonetic": "/strəˈtiʤɪk/",
+    "gloss": "战略的；战略上的",
+    "tip": "a strategic …",
+    "example": "Give a strategic answer.",
+    "exampleZh": "给出战略的回答。",
+    "tags": [
+      "academic"
+    ],
+    "tier": "core",
+    "pos": "adj. 形容词"
+  },
+  {
+    "id": 1985,
+    "word": "urgent",
+    "spelling": "U-R-G-E-N-T",
+    "phonetic": "/ˈərʤənt/",
+    "gloss": "紧急的；急迫的",
+    "tip": "a urgent …",
+    "example": "Give a urgent answer.",
+    "exampleZh": "给出紧急的回答。",
+    "tags": [
+      "academic"
+    ],
+    "tier": "core",
+    "pos": "adj. 形容词"
+  },
+  {
+    "id": 1986,
+    "word": "brow",
+    "spelling": "B-R-O-W",
+    "phonetic": "/braʊ/",
+    "gloss": "眉毛；额",
+    "tip": "the brow",
+    "example": "Check the brow in the text.",
+    "exampleZh": "核对文本中的眉毛。",
+    "tags": [
+      "academic"
+    ],
+    "tier": "core",
+    "pos": "n. 名词"
+  },
+  {
+    "id": 1987,
+    "word": "literary",
+    "spelling": "L-I-T-E-R-A-R-Y",
+    "phonetic": "/ˈlɪtərˌɛri/",
+    "gloss": "文学的；文艺的",
+    "tip": "a literary …",
+    "example": "Give a literary answer.",
+    "exampleZh": "给出文学的回答。",
+    "tags": [
+      "academic"
+    ],
+    "tier": "core",
+    "pos": "adj. 形容词"
+  },
+  {
+    "id": 1988,
+    "word": "reporter",
+    "spelling": "R-E-P-O-R-T-E-R",
+    "phonetic": "/rɪˈpɔrtər/",
+    "gloss": "记者；报告者",
+    "tip": "the reporter",
+    "example": "Check the reporter in the text.",
+    "exampleZh": "核对文本中的记者。",
+    "tags": [
+      "academic"
+    ],
+    "tier": "core",
+    "pos": "n. 名词"
+  },
+  {
+    "id": 1989,
+    "word": "curious",
+    "spelling": "C-U-R-I-O-U-S",
+    "phonetic": "/ˈkjʊriəs/",
+    "gloss": "好奇的；求知的",
+    "tip": "a curious …",
+    "example": "Give a curious answer.",
+    "exampleZh": "给出好奇的回答。",
+    "tags": [
+      "academic"
+    ],
+    "tier": "core",
+    "pos": "adj. 形容词"
+  },
+  {
+    "id": 1990,
+    "word": "mixture",
+    "spelling": "M-I-X-T-U-R-E",
+    "phonetic": "/ˈmɪksʧər/",
+    "gloss": "混合；混淆",
+    "tip": "the mixture",
+    "example": "Check the mixture in the text.",
+    "exampleZh": "核对文本中的混合。",
+    "tags": [
+      "academic",
+      "campus"
+    ],
+    "tier": "core",
+    "pos": "n. 名词"
+  },
+  {
+    "id": 1991,
+    "word": "enrich",
+    "spelling": "E-N-R-I-C-H",
+    "phonetic": "/ɪnˈrɪʧ/",
+    "gloss": "使富足；使肥沃",
+    "tip": "enrich …",
+    "example": "Please enrich the key points.",
+    "exampleZh": "请使富足要点。",
+    "tags": [
+      "academic"
+    ],
+    "tier": "core",
+    "pos": "v. 动词"
+  },
+  {
+    "id": 1992,
+    "word": "musician",
+    "spelling": "M-U-S-I-C-I-A-N",
+    "phonetic": "/mjuˈzɪʃən/",
+    "gloss": "音乐家；乐师",
+    "tip": "the musician",
+    "example": "Check the musician in the text.",
+    "exampleZh": "核对文本中的音乐家。",
+    "tags": [
+      "academic"
+    ],
+    "tier": "core",
+    "pos": "n. 名词"
+  },
+  {
+    "id": 1993,
+    "word": "historic",
+    "spelling": "H-I-S-T-O-R-I-C",
+    "phonetic": "/hɪˈstɔrɪk/",
+    "gloss": "历史上著名的；有历史性的",
+    "tip": "a historic …",
+    "example": "Give a historic answer.",
+    "exampleZh": "给出历史上著名的回答。",
+    "tags": [
+      "academic"
+    ],
+    "tier": "core",
+    "pos": "adj. 形容词"
+  },
+  {
+    "id": 1994,
+    "word": "heritage",
+    "spelling": "H-E-R-I-T-A-G-E",
+    "phonetic": "/ˈhɛrɪtɪʤ/",
+    "gloss": "遗产；祖先遗留物",
+    "tip": "the heritage",
+    "example": "Check the heritage in the text.",
+    "exampleZh": "核对文本中的遗产。",
+    "tags": [
+      "academic"
+    ],
+    "tier": "core",
+    "pos": "n. 名词"
+  },
+  {
+    "id": 1995,
+    "word": "saint",
+    "spelling": "S-A-I-N-T",
+    "phonetic": "/seɪnt/",
+    "gloss": "圣徒；圣人",
+    "tip": "the saint",
+    "example": "Check the saint in the text.",
+    "exampleZh": "核对文本中的圣徒。",
+    "tags": [
+      "academic"
+    ],
+    "tier": "core",
+    "pos": "n. 名词"
+  },
+  {
+    "id": 1996,
+    "word": "incredible",
+    "spelling": "I-N-C-R-E-D-I-B-L-E",
+    "phonetic": "/ˌɪnˈkrɛdəbəl/",
+    "gloss": "难以置信的",
+    "tip": "a incredible …",
+    "example": "Give a incredible answer.",
+    "exampleZh": "给出难以置信的回答。",
+    "tags": [
+      "academic"
+    ],
+    "tier": "core",
+    "pos": "adj. 形容词"
+  },
+  {
+    "id": 1997,
+    "word": "retreat",
+    "spelling": "R-E-T-R-E-A-T",
+    "phonetic": "/riˈtrit/",
+    "gloss": "休息寓所；撤退",
+    "tip": "the retreat",
+    "example": "Check the retreat in the text.",
+    "exampleZh": "核对文本中的休息寓所。",
+    "tags": [
+      "academic"
+    ],
+    "tier": "core",
+    "pos": "n. 名词"
+  },
+  {
+    "id": 1998,
+    "word": "drill",
+    "spelling": "D-R-I-L-L",
+    "phonetic": "/drɪl/",
+    "gloss": "钻孔机；钻子",
+    "tip": "the drill",
+    "example": "Check the drill in the text.",
+    "exampleZh": "核对文本中的钻孔机。",
+    "tags": [
+      "academic",
+      "campus"
+    ],
+    "tier": "core",
+    "pos": "n. 名词"
+  },
+  {
+    "id": 1999,
+    "word": "urge",
+    "spelling": "U-R-G-E",
+    "phonetic": "/ərʤ/",
+    "gloss": "冲动；推动力",
+    "tip": "the urge",
+    "example": "Check the urge in the text.",
+    "exampleZh": "核对文本中的冲动。",
+    "tags": [
+      "academic"
+    ],
+    "tier": "core",
+    "pos": "n. 名词"
+  },
+  {
+    "id": 2000,
+    "word": "summit",
+    "spelling": "S-U-M-M-I-T",
+    "phonetic": "/ˈsəmɪt/",
+    "gloss": "顶点；最高阶层",
+    "tip": "the summit",
+    "example": "Check the summit in the text.",
+    "exampleZh": "核对文本中的顶点。",
+    "tags": [
+      "academic"
+    ],
+    "tier": "core",
+    "pos": "n. 名词"
+  },
+  {
+    "id": 2001,
+    "word": "harness",
+    "spelling": "H-A-R-N-E-S-S",
+    "phonetic": "/ˈhɑrnɪs/",
+    "gloss": "马具；挽具状带子",
+    "tip": "the harness",
+    "example": "Check the harness in the text.",
+    "exampleZh": "核对文本中的马具。",
+    "tags": [
+      "academic"
+    ],
+    "tier": "core",
+    "pos": "n. 名词"
+  },
+  {
+    "id": 2002,
+    "word": "realm",
+    "spelling": "R-E-A-L-M",
+    "phonetic": "/rɛlm/",
+    "gloss": "王国；领土",
+    "tip": "the realm",
+    "example": "Check the realm in the text.",
+    "exampleZh": "核对文本中的王国。",
+    "tags": [
+      "academic"
+    ],
+    "tier": "core",
+    "pos": "n. 名词"
+  },
+  {
+    "id": 2003,
+    "word": "illustration",
+    "spelling": "I-L-L-U-S-T-R-A-T-I-O-N",
+    "phonetic": "/ˌɪləˈstreɪʃən/",
+    "gloss": "例证；插图",
+    "tip": "the illustration",
+    "example": "Check the illustration in the text.",
+    "exampleZh": "核对文本中的例证。",
+    "tags": [
+      "academic",
+      "campus"
+    ],
+    "tier": "core",
+    "pos": "n. 名词"
+  },
+  {
+    "id": 2004,
+    "word": "christian",
+    "spelling": "C-H-R-I-S-T-I-A-N",
+    "phonetic": "/ˈkrɪsʧɪn/",
+    "gloss": "基督徒；正派人",
+    "tip": "the christian",
+    "example": "Check the christian in the text.",
+    "exampleZh": "核对文本中的基督徒。",
+    "tags": [
+      "academic"
+    ],
+    "tier": "core",
+    "pos": "n. 名词"
+  },
+  {
+    "id": 2005,
+    "word": "spin",
+    "spelling": "S-P-I-N",
+    "phonetic": "/spɪn/",
+    "gloss": "旋转；自旋",
+    "tip": "the spin",
+    "example": "Check the spin in the text.",
+    "exampleZh": "核对文本中的旋转。",
+    "tags": [
+      "academic"
+    ],
+    "tier": "core",
+    "pos": "n. 名词"
+  },
+  {
+    "id": 2006,
+    "word": "rocket",
+    "spelling": "R-O-C-K-E-T",
+    "phonetic": "/ˈrɑkət/",
+    "gloss": "火箭；烟火",
+    "tip": "the rocket",
+    "example": "Check the rocket in the text.",
+    "exampleZh": "核对文本中的火箭。",
+    "tags": [
+      "academic"
+    ],
+    "tier": "core",
+    "pos": "n. 名词"
+  },
+  {
+    "id": 2007,
+    "word": "turbine",
+    "spelling": "T-U-R-B-I-N-E",
+    "phonetic": "/ˈtərbaɪn/",
+    "gloss": "涡轮机；[化] 涡轮机",
+    "tip": "the turbine",
+    "example": "Check the turbine in the text.",
+    "exampleZh": "核对文本中的涡轮机。",
+    "tags": [
+      "academic"
+    ],
+    "tier": "core",
+    "pos": "n. 名词"
+  },
+  {
+    "id": 2008,
+    "word": "pump",
+    "spelling": "P-U-M-P",
+    "phonetic": "/pəmp/",
+    "gloss": "抽水机；打气筒",
+    "tip": "the pump",
+    "example": "Check the pump in the text.",
+    "exampleZh": "核对文本中的抽水机。",
+    "tags": [
+      "academic"
+    ],
+    "tier": "core",
+    "pos": "n. 名词"
+  },
+  {
+    "id": 2009,
+    "word": "angle",
+    "spelling": "A-N-G-L-E",
+    "phonetic": "/ˈæŋgəl/",
+    "gloss": "角；角度",
+    "tip": "the angle",
+    "example": "Check the angle in the text.",
+    "exampleZh": "核对文本中的角。",
+    "tags": [
+      "academic"
+    ],
+    "tier": "core",
+    "pos": "n. 名词"
+  },
+  {
+    "id": 2010,
+    "word": "blade",
+    "spelling": "B-L-A-D-E",
+    "phonetic": "/bleɪd/",
+    "gloss": "叶片；刀锋",
+    "tip": "the blade",
+    "example": "Check the blade in the text.",
+    "exampleZh": "核对文本中的叶片。",
+    "tags": [
+      "academic"
+    ],
+    "tier": "core",
+    "pos": "n. 名词"
+  },
+  {
+    "id": 2011,
+    "word": "flat",
+    "spelling": "F-L-A-T",
+    "phonetic": "/flæt/",
+    "gloss": "平坦的；单调的",
+    "tip": "a flat …",
+    "example": "Give a flat answer.",
+    "exampleZh": "给出平坦的回答。",
+    "tags": [
+      "academic",
+      "campus"
+    ],
+    "tier": "core",
+    "pos": "adj. 形容词"
+  },
+  {
+    "id": 2012,
+    "word": "owe",
+    "spelling": "O-W-E",
+    "phonetic": "/oʊ/",
+    "gloss": "亏欠；负...债",
+    "tip": "owe …",
+    "example": "Please owe the key points.",
+    "exampleZh": "请亏欠要点。",
+    "tags": [
+      "academic"
+    ],
+    "tier": "core",
+    "pos": "v. 动词"
+  },
+  {
+    "id": 2013,
+    "word": "sheer",
+    "spelling": "S-H-E-E-R",
+    "phonetic": "/ʃɪr/",
+    "gloss": "绝对的；全然的",
+    "tip": "a sheer …",
+    "example": "Give a sheer answer.",
+    "exampleZh": "给出绝对的回答。",
+    "tags": [
+      "academic"
+    ],
+    "tier": "core",
+    "pos": "adj. 形容词"
+  },
+  {
+    "id": 2014,
+    "word": "horror",
+    "spelling": "H-O-R-R-O-R",
+    "phonetic": "/ˈhɔrər/",
+    "gloss": "惊骇；恐怖",
+    "tip": "the horror",
+    "example": "Check the horror in the text.",
+    "exampleZh": "核对文本中的惊骇。",
+    "tags": [
+      "academic"
+    ],
+    "tier": "core",
+    "pos": "n. 名词"
+  },
+  {
+    "id": 2015,
+    "word": "grateful",
+    "spelling": "G-R-A-T-E-F-U-L",
+    "phonetic": "/ˈgreɪtfəl/",
+    "gloss": "感谢的；感激的",
+    "tip": "a grateful …",
+    "example": "Give a grateful answer.",
+    "exampleZh": "给出感谢的回答。",
+    "tags": [
+      "academic",
+      "campus"
+    ],
+    "tier": "core",
+    "pos": "adj. 形容词"
+  },
+  {
+    "id": 2016,
+    "word": "circuit",
+    "spelling": "C-I-R-C-U-I-T",
+    "phonetic": "/ˈsərkət/",
+    "gloss": "电路；环(行)道",
+    "tip": "the circuit",
+    "example": "Check the circuit in the text.",
+    "exampleZh": "核对文本中的电路。",
+    "tags": [
+      "academic"
+    ],
+    "tier": "core",
+    "pos": "n. 名词"
+  },
+  {
+    "id": 2017,
+    "word": "interference",
+    "spelling": "I-N-T-E-R-F-E-R-E-N-C-E",
+    "phonetic": "/ˌɪnərˈfɪrəns/",
+    "gloss": "冲突；干涉",
+    "tip": "the interference",
+    "example": "Check the interference in the text.",
+    "exampleZh": "核对文本中的冲突。",
+    "tags": [
+      "academic"
+    ],
+    "tier": "core",
+    "pos": "n. 名词"
+  },
+  {
+    "id": 2018,
+    "word": "rescue",
+    "spelling": "R-E-S-C-U-E",
+    "phonetic": "/ˈrɛskju/",
+    "gloss": "援救；解救",
+    "tip": "the rescue",
+    "example": "Check the rescue in the text.",
+    "exampleZh": "核对文本中的援救。",
+    "tags": [
+      "academic"
+    ],
+    "tier": "core",
+    "pos": "n. 名词"
+  },
+  {
+    "id": 2019,
+    "word": "multiply",
+    "spelling": "M-U-L-T-I-P-L-Y",
+    "phonetic": "/ˈməltəˌplaɪ/",
+    "gloss": "繁殖；乘",
+    "tip": "multiply …",
+    "example": "Answer multiply and clearly.",
+    "exampleZh": "请繁殖且清楚地回答。",
+    "tags": [
+      "academic"
+    ],
+    "tier": "core",
+    "pos": "adv. 副词"
+  },
+  {
+    "id": 2020,
+    "word": "hurricane",
+    "spelling": "H-U-R-R-I-C-A-N-E",
+    "phonetic": "/ˈhərəˌkeɪnz/",
+    "gloss": "飓风；暴风",
+    "tip": "the hurricane",
+    "example": "Check the hurricane in the text.",
+    "exampleZh": "核对文本中的飓风。",
+    "tags": [
+      "academic"
+    ],
+    "tier": "core",
+    "pos": "n. 名词"
+  },
+  {
+    "id": 2021,
+    "word": "tragedy",
+    "spelling": "T-R-A-G-E-D-Y",
+    "phonetic": "/ˈtræʤədi/",
+    "gloss": "悲剧；惨案",
+    "tip": "the tragedy",
+    "example": "Check the tragedy in the text.",
+    "exampleZh": "核对文本中的悲剧。",
+    "tags": [
+      "academic"
+    ],
+    "tier": "core",
+    "pos": "n. 名词"
+  },
+  {
+    "id": 2022,
+    "word": "carrier",
+    "spelling": "C-A-R-R-I-E-R",
+    "phonetic": "/ˈkɛriər/",
+    "gloss": "运送者；邮递员",
+    "tip": "the carrier",
+    "example": "Check the carrier in the text.",
+    "exampleZh": "核对文本中的运送者。",
+    "tags": [
+      "academic"
+    ],
+    "tier": "core",
+    "pos": "n. 名词"
+  },
+  {
+    "id": 2023,
+    "word": "victim",
+    "spelling": "V-I-C-T-I-M",
+    "phonetic": "/ˈvɪktɪm/",
+    "gloss": "受害人；牺牲者",
+    "tip": "the victim",
+    "example": "Check the victim in the text.",
+    "exampleZh": "核对文本中的受害人。",
+    "tags": [
+      "academic"
+    ],
+    "tier": "core",
+    "pos": "n. 名词"
+  },
+  {
+    "id": 2024,
+    "word": "plot",
+    "spelling": "P-L-O-T",
+    "phonetic": "/plɑt/",
+    "gloss": "小块土地；地区图",
+    "tip": "the plot",
+    "example": "Check the plot in the text.",
+    "exampleZh": "核对文本中的小块土地。",
+    "tags": [
+      "academic"
+    ],
+    "tier": "core",
+    "pos": "n. 名词"
+  },
+  {
+    "id": 2025,
+    "word": "vertical",
+    "spelling": "V-E-R-T-I-C-A-L",
+    "phonetic": "/ˈvərtɪkəl/",
+    "gloss": "垂直的；直立的",
+    "tip": "a vertical …",
+    "example": "Give a vertical answer.",
+    "exampleZh": "给出垂直的回答。",
+    "tags": [
+      "academic"
+    ],
+    "tier": "core",
+    "pos": "adj. 形容词"
+  },
+  {
+    "id": 2026,
+    "word": "recession",
+    "spelling": "R-E-C-E-S-S-I-O-N",
+    "phonetic": "/ˌriˈsɛʃən/",
+    "gloss": "后退；凹处",
+    "tip": "the recession",
+    "example": "Check the recession in the text.",
+    "exampleZh": "核对文本中的后退。",
+    "tags": [
+      "academic",
+      "campus"
+    ],
+    "tier": "core",
+    "pos": "n. 名词"
+  },
+  {
+    "id": 2027,
+    "word": "chip",
+    "spelling": "C-H-I-P",
+    "phonetic": "/ʧɪp/",
+    "gloss": "屑片；薄片",
+    "tip": "the chip",
+    "example": "Check the chip in the text.",
+    "exampleZh": "核对文本中的屑片。",
+    "tags": [
+      "academic"
+    ],
+    "tier": "core",
+    "pos": "n. 名词"
+  },
+  {
+    "id": 2028,
+    "word": "calorie",
+    "spelling": "C-A-L-O-R-I-E",
+    "phonetic": "/ˈkælɔˌri/",
+    "gloss": "卡路里（热量单位）",
+    "tip": "the calorie",
+    "example": "Check the calorie in the text.",
+    "exampleZh": "核对文本中的卡路里（热量单位）。",
+    "tags": [
+      "academic",
+      "campus"
+    ],
+    "tier": "core",
+    "pos": "n. 名词"
+  },
+  {
+    "id": 2029,
+    "word": "bucket",
+    "spelling": "B-U-C-K-E-T",
+    "phonetic": "/ˈbəkɪt/",
+    "gloss": "桶；[计] 存储桶",
+    "tip": "the bucket",
+    "example": "Check the bucket in the text.",
+    "exampleZh": "核对文本中的桶。",
+    "tags": [
+      "academic"
+    ],
+    "tier": "core",
+    "pos": "n. 名词"
+  },
+  {
+    "id": 2030,
+    "word": "spark",
+    "spelling": "S-P-A-R-K",
+    "phonetic": "/spɑrk/",
+    "gloss": "火花；火星",
+    "tip": "the spark",
+    "example": "Check the spark in the text.",
+    "exampleZh": "核对文本中的火花。",
+    "tags": [
+      "academic"
+    ],
+    "tier": "core",
+    "pos": "n. 名词"
+  },
+  {
+    "id": 2031,
+    "word": "lid",
+    "spelling": "L-I-D",
+    "phonetic": "/lɪd/",
+    "gloss": "盖子；限制",
+    "tip": "the lid",
+    "example": "Check the lid in the text.",
+    "exampleZh": "核对文本中的盖子。",
+    "tags": [
+      "academic"
+    ],
+    "tier": "core",
+    "pos": "n. 名词"
+  },
+  {
+    "id": 2032,
+    "word": "stir",
+    "spelling": "S-T-I-R",
+    "phonetic": "/stər/",
+    "gloss": "骚动；轰动",
+    "tip": "the stir",
+    "example": "Check the stir in the text.",
+    "exampleZh": "核对文本中的骚动。",
+    "tags": [
+      "academic"
+    ],
+    "tier": "core",
+    "pos": "n. 名词"
+  },
+  {
+    "id": 2033,
+    "word": "fluid",
+    "spelling": "F-L-U-I-D",
+    "phonetic": "/fluɪd/",
+    "gloss": "液体；分泌液",
+    "tip": "the fluid",
+    "example": "Check the fluid in the text.",
+    "exampleZh": "核对文本中的液体。",
+    "tags": [
+      "academic"
+    ],
+    "tier": "core",
+    "pos": "n. 名词"
+  },
+  {
+    "id": 2034,
+    "word": "drum",
+    "spelling": "D-R-U-M",
+    "phonetic": "/drəm/",
+    "gloss": "鼓；鼓声",
+    "tip": "the drum",
+    "example": "Check the drum in the text.",
+    "exampleZh": "核对文本中的鼓。",
+    "tags": [
+      "academic"
+    ],
+    "tier": "core",
+    "pos": "n. 名词"
+  },
+  {
+    "id": 2035,
+    "word": "lick",
+    "spelling": "L-I-C-K",
+    "phonetic": "/lɪk/",
+    "gloss": "舔；少许",
+    "tip": "the lick",
+    "example": "Check the lick in the text.",
+    "exampleZh": "核对文本中的舔。",
+    "tags": [
+      "academic"
+    ],
+    "tier": "core",
+    "pos": "n. 名词"
+  },
+  {
+    "id": 2036,
+    "word": "anxious",
+    "spelling": "A-N-X-I-O-U-S",
+    "phonetic": "/ˈæŋʃəs/",
+    "gloss": "忧虑的；发愁的",
+    "tip": "a anxious …",
+    "example": "Give a anxious answer.",
+    "exampleZh": "给出忧虑的回答。",
+    "tags": [
+      "academic"
+    ],
+    "tier": "core",
+    "pos": "adj. 形容词"
+  },
+  {
+    "id": 2037,
+    "word": "technician",
+    "spelling": "T-E-C-H-N-I-C-I-A-N",
+    "phonetic": "/tɛkˈnɪʃən/",
+    "gloss": "技师；[化] 技师",
+    "tip": "the technician",
+    "example": "Check the technician in the text.",
+    "exampleZh": "核对文本中的技师。",
+    "tags": [
+      "academic",
+      "campus"
+    ],
+    "tier": "core",
+    "pos": "n. 名词"
+  },
+  {
+    "id": 2038,
+    "word": "float",
+    "spelling": "F-L-O-A-T",
+    "phonetic": "/floʊt/",
+    "gloss": "漂流物；浮舟",
+    "tip": "the float",
+    "example": "Check the float in the text.",
+    "exampleZh": "核对文本中的漂流物。",
+    "tags": [
+      "academic"
+    ],
+    "tier": "core",
+    "pos": "n. 名词"
+  },
+  {
+    "id": 2039,
+    "word": "swell",
+    "spelling": "S-W-E-L-L",
+    "phonetic": "/swɛl/",
+    "gloss": "增大；隆起的部分",
+    "tip": "the swell",
+    "example": "Check the swell in the text.",
+    "exampleZh": "核对文本中的增大。",
+    "tags": [
+      "academic"
+    ],
+    "tier": "core",
+    "pos": "n. 名词"
+  },
+  {
+    "id": 2040,
+    "word": "squeeze",
+    "spelling": "S-Q-U-E-E-Z-E",
+    "phonetic": "/skwiz/",
+    "gloss": "紧握；挤",
+    "tip": "the squeeze",
+    "example": "Check the squeeze in the text.",
+    "exampleZh": "核对文本中的紧握。",
+    "tags": [
+      "academic"
+    ],
+    "tier": "core",
+    "pos": "n. 名词"
+  },
+  {
+    "id": 2041,
+    "word": "muscular",
+    "spelling": "M-U-S-C-U-L-A-R",
+    "phonetic": "/ˈməskjələr/",
+    "gloss": "强壮的；肌肉发达的",
+    "tip": "a muscular …",
+    "example": "Give a muscular answer.",
+    "exampleZh": "给出强壮的回答。",
+    "tags": [
+      "academic"
+    ],
+    "tier": "core",
+    "pos": "adj. 形容词"
+  },
+  {
+    "id": 2042,
+    "word": "ballet",
+    "spelling": "B-A-L-L-E-T",
+    "phonetic": "/bæˈleɪ/",
+    "gloss": "芭蕾舞",
+    "tip": "the ballet",
+    "example": "Check the ballet in the text.",
+    "exampleZh": "核对文本中的芭蕾舞。",
+    "tags": [
+      "academic"
+    ],
+    "tier": "core",
+    "pos": "n. 名词"
+  },
+  {
+    "id": 2043,
+    "word": "vocal",
+    "spelling": "V-O-C-A-L",
+    "phonetic": "/ˈvoʊkəl/",
+    "gloss": "嗓音的；声音的",
+    "tip": "a vocal …",
+    "example": "Give a vocal answer.",
+    "exampleZh": "给出嗓音的回答。",
+    "tags": [
+      "academic"
+    ],
+    "tier": "core",
+    "pos": "adj. 形容词"
+  },
+  {
+    "id": 2044,
+    "word": "hammer",
+    "spelling": "H-A-M-M-E-R",
+    "phonetic": "/ˈhæmər/",
+    "gloss": "锤；铁锤",
+    "tip": "the hammer",
+    "example": "Check the hammer in the text.",
+    "exampleZh": "核对文本中的锤。",
+    "tags": [
+      "academic"
+    ],
+    "tier": "core",
+    "pos": "n. 名词"
+  },
+  {
+    "id": 2045,
+    "word": "confront",
+    "spelling": "C-O-N-F-R-O-N-T",
+    "phonetic": "/kənˈfrənt/",
+    "gloss": "使面对；对抗",
+    "tip": "confront …",
+    "example": "Please confront the key points.",
+    "exampleZh": "请使面对要点。",
+    "tags": [
+      "academic"
+    ],
+    "tier": "core",
+    "pos": "v. 动词"
+  },
+  {
+    "id": 2046,
+    "word": "conductor",
+    "spelling": "C-O-N-D-U-C-T-O-R",
+    "phonetic": "/kənˈdəktər/",
+    "gloss": "领导者；指挥者",
+    "tip": "the conductor",
+    "example": "Check the conductor in the text.",
+    "exampleZh": "核对文本中的领导者。",
+    "tags": [
+      "academic",
+      "campus"
+    ],
+    "tier": "core",
+    "pos": "n. 名词"
+  },
+  {
+    "id": 2047,
+    "word": "remark",
+    "spelling": "R-E-M-A-R-K",
+    "phonetic": "/rɪˈmɑrk/",
+    "gloss": "评论；注意",
+    "tip": "the remark",
+    "example": "Check the remark in the text.",
+    "exampleZh": "核对文本中的评论。",
+    "tags": [
+      "academic"
+    ],
+    "tier": "core",
+    "pos": "n. 名词"
+  },
+  {
+    "id": 2048,
+    "word": "tractor",
+    "spelling": "T-R-A-C-T-O-R",
+    "phonetic": "/ˈtræktər/",
+    "gloss": "牵引器；拖拉机",
+    "tip": "the tractor",
+    "example": "Check the tractor in the text.",
+    "exampleZh": "核对文本中的牵引器。",
+    "tags": [
+      "academic"
+    ],
+    "tier": "core",
+    "pos": "n. 名词"
+  },
+  {
+    "id": 2049,
+    "word": "religion",
+    "spelling": "R-E-L-I-G-I-O-N",
+    "phonetic": "/rɪˈlɪʤən/",
+    "gloss": "宗教；信仰",
+    "tip": "the religion",
+    "example": "Check the religion in the text.",
+    "exampleZh": "核对文本中的宗教。",
+    "tags": [
+      "academic"
+    ],
+    "tier": "core",
+    "pos": "n. 名词"
+  },
+  {
+    "id": 2050,
+    "word": "receiver",
+    "spelling": "R-E-C-E-I-V-E-R",
+    "phonetic": "/rɪˈsivər/",
+    "gloss": "接收器；接受者",
+    "tip": "the receiver",
+    "example": "Check the receiver in the text.",
+    "exampleZh": "核对文本中的接收器。",
+    "tags": [
+      "academic"
+    ],
+    "tier": "core",
+    "pos": "n. 名词"
+  },
+  {
+    "id": 2051,
+    "word": "introduction",
+    "spelling": "I-N-T-R-O-D-U-C-T-I-O-N",
+    "phonetic": "/ˌɪntrəˈdəkʃən/",
+    "gloss": "介绍；传入",
+    "tip": "the introduction",
+    "example": "Check the introduction in the text.",
+    "exampleZh": "核对文本中的介绍。",
+    "tags": [
+      "academic"
+    ],
+    "tier": "core",
+    "pos": "n. 名词"
+  },
+  {
+    "id": 2052,
+    "word": "auxiliary",
+    "spelling": "A-U-X-I-L-I-A-R-Y",
+    "phonetic": "/ɑgˈzɪljəri/",
+    "gloss": "辅助者；辅助物",
+    "tip": "the auxiliary",
+    "example": "Check the auxiliary in the text.",
+    "exampleZh": "核对文本中的辅助者。",
+    "tags": [
+      "academic"
+    ],
+    "tier": "core",
+    "pos": "n. 名词"
+  },
+  {
+    "id": 2053,
+    "word": "mere",
+    "spelling": "M-E-R-E",
+    "phonetic": "/mɪr/",
+    "gloss": "小湖；池塘",
+    "tip": "the mere",
+    "example": "Check the mere in the text.",
+    "exampleZh": "核对文本中的小湖。",
+    "tags": [
+      "academic"
+    ],
+    "tier": "core",
+    "pos": "n. 名词"
+  },
+  {
+    "id": 2054,
+    "word": "deficiency",
+    "spelling": "D-E-F-I-C-I-E-N-C-Y",
+    "phonetic": "/dɪˈfɪʃənsi/",
+    "gloss": "缺乏；不足",
+    "tip": "the deficiency",
+    "example": "Check the deficiency in the text.",
+    "exampleZh": "核对文本中的缺乏。",
+    "tags": [
+      "academic"
+    ],
+    "tier": "core",
+    "pos": "n. 名词"
+  },
+  {
+    "id": 2055,
+    "word": "superficial",
+    "spelling": "S-U-P-E-R-F-I-C-I-A-L",
+    "phonetic": "/ˌsupərˈfɪʃəl/",
+    "gloss": "表面；外表",
+    "tip": "the superficial",
+    "example": "Check the superficial in the text.",
+    "exampleZh": "核对文本中的表面。",
+    "tags": [
+      "academic"
+    ],
+    "tier": "core",
+    "pos": "n. 名词"
+  },
+  {
+    "id": 2056,
+    "word": "utter",
+    "spelling": "U-T-T-E-R",
+    "phonetic": "/ˈətər/",
+    "gloss": "全然的；绝对的",
+    "tip": "a utter …",
+    "example": "Give a utter answer.",
+    "exampleZh": "给出全然的回答。",
+    "tags": [
+      "academic"
+    ],
+    "tier": "core",
+    "pos": "adj. 形容词"
+  },
+  {
+    "id": 2057,
+    "word": "clerk",
+    "spelling": "C-L-E-R-K",
+    "phonetic": "/klərk/",
+    "gloss": "办事员；职员",
+    "tip": "the clerk",
+    "example": "Check the clerk in the text.",
+    "exampleZh": "核对文本中的办事员。",
+    "tags": [
+      "academic"
+    ],
+    "tier": "core",
+    "pos": "n. 名词"
+  },
+  {
+    "id": 2058,
+    "word": "troop",
+    "spelling": "T-R-O-O-P",
+    "phonetic": "/trup/",
+    "gloss": "军队；一群",
+    "tip": "the troop",
+    "example": "Check the troop in the text.",
+    "exampleZh": "核对文本中的军队。",
+    "tags": [
+      "academic"
+    ],
+    "tier": "core",
+    "pos": "n. 名词"
+  },
+  {
+    "id": 2059,
+    "word": "standpoint",
+    "spelling": "S-T-A-N-D-P-O-I-N-T",
+    "phonetic": "/ˈstændˌpɔɪnt/",
+    "gloss": "立场；观点",
+    "tip": "the standpoint",
+    "example": "Check the standpoint in the text.",
+    "exampleZh": "核对文本中的立场。",
+    "tags": [
+      "academic"
+    ],
+    "tier": "core",
+    "pos": "n. 名词"
+  },
+  {
+    "id": 2060,
+    "word": "wool",
+    "spelling": "W-O-O-L",
+    "phonetic": "/wʊl/",
+    "gloss": "羊毛；毛织物",
+    "tip": "the wool",
+    "example": "Check the wool in the text.",
+    "exampleZh": "核对文本中的羊毛。",
+    "tags": [
+      "academic"
+    ],
+    "tier": "core",
+    "pos": "n. 名词"
+  },
+  {
+    "id": 2061,
+    "word": "vanish",
+    "spelling": "V-A-N-I-S-H",
+    "phonetic": "/ˈvænɪʃ/",
+    "gloss": "消失；不见",
+    "tip": "vanish …",
+    "example": "Please vanish the key points.",
+    "exampleZh": "请消失要点。",
+    "tags": [
+      "academic"
+    ],
+    "tier": "core",
+    "pos": "v. 动词"
+  },
+  {
+    "id": 2062,
+    "word": "lucky",
+    "spelling": "L-U-C-K-Y",
+    "phonetic": "/ˈləki/",
+    "gloss": "幸运的；吉祥的",
+    "tip": "a lucky …",
+    "example": "Give a lucky answer.",
+    "exampleZh": "给出幸运的回答。",
+    "tags": [
+      "academic"
+    ],
+    "tier": "core",
+    "pos": "adj. 形容词"
+  },
+  {
+    "id": 2063,
+    "word": "addition",
+    "spelling": "A-D-D-I-T-I-O-N",
+    "phonetic": "/əˈdɪʃən/",
+    "gloss": "加法；增加的人",
+    "tip": "the addition",
+    "example": "Check the addition in the text.",
+    "exampleZh": "核对文本中的加法。",
+    "tags": [
+      "academic",
+      "campus"
+    ],
+    "tier": "core",
+    "pos": "n. 名词"
+  },
+  {
+    "id": 2064,
+    "word": "reasonable",
+    "spelling": "R-E-A-S-O-N-A-B-L-E",
+    "phonetic": "/ˈrizənəbəl/",
+    "gloss": "合理的；明理的",
+    "tip": "a reasonable …",
+    "example": "Give a reasonable answer.",
+    "exampleZh": "给出合理的回答。",
+    "tags": [
+      "academic"
+    ],
+    "tier": "core",
+    "pos": "adj. 形容词"
+  },
+  {
+    "id": 2065,
+    "word": "bump",
+    "spelling": "B-U-M-P",
+    "phonetic": "/bəmp/",
+    "gloss": "撞击；肿块",
+    "tip": "the bump",
+    "example": "Check the bump in the text.",
+    "exampleZh": "核对文本中的撞击。",
+    "tags": [
+      "academic"
+    ],
+    "tier": "core",
+    "pos": "n. 名词"
+  },
+  {
+    "id": 2066,
+    "word": "pour",
+    "spelling": "P-O-U-R",
+    "phonetic": "/pɔr/",
+    "gloss": "流出；倾泻",
+    "tip": "the pour",
+    "example": "Check the pour in the text.",
+    "exampleZh": "核对文本中的流出。",
+    "tags": [
+      "academic"
+    ],
+    "tier": "core",
+    "pos": "n. 名词"
+  },
+  {
+    "id": 2067,
+    "word": "scatter",
+    "spelling": "S-C-A-T-T-E-R",
+    "phonetic": "/ˈskætər/",
+    "gloss": "消散；分散",
+    "tip": "the scatter",
+    "example": "Check the scatter in the text.",
+    "exampleZh": "核对文本中的消散。",
+    "tags": [
+      "academic"
+    ],
+    "tier": "core",
+    "pos": "n. 名词"
+  },
+  {
+    "id": 2068,
+    "word": "mild",
+    "spelling": "M-I-L-D",
+    "phonetic": "/maɪld/",
+    "gloss": "温和的；温柔的",
+    "tip": "a mild …",
+    "example": "Give a mild answer.",
+    "exampleZh": "给出温和的回答。",
+    "tags": [
+      "academic"
+    ],
+    "tier": "core",
+    "pos": "adj. 形容词"
+  },
+  {
+    "id": 2069,
+    "word": "moisture",
+    "spelling": "M-O-I-S-T-U-R-E",
+    "phonetic": "/ˈmɔɪsʧər/",
+    "gloss": "湿气；水分",
+    "tip": "the moisture",
+    "example": "Check the moisture in the text.",
+    "exampleZh": "核对文本中的湿气。",
+    "tags": [
+      "academic",
+      "campus"
+    ],
+    "tier": "core",
+    "pos": "n. 名词"
+  },
+  {
+    "id": 2070,
+    "word": "slope",
+    "spelling": "S-L-O-P-E",
+    "phonetic": "/sloʊp/",
+    "gloss": "倾斜；斜坡",
+    "tip": "the slope",
+    "example": "Check the slope in the text.",
+    "exampleZh": "核对文本中的倾斜。",
+    "tags": [
+      "academic"
+    ],
+    "tier": "core",
+    "pos": "n. 名词"
+  },
+  {
+    "id": 2071,
+    "word": "column",
+    "spelling": "C-O-L-U-M-N",
+    "phonetic": "/ˈkɑləm/",
+    "gloss": "专栏；圆柱",
+    "tip": "the column",
+    "example": "Check the column in the text.",
+    "exampleZh": "核对文本中的专栏。",
+    "tags": [
+      "academic"
+    ],
+    "tier": "core",
+    "pos": "n. 名词"
+  },
+  {
+    "id": 2072,
+    "word": "diameter",
+    "spelling": "D-I-A-M-E-T-E-R",
+    "phonetic": "/daɪˈæmətər/",
+    "gloss": "直径；[医] 直经",
+    "tip": "the diameter",
+    "example": "Check the diameter in the text.",
+    "exampleZh": "核对文本中的直径。",
+    "tags": [
+      "academic"
+    ],
+    "tier": "core",
+    "pos": "n. 名词"
+  },
+  {
+    "id": 2073,
+    "word": "faith",
+    "spelling": "F-A-I-T-H",
+    "phonetic": "/feɪθ/",
+    "gloss": "信心；信任",
+    "tip": "the faith",
+    "example": "Check the faith in the text.",
+    "exampleZh": "核对文本中的信心。",
+    "tags": [
+      "academic"
+    ],
+    "tier": "core",
+    "pos": "n. 名词"
+  },
+  {
+    "id": 2074,
+    "word": "pursuit",
+    "spelling": "P-U-R-S-U-I-T",
+    "phonetic": "/pərˈsut/",
+    "gloss": "追踪；追求",
+    "tip": "the pursuit",
+    "example": "Check the pursuit in the text.",
+    "exampleZh": "核对文本中的追踪。",
+    "tags": [
+      "academic"
+    ],
+    "tier": "core",
+    "pos": "n. 名词"
+  },
+  {
+    "id": 2075,
+    "word": "peculiar",
+    "spelling": "P-E-C-U-L-I-A-R",
+    "phonetic": "/pɪˈkjuljər/",
+    "gloss": "奇特的；罕见的",
+    "tip": "a peculiar …",
+    "example": "Give a peculiar answer.",
+    "exampleZh": "给出奇特的回答。",
+    "tags": [
+      "academic",
+      "campus"
+    ],
+    "tier": "core",
+    "pos": "adj. 形容词"
+  },
+  {
+    "id": 2076,
+    "word": "wrap",
+    "spelling": "W-R-A-P",
+    "phonetic": "/ræp/",
+    "gloss": "外套；围巾",
+    "tip": "the wrap",
+    "example": "Check the wrap in the text.",
+    "exampleZh": "核对文本中的外套。",
+    "tags": [
+      "academic"
+    ],
+    "tier": "core",
+    "pos": "n. 名词"
+  },
+  {
+    "id": 2077,
+    "word": "expansion",
+    "spelling": "E-X-P-A-N-S-I-O-N",
+    "phonetic": "/ɪkˈspænʧən/",
+    "gloss": "扩充；开展",
+    "tip": "the expansion",
+    "example": "Check the expansion in the text.",
+    "exampleZh": "核对文本中的扩充。",
+    "tags": [
+      "academic",
+      "campus"
+    ],
+    "tier": "core",
+    "pos": "n. 名词"
+  },
+  {
+    "id": 2078,
+    "word": "cautious",
+    "spelling": "C-A-U-T-I-O-U-S",
+    "phonetic": "/ˈkɔʃəs/",
+    "gloss": "谨慎的；小心的",
+    "tip": "a cautious …",
+    "example": "Give a cautious answer.",
+    "exampleZh": "给出谨慎的回答。",
+    "tags": [
+      "academic"
+    ],
+    "tier": "core",
+    "pos": "adj. 形容词"
+  },
+  {
+    "id": 2079,
+    "word": "acquisition",
+    "spelling": "A-C-Q-U-I-S-I-T-I-O-N",
+    "phonetic": "/ˌækwəˈzɪʃən/",
+    "gloss": "获得；获得物",
+    "tip": "the acquisition",
+    "example": "Check the acquisition in the text.",
+    "exampleZh": "核对文本中的获得。",
+    "tags": [
+      "academic"
+    ],
+    "tier": "core",
+    "pos": "n. 名词"
+  },
+  {
+    "id": 2080,
+    "word": "donation",
+    "spelling": "D-O-N-A-T-I-O-N",
+    "phonetic": "/doʊˈneɪʃən/",
+    "gloss": "捐赠物；捐款",
+    "tip": "the donation",
+    "example": "Check the donation in the text.",
+    "exampleZh": "核对文本中的捐赠物。",
+    "tags": [
+      "academic",
+      "campus"
+    ],
+    "tier": "core",
+    "pos": "n. 名词"
+  },
+  {
+    "id": 2081,
+    "word": "rotate",
+    "spelling": "R-O-T-A-T-E",
+    "phonetic": "/ˈroʊˌteɪt/",
+    "gloss": "辐状的；使旋转",
+    "tip": "rotate …",
+    "example": "Please rotate the key points.",
+    "exampleZh": "请辐状要点。",
+    "tags": [
+      "academic"
+    ],
+    "tier": "core",
+    "pos": "v. 动词"
+  },
+  {
+    "id": 2082,
+    "word": "storage",
+    "spelling": "S-T-O-R-A-G-E",
+    "phonetic": "/ˈstɔrɪʤ/",
+    "gloss": "存储器；储藏",
+    "tip": "the storage",
+    "example": "Check the storage in the text.",
+    "exampleZh": "核对文本中的存储器。",
+    "tags": [
+      "academic"
+    ],
+    "tier": "core",
+    "pos": "n. 名词"
+  },
+  {
+    "id": 2083,
+    "word": "delicate",
+    "spelling": "D-E-L-I-C-A-T-E",
+    "phonetic": "/ˈdɛləkət/",
+    "gloss": "细致优雅的；微妙的",
+    "tip": "delicate …",
+    "example": "Please delicate the key points.",
+    "exampleZh": "请细致优雅要点。",
+    "tags": [
+      "academic"
+    ],
+    "tier": "core",
+    "pos": "v. 动词"
+  },
+  {
+    "id": 2084,
+    "word": "swift",
+    "spelling": "S-W-I-F-T",
+    "phonetic": "/swɪft/",
+    "gloss": "褐雨燕；快速爬行的小蜥蜴",
+    "tip": "the swift",
+    "example": "Check the swift in the text.",
+    "exampleZh": "核对文本中的褐雨燕。",
+    "tags": [
+      "academic"
+    ],
+    "tier": "core",
+    "pos": "n. 名词"
+  },
+  {
+    "id": 2085,
+    "word": "outstanding",
+    "spelling": "O-U-T-S-T-A-N-D-I-N-G",
+    "phonetic": "/ˌaʊtˈstændɪŋ/",
+    "gloss": "杰出的；突出的",
+    "tip": "a outstanding …",
+    "example": "Give a outstanding answer.",
+    "exampleZh": "给出杰出的回答。",
+    "tags": [
+      "academic"
+    ],
+    "tier": "core",
+    "pos": "adj. 形容词"
+  },
+  {
+    "id": 2086,
+    "word": "repeatedly",
+    "spelling": "R-E-P-E-A-T-E-D-L-Y",
+    "phonetic": "/rɪˈpitɪdli/",
+    "gloss": "重复地；再三地",
+    "tip": "repeatedly …",
+    "example": "Answer repeatedly and clearly.",
+    "exampleZh": "请重复地且清楚地回答。",
+    "tags": [
+      "academic"
+    ],
+    "tier": "core",
+    "pos": "adv. 副词"
+  },
+  {
+    "id": 2087,
+    "word": "canal",
+    "spelling": "C-A-N-A-L",
+    "phonetic": "/kəˈnæl/",
+    "gloss": "运河；水道",
+    "tip": "the canal",
+    "example": "Check the canal in the text.",
+    "exampleZh": "核对文本中的运河。",
+    "tags": [
+      "academic"
+    ],
+    "tier": "core",
+    "pos": "n. 名词"
+  },
+  {
+    "id": 2088,
+    "word": "confuse",
+    "spelling": "C-O-N-F-U-S-E",
+    "phonetic": "/kənfˈjuz/",
+    "gloss": "使混乱；使狼狈",
+    "tip": "confuse …",
+    "example": "Please confuse the key points.",
+    "exampleZh": "请使混乱要点。",
+    "tags": [
+      "academic",
+      "campus"
+    ],
+    "tier": "core",
+    "pos": "v. 动词"
+  },
+  {
+    "id": 2089,
+    "word": "grip",
+    "spelling": "G-R-I-P",
+    "phonetic": "/grɪp/",
+    "gloss": "紧握；柄",
+    "tip": "the grip",
+    "example": "Check the grip in the text.",
+    "exampleZh": "核对文本中的紧握。",
+    "tags": [
+      "academic"
+    ],
+    "tier": "core",
+    "pos": "n. 名词"
+  },
+  {
+    "id": 2090,
+    "word": "favourite",
+    "spelling": "F-A-V-O-U-R-I-T-E",
+    "phonetic": "/ˈfeɪvərɪt/",
+    "gloss": "喜欢的事物；喜爱",
+    "tip": "the favourite",
+    "example": "Check the favourite in the text.",
+    "exampleZh": "核对文本中的喜欢的事物。",
+    "tags": [
+      "academic"
+    ],
+    "tier": "core",
+    "pos": "n. 名词"
+  },
+  {
+    "id": 2091,
+    "word": "expense",
+    "spelling": "E-X-P-E-N-S-E",
+    "phonetic": "/ɪkˈspɛns/",
+    "gloss": "费用；代价",
+    "tip": "the expense",
+    "example": "Check the expense in the text.",
+    "exampleZh": "核对文本中的费用。",
+    "tags": [
+      "academic",
+      "campus"
+    ],
+    "tier": "core",
+    "pos": "n. 名词"
+  },
+  {
+    "id": 2092,
+    "word": "thumb",
+    "spelling": "T-H-U-M-B",
+    "phonetic": "/θəm/",
+    "gloss": "拇指；以拇指拨弄",
+    "tip": "the thumb",
+    "example": "Check the thumb in the text.",
+    "exampleZh": "核对文本中的拇指。",
+    "tags": [
+      "academic"
+    ],
+    "tier": "core",
+    "pos": "n. 名词"
+  },
+  {
+    "id": 2093,
+    "word": "awful",
+    "spelling": "A-W-F-U-L",
+    "phonetic": "/ˈɔfəl/",
+    "gloss": "可怕的；庄严的",
+    "tip": "a awful …",
+    "example": "Give a awful answer.",
+    "exampleZh": "给出可怕的回答。",
+    "tags": [
+      "academic"
+    ],
+    "tier": "core",
+    "pos": "adj. 形容词"
+  },
+  {
+    "id": 2094,
+    "word": "charity",
+    "spelling": "C-H-A-R-I-T-Y",
+    "phonetic": "/ˈʧɛrɪti/",
+    "gloss": "慈悲；博爱",
+    "tip": "the charity",
+    "example": "Check the charity in the text.",
+    "exampleZh": "核对文本中的慈悲。",
+    "tags": [
+      "academic"
+    ],
+    "tier": "core",
+    "pos": "n. 名词"
+  },
+  {
+    "id": 2095,
+    "word": "graceful",
+    "spelling": "G-R-A-C-E-F-U-L",
+    "phonetic": "/ˈgreɪsfəl/",
+    "gloss": "优美的",
+    "tip": "a graceful …",
+    "example": "Give a graceful answer.",
+    "exampleZh": "给出优美的回答。",
+    "tags": [
+      "academic"
+    ],
+    "tier": "core",
+    "pos": "adj. 形容词"
+  },
+  {
+    "id": 2096,
+    "word": "tender",
+    "spelling": "T-E-N-D-E-R",
+    "phonetic": "/ˈtɛndər/",
+    "gloss": "嫩的；柔软的",
+    "tip": "a tender …",
+    "example": "Give a tender answer.",
+    "exampleZh": "给出嫩的回答。",
+    "tags": [
+      "academic"
+    ],
+    "tier": "core",
+    "pos": "adj. 形容词"
+  },
+  {
+    "id": 2097,
+    "word": "salad",
+    "spelling": "S-A-L-A-D",
+    "phonetic": "/ˈsæləd/",
+    "gloss": "色拉",
+    "tip": "the salad",
+    "example": "Check the salad in the text.",
+    "exampleZh": "核对文本中的色拉。",
+    "tags": [
+      "academic"
+    ],
+    "tier": "core",
+    "pos": "n. 名词"
+  },
+  {
+    "id": 2098,
+    "word": "ridge",
+    "spelling": "R-I-D-G-E",
+    "phonetic": "/rɪʤ/",
+    "gloss": "脊；山脊",
+    "tip": "the ridge",
+    "example": "Check the ridge in the text.",
+    "exampleZh": "核对文本中的脊。",
+    "tags": [
+      "academic"
+    ],
+    "tier": "core",
+    "pos": "n. 名词"
+  },
+  {
+    "id": 2099,
+    "word": "relieve",
+    "spelling": "R-E-L-I-E-V-E",
+    "phonetic": "/rɪˈliv/",
+    "gloss": "减轻；救济",
+    "tip": "relieve …",
+    "example": "Please relieve the key points.",
+    "exampleZh": "请减轻要点。",
+    "tags": [
+      "academic"
+    ],
+    "tier": "core",
+    "pos": "v. 动词"
+  },
+  {
+    "id": 2100,
+    "word": "static",
+    "spelling": "S-T-A-T-I-C",
+    "phonetic": "/ˈstætɪk/",
+    "gloss": "静电；静电干扰",
+    "tip": "the static",
+    "example": "Check the static in the text.",
+    "exampleZh": "核对文本中的静电。",
+    "tags": [
+      "academic"
+    ],
+    "tier": "core",
+    "pos": "n. 名词"
+  },
+  {
+    "id": 2101,
+    "word": "lover",
+    "spelling": "L-O-V-E-R",
+    "phonetic": "/ˈləvər/",
+    "gloss": "爱人；爱好者",
+    "tip": "the lover",
+    "example": "Check the lover in the text.",
+    "exampleZh": "核对文本中的爱人。",
+    "tags": [
+      "academic"
+    ],
+    "tier": "core",
+    "pos": "n. 名词"
+  },
+  {
+    "id": 2102,
+    "word": "superior",
+    "spelling": "S-U-P-E-R-I-O-R",
+    "phonetic": "/suˈpɪriər/",
+    "gloss": "长者；占优势的人",
+    "tip": "the superior",
+    "example": "Check the superior in the text.",
+    "exampleZh": "核对文本中的长者。",
+    "tags": [
+      "academic"
+    ],
+    "tier": "core",
+    "pos": "n. 名词"
+  },
+  {
+    "id": 2103,
+    "word": "prevail",
+    "spelling": "P-R-E-V-A-I-L",
+    "phonetic": "/prɪˈveɪl/",
+    "gloss": "获胜；流行",
+    "tip": "prevail …",
+    "example": "Please prevail the key points.",
+    "exampleZh": "请获胜要点。",
+    "tags": [
+      "academic",
+      "campus"
+    ],
+    "tier": "core",
+    "pos": "v. 动词"
+  },
+  {
+    "id": 2104,
+    "word": "recreation",
+    "spelling": "R-E-C-R-E-A-T-I-O-N",
+    "phonetic": "/ˌrɛkriˈeɪʃən/",
+    "gloss": "娱乐；消遣",
+    "tip": "the recreation",
+    "example": "Check the recreation in the text.",
+    "exampleZh": "核对文本中的娱乐。",
+    "tags": [
+      "academic"
+    ],
+    "tier": "core",
+    "pos": "n. 名词"
+  },
+  {
+    "id": 2105,
+    "word": "dorm",
+    "spelling": "D-O-R-M",
+    "phonetic": "/dɔrm/",
+    "gloss": "宿舍",
+    "tip": "the dorm",
+    "example": "Check the dorm in the text.",
+    "exampleZh": "核对文本中的宿舍。",
+    "tags": [
+      "academic"
+    ],
+    "tier": "core",
+    "pos": "n. 名词"
+  },
+  {
+    "id": 2106,
+    "word": "ash",
+    "spelling": "A-S-H",
+    "phonetic": "/æʃ/",
+    "gloss": "灰；灰烬",
+    "tip": "the ash",
+    "example": "Check the ash in the text.",
+    "exampleZh": "核对文本中的灰。",
+    "tags": [
+      "academic"
+    ],
+    "tier": "core",
+    "pos": "n. 名词"
+  },
+  {
+    "id": 2107,
+    "word": "bathe",
+    "spelling": "B-A-T-H-E",
+    "phonetic": "/beɪð/",
+    "gloss": "沐浴；用水洗",
+    "tip": "bathe …",
+    "example": "Please bathe the key points.",
+    "exampleZh": "请沐浴要点。",
+    "tags": [
+      "academic"
+    ],
+    "tier": "core",
+    "pos": "v. 动词"
+  },
+  {
+    "id": 2108,
+    "word": "stripe",
+    "spelling": "S-T-R-I-P-E",
+    "phonetic": "/straɪp/",
+    "gloss": "斑纹；条纹",
+    "tip": "the stripe",
+    "example": "Check the stripe in the text.",
+    "exampleZh": "核对文本中的斑纹。",
+    "tags": [
+      "academic",
+      "campus"
+    ],
+    "tier": "core",
+    "pos": "n. 名词"
+  },
+  {
+    "id": 2109,
+    "word": "poisonous",
+    "spelling": "P-O-I-S-O-N-O-U-S",
+    "phonetic": "/ˈpɔɪzənəs/",
+    "gloss": "有毒的；恶毒的",
+    "tip": "a poisonous …",
+    "example": "Give a poisonous answer.",
+    "exampleZh": "给出有毒的回答。",
+    "tags": [
+      "academic"
+    ],
+    "tier": "core",
+    "pos": "adj. 形容词"
+  },
+  {
+    "id": 2110,
+    "word": "poison",
+    "spelling": "P-O-I-S-O-N",
+    "phonetic": "/ˈpɔɪzən/",
+    "gloss": "毒药；毒",
+    "tip": "the poison",
+    "example": "Check the poison in the text.",
+    "exampleZh": "核对文本中的毒药。",
+    "tags": [
+      "academic"
+    ],
+    "tier": "core",
+    "pos": "n. 名词"
+  },
+  {
+    "id": 2111,
+    "word": "barn",
+    "spelling": "B-A-R-N",
+    "phonetic": "/bɑrn/",
+    "gloss": "谷仓；[化] 靶(恩)",
+    "tip": "the barn",
+    "example": "Check the barn in the text.",
+    "exampleZh": "核对文本中的谷仓。",
+    "tags": [
+      "academic",
+      "campus"
+    ],
+    "tier": "core",
+    "pos": "n. 名词"
+  },
+  {
+    "id": 2112,
+    "word": "beam",
+    "spelling": "B-E-A-M",
+    "phonetic": "/bim/",
+    "gloss": "横梁；杆",
+    "tip": "the beam",
+    "example": "Check the beam in the text.",
+    "exampleZh": "核对文本中的横梁。",
+    "tags": [
+      "academic"
+    ],
+    "tier": "core",
+    "pos": "n. 名词"
+  },
+  {
+    "id": 2113,
+    "word": "straw",
+    "spelling": "S-T-R-A-W",
+    "phonetic": "/strɔ/",
+    "gloss": "稻草；麦管",
+    "tip": "the straw",
+    "example": "Check the straw in the text.",
+    "exampleZh": "核对文本中的稻草。",
+    "tags": [
+      "academic"
+    ],
+    "tier": "core",
+    "pos": "n. 名词"
+  },
+  {
+    "id": 2114,
+    "word": "bundle",
+    "spelling": "B-U-N-D-L-E",
+    "phonetic": "/ˈbəndəl/",
+    "gloss": "捆；束",
+    "tip": "the bundle",
+    "example": "Check the bundle in the text.",
+    "exampleZh": "核对文本中的捆。",
+    "tags": [
+      "academic"
+    ],
+    "tier": "core",
+    "pos": "n. 名词"
+  },
+  {
+    "id": 2115,
+    "word": "clay",
+    "spelling": "C-L-A-Y",
+    "phonetic": "/kleɪ/",
+    "gloss": "泥土；肉体",
+    "tip": "the clay",
+    "example": "Check the clay in the text.",
+    "exampleZh": "核对文本中的泥土。",
+    "tags": [
+      "academic"
+    ],
+    "tier": "core",
+    "pos": "n. 名词"
+  },
+  {
+    "id": 2116,
+    "word": "tile",
+    "spelling": "T-I-L-E",
+    "phonetic": "/taɪl/",
+    "gloss": "砖瓦；瓷砖",
+    "tip": "the tile",
+    "example": "Check the tile in the text.",
+    "exampleZh": "核对文本中的砖瓦。",
+    "tags": [
+      "academic"
+    ],
+    "tier": "core",
+    "pos": "n. 名词"
+  },
+  {
+    "id": 2117,
+    "word": "craft",
+    "spelling": "C-R-A-F-T",
+    "phonetic": "/kræft/",
+    "gloss": "技艺；手艺",
+    "tip": "the craft",
+    "example": "Check the craft in the text.",
+    "exampleZh": "核对文本中的技艺。",
+    "tags": [
+      "academic"
+    ],
+    "tier": "core",
+    "pos": "n. 名词"
+  },
+  {
+    "id": 2118,
+    "word": "microphone",
+    "spelling": "M-I-C-R-O-P-H-O-N-E",
+    "phonetic": "/ˈmaɪkrəˌfoʊn/",
+    "gloss": "扩音器；麦克风",
+    "tip": "the microphone",
+    "example": "Check the microphone in the text.",
+    "exampleZh": "核对文本中的扩音器。",
+    "tags": [
+      "academic"
+    ],
+    "tier": "core",
+    "pos": "n. 名词"
+  },
+  {
+    "id": 2119,
+    "word": "suggestion",
+    "spelling": "S-U-G-G-E-S-T-I-O-N",
+    "phonetic": "/səˈʤɛsʧən/",
+    "gloss": "提议；意见",
+    "tip": "the suggestion",
+    "example": "Check the suggestion in the text.",
+    "exampleZh": "核对文本中的提议。",
+    "tags": [
+      "academic"
+    ],
+    "tier": "core",
+    "pos": "n. 名词"
+  },
+  {
+    "id": 2120,
+    "word": "pest",
+    "spelling": "P-E-S-T",
+    "phonetic": "/pɛst/",
+    "gloss": "令人讨厌之物；有害之物",
+    "tip": "the pest",
+    "example": "Check the pest in the text.",
+    "exampleZh": "核对文本中的令人讨厌之物。",
+    "tags": [
+      "academic"
+    ],
+    "tier": "core",
+    "pos": "n. 名词"
+  },
+  {
+    "id": 2121,
+    "word": "centigrade",
+    "spelling": "C-E-N-T-I-G-R-A-D-E",
+    "phonetic": "/ˈsɛntəˌgreɪd/",
+    "gloss": "百分度的；摄氏的",
+    "tip": "a centigrade …",
+    "example": "Give a centigrade answer.",
+    "exampleZh": "给出百分度的回答。",
+    "tags": [
+      "academic"
+    ],
+    "tier": "core",
+    "pos": "adj. 形容词"
+  },
+  {
+    "id": 2122,
+    "word": "sketch",
+    "spelling": "S-K-E-T-C-H",
+    "phonetic": "/skɛʧ/",
+    "gloss": "素描；草图",
+    "tip": "the sketch",
+    "example": "Check the sketch in the text.",
+    "exampleZh": "核对文本中的素描。",
+    "tags": [
+      "academic"
+    ],
+    "tier": "core",
+    "pos": "n. 名词"
+  },
+  {
+    "id": 2123,
+    "word": "statement",
+    "spelling": "S-T-A-T-E-M-E-N-T",
+    "phonetic": "/ˈsteɪtmənt/",
+    "gloss": "陈述；指令",
+    "tip": "the statement",
+    "example": "Check the statement in the text.",
+    "exampleZh": "核对文本中的陈述。",
+    "tags": [
+      "academic",
+      "campus"
+    ],
+    "tier": "core",
+    "pos": "n. 名词"
+  },
+  {
+    "id": 2124,
+    "word": "hay",
+    "spelling": "H-A-Y",
+    "phonetic": "/heɪ/",
+    "gloss": "干草；制干草",
+    "tip": "the hay",
+    "example": "Check the hay in the text.",
+    "exampleZh": "核对文本中的干草。",
+    "tags": [
+      "academic"
+    ],
+    "tier": "core",
+    "pos": "n. 名词"
+  },
+  {
+    "id": 2125,
+    "word": "revolutionary",
+    "spelling": "R-E-V-O-L-U-T-I-O-N-A-R-Y",
+    "phonetic": "/ˌrɛvəˈluʃəˌnɛri/",
+    "gloss": "革命者；革命党人",
+    "tip": "the revolutionary",
+    "example": "Check the revolutionary in the text.",
+    "exampleZh": "核对文本中的革命者。",
+    "tags": [
+      "academic"
+    ],
+    "tier": "core",
+    "pos": "n. 名词"
+  },
+  {
+    "id": 2126,
+    "word": "chew",
+    "spelling": "C-H-E-W",
+    "phonetic": "/ʧu/",
+    "gloss": "咀嚼；嚼碎",
+    "tip": "chew …",
+    "example": "Please chew the key points.",
+    "exampleZh": "请咀嚼要点。",
+    "tags": [
+      "academic"
+    ],
+    "tier": "core",
+    "pos": "v. 动词"
+  },
+  {
+    "id": 2127,
+    "word": "thirsty",
+    "spelling": "T-H-I-R-S-T-Y",
+    "phonetic": "/ˈθərsti/",
+    "gloss": "口渴的；渴望的",
+    "tip": "a thirsty …",
+    "example": "Give a thirsty answer.",
+    "exampleZh": "给出口渴的回答。",
+    "tags": [
+      "academic"
+    ],
+    "tier": "core",
+    "pos": "adj. 形容词"
+  },
+  {
+    "id": 2128,
+    "word": "title",
+    "spelling": "T-I-T-L-E",
+    "phonetic": "/ˈtaɪtəl/",
+    "gloss": "头衔；名称",
+    "tip": "the title",
+    "example": "Check the title in the text.",
+    "exampleZh": "核对文本中的头衔。",
+    "tags": [
+      "academic"
+    ],
+    "tier": "core",
+    "pos": "n. 名词"
+  },
+  {
+    "id": 2129,
+    "word": "aside",
+    "spelling": "A-S-I-D-E",
+    "phonetic": "/əˈsaɪd/",
+    "gloss": "小声说的话；旁白",
+    "tip": "the aside",
+    "example": "Check the aside in the text.",
+    "exampleZh": "核对文本中的小声说的话。",
+    "tags": [
+      "academic"
+    ],
+    "tier": "core",
+    "pos": "n. 名词"
+  },
+  {
+    "id": 2130,
+    "word": "classical",
+    "spelling": "C-L-A-S-S-I-C-A-L",
+    "phonetic": "/ˈklæsɪkəl/",
+    "gloss": "古典的；正统派的",
+    "tip": "a classical …",
+    "example": "Give a classical answer.",
+    "exampleZh": "给出古典的回答。",
+    "tags": [
+      "academic",
+      "campus"
+    ],
+    "tier": "core",
+    "pos": "adj. 形容词"
+  },
+  {
+    "id": 2131,
+    "word": "scenery",
+    "spelling": "S-C-E-N-E-R-Y",
+    "phonetic": "/ˈsinəri/",
+    "gloss": "风景；景色",
+    "tip": "the scenery",
+    "example": "Check the scenery in the text.",
+    "exampleZh": "核对文本中的风景。",
+    "tags": [
+      "academic"
+    ],
+    "tier": "core",
+    "pos": "n. 名词"
+  },
+  {
+    "id": 2132,
+    "word": "conceal",
+    "spelling": "C-O-N-C-E-A-L",
+    "phonetic": "/kənˈsil/",
+    "gloss": "隐藏；掩盖",
+    "tip": "conceal …",
+    "example": "Please conceal the key points.",
+    "exampleZh": "请隐藏要点。",
+    "tags": [
+      "academic"
+    ],
+    "tier": "core",
+    "pos": "v. 动词"
+  },
+  {
+    "id": 2133,
+    "word": "enthusiastic",
+    "spelling": "E-N-T-H-U-S-I-A-S-T-I-C",
+    "phonetic": "/ɪnˌθuziˈæstɪk/",
+    "gloss": "狂热的；热心的",
+    "tip": "a enthusiastic …",
+    "example": "Give a enthusiastic answer.",
+    "exampleZh": "给出狂热的回答。",
+    "tags": [
+      "academic"
+    ],
+    "tier": "core",
+    "pos": "adj. 形容词"
+  },
+  {
+    "id": 2134,
+    "word": "fierce",
+    "spelling": "F-I-E-R-C-E",
+    "phonetic": "/fɪrs/",
+    "gloss": "凶猛的；猛烈的",
+    "tip": "a fierce …",
+    "example": "Give a fierce answer.",
+    "exampleZh": "给出凶猛的回答。",
+    "tags": [
+      "academic",
+      "campus"
+    ],
+    "tier": "core",
+    "pos": "adj. 形容词"
+  },
+  {
+    "id": 2135,
+    "word": "daylight",
+    "spelling": "D-A-Y-L-I-G-H-T",
+    "phonetic": "/ˈdeɪˌlaɪt/",
+    "gloss": "白昼；日光",
+    "tip": "the daylight",
+    "example": "Check the daylight in the text.",
+    "exampleZh": "核对文本中的白昼。",
+    "tags": [
+      "academic"
+    ],
+    "tier": "core",
+    "pos": "n. 名词"
+  },
+  {
+    "id": 2136,
+    "word": "fur",
+    "spelling": "F-U-R",
+    "phonetic": "/fər/",
+    "gloss": "毛皮；以毛皮制作",
+    "tip": "the fur",
+    "example": "Check the fur in the text.",
+    "exampleZh": "核对文本中的毛皮。",
+    "tags": [
+      "academic"
+    ],
+    "tier": "core",
+    "pos": "n. 名词"
+  },
+  {
+    "id": 2137,
+    "word": "helpful",
+    "spelling": "H-E-L-P-F-U-L",
+    "phonetic": "/ˈhɛlpfəl/",
+    "gloss": "有帮助的；有益的",
+    "tip": "a helpful …",
+    "example": "Give a helpful answer.",
+    "exampleZh": "给出有帮助的回答。",
+    "tags": [
+      "academic"
+    ],
+    "tier": "core",
+    "pos": "adj. 形容词"
+  },
+  {
+    "id": 2138,
+    "word": "observer",
+    "spelling": "O-B-S-E-R-V-E-R",
+    "phonetic": "/əbˈzərvər/",
+    "gloss": "观察者；遵守者",
+    "tip": "the observer",
+    "example": "Check the observer in the text.",
+    "exampleZh": "核对文本中的观察者。",
+    "tags": [
+      "academic",
+      "campus"
+    ],
+    "tier": "core",
+    "pos": "n. 名词"
+  },
+  {
+    "id": 2139,
+    "word": "measurement",
+    "spelling": "M-E-A-S-U-R-E-M-E-N-T",
+    "phonetic": "/ˈmɛʒərmənt/",
+    "gloss": "尺寸；度量",
+    "tip": "the measurement",
+    "example": "Check the measurement in the text.",
+    "exampleZh": "核对文本中的尺寸。",
+    "tags": [
+      "academic"
+    ],
+    "tier": "core",
+    "pos": "n. 名词"
+  },
+  {
+    "id": 2140,
+    "word": "ancestor",
+    "spelling": "A-N-C-E-S-T-O-R",
+    "phonetic": "/ˈænˌsɛstər/",
+    "gloss": "祖先；祖宗",
+    "tip": "the ancestor",
+    "example": "Check the ancestor in the text.",
+    "exampleZh": "核对文本中的祖先。",
+    "tags": [
+      "academic"
+    ],
+    "tier": "core",
+    "pos": "n. 名词"
+  },
+  {
+    "id": 2141,
+    "word": "upright",
+    "spelling": "U-P-R-I-G-H-T",
+    "phonetic": "/ˈəˌpraɪt/",
+    "gloss": "正直的；诚实的",
+    "tip": "a upright …",
+    "example": "Give a upright answer.",
+    "exampleZh": "给出正直的回答。",
+    "tags": [
+      "academic"
+    ],
+    "tier": "core",
+    "pos": "adj. 形容词"
+  },
+  {
+    "id": 2142,
+    "word": "butch",
+    "spelling": "B-U-T-C-H",
+    "phonetic": "/bʊʧ/",
+    "gloss": "[俚]充当男性角色的女同性恋者；粗鲁的男人或男孩",
+    "tip": "the butch",
+    "example": "Check the butch in the text.",
+    "exampleZh": "核对文本中的[俚]充当男性角色的女同性恋者。",
+    "tags": [
+      "academic"
+    ],
+    "tier": "core",
+    "pos": "n. 名词"
+  },
+  {
+    "id": 2143,
+    "word": "spill",
+    "spelling": "S-P-I-L-L",
+    "phonetic": "/spɪl/",
+    "gloss": "溢出；溅出",
+    "tip": "the spill",
+    "example": "Check the spill in the text.",
+    "exampleZh": "核对文本中的溢出。",
+    "tags": [
+      "academic"
+    ],
+    "tier": "core",
+    "pos": "n. 名词"
+  },
+  {
+    "id": 2144,
+    "word": "flame",
+    "spelling": "F-L-A-M-E",
+    "phonetic": "/fleɪm/",
+    "gloss": "火焰；火舌",
+    "tip": "the flame",
+    "example": "Check the flame in the text.",
+    "exampleZh": "核对文本中的火焰。",
+    "tags": [
+      "academic"
+    ],
+    "tier": "core",
+    "pos": "n. 名词"
+  },
+  {
+    "id": 2145,
+    "word": "ghost",
+    "spelling": "G-H-O-S-T",
+    "phonetic": "/goʊst/",
+    "gloss": "鬼；灵魂",
+    "tip": "the ghost",
+    "example": "Check the ghost in the text.",
+    "exampleZh": "核对文本中的鬼。",
+    "tags": [
+      "academic"
+    ],
+    "tier": "core",
+    "pos": "n. 名词"
+  },
+  {
+    "id": 2146,
+    "word": "innocent",
+    "spelling": "I-N-N-O-C-E-N-T",
+    "phonetic": "/ˈɪnəsənt/",
+    "gloss": "无罪的；不懂事的",
+    "tip": "a innocent …",
+    "example": "Give a innocent answer.",
+    "exampleZh": "给出无罪的回答。",
+    "tags": [
+      "academic"
+    ],
+    "tier": "core",
+    "pos": "adj. 形容词"
+  },
+  {
+    "id": 2147,
+    "word": "fuss",
+    "spelling": "F-U-S-S",
+    "phonetic": "/fəs/",
+    "gloss": "大惊小怪；小题大作",
+    "tip": "the fuss",
+    "example": "Check the fuss in the text.",
+    "exampleZh": "核对文本中的大惊小怪。",
+    "tags": [
+      "academic"
+    ],
+    "tier": "core",
+    "pos": "n. 名词"
+  },
+  {
+    "id": 2148,
+    "word": "evil",
+    "spelling": "E-V-I-L",
+    "phonetic": "/ˈivəl/",
+    "gloss": "邪恶；不幸",
+    "tip": "the evil",
+    "example": "Check the evil in the text.",
+    "exampleZh": "核对文本中的邪恶。",
+    "tags": [
+      "academic"
+    ],
+    "tier": "core",
+    "pos": "n. 名词"
+  },
+  {
+    "id": 2149,
+    "word": "fantastic",
+    "spelling": "F-A-N-T-A-S-T-I-C",
+    "phonetic": "/fænˈtæstɪk/",
+    "gloss": "奇妙的；稀奇的",
+    "tip": "a fantastic …",
+    "example": "Give a fantastic answer.",
+    "exampleZh": "给出奇妙的回答。",
+    "tags": [
+      "academic"
+    ],
+    "tier": "core",
+    "pos": "adj. 形容词"
+  },
+  {
+    "id": 2150,
+    "word": "census",
+    "spelling": "C-E-N-S-U-S",
+    "phonetic": "/ˈsɛnsəs/",
+    "gloss": "户口普查；实施统计调查",
+    "tip": "the census",
+    "example": "Check the census in the text.",
+    "exampleZh": "核对文本中的户口普查。",
+    "tags": [
+      "academic"
+    ],
+    "tier": "core",
+    "pos": "n. 名词"
+  },
+  {
+    "id": 2151,
+    "word": "exact",
+    "spelling": "E-X-A-C-T",
+    "phonetic": "/ɪgˈzækt/",
+    "gloss": "精确的；准确的",
+    "tip": "a exact …",
+    "example": "Give a exact answer.",
+    "exampleZh": "给出精确的回答。",
+    "tags": [
+      "academic"
+    ],
+    "tier": "core",
+    "pos": "adj. 形容词"
+  },
+  {
+    "id": 2152,
+    "word": "roller",
+    "spelling": "R-O-L-L-E-R",
+    "phonetic": "/ˈroʊlər/",
+    "gloss": "滚筒；滚轴",
+    "tip": "the roller",
+    "example": "Check the roller in the text.",
+    "exampleZh": "核对文本中的滚筒。",
+    "tags": [
+      "academic"
+    ],
+    "tier": "core",
+    "pos": "n. 名词"
+  },
+  {
+    "id": 2153,
+    "word": "crush",
+    "spelling": "C-R-U-S-H",
+    "phonetic": "/krəʃ/",
+    "gloss": "压碎；粉碎",
+    "tip": "the crush",
+    "example": "Check the crush in the text.",
+    "exampleZh": "核对文本中的压碎。",
+    "tags": [
+      "academic"
+    ],
+    "tier": "core",
+    "pos": "n. 名词"
+  },
+  {
+    "id": 2154,
+    "word": "versus",
+    "spelling": "V-E-R-S-U-S",
+    "phonetic": "/ˈvərsəz/",
+    "gloss": "对...；[法] 诉",
+    "tip": "the versus",
+    "example": "Check the versus in the text.",
+    "exampleZh": "核对文本中的对...。",
+    "tags": [
+      "academic"
+    ],
+    "tier": "core",
+    "pos": "n. 名词"
+  },
+  {
+    "id": 2155,
+    "word": "resist",
+    "spelling": "R-E-S-I-S-T",
+    "phonetic": "/rɪˈzɪst/",
+    "gloss": "抵抗；耐得住",
+    "tip": "resist …",
+    "example": "Please resist the key points.",
+    "exampleZh": "请抵抗要点。",
+    "tags": [
+      "academic"
+    ],
+    "tier": "core",
+    "pos": "v. 动词"
+  },
+  {
+    "id": 2156,
+    "word": "temptation",
+    "spelling": "T-E-M-P-T-A-T-I-O-N",
+    "phonetic": "/tɛmˈteɪʃən/",
+    "gloss": "诱惑；诱惑物",
+    "tip": "the temptation",
+    "example": "Check the temptation in the text.",
+    "exampleZh": "核对文本中的诱惑。",
+    "tags": [
+      "academic"
+    ],
+    "tier": "core",
+    "pos": "n. 名词"
+  },
+  {
+    "id": 2157,
+    "word": "witness",
+    "spelling": "W-I-T-N-E-S-S",
+    "phonetic": "/ˈwɪtnəs/",
+    "gloss": "证人；目击者",
+    "tip": "the witness",
+    "example": "Check the witness in the text.",
+    "exampleZh": "核对文本中的证人。",
+    "tags": [
+      "academic",
+      "campus"
+    ],
+    "tier": "core",
+    "pos": "n. 名词"
+  },
+  {
+    "id": 2158,
+    "word": "plantation",
+    "spelling": "P-L-A-N-T-A-T-I-O-N",
+    "phonetic": "/ˌplænˈteɪʃən/",
+    "gloss": "种植园；大农场",
+    "tip": "the plantation",
+    "example": "Check the plantation in the text.",
+    "exampleZh": "核对文本中的种植园。",
+    "tags": [
+      "academic"
+    ],
+    "tier": "core",
+    "pos": "n. 名词"
+  },
+  {
+    "id": 2159,
+    "word": "bean",
+    "spelling": "B-E-A-N",
+    "phonetic": "/bin/",
+    "gloss": "豆子；[化] 油嘴",
+    "tip": "the bean",
+    "example": "Check the bean in the text.",
+    "exampleZh": "核对文本中的豆子。",
+    "tags": [
+      "academic"
+    ],
+    "tier": "core",
+    "pos": "n. 名词"
+  },
+  {
+    "id": 2160,
+    "word": "frustrate",
+    "spelling": "F-R-U-S-T-R-A-T-E",
+    "phonetic": "/ˈfrəˌstreɪt/",
+    "gloss": "挫败；击败",
+    "tip": "frustrate …",
+    "example": "Please frustrate the key points.",
+    "exampleZh": "请挫败要点。",
+    "tags": [
+      "academic"
+    ],
+    "tier": "core",
+    "pos": "v. 动词"
+  },
+  {
+    "id": 2161,
+    "word": "avenue",
+    "spelling": "A-V-E-N-U-E",
+    "phonetic": "/ˈævəˌnu/",
+    "gloss": "大街；途径",
+    "tip": "the avenue",
+    "example": "Check the avenue in the text.",
+    "exampleZh": "核对文本中的大街。",
+    "tags": [
+      "academic"
+    ],
+    "tier": "core",
+    "pos": "n. 名词"
+  },
+  {
+    "id": 2162,
+    "word": "suburb",
+    "spelling": "S-U-B-U-R-B",
+    "phonetic": "/ˈsəbərb/",
+    "gloss": "市郊住宅区；郊区",
+    "tip": "the suburb",
+    "example": "Check the suburb in the text.",
+    "exampleZh": "核对文本中的市郊住宅区。",
+    "tags": [
+      "academic"
+    ],
+    "tier": "core",
+    "pos": "n. 名词"
+  },
+  {
+    "id": 2163,
+    "word": "dismiss",
+    "spelling": "D-I-S-M-I-S-S",
+    "phonetic": "/dɪsˈmɪs/",
+    "gloss": "解散；开除",
+    "tip": "dismiss …",
+    "example": "Please dismiss the key points.",
+    "exampleZh": "请解散要点。",
+    "tags": [
+      "academic"
+    ],
+    "tier": "core",
+    "pos": "v. 动词"
+  },
+  {
+    "id": 2164,
+    "word": "carriage",
+    "spelling": "C-A-R-R-I-A-G-E",
+    "phonetic": "/ˈkɛrəʤ/",
+    "gloss": "马车；客车",
+    "tip": "the carriage",
+    "example": "Check the carriage in the text.",
+    "exampleZh": "核对文本中的马车。",
+    "tags": [
+      "academic"
+    ],
+    "tier": "core",
+    "pos": "n. 名词"
+  },
+  {
+    "id": 2165,
+    "word": "cart",
+    "spelling": "C-A-R-T",
+    "phonetic": "/kɑrt/",
+    "gloss": "二轮运货马车；驾运货马车",
+    "tip": "the cart",
+    "example": "Check the cart in the text.",
+    "exampleZh": "核对文本中的二轮运货马车。",
+    "tags": [
+      "academic",
+      "campus"
+    ],
+    "tier": "core",
+    "pos": "n. 名词"
+  },
+  {
+    "id": 2166,
+    "word": "barely",
+    "spelling": "B-A-R-E-L-Y",
+    "phonetic": "/ˈbɛrli/",
+    "gloss": "几乎不",
+    "tip": "barely …",
+    "example": "Answer barely and clearly.",
+    "exampleZh": "请几乎不且清楚地回答。",
+    "tags": [
+      "academic"
+    ],
+    "tier": "core",
+    "pos": "adv. 副词"
+  },
+  {
+    "id": 2167,
+    "word": "revolt",
+    "spelling": "R-E-V-O-L-T",
+    "phonetic": "/rɪˈvoʊlt/",
+    "gloss": "叛乱；反抗",
+    "tip": "the revolt",
+    "example": "Check the revolt in the text.",
+    "exampleZh": "核对文本中的叛乱。",
+    "tags": [
+      "academic"
+    ],
+    "tier": "core",
+    "pos": "n. 名词"
+  },
+  {
+    "id": 2168,
+    "word": "drain",
+    "spelling": "D-R-A-I-N",
+    "phonetic": "/dreɪn/",
+    "gloss": "排水沟；消耗",
+    "tip": "the drain",
+    "example": "Check the drain in the text.",
+    "exampleZh": "核对文本中的排水沟。",
+    "tags": [
+      "academic"
+    ],
+    "tier": "core",
+    "pos": "n. 名词"
+  },
+  {
+    "id": 2169,
+    "word": "delete",
+    "spelling": "D-E-L-E-T-E",
+    "phonetic": "/dɪˈlit/",
+    "gloss": "删除；[计] 删除",
+    "tip": "delete …",
+    "example": "Please delete the key points.",
+    "exampleZh": "请删除要点。",
+    "tags": [
+      "academic"
+    ],
+    "tier": "core",
+    "pos": "v. 动词"
+  },
+  {
+    "id": 2170,
+    "word": "fraction",
+    "spelling": "F-R-A-C-T-I-O-N",
+    "phonetic": "/ˈfrækʃən/",
+    "gloss": "小部分；破片",
+    "tip": "the fraction",
+    "example": "Check the fraction in the text.",
+    "exampleZh": "核对文本中的小部分。",
+    "tags": [
+      "academic"
+    ],
+    "tier": "core",
+    "pos": "n. 名词"
+  },
+  {
+    "id": 2171,
+    "word": "arrangement",
+    "spelling": "A-R-R-A-N-G-E-M-E-N-T",
+    "phonetic": "/ərˈeɪnʤmənt/",
+    "gloss": "排列；整齐",
+    "tip": "the arrangement",
+    "example": "Check the arrangement in the text.",
+    "exampleZh": "核对文本中的排列。",
+    "tags": [
+      "academic"
+    ],
+    "tier": "core",
+    "pos": "n. 名词"
+  },
+  {
+    "id": 2172,
+    "word": "privilege",
+    "spelling": "P-R-I-V-I-L-E-G-E",
+    "phonetic": "/ˈprɪvɪlɪʤ/",
+    "gloss": "特权；特别恩典",
+    "tip": "the privilege",
+    "example": "Check the privilege in the text.",
+    "exampleZh": "核对文本中的特权。",
+    "tags": [
+      "academic"
+    ],
+    "tier": "core",
+    "pos": "n. 名词"
+  },
+  {
+    "id": 2173,
+    "word": "disastrous",
+    "spelling": "D-I-S-A-S-T-R-O-U-S",
+    "phonetic": "/dɪˈzæstrəs/",
+    "gloss": "损失惨重的；悲伤的",
+    "tip": "a disastrous …",
+    "example": "Give a disastrous answer.",
+    "exampleZh": "给出损失惨重的回答。",
+    "tags": [
+      "academic"
+    ],
+    "tier": "core",
+    "pos": "adj. 形容词"
+  },
+  {
+    "id": 2174,
+    "word": "champion",
+    "spelling": "C-H-A-M-P-I-O-N",
+    "phonetic": "/ˈʧæmpiən/",
+    "gloss": "冠军；拥护者",
+    "tip": "the champion",
+    "example": "Check the champion in the text.",
+    "exampleZh": "核对文本中的冠军。",
+    "tags": [
+      "academic"
+    ],
+    "tier": "core",
+    "pos": "n. 名词"
+  },
+  {
+    "id": 2175,
+    "word": "heroic",
+    "spelling": "H-E-R-O-I-C",
+    "phonetic": "/hɪˈroʊɪk/",
+    "gloss": "英勇的；英雄式的",
+    "tip": "a heroic …",
+    "example": "Give a heroic answer.",
+    "exampleZh": "给出英勇的回答。",
+    "tags": [
+      "academic"
+    ],
+    "tier": "core",
+    "pos": "adj. 形容词"
+  },
+  {
+    "id": 2176,
+    "word": "dash",
+    "spelling": "D-A-S-H",
+    "phonetic": "/dæʃ/",
+    "gloss": "冲撞；破折号",
+    "tip": "the dash",
+    "example": "Check the dash in the text.",
+    "exampleZh": "核对文本中的冲撞。",
+    "tags": [
+      "academic"
+    ],
+    "tier": "core",
+    "pos": "n. 名词"
+  },
+  {
+    "id": 2177,
+    "word": "faint",
+    "spelling": "F-A-I-N-T",
+    "phonetic": "/feɪnt/",
+    "gloss": "昏厥；昏倒",
+    "tip": "the faint",
+    "example": "Check the faint in the text.",
+    "exampleZh": "核对文本中的昏厥。",
+    "tags": [
+      "academic"
+    ],
+    "tier": "core",
+    "pos": "n. 名词"
+  },
+  {
+    "id": 2178,
+    "word": "curse",
+    "spelling": "C-U-R-S-E",
+    "phonetic": "/kərs/",
+    "gloss": "咒骂；诅咒",
+    "tip": "the curse",
+    "example": "Check the curse in the text.",
+    "exampleZh": "核对文本中的咒骂。",
+    "tags": [
+      "academic"
+    ],
+    "tier": "core",
+    "pos": "n. 名词"
+  },
+  {
+    "id": 2179,
+    "word": "stare",
+    "spelling": "S-T-A-R-E",
+    "phonetic": "/stɛr/",
+    "gloss": "注视；凝视",
+    "tip": "stare …",
+    "example": "Please stare the key points.",
+    "exampleZh": "请注视要点。",
+    "tags": [
+      "academic"
+    ],
+    "tier": "core",
+    "pos": "v. 动词"
+  },
+  {
+    "id": 2180,
+    "word": "trunk",
+    "spelling": "T-R-U-N-K",
+    "phonetic": "/trəŋk/",
+    "gloss": "树干；干线",
+    "tip": "the trunk",
+    "example": "Check the trunk in the text.",
+    "exampleZh": "核对文本中的树干。",
+    "tags": [
+      "academic"
+    ],
+    "tier": "core",
+    "pos": "n. 名词"
+  },
+  {
+    "id": 2181,
+    "word": "polish",
+    "spelling": "P-O-L-I-S-H",
+    "phonetic": "/ˈpɑlɪʃ/",
+    "gloss": "波兰的；波兰人",
+    "tip": "a polish …",
+    "example": "Give a polish answer.",
+    "exampleZh": "给出波兰的回答。",
+    "tags": [
+      "academic"
+    ],
+    "tier": "core",
+    "pos": "adj. 形容词"
+  },
+  {
+    "id": 2182,
+    "word": "continuous",
+    "spelling": "C-O-N-T-I-N-U-O-U-S",
+    "phonetic": "/kənˈtɪnjuəs/",
+    "gloss": "连续的；继续的",
+    "tip": "a continuous …",
+    "example": "Give a continuous answer.",
+    "exampleZh": "给出连续的回答。",
+    "tags": [
+      "academic",
+      "campus"
+    ],
+    "tier": "core",
+    "pos": "adj. 形容词"
+  },
+  {
+    "id": 2183,
+    "word": "golf",
+    "spelling": "G-O-L-F",
+    "phonetic": "/gɔlf/",
+    "gloss": "高尔夫球；打高尔夫球",
+    "tip": "the golf",
+    "example": "Check the golf in the text.",
+    "exampleZh": "核对文本中的高尔夫球。",
+    "tags": [
+      "academic"
+    ],
+    "tier": "core",
+    "pos": "n. 名词"
+  },
+  {
+    "id": 2184,
+    "word": "width",
+    "spelling": "W-I-D-T-H",
+    "phonetic": "/wɪdθ/",
+    "gloss": "宽度；宽广",
+    "tip": "the width",
+    "example": "Check the width in the text.",
+    "exampleZh": "核对文本中的宽度。",
+    "tags": [
+      "academic"
+    ],
+    "tier": "core",
+    "pos": "n. 名词"
+  },
+  {
+    "id": 2185,
+    "word": "reputation",
+    "spelling": "R-E-P-U-T-A-T-I-O-N",
+    "phonetic": "/ˌrɛpjəˈteɪʃən/",
+    "gloss": "名誉；名声",
+    "tip": "the reputation",
+    "example": "Check the reputation in the text.",
+    "exampleZh": "核对文本中的名誉。",
+    "tags": [
+      "academic"
+    ],
+    "tier": "core",
+    "pos": "n. 名词"
+  },
+  {
+    "id": 2186,
+    "word": "marxist",
+    "spelling": "M-A-R-X-I-S-T",
+    "phonetic": "/ˈmɑrksɪst/",
+    "gloss": "马克思主义的；马克思主义者",
+    "tip": "a marxist …",
+    "example": "Give a marxist answer.",
+    "exampleZh": "给出马克思主义的回答。",
+    "tags": [
+      "academic"
+    ],
+    "tier": "core",
+    "pos": "adj. 形容词"
+  },
+  {
+    "id": 2187,
+    "word": "chest",
+    "spelling": "C-H-E-S-T",
+    "phonetic": "/ʧɛst/",
+    "gloss": "胸；胸部",
+    "tip": "the chest",
+    "example": "Check the chest in the text.",
+    "exampleZh": "核对文本中的胸。",
+    "tags": [
+      "academic"
+    ],
+    "tier": "core",
+    "pos": "n. 名词"
+  },
+  {
+    "id": 2188,
+    "word": "eyesight",
+    "spelling": "E-Y-E-S-I-G-H-T",
+    "phonetic": "/ˈaɪˌsaɪt/",
+    "gloss": "视力；目力",
+    "tip": "the eyesight",
+    "example": "Check the eyesight in the text.",
+    "exampleZh": "核对文本中的视力。",
+    "tags": [
+      "academic"
+    ],
+    "tier": "core",
+    "pos": "n. 名词"
+  },
+  {
+    "id": 2189,
+    "word": "successive",
+    "spelling": "S-U-C-C-E-S-S-I-V-E",
+    "phonetic": "/səkˈsɛsɪv/",
+    "gloss": "继承的；连续的",
+    "tip": "a successive …",
+    "example": "Give a successive answer.",
+    "exampleZh": "给出继承的回答。",
+    "tags": [
+      "academic"
+    ],
+    "tier": "core",
+    "pos": "adj. 形容词"
+  },
+  {
+    "id": 2190,
+    "word": "upper",
+    "spelling": "U-P-P-E-R",
+    "phonetic": "/ˈəpər/",
+    "gloss": "上面的；较高的",
+    "tip": "a upper …",
+    "example": "Give a upper answer.",
+    "exampleZh": "给出上面的回答。",
+    "tags": [
+      "academic"
+    ],
+    "tier": "core",
+    "pos": "adj. 形容词"
+  },
+  {
+    "id": 2191,
+    "word": "episode",
+    "spelling": "E-P-I-S-O-D-E",
+    "phonetic": "/ˈɛpɪˌsoʊd/",
+    "gloss": "插曲；插话",
+    "tip": "the episode",
+    "example": "Check the episode in the text.",
+    "exampleZh": "核对文本中的插曲。",
+    "tags": [
+      "academic"
+    ],
+    "tier": "core",
+    "pos": "n. 名词"
+  },
+  {
+    "id": 2192,
+    "word": "gulf",
+    "spelling": "G-U-L-F",
+    "phonetic": "/gəlf/",
+    "gloss": "海湾；深渊",
+    "tip": "the gulf",
+    "example": "Check the gulf in the text.",
+    "exampleZh": "核对文本中的海湾。",
+    "tags": [
+      "academic"
+    ],
+    "tier": "core",
+    "pos": "n. 名词"
+  },
+  {
+    "id": 2193,
+    "word": "refugee",
+    "spelling": "R-E-F-U-G-E-E",
+    "phonetic": "/ˈrɛfjuʤi/",
+    "gloss": "难民；流亡者",
+    "tip": "the refugee",
+    "example": "Check the refugee in the text.",
+    "exampleZh": "核对文本中的难民。",
+    "tags": [
+      "academic"
+    ],
+    "tier": "core",
+    "pos": "n. 名词"
+  },
+  {
+    "id": 2194,
+    "word": "immigrant",
+    "spelling": "I-M-M-I-G-R-A-N-T",
+    "phonetic": "/ˈɪməgrənt/",
+    "gloss": "移民；移入",
+    "tip": "the immigrant",
+    "example": "Check the immigrant in the text.",
+    "exampleZh": "核对文本中的移民。",
+    "tags": [
+      "academic"
+    ],
+    "tier": "core",
+    "pos": "n. 名词"
+  },
+  {
+    "id": 2195,
+    "word": "surplus",
+    "spelling": "S-U-R-P-L-U-S",
+    "phonetic": "/ˈsərpləs/",
+    "gloss": "剩余；过剩",
+    "tip": "the surplus",
+    "example": "Check the surplus in the text.",
+    "exampleZh": "核对文本中的剩余。",
+    "tags": [
+      "academic"
+    ],
+    "tier": "core",
+    "pos": "n. 名词"
+  },
+  {
+    "id": 2196,
+    "word": "wisdom",
+    "spelling": "W-I-S-D-O-M",
+    "phonetic": "/ˈwɪzdəm/",
+    "gloss": "智慧；明智行为",
+    "tip": "the wisdom",
+    "example": "Check the wisdom in the text.",
+    "exampleZh": "核对文本中的智慧。",
+    "tags": [
+      "academic"
+    ],
+    "tier": "core",
+    "pos": "n. 名词"
+  },
+  {
+    "id": 2197,
+    "word": "intention",
+    "spelling": "I-N-T-E-N-T-I-O-N",
+    "phonetic": "/ˌɪnˈtɛnʧən/",
+    "gloss": "意图；目的",
+    "tip": "the intention",
+    "example": "Check the intention in the text.",
+    "exampleZh": "核对文本中的意图。",
+    "tags": [
+      "academic"
+    ],
+    "tier": "core",
+    "pos": "n. 名词"
+  },
+  {
+    "id": 2198,
+    "word": "permission",
+    "spelling": "P-E-R-M-I-S-S-I-O-N",
+    "phonetic": "/pərˈmɪʃən/",
+    "gloss": "许可；允许",
+    "tip": "the permission",
+    "example": "Check the permission in the text.",
+    "exampleZh": "核对文本中的许可。",
+    "tags": [
+      "academic"
+    ],
+    "tier": "core",
+    "pos": "n. 名词"
+  },
+  {
+    "id": 2199,
+    "word": "audio",
+    "spelling": "A-U-D-I-O",
+    "phonetic": "/ˈɑdiˌoʊ/",
+    "gloss": "音频的；声音的",
+    "tip": "a audio …",
+    "example": "Give a audio answer.",
+    "exampleZh": "给出音频的回答。",
+    "tags": [
+      "academic"
+    ],
+    "tier": "core",
+    "pos": "adj. 形容词"
+  },
+  {
+    "id": 2200,
+    "word": "dock",
+    "spelling": "D-O-C-K",
+    "phonetic": "/dɑk/",
+    "gloss": "码头；船坞",
+    "tip": "the dock",
+    "example": "Check the dock in the text.",
+    "exampleZh": "核对文本中的码头。",
+    "tags": [
+      "academic"
+    ],
+    "tier": "core",
+    "pos": "n. 名词"
+  },
+  {
+    "id": 2201,
+    "word": "thrust",
+    "spelling": "T-H-R-U-S-T",
+    "phonetic": "/θrəst/",
+    "gloss": "插；戳",
+    "tip": "the thrust",
+    "example": "Check the thrust in the text.",
+    "exampleZh": "核对文本中的插。",
+    "tags": [
+      "academic"
+    ],
+    "tier": "core",
+    "pos": "n. 名词"
+  },
+  {
+    "id": 2202,
+    "word": "dirt",
+    "spelling": "D-I-R-T",
+    "phonetic": "/dərt/",
+    "gloss": "污垢；泥土",
+    "tip": "the dirt",
+    "example": "Check the dirt in the text.",
+    "exampleZh": "核对文本中的污垢。",
+    "tags": [
+      "academic"
+    ],
+    "tier": "core",
+    "pos": "n. 名词"
+  },
+  {
+    "id": 2203,
+    "word": "candy",
+    "spelling": "C-A-N-D-Y",
+    "phonetic": "/ˈkændi/",
+    "gloss": "糖果；冰糖",
+    "tip": "the candy",
+    "example": "Check the candy in the text.",
+    "exampleZh": "核对文本中的糖果。",
+    "tags": [
+      "academic"
+    ],
+    "tier": "core",
+    "pos": "n. 名词"
+  },
+  {
+    "id": 2204,
+    "word": "carrot",
+    "spelling": "C-A-R-R-O-T",
+    "phonetic": "/ˈkɛrət/",
+    "gloss": "胡萝卜；[医] 胡萝卜",
+    "tip": "the carrot",
+    "example": "Check the carrot in the text.",
+    "exampleZh": "核对文本中的胡萝卜。",
+    "tags": [
+      "academic"
+    ],
+    "tier": "core",
+    "pos": "n. 名词"
+  },
+  {
+    "id": 2205,
+    "word": "rid",
+    "spelling": "R-I-D",
+    "phonetic": "/rɪd/",
+    "gloss": "免除；以...清除",
+    "tip": "rid …",
+    "example": "Please rid the key points.",
+    "exampleZh": "请免除要点。",
+    "tags": [
+      "academic"
+    ],
+    "tier": "core",
+    "pos": "v. 动词"
+  },
+  {
+    "id": 2206,
+    "word": "gross",
+    "spelling": "G-R-O-S-S",
+    "phonetic": "/groʊs/",
+    "gloss": "总数；总量",
+    "tip": "the gross",
+    "example": "Check the gross in the text.",
+    "exampleZh": "核对文本中的总数。",
+    "tags": [
+      "academic"
+    ],
+    "tier": "core",
+    "pos": "n. 名词"
+  },
+  {
+    "id": 2207,
+    "word": "classify",
+    "spelling": "C-L-A-S-S-I-F-Y",
+    "phonetic": "/ˈklæsəˌfaɪ/",
+    "gloss": "分类；归类",
+    "tip": "classify …",
+    "example": "Please classify the key points.",
+    "exampleZh": "请分类要点。",
+    "tags": [
+      "academic",
+      "campus"
+    ],
+    "tier": "core",
+    "pos": "v. 动词"
+  },
+  {
+    "id": 2208,
+    "word": "weed",
+    "spelling": "W-E-E-D",
+    "phonetic": "/wid/",
+    "gloss": "杂草；野草",
+    "tip": "the weed",
+    "example": "Check the weed in the text.",
+    "exampleZh": "核对文本中的杂草。",
+    "tags": [
+      "academic",
+      "campus"
+    ],
+    "tier": "core",
+    "pos": "n. 名词"
+  },
+  {
+    "id": 2209,
+    "word": "thrive",
+    "spelling": "T-H-R-I-V-E",
+    "phonetic": "/θraɪv/",
+    "gloss": "繁荣；兴旺",
+    "tip": "a thrive …",
+    "example": "Give a thrive answer.",
+    "exampleZh": "给出繁荣回答。",
+    "tags": [
+      "academic",
+      "campus"
+    ],
+    "tier": "core",
+    "pos": "adj. 形容词"
+  },
+  {
+    "id": 2210,
+    "word": "calm",
+    "spelling": "C-A-L-M",
+    "phonetic": "/kɑm/",
+    "gloss": "平稳；风平浪静",
+    "tip": "the calm",
+    "example": "Check the calm in the text.",
+    "exampleZh": "核对文本中的平稳。",
+    "tags": [
+      "academic"
+    ],
+    "tier": "core",
+    "pos": "n. 名词"
+  },
+  {
+    "id": 2211,
+    "word": "heal",
+    "spelling": "H-E-A-L",
+    "phonetic": "/hil/",
+    "gloss": "痊愈；使复原",
+    "tip": "heal …",
+    "example": "Please heal the key points.",
+    "exampleZh": "请痊愈要点。",
+    "tags": [
+      "academic"
+    ],
+    "tier": "core",
+    "pos": "v. 动词"
+  },
+  {
+    "id": 2212,
+    "word": "sorrow",
+    "spelling": "S-O-R-R-O-W",
+    "phonetic": "/ˈsɑroʊ/",
+    "gloss": "悲伤；哀惜",
+    "tip": "the sorrow",
+    "example": "Check the sorrow in the text.",
+    "exampleZh": "核对文本中的悲伤。",
+    "tags": [
+      "academic",
+      "campus"
+    ],
+    "tier": "core",
+    "pos": "n. 名词"
+  },
+  {
+    "id": 2213,
+    "word": "bold",
+    "spelling": "B-O-L-D",
+    "phonetic": "/boʊld/",
+    "gloss": "大胆的；粗体",
+    "tip": "a bold …",
+    "example": "Give a bold answer.",
+    "exampleZh": "给出大胆的回答。",
+    "tags": [
+      "academic"
+    ],
+    "tier": "core",
+    "pos": "adj. 形容词"
+  },
+  {
+    "id": 2214,
+    "word": "expedition",
+    "spelling": "E-X-P-E-D-I-T-I-O-N",
+    "phonetic": "/ˌɛkspəˈdɪʃən/",
+    "gloss": "远征；探险队",
+    "tip": "the expedition",
+    "example": "Check the expedition in the text.",
+    "exampleZh": "核对文本中的远征。",
+    "tags": [
+      "academic"
+    ],
+    "tier": "core",
+    "pos": "n. 名词"
+  },
+  {
+    "id": 2215,
+    "word": "reckon",
+    "spelling": "R-E-C-K-O-N",
+    "phonetic": "/ˈrɛkən/",
+    "gloss": "计算；总计",
+    "tip": "reckon …",
+    "example": "Please reckon the key points.",
+    "exampleZh": "请计算要点。",
+    "tags": [
+      "academic"
+    ],
+    "tier": "core",
+    "pos": "v. 动词"
+  },
+  {
+    "id": 2216,
+    "word": "undo",
+    "spelling": "U-N-D-O",
+    "phonetic": "/ənˈdu/",
+    "gloss": "解开；取消",
+    "tip": "undo …",
+    "example": "Please undo the key points.",
+    "exampleZh": "请解开要点。",
+    "tags": [
+      "academic"
+    ],
+    "tier": "core",
+    "pos": "v. 动词"
+  },
+  {
+    "id": 2217,
+    "word": "yield",
+    "spelling": "Y-I-E-L-D",
+    "phonetic": "/jild/",
+    "gloss": "生产量；投资收益",
+    "tip": "the yield",
+    "example": "Check the yield in the text.",
+    "exampleZh": "核对文本中的生产量。",
+    "tags": [
+      "academic"
+    ],
+    "tier": "core",
+    "pos": "n. 名词"
+  },
+  {
+    "id": 2218,
+    "word": "nitrogen",
+    "spelling": "N-I-T-R-O-G-E-N",
+    "phonetic": "/ˈnaɪtrəʤən/",
+    "gloss": "氮；[化] 氮N-2",
+    "tip": "the nitrogen",
+    "example": "Check the nitrogen in the text.",
+    "exampleZh": "核对文本中的氮。",
+    "tags": [
+      "academic",
+      "campus"
+    ],
+    "tier": "core",
+    "pos": "n. 名词"
+  },
+  {
+    "id": 2219,
+    "word": "recall",
+    "spelling": "R-E-C-A-L-L",
+    "phonetic": "/ˈriˌkɔl/",
+    "gloss": "回忆；召回",
+    "tip": "the recall",
+    "example": "Check the recall in the text.",
+    "exampleZh": "核对文本中的回忆。",
+    "tags": [
+      "academic"
+    ],
+    "tier": "core",
+    "pos": "n. 名词"
+  },
+  {
+    "id": 2220,
+    "word": "exceedingly",
+    "spelling": "E-X-C-E-E-D-I-N-G-L-Y",
+    "phonetic": "/ɪkˈsidɪŋli/",
+    "gloss": "极端地；极度地",
+    "tip": "exceedingly …",
+    "example": "Answer exceedingly and clearly.",
+    "exampleZh": "请极端地且清楚地回答。",
+    "tags": [
+      "academic"
+    ],
+    "tier": "core",
+    "pos": "adv. 副词"
+  },
+  {
+    "id": 2221,
+    "word": "naturally",
+    "spelling": "N-A-T-U-R-A-L-L-Y",
+    "phonetic": "/ˈnæʧərəli/",
+    "gloss": "自然地；以自然力",
+    "tip": "naturally …",
+    "example": "Answer naturally and clearly.",
+    "exampleZh": "请自然地且清楚地回答。",
+    "tags": [
+      "academic"
+    ],
+    "tier": "core",
+    "pos": "adv. 副词"
+  },
+  {
+    "id": 2222,
+    "word": "bloom",
+    "spelling": "B-L-O-O-M",
+    "phonetic": "/blum/",
+    "gloss": "花；开花",
+    "tip": "the bloom",
+    "example": "Check the bloom in the text.",
+    "exampleZh": "核对文本中的花。",
+    "tags": [
+      "academic"
+    ],
+    "tier": "core",
+    "pos": "n. 名词"
+  },
+  {
+    "id": 2223,
+    "word": "royal",
+    "spelling": "R-O-Y-A-L",
+    "phonetic": "/rɔɪəl/",
+    "gloss": "王室；皇族",
+    "tip": "the royal",
+    "example": "Check the royal in the text.",
+    "exampleZh": "核对文本中的王室。",
+    "tags": [
+      "academic"
+    ],
+    "tier": "core",
+    "pos": "n. 名词"
+  },
+  {
+    "id": 2224,
+    "word": "devise",
+    "spelling": "D-E-V-I-S-E",
+    "phonetic": "/dɪˈvaɪz/",
+    "gloss": "设计；发明",
+    "tip": "devise …",
+    "example": "Please devise the key points.",
+    "exampleZh": "请设计要点。",
+    "tags": [
+      "academic"
+    ],
+    "tier": "core",
+    "pos": "v. 动词"
+  },
+  {
+    "id": 2225,
+    "word": "laser",
+    "spelling": "L-A-S-E-R",
+    "phonetic": "/ˈleɪzər/",
+    "gloss": "激光；[计] 激光器",
+    "tip": "the laser",
+    "example": "Check the laser in the text.",
+    "exampleZh": "核对文本中的激光。",
+    "tags": [
+      "academic"
+    ],
+    "tier": "core",
+    "pos": "n. 名词"
+  },
+  {
+    "id": 2226,
+    "word": "unity",
+    "spelling": "U-N-I-T-Y",
+    "phonetic": "/ˈjunɪti/",
+    "gloss": "一致；联合",
+    "tip": "the unity",
+    "example": "Check the unity in the text.",
+    "exampleZh": "核对文本中的一致。",
+    "tags": [
+      "academic"
+    ],
+    "tier": "core",
+    "pos": "n. 名词"
+  },
+  {
+    "id": 2227,
+    "word": "mud",
+    "spelling": "M-U-D",
+    "phonetic": "/məd/",
+    "gloss": "泥；诽谤",
+    "tip": "the mud",
+    "example": "Check the mud in the text.",
+    "exampleZh": "核对文本中的泥。",
+    "tags": [
+      "academic"
+    ],
+    "tier": "core",
+    "pos": "n. 名词"
+  },
+  {
+    "id": 2228,
+    "word": "helicopter",
+    "spelling": "H-E-L-I-C-O-P-T-E-R",
+    "phonetic": "/ˈhɛlɪˌkɑptər/",
+    "gloss": "直升机；由直升机运送",
+    "tip": "the helicopter",
+    "example": "Check the helicopter in the text.",
+    "exampleZh": "核对文本中的直升机。",
+    "tags": [
+      "academic"
+    ],
+    "tier": "core",
+    "pos": "n. 名词"
+  },
+  {
+    "id": 2229,
+    "word": "shallow",
+    "spelling": "S-H-A-L-L-O-W",
+    "phonetic": "/ˈʃæloʊ/",
+    "gloss": "水浅的地方；浅滩",
+    "tip": "the shallow",
+    "example": "Check the shallow in the text.",
+    "exampleZh": "核对文本中的水浅的地方。",
+    "tags": [
+      "academic"
+    ],
+    "tier": "core",
+    "pos": "n. 名词"
+  },
+  {
+    "id": 2230,
+    "word": "powder",
+    "spelling": "P-O-W-D-E-R",
+    "phonetic": "/ˈpaʊdər/",
+    "gloss": "粉；粉末",
+    "tip": "the powder",
+    "example": "Check the powder in the text.",
+    "exampleZh": "核对文本中的粉。",
+    "tags": [
+      "academic"
+    ],
+    "tier": "core",
+    "pos": "n. 名词"
+  },
+  {
+    "id": 2231,
+    "word": "consultant",
+    "spelling": "C-O-N-S-U-L-T-A-N-T",
+    "phonetic": "/kənˈsəltənt/",
+    "gloss": "顾问；征询意见者",
+    "tip": "the consultant",
+    "example": "Check the consultant in the text.",
+    "exampleZh": "核对文本中的顾问。",
+    "tags": [
+      "academic"
+    ],
+    "tier": "core",
+    "pos": "n. 名词"
+  },
+  {
+    "id": 2232,
+    "word": "genius",
+    "spelling": "G-E-N-I-U-S",
+    "phonetic": "/ˈʤinjəs/",
+    "gloss": "天才；天赋",
+    "tip": "the genius",
+    "example": "Check the genius in the text.",
+    "exampleZh": "核对文本中的天才。",
+    "tags": [
+      "academic"
+    ],
+    "tier": "core",
+    "pos": "n. 名词"
+  },
+  {
+    "id": 2233,
+    "word": "christ",
+    "spelling": "C-H-R-I-S-T",
+    "phonetic": "/kraɪst/",
+    "gloss": "基督；救世主",
+    "tip": "the christ",
+    "example": "Check the christ in the text.",
+    "exampleZh": "核对文本中的基督。",
+    "tags": [
+      "academic"
+    ],
+    "tier": "core",
+    "pos": "n. 名词"
+  },
+  {
+    "id": 2234,
+    "word": "resume",
+    "spelling": "R-E-S-U-M-E",
+    "phonetic": "/ˈrɛzəˌmeɪ/",
+    "gloss": "重新开始；取回",
+    "tip": "resume …",
+    "example": "Please resume the key points.",
+    "exampleZh": "请重新开始要点。",
+    "tags": [
+      "academic"
+    ],
+    "tier": "core",
+    "pos": "v. 动词"
+  },
+  {
+    "id": 2235,
+    "word": "prescription",
+    "spelling": "P-R-E-S-C-R-I-P-T-I-O-N",
+    "phonetic": "/prəˈskrɪpʃən/",
+    "gloss": "处方；命令",
+    "tip": "the prescription",
+    "example": "Check the prescription in the text.",
+    "exampleZh": "核对文本中的处方。",
+    "tags": [
+      "academic"
+    ],
+    "tier": "core",
+    "pos": "n. 名词"
+  },
+  {
+    "id": 2236,
+    "word": "split",
+    "spelling": "S-P-L-I-T",
+    "phonetic": "/splɪt/",
+    "gloss": "劈开；裂片",
+    "tip": "the split",
+    "example": "Check the split in the text.",
+    "exampleZh": "核对文本中的劈开。",
+    "tags": [
+      "academic"
+    ],
+    "tier": "core",
+    "pos": "n. 名词"
+  },
+  {
+    "id": 2237,
+    "word": "loop",
+    "spelling": "L-O-O-P",
+    "phonetic": "/lup/",
+    "gloss": "环；圈",
+    "tip": "the loop",
+    "example": "Check the loop in the text.",
+    "exampleZh": "核对文本中的环。",
+    "tags": [
+      "academic"
+    ],
+    "tier": "core",
+    "pos": "n. 名词"
+  },
+  {
+    "id": 2238,
+    "word": "circulate",
+    "spelling": "C-I-R-C-U-L-A-T-E",
+    "phonetic": "/ˈsərkjəˌleɪt/",
+    "gloss": "(使)流通；(使)循环",
+    "tip": "circulate …",
+    "example": "Please circulate the key points.",
+    "exampleZh": "请(使)流通要点。",
+    "tags": [
+      "academic"
+    ],
+    "tier": "core",
+    "pos": "v. 动词"
+  },
+  {
+    "id": 2239,
+    "word": "collision",
+    "spelling": "C-O-L-L-I-S-I-O-N",
+    "phonetic": "/kəˈlɪʒən/",
+    "gloss": "碰撞；冲突",
+    "tip": "the collision",
+    "example": "Check the collision in the text.",
+    "exampleZh": "核对文本中的碰撞。",
+    "tags": [
+      "academic"
+    ],
+    "tier": "core",
+    "pos": "n. 名词"
+  },
+  {
+    "id": 2240,
+    "word": "tunnel",
+    "spelling": "T-U-N-N-E-L",
+    "phonetic": "/ˈtənəl/",
+    "gloss": "隧道；地下道",
+    "tip": "the tunnel",
+    "example": "Check the tunnel in the text.",
+    "exampleZh": "核对文本中的隧道。",
+    "tags": [
+      "academic"
+    ],
+    "tier": "core",
+    "pos": "n. 名词"
+  },
+  {
+    "id": 2241,
+    "word": "atomic",
+    "spelling": "A-T-O-M-I-C",
+    "phonetic": "/əˈtɑmɪk/",
+    "gloss": "原子的；原子能的",
+    "tip": "a atomic …",
+    "example": "Give a atomic answer.",
+    "exampleZh": "给出原子的回答。",
+    "tags": [
+      "academic"
+    ],
+    "tier": "core",
+    "pos": "adj. 形容词"
+  },
+  {
+    "id": 2242,
+    "word": "strip",
+    "spelling": "S-T-R-I-P",
+    "phonetic": "/strɪp/",
+    "gloss": "长条；条状",
+    "tip": "the strip",
+    "example": "Check the strip in the text.",
+    "exampleZh": "核对文本中的长条。",
+    "tags": [
+      "academic"
+    ],
+    "tier": "core",
+    "pos": "n. 名词"
+  },
+  {
+    "id": 2243,
+    "word": "honey",
+    "spelling": "H-O-N-E-Y",
+    "phonetic": "/ˈhəni/",
+    "gloss": "蜂蜜；甜蜜",
+    "tip": "the honey",
+    "example": "Check the honey in the text.",
+    "exampleZh": "核对文本中的蜂蜜。",
+    "tags": [
+      "academic"
+    ],
+    "tier": "core",
+    "pos": "n. 名词"
+  },
+  {
+    "id": 2244,
+    "word": "halt",
+    "spelling": "H-A-L-T",
+    "phonetic": "/hɔlt/",
+    "gloss": "停止；立定",
+    "tip": "the halt",
+    "example": "Check the halt in the text.",
+    "exampleZh": "核对文本中的停止。",
+    "tags": [
+      "academic"
+    ],
+    "tier": "core",
+    "pos": "n. 名词"
+  },
+  {
+    "id": 2245,
+    "word": "spider",
+    "spelling": "S-P-I-D-E-R",
+    "phonetic": "/ˈspaɪdər/",
+    "gloss": "蜘蛛；设圈套者",
+    "tip": "the spider",
+    "example": "Check the spider in the text.",
+    "exampleZh": "核对文本中的蜘蛛。",
+    "tags": [
+      "academic"
+    ],
+    "tier": "core",
+    "pos": "n. 名词"
+  },
+  {
+    "id": 2246,
+    "word": "mate",
+    "spelling": "M-A-T-E",
+    "phonetic": "/meɪt/",
+    "gloss": "配偶；对手",
+    "tip": "mate …",
+    "example": "Please mate the key points.",
+    "exampleZh": "请配偶要点。",
+    "tags": [
+      "academic"
+    ],
+    "tier": "core",
+    "pos": "v. 动词"
+  },
+  {
+    "id": 2247,
+    "word": "excursion",
+    "spelling": "E-X-C-U-R-S-I-O-N",
+    "phonetic": "/ɪkˈskərʒən/",
+    "gloss": "远足；游览圆",
+    "tip": "the excursion",
+    "example": "Check the excursion in the text.",
+    "exampleZh": "核对文本中的远足。",
+    "tags": [
+      "academic",
+      "campus"
+    ],
+    "tier": "core",
+    "pos": "n. 名词"
+  },
+  {
+    "id": 2248,
+    "word": "pea",
+    "spelling": "P-E-A",
+    "phonetic": "/pi/",
+    "gloss": "豌豆；似豌豆的东西",
+    "tip": "the pea",
+    "example": "Check the pea in the text.",
+    "exampleZh": "核对文本中的豌豆。",
+    "tags": [
+      "academic"
+    ],
+    "tier": "core",
+    "pos": "n. 名词"
+  },
+  {
+    "id": 2249,
+    "word": "elastic",
+    "spelling": "E-L-A-S-T-I-C",
+    "phonetic": "/ɪˈlæstɪk/",
+    "gloss": "松紧带；橡皮筋",
+    "tip": "the elastic",
+    "example": "Check the elastic in the text.",
+    "exampleZh": "核对文本中的松紧带。",
+    "tags": [
+      "academic"
+    ],
+    "tier": "core",
+    "pos": "n. 名词"
+  },
+  {
+    "id": 2250,
+    "word": "exaggerate",
+    "spelling": "E-X-A-G-G-E-R-A-T-E",
+    "phonetic": "/ɪgˈzæʤərˌeɪt/",
+    "gloss": "夸大；夸张",
+    "tip": "exaggerate …",
+    "example": "Please exaggerate the key points.",
+    "exampleZh": "请夸大要点。",
+    "tags": [
+      "academic"
+    ],
+    "tier": "core",
+    "pos": "v. 动词"
+  },
+  {
+    "id": 2251,
+    "word": "grammar",
+    "spelling": "G-R-A-M-M-A-R",
+    "phonetic": "/ˈgræmər/",
+    "gloss": "语法学；入门书",
+    "tip": "the grammar",
+    "example": "Check the grammar in the text.",
+    "exampleZh": "核对文本中的语法学。",
+    "tags": [
+      "academic"
+    ],
+    "tier": "core",
+    "pos": "n. 名词"
+  },
+  {
+    "id": 2252,
+    "word": "handwrite",
+    "spelling": "H-A-N-D-W-R-I-T-E",
+    "phonetic": "/'hændrait/",
+    "gloss": "<古>用手写；亲手写",
+    "tip": "handwrite …",
+    "example": "Please handwrite the key points.",
+    "exampleZh": "请<古>用手写要点。",
+    "tags": [
+      "academic"
+    ],
+    "tier": "core",
+    "pos": "v. 动词"
+  },
+  {
+    "id": 2253,
+    "word": "observation",
+    "spelling": "O-B-S-E-R-V-A-T-I-O-N",
+    "phonetic": "/ˌɑbzərˈveɪʃən/",
+    "gloss": "观察；注意",
+    "tip": "the observation",
+    "example": "Check the observation in the text.",
+    "exampleZh": "核对文本中的观察。",
+    "tags": [
+      "academic",
+      "campus"
+    ],
+    "tier": "core",
+    "pos": "n. 名词"
+  },
+  {
+    "id": 2254,
+    "word": "coil",
+    "spelling": "C-O-I-L",
+    "phonetic": "/kɔɪl/",
+    "gloss": "线圈；盘绕",
+    "tip": "the coil",
+    "example": "Check the coil in the text.",
+    "exampleZh": "核对文本中的线圈。",
+    "tags": [
+      "academic"
+    ],
+    "tier": "core",
+    "pos": "n. 名词"
+  },
+  {
+    "id": 2255,
+    "word": "decent",
+    "spelling": "D-E-C-E-N-T",
+    "phonetic": "/ˈdisənt/",
+    "gloss": "有分寸的；得体的",
+    "tip": "a decent …",
+    "example": "Give a decent answer.",
+    "exampleZh": "给出有分寸的回答。",
+    "tags": [
+      "academic"
+    ],
+    "tier": "core",
+    "pos": "adj. 形容词"
+  },
+  {
+    "id": 2256,
+    "word": "whip",
+    "spelling": "W-H-I-P",
+    "phonetic": "/wɪp/",
+    "gloss": "鞭子；抽打",
+    "tip": "the whip",
+    "example": "Check the whip in the text.",
+    "exampleZh": "核对文本中的鞭子。",
+    "tags": [
+      "academic"
+    ],
+    "tier": "core",
+    "pos": "n. 名词"
+  },
+  {
+    "id": 2257,
+    "word": "dessert",
+    "spelling": "D-E-S-S-E-R-T",
+    "phonetic": "/dɪˈzərt/",
+    "gloss": "餐后甜点",
+    "tip": "the dessert",
+    "example": "Check the dessert in the text.",
+    "exampleZh": "核对文本中的餐后甜点。",
+    "tags": [
+      "academic"
+    ],
+    "tier": "core",
+    "pos": "n. 名词"
+  },
+  {
+    "id": 2258,
+    "word": "vacuum",
+    "spelling": "V-A-C-U-U-M",
+    "phonetic": "/ˈvækjum/",
+    "gloss": "真空；空间",
+    "tip": "the vacuum",
+    "example": "Check the vacuum in the text.",
+    "exampleZh": "核对文本中的真空。",
+    "tags": [
+      "academic",
+      "campus"
+    ],
+    "tier": "core",
+    "pos": "n. 名词"
+  },
+  {
+    "id": 2259,
+    "word": "locality",
+    "spelling": "L-O-C-A-L-I-T-Y",
+    "phonetic": "/loʊˈkæləti/",
+    "gloss": "地方；所在",
+    "tip": "the locality",
+    "example": "Check the locality in the text.",
+    "exampleZh": "核对文本中的地方。",
+    "tags": [
+      "academic"
+    ],
+    "tier": "core",
+    "pos": "n. 名词"
+  },
+  {
+    "id": 2260,
+    "word": "fold",
+    "spelling": "F-O-L-D",
+    "phonetic": "/foʊld/",
+    "gloss": "折层；折",
+    "tip": "the fold",
+    "example": "Check the fold in the text.",
+    "exampleZh": "核对文本中的折层。",
+    "tags": [
+      "academic"
+    ],
+    "tier": "core",
+    "pos": "n. 名词"
+  },
+  {
+    "id": 2261,
+    "word": "limb",
+    "spelling": "L-I-M-B",
+    "phonetic": "/lɪm/",
+    "gloss": "四肢；枝干",
+    "tip": "the limb",
+    "example": "Check the limb in the text.",
+    "exampleZh": "核对文本中的四肢。",
+    "tags": [
+      "academic"
+    ],
+    "tier": "core",
+    "pos": "n. 名词"
+  },
+  {
+    "id": 2262,
+    "word": "coarse",
+    "spelling": "C-O-A-R-S-E",
+    "phonetic": "/kɔrs/",
+    "gloss": "粗糙的；下等的",
+    "tip": "a coarse …",
+    "example": "Give a coarse answer.",
+    "exampleZh": "给出粗糙的回答。",
+    "tags": [
+      "academic"
+    ],
+    "tier": "core",
+    "pos": "adj. 形容词"
+  },
+  {
+    "id": 2263,
+    "word": "governor",
+    "spelling": "G-O-V-E-R-N-O-R",
+    "phonetic": "/ˈgəvərnər/",
+    "gloss": "(美)州长；(英)总督",
+    "tip": "the governor",
+    "example": "Check the governor in the text.",
+    "exampleZh": "核对文本中的(美)州长。",
+    "tags": [
+      "academic"
+    ],
+    "tier": "core",
+    "pos": "n. 名词"
+  },
+  {
+    "id": 2264,
+    "word": "underground",
+    "spelling": "U-N-D-E-R-G-R-O-U-N-D",
+    "phonetic": "/ˈəndərˌgraʊnd/",
+    "gloss": "地下；地铁",
+    "tip": "the underground",
+    "example": "Check the underground in the text.",
+    "exampleZh": "核对文本中的地下。",
+    "tags": [
+      "academic",
+      "campus"
+    ],
+    "tier": "core",
+    "pos": "n. 名词"
+  },
+  {
+    "id": 2265,
+    "word": "install",
+    "spelling": "I-N-S-T-A-L-L",
+    "phonetic": "/ˌɪnˈstɔl/",
+    "gloss": "安装；安置",
+    "tip": "install …",
+    "example": "Please install the software.",
+    "exampleZh": "请安装软件。",
+    "tags": [
+      "academic"
+    ],
+    "tier": "core",
+    "pos": "v. 动词"
+  },
+  {
+    "id": 2266,
+    "word": "attorney",
+    "spelling": "A-T-T-O-R-N-E-Y",
+    "phonetic": "/əˈtərni/",
+    "gloss": "代理人；律师",
+    "tip": "the attorney",
+    "example": "Check the attorney in the text.",
+    "exampleZh": "核对文本中的代理人。",
+    "tags": [
+      "academic"
+    ],
+    "tier": "core",
+    "pos": "n. 名词"
+  },
+  {
+    "id": 2267,
+    "word": "wrist",
+    "spelling": "W-R-I-S-T",
+    "phonetic": "/rɪst/",
+    "gloss": "手腕；腕关节",
+    "tip": "the wrist",
+    "example": "Check the wrist in the text.",
+    "exampleZh": "核对文本中的手腕。",
+    "tags": [
+      "academic"
+    ],
+    "tier": "core",
+    "pos": "n. 名词"
+  },
+  {
+    "id": 2268,
+    "word": "occupation",
+    "spelling": "O-C-C-U-P-A-T-I-O-N",
+    "phonetic": "/ˌɑkjəˈpeɪʃən/",
+    "gloss": "职业；占有",
+    "tip": "the occupation",
+    "example": "Check the occupation in the text.",
+    "exampleZh": "核对文本中的职业。",
+    "tags": [
+      "academic"
+    ],
+    "tier": "core",
+    "pos": "n. 名词"
+  },
+  {
+    "id": 2269,
+    "word": "annoy",
+    "spelling": "A-N-N-O-Y",
+    "phonetic": "/əˈnɔɪ/",
+    "gloss": "使恼怒；骚扰",
+    "tip": "annoy …",
+    "example": "Please annoy the key points.",
+    "exampleZh": "请使恼怒要点。",
+    "tags": [
+      "academic"
+    ],
+    "tier": "core",
+    "pos": "v. 动词"
+  },
+  {
+    "id": 2270,
+    "word": "cattle",
+    "spelling": "C-A-T-T-L-E",
+    "phonetic": "/ˈkætəl/",
+    "gloss": "牛；家畜",
+    "tip": "the cattle",
+    "example": "Check the cattle in the text.",
+    "exampleZh": "核对文本中的牛。",
+    "tags": [
+      "academic"
+    ],
+    "tier": "core",
+    "pos": "n. 名词"
+  },
+  {
+    "id": 2271,
+    "word": "triangle",
+    "spelling": "T-R-I-A-N-G-L-E",
+    "phonetic": "/ˈtraɪˌæŋgəl/",
+    "gloss": "三角形；三个一组",
+    "tip": "the triangle",
+    "example": "Check the triangle in the text.",
+    "exampleZh": "核对文本中的三角形。",
+    "tags": [
+      "academic"
+    ],
+    "tier": "core",
+    "pos": "n. 名词"
+  },
+  {
+    "id": 2272,
+    "word": "accountant",
+    "spelling": "A-C-C-O-U-N-T-A-N-T",
+    "phonetic": "/əˈkaʊntənt/",
+    "gloss": "会计人员；会计师",
+    "tip": "the accountant",
+    "example": "Check the accountant in the text.",
+    "exampleZh": "核对文本中的会计人员。",
+    "tags": [
+      "academic",
+      "campus"
+    ],
+    "tier": "core",
+    "pos": "n. 名词"
+  },
+  {
+    "id": 2273,
+    "word": "laundry",
+    "spelling": "L-A-U-N-D-R-Y",
+    "phonetic": "/ˈlɔndri/",
+    "gloss": "洗衣店；洗好的衣服",
+    "tip": "the laundry",
+    "example": "Check the laundry in the text.",
+    "exampleZh": "核对文本中的洗衣店。",
+    "tags": [
+      "academic",
+      "campus"
+    ],
+    "tier": "core",
+    "pos": "n. 名词"
+  },
+  {
+    "id": 2274,
+    "word": "automobile",
+    "spelling": "A-U-T-O-M-O-B-I-L-E",
+    "phonetic": "/ˌɔtəmoʊˈbil/",
+    "gloss": "汽车；[机] 汽车",
+    "tip": "the automobile",
+    "example": "Check the automobile in the text.",
+    "exampleZh": "核对文本中的汽车。",
+    "tags": [
+      "academic"
+    ],
+    "tier": "core",
+    "pos": "n. 名词"
+  },
+  {
+    "id": 2275,
+    "word": "airplane",
+    "spelling": "A-I-R-P-L-A-N-E",
+    "phonetic": "/ˈɛrˌpleɪn/",
+    "gloss": "飞机；[机] 飞机",
+    "tip": "the airplane",
+    "example": "Check the airplane in the text.",
+    "exampleZh": "核对文本中的飞机。",
+    "tags": [
+      "academic"
+    ],
+    "tier": "core",
+    "pos": "n. 名词"
+  },
+  {
+    "id": 2276,
+    "word": "airport",
+    "spelling": "A-I-R-P-O-R-T",
+    "phonetic": "/ˈɛrˌpɔrt/",
+    "gloss": "飞机场；[机] 航空站",
+    "tip": "the airport",
+    "example": "Check the airport in the text.",
+    "exampleZh": "核对文本中的飞机场。",
+    "tags": [
+      "academic",
+      "campus"
+    ],
+    "tier": "core",
+    "pos": "n. 名词"
+  },
+  {
+    "id": 2277,
+    "word": "surgery",
+    "spelling": "S-U-R-G-E-R-Y",
+    "phonetic": "/ˈsərʤəri/",
+    "gloss": "外科；手术",
+    "tip": "the surgery",
+    "example": "Check the surgery in the text.",
+    "exampleZh": "核对文本中的外科。",
+    "tags": [
+      "academic"
+    ],
+    "tier": "core",
+    "pos": "n. 名词"
+  },
+  {
+    "id": 2278,
+    "word": "microscope",
+    "spelling": "M-I-C-R-O-S-C-O-P-E",
+    "phonetic": "/ˈmaɪkrəˌskoʊp/",
+    "gloss": "显微镜；[化] 显微镜",
+    "tip": "the microscope",
+    "example": "Check the microscope in the text.",
+    "exampleZh": "核对文本中的显微镜。",
+    "tags": [
+      "academic",
+      "campus"
+    ],
+    "tier": "core",
+    "pos": "n. 名词"
+  },
+  {
+    "id": 2279,
+    "word": "departure",
+    "spelling": "D-E-P-A-R-T-U-R-E",
+    "phonetic": "/dɪˈpɑrʧər/",
+    "gloss": "离开；出发",
+    "tip": "the departure",
+    "example": "Check the departure in the text.",
+    "exampleZh": "核对文本中的离开。",
+    "tags": [
+      "academic"
+    ],
+    "tier": "core",
+    "pos": "n. 名词"
+  },
+  {
+    "id": 2280,
+    "word": "passport",
+    "spelling": "P-A-S-S-P-O-R-T",
+    "phonetic": "/ˈpæˌspɔrt/",
+    "gloss": "护照；手段",
+    "tip": "the passport",
+    "example": "Check the passport in the text.",
+    "exampleZh": "核对文本中的护照。",
+    "tags": [
+      "academic"
+    ],
+    "tier": "core",
+    "pos": "n. 名词"
+  },
+  {
+    "id": 2281,
+    "word": "compass",
+    "spelling": "C-O-M-P-A-S-S",
+    "phonetic": "/ˈkəmpəs/",
+    "gloss": "指南针；范围",
+    "tip": "the compass",
+    "example": "Check the compass in the text.",
+    "exampleZh": "核对文本中的指南针。",
+    "tags": [
+      "academic"
+    ],
+    "tier": "core",
+    "pos": "n. 名词"
+  },
+  {
+    "id": 2282,
+    "word": "deaf",
+    "spelling": "D-E-A-F",
+    "phonetic": "/dɛf/",
+    "gloss": "聋的；[医] 聋的",
+    "tip": "a deaf …",
+    "example": "Give a deaf answer.",
+    "exampleZh": "给出聋的回答。",
+    "tags": [
+      "academic"
+    ],
+    "tier": "core",
+    "pos": "adj. 形容词"
+  },
+  {
+    "id": 2283,
+    "word": "gum",
+    "spelling": "G-U-M",
+    "phonetic": "/gəm/",
+    "gloss": "树胶；橡皮",
+    "tip": "the gum",
+    "example": "Check the gum in the text.",
+    "exampleZh": "核对文本中的树胶。",
+    "tags": [
+      "academic"
+    ],
+    "tier": "core",
+    "pos": "n. 名词"
+  },
+  {
+    "id": 2284,
+    "word": "editorial",
+    "spelling": "E-D-I-T-O-R-I-A-L",
+    "phonetic": "/ˌɛdəˈtɔriəl/",
+    "gloss": "社论；评论",
+    "tip": "the editorial",
+    "example": "Check the editorial in the text.",
+    "exampleZh": "核对文本中的社论。",
+    "tags": [
+      "academic"
+    ],
+    "tier": "core",
+    "pos": "n. 名词"
+  },
+  {
+    "id": 2285,
+    "word": "hen",
+    "spelling": "H-E-N",
+    "phonetic": "/hɛn/",
+    "gloss": "母鸡；雌禽",
+    "tip": "the hen",
+    "example": "Check the hen in the text.",
+    "exampleZh": "核对文本中的母鸡。",
+    "tags": [
+      "academic"
+    ],
+    "tier": "core",
+    "pos": "n. 名词"
+  },
+  {
+    "id": 2286,
+    "word": "thermometer",
+    "spelling": "T-H-E-R-M-O-M-E-T-E-R",
+    "phonetic": "/θərˈmɑmətər/",
+    "gloss": "温度计；体温计",
+    "tip": "the thermometer",
+    "example": "Check the thermometer in the text.",
+    "exampleZh": "核对文本中的温度计。",
+    "tags": [
+      "academic"
+    ],
+    "tier": "core",
+    "pos": "n. 名词"
+  },
+  {
+    "id": 2287,
+    "word": "mineral",
+    "spelling": "M-I-N-E-R-A-L",
+    "phonetic": "/ˈmɪnərəl/",
+    "gloss": "矿物；无机物",
+    "tip": "the mineral",
+    "example": "Check the mineral in the text.",
+    "exampleZh": "核对文本中的矿物。",
+    "tags": [
+      "academic",
+      "campus"
+    ],
+    "tier": "core",
+    "pos": "n. 名词"
+  },
+  {
+    "id": 2288,
+    "word": "horizontal",
+    "spelling": "H-O-R-I-Z-O-N-T-A-L",
+    "phonetic": "/ˌhɔrəˈzɑntəl/",
+    "gloss": "水平线；水平面",
+    "tip": "the horizontal",
+    "example": "Check the horizontal in the text.",
+    "exampleZh": "核对文本中的水平线。",
+    "tags": [
+      "academic"
+    ],
+    "tier": "core",
+    "pos": "n. 名词"
+  },
+  {
+    "id": 2289,
+    "word": "prescribe",
+    "spelling": "P-R-E-S-C-R-I-B-E",
+    "phonetic": "/prəˈskraɪb/",
+    "gloss": "规定；指定",
+    "tip": "prescribe …",
+    "example": "Please prescribe the key points.",
+    "exampleZh": "请规定要点。",
+    "tags": [
+      "academic"
+    ],
+    "tier": "core",
+    "pos": "v. 动词"
+  },
+  {
+    "id": 2290,
+    "word": "glove",
+    "spelling": "G-L-O-V-E",
+    "phonetic": "/gləv/",
+    "gloss": "手套；给...戴手套",
+    "tip": "the glove",
+    "example": "Check the glove in the text.",
+    "exampleZh": "核对文本中的手套。",
+    "tags": [
+      "academic"
+    ],
+    "tier": "core",
+    "pos": "n. 名词"
+  },
+  {
+    "id": 2291,
+    "word": "certificate",
+    "spelling": "C-E-R-T-I-F-I-C-A-T-E",
+    "phonetic": "/sərˈtɪfɪkət/",
+    "gloss": "证书；证明书",
+    "tip": "certificate …",
+    "example": "Please certificate the key points.",
+    "exampleZh": "请证书要点。",
+    "tags": [
+      "academic",
+      "campus"
+    ],
+    "tier": "core",
+    "pos": "v. 动词"
+  },
+  {
+    "id": 2292,
+    "word": "vivid",
+    "spelling": "V-I-V-I-D",
+    "phonetic": "/ˈvɪvɪd/",
+    "gloss": "生动的；鲜明的",
+    "tip": "a vivid …",
+    "example": "Give a vivid answer.",
+    "exampleZh": "给出生动的回答。",
+    "tags": [
+      "academic"
+    ],
+    "tier": "core",
+    "pos": "adj. 形容词"
+  },
+  {
+    "id": 2293,
+    "word": "mainland",
+    "spelling": "M-A-I-N-L-A-N-D",
+    "phonetic": "/ˈmeɪnˌlænd/",
+    "gloss": "大陆；本土",
+    "tip": "the mainland",
+    "example": "Check the mainland in the text.",
+    "exampleZh": "核对文本中的大陆。",
+    "tags": [
+      "academic"
+    ],
+    "tier": "core",
+    "pos": "n. 名词"
+  },
+  {
+    "id": 2294,
+    "word": "cupboard",
+    "spelling": "C-U-P-B-O-A-R-D",
+    "phonetic": "/ˈkəbərd/",
+    "gloss": "食橱；碗柜",
+    "tip": "the cupboard",
+    "example": "Check the cupboard in the text.",
+    "exampleZh": "核对文本中的食橱。",
+    "tags": [
+      "academic"
+    ],
+    "tier": "core",
+    "pos": "n. 名词"
+  },
+  {
+    "id": 2295,
+    "word": "headline",
+    "spelling": "H-E-A-D-L-I-N-E",
+    "phonetic": "/ˈhɛˌdlaɪn/",
+    "gloss": "大标题；新闻摘要",
+    "tip": "the headline",
+    "example": "Check the headline in the text.",
+    "exampleZh": "核对文本中的大标题。",
+    "tags": [
+      "academic"
+    ],
+    "tier": "core",
+    "pos": "n. 名词"
+  },
+  {
+    "id": 2296,
+    "word": "guitar",
+    "spelling": "G-U-I-T-A-R",
+    "phonetic": "/gɪˈtɑr/",
+    "gloss": "吉他",
+    "tip": "the guitar",
+    "example": "Check the guitar in the text.",
+    "exampleZh": "核对文本中的吉他。",
+    "tags": [
+      "academic"
+    ],
+    "tier": "core",
+    "pos": "n. 名词"
+  },
+  {
+    "id": 2297,
+    "word": "altitude",
+    "spelling": "A-L-T-I-T-U-D-E",
+    "phonetic": "/ˈæltəˌtud/",
+    "gloss": "高度；海拔",
+    "tip": "the altitude",
+    "example": "Check the altitude in the text.",
+    "exampleZh": "核对文本中的高度。",
+    "tags": [
+      "academic"
+    ],
+    "tier": "core",
+    "pos": "n. 名词"
+  },
+  {
+    "id": 2298,
+    "word": "cabbage",
+    "spelling": "C-A-B-B-A-G-E",
+    "phonetic": "/ˈkæbɪʤ/",
+    "gloss": "卷心菜；[医] 卷心菜",
+    "tip": "the cabbage",
+    "example": "Check the cabbage in the text.",
+    "exampleZh": "核对文本中的卷心菜。",
+    "tags": [
+      "academic"
+    ],
+    "tier": "core",
+    "pos": "n. 名词"
+  },
+  {
+    "id": 2299,
+    "word": "menu",
+    "spelling": "M-E-N-U",
+    "phonetic": "/ˈmɛnju/",
+    "gloss": "菜单；(功能)选择单",
+    "tip": "the menu",
+    "example": "Check the menu in the text.",
+    "exampleZh": "核对文本中的菜单。",
+    "tags": [
+      "academic"
+    ],
+    "tier": "core",
+    "pos": "n. 名词"
+  },
+  {
+    "id": 2300,
+    "word": "dusk",
+    "spelling": "D-U-S-K",
+    "phonetic": "/dəsk/",
+    "gloss": "薄暮；傍晚",
+    "tip": "the dusk",
+    "example": "Check the dusk in the text.",
+    "exampleZh": "核对文本中的薄暮。",
+    "tags": [
+      "academic"
+    ],
+    "tier": "core",
+    "pos": "n. 名词"
   }
-];
+]
+;
   global.VOCAB_BANK = VOCAB_BANK;
 })(typeof window !== "undefined" ? window : globalThis);

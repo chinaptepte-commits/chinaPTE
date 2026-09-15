@@ -55,6 +55,30 @@
   var notebook = loadSet(STORAGE_NOTEBOOK);
   var items = allItems.slice();
 
+  function adoptBank(list) {
+    if (!Array.isArray(list) || !list.length) return false;
+    global.VOCAB_BANK = list;
+    allItems = list.slice();
+    items = allItems.slice();
+    return true;
+  }
+
+  /** Prefer content/vocab.json (admin-editable); fall back to embedded data-vocab.js */
+  function loadVocabBank() {
+    return fetch("content/vocab.json?t=" + Date.now(), { cache: "no-store" })
+      .then(function (res) {
+        if (!res.ok) throw new Error("HTTP " + res.status);
+        return res.json();
+      })
+      .then(function (data) {
+        if (adoptBank(data)) return "json";
+        return "embedded";
+      })
+      .catch(function () {
+        return "embedded";
+      });
+  }
+
   var state = {
     index: 0,
     rate: 1,
@@ -847,6 +871,11 @@
     });
   }
 
-  if (document.readyState === "loading") document.addEventListener("DOMContentLoaded", bind);
-  else bind();
+  function boot() {
+    loadVocabBank().then(function () {
+      bind();
+    });
+  }
+  if (document.readyState === "loading") document.addEventListener("DOMContentLoaded", boot);
+  else boot();
 })(typeof window !== "undefined" ? window : globalThis);

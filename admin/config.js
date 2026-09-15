@@ -6,5 +6,9 @@ window.ADMIN_GITHUB = {
   owner: "chinaptepte-commits",
   repo: "chinaPTE",
   branch: "main",
+  laborPath: "content/labor.json",
+  vocabPath: "content/vocab.json",
+  vocabJsPath: "data-vocab.js",
+  /* 兼容旧字段 */
   path: "content/labor.json"
 };
