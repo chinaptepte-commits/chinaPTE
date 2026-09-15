@@ -169,6 +169,346 @@ window.INDUSTRY_DATA = {
       {
         "en": "loyalty card",
         "zh": "积分卡 / 会员卡"
+      },
+      {
+        "en": "supermarket",
+        "zh": "超市"
+      },
+      {
+        "en": "grocery",
+        "zh": "食品杂货"
+      },
+      {
+        "en": "trolley / shopping cart",
+        "zh": "购物车"
+      },
+      {
+        "en": "basket",
+        "zh": "手提篮"
+      },
+      {
+        "en": "self-checkout",
+        "zh": "自助结账"
+      },
+      {
+        "en": "barcode",
+        "zh": "条形码"
+      },
+      {
+        "en": "price tag",
+        "zh": "价签"
+      },
+      {
+        "en": "special / on special",
+        "zh": "特价"
+      },
+      {
+        "en": "half price",
+        "zh": "半价"
+      },
+      {
+        "en": "use-by date",
+        "zh": "保质期 / 食用期限"
+      },
+      {
+        "en": "best before",
+        "zh": "最佳食用日期"
+      },
+      {
+        "en": "fresh produce",
+        "zh": "生鲜果蔬"
+      },
+      {
+        "en": "deli",
+        "zh": "熟食柜台"
+      },
+      {
+        "en": "butcher",
+        "zh": "肉铺柜台"
+      },
+      {
+        "en": "bakery",
+        "zh": "烘焙区"
+      },
+      {
+        "en": "ATM",
+        "zh": "自动取款机"
+      },
+      {
+        "en": "withdrawal",
+        "zh": "取款"
+      },
+      {
+        "en": "deposit",
+        "zh": "存款"
+      },
+      {
+        "en": "overdraft",
+        "zh": "透支"
+      },
+      {
+        "en": "interest rate",
+        "zh": "利率"
+      },
+      {
+        "en": "credit card",
+        "zh": "信用卡"
+      },
+      {
+        "en": "debit card",
+        "zh": "借记卡"
+      },
+      {
+        "en": "online banking",
+        "zh": "网上银行"
+      },
+      {
+        "en": "app",
+        "zh": "手机应用"
+      },
+      {
+        "en": "password",
+        "zh": "密码"
+      },
+      {
+        "en": "two-factor authentication",
+        "zh": "双重验证"
+      },
+      {
+        "en": "Centrelink appointment",
+        "zh": "Centrelink 预约（澳）"
+      },
+      {
+        "en": "JobSeeker",
+        "zh": "求职津贴（澳）"
+      },
+      {
+        "en": "concession card",
+        "zh": "优惠卡 / 减免卡"
+      },
+      {
+        "en": "Medicare rebate",
+        "zh": "医保报销（澳）"
+      },
+      {
+        "en": "bulk billing",
+        "zh": "全额医保结算（澳）"
+      },
+      {
+        "en": "referral",
+        "zh": "转诊信"
+      },
+      {
+        "en": "specialist",
+        "zh": "专科医生"
+      },
+      {
+        "en": "emergency department / ED",
+        "zh": "急诊科"
+      },
+      {
+        "en": "ambulance",
+        "zh": "救护车"
+      },
+      {
+        "en": "chemist script",
+        "zh": "药店处方"
+      },
+      {
+        "en": "repeat prescription",
+        "zh": "续方"
+      },
+      {
+        "en": "postcode",
+        "zh": "邮编"
+      },
+      {
+        "en": "registered post",
+        "zh": "挂号邮寄"
+      },
+      {
+        "en": "Express Post",
+        "zh": "快递邮政（澳）"
+      },
+      {
+        "en": "PO Box",
+        "zh": "邮政信箱"
+      },
+      {
+        "en": "stamp",
+        "zh": "邮票"
+      },
+      {
+        "en": "customs declaration",
+        "zh": "海关申报"
+      },
+      {
+        "en": "tenancy agreement",
+        "zh": "租约"
+      },
+      {
+        "en": "real estate agent",
+        "zh": "房产中介"
+      },
+      {
+        "en": "inspection",
+        "zh": "看房 / 检查"
+      },
+      {
+        "en": "notice to vacate",
+        "zh": "退租通知"
+      },
+      {
+        "en": "bond refund",
+        "zh": "押金退还"
+      },
+      {
+        "en": "condition report",
+        "zh": "房屋状况报告"
+      },
+      {
+        "en": "strata / body corporate",
+        "zh": "业主委员会（公寓）"
+      },
+      {
+        "en": "rates",
+        "zh": "市政税"
+      },
+      {
+        "en": "council",
+        "zh": "市政厅 / 地方政府"
+      },
+      {
+        "en": "library card",
+        "zh": "图书馆卡"
+      },
+      {
+        "en": "public transport",
+        "zh": "公共交通"
+      },
+      {
+        "en": "Opal card",
+        "zh": "交通卡（悉尼）"
+      },
+      {
+        "en": "myki",
+        "zh": "交通卡（墨尔本）"
+      },
+      {
+        "en": "Snapper / AT HOP",
+        "zh": "交通卡（新西兰）"
+      },
+      {
+        "en": "concession fare",
+        "zh": "优惠票价"
+      },
+      {
+        "en": "timetable",
+        "zh": "时刻表"
+      },
+      {
+        "en": "platform",
+        "zh": "站台"
+      },
+      {
+        "en": "lost property",
+        "zh": "失物招领"
+      },
+      {
+        "en": "customer service",
+        "zh": "客服"
+      },
+      {
+        "en": "complaint",
+        "zh": "投诉"
+      },
+      {
+        "en": "feedback",
+        "zh": "反馈"
+      },
+      {
+        "en": "waiting room",
+        "zh": "候诊 / 等候室"
+      },
+      {
+        "en": "form",
+        "zh": "表格"
+      },
+      {
+        "en": "signature",
+        "zh": "签名"
+      },
+      {
+        "en": "certified copy",
+        "zh": "公证复印件"
+      },
+      {
+        "en": "Justice of the Peace / JP",
+        "zh": "太平绅士（公证）"
+      },
+      {
+        "en": "police check",
+        "zh": "无犯罪证明"
+      },
+      {
+        "en": "Working with Children Check",
+        "zh": "儿童工作许可（澳）"
+      },
+      {
+        "en": "visa",
+        "zh": "签证"
+      },
+      {
+        "en": "passport photo",
+        "zh": "护照照片"
+      },
+      {
+        "en": "interpreter",
+        "zh": "口译员"
+      },
+      {
+        "en": "translation",
+        "zh": "翻译件"
+      },
+      {
+        "en": "GST",
+        "zh": "商品服务税"
+      },
+      {
+        "en": "ABN",
+        "zh": "澳大利亚商业号码"
+      },
+      {
+        "en": "invoice",
+        "zh": "发票"
+      },
+      {
+        "en": "quote",
+        "zh": "报价"
+      },
+      {
+        "en": "payment plan",
+        "zh": "分期付款计划"
+      },
+      {
+        "en": "overdue",
+        "zh": "逾期"
+      },
+      {
+        "en": "reminder",
+        "zh": "提醒通知"
+      },
+      {
+        "en": "call centre",
+        "zh": "电话客服中心"
+      },
+      {
+        "en": "hold the line",
+        "zh": "请不要挂断"
+      },
+      {
+        "en": "reference number",
+        "zh": "参考编号 / 受理号"
       }
     ],
     "phrases": [
@@ -267,6 +607,166 @@ window.INDUSTRY_DATA = {
       {
         "en": "Is GST included in the price?",
         "zh": "价格含 GST（商品服务税）吗？"
+      },
+      {
+        "en": "Where can I find the self-checkout machines?",
+        "zh": "自助结账机在哪里？"
+      },
+      {
+        "en": "Is this item on special this week?",
+        "zh": "这个这周特价吗？"
+      },
+      {
+        "en": "Could you please weigh these apples for me?",
+        "zh": "能帮我称一下这些苹果吗？"
+      },
+      {
+        "en": "I'd like 500 grams of ham from the deli, please.",
+        "zh": "熟食柜台请给我五百克火腿。"
+      },
+      {
+        "en": "Do you have this in a larger size?",
+        "zh": "有大一码的吗？"
+      },
+      {
+        "en": "Can I get a rain check if this is out of stock?",
+        "zh": "如果缺货，能给我缺货优惠凭证吗？"
+      },
+      {
+        "en": "I'd like to withdraw two hundred dollars, please.",
+        "zh": "我想取两百刀。"
+      },
+      {
+        "en": "My card was declined. Can you try again?",
+        "zh": "卡被拒了，能再试一次吗？"
+      },
+      {
+        "en": "I forgot my PIN. How can I reset it?",
+        "zh": "我忘了 PIN，怎么重置？"
+      },
+      {
+        "en": "I'd like to set up online banking.",
+        "zh": "我想开通网上银行。"
+      },
+      {
+        "en": "Can you help me transfer money to this account?",
+        "zh": "能帮我转到这个账户吗？"
+      },
+      {
+        "en": "I need a bank statement for the last three months.",
+        "zh": "我需要最近三个月的银行对账单。"
+      },
+      {
+        "en": "I have an appointment at Centrelink at ten.",
+        "zh": "我十点在 Centrelink 有预约。"
+      },
+      {
+        "en": "What is my reference number for this claim?",
+        "zh": "这项申请的参考编号是多少？"
+      },
+      {
+        "en": "Do you bulk bill with Medicare?",
+        "zh": "你们接受 Medicare 全额结算吗？"
+      },
+      {
+        "en": "I need a referral to a specialist.",
+        "zh": "我需要一张转诊到专科的信。"
+      },
+      {
+        "en": "How much is the gap payment today?",
+        "zh": "今天要自付多少差额？"
+      },
+      {
+        "en": "I'd like to renew my prescription, please.",
+        "zh": "我想续方。"
+      },
+      {
+        "en": "Is there an interpreter available?",
+        "zh": "有口译员吗？"
+      },
+      {
+        "en": "I'd like to send this as Express Post.",
+        "zh": "我想用快递邮政寄。"
+      },
+      {
+        "en": "Do I need a customs declaration for this parcel?",
+        "zh": "这个包裹需要海关申报吗？"
+      },
+      {
+        "en": "I'm looking for a two-bedroom flat to rent.",
+        "zh": "我想租一套两居室。"
+      },
+      {
+        "en": "When is the open inspection?",
+        "zh": "看房时间是什么时候？"
+      },
+      {
+        "en": "How much is the bond and how many weeks of rent in advance?",
+        "zh": "押金多少，要预付几周房租？"
+      },
+      {
+        "en": "The hot water system is broken. Can someone come today?",
+        "zh": "热水器坏了，今天能派人来吗？"
+      },
+      {
+        "en": "I'd like to apply for a bond refund.",
+        "zh": "我想申请退押金。"
+      },
+      {
+        "en": "Where do I pay my council rates?",
+        "zh": "市政税在哪里缴？"
+      },
+      {
+        "en": "How do I top up my Opal card?",
+        "zh": "Opal 卡怎么充值？"
+      },
+      {
+        "en": "Which platform does the train to the city leave from?",
+        "zh": "去市区的火车从哪个站台开？"
+      },
+      {
+        "en": "I lost my wallet. Is there a lost property office?",
+        "zh": "我丢了钱包，有失物招领处吗？"
+      },
+      {
+        "en": "Could you please fill in this form for me? My English is limited.",
+        "zh": "能帮我填这张表吗？我英文有限。"
+      },
+      {
+        "en": "I need a certified copy of my passport. Is there a JP nearby?",
+        "zh": "我需要护照的公证复印件，附近有太平绅士吗？"
+      },
+      {
+        "en": "Can I pay this bill in instalments?",
+        "zh": "这账单可以分期付吗？"
+      },
+      {
+        "en": "My payment is overdue. I'd like to set up a payment plan.",
+        "zh": "我逾期了，想设一个分期计划。"
+      },
+      {
+        "en": "Please hold the line. I need to find my reference number.",
+        "zh": "请稍等，我找一下受理号。"
+      },
+      {
+        "en": "Is GST included, or do I add it on top?",
+        "zh": "含 GST 吗，还是另外加？"
+      },
+      {
+        "en": "Could you email me the invoice, please?",
+        "zh": "能把发票发邮件给我吗？"
+      },
+      {
+        "en": "I'd like to make a complaint about the service.",
+        "zh": "我想投诉这次服务。"
+      },
+      {
+        "en": "What documents do I need for a Working with Children Check?",
+        "zh": "办儿童工作许可需要哪些材料？"
+      },
+      {
+        "en": "Can someone explain this letter from the bank more slowly?",
+        "zh": "能有人把银行这封信慢慢解释一下吗？"
       }
     ]
   },
@@ -430,6 +930,326 @@ window.INDUSTRY_DATA = {
       {
         "en": "clean as you go",
         "zh": "随做随清"
+      },
+      {
+        "en": "tiler",
+        "zh": "瓷砖工"
+      },
+      {
+        "en": "bricklayer / brickie",
+        "zh": "砌砖工（澳口语 brickie）"
+      },
+      {
+        "en": "labourer",
+        "zh": "杂工 / 小工"
+      },
+      {
+        "en": "site manager",
+        "zh": "工地经理"
+      },
+      {
+        "en": "foreman",
+        "zh": "工头"
+      },
+      {
+        "en": "subbie / subcontractor",
+        "zh": "分包（澳口语 subbie）"
+      },
+      {
+        "en": "builder",
+        "zh": "承建商 / 建筑商"
+      },
+      {
+        "en": "plans / drawings",
+        "zh": "图纸"
+      },
+      {
+        "en": "set out",
+        "zh": "放线"
+      },
+      {
+        "en": "string line",
+        "zh": "线绳 / 准线"
+      },
+      {
+        "en": "laser level",
+        "zh": "激光水平仪"
+      },
+      {
+        "en": "chalk line",
+        "zh": "粉线"
+      },
+      {
+        "en": "straight edge",
+        "zh": "靠尺"
+      },
+      {
+        "en": "rubber mallet",
+        "zh": "橡胶锤"
+      },
+      {
+        "en": "notched trowel",
+        "zh": "齿形抹刀"
+      },
+      {
+        "en": "grout float",
+        "zh": "填缝拍板"
+      },
+      {
+        "en": "tile cutter",
+        "zh": "手动裁砖器"
+      },
+      {
+        "en": "diamond blade",
+        "zh": "金刚石锯片"
+      },
+      {
+        "en": "back buttering",
+        "zh": "背面刮胶"
+      },
+      {
+        "en": "lippage",
+        "zh": "高低差 / 错台"
+      },
+      {
+        "en": "falls to waste",
+        "zh": "坡向地漏"
+      },
+      {
+        "en": "wet area",
+        "zh": "湿区"
+      },
+      {
+        "en": "shower hob",
+        "zh": "淋浴挡水槛"
+      },
+      {
+        "en": "floor waste",
+        "zh": "地漏"
+      },
+      {
+        "en": "membrane",
+        "zh": "防水膜"
+      },
+      {
+        "en": "primer",
+        "zh": "底涂"
+      },
+      {
+        "en": "render",
+        "zh": "抹灰"
+      },
+      {
+        "en": "plasterboard / gyprock",
+        "zh": "石膏板（澳称 gyprock）"
+      },
+      {
+        "en": "nogging",
+        "zh": "墙骨横撑"
+      },
+      {
+        "en": "stud wall",
+        "zh": "轻钢/木龙骨墙"
+      },
+      {
+        "en": "cavity wall",
+        "zh": "空心墙"
+      },
+      {
+        "en": "weep hole",
+        "zh": "泄水孔"
+      },
+      {
+        "en": "damp-proof course / DPC",
+        "zh": "防潮层"
+      },
+      {
+        "en": "pointing",
+        "zh": "勾缝"
+      },
+      {
+        "en": "frog",
+        "zh": "砖槽面"
+      },
+      {
+        "en": "header / stretcher",
+        "zh": "丁砖 / 顺砖"
+      },
+      {
+        "en": "bond pattern",
+        "zh": "砌法 / 组砌方式"
+      },
+      {
+        "en": "perpend",
+        "zh": "竖缝"
+      },
+      {
+        "en": "bed joint",
+        "zh": "水平砖缝"
+      },
+      {
+        "en": "corner profile",
+        "zh": "阳角条"
+      },
+      {
+        "en": "bullnose",
+        "zh": "圆边砖"
+      },
+      {
+        "en": "skirting tile",
+        "zh": "踢脚砖"
+      },
+      {
+        "en": "threshold",
+        "zh": "门槛"
+      },
+      {
+        "en": "control joint",
+        "zh": "控制缝"
+      },
+      {
+        "en": "mixing drill",
+        "zh": "搅拌钻"
+      },
+      {
+        "en": "bucket",
+        "zh": "桶"
+      },
+      {
+        "en": "wheelbarrow",
+        "zh": "手推车"
+      },
+      {
+        "en": "shovel",
+        "zh": "铲"
+      },
+      {
+        "en": "bolster",
+        "zh": "扁凿"
+      },
+      {
+        "en": "club hammer",
+        "zh": "大锤"
+      },
+      {
+        "en": "safety glasses",
+        "zh": "护目镜"
+      },
+      {
+        "en": "ear muffs / plugs",
+        "zh": "耳罩 / 耳塞"
+      },
+      {
+        "en": "dust mask",
+        "zh": "防尘口罩"
+      },
+      {
+        "en": "gloves",
+        "zh": "手套"
+      },
+      {
+        "en": "exclusion zone",
+        "zh": "禁入区"
+      },
+      {
+        "en": "tag out / lock out",
+        "zh": "挂牌上锁"
+      },
+      {
+        "en": "first aid kit",
+        "zh": "急救箱"
+      },
+      {
+        "en": "incident",
+        "zh": "事故 / 事件"
+      },
+      {
+        "en": "near miss",
+        "zh": "险兆事件"
+      },
+      {
+        "en": "inductions",
+        "zh": "入场安全培训"
+      },
+      {
+        "en": "white card",
+        "zh": "白卡（澳建筑安全卡）"
+      },
+      {
+        "en": "Site Safe card",
+        "zh": "工地安全卡（新西兰）"
+      },
+      {
+        "en": "traffic management",
+        "zh": "交通管制"
+      },
+      {
+        "en": "spotter",
+        "zh": "指挥 / 瞭望员"
+      },
+      {
+        "en": "crane lift",
+        "zh": "吊装"
+      },
+      {
+        "en": "materials bay",
+        "zh": "材料堆场"
+      },
+      {
+        "en": "skip bin",
+        "zh": "垃圾箱"
+      },
+      {
+        "en": "rubbish chute",
+        "zh": "垃圾滑道"
+      },
+      {
+        "en": "curing time",
+        "zh": "养护时间"
+      },
+      {
+        "en": "open time",
+        "zh": "晾置时间（胶水）"
+      },
+      {
+        "en": "pot life",
+        "zh": "可使用时间（混合料）"
+      },
+      {
+        "en": "batch",
+        "zh": "一配料 / 一批"
+      },
+      {
+        "en": "coverage",
+        "zh": "用量 / 覆盖面积"
+      },
+      {
+        "en": "manufacturer specs",
+        "zh": "厂家说明"
+      },
+      {
+        "en": "Australian Standards",
+        "zh": "澳大利亚标准"
+      },
+      {
+        "en": "handover",
+        "zh": "交工 / 移交"
+      },
+      {
+        "en": "variation",
+        "zh": "工程变更"
+      },
+      {
+        "en": "progress claim",
+        "zh": "进度款申请"
+      },
+      {
+        "en": "RFIs",
+        "zh": "信息请求单"
+      },
+      {
+        "en": "as-built",
+        "zh": "竣工图"
       }
     ],
     "phrases": [
@@ -528,6 +1348,150 @@ window.INDUSTRY_DATA = {
       {
         "en": "We need to wait for the concrete pour.",
         "zh": "我们要等浇筑混凝土。"
+      },
+      {
+        "en": "Have you completed your site induction?",
+        "zh": "你做完入场安全培训了吗？"
+      },
+      {
+        "en": "Do you have your white card with you?",
+        "zh": "白卡带身上了吗？"
+      },
+      {
+        "en": "We're setting out the bathroom tiles this morning.",
+        "zh": "今天上午放卫生间砖线。"
+      },
+      {
+        "en": "Check the falls to the floor waste before you tile.",
+        "zh": "贴砖前先检查坡向地漏。"
+      },
+      {
+        "en": "Back-butter that large format tile.",
+        "zh": "那块大砖背面再刮一层胶。"
+      },
+      {
+        "en": "There's lippage here — lift and reset it.",
+        "zh": "这里有高低差，掀起来重贴。"
+      },
+      {
+        "en": "Use the notched trowel for even adhesive.",
+        "zh": "用齿形抹刀把胶刮均匀。"
+      },
+      {
+        "en": "The membrane needs another coat after lunch.",
+        "zh": "防水膜午饭后再刷一遍。"
+      },
+      {
+        "en": "Don't pierce the waterproofing when you drill.",
+        "zh": "钻孔时别把防水打穿。"
+      },
+      {
+        "en": "Mix a smaller batch — the pot life is short in this heat.",
+        "zh": "少拌一点，天热可使用时间短。"
+      },
+      {
+        "en": "Keep the spacers in until the adhesive sets.",
+        "zh": "胶干之前别拿掉留缝卡。"
+      },
+      {
+        "en": "We'll grout tomorrow once it's cured enough.",
+        "zh": "养护够了明天再填缝。"
+      },
+      {
+        "en": "Wipe the haze off the tiles before it hardens.",
+        "zh": "雾状残留干透前擦掉。"
+      },
+      {
+        "en": "Lay the first course dead level on the string line.",
+        "zh": "第一皮砖要跟准线绝对水平。"
+      },
+      {
+        "en": "Butter both ends for a full perpend joint.",
+        "zh": "两端刮浆，竖缝要饱满。"
+      },
+      {
+        "en": "Check plumb every few courses.",
+        "zh": "每隔几皮检查垂直。"
+      },
+      {
+        "en": "We need weep holes above the DPC.",
+        "zh": "防潮层上方要留泄水孔。"
+      },
+      {
+        "en": "Point the joints neatly after the mortar firms up.",
+        "zh": "砂浆稍硬后把缝勾整齐。"
+      },
+      {
+        "en": "Don't overload the scaffold — check the SWL.",
+        "zh": "脚手架别超载，看安全荷载。"
+      },
+      {
+        "en": "Tag out that wet saw; the blade is cracked.",
+        "zh": "水刀挂牌停用，锯片裂了。"
+      },
+      {
+        "en": "Set up an exclusion zone under the crane lift.",
+        "zh": "吊装下方设禁入区。"
+      },
+      {
+        "en": "I need more thinset and a box of 3 mm spacers.",
+        "zh": "还要瓷砖胶和一盒三毫米留缝卡。"
+      },
+      {
+        "en": "Where is the materials bay for the bricks?",
+        "zh": "砖的材料堆场在哪？"
+      },
+      {
+        "en": "Put broken tiles in the skip, not on the path.",
+        "zh": "碎砖进垃圾箱，别扔在路上。"
+      },
+      {
+        "en": "The leading hand wants a toolbox talk on silica dust.",
+        "zh": "带班要开粉尘安全会。"
+      },
+      {
+        "en": "Report that near miss before you knock off.",
+        "zh": "下班前把险兆事件报上去。"
+      },
+      {
+        "en": "We're waiting on a variation for the extra tiling.",
+        "zh": "额外贴砖在等工程变更。"
+      },
+      {
+        "en": "Can you mark the defects on the punch list?",
+        "zh": "能把整改点标在清单上吗？"
+      },
+      {
+        "en": "The shower hob height must match the plans.",
+        "zh": "淋浴挡水槛高度要按图。"
+      },
+      {
+        "en": "Leave the control joint where the drawings show.",
+        "zh": "控制缝按图纸位置留。"
+      },
+      {
+        "en": "Is the substrate primed yet?",
+        "zh": "基层涂底涂了吗？"
+      },
+      {
+        "en": "Pass me the laser level and the straight edge.",
+        "zh": "把激光水平仪和靠尺递给我。"
+      },
+      {
+        "en": "I'll cut the bullnose for the step edge.",
+        "zh": "我来裁台阶圆边砖。"
+      },
+      {
+        "en": "Stack the wheelbarrow loads evenly.",
+        "zh": "手推车装料要均匀。"
+      },
+      {
+        "en": "Wear ear muffs when the wet saw is running.",
+        "zh": "水刀开着时戴耳罩。"
+      },
+      {
+        "en": "Site starts at seven; please be ready for the pour.",
+        "zh": "工地七点开工，浇筑前请准备好。"
       }
     ]
   },
@@ -691,6 +1655,326 @@ window.INDUSTRY_DATA = {
       {
         "en": "inspection",
         "zh": "检验"
+      },
+      {
+        "en": "kill floor",
+        "zh": "屠宰车间"
+      },
+      {
+        "en": "stun",
+        "zh": "致晕"
+      },
+      {
+        "en": "bleed",
+        "zh": "放血"
+      },
+      {
+        "en": "hide / pelt",
+        "zh": "皮张"
+      },
+      {
+        "en": "offal",
+        "zh": "内脏副产品"
+      },
+      {
+        "en": "viscera",
+        "zh": "内脏"
+      },
+      {
+        "en": "forequarter",
+        "zh": "前躯"
+      },
+      {
+        "en": "hindquarter",
+        "zh": "后躯"
+      },
+      {
+        "en": "loin",
+        "zh": "里脊部位"
+      },
+      {
+        "en": "rib",
+        "zh": "肋排部位"
+      },
+      {
+        "en": "chuck",
+        "zh": "肩肉"
+      },
+      {
+        "en": "brisket",
+        "zh": "胸肉"
+      },
+      {
+        "en": "silverside",
+        "zh": "臀腿外侧肉"
+      },
+      {
+        "en": "topside",
+        "zh": "臀内侧肉"
+      },
+      {
+        "en": "rump",
+        "zh": "臀肉"
+      },
+      {
+        "en": "shank",
+        "zh": "腱子肉"
+      },
+      {
+        "en": "mince / ground meat",
+        "zh": "绞肉"
+      },
+      {
+        "en": "trim fat",
+        "zh": "修脂"
+      },
+      {
+        "en": "spec / specification",
+        "zh": "规格要求"
+      },
+      {
+        "en": "yield",
+        "zh": "出成率"
+      },
+      {
+        "en": "drop",
+        "zh": "掉肉 / 掉落物"
+      },
+      {
+        "en": "rail",
+        "zh": "吊轨"
+      },
+      {
+        "en": "hook",
+        "zh": "挂钩"
+      },
+      {
+        "en": "band saw",
+        "zh": "带锯"
+      },
+      {
+        "en": "steak knife",
+        "zh": "分割刀"
+      },
+      {
+        "en": "boning knife",
+        "zh": "剔骨刀"
+      },
+      {
+        "en": "scabbard",
+        "zh": "刀鞘"
+      },
+      {
+        "en": "chain mesh",
+        "zh": "金属防护网衣"
+      },
+      {
+        "en": "cut-resistant glove",
+        "zh": "防割手套"
+      },
+      {
+        "en": "hard hat zone",
+        "zh": "必须戴安全帽区域"
+      },
+      {
+        "en": "gumboots",
+        "zh": "胶靴"
+      },
+      {
+        "en": "smock",
+        "zh": "工作罩衣"
+      },
+      {
+        "en": "sleeve guard",
+        "zh": "袖套"
+      },
+      {
+        "en": "hand wash",
+        "zh": "洗手程序"
+      },
+      {
+        "en": "boot wash",
+        "zh": "靴底清洗"
+      },
+      {
+        "en": "steriliser",
+        "zh": "刀具消毒器"
+      },
+      {
+        "en": "hot water dip",
+        "zh": "热水浸刀"
+      },
+      {
+        "en": "SSOAP",
+        "zh": "标准卫生操作"
+      },
+      {
+        "en": "HACCP",
+        "zh": "危害分析关键控制点"
+      },
+      {
+        "en": "CCP",
+        "zh": "关键控制点"
+      },
+      {
+        "en": "metal detector",
+        "zh": "金属探测"
+      },
+      {
+        "en": "foreign object",
+        "zh": "异物"
+      },
+      {
+        "en": "retention sample",
+        "zh": "留样"
+      },
+      {
+        "en": "hold product",
+        "zh": "扣留产品"
+      },
+      {
+        "en": "release",
+        "zh": "放行"
+      },
+      {
+        "en": "traceability",
+        "zh": "可追溯"
+      },
+      {
+        "en": "carton scale",
+        "zh": "纸箱秤"
+      },
+      {
+        "en": "checkweigher",
+        "zh": "自动检重秤"
+      },
+      {
+        "en": "pallet",
+        "zh": "托盘"
+      },
+      {
+        "en": "shrink wrap",
+        "zh": "缠绕膜 / 收缩包装"
+      },
+      {
+        "en": "blast freezer",
+        "zh": "速冻库"
+      },
+      {
+        "en": "load-out",
+        "zh": "发货装车"
+      },
+      {
+        "en": "export cert",
+        "zh": "出口证明"
+      },
+      {
+        "en": "AQIS / DAFF",
+        "zh": "澳检验检疫相关（历史/现行称谓）"
+      },
+      {
+        "en": "MPI",
+        "zh": "新西兰初级产业部"
+      },
+      {
+        "en": "halal",
+        "zh": "清真"
+      },
+      {
+        "en": "kosher",
+        "zh": "犹太洁食"
+      },
+      {
+        "en": "organic",
+        "zh": "有机"
+      },
+      {
+        "en": "grass-fed",
+        "zh": "草饲"
+      },
+      {
+        "en": "grain-fed",
+        "zh": "谷饲"
+      },
+      {
+        "en": "MSA grading",
+        "zh": "澳肉类分级"
+      },
+      {
+        "en": "fat score",
+        "zh": "脂肪评分"
+      },
+      {
+        "en": "marbling",
+        "zh": "大理石花纹"
+      },
+      {
+        "en": "blood stain",
+        "zh": "血污"
+      },
+      {
+        "en": "bruise",
+        "zh": "淤伤"
+      },
+      {
+        "en": "abscess",
+        "zh": "脓肿"
+      },
+      {
+        "en": "condemn",
+        "zh": "判废 / 废弃"
+      },
+      {
+        "en": "knife pouch",
+        "zh": "刀袋"
+      },
+      {
+        "en": "sharpening stone",
+        "zh": "磨刀石"
+      },
+      {
+        "en": "slip hazard",
+        "zh": "滑倒风险"
+      },
+      {
+        "en": "lockout",
+        "zh": "上锁停机"
+      },
+      {
+        "en": "conveyor",
+        "zh": "传送带"
+      },
+      {
+        "en": "drop zone",
+        "zh": "落料区"
+      },
+      {
+        "en": "piecework",
+        "zh": "计件工作"
+      },
+      {
+        "en": "through-put",
+        "zh": "产量 / 吞吐量"
+      },
+      {
+        "en": "down time",
+        "zh": "停机时间"
+      },
+      {
+        "en": "toolbox meeting",
+        "zh": "班前会"
+      },
+      {
+        "en": "induction",
+        "zh": "入职/入场培训"
+      },
+      {
+        "en": "union delegate",
+        "zh": "工会代表"
+      },
+      {
+        "en": "smoko",
+        "zh": "工间休息（澳口语）"
       }
     ],
     "phrases": [
@@ -789,6 +2073,146 @@ window.INDUSTRY_DATA = {
       {
         "en": "Please speak slowly — I'm still learning the terms.",
         "zh": "请说慢一点，我还在学术语。"
+      },
+      {
+        "en": "Sterilise your knife before you return to the line.",
+        "zh": "回线上岗前先消毒刀具。"
+      },
+      {
+        "en": "Change your mesh glove — there is a broken link.",
+        "zh": "换防护手套，有一环断了。"
+      },
+      {
+        "en": "This primal is out of spec — trim to the board.",
+        "zh": "这块大肉超规格，按标准板修整。"
+      },
+      {
+        "en": "Watch the rail height when you push the carcass.",
+        "zh": "推胴体时注意吊轨高度。"
+      },
+      {
+        "en": "Keep drops off the floor; pick them up for QA.",
+        "zh": "掉肉别留在地上，捡起来给质检。"
+      },
+      {
+        "en": "The metal detector alarmed — hold that carton.",
+        "zh": "金属探测报警了，扣住那箱。"
+      },
+      {
+        "en": "Write the kill date and batch on every label.",
+        "zh": "每个标签写上屠宰日期和批次。"
+      },
+      {
+        "en": "Blast-freeze these cartons before load-out.",
+        "zh": "发货前先速冻这些纸箱。"
+      },
+      {
+        "en": "We're on export beef today — double-check the stamps.",
+        "zh": "今天做出口牛肉，再核一遍章戳。"
+      },
+      {
+        "en": "Halal product only on this line, please.",
+        "zh": "这条线只做清真产品。"
+      },
+      {
+        "en": "Smoko is fifteen minutes; be back on time.",
+        "zh": "工休十五分钟，准时回来。"
+      },
+      {
+        "en": "The band saw needs a new blade after lunch.",
+        "zh": "午饭后带锯要换新锯条。"
+      },
+      {
+        "en": "Lock out the conveyor before you clear the jam.",
+        "zh": "清卡料前先给传送带上锁。"
+      },
+      {
+        "en": "Report any foreign object find immediately.",
+        "zh": "发现异物立刻报告。"
+      },
+      {
+        "en": "Yield is down — less trim in the fat bin.",
+        "zh": "出成率偏低，少往脂桶里扔可修肉。"
+      },
+      {
+        "en": "QA wants a retention sample from batch 42.",
+        "zh": "质检要 42 批次留样。"
+      },
+      {
+        "en": "Boot wash before you enter the boning room.",
+        "zh": "进分割间前先洗靴。"
+      },
+      {
+        "en": "Your scabbard must stay on your belt.",
+        "zh": "刀鞘必须挂在腰带上。"
+      },
+      {
+        "en": "Slow the line — we have a new starter on trim.",
+        "zh": "放慢线速，修整岗有新人。"
+      },
+      {
+        "en": "This bruise needs to be cut out completely.",
+        "zh": "这块淤伤要完整修掉。"
+      },
+      {
+        "en": "Condemned product goes in the red bin only.",
+        "zh": "判废产品只进红桶。"
+      },
+      {
+        "en": "Checkweigher is rejecting light cartons.",
+        "zh": "检重秤在剔重量不足的箱。"
+      },
+      {
+        "en": "Pallet these cartons eight high, please.",
+        "zh": "请码八层托盘。"
+      },
+      {
+        "en": "The chiller is above limit — call maintenance.",
+        "zh": "冷藏间超温了，叫维修。"
+      },
+      {
+        "en": "I need a sharper boning knife from the store.",
+        "zh": "我要从库房领一把更锋利的剔骨刀。"
+      },
+      {
+        "en": "First aid is by the supervisor office.",
+        "zh": "急救点在主管办公室旁。"
+      },
+      {
+        "en": "Am I on piece rate or hourly this week?",
+        "zh": "我这周是计件还是计时？"
+      },
+      {
+        "en": "Can you swap my smoko with the afternoon shift?",
+        "zh": "能跟下午班换一下工休吗？"
+      },
+      {
+        "en": "Toolbox meeting covers knife safety today.",
+        "zh": "今天班前会讲刀具安全。"
+      },
+      {
+        "en": "Please show me the trim spec chart again.",
+        "zh": "请再给我看一遍修整规格表。"
+      },
+      {
+        "en": "Stand clear of the drop zone.",
+        "zh": "落料区请让开。"
+      },
+      {
+        "en": "Gumboots and hairnet before you clock on.",
+        "zh": "打卡上岗前先穿胶靴戴发网。"
+      },
+      {
+        "en": "MPI inspection is on site this morning.",
+        "zh": "初级产业部今天上午现场检查。"
+      },
+      {
+        "en": "Vacuum packs must show no air pockets.",
+        "zh": "真空包装不能有气泡。"
+      },
+      {
+        "en": "I'm still learning the cut names — please speak slowly.",
+        "zh": "我还在学部位名称，请说慢一点。"
       }
     ]
   },
@@ -952,6 +2376,318 @@ window.INDUSTRY_DATA = {
       {
         "en": "bookmatch",
         "zh": "对纹拼接"
+      },
+      {
+        "en": "engineered stone",
+        "zh": "人造石"
+      },
+      {
+        "en": "porcelain slab",
+        "zh": "岩板"
+      },
+      {
+        "en": "travertine",
+        "zh": "洞石"
+      },
+      {
+        "en": "limestone",
+        "zh": "石灰石"
+      },
+      {
+        "en": "bluestone",
+        "zh": "青石（澳常见）"
+      },
+      {
+        "en": "sandstone",
+        "zh": "砂岩"
+      },
+      {
+        "en": "quartzite",
+        "zh": "石英岩"
+      },
+      {
+        "en": "terrazzo",
+        "zh": "水磨石"
+      },
+      {
+        "en": "vanity top",
+        "zh": "浴室台面"
+      },
+      {
+        "en": "laundry top",
+        "zh": "洗衣台面"
+      },
+      {
+        "en": "outdoor kitchen",
+        "zh": "户外厨房台面"
+      },
+      {
+        "en": "stair tread",
+        "zh": "踏步板"
+      },
+      {
+        "en": "riser",
+        "zh": "踢面"
+      },
+      {
+        "en": "hearth",
+        "zh": "壁炉台"
+      },
+      {
+        "en": "window sill",
+        "zh": "窗台板"
+      },
+      {
+        "en": "threshold stone",
+        "zh": "门槛石"
+      },
+      {
+        "en": "arriss / arris",
+        "zh": "棱边"
+      },
+      {
+        "en": "bevel edge",
+        "zh": "斜边"
+      },
+      {
+        "en": "pencil round",
+        "zh": "小圆边"
+      },
+      {
+        "en": "ogee",
+        "zh": "S 形边"
+      },
+      {
+        "en": "laminated edge",
+        "zh": "加厚粘接边"
+      },
+      {
+        "en": "drop edge",
+        "zh": "下挂边"
+      },
+      {
+        "en": "undermount sink",
+        "zh": "台下盆"
+      },
+      {
+        "en": "topmount sink",
+        "zh": "台上盆"
+      },
+      {
+        "en": "tap hole",
+        "zh": "龙头孔"
+      },
+      {
+        "en": "cooktop cut-out",
+        "zh": "灶具开孔"
+      },
+      {
+        "en": "power point cut-out",
+        "zh": "插座开孔"
+      },
+      {
+        "en": "reinforcement rod",
+        "zh": "加强筋"
+      },
+      {
+        "en": "substrate check",
+        "zh": "基层检查"
+      },
+      {
+        "en": "cabinet check",
+        "zh": "柜体复核"
+      },
+      {
+        "en": "laser measure",
+        "zh": "激光测距"
+      },
+      {
+        "en": "digital template",
+        "zh": "电子放样"
+      },
+      {
+        "en": "manual template",
+        "zh": "手工模板"
+      },
+      {
+        "en": "shop drawing",
+        "zh": "加工图"
+      },
+      {
+        "en": "material yield",
+        "zh": "板材利用率"
+      },
+      {
+        "en": "nesting",
+        "zh": "排版套料"
+      },
+      {
+        "en": "bridge saw operator",
+        "zh": "桥切机操作工"
+      },
+      {
+        "en": "waterjet",
+        "zh": "水刀切割"
+      },
+      {
+        "en": "core drill",
+        "zh": "开孔钻"
+      },
+      {
+        "en": "router bit",
+        "zh": "成型刀头"
+      },
+      {
+        "en": "polishing pad",
+        "zh": "抛光片"
+      },
+      {
+        "en": "diamond cup wheel",
+        "zh": "金刚石杯轮"
+      },
+      {
+        "en": "wet grinder",
+        "zh": "水磨机"
+      },
+      {
+        "en": "seam adhesive",
+        "zh": "拼缝胶"
+      },
+      {
+        "en": "colour-matched silicone",
+        "zh": "对色玻璃胶"
+      },
+      {
+        "en": "epoxy",
+        "zh": "环氧胶"
+      },
+      {
+        "en": "anchor",
+        "zh": "锚固件"
+      },
+      {
+        "en": "wall cladding",
+        "zh": "墙面干挂"
+      },
+      {
+        "en": "mechanical fixing",
+        "zh": "机械固定"
+      },
+      {
+        "en": "silica dust",
+        "zh": "矽尘"
+      },
+      {
+        "en": "wet cutting only",
+        "zh": "只允许湿切"
+      },
+      {
+        "en": "HEPA vac",
+        "zh": "高效吸尘器"
+      },
+      {
+        "en": "RPE",
+        "zh": "呼吸防护装备"
+      },
+      {
+        "en": "fit test",
+        "zh": "口罩密合度测试"
+      },
+      {
+        "en": "A-frame rack",
+        "zh": "A 字架"
+      },
+      {
+        "en": "slab rack",
+        "zh": "大板货架"
+      },
+      {
+        "en": "vacuum lifter",
+        "zh": "真空吸吊"
+      },
+      {
+        "en": "suction cups",
+        "zh": "吸盘"
+      },
+      {
+        "en": "carry straps",
+        "zh": "搬运带"
+      },
+      {
+        "en": "packaging foam",
+        "zh": "包装泡沫"
+      },
+      {
+        "en": "edge protection",
+        "zh": "边角防护"
+      },
+      {
+        "en": "site access",
+        "zh": "现场通道"
+      },
+      {
+        "en": "stairs access",
+        "zh": "楼梯搬运"
+      },
+      {
+        "en": "lift booking",
+        "zh": "预约电梯"
+      },
+      {
+        "en": "protection boards",
+        "zh": "保护板"
+      },
+      {
+        "en": "client sign-off",
+        "zh": "客户签字确认"
+      },
+      {
+        "en": "warranty",
+        "zh": "质保"
+      },
+      {
+        "en": "sealer",
+        "zh": "防护剂 / 密封剂"
+      },
+      {
+        "en": "honing compound",
+        "zh": "研磨剂"
+      },
+      {
+        "en": "resin fill",
+        "zh": "树脂补洞"
+      },
+      {
+        "en": "fissure",
+        "zh": "细裂纹"
+      },
+      {
+        "en": "pit",
+        "zh": "小坑"
+      },
+      {
+        "en": "movement joint",
+        "zh": "变形缝"
+      },
+      {
+        "en": "load bearing check",
+        "zh": "承重检查"
+      },
+      {
+        "en": "span",
+        "zh": "跨度"
+      },
+      {
+        "en": "cantilever",
+        "zh": "悬挑"
+      },
+      {
+        "en": "upstand",
+        "zh": "上翻边"
+      },
+      {
+        "en": "drainer grooves",
+        "zh": "沥水槽"
       }
     ],
     "phrases": [
@@ -1050,6 +2786,146 @@ window.INDUSTRY_DATA = {
       {
         "en": "Call me if the client changes the sink model.",
         "zh": "客户若换水槽型号请打电话给我。"
+      },
+      {
+        "en": "This is engineered stone — wet cutting only.",
+        "zh": "这是人造石，只允许湿切。"
+      },
+      {
+        "en": "Have you had your respirator fit-tested?",
+        "zh": "你做过口罩密合度测试吗？"
+      },
+      {
+        "en": "Turn on the HEPA vac before you grind.",
+        "zh": "打磨前先开高效吸尘器。"
+      },
+      {
+        "en": "We're templating the kitchen after the cabinets are fixed.",
+        "zh": "柜体固定后再给厨房放样。"
+      },
+      {
+        "en": "Confirm undermount or topmount before we cut.",
+        "zh": "开孔前确认台下盆还是台上盆。"
+      },
+      {
+        "en": "Leave the tap hole centres as per the shop drawing.",
+        "zh": "龙头孔中心距按加工图。"
+      },
+      {
+        "en": "The cooktop cut-out needs extra reinforcement.",
+        "zh": "灶具开孔要额外加强。"
+      },
+      {
+        "en": "Check cabinet levels before we dry-fit the tops.",
+        "zh": "干装台面前先查柜体水平。"
+      },
+      {
+        "en": "Vacuum-lift this slab onto the A-frame.",
+        "zh": "用真空吸吊把大板放到 A 字架。"
+      },
+      {
+        "en": "Protect the arris — it chips easily.",
+        "zh": "保护好棱边，很容易崩。"
+      },
+      {
+        "en": "Colour-match the silicone to the stone.",
+        "zh": "玻璃胶要对石材颜色。"
+      },
+      {
+        "en": "The seam adhesive needs twenty minutes clamp time.",
+        "zh": "拼缝胶要夹紧二十分钟。"
+      },
+      {
+        "en": "Book the lift for Thursday morning delivery.",
+        "zh": "周四上午送货要预约电梯。"
+      },
+      {
+        "en": "Stairs access only — we need extra labour.",
+        "zh": "只能走楼梯，要加人手。"
+      },
+      {
+        "en": "Lay protection boards on the finished floor.",
+        "zh": "成品地面铺上保护板。"
+      },
+      {
+        "en": "The vanity top has a small pit — resin fill it.",
+        "zh": "浴室台面有小坑，用树脂补。"
+      },
+      {
+        "en": "Do you want pencil round or bevel on the edge?",
+        "zh": "边型要小圆边还是斜边？"
+      },
+      {
+        "en": "Waterfall ends will be mitred in the factory.",
+        "zh": "瀑布边在厂里斜接。"
+      },
+      {
+        "en": "Don't dry-cut outdoors either — silica rules still apply.",
+        "zh": "室外也不能干切，矽尘规定照样适用。"
+      },
+      {
+        "en": "Core-drill the tap hole from the finished face.",
+        "zh": "龙头孔从成品面开。"
+      },
+      {
+        "en": "The span is too long without a bracket.",
+        "zh": "没有支架跨度太长。"
+      },
+      {
+        "en": "Check the cantilever against the manufacturer limit.",
+        "zh": "悬挑对照厂家限值检查。"
+      },
+      {
+        "en": "Seal the natural stone after install.",
+        "zh": "天然石安装后做防护。"
+      },
+      {
+        "en": "Client wants drainer grooves beside the sink.",
+        "zh": "客户要水槽旁做沥水槽。"
+      },
+      {
+        "en": "Upstand height is one hundred millimetres.",
+        "zh": "上翻边高度一百毫米。"
+      },
+      {
+        "en": "These two porcelain slabs should be bookmatched.",
+        "zh": "这两块岩板要对纹。"
+      },
+      {
+        "en": "Nesting looks tight — yield is only sixty percent.",
+        "zh": "排版很紧，利用率只有六成。"
+      },
+      {
+        "en": "Bridge saw is booked for the quartz job at one.",
+        "zh": "一点桥切机排石英石活。"
+      },
+      {
+        "en": "Site measure notes: dishwasher gap and fridge reveal.",
+        "zh": "现场测量备注：洗碗机空隙和冰箱边距。"
+      },
+      {
+        "en": "Please sign off the edge profile on the sample.",
+        "zh": "请在样品上确认边型。"
+      },
+      {
+        "en": "Warranty starts from the install date.",
+        "zh": "质保从安装日起算。"
+      },
+      {
+        "en": "We found a fissure — better to recut from another slab.",
+        "zh": "发现细裂纹，最好换板重切。"
+      },
+      {
+        "en": "Packers under the top until silicone cures.",
+        "zh": "玻璃胶固化前台面下垫着垫片。"
+      },
+      {
+        "en": "Splashback thickness matches the benchtop.",
+        "zh": "后挡板厚度与台面一致。"
+      },
+      {
+        "en": "Call if the sink model changes before fabrication.",
+        "zh": "加工前水槽型号若有变请打电话。"
       }
     ]
   },
@@ -1213,6 +3089,342 @@ window.INDUSTRY_DATA = {
       {
         "en": "site check",
         "zh": "现场检查"
+      },
+      {
+        "en": "cabinet maker",
+        "zh": "橱柜工 / 细木工"
+      },
+      {
+        "en": "joiner",
+        "zh": "细木工"
+      },
+      {
+        "en": "apprentice cabinetmaker",
+        "zh": "橱柜学徒"
+      },
+      {
+        "en": "workshop",
+        "zh": "车间"
+      },
+      {
+        "en": "CNC nesting",
+        "zh": "数控套料"
+      },
+      {
+        "en": "panel saw",
+        "zh": "推台锯"
+      },
+      {
+        "en": "edge bander",
+        "zh": "封边机"
+      },
+      {
+        "en": "drill press",
+        "zh": "台钻"
+      },
+      {
+        "en": "domino / biscuit joiner",
+        "zh": "多米诺/饼干榫机"
+      },
+      {
+        "en": "pocket hole",
+        "zh": "斜孔"
+      },
+      {
+        "en": "confirmat screw",
+        "zh": "三合一螺丝"
+      },
+      {
+        "en": "cam lock",
+        "zh": "偏心轮连接件"
+      },
+      {
+        "en": "shelf pin",
+        "zh": "层板钉"
+      },
+      {
+        "en": "hanging rail",
+        "zh": "挂衣杆"
+      },
+      {
+        "en": "robe",
+        "zh": "衣柜（澳口语）"
+      },
+      {
+        "en": "walk-in robe",
+        "zh": "步入式衣帽间"
+      },
+      {
+        "en": "linen cupboard",
+        "zh": "布草柜"
+      },
+      {
+        "en": "broom cupboard",
+        "zh": "清洁用具柜"
+      },
+      {
+        "en": "under-bench oven",
+        "zh": "台下烤箱位"
+      },
+      {
+        "en": "tall oven tower",
+        "zh": "烤箱高柜"
+      },
+      {
+        "en": "fridge surround",
+        "zh": "冰箱围柜"
+      },
+      {
+        "en": "rangehood clearance",
+        "zh": "油烟机净空"
+      },
+      {
+        "en": "appliance gap",
+        "zh": "电器预留空隙"
+      },
+      {
+        "en": "gables",
+        "zh": "侧板"
+      },
+      {
+        "en": "top panel",
+        "zh": "顶板"
+      },
+      {
+        "en": "bottom panel",
+        "zh": "底板"
+      },
+      {
+        "en": "back panel",
+        "zh": "背板"
+      },
+      {
+        "en": "infill panel",
+        "zh": "填充板"
+      },
+      {
+        "en": "filler strip",
+        "zh": "补缝条"
+      },
+      {
+        "en": "cornice",
+        "zh": "顶线"
+      },
+      {
+        "en": "pelmet",
+        "zh": "灯线 / 遮光罩"
+      },
+      {
+        "en": "glass door",
+        "zh": "玻璃门"
+      },
+      {
+        "en": "shaker door",
+        "zh": "框式门板"
+      },
+      {
+        "en": "slab door",
+        "zh": "平板门"
+      },
+      {
+        "en": "two-pack paint",
+        "zh": "双组份漆"
+      },
+      {
+        "en": "polyurethane",
+        "zh": "聚氨酯漆面"
+      },
+      {
+        "en": "vinyl wrap",
+        "zh": "吸塑 / 膜压"
+      },
+      {
+        "en": "timber veneer",
+        "zh": "木皮"
+      },
+      {
+        "en": "solid timber",
+        "zh": "实木"
+      },
+      {
+        "en": "moisture resistant / MR",
+        "zh": "防潮板"
+      },
+      {
+        "en": "HMR board",
+        "zh": "高防潮板"
+      },
+      {
+        "en": "scratch",
+        "zh": "划痕"
+      },
+      {
+        "en": "chip on edge",
+        "zh": "封边崩口"
+      },
+      {
+        "en": "delamination",
+        "zh": "脱胶分层"
+      },
+      {
+        "en": "warp",
+        "zh": "变形翘曲"
+      },
+      {
+        "en": "reveal",
+        "zh": "缝隙 / 边距"
+      },
+      {
+        "en": "gap to fridge",
+        "zh": "冰箱边距"
+      },
+      {
+        "en": "plumb bob",
+        "zh": "线坠"
+      },
+      {
+        "en": "laser line",
+        "zh": "激光线"
+      },
+      {
+        "en": "driver / drill",
+        "zh": "电钻起子"
+      },
+      {
+        "en": "countersink",
+        "zh": "沉头孔"
+      },
+      {
+        "en": "wall plug / anchor",
+        "zh": "膨胀管 / 锚栓"
+      },
+      {
+        "en": "nogging behind plaster",
+        "zh": "石膏板后横撑"
+      },
+      {
+        "en": "find the stud",
+        "zh": "找墙骨"
+      },
+      {
+        "en": "stud finder",
+        "zh": "墙骨探测仪"
+      },
+      {
+        "en": "silicone under kick",
+        "zh": "踢脚下打胶"
+      },
+      {
+        "en": "adjustable leg",
+        "zh": "可调柜脚"
+      },
+      {
+        "en": "service void",
+        "zh": "管线空腔"
+      },
+      {
+        "en": "cable hole",
+        "zh": "穿线孔"
+      },
+      {
+        "en": "grommet",
+        "zh": "过线圈"
+      },
+      {
+        "en": "soft-close damper",
+        "zh": "阻尼器"
+      },
+      {
+        "en": "push-to-open",
+        "zh": "按弹开门"
+      },
+      {
+        "en": "tip-on",
+        "zh": "按压弹开装置"
+      },
+      {
+        "en": "Blum / Hettich",
+        "zh": "常见五金品牌（澳新）"
+      },
+      {
+        "en": "drawer box",
+        "zh": "抽盒"
+      },
+      {
+        "en": "cutlery insert",
+        "zh": "刀叉分隔"
+      },
+      {
+        "en": "bin drawer",
+        "zh": "垃圾桶抽屉"
+      },
+      {
+        "en": "pot drawer",
+        "zh": "锅具深抽"
+      },
+      {
+        "en": "corner carousel",
+        "zh": "转角旋转拉篮"
+      },
+      {
+        "en": "magic corner",
+        "zh": "转角魔方拉篮"
+      },
+      {
+        "en": "open shelf",
+        "zh": "开放搁板"
+      },
+      {
+        "en": "wine rack",
+        "zh": "酒架"
+      },
+      {
+        "en": "benchtop overhang",
+        "zh": "台面悬挑"
+      },
+      {
+        "en": "stone arrival date",
+        "zh": "石材到货日"
+      },
+      {
+        "en": "trade sequence",
+        "zh": "工序顺序"
+      },
+      {
+        "en": "electrician access",
+        "zh": "电工操作空间"
+      },
+      {
+        "en": "plumber rough-in",
+        "zh": "水管预埋"
+      },
+      {
+        "en": "defect photo",
+        "zh": "缺陷照片"
+      },
+      {
+        "en": "make-good",
+        "zh": "整改修复"
+      },
+      {
+        "en": "job pack",
+        "zh": "施工资料包"
+      },
+      {
+        "en": "cut list check",
+        "zh": "下料单核对"
+      },
+      {
+        "en": "hardware schedule",
+        "zh": "五金清单"
+      },
+      {
+        "en": "install crew",
+        "zh": "安装班组"
+      },
+      {
+        "en": "two-person lift",
+        "zh": "双人抬运"
       }
     ],
     "phrases": [
@@ -1311,6 +3523,146 @@ window.INDUSTRY_DATA = {
       {
         "en": "Customer signed off on the drawings.",
         "zh": "客户已经确认图纸。"
+      },
+      {
+        "en": "Confirm measure only after the floor is finished.",
+        "zh": "地面完工后再复核尺寸。"
+      },
+      {
+        "en": "Find the studs before you fix the tall unit.",
+        "zh": "固定高柜前先找墙骨。"
+      },
+      {
+        "en": "Pack the legs until the carcass is level and plumb.",
+        "zh": "调柜脚直到柜体水平垂直。"
+      },
+      {
+        "en": "Leave the fridge reveal as per the drawing.",
+        "zh": "冰箱边距按图纸留。"
+      },
+      {
+        "en": "Scribe the gable to the out-of-plumb wall.",
+        "zh": "侧板按不垂直的墙修边。"
+      },
+      {
+        "en": "Soft-close dampers are in the hardware box.",
+        "zh": "阻尼器在五金盒里。"
+      },
+      {
+        "en": "Adjust the hinges for an even reveal on the doors.",
+        "zh": "调铰链让门缝均匀。"
+      },
+      {
+        "en": "The bin drawer needs clear space for the plumbing.",
+        "zh": "垃圾桶抽要给水管留空。"
+      },
+      {
+        "en": "Don't seal the kickboard until the plumber signs off.",
+        "zh": "水管工确认前先别封踢脚。"
+      },
+      {
+        "en": "Edge banding chipped — send it back for make-good.",
+        "zh": "封边崩了，送回去整改。"
+      },
+      {
+        "en": "Two-pack doors scratch easily — use protection film.",
+        "zh": "双组份门板易刮，贴好保护膜。"
+      },
+      {
+        "en": "CNC nesting is ready; check the cut list first.",
+        "zh": "数控套料好了，先核下料单。"
+      },
+      {
+        "en": "MR board for all wet-area cabinets, please.",
+        "zh": "湿区橱柜请全部用防潮板。"
+      },
+      {
+        "en": "Island needs a service void for power and data.",
+        "zh": "中岛要留强弱电空腔。"
+      },
+      {
+        "en": "Stone is due Friday — cabinets must be fixed by Thursday.",
+        "zh": "石材周五到，橱柜周四前必须固定好。"
+      },
+      {
+        "en": "Leave electrician access behind the oven tower.",
+        "zh": "烤箱高柜后给电工留操作空间。"
+      },
+      {
+        "en": "Push-to-open tip-ons go on the pantry doors.",
+        "zh": "储物柜门装按弹装置。"
+      },
+      {
+        "en": "Cutlery insert sits in the top drawer beside the dishwasher.",
+        "zh": "刀叉分隔放在洗碗机旁上层抽。"
+      },
+      {
+        "en": "Photograph any wall damage before you start.",
+        "zh": "开工前把墙面原有损伤拍照。"
+      },
+      {
+        "en": "Job pack has the hardware schedule and elevations.",
+        "zh": "资料包里有五金清单和立面图。"
+      },
+      {
+        "en": "Two-person lift for the tall robe carcass.",
+        "zh": "衣柜高柜体要两人抬。"
+      },
+      {
+        "en": "Vacuum before handover — client walk-through at three.",
+        "zh": "交工前吸尘，客户三点验收。"
+      },
+      {
+        "en": "Cornice waits until the bulkhead is finished.",
+        "zh": "吊顶完成后再装顶线。"
+      },
+      {
+        "en": "The vinyl-wrap door has delaminated at the corner.",
+        "zh": "吸塑门角部脱胶了。"
+      },
+      {
+        "en": "Can we swap the magic corner to the other side?",
+        "zh": "转角拉篮能换到另一边吗？"
+      },
+      {
+        "en": "Drill cable holes with a grommet for the entertainment unit.",
+        "zh": "电视柜穿线孔要加过线圈。"
+      },
+      {
+        "en": "Confirm handle centres before you drill the doors.",
+        "zh": "门板打孔前确认拉手中心距。"
+      },
+      {
+        "en": "HMR carcasses for the laundry cupboards.",
+        "zh": "洗衣柜用高防潮柜体。"
+      },
+      {
+        "en": "Site check found the floor out of level by eight millimetres.",
+        "zh": "现场检查发现地面高低差八毫米。"
+      },
+      {
+        "en": "Make-good list: one drawer front and two shelf pins.",
+        "zh": "整改清单：一块抽面和两个层板钉。"
+      },
+      {
+        "en": "Trade sequence: cabinets, then stone, then splashback.",
+        "zh": "工序：先橱柜，再石材，最后后挡。"
+      },
+      {
+        "en": "Please keep kids and pets out during install.",
+        "zh": "安装期间请让小孩和宠物离开。"
+      },
+      {
+        "en": "I need a longer confirmat for this thick gable.",
+        "zh": "这块厚侧板要更长的三合一螺丝。"
+      },
+      {
+        "en": "Workshop dust extraction must stay on while sanding.",
+        "zh": "打磨时车间除尘必须开着。"
+      },
+      {
+        "en": "Customer approved the colour match on the infill panel.",
+        "zh": "客户已确认填充板对色。"
       }
     ]
   },
@@ -1474,6 +3826,334 @@ window.INDUSTRY_DATA = {
       {
         "en": "fit-up",
         "zh": "组对 / 装配"
+      },
+      {
+        "en": "boilermaker",
+        "zh": "锅炉工 / 重钢焊工（澳称）"
+      },
+      {
+        "en": "fabricator",
+        "zh": "金属加工工"
+      },
+      {
+        "en": "fitter",
+        "zh": "钳工 / 装配工"
+      },
+      {
+        "en": "sheet metal worker",
+        "zh": "钣金工"
+      },
+      {
+        "en": "workshop bay",
+        "zh": "车间工位"
+      },
+      {
+        "en": "job card",
+        "zh": "派工单"
+      },
+      {
+        "en": "WPS",
+        "zh": "焊接工艺规程"
+      },
+      {
+        "en": "welder qualification",
+        "zh": "焊工资质"
+      },
+      {
+        "en": "consumables",
+        "zh": "焊材耗材"
+      },
+      {
+        "en": "filler wire",
+        "zh": "焊丝"
+      },
+      {
+        "en": "flux-cored",
+        "zh": "药芯焊丝"
+      },
+      {
+        "en": "argon",
+        "zh": "氩气"
+      },
+      {
+        "en": "CO2 mix",
+        "zh": "二氧化碳混合气"
+      },
+      {
+        "en": "regulator",
+        "zh": "减压阀"
+      },
+      {
+        "en": "flow meter",
+        "zh": "流量计"
+      },
+      {
+        "en": "earth clamp / ground clamp",
+        "zh": "接地夹"
+      },
+      {
+        "en": "torch",
+        "zh": "焊枪"
+      },
+      {
+        "en": "contact tip",
+        "zh": "导电嘴"
+      },
+      {
+        "en": "nozzle",
+        "zh": "喷嘴"
+      },
+      {
+        "en": "liner",
+        "zh": "送丝软管"
+      },
+      {
+        "en": "duty cycle",
+        "zh": "暂载率"
+      },
+      {
+        "en": "amperage",
+        "zh": "电流安培"
+      },
+      {
+        "en": "voltage",
+        "zh": "电压"
+      },
+      {
+        "en": "travel speed",
+        "zh": "焊接速度"
+      },
+      {
+        "en": "weave",
+        "zh": "摆动运条"
+      },
+      {
+        "en": "stringer bead",
+        "zh": "直线焊道"
+      },
+      {
+        "en": "root pass",
+        "zh": "打底焊"
+      },
+      {
+        "en": "hot pass",
+        "zh": "热焊道"
+      },
+      {
+        "en": "cap pass",
+        "zh": "盖面焊"
+      },
+      {
+        "en": "fillet weld",
+        "zh": "角焊缝"
+      },
+      {
+        "en": "butt weld",
+        "zh": "对接焊"
+      },
+      {
+        "en": "lap joint",
+        "zh": "搭接接头"
+      },
+      {
+        "en": "bevel",
+        "zh": "坡口"
+      },
+      {
+        "en": "root gap",
+        "zh": "根部间隙"
+      },
+      {
+        "en": "distortion",
+        "zh": "变形"
+      },
+      {
+        "en": "warpage",
+        "zh": "翘曲"
+      },
+      {
+        "en": "porosity",
+        "zh": "气孔"
+      },
+      {
+        "en": "undercut",
+        "zh": "咬边"
+      },
+      {
+        "en": "lack of fusion",
+        "zh": "未熔合"
+      },
+      {
+        "en": "crack detection",
+        "zh": "探伤 / 裂纹检测"
+      },
+      {
+        "en": "NDT",
+        "zh": "无损检测"
+      },
+      {
+        "en": "dye penetrant",
+        "zh": "渗透探伤"
+      },
+      {
+        "en": "grind disc",
+        "zh": "打磨片"
+      },
+      {
+        "en": "flap disc",
+        "zh": "百叶片"
+      },
+      {
+        "en": "wire brush",
+        "zh": "钢丝刷"
+      },
+      {
+        "en": "chipping hammer",
+        "zh": "敲渣锤"
+      },
+      {
+        "en": "vice",
+        "zh": "台钳"
+      },
+      {
+        "en": "engineers square",
+        "zh": "直角尺"
+      },
+      {
+        "en": "vernier / digital caliper",
+        "zh": "游标/数显卡尺"
+      },
+      {
+        "en": "tape",
+        "zh": "卷尺"
+      },
+      {
+        "en": "scribe mark",
+        "zh": "划线标记"
+      },
+      {
+        "en": "centre punch",
+        "zh": "样冲"
+      },
+      {
+        "en": "mag drill",
+        "zh": "磁力钻"
+      },
+      {
+        "en": "hole saw",
+        "zh": "开孔锯"
+      },
+      {
+        "en": "guillotine",
+        "zh": "剪板机"
+      },
+      {
+        "en": "folder / press brake",
+        "zh": "折弯机"
+      },
+      {
+        "en": "roller",
+        "zh": "卷板机"
+      },
+      {
+        "en": "overhead crane",
+        "zh": "天车"
+      },
+      {
+        "en": "lifting sling",
+        "zh": "吊带"
+      },
+      {
+        "en": "tag line",
+        "zh": "牵引绳"
+      },
+      {
+        "en": "spotter",
+        "zh": "指挥员"
+      },
+      {
+        "en": "flashback arrestor",
+        "zh": "回火防止器"
+      },
+      {
+        "en": "oxy-acetylene",
+        "zh": "氧乙炔"
+      },
+      {
+        "en": "cutting torch",
+        "zh": "割炬"
+      },
+      {
+        "en": "purge gas",
+        "zh": "背面保护气"
+      },
+      {
+        "en": "heat tint",
+        "zh": "氧化色"
+      },
+      {
+        "en": "pickling paste",
+        "zh": "酸洗膏（不锈钢）"
+      },
+      {
+        "en": "passivation",
+        "zh": "钝化"
+      },
+      {
+        "en": "galvanised",
+        "zh": "镀锌"
+      },
+      {
+        "en": "zinc primer",
+        "zh": "富锌底漆"
+      },
+      {
+        "en": "paint prep",
+        "zh": "涂装前处理"
+      },
+      {
+        "en": "structural steel",
+        "zh": "结构钢"
+      },
+      {
+        "en": "purlin",
+        "zh": "檩条"
+      },
+      {
+        "en": "cleat",
+        "zh": "连接板 / 支托"
+      },
+      {
+        "en": "base plate",
+        "zh": "底板"
+      },
+      {
+        "en": "anchor bolt",
+        "zh": "地脚螺栓"
+      },
+      {
+        "en": "torque",
+        "zh": "扭矩"
+      },
+      {
+        "en": "mill cert",
+        "zh": "材质证明"
+      },
+      {
+        "en": "heat number",
+        "zh": "炉号"
+      },
+      {
+        "en": "ITP",
+        "zh": "检验试验计划"
+      },
+      {
+        "en": "hold point",
+        "zh": "停检点"
+      },
+      {
+        "en": "sparky / electrician",
+        "zh": "电工（澳口语 sparky）"
       }
     ],
     "phrases": [
@@ -1572,6 +4252,146 @@ window.INDUSTRY_DATA = {
       {
         "en": "Please speak slowly when giving measurements.",
         "zh": "报尺寸时请说慢一点。"
+      },
+      {
+        "en": "Read the WPS before you change any settings.",
+        "zh": "改参数前先看焊接工艺规程。"
+      },
+      {
+        "en": "Check your welder qualification is current.",
+        "zh": "确认你的焊工资质还在有效期。"
+      },
+      {
+        "en": "Set the flow meter to fifteen litres a minute.",
+        "zh": "流量计调到每分钟十五升。"
+      },
+      {
+        "en": "Replace the contact tip — it’s worn.",
+        "zh": "换导电嘴，已经磨损了。"
+      },
+      {
+        "en": "Root gap is too tight; open it another millimetre.",
+        "zh": "根部间隙太紧，再开一毫米。"
+      },
+      {
+        "en": "Tack, check square, then run the root pass.",
+        "zh": "点固、找方，再打底焊。"
+      },
+      {
+        "en": "Clean between passes — slag will trap porosity.",
+        "zh": "道间清理，焊渣会夹气孔。"
+      },
+      {
+        "en": "We have undercut on the toe — grind and repair.",
+        "zh": "焊趾有咬边，打磨返修。"
+      },
+      {
+        "en": "NDT hold point before you paint.",
+        "zh": "涂装前有无损检测停检点。"
+      },
+      {
+        "en": "Purge the stainless pipe before TIG.",
+        "zh": "不锈钢管氩弧焊前先充保护气。"
+      },
+      {
+        "en": "Heat tint needs pickling after fabrication.",
+        "zh": "加工后氧化色要酸洗。"
+      },
+      {
+        "en": "Don’t weld over galvanising without proper prep.",
+        "zh": "镀锌件没处理好别直接焊。"
+      },
+      {
+        "en": "Mag-drill these holes from the marked centres.",
+        "zh": "按划线中心用磁力钻孔。"
+      },
+      {
+        "en": "Press-brake the folders to ninety degrees.",
+        "zh": "折弯机折到九十度。"
+      },
+      {
+        "en": "Overhead crane lift — tag lines on both ends.",
+        "zh": "天车吊装，两端都拉牵引绳。"
+      },
+      {
+        "en": "Flashback arrestors must be fitted on oxy sets.",
+        "zh": "氧乙炔必须装回火防止器。"
+      },
+      {
+        "en": "Duty cycle is maxed — let the machine cool down.",
+        "zh": "暂载率到顶了，让焊机冷却。"
+      },
+      {
+        "en": "Cut list is on the job card in bay three.",
+        "zh": "下料单在三号工位的派工单上。"
+      },
+      {
+        "en": "Tolerance on this frame is plus or minus two millimetres.",
+        "zh": "这个框架公差正负两毫米。"
+      },
+      {
+        "en": "Fit-up the cleats before the full weld.",
+        "zh": "满焊前先组对连接板。"
+      },
+      {
+        "en": "Torque the anchor bolts to the spec on the drawing.",
+        "zh": "地脚螺栓拧到图纸扭矩。"
+      },
+      {
+        "en": "Mill cert and heat number go in the ITP pack.",
+        "zh": "材质证和炉号放进检验资料包。"
+      },
+      {
+        "en": "Fire watch stays after hot work in the paint bay.",
+        "zh": "喷漆区动火后看火人要留下。"
+      },
+      {
+        "en": "Fume extraction arms over every weld station.",
+        "zh": "每个焊工位都要抽烟尘臂。"
+      },
+      {
+        "en": "Gauntlets and helmet — no exceptions on the floor.",
+        "zh": "手套焊帽，车间没有例外。"
+      },
+      {
+        "en": "Stop the arc — the earth clamp fell off.",
+        "zh": "停弧，接地夹掉了。"
+      },
+      {
+        "en": "Cap pass should be even with no undercut.",
+        "zh": "盖面要平整无咬边。"
+      },
+      {
+        "en": "Aluminium needs the right AC TIG setup.",
+        "zh": "铝要用对的交流氩弧设置。"
+      },
+      {
+        "en": "Plasma cut then grind the edge square.",
+        "zh": "等离子切割后把边磨方。"
+      },
+      {
+        "en": "We’re fabricating base plates for the columns today.",
+        "zh": "今天做柱子底板。"
+      },
+      {
+        "en": "Sparky needs a hole for the cable tray support.",
+        "zh": "电工要在电缆桥架支托上开孔。"
+      },
+      {
+        "en": "Record amps and volts on the weld map.",
+        "zh": "把电流电压记在焊缝图上。"
+      },
+      {
+        "en": "Distortion pulled the frame — clamp and straighten.",
+        "zh": "变形把框架拉偏了，夹住校直。"
+      },
+      {
+        "en": "Consumables store is locked after four.",
+        "zh": "四点后焊材库上锁。"
+      },
+      {
+        "en": "Please repeat the measurement slowly in millimetres.",
+        "zh": "请用毫米把尺寸慢慢再说一遍。"
       }
     ]
   },
@@ -1735,6 +4555,338 @@ window.INDUSTRY_DATA = {
       {
         "en": "family contact",
         "zh": "家属联系人"
+      },
+      {
+        "en": "aged care home",
+        "zh": "养老院"
+      },
+      {
+        "en": "residential aged care",
+        "zh": "机构养老"
+      },
+      {
+        "en": "home care package",
+        "zh": "居家养老服务包（澳）"
+      },
+      {
+        "en": "NDIS",
+        "zh": "国家残疾保险计划（澳）"
+      },
+      {
+        "en": "support plan",
+        "zh": "支持计划"
+      },
+      {
+        "en": "key worker",
+        "zh": "主要负责护工"
+      },
+      {
+        "en": "enrolled nurse / EN",
+        "zh": "登记护士"
+      },
+      {
+        "en": "AIN / PCA",
+        "zh": "护理助理（澳常见称谓）"
+      },
+      {
+        "en": "clinical care",
+        "zh": "临床护理"
+      },
+      {
+        "en": "observations / obs",
+        "zh": "生命体征观察"
+      },
+      {
+        "en": "temperature",
+        "zh": "体温"
+      },
+      {
+        "en": "oxygen saturation / spo2",
+        "zh": "血氧饱和度"
+      },
+      {
+        "en": "BSL / blood sugar",
+        "zh": "血糖"
+      },
+      {
+        "en": "weight chart",
+        "zh": "体重记录"
+      },
+      {
+        "en": "fluid balance",
+        "zh": "出入量平衡"
+      },
+      {
+        "en": "hydration",
+        "zh": "补水 / 水合"
+      },
+      {
+        "en": "dehydration",
+        "zh": "脱水"
+      },
+      {
+        "en": "pressure injury",
+        "zh": "压疮"
+      },
+      {
+        "en": "reposition",
+        "zh": "翻身摆位"
+      },
+      {
+        "en": "skin integrity",
+        "zh": "皮肤完整性"
+      },
+      {
+        "en": "wound care",
+        "zh": "伤口护理"
+      },
+      {
+        "en": "dressing",
+        "zh": "敷料"
+      },
+      {
+        "en": "continence aid",
+        "zh": "失禁用品"
+      },
+      {
+        "en": "pad change",
+        "zh": "更换护理垫"
+      },
+      {
+        "en": "toileting",
+        "zh": "如厕协助"
+      },
+      {
+        "en": "continence chart",
+        "zh": "大小便记录表"
+      },
+      {
+        "en": "oral care",
+        "zh": "口腔护理"
+      },
+      {
+        "en": "dentures",
+        "zh": "假牙"
+      },
+      {
+        "en": "hearing aid",
+        "zh": "助听器"
+      },
+      {
+        "en": "glasses",
+        "zh": "眼镜"
+      },
+      {
+        "en": "compression stockings",
+        "zh": "压力袜"
+      },
+      {
+        "en": "slide sheet",
+        "zh": "移位滑单"
+      },
+      {
+        "en": "transfer belt",
+        "zh": "转移腰带"
+      },
+      {
+        "en": "standing hoist",
+        "zh": "站立式移位机"
+      },
+      {
+        "en": "ceiling hoist",
+        "zh": "天花轨道吊机"
+      },
+      {
+        "en": "manual handling",
+        "zh": "人工搬抬作业"
+      },
+      {
+        "en": "no-lift policy",
+        "zh": "禁止蛮力搬抬政策"
+      },
+      {
+        "en": "falls mat",
+        "zh": "防跌倒地垫"
+      },
+      {
+        "en": "sensor mat",
+        "zh": "感应地垫"
+      },
+      {
+        "en": "bed rails",
+        "zh": "床栏"
+      },
+      {
+        "en": "low-low bed",
+        "zh": "超低床"
+      },
+      {
+        "en": "wandering risk",
+        "zh": "走失风险"
+      },
+      {
+        "en": "behaviour support",
+        "zh": "行为支持"
+      },
+      {
+        "en": "validation",
+        "zh": "情感确认（失智沟通）"
+      },
+      {
+        "en": "reminiscence",
+        "zh": "怀旧疗法活动"
+      },
+      {
+        "en": "activities program",
+        "zh": "活动安排"
+      },
+      {
+        "en": "physiotherapy / physio",
+        "zh": "物理治疗"
+      },
+      {
+        "en": "OT / occupational therapy",
+        "zh": "作业治疗"
+      },
+      {
+        "en": "dietitian",
+        "zh": "营养师"
+      },
+      {
+        "en": "texture modified diet",
+        "zh": "性状调整饮食"
+      },
+      {
+        "en": "puree",
+        "zh": "糊状餐"
+      },
+      {
+        "en": "minced moist",
+        "zh": "碎湿餐"
+      },
+      {
+        "en": "thickened fluids",
+        "zh": "稠化饮品"
+      },
+      {
+        "en": "aspiration risk",
+        "zh": "误吸风险"
+      },
+      {
+        "en": "nil by mouth / NBM",
+        "zh": "禁食水"
+      },
+      {
+        "en": "allergy alert",
+        "zh": "过敏警示"
+      },
+      {
+        "en": "PRN medication",
+        "zh": "必要时用药"
+      },
+      {
+        "en": "medication round",
+        "zh": "发药巡视"
+      },
+      {
+        "en": "S8 medication",
+        "zh": "第八类管制药（澳）"
+      },
+      {
+        "en": "incident form",
+        "zh": "事件表单"
+      },
+      {
+        "en": "hazard report",
+        "zh": "危险报告"
+      },
+      {
+        "en": "Code Blue",
+        "zh": "医疗急救代码（常见）"
+      },
+      {
+        "en": "evacuation plan",
+        "zh": "疏散方案"
+      },
+      {
+        "en": "fire wardens",
+        "zh": "消防楼层员"
+      },
+      {
+        "en": "PPE donning",
+        "zh": "穿戴防护用品"
+      },
+      {
+        "en": "outbreak",
+        "zh": "疫情暴发"
+      },
+      {
+        "en": "isolation",
+        "zh": "隔离"
+      },
+      {
+        "en": "hand hygiene",
+        "zh": "手卫生"
+      },
+      {
+        "en": "ABHR",
+        "zh": "酒精免洗洗手液"
+      },
+      {
+        "en": "family meeting",
+        "zh": "家属会议"
+      },
+      {
+        "en": "end-of-life care",
+        "zh": "临终关怀"
+      },
+      {
+        "en": "palliative care",
+        "zh": "姑息治疗"
+      },
+      {
+        "en": "advance care directive",
+        "zh": "预立医疗指示"
+      },
+      {
+        "en": "consent form",
+        "zh": "同意书"
+      },
+      {
+        "en": "cultural preference",
+        "zh": "文化偏好"
+      },
+      {
+        "en": "interpreter service",
+        "zh": "口译服务"
+      },
+      {
+        "en": "progress note entry",
+        "zh": "写护理记录"
+      },
+      {
+        "en": "handover sheet",
+        "zh": "交接班表"
+      },
+      {
+        "en": "shift supervisor",
+        "zh": "当班主管"
+      },
+      {
+        "en": "agency staff",
+        "zh": "中介临时护工"
+      },
+      {
+        "en": "mandatory training",
+        "zh": "必修培训"
+      },
+      {
+        "en": "manual handling refresher",
+        "zh": "搬抬复训"
+      },
+      {
+        "en": "compassionate care",
+        "zh": "有同理心的护理"
       }
     ],
     "phrases": [
@@ -1833,9 +4985,149 @@ window.INDUSTRY_DATA = {
       {
         "en": "My shift ends at ten; the night carer will continue.",
         "zh": "我十点下班，夜班护工会接上。"
+      },
+      {
+        "en": "I’ll knock and wait before I enter your room.",
+        "zh": "进房前我会先敲门等待。"
+      },
+      {
+        "en": "Would you like me to close the curtain for privacy?",
+        "zh": "需要我拉上帘子保护隐私吗？"
+      },
+      {
+        "en": "I need two staff for this hoist transfer.",
+        "zh": "这次吊机转移需要两名员工。"
+      },
+      {
+        "en": "We follow a no-lift policy — please wait for the hoist.",
+        "zh": "我们禁止蛮力搬抬，请等移位机。"
+      },
+      {
+        "en": "Time to reposition to protect your skin.",
+        "zh": "到翻身时间了，保护皮肤。"
+      },
+      {
+        "en": "Your call bell is on the right side of the bed.",
+        "zh": "呼叫铃在床的右侧。"
+      },
+      {
+        "en": "I’ll help with dentures before breakfast.",
+        "zh": "早饭前我帮您戴假牙。"
+      },
+      {
+        "en": "This meal is minced moist as per the dietitian.",
+        "zh": "按营养师要求，这餐是碎湿餐。"
+      },
+      {
+        "en": "Thickened fluids only — aspiration risk.",
+        "zh": "只能喝稠化饮品，有误吸风险。"
+      },
+      {
+        "en": "Nil by mouth until the speech therapist review.",
+        "zh": "言语治疗评估前禁食水。"
+      },
+      {
+        "en": "Obs are due now: BP, pulse and spo2.",
+        "zh": "现在要测生命体征：血压、脉搏和血氧。"
+      },
+      {
+        "en": "BSL before lunch, please.",
+        "zh": "午饭前测血糖。"
+      },
+      {
+        "en": "PRN pain relief was given at ten; note it down.",
+        "zh": "十点给了必要时止痛药，记下来。"
+      },
+      {
+        "en": "Medication round — please don’t disturb the RN.",
+        "zh": "正在发药巡视，请勿打扰注册护士。"
+      },
+      {
+        "en": "She is a wandering risk; keep the sensor mat on.",
+        "zh": "她有走失风险，感应地垫保持开启。"
+      },
+      {
+        "en": "Use validation, not argument, with dementia care.",
+        "zh": "失智护理用情感确认，不要争辩。"
+      },
+      {
+        "en": "Family meeting is booked for 2 pm in the lounge.",
+        "zh": "家属会议下午两点在休息室。"
+      },
+      {
+        "en": "Please document the incident on the form today.",
+        "zh": "请今天把事件写进表单。"
+      },
+      {
+        "en": "Hand hygiene before and after every care task.",
+        "zh": "每次护理前后都做手卫生。"
+      },
+      {
+        "en": "Don PPE before entering the isolation room.",
+        "zh": "进隔离房前穿戴防护用品。"
+      },
+      {
+        "en": "Code Blue — start basic life support and call the RN.",
+        "zh": "医疗急救——开始基础生命支持并叫注册护士。"
+      },
+      {
+        "en": "Would you like an interpreter for this consent form?",
+        "zh": "签这份同意书需要口译吗？"
+      },
+      {
+        "en": "Respect cultural preferences for food and personal care.",
+        "zh": "尊重饮食与个人护理的文化偏好。"
+      },
+      {
+        "en": "Handover sheet is updated; night shift continues pad checks.",
+        "zh": "交接班表已更新，夜班继续查护理垫。"
+      },
+      {
+        "en": "Agency staff need a buddy for the first round.",
+        "zh": "中介临时工第一轮需要人带。"
+      },
+      {
+        "en": "Manual handling refresher is mandatory this month.",
+        "zh": "本月搬抬复训是必修。"
+      },
+      {
+        "en": "He’s end-of-life — keep care gentle and the room calm.",
+        "zh": "他处于临终阶段，护理要轻柔，房间保持安静。"
+      },
+      {
+        "en": "Advance care directive is in the front of the file.",
+        "zh": "预立医疗指示在档案最前面。"
+      },
+      {
+        "en": "Offer a choice: shower now or after morning tea?",
+        "zh": "给选择：现在洗澡还是早茶后？"
+      },
+      {
+        "en": "Walk at their pace to the dining room.",
+        "zh": "按住户节奏走到餐厅。"
+      },
+      {
+        "en": "Compression stockings on before they stand.",
+        "zh": "站起来前先穿压力袜。"
+      },
+      {
+        "en": "Slide sheet ready under the hips before we roll.",
+        "zh": "翻身前把滑单垫到髋下。"
+      },
+      {
+        "en": "Report any new redness on the heels straight away.",
+        "zh": "脚跟有新发红立刻报告。"
+      },
+      {
+        "en": "Please speak facing them — hearing aid is in the left ear.",
+        "zh": "请正对说话，助听器在左耳。"
+      },
+      {
+        "en": "My shift ends at ten; I’ll introduce you to the night carer.",
+        "zh": "我十点下班，会把您介绍给夜班护工。"
       }
     ]
   }
 };
 
-window.INDUSTRY_ORDER = ["daily", "construction", "meat", "stone", "cabinet", "metal", "care"];
+window.INDUSTRY_ORDER = ["daily","construction","meat","stone","cabinet","metal","care"];
