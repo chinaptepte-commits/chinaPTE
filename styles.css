@@ -1,4 +1,4 @@
-/* chinaPTE — mobile-first; day/night via data-theme on <html> */
+/* chinaPTE — mobile-first; day/night via data-theme on <html> · cache 20260915r2 */
 
 :root,
 [data-theme="night"] {
@@ -129,6 +129,7 @@ textarea:focus {
 }
 
 .app {
+  width: 100%;
   max-width: var(--max);
   margin: 0 auto;
   min-height: 100dvh;
@@ -2138,12 +2139,28 @@ input:focus-visible {
     margin-bottom: 8px;
   }
 
+  .home-cta-grid {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 10px 12px;
+  }
+
+  .home-cta-grid .btn-secondary-link {
+    display: flex;
+    width: 100%;
+    margin: 0;
+  }
+
   .trust-grid {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
     gap: 12px;
     margin: 22px 0 26px;
   }
 
   .practice-grid {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
     gap: 12px;
   }
 
@@ -2198,42 +2215,40 @@ input:focus-visible {
   :root,
   [data-theme="night"],
   [data-theme="day"] {
-    --max: 1000px;
-    --max-wide: 1120px;
+    --max: 1280px;
+    --max-wide: 1280px;
   }
 
-  /* Practice pages use .app only — give them the wide shell on desktop */
-  .app {
-    max-width: min(var(--max-wide), 100%);
-    padding: 22px 28px calc(36px + var(--safe-bottom));
-  }
-
+  /* Fill the viewport with comfortable side margins (unmistakable desktop shell) */
+  .app,
   .app-wide {
-    max-width: min(var(--max-wide), 100%);
+    width: min(1280px, 96vw);
+    max-width: 100%;
+    padding: 24px clamp(24px, 2.2vw, 48px) calc(40px + var(--safe-bottom));
   }
 
-  /* Desktop practice: roomier player card */
   .now-card {
-    padding: 22px 24px;
+    padding: 24px 28px;
   }
 
   .sentence-en {
-    font-size: 1.42rem;
+    font-size: 1.52rem;
   }
 
   .sentence-zh {
-    font-size: 1.02rem;
+    font-size: 1.06rem;
   }
 
   .vocab-player-pane {
     max-width: none;
   }
 
-  /* Desktop practice split: player | list */
+  /* Desktop practice split: player | list / dictation / score */
   .practice-split {
     display: grid;
-    grid-template-columns: minmax(0, 1.15fr) minmax(300px, 0.95fr);
-    column-gap: 22px;
+    grid-template-columns: minmax(0, 1.15fr) minmax(280px, 0.95fr);
+    column-gap: 24px;
+    row-gap: 16px;
     align-items: start;
     margin-top: 4px;
   }
@@ -2245,10 +2260,14 @@ input:focus-visible {
   .practice-split > .practice-split-list,
   .practice-split > #wordList {
     min-width: 0;
-    max-height: min(70vh, 640px);
     position: sticky;
     top: 16px;
     align-self: start;
+  }
+
+  .practice-split > .practice-split-list:has(#wordList),
+  .practice-split > #wordList {
+    max-height: min(74vh, 720px);
   }
 
   .practice-split #wordList,
@@ -2257,7 +2276,7 @@ input:focus-visible {
     flex-direction: column;
     gap: 6px;
     grid-template-columns: none;
-    max-height: min(70vh, 640px);
+    max-height: min(74vh, 720px);
     overflow: auto;
   }
 
@@ -2265,7 +2284,6 @@ input:focus-visible {
   .practice-split .vocab-word-list .vocab-row {
     margin-bottom: 0;
   }
-
 
   /* Nav: readable horizontal desktop row */
   .site-nav {
@@ -2293,28 +2311,50 @@ input:focus-visible {
   }
 
   .home-hero h1 {
-    font-size: 2.2rem;
+    font-size: 2.25rem;
     max-width: 18em;
   }
 
   .home-hero .tagline {
-    font-size: 1.05rem;
+    font-size: 1.08rem;
     margin-bottom: 22px;
+    max-width: 46em;
   }
 
+  .home-hero .home-cta-grid,
   .home-cta-grid {
+    display: grid;
     grid-template-columns: repeat(3, minmax(0, 1fr));
-    gap: 10px 12px;
+    gap: 12px 14px;
+    margin-top: 12px;
+  }
+
+  .home-hero .home-cta-grid .btn-secondary-link,
+  .home-cta-grid .btn-secondary-link {
+    display: flex;
+    width: 100%;
+    margin: 0;
+    min-height: 48px;
   }
 
   .trust-grid {
+    display: grid;
     grid-template-columns: repeat(4, minmax(0, 1fr));
-    gap: 12px;
+    gap: 14px;
   }
 
   .practice-grid {
+    display: grid;
     grid-template-columns: repeat(4, minmax(0, 1fr));
     gap: 14px;
+  }
+
+  .consult-layout {
+    display: grid;
+    grid-template-columns: minmax(0, 0.88fr) minmax(0, 1.12fr);
+    gap: 24px;
+    align-items: start;
+    margin-top: 8px;
   }
 
   .ind-list {
@@ -2326,13 +2366,9 @@ input:focus-visible {
     max-height: min(52vh, 520px);
   }
 
-  .sentence-en {
-    font-size: 1.35rem;
-  }
-
   .controls {
     gap: 12px;
-    max-width: 640px;
+    max-width: none;
   }
 
   .ctrl-btn {
@@ -2343,6 +2379,12 @@ input:focus-visible {
   .ctrl-btn .ico {
     font-size: 1.35rem;
   }
+
+  .wfd-dictation,
+  .speak-score,
+  .ra-sentence-panel {
+    padding: 20px 18px;
+  }
 }
 
 /* —— ≥1280: large desktop —— */
@@ -2350,25 +2392,23 @@ input:focus-visible {
   :root,
   [data-theme="night"],
   [data-theme="day"] {
-    --max: 1180px;
+    --max: 1280px;
     --max-wide: 1280px;
   }
 
-  .app {
-    max-width: min(var(--max-wide), 100%);
-    padding: 24px 36px calc(40px + var(--safe-bottom));
-  }
-
+  .app,
   .app-wide {
-    max-width: min(var(--max-wide), 100%);
+    width: min(1280px, 96vw);
+    max-width: 100%;
+    padding: 28px clamp(28px, 2.5vw, 56px) calc(44px + var(--safe-bottom));
   }
 
   .now-card {
-    padding: 24px 28px;
+    padding: 26px 32px;
   }
 
   .sentence-en {
-    font-size: 1.48rem;
+    font-size: 1.62rem;
   }
 
   .practice-split {
@@ -2376,19 +2416,20 @@ input:focus-visible {
     column-gap: 28px;
   }
 
-  .practice-split > .practice-split-list,
+  .practice-split > .practice-split-list:has(#wordList),
   .practice-split > #wordList {
-    max-height: min(74vh, 720px);
+    max-height: min(78vh, 760px);
   }
-
 
   .home-hero h1 {
-    font-size: 2.4rem;
+    font-size: 2.45rem;
   }
 
+  .home-hero .home-cta-grid,
   .home-cta-grid {
+    display: grid;
     grid-template-columns: repeat(3, minmax(0, 1fr));
-    gap: 12px 14px;
+    gap: 12px 16px;
   }
 
   .home-hero .btn-primary-link {
@@ -2398,7 +2439,14 @@ input:focus-visible {
   }
 
   .practice-grid {
+    display: grid;
+    grid-template-columns: repeat(4, minmax(0, 1fr));
     gap: 16px;
+  }
+
+  .trust-grid {
+    display: grid;
+    grid-template-columns: repeat(4, minmax(0, 1fr));
   }
 
   .site-nav-links a {
@@ -2421,7 +2469,7 @@ input:focus-visible {
   }
 
   .controls {
-    max-width: 680px;
+    max-width: none;
   }
 }
 

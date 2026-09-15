@@ -7,8 +7,7 @@ window.ADMIN_GITHUB = {
   repo: "chinaPTE",
   branch: "main",
   laborPath: "content/labor.json",
-  vocabPath: "content/vocab.json",
-  vocabJsPath: "data-vocab.js",
+  consultPath: "content/consult.json",
   /* 兼容旧字段 */
   path: "content/labor.json"
 };

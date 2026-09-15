@@ -22,22 +22,25 @@
 - **日间 / 夜间**：手动覆盖并持久化。
 - 通过 `<html data-theme="day|night">` + `styles.css` / `theme.js` 生效。
 
-## PTE直通车页 + 后台
+## PTE直通车页 + 出国咨询 + 后台
 
 | 页面 | 说明 |
 |------|------|
 | `labor.html` | 公开「考不过怎么办 / PTE直通车」引导页（读 `content/labor.json`） |
-| `admin/` | 零成本后台：劳务文案 + **单词库审核编辑**（GitHub Contents API） |
+| `consult.html` | 出国咨询留资页（读 `content/consult.json`） |
+| `admin/` | 零成本后台：PTE直通车 + 出国咨询文案（GitHub Contents API） |
 | `admin/config.js` | **改密码**：`window.ADMIN_PASSWORD`（默认 `chinaPTE2026`，请尽快修改） |
+| `content/labor.json` | 直通车页可编辑文案 |
+| `content/consult.json` | 出国咨询页可编辑文案（标题/表单/微信/声明/CTA） |
 | `content/vocab.json` | 单词库源数据（≥2000 核心词）；前台优先加载 |
 | `data-vocab.js` | 嵌入式词库（与 vocab.json 同步；离线单文件用） |
 
 线上：
 
 - https://chinaptepte-commits.github.io/chinaPTE/labor.html
-- https://chinaptepte-commits.github.io/chinaPTE/vocab.html
+- https://chinaptepte-commits.github.io/chinaPTE/consult.html
 - https://chinaptepte-commits.github.io/chinaPTE/admin/
-- 自定义域：https://chinapte.net/vocab.html · https://chinapte.net/admin/
+- 自定义域：https://chinapte.net/labor.html · https://chinapte.net/consult.html · https://chinapte.net/admin/
 
 后台保存需要你自己的 GitHub classic PAT（`repo` scope），Token 只存在浏览器 session/localStorage。
 

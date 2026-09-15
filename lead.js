@@ -1,12 +1,12 @@
 /**
  * chinaPTE · 出国咨询留资（本地 mock）
  * Stores to localStorage; copies summary for WeChat; no backend.
+ * WeChat id is read from #wechatId (hydrated from content/consult.json).
  */
 (function () {
   "use strict";
 
   const STORAGE_LEADS = "chinaPTE_leads";
-  const WECHAT_PLACEHOLDER = "chinaPTE顾问";
 
   const form = document.getElementById("leadForm");
   const success = document.getElementById("formSuccess");
@@ -15,7 +15,10 @@
   const wechatId = document.getElementById("wechatId");
   const btnCopyWx = document.getElementById("btnCopyWx");
 
-  if (wechatId) wechatId.textContent = WECHAT_PLACEHOLDER;
+  function currentWechat() {
+    var fromDom = wechatId && (wechatId.textContent || "").trim();
+    return fromDom || "chinaPTE顾问";
+  }
 
   function showToast(msg) {
     if (!toast) return;
@@ -50,6 +53,7 @@
   }
 
   function buildSummary(data) {
+    var wx = currentWechat();
     return [
       "【chinaPTE 出国评估留资】",
       "姓名：" + data.name,
@@ -57,7 +61,7 @@
       "目标国家：" + data.country,
       data.note ? "补充：" + data.note : null,
       "时间：" + data.time,
-      "请添加微信：" + WECHAT_PLACEHOLDER,
+      "请添加微信：" + wx,
     ]
       .filter(Boolean)
       .join("\n");
@@ -82,7 +86,8 @@
 
   if (btnCopyWx) {
     btnCopyWx.addEventListener("click", async () => {
-      const ok = await copyText(WECHAT_PLACEHOLDER);
+      const wx = currentWechat();
+      const ok = await copyText(wx);
       showToast(ok ? "微信号已复制" : "复制失败，请长按手动复制");
     });
   }
@@ -112,16 +117,17 @@
       saveLead(data);
       const summary = buildSummary(data);
       const copied = await copyText(summary);
+      const wx = currentWechat();
 
       if (success) {
         success.classList.add("is-visible");
         if (successDetail) {
           successDetail.textContent = copied
             ? "摘要已复制到剪贴板。请添加微信「" +
-              WECHAT_PLACEHOLDER +
+              wx +
               "」并粘贴发送。本机 localStorage 已保存一份。"
             : "本机已保存。请手动复制下方信息发给顾问微信「" +
-              WECHAT_PLACEHOLDER +
+              wx +
               "」。\n\n" +
               summary;
         }

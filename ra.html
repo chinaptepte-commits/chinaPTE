@@ -25,11 +25,11 @@
     ]
   }
   </script>
-  <link rel="stylesheet" href="styles.css" />
-  <script src="theme.js" defer></script>
+  <link rel="stylesheet" href="styles.css?v=20260915r2" />
+  <script src="theme.js?v=20260915r2" defer></script>
 </head>
 <body>
-  <div class="app">
+  <div class="app app-wide">
     <nav class="site-nav" aria-label="站点导航">
       <a class="site-nav-brand" href="index.html">chinaPTE</a>
       <ul class="site-nav-links">
@@ -71,6 +71,8 @@
       <button type="button" class="btn-ghost" id="btnClearSearch">清除</button>
     </div>
 
+    <div class="practice-split">
+      <div class="practice-split-player">
     <section class="hero">
       <button type="button" class="btn-play-all" id="btnPlayAll" aria-label="随身听 播放全部">
         <span class="icon" id="playAllIcon">▶</span>
@@ -110,10 +112,6 @@
       </div>
     </article>
 
-    <section class="ra-sentence-wrap" id="raSentenceRoot" aria-label="一句话模式"></section>
-
-    <section class="speak-score-wrap" id="speakScoreRoot" aria-label="跟读评分"></section>
-
     <nav class="controls" aria-label="播放控制">
       <button type="button" class="ctrl-btn" id="btnPrev" title="上一条"><span class="ico">⏮</span><span>上一条</span></button>
       <button type="button" class="ctrl-btn is-primary" id="btnPlayPause" title="播放 / 暂停"><span class="ico" id="playPauseIcon">▶</span><span id="playPauseLabel">播放</span></button>
@@ -151,18 +149,24 @@
         <span>中文解读</span>
       </button>
     </div>
+      </div>
+      <div class="practice-split-list">
+        <section class="ra-sentence-wrap" id="raSentenceRoot" aria-label="一句话模式"></section>
+        <section class="speak-score-wrap" id="speakScoreRoot" aria-label="跟读评分"></section>
+      </div>
+    </div>
 <div class="lead-blurb">
       <p><strong>备考之外：</strong>PTE直通车 · 海外就业免费评估，不承诺签证结果。</p>
       <a class="btn-soft" href="consult.html">出国咨询留资</a>
     </div>
   </div>
 
-  <script src="data-ra.js"></script>
-  <script src="keepalive.js"></script>
-  <script src="audio-engine.js"></script>
-  <script src="player.js"></script>
-  <script src="speak-score.js"></script>
-  <script src="ra-sentence.js"></script>
+  <script src="data-ra.js?v=20260915r2"></script>
+  <script src="keepalive.js?v=20260915r2"></script>
+  <script src="audio-engine.js?v=20260915r2"></script>
+  <script src="player.js?v=20260915r2"></script>
+  <script src="speak-score.js?v=20260915r2"></script>
+  <script src="ra-sentence.js?v=20260915r2"></script>
   <script>
     (function () {
       var player = ChinaPTEPlayer.create({

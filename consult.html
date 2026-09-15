@@ -29,11 +29,11 @@
     ]
   }
   </script>
-  <link rel="stylesheet" href="styles.css" />
-  <script src="theme.js" defer></script>
+  <link rel="stylesheet" href="styles.css?v=20260915r2" />
+  <script src="theme.js?v=20260915r2" defer></script>
 </head>
 <body>
-  <div class="app">
+  <div class="app app-wide">
     <nav class="site-nav" aria-label="站点导航">
       <a class="site-nav-brand" href="index.html">chinaPTE</a>
       <ul class="site-nav-links">
@@ -51,78 +51,136 @@
 
     <header class="header">
       <div class="brand">
-        <div class="brand-name">PTE直通车 · 免费评估</div>
-        <div class="brand-sub">海外就业机会咨询（非绑定）</div>
+        <div class="brand-name" id="c_brandName">PTE直通车 · 免费评估</div>
+        <div class="brand-sub" id="c_brandSub">海外就业机会咨询（非绑定）</div>
       </div>
     </header>
 
     <div class="bridge-card" style="margin-top:0">
-      <h2>告诉顾问你的目标</h2>
-      <p>
+      <h2 id="c_introTitle">告诉顾问你的目标</h2>
+      <p id="c_intro">
         填写后可<strong style="color:var(--text)">一键复制摘要</strong>并添加顾问微信。
         信息默认保存在你本机浏览器（localStorage），本静态站<strong style="color:var(--text)">没有后端收件箱</strong>。
         正式收资可改用免费 Google 表单嵌入或 Formspree 免费档（见 README）。
       </p>
-      <p class="disclaimer">我们提供信息与匹配沟通，不承诺签证、工作或移民结果；请以官方政策为准。</p>
+      <p class="disclaimer" id="c_disclaimerShort">我们提供信息与匹配沟通，不承诺签证、工作或移民结果；请以官方政策为准。</p>
     </div>
 
-    <div class="wechat-box">
-      <div class="wx-label">顾问微信号（占位，请自行替换）</div>
-      <div class="wx-id" id="wechatId">chinaPTE顾问</div>
-      <button type="button" class="btn-ghost" id="btnCopyWx" style="margin-top:10px;width:100%">复制微信号</button>
-    </div>
+    <div class="consult-layout">
+      <div class="wechat-box">
+        <div class="wx-label" id="c_wechatLabel">顾问微信号（占位，请自行替换）</div>
+        <div class="wx-id" id="wechatId">chinaPTE顾问</div>
+        <button type="button" class="btn-ghost" id="btnCopyWx" style="margin-top:10px;width:100%">复制微信号</button>
+      </div>
 
-    <form class="lead-form" id="leadForm" novalidate>
-      <label>
-        姓名
-        <input type="text" name="name" id="leadName" required maxlength="40" placeholder="怎么称呼你" autocomplete="name" />
-      </label>
-      <label>
-        微信 / 手机
-        <input type="text" name="contact" id="leadContact" required maxlength="60" placeholder="微信号或手机号" autocomplete="tel" />
-      </label>
-      <label>
-        目标国家 / 地区
-        <input type="text" name="country" id="leadCountry" required maxlength="40" placeholder="例如：澳大利亚 / 加拿大 / 日本" list="countryHints" />
-        <datalist id="countryHints">
-          <option value="澳大利亚"></option>
-          <option value="新西兰"></option>
-          <option value="加拿大"></option>
-          <option value="日本"></option>
-          <option value="新加坡"></option>
-          <option value="德国"></option>
-          <option value="其他"></option>
-        </datalist>
-      </label>
-      <label>
-        补充说明（可选）
-        <textarea name="note" id="leadNote" rows="3" maxlength="300" placeholder="PTE 目标分、工种意向、时间规划等"></textarea>
-      </label>
-      <button type="submit" class="btn-submit">提交并复制给顾问</button>
-    </form>
+      <form class="lead-form" id="leadForm" novalidate>
+        <label>
+          <span id="c_nameLabel">姓名</span>
+          <input type="text" name="name" id="leadName" required maxlength="40" placeholder="怎么称呼你" autocomplete="name" />
+        </label>
+        <label>
+          <span id="c_contactLabel">微信 / 手机</span>
+          <input type="text" name="contact" id="leadContact" required maxlength="60" placeholder="微信号或手机号" autocomplete="tel" />
+        </label>
+        <label>
+          <span id="c_countryLabel">目标国家 / 地区</span>
+          <input type="text" name="country" id="leadCountry" required maxlength="40" placeholder="例如：澳大利亚 / 加拿大 / 日本" list="countryHints" />
+          <datalist id="countryHints">
+            <option value="澳大利亚"></option>
+            <option value="新西兰"></option>
+            <option value="加拿大"></option>
+            <option value="日本"></option>
+            <option value="新加坡"></option>
+            <option value="德国"></option>
+            <option value="其他"></option>
+          </datalist>
+        </label>
+        <label>
+          <span id="c_noteLabel">补充说明（可选）</span>
+          <textarea name="note" id="leadNote" rows="3" maxlength="300" placeholder="PTE 目标分、工种意向、时间规划等"></textarea>
+        </label>
+        <button type="submit" class="btn-submit" id="c_submitText">提交并复制给顾问</button>
+      </form>
+    </div>
 
     <div class="form-success" id="formSuccess" role="status">
-      <h3>已提交，顾问将联系你</h3>
+      <h3 id="c_successTitle">已提交，顾问将联系你</h3>
       <p id="successDetail">摘要已复制到剪贴板（若浏览器允许）。请添加上方微信号并粘贴发送。本机也已保存一份记录。</p>
     </div>
 
-    <p class="form-note">
+    <p class="form-note" id="c_formNote">
       真实线上收资建议：在本页嵌入免费 Google Forms iframe，或把表单 action 换成 Formspree 免费档。
       当前为<strong>零成本 mock</strong>：复制 + localStorage，方便你先试用整站流程。
     </p>
 
     <p style="margin-top:16px">
-      <a class="btn-secondary-link" href="practice.html">返回练习中心 随身听继续练习</a>
-      <a class="btn-secondary-link" href="labor.html">先看「考不过怎么办 / PTE直通车」说明</a>
+      <a class="btn-secondary-link" href="practice.html" id="c_ctaPractice">返回练习中心 随身听继续练习</a>
+      <a class="btn-secondary-link" href="labor.html" id="c_ctaLabor">先看「考不过怎么办 / PTE直通车」说明</a>
     </p>
-    <p class="disclaimer" style="margin-top:12px">本站仅提供合规 PTE直通车 / 海外就业信息咨询，不承诺签证结果，不涉及任何考试舞弊。</p>
+    <p class="disclaimer" style="margin-top:12px" id="c_disclaimerFooter">本站仅提供合规 PTE直通车 / 海外就业信息咨询，不承诺签证结果，不涉及任何考试舞弊。</p>
 
-    <footer class="site-footer">
+    <footer class="site-footer" id="c_footer">
       chinaPTE · PTE直通车咨询方向运营 · 合规信息咨询
     </footer>
   </div>
 
   <div class="copy-toast" id="copyToast">已复制</div>
-  <script src="lead.js"></script>
+  <script>
+    (async function () {
+      function setText(id, value) {
+        if (value == null || value === "") return;
+        var node = document.getElementById(id);
+        if (node) node.textContent = value;
+      }
+      function setAttr(id, attr, value) {
+        if (value == null || value === "") return;
+        var node = document.getElementById(id);
+        if (node) node.setAttribute(attr, value);
+      }
+      try {
+        var res = await fetch("content/consult.json?t=" + Date.now(), { cache: "no-store" });
+        if (!res.ok) throw new Error("HTTP " + res.status);
+        var data = await res.json();
+        if (data.pageTitle) document.title = data.pageTitle;
+        setText("c_brandName", data.brandName);
+        setText("c_brandSub", data.brandSub);
+        setText("c_introTitle", data.introTitle);
+        setText("c_intro", data.intro);
+        setText("c_disclaimerShort", data.disclaimerShort);
+        setText("c_wechatLabel", data.wechatLabel);
+        setText("wechatId", data.wechatId);
+        setText("btnCopyWx", data.copyWechatBtn);
+        setText("c_nameLabel", data.nameLabel);
+        setAttr("leadName", "placeholder", data.namePlaceholder);
+        setText("c_contactLabel", data.contactLabel);
+        setAttr("leadContact", "placeholder", data.contactPlaceholder);
+        setText("c_countryLabel", data.countryLabel);
+        setAttr("leadCountry", "placeholder", data.countryPlaceholder);
+        setText("c_noteLabel", data.noteLabel);
+        setAttr("leadNote", "placeholder", data.notePlaceholder);
+        setText("c_submitText", data.submitText);
+        setText("c_successTitle", data.successTitle);
+        setText("successDetail", data.successDetail);
+        setText("c_formNote", data.formNote);
+        if (data.ctaPracticeText) setText("c_ctaPractice", data.ctaPracticeText);
+        if (data.ctaPracticeHref) setAttr("c_ctaPractice", "href", data.ctaPracticeHref);
+        if (data.ctaLaborText) setText("c_ctaLabor", data.ctaLaborText);
+        if (data.ctaLaborHref) setAttr("c_ctaLabor", "href", data.ctaLaborHref);
+        setText("c_disclaimerFooter", data.disclaimerFooter);
+        setText("c_footer", data.footer);
+        if (Array.isArray(data.countryOptions) && data.countryOptions.length) {
+          var dl = document.getElementById("countryHints");
+          if (dl) {
+            dl.innerHTML = data.countryOptions.map(function (opt) {
+              return '<option value="' + String(opt).replace(/"/g, "&quot;") + '"></option>';
+            }).join("");
+          }
+        }
+      } catch (err) {
+        console.warn("consult.json load failed, using static fallback", err);
+      }
+    })();
+  </script>
+  <script src="lead.js?v=20260915r2"></script>
 </body>
 </html>

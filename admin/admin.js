@@ -1,4 +1,4 @@
-/* chinaPTE admin — labor.json + vocab.json via GitHub Contents API */
+/* chinaPTE admin — labor.json + consult.json via GitHub Contents API */
 (function () {
   "use strict";
 
@@ -21,26 +21,15 @@
     tokenInput: document.getElementById("ghToken"),
     rememberToken: document.getElementById("rememberToken"),
     panelLabor: document.getElementById("panelLabor"),
-    panelVocab: document.getElementById("panelVocab"),
-    vocabStatus: document.getElementById("vocabStatus"),
-    vocabSearch: document.getElementById("vocabSearch"),
-    vocabList: document.getElementById("vocabList"),
-    vocabCount: document.getElementById("vocabCount"),
-    vocabForm: document.getElementById("vocabForm"),
-    btnVocabReload: document.getElementById("btnVocabReload"),
-    btnVocabAdd: document.getElementById("btnVocabAdd"),
-    btnVocabSave: document.getElementById("btnVocabSave"),
-    btnVocabDownload: document.getElementById("btnVocabDownload"),
-    btnVocabApply: document.getElementById("btnVocabApply"),
-    btnVocabDelete: document.getElementById("btnVocabDelete")
+    panelConsult: document.getElementById("panelConsult"),
+    consultForm: document.getElementById("consultForm"),
+    consultStatus: document.getElementById("consultStatus"),
+    btnConsultSave: document.getElementById("btnConsultSave"),
+    btnConsultReload: document.getElementById("btnConsultReload"),
+    btnConsultDownload: document.getElementById("btnConsultDownload")
   };
 
-  var vocabState = {
-    items: [],
-    filtered: [],
-    selectedId: null,
-    dirty: false
-  };
+  var consultLoaded = false;
 
   function showStatus(node, msg, type) {
     if (!node) return;
@@ -74,8 +63,7 @@
       repo: g.repo || "chinaPTE",
       branch: g.branch || "main",
       laborPath: g.laborPath || g.path || "content/labor.json",
-      vocabPath: g.vocabPath || "content/vocab.json",
-      vocabJsPath: g.vocabJsPath || "data-vocab.js"
+      consultPath: g.consultPath || "content/consult.json"
     };
   }
 
@@ -128,33 +116,106 @@
     return JSON.stringify(obj, null, 2) + "\n";
   }
 
-  function fillForm(data) {
-    document.getElementById("f_title").value = data.title || "";
-    document.getElementById("f_subtitle").value = data.subtitle || "";
-    document.getElementById("f_intro").value = data.intro || "";
-    document.getElementById("f_whoFor").value = arrayToLines(data.whoFor);
-    document.getElementById("f_whatWeOffer").value = arrayToLines(data.whatWeOffer);
-    document.getElementById("f_disclaimer").value = data.disclaimer || "";
-    document.getElementById("f_ctaText").value = data.ctaText || "";
-    document.getElementById("f_ctaHref").value = data.ctaHref || "consult.html";
-    document.getElementById("f_wechatPlaceholder").value =
-      data.wechatPlaceholder || "";
-    document.getElementById("f_updatedAt").value = data.updatedAt || "";
+  function val(id) {
+    var node = document.getElementById(id);
+    return node ? node.value : "";
   }
 
-  function readForm() {
+  function setVal(id, value) {
+    var node = document.getElementById(id);
+    if (node) node.value = value == null ? "" : value;
+  }
+
+  function fillLaborForm(data) {
+    setVal("f_title", data.title || "");
+    setVal("f_subtitle", data.subtitle || "");
+    setVal("f_intro", data.intro || "");
+    setVal("f_whoFor", arrayToLines(data.whoFor));
+    setVal("f_whatWeOffer", arrayToLines(data.whatWeOffer));
+    setVal("f_disclaimer", data.disclaimer || "");
+    setVal("f_ctaText", data.ctaText || "");
+    setVal("f_ctaHref", data.ctaHref || "consult.html");
+    setVal("f_wechatPlaceholder", data.wechatPlaceholder || "");
+    setVal("f_updatedAt", data.updatedAt || "");
+  }
+
+  function readLaborForm() {
     return {
-      title: document.getElementById("f_title").value.trim(),
-      subtitle: document.getElementById("f_subtitle").value.trim(),
-      intro: document.getElementById("f_intro").value.trim(),
-      whoFor: linesToArray(document.getElementById("f_whoFor").value),
-      whatWeOffer: linesToArray(document.getElementById("f_whatWeOffer").value),
-      disclaimer: document.getElementById("f_disclaimer").value.trim(),
-      ctaText: document.getElementById("f_ctaText").value.trim(),
-      ctaHref: document.getElementById("f_ctaHref").value.trim() || "consult.html",
-      wechatPlaceholder: document
-        .getElementById("f_wechatPlaceholder")
-        .value.trim(),
+      title: val("f_title").trim(),
+      subtitle: val("f_subtitle").trim(),
+      intro: val("f_intro").trim(),
+      whoFor: linesToArray(val("f_whoFor")),
+      whatWeOffer: linesToArray(val("f_whatWeOffer")),
+      disclaimer: val("f_disclaimer").trim(),
+      ctaText: val("f_ctaText").trim(),
+      ctaHref: val("f_ctaHref").trim() || "consult.html",
+      wechatPlaceholder: val("f_wechatPlaceholder").trim(),
+      updatedAt: new Date().toISOString()
+    };
+  }
+
+  function fillConsultForm(data) {
+    setVal("c_pageTitle", data.pageTitle || "");
+    setVal("c_brandName", data.brandName || "");
+    setVal("c_brandSub", data.brandSub || "");
+    setVal("c_introTitle", data.introTitle || "");
+    setVal("c_intro", data.intro || "");
+    setVal("c_disclaimerShort", data.disclaimerShort || "");
+    setVal("c_wechatLabel", data.wechatLabel || "");
+    setVal("c_wechatId", data.wechatId || "");
+    setVal("c_copyWechatBtn", data.copyWechatBtn || "");
+    setVal("c_nameLabel", data.nameLabel || "");
+    setVal("c_namePlaceholder", data.namePlaceholder || "");
+    setVal("c_contactLabel", data.contactLabel || "");
+    setVal("c_contactPlaceholder", data.contactPlaceholder || "");
+    setVal("c_countryLabel", data.countryLabel || "");
+    setVal("c_countryPlaceholder", data.countryPlaceholder || "");
+    setVal("c_countryOptions", arrayToLines(data.countryOptions));
+    setVal("c_noteLabel", data.noteLabel || "");
+    setVal("c_notePlaceholder", data.notePlaceholder || "");
+    setVal("c_submitText", data.submitText || "");
+    setVal("c_successTitle", data.successTitle || "");
+    setVal("c_successDetail", data.successDetail || "");
+    setVal("c_formNote", data.formNote || "");
+    setVal("c_ctaPracticeText", data.ctaPracticeText || "");
+    setVal("c_ctaPracticeHref", data.ctaPracticeHref || "practice.html");
+    setVal("c_ctaLaborText", data.ctaLaborText || "");
+    setVal("c_ctaLaborHref", data.ctaLaborHref || "labor.html");
+    setVal("c_disclaimerFooter", data.disclaimerFooter || "");
+    setVal("c_footer", data.footer || "");
+    setVal("c_updatedAt", data.updatedAt || "");
+  }
+
+  function readConsultForm() {
+    return {
+      pageTitle: val("c_pageTitle").trim(),
+      brandName: val("c_brandName").trim(),
+      brandSub: val("c_brandSub").trim(),
+      introTitle: val("c_introTitle").trim(),
+      intro: val("c_intro").trim(),
+      disclaimerShort: val("c_disclaimerShort").trim(),
+      wechatLabel: val("c_wechatLabel").trim(),
+      wechatId: val("c_wechatId").trim(),
+      copyWechatBtn: val("c_copyWechatBtn").trim(),
+      nameLabel: val("c_nameLabel").trim(),
+      namePlaceholder: val("c_namePlaceholder").trim(),
+      contactLabel: val("c_contactLabel").trim(),
+      contactPlaceholder: val("c_contactPlaceholder").trim(),
+      countryLabel: val("c_countryLabel").trim(),
+      countryPlaceholder: val("c_countryPlaceholder").trim(),
+      countryOptions: linesToArray(val("c_countryOptions")),
+      noteLabel: val("c_noteLabel").trim(),
+      notePlaceholder: val("c_notePlaceholder").trim(),
+      submitText: val("c_submitText").trim(),
+      successTitle: val("c_successTitle").trim(),
+      successDetail: val("c_successDetail").trim(),
+      formNote: val("c_formNote").trim(),
+      ctaPracticeText: val("c_ctaPracticeText").trim(),
+      ctaPracticeHref: val("c_ctaPracticeHref").trim() || "practice.html",
+      ctaLaborText: val("c_ctaLaborText").trim(),
+      ctaLaborHref: val("c_ctaLaborHref").trim() || "labor.html",
+      disclaimerFooter: val("c_disclaimerFooter").trim(),
+      footer: val("c_footer").trim(),
       updatedAt: new Date().toISOString()
     };
   }
@@ -221,36 +282,37 @@
     return putRes.json();
   }
 
-  async function loadFromSite() {
-    clearStatus(el.status);
-    showStatus(el.status, "正在加载 content/labor.json …", "info");
+  async function loadJson(relPath, fillFn, statusNode, label) {
+    clearStatus(statusNode);
+    showStatus(statusNode, "正在加载 " + label + " …", "info");
     try {
-      var res = await fetch("../content/labor.json?t=" + Date.now(), {
+      var res = await fetch("../" + relPath + "?t=" + Date.now(), {
         cache: "no-store"
       });
       if (!res.ok) throw new Error("HTTP " + res.status);
       var data = await res.json();
-      fillForm(data);
-      showStatus(el.status, "已加载当前线上 / 站点内容。可编辑后保存。", "ok");
+      fillFn(data);
+      showStatus(statusNode, "已加载当前线上 / 站点内容。可编辑后保存。", "ok");
+      return true;
     } catch (err) {
       showStatus(
-        el.status,
+        statusNode,
         "加载失败：" +
           (err && err.message ? err.message : err) +
           "。请用 http 打开本页（勿用 file://），或先本地下载后再改。",
         "err"
       );
+      return false;
     }
   }
 
-  function downloadJson() {
-    var data = readForm();
+  function downloadNamed(data, filename, statusNode) {
     var blob = new Blob([prettyJson(data)], {
       type: "application/json;charset=utf-8"
     });
     var a = document.createElement("a");
     a.href = URL.createObjectURL(blob);
-    a.download = "labor.json";
+    a.download = filename;
     document.body.appendChild(a);
     a.click();
     setTimeout(function () {
@@ -258,427 +320,92 @@
       a.remove();
     }, 500);
     showStatus(
-      el.status,
-      "已下载 labor.json。可手动上传到仓库 content/labor.json。",
+      statusNode,
+      "已下载 " + filename + "。可手动上传到仓库 content/" + filename + "。",
       "ok"
     );
   }
 
-  async function saveToGithub() {
-    var cfg = getGithubCfg();
+  async function savePath(relPath, data, statusNode, saveBtn, okHint, commitMsg) {
     var token = resolveToken();
     if (!token) {
       showStatus(
-        el.status,
+        statusNode,
         "请先粘贴 GitHub Personal Access Token（classic，勾选 repo 权限）。",
         "err"
       );
       el.tokenInput.focus();
       return;
     }
-
-    var data = readForm();
     var bodyText = prettyJson(data);
-
-    el.saveBtn.disabled = true;
-    showStatus(el.status, "正在读取文件 SHA…", "info");
-
+    if (saveBtn) saveBtn.disabled = true;
+    showStatus(statusNode, "正在读取文件 SHA…", "info");
     try {
-      var meta = await githubGet(cfg.laborPath, token, cfg.branch);
-      if (!meta.sha) throw new Error("未拿到文件 SHA");
-      showStatus(el.status, "正在写入 GitHub…", "info");
-      await githubPut(
-        cfg.laborPath,
-        token,
-        bodyText,
-        "Update labor.json via chinaPTE admin",
-        meta.sha
-      );
-      fillForm(data);
-      showStatus(
-        el.status,
-        "保存成功！GitHub Pages 通常 1–2 分钟后刷新。可打开 labor.html 查看。",
-        "ok"
-      );
+      var meta = await githubGet(relPath, token);
+      showStatus(statusNode, "正在写入 GitHub…", "info");
+      await githubPut(relPath, token, bodyText, commitMsg, meta.sha || undefined);
+      showStatus(statusNode, okHint, "ok");
     } catch (err) {
       showStatus(
-        el.status,
+        statusNode,
         "保存失败：" + (err && err.message ? err.message : err),
         "err"
       );
     } finally {
-      el.saveBtn.disabled = false;
+      if (saveBtn) saveBtn.disabled = false;
     }
   }
 
-  /* ---------- vocab ---------- */
-
-  function spellingOf(word) {
-    return String(word || "")
-      .split("")
-      .filter(function (c) {
-        return /[a-zA-Z]/.test(c);
-      })
-      .map(function (c) {
-        return c.toUpperCase();
-      })
-      .join("-");
+  function loadLabor() {
+    return loadJson("content/labor.json", fillLaborForm, el.status, "content/labor.json");
   }
 
-  function reindexVocab() {
-    vocabState.items.forEach(function (it, i) {
-      it.id = i + 1;
+  function loadConsult() {
+    return loadJson(
+      "content/consult.json",
+      fillConsultForm,
+      el.consultStatus,
+      "content/consult.json"
+    ).then(function (ok) {
+      if (ok) consultLoaded = true;
+      return ok;
     });
   }
 
-  function updateVocabCount() {
-    if (!el.vocabCount) return;
-    el.vocabCount.textContent =
-      "显示 " +
-      vocabState.filtered.length +
-      " / 共 " +
-      vocabState.items.length +
-      " 词" +
-      (vocabState.dirty ? " · 未保存" : "");
+  function saveLabor() {
+    var data = readLaborForm();
+    fillLaborForm(data);
+    return savePath(
+      getGithubCfg().laborPath,
+      data,
+      el.status,
+      el.saveBtn,
+      "保存成功！GitHub Pages 通常 1–2 分钟后刷新。可打开 labor.html 查看。",
+      "Update labor.json via chinaPTE admin"
+    );
   }
 
-  function fillVocabForm(item) {
-    if (!item) return;
-    document.getElementById("v_id").value = item.id || "";
-    document.getElementById("v_word").value = item.word || "";
-    document.getElementById("v_phonetic").value = item.phonetic || "";
-    document.getElementById("v_pos").value = item.pos || "";
-    document.getElementById("v_spelling").value = item.spelling || "";
-    document.getElementById("v_gloss").value = item.gloss || "";
-    document.getElementById("v_tip").value = item.tip || "";
-    document.getElementById("v_example").value = item.example || "";
-    document.getElementById("v_exampleZh").value = item.exampleZh || "";
-    document.getElementById("v_tags").value = (item.tags || []).join(",");
-    document.getElementById("v_tier").value = item.tier || "core";
-  }
-
-  function readVocabForm() {
-    var tags = String(document.getElementById("v_tags").value || "")
-      .split(/[,，\s]+/)
-      .map(function (s) {
-        return s.trim();
-      })
-      .filter(Boolean);
-    var word = document.getElementById("v_word").value.trim();
-    var spelling = document.getElementById("v_spelling").value.trim() || spellingOf(word);
-    var phonetic = document.getElementById("v_phonetic").value.trim();
-    if (phonetic && phonetic.charAt(0) !== "/") phonetic = "/" + phonetic;
-    if (phonetic && phonetic.charAt(phonetic.length - 1) !== "/") phonetic += "/";
-    return {
-      id: Number(document.getElementById("v_id").value) || 0,
-      word: word,
-      spelling: spelling,
-      phonetic: phonetic || "/" + word + "/",
-      pos: document.getElementById("v_pos").value.trim() || "n. 名词",
-      gloss: document.getElementById("v_gloss").value.trim(),
-      tip: document.getElementById("v_tip").value.trim(),
-      example: document.getElementById("v_example").value.trim(),
-      exampleZh: document.getElementById("v_exampleZh").value.trim(),
-      tags: tags.length ? tags : ["academic"],
-      tier: document.getElementById("v_tier").value || "core"
-    };
-  }
-
-  function renderVocabList() {
-    var q = (el.vocabSearch.value || "").trim().toLowerCase();
-    vocabState.filtered = vocabState.items.filter(function (it) {
-      if (!q) return true;
-      return (
-        String(it.id).indexOf(q) >= 0 ||
-        String(it.word || "")
-          .toLowerCase()
-          .indexOf(q) >= 0 ||
-        String(it.gloss || "").toLowerCase().indexOf(q) >= 0 ||
-        String(it.phonetic || "").toLowerCase().indexOf(q) >= 0
-      );
-    });
-    var html = "";
-    var maxShow = 400;
-    var slice = vocabState.filtered.slice(0, maxShow);
-    slice.forEach(function (it) {
-      var active = it.id === vocabState.selectedId ? " is-active" : "";
-      html +=
-        '<button type="button" class="vocab-list-item' +
-        active +
-        '" data-id="' +
-        it.id +
-        '">' +
-        '<div class="vl-word">' +
-        escapeHtml(it.word) +
-        "</div>" +
-        '<div class="vl-meta">#' +
-        it.id +
-        " · " +
-        escapeHtml(it.phonetic || "") +
-        " · " +
-        escapeHtml(it.gloss || "") +
-        "</div>" +
-        "</button>";
-    });
-    if (vocabState.filtered.length > maxShow) {
-      html +=
-        '<div class="vl-meta" style="padding:10px">仅显示前 ' +
-        maxShow +
-        " 条，请缩小搜索范围。</div>";
-    }
-    el.vocabList.innerHTML = html || '<div class="vl-meta" style="padding:12px">无匹配词条</div>';
-    updateVocabCount();
-  }
-
-  function escapeHtml(s) {
-    return String(s || "")
-      .replace(/&/g, "&amp;")
-      .replace(/</g, "&lt;")
-      .replace(/>/g, "&gt;")
-      .replace(/"/g, "&quot;");
-  }
-
-  function selectVocab(id) {
-    var item = vocabState.items.find(function (it) {
-      return it.id === id;
-    });
-    if (!item) return;
-    vocabState.selectedId = id;
-    fillVocabForm(item);
-    renderVocabList();
-  }
-
-  function applyVocabForm() {
-    var data = readVocabForm();
-    if (!data.word) {
-      showStatus(el.vocabStatus, "英文单词不能为空。", "err");
-      return;
-    }
-    var idx = vocabState.items.findIndex(function (it) {
-      return it.id === vocabState.selectedId;
-    });
-    if (idx < 0) {
-      showStatus(el.vocabStatus, "请先在左侧选择词条，或点「新增词条」。", "err");
-      return;
-    }
-    var dup = vocabState.items.find(function (it, i) {
-      return i !== idx && String(it.word).toLowerCase() === data.word.toLowerCase();
-    });
-    if (dup) {
-      showStatus(el.vocabStatus, "已存在同名词条 #" + dup.id + "：" + dup.word, "err");
-      return;
-    }
-    data.id = vocabState.items[idx].id;
-    vocabState.items[idx] = data;
-    vocabState.dirty = true;
-    vocabState.selectedId = data.id;
-    renderVocabList();
-    showStatus(el.vocabStatus, "已应用到本地列表（尚未保存到 GitHub）。", "ok");
-  }
-
-  function addVocab() {
-    var word = window.prompt("新词英文（小写 headword）", "");
-    if (word == null) return;
-    word = String(word).trim().toLowerCase();
-    if (!word) return;
-    var dup = vocabState.items.find(function (it) {
-      return String(it.word).toLowerCase() === word;
-    });
-    if (dup) {
-      showStatus(el.vocabStatus, "已存在：" + dup.word + " (#" + dup.id + ")", "err");
-      selectVocab(dup.id);
-      return;
-    }
-    var item = {
-      id: vocabState.items.length + 1,
-      word: word,
-      spelling: spellingOf(word),
-      phonetic: "/" + word + "/",
-      pos: "n. 名词",
-      gloss: "",
-      tip: "the " + word,
-      example: "Check the " + word + " in the text.",
-      exampleZh: "核对文本中的该词。",
-      tags: ["academic"],
-      tier: "high"
-    };
-    vocabState.items.push(item);
-    reindexVocab();
-    vocabState.dirty = true;
-    vocabState.selectedId = item.id;
-    fillVocabForm(item);
-    if (el.vocabSearch) el.vocabSearch.value = word;
-    renderVocabList();
-    showStatus(el.vocabStatus, "已新增 " + word + "，请补全释义后「应用到列表」再保存。", "info");
-  }
-
-  function deleteVocab() {
-    if (vocabState.selectedId == null) {
-      showStatus(el.vocabStatus, "请先选择要删除的词条。", "err");
-      return;
-    }
-    var item = vocabState.items.find(function (it) {
-      return it.id === vocabState.selectedId;
-    });
-    if (!item) return;
-    if (!window.confirm("确认删除「" + item.word + "」(#" + item.id + ")？")) return;
-    vocabState.items = vocabState.items.filter(function (it) {
-      return it.id !== item.id;
-    });
-    reindexVocab();
-    vocabState.dirty = true;
-    vocabState.selectedId = vocabState.items.length ? vocabState.items[0].id : null;
-    if (vocabState.selectedId) {
-      fillVocabForm(
-        vocabState.items.find(function (it) {
-          return it.id === vocabState.selectedId;
-        })
-      );
-    }
-    renderVocabList();
-    showStatus(el.vocabStatus, "已删除（本地）。记得保存到 GitHub。", "ok");
-  }
-
-  async function loadVocab() {
-    clearStatus(el.vocabStatus);
-    showStatus(el.vocabStatus, "正在加载 content/vocab.json …", "info");
-    try {
-      var res = await fetch("../content/vocab.json?t=" + Date.now(), {
-        cache: "no-store"
-      });
-      if (!res.ok) throw new Error("HTTP " + res.status);
-      var data = await res.json();
-      if (!Array.isArray(data)) throw new Error("vocab.json 不是数组");
-      vocabState.items = data.map(function (it, i) {
-        return Object.assign({}, it, { id: it.id || i + 1 });
-      });
-      vocabState.dirty = false;
-      vocabState.selectedId = vocabState.items.length ? vocabState.items[0].id : null;
-      if (vocabState.selectedId) {
-        fillVocabForm(vocabState.items[0]);
-      }
-      renderVocabList();
-      showStatus(
-        el.vocabStatus,
-        "已加载 " + vocabState.items.length + " 词。可搜索 / 编辑后保存。",
-        "ok"
-      );
-    } catch (err) {
-      showStatus(
-        el.vocabStatus,
-        "加载失败：" + (err && err.message ? err.message : err),
-        "err"
-      );
-    }
-  }
-
-  function buildVocabJs(items) {
-    var header =
-      "/**\n" +
-      " * chinaPTE · PTE Academic 高频核心词\n" +
-      " * Total: " +
-      items.length +
-      "\n" +
-      " * Domains: academic research, campus/admin (WFD/RS), environment/society/economy, dictation verbs/adverbs\n" +
-      " * Fields: word, spelling, phonetic (IPA /slashes/), pos (e.g. n. 名词), gloss, tip, example, exampleZh, tags, tier, id\n" +
-      " * Admin source of truth: content/vocab.json (keep in sync with this file)\n" +
-      " */\n" +
-      "(function (global) {\n" +
-      '  "use strict";\n' +
-      "  var VOCAB_BANK = \n";
-    var footer =
-      "\n;\n  global.VOCAB_BANK = VOCAB_BANK;\n})(typeof window !== \"undefined\" ? window : globalThis);\n";
-    return header + JSON.stringify(items, null, 2) + footer;
-  }
-
-  function downloadVocab() {
-    var blob = new Blob([prettyJson(vocabState.items)], {
-      type: "application/json;charset=utf-8"
-    });
-    var a = document.createElement("a");
-    a.href = URL.createObjectURL(blob);
-    a.download = "vocab.json";
-    document.body.appendChild(a);
-    a.click();
-    setTimeout(function () {
-      URL.revokeObjectURL(a.href);
-      a.remove();
-    }, 500);
-    showStatus(el.vocabStatus, "已下载 vocab.json。", "ok");
-  }
-
-  async function saveVocabToGithub() {
-    var cfg = getGithubCfg();
-    var token = resolveToken();
-    if (!token) {
-      showStatus(el.vocabStatus, "请先粘贴 GitHub Personal Access Token。", "err");
-      el.tokenInput.focus();
-      return;
-    }
-    if (!vocabState.items.length) {
-      showStatus(el.vocabStatus, "词库为空，取消保存。", "err");
-      return;
-    }
-    // merge current form into selected item silently
-    if (vocabState.selectedId != null) {
-      var draft = readVocabForm();
-      var ix = vocabState.items.findIndex(function (it) { return it.id === vocabState.selectedId; });
-      if (ix >= 0 && draft.word) {
-        draft.id = vocabState.items[ix].id;
-        vocabState.items[ix] = draft;
-      }
-    }
-    reindexVocab();
-    el.btnVocabSave.disabled = true;
-    showStatus(el.vocabStatus, "正在保存 vocab.json …", "info");
-    try {
-      var jsonText = prettyJson(vocabState.items);
-      var jsText = buildVocabJs(vocabState.items);
-      var metaJson = await githubGet(cfg.vocabPath, token, cfg.branch);
-      await githubPut(
-        cfg.vocabPath,
-        token,
-        jsonText,
-        "Update vocab.json via chinaPTE admin (" + vocabState.items.length + " words)",
-        metaJson.sha || undefined
-      );
-      showStatus(el.vocabStatus, "vocab.json 已写。正在同步 data-vocab.js …", "info");
-      var metaJs = await githubGet(cfg.vocabJsPath, token, cfg.branch);
-      await githubPut(
-        cfg.vocabJsPath,
-        token,
-        jsText,
-        "Sync data-vocab.js with vocab.json (" + vocabState.items.length + " words)",
-        metaJs.sha || undefined
-      );
-      vocabState.dirty = false;
-      updateVocabCount();
-      showStatus(
-        el.vocabStatus,
-        "保存成功！共 " +
-          vocabState.items.length +
-          " 词。Pages 约 1–2 分钟后刷新 vocab.html。",
-        "ok"
-      );
-    } catch (err) {
-      showStatus(
-        el.vocabStatus,
-        "保存失败：" + (err && err.message ? err.message : err),
-        "err"
-      );
-    } finally {
-      el.btnVocabSave.disabled = false;
-    }
+  function saveConsult() {
+    var data = readConsultForm();
+    fillConsultForm(data);
+    return savePath(
+      getGithubCfg().consultPath,
+      data,
+      el.consultStatus,
+      el.btnConsultSave,
+      "保存成功！GitHub Pages 通常 1–2 分钟后刷新。可打开 consult.html 查看。",
+      "Update consult.json via chinaPTE admin"
+    );
   }
 
   function switchTab(name) {
     var isLabor = name === "labor";
     el.panelLabor.classList.toggle("hidden", !isLabor);
-    el.panelVocab.classList.toggle("hidden", isLabor);
+    el.panelConsult.classList.toggle("hidden", isLabor);
     document.querySelectorAll(".admin-tab").forEach(function (btn) {
       btn.classList.toggle("is-active", btn.getAttribute("data-tab") === name);
     });
-    if (!isLabor && !vocabState.items.length) loadVocab();
+    if (!isLabor && !consultLoaded) loadConsult();
   }
 
   function showEditor() {
@@ -686,7 +413,7 @@
     el.editorPanel.classList.remove("hidden");
     var t = getStoredToken();
     if (t) el.tokenInput.value = t;
-    loadFromSite();
+    loadLabor();
   }
 
   function showLogin() {
@@ -713,50 +440,44 @@
   });
 
   el.loadBtn.addEventListener("click", function () {
-    loadFromSite();
+    loadLabor();
   });
   el.downloadBtn.addEventListener("click", function () {
-    downloadJson();
+    downloadNamed(readLaborForm(), "labor.json", el.status);
   });
   el.saveBtn.addEventListener("click", function () {
-    saveToGithub();
+    saveLabor();
   });
+  el.form.addEventListener("submit", function (e) {
+    e.preventDefault();
+    saveLabor();
+  });
+
+  el.btnConsultReload.addEventListener("click", function () {
+    loadConsult();
+  });
+  el.btnConsultDownload.addEventListener("click", function () {
+    downloadNamed(readConsultForm(), "consult.json", el.consultStatus);
+  });
+  el.btnConsultSave.addEventListener("click", function () {
+    saveConsult();
+  });
+  el.consultForm.addEventListener("submit", function (e) {
+    e.preventDefault();
+    saveConsult();
+  });
+
   el.clearTokenBtn.addEventListener("click", function () {
     storeToken("", false);
     el.tokenInput.value = "";
     showStatus(el.status, "已清除本机保存的 Token（session / localStorage）。", "info");
-    showStatus(el.vocabStatus, "已清除本机 Token。", "info");
-  });
-  el.form.addEventListener("submit", function (e) {
-    e.preventDefault();
-    saveToGithub();
+    showStatus(el.consultStatus, "已清除本机 Token。", "info");
   });
 
   document.querySelectorAll(".admin-tab").forEach(function (btn) {
     btn.addEventListener("click", function () {
       switchTab(btn.getAttribute("data-tab") || "labor");
     });
-  });
-
-  el.vocabList.addEventListener("click", function (e) {
-    var btn = e.target.closest("[data-id]");
-    if (!btn) return;
-    selectVocab(Number(btn.getAttribute("data-id")));
-  });
-  el.vocabSearch.addEventListener("input", function () {
-    renderVocabList();
-  });
-  el.btnVocabReload.addEventListener("click", function () {
-    loadVocab();
-  });
-  el.btnVocabAdd.addEventListener("click", addVocab);
-  el.btnVocabSave.addEventListener("click", saveVocabToGithub);
-  el.btnVocabDownload.addEventListener("click", downloadVocab);
-  el.btnVocabApply.addEventListener("click", applyVocabForm);
-  el.btnVocabDelete.addEventListener("click", deleteVocab);
-  el.vocabForm.addEventListener("submit", function (e) {
-    e.preventDefault();
-    applyVocabForm();
   });
 
   if (isLoggedIn()) showEditor();
