@@ -62,9 +62,21 @@
 cd chinaPTE-wfd-listen && python3 -m http.server 8080
 ```
 
+## 澳新行业英语
+
+| 页面 | 说明 |
+|------|------|
+| `industry.html` | 澳新行业英语总览 |
+| `industry-*.html` | 日常 / 建筑 / 肉类 / 石材 / 橱柜 / 电焊 / 护理 |
+| `data-industry.js` | 词汇与沟通句子数据 |
+
+线上：https://chinaptepte-commits.github.io/chinaPTE/industry.html
+
 ## 合规
 
 仅提供 PTE 练习与正规出国劳务 / 海外就业信息咨询。禁止考试舞弊相关内容。不承诺签证或工作结果。
+
+**版权：** 题库/词库为本站自有版权内容，未经授权禁止转载、镜像、爬取或商用，盗版必究。
 
 ## 技术
 
