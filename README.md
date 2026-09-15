@@ -75,20 +75,37 @@ cd chinaPTE-wfd-listen && python3 -m http.server 8080
 
 ## SEO（零成本静态优化）
 
-面向 **澳大利亚 / 新西兰华人** 在 Google 搜索 PTE 备考、行业英语、合规出国劳务等信息。
+面向 **中国大陆 + 澳大利亚 / 新西兰华人** 在 Baidu / Bing / Google 搜索 PTE 备考、行业英语、合规出国劳务等信息。
 
-已落实（不买广告、不承诺排名）：
+已落实（不买广告、不承诺排名、不宣称「百度第一」）：
 
-- 各页独立中文 `<title>` + meta description（含 AU/NZ / PTE / WFD / RS 等意图词，避免堆砌）
+- 各页独立中文 `<title>` + meta description（合并大陆意图词：PTE考试 / PTE题库 / PTE练习 / WFD听写 / RS跟读 / 华人留学移民英语 / 澳洲新西兰打工英语 / 行业英语，与既有 AU/NZ 表述并存，避免堆砌）
+- 关键页可选 `meta name="keywords"`（百度仍轻度参考；短列表、按页相关）
 - Open Graph / Twitter 基础标签、canonical → `https://chinaptepte-commits.github.io/chinaPTE/...`
-- `robots.txt`（允许抓取；`/admin/` 软禁止）+ `sitemap.xml`
+- `robots.txt`（`*` / `Baiduspider` / `bingbot` 允许抓取；`/admin/` 禁止）+ `sitemap.xml`
 - 首页 JSON-LD：`WebSite` + `Organization` + `LearningResource`；主要栏目 `BreadcrumbList`
 - `lang="zh-CN"`；单语站点未加 hreflang
-- 首页增加描述性内链（练习中心 / WFD·RS / 澳新行业英语 / 出国劳务）
+- 首页描述性内链 + 「国内访问说明」（诚实说明 github.io 在大陆可能不稳定；不承诺备案）
+- 首页预留 `baidu-site-verification` 注释槽（拿到验证码后再填，勿编造）
 - 可选友好页：`404.html`
 
-提交 sitemap（站点上线后）：Google Search Console → 添加资源 → 提交  
-`https://chinaptepte-commits.github.io/chinaPTE/sitemap.xml`
+### 提交 sitemap（上线后）
+
+Sitemap URL：`https://chinaptepte-commits.github.io/chinaPTE/sitemap.xml`
+
+1. **百度搜索资源平台**（[ziyuan.baidu.com](https://ziyuan.baidu.com/)）  
+   - 添加网站（填写 github.io 站点 URL）→ 完成验证（HTML 标签：把验证码填进首页 `baidu-site-verification` 并取消注释）  
+   - 普通收录 / sitemap 提交上述地址；可再手动推送重要 URL  
+   - 说明：github.io 在大陆可达性不稳定，收录与抓取可能受影响；这是托管限制，不是本站「已备案」——本站**未宣称 ICP 备案**。
+2. **Bing Webmaster Tools**（[bing.com/webmasters](https://www.bing.com/webmasters)）  
+   - 添加站点 → 验证 → 提交 sitemap  
+   - 对中文搜索亦有帮助，且 Bing 对 github.io 抓取通常更稳。
+3. **Google Search Console**（可选，AU/NZ 受众）→ 提交同一 sitemap。
+
+### 国内访问与可选加固（非必须）
+
+- 收藏常用页；打开慢或失败时换网络 / 稍后再试  
+- 可选：自有域名 + Cloudflare（或其它合规 CDN/节点）指向本站静态资源，改善可达性——**需自行合规办理，本 README 不承诺也不指导虚假备案**
 
 ## 合规
 

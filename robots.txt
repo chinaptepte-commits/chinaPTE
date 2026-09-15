@@ -1,7 +1,17 @@
+# chinaPTE — Baidu / Bing / Google friendly
+# Submit sitemap in 百度搜索资源平台 + Bing Webmaster Tools after verify.
+# Note: GitHub project site lives under /chinaPTE/; paths below match that.
+
 User-agent: *
 Allow: /
+Disallow: /chinaPTE/admin/
 
-# Disallow admin tooling from index emphasis (still crawlable if linked; soft disallow)
-Disallow: /admin/
+User-agent: Baiduspider
+Allow: /
+Disallow: /chinaPTE/admin/
+
+User-agent: bingbot
+Allow: /
+Disallow: /chinaPTE/admin/
 
 Sitemap: https://chinaptepte-commits.github.io/chinaPTE/sitemap.xml
