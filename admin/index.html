@@ -9,7 +9,7 @@
   </script>
   <meta name="robots" content="noindex,nofollow" />
   <title>chinaPTE · 内容后台</title>
-  <link rel="stylesheet" href="admin.css?v=20260916r1" />
+  <link rel="stylesheet" href="admin.css?v=20260916r2" />
   <script src="../theme.js?v=20260915r2" defer></script>
 </head>
 <body>
@@ -32,8 +32,7 @@
     <div id="loginPanel" class="card login-box">
       <h2>登录</h2>
       <p class="hint" style="margin-bottom:14px">
-        默认密码见 <code>admin/config.js</code> 中的 <code>ADMIN_PASSWORD</code>（初次为 chinaPTE2026）。
-        请登录后尽快改成你自己的密码并重新部署。
+        请输入管理员密码。登录后可在「修改管理员密码」中更换密码。
       </p>
       <form id="loginForm">
         <label for="loginPass">后台密码</label>
@@ -56,6 +55,7 @@
           <button type="button" class="admin-tab is-active" data-tab="labor" id="tabLabor">PTE直通车</button>
           <button type="button" class="admin-tab" data-tab="consult" id="tabConsult">出国咨询</button>
           <button type="button" class="admin-tab" data-tab="analytics" id="tabAnalytics">数据看板</button>
+          <button type="button" class="admin-tab" data-tab="password" id="tabPassword">修改管理员密码</button>
         </div>
         <p class="hint">
           保存通过 GitHub Contents API 写回
@@ -324,16 +324,40 @@
         </div>
       </div>
 
+      <!-- PASSWORD -->
+      <div id="panelPassword" class="hidden">
+        <form id="passwordForm" class="card">
+          <h2>修改管理员密码</h2>
+          <p class="hint">
+            保存后会通过 GitHub Contents API 更新 <code>admin/config.js</code>（写入
+            <code>ADMIN_PASSWORD_HASH</code>，不再存明文）。请先填写上方 GitHub Token。
+          </p>
+          <p class="hint" style="margin-top:8px">
+            说明：静态 GitHub Pages 后台仍是客户端门禁；改密 + 登录页不公开密码是基本卫生措施，不能替代真正的服务端鉴权。
+          </p>
+          <label for="pwdCurrent">当前密码</label>
+          <input type="password" id="pwdCurrent" autocomplete="current-password" required />
+          <label for="pwdNew">新密码</label>
+          <input type="password" id="pwdNew" autocomplete="new-password" required minlength="8" />
+          <label for="pwdConfirm">确认新密码</label>
+          <input type="password" id="pwdConfirm" autocomplete="new-password" required minlength="8" />
+          <div class="btn-row">
+            <button type="submit" class="btn-primary" id="btnSavePassword">保存新密码到 GitHub</button>
+          </div>
+          <div id="passwordStatus" class="status" role="status"></div>
+        </form>
+      </div>
+
       <p class="footer-note">
-        修改密码：编辑仓库里的 <code>admin/config.js</code>，改 <code>window.ADMIN_PASSWORD</code> 后推送到 main。<br />
+        修改密码：登录后打开「修改管理员密码」标签，保存到 GitHub 后请硬刷新（Ctrl/Cmd+Shift+R）。<br />
         禁止发布任何考试舞弊相关内容。仅允许正规出国路径 / 海外就业合规信息（PTE直通车）。<br />
         Pages 刷新通常需 1–2 分钟。
       </p>
     </div>
   </div>
 
-  <script src="config.js?v=20260916r1"></script>
+  <script src="config.js?v=20260916r2"></script>
   <script src="../analytics.js?v=20260916r1"></script>
-  <script src="admin.js?v=20260916r1"></script>
+  <script src="admin.js?v=20260916r2"></script>
 </body>
 </html>

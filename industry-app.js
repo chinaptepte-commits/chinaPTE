@@ -3,6 +3,7 @@
  * Expects window.INDUSTRY_KEY and window.INDUSTRY_DATA
  * Vocab: en + ipa + zh (+ spell / 朗读)
  * Phrases: en + zh + keys block (en / ipa / zh)
+ * Tabs: 常用词汇 | 常用句子 (default vocab; only one section visible)
  */
 (function () {
   function esc(s) {
@@ -51,6 +52,19 @@
     );
   }
 
+  function setPanel(root, mode) {
+    var isVocab = mode !== "phrases";
+    var panelVocab = root.querySelector("#indPanelVocab");
+    var panelPhrases = root.querySelector("#indPanelPhrases");
+    if (panelVocab) panelVocab.hidden = !isVocab;
+    if (panelPhrases) panelPhrases.hidden = isVocab;
+    root.querySelectorAll(".ind-tab").forEach(function (btn) {
+      var active = btn.getAttribute("data-ind-tab") === (isVocab ? "vocab" : "phrases");
+      btn.classList.toggle("is-active", active);
+      btn.setAttribute("aria-selected", active ? "true" : "false");
+    });
+  }
+
   function render() {
     var key = window.INDUSTRY_KEY;
     var data = (window.INDUSTRY_DATA || {})[key];
@@ -59,6 +73,9 @@
       if (root) root.innerHTML = '<p class="labor-intro">内容加载失败。</p>';
       return;
     }
+
+    var vocabCount = (data.vocab || []).length;
+    var phraseCount = (data.phrases || []).length;
 
     var vocabHtml = (data.vocab || [])
       .map(function (w) {
@@ -125,18 +142,30 @@
         ? '<p class="tip-banner">' + esc(data.softNote) + "</p>"
         : "") +
       '<p class="ind-back"><a href="industry.html">← 返回行业英语总览</a></p>' +
+      '<div class="ind-tabs" role="tablist" aria-label="词汇与句子切换">' +
+      '<button type="button" class="ind-tab is-active" role="tab" aria-selected="true" data-ind-tab="vocab" id="indTabVocab">常用词汇 · ' +
+      vocabCount +
+      "</button>" +
+      '<button type="button" class="ind-tab" role="tab" aria-selected="false" data-ind-tab="phrases" id="indTabPhrases">常用句子 · ' +
+      phraseCount +
+      "</button>" +
+      "</div>" +
+      '<div id="indPanelVocab" class="ind-panel" role="tabpanel" aria-labelledby="indTabVocab">' +
       '<h2 class="section-title">常用词汇 · ' +
-      (data.vocab || []).length +
+      vocabCount +
       " 词</h2>" +
       '<ul class="ind-list">' +
       vocabHtml +
       "</ul>" +
+      "</div>" +
+      '<div id="indPanelPhrases" class="ind-panel" role="tabpanel" aria-labelledby="indTabPhrases" hidden>' +
       '<h2 class="section-title">常用沟通句子 · ' +
-      (data.phrases || []).length +
+      phraseCount +
       " 句</h2>" +
       '<ul class="ind-list">' +
       phraseHtml +
       "</ul>" +
+      "</div>" +
       '<div class="bridge-card" style="margin-top:20px">' +
       '<a class="btn-soft" href="labor.html">了解 PTE直通车</a>' +
       '<a class="btn-secondary-link" href="consult.html" style="margin-left:8px">免费咨询留资</a>' +
@@ -144,6 +173,11 @@
       "</div>";
 
     root.addEventListener("click", function (ev) {
+      var tabBtn = ev.target.closest("[data-ind-tab]");
+      if (tabBtn) {
+        setPanel(root, tabBtn.getAttribute("data-ind-tab") === "phrases" ? "phrases" : "vocab");
+        return;
+      }
       var btn = ev.target.closest("[data-speak]");
       if (!btn) return;
       speak(btn.getAttribute("data-speak"));

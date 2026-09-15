@@ -22,8 +22,8 @@ chinaPTE · 全题型练习站 — 打开说明
 4. 内容后台（零成本，GitHub Pages 可编辑 labor 文案）：
    admin/          — 后台入口
    线上地址：https://chinaptepte-commits.github.io/chinaPTE/admin/
-   默认密码：见 admin/config.js 里的 window.ADMIN_PASSWORD（初次为 chinaPTE2026）
-   ★ 请尽快改成你自己的密码：编辑 admin/config.js 后推送到 main 即可。
+   ★ 登录后请在「修改管理员密码」里设置你自己的密码（写入 SHA-256 哈希到 admin/config.js）。
+   登录页与公开文档不会显示默认密码。静态 Pages 仍是客户端门禁，请勿把密码公开传播。
 
    如何创建 GitHub PAT（用于后台「保存到 GitHub」）：
    a. 登录 GitHub → Settings → Developer settings

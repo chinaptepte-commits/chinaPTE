@@ -1,4 +1,4 @@
-/* chinaPTE admin — labor.json + consult.json via GitHub Contents API */
+/* chinaPTE admin — labor/consult via GitHub Contents API + password hash */
 (function () {
   "use strict";
 
@@ -35,7 +35,14 @@
     btnAnalyticsRefresh: document.getElementById("btnAnalyticsRefresh"),
     btnAnalyticsCsvRaw: document.getElementById("btnAnalyticsCsvRaw"),
     btnAnalyticsCsvDaily: document.getElementById("btnAnalyticsCsvDaily"),
-    btnAnalyticsLocal: document.getElementById("btnAnalyticsLocal")
+    btnAnalyticsLocal: document.getElementById("btnAnalyticsLocal"),
+    panelPassword: document.getElementById("panelPassword"),
+    passwordForm: document.getElementById("passwordForm"),
+    passwordStatus: document.getElementById("passwordStatus"),
+    btnSavePassword: document.getElementById("btnSavePassword"),
+    pwdCurrent: document.getElementById("pwdCurrent"),
+    pwdNew: document.getElementById("pwdNew"),
+    pwdConfirm: document.getElementById("pwdConfirm")
   };
 
   var consultLoaded = false;
@@ -61,8 +68,83 @@
     else sessionStorage.removeItem(AUTH_KEY);
   }
 
-  function getExpectedPassword() {
-    return String(window.ADMIN_PASSWORD || "chinaPTE2026");
+  function bytesToHex(buf) {
+    var bytes = new Uint8Array(buf);
+    var out = "";
+    for (var i = 0; i < bytes.length; i++) {
+      out += bytes[i].toString(16).padStart(2, "0");
+    }
+    return out;
+  }
+
+  async function sha256Hex(text) {
+    var data = new TextEncoder().encode(String(text || ""));
+    var digest = await crypto.subtle.digest("SHA-256", data);
+    return bytesToHex(digest);
+  }
+
+  function hasPasswordHash() {
+    return !!(window.ADMIN_PASSWORD_HASH && String(window.ADMIN_PASSWORD_HASH).trim());
+  }
+
+  function hasPlainPassword() {
+    return !!(window.ADMIN_PASSWORD && String(window.ADMIN_PASSWORD).trim());
+  }
+
+  async function verifyPassword(pass) {
+    var p = String(pass || "");
+    if (hasPasswordHash()) {
+      var hash = await sha256Hex(p);
+      return hash === String(window.ADMIN_PASSWORD_HASH).trim().toLowerCase();
+    }
+    if (hasPlainPassword()) {
+      return p === String(window.ADMIN_PASSWORD);
+    }
+    return false;
+  }
+
+  function jsString(s) {
+    return JSON.stringify(String(s == null ? "" : s));
+  }
+
+  function buildConfigJs(passwordHash) {
+    var g = window.ADMIN_GITHUB || {};
+    var a = window.CHINAPTE_ANALYTICS || {};
+    var lines = [];
+    lines.push("/* chinaPTE admin auth — prefer ADMIN_PASSWORD_HASH (SHA-256 hex).");
+    lines.push("   Change password after login in the「修改管理员密码」tab (writes this file via GitHub).");
+    lines.push("   Do not publish plaintext passwords in docs or on the login page. */");
+    lines.push("window.ADMIN_PASSWORD_HASH = " + jsString(passwordHash) + ";");
+    lines.push("/* Legacy plaintext fallback (unused when HASH is set). Leave empty. */");
+    lines.push('window.ADMIN_PASSWORD = "";');
+    lines.push("");
+    lines.push("/* GitHub 仓库配置（一般无需修改） */");
+    lines.push("window.ADMIN_GITHUB = {");
+    lines.push('  owner: ' + jsString(g.owner || "chinaptepte-commits") + ",");
+    lines.push('  repo: ' + jsString(g.repo || "chinaPTE") + ",");
+    lines.push('  branch: ' + jsString(g.branch || "main") + ",");
+    lines.push('  laborPath: ' + jsString(g.laborPath || g.path || "content/labor.json") + ",");
+    lines.push('  consultPath: ' + jsString(g.consultPath || "content/consult.json") + ",");
+    lines.push('  configPath: ' + jsString(g.configPath || "admin/config.js") + ",");
+    lines.push("  /* 兼容旧字段 */");
+    lines.push('  path: ' + jsString(g.path || g.laborPath || "content/labor.json"));
+    lines.push("};");
+    lines.push("");
+    lines.push("/* Analytics（招商数据看板） */");
+    lines.push("window.CHINAPTE_ANALYTICS = {");
+    lines.push('  endpoint: ' + jsString(a.endpoint || "https://chinapte.net/api/analytics") + ",");
+    lines.push("  /* 与 Worker secret ADMIN_KEY 保持一致；仅本机 admin 页使用 */");
+    lines.push('  adminKey: ' + jsString(a.adminKey || "") + ",");
+    lines.push("  /* 可选：第三方 webhook（Notion/Sheets 中转等） */");
+    lines.push('  webhook: ' + jsString(a.webhook || window.CHINAPTE_ANALYTICS_WEBHOOK || "") + ",");
+    lines.push("  /* 可选 GA4 Measurement ID，例如 G-XXXXXXXX */");
+    lines.push('  ga4MeasurementId: ' + jsString(a.ga4MeasurementId || ""));
+    lines.push("};");
+    lines.push("/* 兼容旧字段名 */");
+    lines.push('window.CHINAPTE_ANALYTICS_WEBHOOK = window.CHINAPTE_ANALYTICS.webhook || "";');
+    lines.push('window.ANALYTICS_ADMIN_KEY = window.CHINAPTE_ANALYTICS.adminKey || "";');
+    lines.push("");
+    return lines.join("\n");
   }
 
   function getGithubCfg() {
@@ -72,7 +154,8 @@
       repo: g.repo || "chinaPTE",
       branch: g.branch || "main",
       laborPath: g.laborPath || g.path || "content/labor.json",
-      consultPath: g.consultPath || "content/consult.json"
+      consultPath: g.consultPath || "content/consult.json",
+      configPath: g.configPath || "admin/config.js"
     };
   }
 
@@ -412,7 +495,8 @@
     el.panelLabor.classList.toggle("hidden", tab !== "labor");
     el.panelConsult.classList.toggle("hidden", tab !== "consult");
     if (el.panelAnalytics) el.panelAnalytics.classList.toggle("hidden", tab !== "analytics");
-    // Token card mainly for content editors
+    if (el.panelPassword) el.panelPassword.classList.toggle("hidden", tab !== "password");
+    // Token card mainly for content editors + password save
     var tokenCard = document.getElementById("tokenCard");
     if (tokenCard) tokenCard.classList.toggle("hidden", tab === "analytics");
     document.querySelectorAll(".admin-tab").forEach(function (btn) {
@@ -420,6 +504,79 @@
     });
     if (tab === "consult" && !consultLoaded) loadConsult();
     if (tab === "analytics") refreshAnalytics(false);
+  }
+
+  async function savePasswordChange() {
+    var statusNode = el.passwordStatus;
+    var current = (el.pwdCurrent && el.pwdCurrent.value) || "";
+    var next = (el.pwdNew && el.pwdNew.value) || "";
+    var confirm = (el.pwdConfirm && el.pwdConfirm.value) || "";
+    clearStatus(statusNode);
+    if (!current || !next || !confirm) {
+      showStatus(statusNode, "请填写当前密码、新密码与确认。", "err");
+      return;
+    }
+    if (next.length < 8) {
+      showStatus(statusNode, "新密码至少 8 位。", "err");
+      return;
+    }
+    if (next !== confirm) {
+      showStatus(statusNode, "两次输入的新密码不一致。", "err");
+      return;
+    }
+    var okCurrent = await verifyPassword(current);
+    if (!okCurrent) {
+      showStatus(statusNode, "当前密码不正确。", "err");
+      return;
+    }
+    if (next === current) {
+      showStatus(statusNode, "新密码不能与当前密码相同。", "err");
+      return;
+    }
+    var token = resolveToken();
+    if (!token) {
+      showStatus(
+        statusNode,
+        "请先粘贴 GitHub Personal Access Token（classic，勾选 repo 权限）。",
+        "err"
+      );
+      if (el.tokenInput) el.tokenInput.focus();
+      return;
+    }
+    var newHash = await sha256Hex(next);
+    var bodyText = buildConfigJs(newHash);
+    var relPath = getGithubCfg().configPath;
+    if (el.btnSavePassword) el.btnSavePassword.disabled = true;
+    showStatus(statusNode, "正在读取 config.js SHA…", "info");
+    try {
+      var meta = await githubGet(relPath, token);
+      showStatus(statusNode, "正在写入 GitHub…", "info");
+      await githubPut(
+        relPath,
+        token,
+        bodyText,
+        "Update admin password hash via chinaPTE admin",
+        meta.sha || undefined
+      );
+      window.ADMIN_PASSWORD_HASH = newHash;
+      window.ADMIN_PASSWORD = "";
+      if (el.pwdCurrent) el.pwdCurrent.value = "";
+      if (el.pwdNew) el.pwdNew.value = "";
+      if (el.pwdConfirm) el.pwdConfirm.value = "";
+      showStatus(
+        statusNode,
+        "密码已更新并写入 GitHub。请硬刷新本页（Ctrl/Cmd+Shift+R）以加载新 config；当前会话仍保持登录。",
+        "ok"
+      );
+    } catch (err) {
+      showStatus(
+        statusNode,
+        "保存失败：" + (err && err.message ? err.message : err),
+        "err"
+      );
+    } finally {
+      if (el.btnSavePassword) el.btnSavePassword.disabled = false;
+    }
   }
 
   function analyticsEndpoint() {
@@ -625,17 +782,44 @@
     clearStatus(el.loginStatus);
   }
 
-  el.loginForm.addEventListener("submit", function (e) {
+  el.loginForm.addEventListener("submit", async function (e) {
     e.preventDefault();
-    var pass = (el.loginPass.value || "").trim();
-    if (pass === getExpectedPassword()) {
-      setLoggedIn(true);
-      el.loginPass.value = "";
-      showEditor();
-    } else {
-      showStatus(el.loginStatus, "密码不正确。请检查 admin/config.js 中的 ADMIN_PASSWORD。", "err");
+    var pass = el.loginPass.value || "";
+    clearStatus(el.loginStatus);
+    showStatus(el.loginStatus, "正在验证…", "info");
+    try {
+      var ok = await verifyPassword(pass);
+      if (ok) {
+        setLoggedIn(true);
+        el.loginPass.value = "";
+        showEditor();
+        if (hasPlainPassword() && !hasPasswordHash()) {
+          // Encourage migration away from plaintext config
+          setTimeout(function () {
+            try {
+              switchTab("password");
+              showStatus(
+                el.passwordStatus,
+                "检测到配置仍使用明文密码。建议在此改成新密码（将写入 SHA-256 哈希）。",
+                "info"
+              );
+            } catch (e2) {}
+          }, 400);
+        }
+      } else {
+        showStatus(el.loginStatus, "密码不正确。", "err");
+      }
+    } catch (err) {
+      showStatus(el.loginStatus, "验证失败，请重试。", "err");
     }
   });
+
+  if (el.passwordForm) {
+    el.passwordForm.addEventListener("submit", function (e) {
+      e.preventDefault();
+      savePasswordChange();
+    });
+  }
 
   el.logoutBtn.addEventListener("click", function () {
     setLoggedIn(false);

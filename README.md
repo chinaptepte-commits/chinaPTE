@@ -29,7 +29,7 @@
 | `labor.html` | 公开「考不过怎么办 / PTE直通车」引导页（读 `content/labor.json`） |
 | `consult.html` | 出国咨询留资页（读 `content/consult.json`） |
 | `admin/` | 零成本后台：PTE直通车 + 出国咨询文案（GitHub Contents API） |
-| `admin/config.js` | **改密码**：`window.ADMIN_PASSWORD`（默认 `chinaPTE2026`，请尽快修改） |
+| `admin/config.js` | 管理员密码哈希（`ADMIN_PASSWORD_HASH`）；登录后在后台「修改管理员密码」里自设密码 |
 | `content/labor.json` | 直通车页可编辑文案 |
 | `content/consult.json` | 出国咨询页可编辑文案（标题/表单/微信/声明/CTA） |
 | `content/vocab.json` | 单词库源数据（≥2000 核心词）；前台优先加载 |

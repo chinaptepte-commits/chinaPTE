@@ -1,5 +1,9 @@
-/* chinaPTE 后台简易密码 — 请改成你自己的密码后保存并重新部署 */
-window.ADMIN_PASSWORD = "chinaPTE2026";
+/* chinaPTE admin auth — prefer ADMIN_PASSWORD_HASH (SHA-256 hex).
+   Change password after login in the「修改管理员密码」tab (writes this file via GitHub).
+   Do not publish plaintext passwords in docs or on the login page. */
+window.ADMIN_PASSWORD_HASH = "aa73686fd6d80f224186beedc21172ec917cb03e72de0ce3303aea244a9030f1";
+/* Legacy plaintext fallback (unused when HASH is set). Leave empty. */
+window.ADMIN_PASSWORD = "";
 
 /* GitHub 仓库配置（一般无需修改） */
 window.ADMIN_GITHUB = {
@@ -8,6 +12,7 @@ window.ADMIN_GITHUB = {
   branch: "main",
   laborPath: "content/labor.json",
   consultPath: "content/consult.json",
+  configPath: "admin/config.js",
   /* 兼容旧字段 */
   path: "content/labor.json"
 };
