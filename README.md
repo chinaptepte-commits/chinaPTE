@@ -72,6 +72,24 @@ cd chinaPTE-wfd-listen && python3 -m http.server 8080
 
 线上：https://chinaptepte-commits.github.io/chinaPTE/industry.html
 
+
+## SEO（零成本静态优化）
+
+面向 **澳大利亚 / 新西兰华人** 在 Google 搜索 PTE 备考、行业英语、合规出国劳务等信息。
+
+已落实（不买广告、不承诺排名）：
+
+- 各页独立中文 `<title>` + meta description（含 AU/NZ / PTE / WFD / RS 等意图词，避免堆砌）
+- Open Graph / Twitter 基础标签、canonical → `https://chinaptepte-commits.github.io/chinaPTE/...`
+- `robots.txt`（允许抓取；`/admin/` 软禁止）+ `sitemap.xml`
+- 首页 JSON-LD：`WebSite` + `Organization` + `LearningResource`；主要栏目 `BreadcrumbList`
+- `lang="zh-CN"`；单语站点未加 hreflang
+- 首页增加描述性内链（练习中心 / WFD·RS / 澳新行业英语 / 出国劳务）
+- 可选友好页：`404.html`
+
+提交 sitemap（站点上线后）：Google Search Console → 添加资源 → 提交  
+`https://chinaptepte-commits.github.io/chinaPTE/sitemap.xml`
+
 ## 合规
 
 仅提供 PTE 练习与正规出国劳务 / 海外就业信息咨询。禁止考试舞弊相关内容。不承诺签证或工作结果。

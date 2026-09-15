@@ -1,0 +1,7 @@
+User-agent: *
+Allow: /
+
+# Disallow admin tooling from index emphasis (still crawlable if linked; soft disallow)
+Disallow: /admin/
+
+Sitemap: https://chinaptepte-commits.github.io/chinaPTE/sitemap.xml
