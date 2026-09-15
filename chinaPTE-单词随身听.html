@@ -8,7 +8,7 @@
   (function(){try{var m=localStorage.getItem("chinaPTE_theme_mode")||"auto";var t=(m==="day"||m==="night")?m:(function(){var h=new Date().getHours();return(h>=6&&h<19)?"day":"night";})();document.documentElement.setAttribute("data-theme",t);var c=t==="day"?"#f4f6fb":"#0c0f14";var meta=document.querySelector('meta[name="theme-color"]');if(meta)meta.setAttribute("content",c);}catch(e){document.documentElement.setAttribute("data-theme","night");}})();
   </script>
   <title>chinaPTE · 单词随身听（单文件）</title>
-    <link rel="stylesheet" href="styles.css?v=20260915r2" />
+    <link rel="stylesheet" href="styles.css?v=20260915r3" />
   <style>
     .vocab-modes { display:flex; flex-wrap:wrap; gap:8px; margin:8px 0 12px; }
     .vocab-modes .type-tab { cursor:pointer; }
@@ -46,7 +46,7 @@
 
   <div class="app">
     <nav class="site-nav" aria-label="站点导航">
-      <a class="site-nav-brand" href="index.html">chinaPTE</a>
+      <a class="site-nav-brand" href="index.html"><img class="site-nav-logo" src="logo.svg" width="36" height="36" alt="" />chinaPTE</a>
       <ul class="site-nav-links">
         <li><a href="index.html">首页</a></li>
         <li><a href="practice.html">练习中心</a></li>
