@@ -1,6 +1,8 @@
 /**
  * chinaPTE — render AU/NZ industry English category pages
  * Expects window.INDUSTRY_KEY and window.INDUSTRY_DATA
+ * Vocab: en + ipa + zh (+ spell / 朗读)
+ * Phrases: en + zh + keys block (en / ipa / zh)
  */
 (function () {
   function esc(s) {
@@ -22,6 +24,33 @@
     } catch (e) {}
   }
 
+  function renderKeys(keys) {
+    if (!keys || !keys.length) return "";
+    var items = keys
+      .map(function (k) {
+        return (
+          '<li class="ind-key">' +
+          '<span class="ind-key-en">' +
+          esc(k.en) +
+          "</span>" +
+          (k.ipa ? '<span class="ind-key-ipa">' + esc(k.ipa) + "</span>" : "") +
+          '<span class="ind-key-zh">' +
+          esc(k.zh || "") +
+          "</span>" +
+          "</li>"
+        );
+      })
+      .join("");
+    return (
+      '<div class="ind-keys" aria-label="句中关键词">' +
+      '<div class="ind-keys-label">关键词</div>' +
+      "<ul>" +
+      items +
+      "</ul>" +
+      "</div>"
+    );
+  }
+
   function render() {
     var key = window.INDUSTRY_KEY;
     var data = (window.INDUSTRY_DATA || {})[key];
@@ -32,9 +61,12 @@
     }
 
     var vocabHtml = (data.vocab || [])
-      .map(function (w, i) {
+      .map(function (w) {
         var spell = w.spell
           ? '<span class="ind-spell">' + esc(w.spell) + "</span>"
+          : "";
+        var ipa = w.ipa
+          ? '<span class="ind-ipa">' + esc(w.ipa) + "</span>"
           : "";
         return (
           '<li class="ind-item">' +
@@ -42,6 +74,7 @@
           '<span class="ind-en">' +
           esc(w.en) +
           "</span>" +
+          ipa +
           '<span class="ind-zh">' +
           esc(w.zh) +
           "</span>" +
@@ -58,7 +91,7 @@
     var phraseHtml = (data.phrases || [])
       .map(function (p) {
         return (
-          '<li class="ind-item">' +
+          '<li class="ind-item ind-item-phrase">' +
           '<div class="ind-main">' +
           '<span class="ind-en">' +
           esc(p.en) +
@@ -66,6 +99,7 @@
           '<span class="ind-zh">' +
           esc(p.zh) +
           "</span>" +
+          renderKeys(p.keys) +
           "</div>" +
           '<button type="button" class="ind-speak" data-speak="' +
           esc(p.en) +

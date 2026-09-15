@@ -2,15 +2,17 @@
  * chinaPTE · PTE Academic 高频核心词
  * Total: 730
  * Domains: academic research, campus/admin (WFD/RS), environment/society/economy, dictation verbs/adverbs
+ * Fields: word, spelling, phonetic (IPA /slashes/), pos (e.g. n. 名词), gloss, tip, example, exampleZh, tags, tier, id
  */
 (function (global) {
   "use strict";
-  var VOCAB_BANK = [
+  var VOCAB_BANK = 
+[
   {
     "id": 1,
     "word": "absence",
     "spelling": "A-B-S-E-N-C-E",
-    "phonetic": "",
+    "phonetic": "/ˈæbsəns/",
     "gloss": "缺席",
     "tip": "authorised absence",
     "example": "Report any absence.",
@@ -18,7 +20,8 @@
     "tags": [
       "campus"
     ],
-    "tier": "high"
+    "tier": "high",
+    "pos": "n. 名词"
   },
   {
     "id": 2,
@@ -32,13 +35,14 @@
     "tags": [
       "academic"
     ],
-    "tier": "core"
+    "tier": "core",
+    "pos": "adj. 形容词"
   },
   {
     "id": 3,
     "word": "accelerate",
     "spelling": "A-C-C-E-L-E-R-A-T-E",
-    "phonetic": "",
+    "phonetic": "/ækˈsɛləˌeɪt/",
     "gloss": "加速",
     "tip": "accelerate growth",
     "example": "Digital tools accelerate learning.",
@@ -47,13 +51,14 @@
       "academic",
       "verb"
     ],
-    "tier": "high"
+    "tier": "high",
+    "pos": "v. 动词"
   },
   {
     "id": 4,
     "word": "acceptance",
     "spelling": "A-C-C-E-P-T-A-N-C-E",
-    "phonetic": "",
+    "phonetic": "/əkˈsɛptəns/",
     "gloss": "接受",
     "tip": "offer acceptance",
     "example": "Confirm acceptance by the deadline.",
@@ -61,13 +66,14 @@
     "tags": [
       "campus"
     ],
-    "tier": "high"
+    "tier": "high",
+    "pos": "n. 名词"
   },
   {
     "id": 5,
     "word": "access",
     "spelling": "A-C-C-E-S-S",
-    "phonetic": "",
+    "phonetic": "/ˈækˌsɛs/",
     "gloss": "获取；通道",
     "tip": "open access",
     "example": "Students have access to journals.",
@@ -76,13 +82,14 @@
       "campus",
       "academic"
     ],
-    "tier": "core"
+    "tier": "core",
+    "pos": "n. 名词"
   },
   {
     "id": 6,
     "word": "accessible",
     "spelling": "A-C-C-E-S-S-I-B-L-E",
-    "phonetic": "",
+    "phonetic": "/ækˈsɛsəbəl/",
     "gloss": "可及的",
     "tip": "accessible format",
     "example": "Provide accessible formats.",
@@ -90,13 +97,14 @@
     "tags": [
       "academic"
     ],
-    "tier": "high"
+    "tier": "high",
+    "pos": "adj. 形容词"
   },
   {
     "id": 7,
     "word": "accommodation",
     "spelling": "A-C-C-O-M-M-O-D-A-T-I-O-N",
-    "phonetic": "",
+    "phonetic": "/əˌkɑməˈdeɪʃən/",
     "gloss": "住宿",
     "tip": "student accommodation",
     "example": "Book accommodation early.",
@@ -104,13 +112,14 @@
     "tags": [
       "campus"
     ],
-    "tier": "core"
+    "tier": "core",
+    "pos": "n. 名词"
   },
   {
     "id": 8,
     "word": "accordingly",
     "spelling": "A-C-C-O-R-D-I-N-G-L-Y",
-    "phonetic": "",
+    "phonetic": "/əˈkɔːdɪŋli/",
     "gloss": "相应地",
     "tip": "adjust accordingly",
     "example": "Adjust the plan accordingly.",
@@ -118,13 +127,14 @@
     "tags": [
       "academic"
     ],
-    "tier": "high"
+    "tier": "high",
+    "pos": "adv. 副词"
   },
   {
     "id": 9,
     "word": "accountability",
     "spelling": "A-C-C-O-U-N-T-A-B-I-L-I-T-Y",
-    "phonetic": "",
+    "phonetic": "/əˈkaʊntəˌbɪlɪti/",
     "gloss": "问责",
     "tip": "public accountability",
     "example": "Accountability builds public trust.",
@@ -132,13 +142,14 @@
     "tags": [
       "academic"
     ],
-    "tier": "high"
+    "tier": "high",
+    "pos": "n. 名词"
   },
   {
     "id": 10,
     "word": "accuracy",
     "spelling": "A-C-C-U-R-A-C-Y",
-    "phonetic": "",
+    "phonetic": "/ˈækjəəsi/",
     "gloss": "准确度",
     "tip": "spelling accuracy",
     "example": "Spelling accuracy matters in WFD.",
@@ -146,13 +157,14 @@
     "tags": [
       "academic"
     ],
-    "tier": "core"
+    "tier": "core",
+    "pos": "n. 名词"
   },
   {
     "id": 11,
     "word": "accurate",
     "spelling": "A-C-C-U-R-A-T-E",
-    "phonetic": "",
+    "phonetic": "/ˈækjəət/",
     "gloss": "准确的",
     "tip": "accurate spelling",
     "example": "Accurate spelling matters in WFD.",
@@ -160,13 +172,14 @@
     "tags": [
       "academic"
     ],
-    "tier": "core"
+    "tier": "core",
+    "pos": "adj. 形容词"
   },
   {
     "id": 12,
     "word": "achieve",
     "spelling": "A-C-H-I-E-V-E",
-    "phonetic": "",
+    "phonetic": "/əˈʧiv/",
     "gloss": "实现",
     "tip": "achieve a score",
     "example": "He achieved the target score.",
@@ -175,13 +188,14 @@
       "academic",
       "verb"
     ],
-    "tier": "core"
+    "tier": "core",
+    "pos": "v. 动词"
   },
   {
     "id": 13,
     "word": "acknowledge",
     "spelling": "A-C-K-N-O-W-L-E-D-G-E",
-    "phonetic": "",
+    "phonetic": "/ækˈnɑlɪʤ/",
     "gloss": "承认；致谢",
     "tip": "acknowledge sources",
     "example": "Acknowledge all sources.",
@@ -190,13 +204,14 @@
       "academic",
       "verb"
     ],
-    "tier": "core"
+    "tier": "core",
+    "pos": "v. 动词"
   },
   {
     "id": 14,
     "word": "acquire",
     "spelling": "A-C-Q-U-I-R-E",
-    "phonetic": "",
+    "phonetic": "/əkˈwaɪə/",
     "gloss": "获得；习得",
     "tip": "acquire skills",
     "example": "Students acquire skills by practice.",
@@ -205,13 +220,14 @@
       "academic",
       "verb"
     ],
-    "tier": "core"
+    "tier": "core",
+    "pos": "v. 动词"
   },
   {
     "id": 15,
     "word": "adapt",
     "spelling": "A-D-A-P-T",
-    "phonetic": "",
+    "phonetic": "/əˈdæpt/",
     "gloss": "适应",
     "tip": "adapt to",
     "example": "Freshmen adapt gradually.",
@@ -220,13 +236,14 @@
       "academic",
       "verb"
     ],
-    "tier": "core"
+    "tier": "core",
+    "pos": "v. 动词"
   },
   {
     "id": 16,
     "word": "address",
     "spelling": "A-D-D-R-E-S-S",
-    "phonetic": "",
+    "phonetic": "/ˈæˌdrɛs/",
     "gloss": "处理；致辞",
     "tip": "address the issue",
     "example": "The paper addresses a gap.",
@@ -235,13 +252,14 @@
       "academic",
       "verb"
     ],
-    "tier": "core"
+    "tier": "core",
+    "pos": "v. 动词"
   },
   {
     "id": 17,
     "word": "adequate",
     "spelling": "A-D-E-Q-U-A-T-E",
-    "phonetic": "",
+    "phonetic": "/ˈædəkˌweɪt/",
     "gloss": "充足的",
     "tip": "adequate funding",
     "example": "Adequate support improves retention.",
@@ -249,13 +267,14 @@
     "tags": [
       "academic"
     ],
-    "tier": "core"
+    "tier": "core",
+    "pos": "adj. 形容词"
   },
   {
     "id": 18,
     "word": "adjust",
     "spelling": "A-D-J-U-S-T",
-    "phonetic": "",
+    "phonetic": "/əˈʤəst/",
     "gloss": "调整",
     "tip": "adjust the schedule",
     "example": "Adjust the timeline if needed.",
@@ -264,13 +283,14 @@
       "academic",
       "verb"
     ],
-    "tier": "core"
+    "tier": "core",
+    "pos": "v. 动词"
   },
   {
     "id": 19,
     "word": "administration",
     "spelling": "A-D-M-I-N-I-S-T-R-A-T-I-O-N",
-    "phonetic": "",
+    "phonetic": "/ædˌmɪnɪˈstreɪʃən/",
     "gloss": "行政部门",
     "tip": "university administration",
     "example": "Administration handles enrolments.",
@@ -278,13 +298,14 @@
     "tags": [
       "campus"
     ],
-    "tier": "core"
+    "tier": "core",
+    "pos": "n. 名词"
   },
   {
     "id": 20,
     "word": "admission",
     "spelling": "A-D-M-I-S-S-I-O-N",
-    "phonetic": "",
+    "phonetic": "/ədˈmɪʃən/",
     "gloss": "录取",
     "tip": "university admission",
     "example": "Admission offers arrive in March.",
@@ -292,13 +313,14 @@
     "tags": [
       "campus"
     ],
-    "tier": "core"
+    "tier": "core",
+    "pos": "n. 名词"
   },
   {
     "id": 21,
     "word": "advantage",
     "spelling": "A-D-V-A-N-T-A-G-E",
-    "phonetic": "",
+    "phonetic": "/ædˈvæntɪʤ/",
     "gloss": "优势",
     "tip": "comparative advantage",
     "example": "Online access is an advantage.",
@@ -306,13 +328,14 @@
     "tags": [
       "academic"
     ],
-    "tier": "core"
+    "tier": "core",
+    "pos": "v. 动词"
   },
   {
     "id": 22,
     "word": "adverse",
     "spelling": "A-D-V-E-R-S-E",
-    "phonetic": "",
+    "phonetic": "/ˌædˈvəs/",
     "gloss": "不利的",
     "tip": "adverse effect",
     "example": "Monitor adverse effects carefully.",
@@ -320,13 +343,14 @@
     "tags": [
       "academic"
     ],
-    "tier": "high"
+    "tier": "high",
+    "pos": "adj. 形容词"
   },
   {
     "id": 23,
     "word": "advise",
     "spelling": "A-D-V-I-S-E",
-    "phonetic": "",
+    "phonetic": "/ədˈvaɪz/",
     "gloss": "建议",
     "tip": "advise students",
     "example": "Advisers advise on module choice.",
@@ -335,13 +359,14 @@
       "campus",
       "verb"
     ],
-    "tier": "core"
+    "tier": "core",
+    "pos": "v. 动词"
   },
   {
     "id": 24,
     "word": "affect",
     "spelling": "A-F-F-E-C-T",
-    "phonetic": "",
+    "phonetic": "/əˈfɛkt/",
     "gloss": "影响（动词）",
     "tip": "affect vs effect",
     "example": "Stress can affect memory.",
@@ -350,13 +375,14 @@
       "academic",
       "verb"
     ],
-    "tier": "core"
+    "tier": "core",
+    "pos": "v. 动词"
   },
   {
     "id": 25,
     "word": "affordable",
     "spelling": "A-F-F-O-R-D-A-B-L-E",
-    "phonetic": "",
+    "phonetic": "/əˈfɔːdəbəl/",
     "gloss": "负担得起的",
     "tip": "affordable housing",
     "example": "Affordable housing remains scarce.",
@@ -364,13 +390,14 @@
     "tags": [
       "econ"
     ],
-    "tier": "high"
+    "tier": "high",
+    "pos": "adj. 形容词"
   },
   {
     "id": 26,
     "word": "agriculture",
     "spelling": "A-G-R-I-C-U-L-T-U-R-E",
-    "phonetic": "",
+    "phonetic": "/ˈægrɪˌkəlʧə/",
     "gloss": "农业",
     "tip": "sustainable agriculture",
     "example": "Agriculture faces climate risks.",
@@ -379,13 +406,14 @@
       "econ",
       "env"
     ],
-    "tier": "high"
+    "tier": "high",
+    "pos": "v. 动词"
   },
   {
     "id": 27,
     "word": "aim",
     "spelling": "A-I-M",
-    "phonetic": "",
+    "phonetic": "/eɪm/",
     "gloss": "目标；旨在",
     "tip": "aim to",
     "example": "The course aims to build fluency.",
@@ -393,13 +421,14 @@
     "tags": [
       "academic"
     ],
-    "tier": "core"
+    "tier": "core",
+    "pos": "n. 名词"
   },
   {
     "id": 28,
     "word": "algorithm",
     "spelling": "A-L-G-O-R-I-T-H-M",
-    "phonetic": "",
+    "phonetic": "/ˈælgəˌɪðəm/",
     "gloss": "算法",
     "tip": "learning algorithm",
     "example": "The algorithm ranks results.",
@@ -407,7 +436,8 @@
     "tags": [
       "academic"
     ],
-    "tier": "high"
+    "tier": "high",
+    "pos": "n. 名词"
   },
   {
     "id": 29,
@@ -423,13 +453,14 @@
       "verb",
       "campus"
     ],
-    "tier": "core"
+    "tier": "core",
+    "pos": "v. 动词"
   },
   {
     "id": 30,
     "word": "alter",
     "spelling": "A-L-T-E-R",
-    "phonetic": "",
+    "phonetic": "/ˈɔltə/",
     "gloss": "改变",
     "tip": "alter the plan",
     "example": "Do not alter submitted files.",
@@ -438,13 +469,14 @@
       "academic",
       "verb"
     ],
-    "tier": "high"
+    "tier": "high",
+    "pos": "v. 动词"
   },
   {
     "id": 31,
     "word": "although",
     "spelling": "A-L-T-H-O-U-G-H",
-    "phonetic": "",
+    "phonetic": "/ˌɔlˈðoʊ/",
     "gloss": "虽然",
     "tip": "although",
     "example": "Although costly, reform worked.",
@@ -452,13 +484,14 @@
     "tags": [
       "academic"
     ],
-    "tier": "core"
+    "tier": "core",
+    "pos": "n. 名词"
   },
   {
     "id": 32,
     "word": "alumni",
     "spelling": "A-L-U-M-N-I",
-    "phonetic": "",
+    "phonetic": "/əˈləmˌnaɪ/",
     "gloss": "校友",
     "tip": "alumni network",
     "example": "Join the alumni network.",
@@ -466,13 +499,14 @@
     "tags": [
       "campus"
     ],
-    "tier": "high"
+    "tier": "high",
+    "pos": "n. 名词"
   },
   {
     "id": 33,
     "word": "ambiguous",
     "spelling": "A-M-B-I-G-U-O-U-S",
-    "phonetic": "",
+    "phonetic": "/æmˈbɪgjuəs/",
     "gloss": "模糊的",
     "tip": "ambiguous wording",
     "example": "Avoid ambiguous wording.",
@@ -480,13 +514,14 @@
     "tags": [
       "academic"
     ],
-    "tier": "high"
+    "tier": "high",
+    "pos": "adj. 形容词"
   },
   {
     "id": 34,
     "word": "amend",
     "spelling": "A-M-E-N-D",
-    "phonetic": "",
+    "phonetic": "/əˈmɛnd/",
     "gloss": "修正",
     "tip": "amend the policy",
     "example": "Amend the policy carefully.",
@@ -495,13 +530,14 @@
       "academic",
       "verb"
     ],
-    "tier": "high"
+    "tier": "high",
+    "pos": "v. 动词"
   },
   {
     "id": 35,
     "word": "analyse",
     "spelling": "A-N-A-L-Y-S-E",
-    "phonetic": "",
+    "phonetic": "/analyse/",
     "gloss": "分析",
     "tip": "analyse data",
     "example": "Analyse the data first.",
@@ -510,13 +546,14 @@
       "academic",
       "verb"
     ],
-    "tier": "core"
+    "tier": "core",
+    "pos": "v. 动词"
   },
   {
     "id": 36,
     "word": "analysis",
     "spelling": "A-N-A-L-Y-S-I-S",
-    "phonetic": "",
+    "phonetic": "/æˈnælɪsɪs/",
     "gloss": "分析",
     "tip": "data analysis",
     "example": "Further analysis is needed.",
@@ -524,13 +561,14 @@
     "tags": [
       "academic"
     ],
-    "tier": "core"
+    "tier": "core",
+    "pos": "n. 名词"
   },
   {
     "id": 37,
     "word": "annotate",
     "spelling": "A-N-N-O-T-A-T-E",
-    "phonetic": "",
+    "phonetic": "/ˈænəˌteɪt/",
     "gloss": "批注",
     "tip": "annotate the text",
     "example": "Annotate the article carefully.",
@@ -539,13 +577,14 @@
       "academic",
       "verb"
     ],
-    "tier": "high"
+    "tier": "high",
+    "pos": "v. 动词"
   },
   {
     "id": 38,
     "word": "announce",
     "spelling": "A-N-N-O-U-N-C-E",
-    "phonetic": "",
+    "phonetic": "/əˈnaʊns/",
     "gloss": "宣布",
     "tip": "announce results",
     "example": "Results will be announced Friday.",
@@ -554,13 +593,14 @@
       "campus",
       "verb"
     ],
-    "tier": "core"
+    "tier": "core",
+    "pos": "v. 动词"
   },
   {
     "id": 39,
     "word": "announcement",
     "spelling": "A-N-N-O-U-N-C-E-M-E-N-T",
-    "phonetic": "",
+    "phonetic": "/əˈnaʊnsmɛnt/",
     "gloss": "公告",
     "tip": "exam announcement",
     "example": "Check announcements daily.",
@@ -568,13 +608,14 @@
     "tags": [
       "campus"
     ],
-    "tier": "core"
+    "tier": "core",
+    "pos": "n. 名词"
   },
   {
     "id": 40,
     "word": "anomaly",
     "spelling": "A-N-O-M-A-L-Y",
-    "phonetic": "",
+    "phonetic": "/əˈnɑməli/",
     "gloss": "异常",
     "tip": "detect an anomaly",
     "example": "An anomaly appeared in week three.",
@@ -582,13 +623,14 @@
     "tags": [
       "academic"
     ],
-    "tier": "mid"
+    "tier": "mid",
+    "pos": "adv. 副词"
   },
   {
     "id": 41,
     "word": "anxiety",
     "spelling": "A-N-X-I-E-T-Y",
-    "phonetic": "",
+    "phonetic": "/æŋˈzaɪəti/",
     "gloss": "焦虑",
     "tip": "test anxiety",
     "example": "Test anxiety is common.",
@@ -596,13 +638,14 @@
     "tags": [
       "campus"
     ],
-    "tier": "high"
+    "tier": "high",
+    "pos": "n. 名词"
   },
   {
     "id": 42,
     "word": "apparent",
     "spelling": "A-P-P-A-R-E-N-T",
-    "phonetic": "",
+    "phonetic": "/əˈpɛrənt/",
     "gloss": "明显的",
     "tip": "it is apparent",
     "example": "It is apparent that demand rose.",
@@ -610,13 +653,14 @@
     "tags": [
       "academic"
     ],
-    "tier": "high"
+    "tier": "high",
+    "pos": "adj. 形容词"
   },
   {
     "id": 43,
     "word": "appeal",
     "spelling": "A-P-P-E-A-L",
-    "phonetic": "",
+    "phonetic": "/əˈpil/",
     "gloss": "申诉",
     "tip": "grade appeal",
     "example": "You may appeal the grade.",
@@ -624,13 +668,14 @@
     "tags": [
       "campus"
     ],
-    "tier": "high"
+    "tier": "high",
+    "pos": "v. 动词"
   },
   {
     "id": 44,
     "word": "applicant",
     "spelling": "A-P-P-L-I-C-A-N-T",
-    "phonetic": "",
+    "phonetic": "/ˈæplɪkənt/",
     "gloss": "申请人",
     "tip": "strong applicant",
     "example": "Strong applicants have clear goals.",
@@ -638,13 +683,14 @@
     "tags": [
       "campus"
     ],
-    "tier": "high"
+    "tier": "high",
+    "pos": "v. 动词"
   },
   {
     "id": 45,
     "word": "application",
     "spelling": "A-P-P-L-I-C-A-T-I-O-N",
-    "phonetic": "",
+    "phonetic": "/ˌæpləˈkeɪʃən/",
     "gloss": "申请",
     "tip": "online application",
     "example": "Complete the online application.",
@@ -652,13 +698,14 @@
     "tags": [
       "campus"
     ],
-    "tier": "core"
+    "tier": "core",
+    "pos": "n. 名词"
   },
   {
     "id": 46,
     "word": "appointment",
     "spelling": "A-P-P-O-I-N-T-M-E-N-T",
-    "phonetic": "",
+    "phonetic": "/əˈpɔɪntmənt/",
     "gloss": "预约",
     "tip": "make an appointment",
     "example": "Make an appointment with your tutor.",
@@ -666,13 +713,14 @@
     "tags": [
       "campus"
     ],
-    "tier": "core"
+    "tier": "core",
+    "pos": "n. 名词"
   },
   {
     "id": 47,
     "word": "approach",
     "spelling": "A-P-P-R-O-A-C-H",
-    "phonetic": "",
+    "phonetic": "/əˈproʊʧ/",
     "gloss": "方法；途径",
     "tip": "research approach",
     "example": "A mixed approach was chosen.",
@@ -680,13 +728,14 @@
     "tags": [
       "academic"
     ],
-    "tier": "core"
+    "tier": "core",
+    "pos": "n. 名词"
   },
   {
     "id": 48,
     "word": "appropriate",
     "spelling": "A-P-P-R-O-P-R-I-A-T-E",
-    "phonetic": "",
+    "phonetic": "/əˈproʊpriˌeɪt/",
     "gloss": "恰当的",
     "tip": "appropriate tone",
     "example": "Use an appropriate academic tone.",
@@ -694,13 +743,14 @@
     "tags": [
       "academic"
     ],
-    "tier": "core"
+    "tier": "core",
+    "pos": "adj. 形容词"
   },
   {
     "id": 49,
     "word": "approve",
     "spelling": "A-P-P-R-O-V-E",
-    "phonetic": "",
+    "phonetic": "/əˈpruv/",
     "gloss": "批准",
     "tip": "approve the proposal",
     "example": "The board approved the proposal.",
@@ -709,7 +759,8 @@
       "campus",
       "verb"
     ],
-    "tier": "core"
+    "tier": "core",
+    "pos": "v. 动词"
   },
   {
     "id": 50,
@@ -723,13 +774,14 @@
     "tags": [
       "academic"
     ],
-    "tier": "core"
+    "tier": "core",
+    "pos": "adv. 副词"
   },
   {
     "id": 51,
     "word": "argument",
     "spelling": "A-R-G-U-M-E-N-T",
-    "phonetic": "",
+    "phonetic": "/ˈɑrgjəmənt/",
     "gloss": "论点",
     "tip": "main argument",
     "example": "State the main argument clearly.",
@@ -737,13 +789,14 @@
     "tags": [
       "academic"
     ],
-    "tier": "core"
+    "tier": "core",
+    "pos": "n. 名词"
   },
   {
     "id": 52,
     "word": "arise",
     "spelling": "A-R-I-S-E",
-    "phonetic": "",
+    "phonetic": "/əaɪz/",
     "gloss": "产生",
     "tip": "arise from",
     "example": "Issues arise in fieldwork.",
@@ -752,13 +805,14 @@
       "academic",
       "verb"
     ],
-    "tier": "high"
+    "tier": "high",
+    "pos": "v. 动词"
   },
   {
     "id": 53,
     "word": "articulate",
     "spelling": "A-R-T-I-C-U-L-A-T-E",
-    "phonetic": "",
+    "phonetic": "/ɑrˈtɪkjəˌleɪt/",
     "gloss": "清晰表达",
     "tip": "articulate ideas",
     "example": "Articulate your main point early.",
@@ -767,13 +821,14 @@
       "academic",
       "verb"
     ],
-    "tier": "high"
+    "tier": "high",
+    "pos": "v. 动词"
   },
   {
     "id": 54,
     "word": "aspect",
     "spelling": "A-S-P-E-C-T",
-    "phonetic": "",
+    "phonetic": "/ˈæˌspɛkt/",
     "gloss": "方面",
     "tip": "one aspect of",
     "example": "One aspect of the problem is cost.",
@@ -781,13 +836,14 @@
     "tags": [
       "academic"
     ],
-    "tier": "core"
+    "tier": "core",
+    "pos": "n. 名词"
   },
   {
     "id": 55,
     "word": "assess",
     "spelling": "A-S-S-E-S-S",
-    "phonetic": "",
+    "phonetic": "/əˈsɛs/",
     "gloss": "评定；评估",
     "tip": "assess risk",
     "example": "Tutors assess weekly work.",
@@ -797,7 +853,8 @@
       "verb",
       "campus"
     ],
-    "tier": "core"
+    "tier": "core",
+    "pos": "v. 动词"
   },
   {
     "id": 56,
@@ -812,13 +869,14 @@
       "campus",
       "academic"
     ],
-    "tier": "core"
+    "tier": "core",
+    "pos": "n. 名词"
   },
   {
     "id": 57,
     "word": "assignment",
     "spelling": "A-S-S-I-G-N-M-E-N-T",
-    "phonetic": "",
+    "phonetic": "/əˈsaɪnmənt/",
     "gloss": "作业",
     "tip": "weekly assignment",
     "example": "Upload the assignment by noon.",
@@ -826,13 +884,14 @@
     "tags": [
       "campus"
     ],
-    "tier": "core"
+    "tier": "core",
+    "pos": "n. 名词"
   },
   {
     "id": 58,
     "word": "association",
     "spelling": "A-S-S-O-C-I-A-T-I-O-N",
-    "phonetic": "",
+    "phonetic": "/əˌsoʊʃiˈeɪʃən/",
     "gloss": "协会；关联",
     "tip": "in association with",
     "example": "Work in association with industry.",
@@ -840,13 +899,14 @@
     "tags": [
       "academic"
     ],
-    "tier": "high"
+    "tier": "high",
+    "pos": "n. 名词"
   },
   {
     "id": 59,
     "word": "assume",
     "spelling": "A-S-S-U-M-E",
-    "phonetic": "",
+    "phonetic": "/əˈsum/",
     "gloss": "假定",
     "tip": "assume that",
     "example": "Do not assume prior knowledge.",
@@ -855,13 +915,14 @@
       "academic",
       "verb"
     ],
-    "tier": "core"
+    "tier": "core",
+    "pos": "v. 动词"
   },
   {
     "id": 60,
     "word": "assumption",
     "spelling": "A-S-S-U-M-P-T-I-O-N",
-    "phonetic": "",
+    "phonetic": "/əˈsəmpʃən/",
     "gloss": "假设；假定",
     "tip": "underlying assumption",
     "example": "Challenge the assumption.",
@@ -869,13 +930,14 @@
     "tags": [
       "academic"
     ],
-    "tier": "core"
+    "tier": "core",
+    "pos": "n. 名词"
   },
   {
     "id": 61,
     "word": "attach",
     "spelling": "A-T-T-A-C-H",
-    "phonetic": "",
+    "phonetic": "/əˈtæʧ/",
     "gloss": "附加",
     "tip": "attach a file",
     "example": "Attach the file to your email.",
@@ -884,13 +946,14 @@
       "campus",
       "verb"
     ],
-    "tier": "core"
+    "tier": "core",
+    "pos": "v. 动词"
   },
   {
     "id": 62,
     "word": "attain",
     "spelling": "A-T-T-A-I-N",
-    "phonetic": "",
+    "phonetic": "/əˈteɪn/",
     "gloss": "达到",
     "tip": "attain proficiency",
     "example": "Few attain fluency quickly.",
@@ -899,13 +962,14 @@
       "academic",
       "verb"
     ],
-    "tier": "high"
+    "tier": "high",
+    "pos": "v. 动词"
   },
   {
     "id": 63,
     "word": "attendance",
     "spelling": "A-T-T-E-N-D-A-N-C-E",
-    "phonetic": "",
+    "phonetic": "/əˈtɛndəns/",
     "gloss": "出勤",
     "tip": "attendance record",
     "example": "Attendance is monitored.",
@@ -913,13 +977,14 @@
     "tags": [
       "campus"
     ],
-    "tier": "core"
+    "tier": "core",
+    "pos": "n. 名词"
   },
   {
     "id": 64,
     "word": "attitude",
     "spelling": "A-T-T-I-T-U-D-E",
-    "phonetic": "",
+    "phonetic": "/ˈætəˌtud/",
     "gloss": "态度",
     "tip": "positive attitude",
     "example": "Attitude predicts persistence.",
@@ -927,13 +992,14 @@
     "tags": [
       "academic"
     ],
-    "tier": "core"
+    "tier": "core",
+    "pos": "n. 名词"
   },
   {
     "id": 65,
     "word": "attribute",
     "spelling": "A-T-T-R-I-B-U-T-E",
-    "phonetic": "",
+    "phonetic": "/əˈtrɪˌbjut/",
     "gloss": "把…归因于",
     "tip": "attribute to",
     "example": "They attribute decline to funding cuts.",
@@ -942,13 +1008,14 @@
       "academic",
       "verb"
     ],
-    "tier": "high"
+    "tier": "high",
+    "pos": "v. 动词"
   },
   {
     "id": 66,
     "word": "audience",
     "spelling": "A-U-D-I-E-N-C-E",
-    "phonetic": "",
+    "phonetic": "/ˈɔdiəns/",
     "gloss": "听众",
     "tip": "target audience",
     "example": "Adapt tone to your audience.",
@@ -956,13 +1023,14 @@
     "tags": [
       "academic"
     ],
-    "tier": "core"
+    "tier": "core",
+    "pos": "n. 名词"
   },
   {
     "id": 67,
     "word": "author",
     "spelling": "A-U-T-H-O-R",
-    "phonetic": "",
+    "phonetic": "/ˈɔθə/",
     "gloss": "作者",
     "tip": "first author",
     "example": "The first author drafted the paper.",
@@ -970,13 +1038,14 @@
     "tags": [
       "academic"
     ],
-    "tier": "core"
+    "tier": "core",
+    "pos": "n. 名词"
   },
   {
     "id": 68,
     "word": "authority",
     "spelling": "A-U-T-H-O-R-I-T-Y",
-    "phonetic": "",
+    "phonetic": "/əˈθɔːəti/",
     "gloss": "权威；当局",
     "tip": "local authority",
     "example": "Seek approval from the authority.",
@@ -984,13 +1053,14 @@
     "tags": [
       "academic"
     ],
-    "tier": "core"
+    "tier": "core",
+    "pos": "n. 名词"
   },
   {
     "id": 69,
     "word": "available",
     "spelling": "A-V-A-I-L-A-B-L-E",
-    "phonetic": "",
+    "phonetic": "/əˈveɪləbəl/",
     "gloss": "可获得的",
     "tip": "available online",
     "example": "Materials are available online.",
@@ -998,13 +1068,14 @@
     "tags": [
       "academic"
     ],
-    "tier": "core"
+    "tier": "core",
+    "pos": "adj. 形容词"
   },
   {
     "id": 70,
     "word": "average",
     "spelling": "A-V-E-R-A-G-E",
-    "phonetic": "",
+    "phonetic": "/ˈævəɪʤ/",
     "gloss": "平均",
     "tip": "on average",
     "example": "On average, scores rose.",
@@ -1012,13 +1083,14 @@
     "tags": [
       "academic"
     ],
-    "tier": "core"
+    "tier": "core",
+    "pos": "v. 动词"
   },
   {
     "id": 71,
     "word": "awareness",
     "spelling": "A-W-A-R-E-N-E-S-S",
-    "phonetic": "",
+    "phonetic": "/əˈwɛrnəs/",
     "gloss": "意识",
     "tip": "raise awareness",
     "example": "Raise awareness of plagiarism.",
@@ -1026,27 +1098,29 @@
     "tags": [
       "academic"
     ],
-    "tier": "core"
+    "tier": "core",
+    "pos": "n. 名词"
   },
   {
     "id": 72,
     "word": "axis",
     "spelling": "A-X-I-S",
-    "phonetic": "",
-    "gloss": "轴",
+    "phonetic": "/ˈæksəs/",
+    "gloss": "轴；轴线",
     "tip": "horizontal axis",
     "example": "Label each axis clearly.",
     "exampleZh": "清晰标注每个轴。",
     "tags": [
       "academic"
     ],
-    "tier": "high"
+    "tier": "high",
+    "pos": "n. 名词"
   },
   {
     "id": 73,
     "word": "barrier",
     "spelling": "B-A-R-R-I-E-R",
-    "phonetic": "",
+    "phonetic": "/ˈbɛriə/",
     "gloss": "障碍",
     "tip": "language barrier",
     "example": "Remove barriers to access.",
@@ -1054,13 +1128,14 @@
     "tags": [
       "academic"
     ],
-    "tier": "core"
+    "tier": "core",
+    "pos": "v. 动词"
   },
   {
     "id": 74,
     "word": "baseline",
     "spelling": "B-A-S-E-L-I-N-E",
-    "phonetic": "",
+    "phonetic": "/ˈbeɪsˌlaɪn/",
     "gloss": "基线",
     "tip": "baseline data",
     "example": "Collect baseline data first.",
@@ -1068,13 +1143,14 @@
     "tags": [
       "academic"
     ],
-    "tier": "high"
+    "tier": "high",
+    "pos": "v. 动词"
   },
   {
     "id": 75,
     "word": "behaviour",
     "spelling": "B-E-H-A-V-I-O-U-R",
-    "phonetic": "",
+    "phonetic": "/bɪˈheɪvjə/",
     "gloss": "行为",
     "tip": "consumer behaviour",
     "example": "Observe classroom behaviour.",
@@ -1082,13 +1158,14 @@
     "tags": [
       "academic"
     ],
-    "tier": "core"
+    "tier": "core",
+    "pos": "n. 名词"
   },
   {
     "id": 76,
     "word": "benchmark",
     "spelling": "B-E-N-C-H-M-A-R-K",
-    "phonetic": "",
+    "phonetic": "/ˈbɛnʧˌmɑrk/",
     "gloss": "基准",
     "tip": "set a benchmark",
     "example": "Set a clear quality benchmark.",
@@ -1096,13 +1173,14 @@
     "tags": [
       "academic"
     ],
-    "tier": "high"
+    "tier": "high",
+    "pos": "n. 名词"
   },
   {
     "id": 77,
     "word": "benefit",
     "spelling": "B-E-N-E-F-I-T",
-    "phonetic": "",
+    "phonetic": "/ˈbɛnəfɪt/",
     "gloss": "益处；受益",
     "tip": "benefit from",
     "example": "Students benefit from feedback.",
@@ -1110,13 +1188,14 @@
     "tags": [
       "academic"
     ],
-    "tier": "core"
+    "tier": "core",
+    "pos": "n. 名词"
   },
   {
     "id": 78,
     "word": "bias",
     "spelling": "B-I-A-S",
-    "phonetic": "",
+    "phonetic": "/baɪəs/",
     "gloss": "偏见；偏差",
     "tip": "selection bias",
     "example": "Control for selection bias.",
@@ -1124,13 +1203,14 @@
     "tags": [
       "academic"
     ],
-    "tier": "core"
+    "tier": "core",
+    "pos": "n. 名词"
   },
   {
     "id": 79,
     "word": "bibliography",
     "spelling": "B-I-B-L-I-O-G-R-A-P-H-Y",
-    "phonetic": "",
+    "phonetic": "/ˌbɪbliˈɑgrəfi/",
     "gloss": "参考文献表",
     "tip": "APA bibliography",
     "example": "Check the bibliography carefully.",
@@ -1138,7 +1218,8 @@
     "tags": [
       "academic"
     ],
-    "tier": "high"
+    "tier": "high",
+    "pos": "n. 名词"
   },
   {
     "id": 80,
@@ -1153,13 +1234,14 @@
       "academic",
       "env"
     ],
-    "tier": "core"
+    "tier": "core",
+    "pos": "n. 名词"
   },
   {
     "id": 81,
     "word": "boost",
     "spelling": "B-O-O-S-T",
-    "phonetic": "",
+    "phonetic": "/bust/",
     "gloss": "提升",
     "tip": "boost confidence",
     "example": "Practice boosts confidence.",
@@ -1168,13 +1250,14 @@
       "academic",
       "verb"
     ],
-    "tier": "core"
+    "tier": "core",
+    "pos": "v. 动词"
   },
   {
     "id": 82,
     "word": "brief",
     "spelling": "B-R-I-E-F",
-    "phonetic": "",
+    "phonetic": "/brif/",
     "gloss": "简短的",
     "tip": "brief overview",
     "example": "Give a brief overview first.",
@@ -1182,13 +1265,14 @@
     "tags": [
       "academic"
     ],
-    "tier": "core"
+    "tier": "core",
+    "pos": "adj. 形容词"
   },
   {
     "id": 83,
     "word": "budget",
     "spelling": "B-U-D-G-E-T",
-    "phonetic": "",
+    "phonetic": "/ˈbəʤɪt/",
     "gloss": "预算",
     "tip": "budget cut",
     "example": "Budget cuts affected libraries.",
@@ -1197,13 +1281,14 @@
       "campus",
       "econ"
     ],
-    "tier": "core"
+    "tier": "core",
+    "pos": "n. 名词"
   },
   {
     "id": 84,
     "word": "calculate",
     "spelling": "C-A-L-C-U-L-A-T-E",
-    "phonetic": "",
+    "phonetic": "/ˈkælkjəˌleɪt/",
     "gloss": "计算",
     "tip": "calculate the mean",
     "example": "Calculate the mean and variance.",
@@ -1212,13 +1297,14 @@
       "academic",
       "verb"
     ],
-    "tier": "core"
+    "tier": "core",
+    "pos": "v. 动词"
   },
   {
     "id": 85,
     "word": "campus",
     "spelling": "C-A-M-P-U-S",
-    "phonetic": "",
+    "phonetic": "/ˈkæmpəs/",
     "gloss": "校园",
     "tip": "on campus",
     "example": "Live on campus in year one.",
@@ -1226,13 +1312,14 @@
     "tags": [
       "campus"
     ],
-    "tier": "core"
+    "tier": "core",
+    "pos": "n. 名词"
   },
   {
     "id": 86,
     "word": "cancel",
     "spelling": "C-A-N-C-E-L",
-    "phonetic": "",
+    "phonetic": "/ˈkænsəl/",
     "gloss": "取消",
     "tip": "cancel a class",
     "example": "Classes were cancelled due to weather.",
@@ -1241,13 +1328,14 @@
       "campus",
       "verb"
     ],
-    "tier": "mid"
+    "tier": "mid",
+    "pos": "v. 动词"
   },
   {
     "id": 87,
     "word": "capacity",
     "spelling": "C-A-P-A-C-I-T-Y",
-    "phonetic": "",
+    "phonetic": "/kəˈpæsɪti/",
     "gloss": "能力；容量",
     "tip": "research capacity",
     "example": "Build research capacity.",
@@ -1255,13 +1343,14 @@
     "tags": [
       "academic"
     ],
-    "tier": "core"
+    "tier": "core",
+    "pos": "n. 名词"
   },
   {
     "id": 88,
     "word": "caption",
     "spelling": "C-A-P-T-I-O-N",
-    "phonetic": "",
+    "phonetic": "/ˈkæpʃən/",
     "gloss": "图注",
     "tip": "figure caption",
     "example": "Read the figure caption carefully.",
@@ -1269,13 +1358,14 @@
     "tags": [
       "academic"
     ],
-    "tier": "mid"
+    "tier": "mid",
+    "pos": "n. 名词"
   },
   {
     "id": 89,
     "word": "career",
     "spelling": "C-A-R-E-E-R",
-    "phonetic": "",
+    "phonetic": "/kəɪː/",
     "gloss": "职业",
     "tip": "career path",
     "example": "Plan your career path early.",
@@ -1283,13 +1373,14 @@
     "tags": [
       "campus"
     ],
-    "tier": "core"
+    "tier": "core",
+    "pos": "n. 名词"
   },
   {
     "id": 90,
     "word": "causal",
     "spelling": "C-A-U-S-A-L",
-    "phonetic": "",
+    "phonetic": "/ˈkɔzəl/",
     "gloss": "因果的",
     "tip": "causal link",
     "example": "Correlation is not causal proof.",
@@ -1297,13 +1388,14 @@
     "tags": [
       "academic"
     ],
-    "tier": "core"
+    "tier": "core",
+    "pos": "adj. 形容词"
   },
   {
     "id": 91,
     "word": "causation",
     "spelling": "C-A-U-S-A-T-I-O-N",
-    "phonetic": "",
+    "phonetic": "/ˌkɔˈzeɪʃən/",
     "gloss": "因果关系",
     "tip": "not causation",
     "example": "Correlation is not causation.",
@@ -1311,13 +1403,14 @@
     "tags": [
       "academic"
     ],
-    "tier": "core"
+    "tier": "core",
+    "pos": "n. 名词"
   },
   {
     "id": 92,
     "word": "challenge",
     "spelling": "C-H-A-L-L-E-N-G-E",
-    "phonetic": "",
+    "phonetic": "/ˈʧælənʤ/",
     "gloss": "挑战",
     "tip": "major challenge",
     "example": "Funding remains a challenge.",
@@ -1325,13 +1418,14 @@
     "tags": [
       "academic"
     ],
-    "tier": "core"
+    "tier": "core",
+    "pos": "v. 动词"
   },
   {
     "id": 93,
     "word": "change",
     "spelling": "C-H-A-N-G-E",
-    "phonetic": "",
+    "phonetic": "/ʧeɪnʤ/",
     "gloss": "变化",
     "tip": "climate change",
     "example": "Climate change affects agriculture.",
@@ -1339,13 +1433,14 @@
     "tags": [
       "academic"
     ],
-    "tier": "mid"
+    "tier": "mid",
+    "pos": "v. 动词"
   },
   {
     "id": 94,
     "word": "chart",
     "spelling": "C-H-A-R-T",
-    "phonetic": "",
+    "phonetic": "/ʧɑrt/",
     "gloss": "图表",
     "tip": "bar chart",
     "example": "Describe the bar chart in order.",
@@ -1353,13 +1448,14 @@
     "tags": [
       "academic"
     ],
-    "tier": "core"
+    "tier": "core",
+    "pos": "n. 名词"
   },
   {
     "id": 95,
     "word": "citation",
     "spelling": "C-I-T-A-T-I-O-N",
-    "phonetic": "",
+    "phonetic": "/saɪˈteɪʃən/",
     "gloss": "引用；引文",
     "tip": "proper citation",
     "example": "Proper citation avoids plagiarism.",
@@ -1367,13 +1463,14 @@
     "tags": [
       "academic"
     ],
-    "tier": "core"
+    "tier": "core",
+    "pos": "n. 名词"
   },
   {
     "id": 96,
     "word": "claim",
     "spelling": "C-L-A-I-M",
-    "phonetic": "",
+    "phonetic": "/kleɪm/",
     "gloss": "主张",
     "tip": "support a claim",
     "example": "Support each claim with data.",
@@ -1381,13 +1478,14 @@
     "tags": [
       "academic"
     ],
-    "tier": "core"
+    "tier": "core",
+    "pos": "n. 名词"
   },
   {
     "id": 97,
     "word": "clarity",
     "spelling": "C-L-A-R-I-T-Y",
-    "phonetic": "",
+    "phonetic": "/ˈklɛrɪti/",
     "gloss": "清晰",
     "tip": "clarity of speech",
     "example": "Clarity raises oral scores.",
@@ -1395,13 +1493,14 @@
     "tags": [
       "academic"
     ],
-    "tier": "core"
+    "tier": "core",
+    "pos": "n. 名词"
   },
   {
     "id": 98,
     "word": "climate",
     "spelling": "C-L-I-M-A-T-E",
-    "phonetic": "",
+    "phonetic": "/ˈklaɪmɪt/",
     "gloss": "气候",
     "tip": "climate change",
     "example": "Climate change is a common topic.",
@@ -1410,13 +1509,14 @@
       "academic",
       "env"
     ],
-    "tier": "core"
+    "tier": "core",
+    "pos": "v. 动词"
   },
   {
     "id": 99,
     "word": "coherent",
     "spelling": "C-O-H-E-R-E-N-T",
-    "phonetic": "",
+    "phonetic": "/koʊˈhɪrənt/",
     "gloss": "连贯的",
     "tip": "coherent essay",
     "example": "Write a coherent essay.",
@@ -1424,13 +1524,14 @@
     "tags": [
       "academic"
     ],
-    "tier": "core"
+    "tier": "core",
+    "pos": "adj. 形容词"
   },
   {
     "id": 100,
     "word": "cohesion",
     "spelling": "C-O-H-E-S-I-O-N",
-    "phonetic": "",
+    "phonetic": "/koʊˈhiʒən/",
     "gloss": "衔接",
     "tip": "textual cohesion",
     "example": "Improve cohesion with linkers.",
@@ -1438,13 +1539,14 @@
     "tags": [
       "academic"
     ],
-    "tier": "high"
+    "tier": "high",
+    "pos": "n. 名词"
   },
   {
     "id": 101,
     "word": "cohort",
     "spelling": "C-O-H-O-R-T",
-    "phonetic": "",
+    "phonetic": "/ˈkoʊhɔːt/",
     "gloss": "队列；同届",
     "tip": "student cohort",
     "example": "This cohort starts in autumn.",
@@ -1453,13 +1555,14 @@
       "campus",
       "academic"
     ],
-    "tier": "core"
+    "tier": "core",
+    "pos": "n. 名词"
   },
   {
     "id": 102,
     "word": "collaborate",
     "spelling": "C-O-L-L-A-B-O-R-A-T-E",
-    "phonetic": "",
+    "phonetic": "/kəˈlæbəˌeɪt/",
     "gloss": "合作",
     "tip": "collaborate with",
     "example": "Teams collaborate across faculties.",
@@ -1468,13 +1571,14 @@
       "academic",
       "verb"
     ],
-    "tier": "core"
+    "tier": "core",
+    "pos": "v. 动词"
   },
   {
     "id": 103,
     "word": "collocation",
     "spelling": "C-O-L-L-O-C-A-T-I-O-N",
-    "phonetic": "",
+    "phonetic": "/kɑləˈkeɪʃən/",
     "gloss": "搭配",
     "tip": "common collocation",
     "example": "Learn high-frequency collocations.",
@@ -1482,7 +1586,8 @@
     "tags": [
       "academic"
     ],
-    "tier": "high"
+    "tier": "high",
+    "pos": "n. 名词"
   },
   {
     "id": 104,
@@ -1496,13 +1601,14 @@
     "tags": [
       "campus"
     ],
-    "tier": "core"
+    "tier": "core",
+    "pos": "v. 动词"
   },
   {
     "id": 105,
     "word": "communication",
     "spelling": "C-O-M-M-U-N-I-C-A-T-I-O-N",
-    "phonetic": "",
+    "phonetic": "/kəmˌjunəˈkeɪʃən/",
     "gloss": "交流",
     "tip": "academic communication",
     "example": "Clear communication raises scores.",
@@ -1510,13 +1616,14 @@
     "tags": [
       "academic"
     ],
-    "tier": "core"
+    "tier": "core",
+    "pos": "n. 名词"
   },
   {
     "id": 106,
     "word": "community",
     "spelling": "C-O-M-M-U-N-I-T-Y",
-    "phonetic": "",
+    "phonetic": "/kəmˈjunɪti/",
     "gloss": "社区",
     "tip": "academic community",
     "example": "Engage the academic community.",
@@ -1525,13 +1632,14 @@
       "academic",
       "campus"
     ],
-    "tier": "core"
+    "tier": "core",
+    "pos": "n. 名词"
   },
   {
     "id": 107,
     "word": "commute",
     "spelling": "C-O-M-M-U-T-E",
-    "phonetic": "",
+    "phonetic": "/kəmˈjut/",
     "gloss": "通勤",
     "tip": "daily commute",
     "example": "Students commute from nearby towns.",
@@ -1540,13 +1648,14 @@
       "campus",
       "verb"
     ],
-    "tier": "mid"
+    "tier": "mid",
+    "pos": "v. 动词"
   },
   {
     "id": 108,
     "word": "comparatively",
     "spelling": "C-O-M-P-A-R-A-T-I-V-E-L-Y",
-    "phonetic": "",
+    "phonetic": "/kəmˈpærətɪvˌli/",
     "gloss": "比较而言",
     "tip": "comparatively rare",
     "example": "Such cases are comparatively rare.",
@@ -1554,13 +1663,14 @@
     "tags": [
       "academic"
     ],
-    "tier": "high"
+    "tier": "high",
+    "pos": "adv. 副词"
   },
   {
     "id": 109,
     "word": "compare",
     "spelling": "C-O-M-P-A-R-E",
-    "phonetic": "",
+    "phonetic": "/kəmˈpɛː/",
     "gloss": "比较",
     "tip": "compare with",
     "example": "Compare the two datasets.",
@@ -1569,13 +1679,14 @@
       "academic",
       "verb"
     ],
-    "tier": "core"
+    "tier": "core",
+    "pos": "v. 动词"
   },
   {
     "id": 110,
     "word": "competence",
     "spelling": "C-O-M-P-E-T-E-N-C-E",
-    "phonetic": "",
+    "phonetic": "/ˈkɑmpətɪns/",
     "gloss": "能力",
     "tip": "communicative competence",
     "example": "Build communicative competence.",
@@ -1583,13 +1694,14 @@
     "tags": [
       "academic"
     ],
-    "tier": "high"
+    "tier": "high",
+    "pos": "n. 名词"
   },
   {
     "id": 111,
     "word": "complex",
     "spelling": "C-O-M-P-L-E-X",
-    "phonetic": "",
+    "phonetic": "/ˈkɑmplɛks/",
     "gloss": "复杂的",
     "tip": "complex issue",
     "example": "Climate policy is complex.",
@@ -1597,13 +1709,14 @@
     "tags": [
       "academic"
     ],
-    "tier": "core"
+    "tier": "core",
+    "pos": "adj. 形容词"
   },
   {
     "id": 112,
     "word": "component",
     "spelling": "C-O-M-P-O-N-E-N-T",
-    "phonetic": "",
+    "phonetic": "/kəmˈpoʊnənt/",
     "gloss": "组成部分",
     "tip": "major component",
     "example": "Listening is a major PTE component.",
@@ -1611,13 +1724,14 @@
     "tags": [
       "academic"
     ],
-    "tier": "core"
+    "tier": "core",
+    "pos": "n. 名词"
   },
   {
     "id": 113,
     "word": "comprehension",
     "spelling": "C-O-M-P-R-E-H-E-N-S-I-O-N",
-    "phonetic": "",
+    "phonetic": "/ˌkɑmpriˈhɛnʃən/",
     "gloss": "理解",
     "tip": "listening comprehension",
     "example": "Improve listening comprehension daily.",
@@ -1625,13 +1739,14 @@
     "tags": [
       "academic"
     ],
-    "tier": "core"
+    "tier": "core",
+    "pos": "n. 名词"
   },
   {
     "id": 114,
     "word": "comprehensive",
     "spelling": "C-O-M-P-R-E-H-E-N-S-I-V-E",
-    "phonetic": "",
+    "phonetic": "/ˌkɑmpriˈhɛnsɪv/",
     "gloss": "全面的",
     "tip": "comprehensive review",
     "example": "A comprehensive review was published.",
@@ -1639,13 +1754,14 @@
     "tags": [
       "academic"
     ],
-    "tier": "core"
+    "tier": "core",
+    "pos": "adj. 形容词"
   },
   {
     "id": 115,
     "word": "comprise",
     "spelling": "C-O-M-P-R-I-S-E",
-    "phonetic": "",
+    "phonetic": "/kəmˈpraɪz/",
     "gloss": "包含；由…组成",
     "tip": "comprise three parts",
     "example": "The sample comprises three cohorts.",
@@ -1654,13 +1770,14 @@
       "academic",
       "verb"
     ],
-    "tier": "high"
+    "tier": "high",
+    "pos": "v. 动词"
   },
   {
     "id": 116,
     "word": "compulsory",
     "spelling": "C-O-M-P-U-L-S-O-R-Y",
-    "phonetic": "",
+    "phonetic": "/kəmˈpəlsəi/",
     "gloss": "必修的",
     "tip": "compulsory module",
     "example": "Attendance is compulsory.",
@@ -1668,13 +1785,14 @@
     "tags": [
       "campus"
     ],
-    "tier": "core"
+    "tier": "core",
+    "pos": "adj. 形容词"
   },
   {
     "id": 117,
     "word": "concept",
     "spelling": "C-O-N-C-E-P-T",
-    "phonetic": "",
+    "phonetic": "/ˈkɑnsɛpt/",
     "gloss": "概念",
     "tip": "key concept",
     "example": "Define the key concept.",
@@ -1682,13 +1800,14 @@
     "tags": [
       "academic"
     ],
-    "tier": "core"
+    "tier": "core",
+    "pos": "n. 名词"
   },
   {
     "id": 118,
     "word": "concise",
     "spelling": "C-O-N-C-I-S-E",
-    "phonetic": "",
+    "phonetic": "/kənˈsaɪs/",
     "gloss": "简洁的",
     "tip": "concise summary",
     "example": "Keep the summary concise.",
@@ -1696,13 +1815,14 @@
     "tags": [
       "academic"
     ],
-    "tier": "core"
+    "tier": "core",
+    "pos": "adj. 形容词"
   },
   {
     "id": 119,
     "word": "conclude",
     "spelling": "C-O-N-C-L-U-D-E",
-    "phonetic": "",
+    "phonetic": "/kənˈklud/",
     "gloss": "得出结论",
     "tip": "conclude that",
     "example": "We conclude the policy worked.",
@@ -1711,13 +1831,14 @@
       "academic",
       "verb"
     ],
-    "tier": "core"
+    "tier": "core",
+    "pos": "v. 动词"
   },
   {
     "id": 120,
     "word": "conclusion",
     "spelling": "C-O-N-C-L-U-S-I-O-N",
-    "phonetic": "",
+    "phonetic": "/kənˈkluʒən/",
     "gloss": "结论",
     "tip": "in conclusion",
     "example": "The conclusion is brief.",
@@ -1725,13 +1846,14 @@
     "tags": [
       "academic"
     ],
-    "tier": "core"
+    "tier": "core",
+    "pos": "n. 名词"
   },
   {
     "id": 121,
     "word": "conduct",
     "spelling": "C-O-N-D-U-C-T",
-    "phonetic": "",
+    "phonetic": "/ˈkɑndəkt/",
     "gloss": "进行",
     "tip": "conduct a study",
     "example": "They conducted interviews.",
@@ -1740,13 +1862,14 @@
       "academic",
       "verb"
     ],
-    "tier": "core"
+    "tier": "core",
+    "pos": "v. 动词"
   },
   {
     "id": 122,
     "word": "conference",
     "spelling": "C-O-N-F-E-R-E-N-C-E",
-    "phonetic": "",
+    "phonetic": "/ˈkɑnfəəns/",
     "gloss": "会议",
     "tip": "academic conference",
     "example": "Present at a conference.",
@@ -1754,13 +1877,14 @@
     "tags": [
       "academic"
     ],
-    "tier": "core"
+    "tier": "core",
+    "pos": "n. 名词"
   },
   {
     "id": 123,
     "word": "confidence",
     "spelling": "C-O-N-F-I-D-E-N-C-E",
-    "phonetic": "",
+    "phonetic": "/ˈkɑnfədɛns/",
     "gloss": "信心",
     "tip": "build confidence",
     "example": "Daily practice builds confidence.",
@@ -1768,13 +1892,14 @@
     "tags": [
       "campus"
     ],
-    "tier": "core"
+    "tier": "core",
+    "pos": "n. 名词"
   },
   {
     "id": 124,
     "word": "confidential",
     "spelling": "C-O-N-F-I-D-E-N-T-I-A-L",
-    "phonetic": "",
+    "phonetic": "/ˌkɑnfəˈdɛnʃəl/",
     "gloss": "机密的",
     "tip": "confidential data",
     "example": "Keep participant data confidential.",
@@ -1782,13 +1907,14 @@
     "tags": [
       "academic"
     ],
-    "tier": "high"
+    "tier": "high",
+    "pos": "adj. 形容词"
   },
   {
     "id": 125,
     "word": "confirm",
     "spelling": "C-O-N-F-I-R-M",
-    "phonetic": "",
+    "phonetic": "/kənˈfəm/",
     "gloss": "确认",
     "tip": "confirm attendance",
     "example": "Confirm attendance by email.",
@@ -1797,13 +1923,14 @@
       "campus",
       "verb"
     ],
-    "tier": "core"
+    "tier": "core",
+    "pos": "v. 动词"
   },
   {
     "id": 126,
     "word": "consensus",
     "spelling": "C-O-N-S-E-N-S-U-S",
-    "phonetic": "",
+    "phonetic": "/kənˈsɛnsəs/",
     "gloss": "共识",
     "tip": "reach a consensus",
     "example": "The panel reached a consensus.",
@@ -1811,13 +1938,14 @@
     "tags": [
       "academic"
     ],
-    "tier": "core"
+    "tier": "core",
+    "pos": "n. 名词"
   },
   {
     "id": 127,
     "word": "consent",
     "spelling": "C-O-N-S-E-N-T",
-    "phonetic": "",
+    "phonetic": "/kənˈsɛnt/",
     "gloss": "同意",
     "tip": "informed consent",
     "example": "Obtain informed consent first.",
@@ -1825,13 +1953,14 @@
     "tags": [
       "academic"
     ],
-    "tier": "core"
+    "tier": "core",
+    "pos": "n. 名词"
   },
   {
     "id": 128,
     "word": "consequently",
     "spelling": "C-O-N-S-E-Q-U-E-N-T-L-Y",
-    "phonetic": "",
+    "phonetic": "/ˈkɑnsəkˌwɛntli/",
     "gloss": "因此",
     "tip": "essay linker",
     "example": "Consequently, enrolment fell.",
@@ -1839,13 +1968,14 @@
     "tags": [
       "academic"
     ],
-    "tier": "core"
+    "tier": "core",
+    "pos": "adv. 副词"
   },
   {
     "id": 129,
     "word": "conservation",
     "spelling": "C-O-N-S-E-R-V-A-T-I-O-N",
-    "phonetic": "",
+    "phonetic": "/ˌkɑnsəˈveɪʃən/",
     "gloss": "保护",
     "tip": "wildlife conservation",
     "example": "Conservation needs funding.",
@@ -1854,13 +1984,14 @@
       "academic",
       "env"
     ],
-    "tier": "high"
+    "tier": "high",
+    "pos": "n. 名词"
   },
   {
     "id": 130,
     "word": "considerable",
     "spelling": "C-O-N-S-I-D-E-R-A-B-L-E",
-    "phonetic": "",
+    "phonetic": "/kənˈsɪdəəbəl/",
     "gloss": "相当大的",
     "tip": "considerable effort",
     "example": "Considerable effort is required.",
@@ -1868,13 +1999,14 @@
     "tags": [
       "academic"
     ],
-    "tier": "core"
+    "tier": "core",
+    "pos": "adj. 形容词"
   },
   {
     "id": 131,
     "word": "considerably",
     "spelling": "C-O-N-S-I-D-E-R-A-B-L-Y",
-    "phonetic": "",
+    "phonetic": "/kənˈsɪdəəbli/",
     "gloss": "相当大地",
     "tip": "considerably higher",
     "example": "Scores were considerably higher.",
@@ -1882,13 +2014,14 @@
     "tags": [
       "academic"
     ],
-    "tier": "core"
+    "tier": "core",
+    "pos": "adv. 副词"
   },
   {
     "id": 132,
     "word": "consist",
     "spelling": "C-O-N-S-I-S-T",
-    "phonetic": "",
+    "phonetic": "/kənˈsɪst/",
     "gloss": "由…组成",
     "tip": "consist of",
     "example": "The course consists of labs.",
@@ -1897,13 +2030,14 @@
       "academic",
       "verb"
     ],
-    "tier": "core"
+    "tier": "core",
+    "pos": "v. 动词"
   },
   {
     "id": 133,
     "word": "consistent",
     "spelling": "C-O-N-S-I-S-T-E-N-T",
-    "phonetic": "",
+    "phonetic": "/kənˈsɪstənt/",
     "gloss": "一致的",
     "tip": "consistent with",
     "example": "Findings are consistent with prior work.",
@@ -1911,13 +2045,14 @@
     "tags": [
       "academic"
     ],
-    "tier": "core"
+    "tier": "core",
+    "pos": "adj. 形容词"
   },
   {
     "id": 134,
     "word": "constitute",
     "spelling": "C-O-N-S-T-I-T-U-T-E",
-    "phonetic": "",
+    "phonetic": "/ˈkɑnstəˌtut/",
     "gloss": "构成",
     "tip": "constitute a majority",
     "example": "These cases constitute a minority.",
@@ -1926,13 +2061,14 @@
       "academic",
       "verb"
     ],
-    "tier": "high"
+    "tier": "high",
+    "pos": "v. 动词"
   },
   {
     "id": 135,
     "word": "constraint",
     "spelling": "C-O-N-S-T-R-A-I-N-T",
-    "phonetic": "",
+    "phonetic": "/kənˈstreɪnt/",
     "gloss": "约束",
     "tip": "budget constraint",
     "example": "Budget constraints limit hiring.",
@@ -1940,13 +2076,14 @@
     "tags": [
       "academic"
     ],
-    "tier": "high"
+    "tier": "high",
+    "pos": "v. 动词"
   },
   {
     "id": 136,
     "word": "construction",
     "spelling": "C-O-N-S-T-R-U-C-T-I-O-N",
-    "phonetic": "",
+    "phonetic": "/kənˈstrəkʃən/",
     "gloss": "建设",
     "tip": "construction project",
     "example": "Construction delayed the semester.",
@@ -1954,13 +2091,14 @@
     "tags": [
       "econ"
     ],
-    "tier": "mid"
+    "tier": "mid",
+    "pos": "n. 名词"
   },
   {
     "id": 137,
     "word": "consultation",
     "spelling": "C-O-N-S-U-L-T-A-T-I-O-N",
-    "phonetic": "",
+    "phonetic": "/ˌkɑnsəlˈteɪʃən/",
     "gloss": "咨询",
     "tip": "office consultation",
     "example": "Book a consultation slot.",
@@ -1968,13 +2106,14 @@
     "tags": [
       "campus"
     ],
-    "tier": "high"
+    "tier": "high",
+    "pos": "n. 名词"
   },
   {
     "id": 138,
     "word": "consumption",
     "spelling": "C-O-N-S-U-M-P-T-I-O-N",
-    "phonetic": "",
+    "phonetic": "/kənˈsəmʃən/",
     "gloss": "消费；消耗",
     "tip": "energy consumption",
     "example": "Reduce energy consumption.",
@@ -1983,13 +2122,14 @@
       "academic",
       "env"
     ],
-    "tier": "core"
+    "tier": "core",
+    "pos": "n. 名词"
   },
   {
     "id": 139,
     "word": "contemporary",
     "spelling": "C-O-N-T-E-M-P-O-R-A-R-Y",
-    "phonetic": "",
+    "phonetic": "/kənˈtɛmpəˌɛri/",
     "gloss": "当代的",
     "tip": "contemporary issues",
     "example": "Discuss contemporary urban challenges.",
@@ -1997,13 +2137,14 @@
     "tags": [
       "academic"
     ],
-    "tier": "high"
+    "tier": "high",
+    "pos": "adj. 形容词"
   },
   {
     "id": 140,
     "word": "content",
     "spelling": "C-O-N-T-E-N-T",
-    "phonetic": "",
+    "phonetic": "/ˈkɑntɛnt/",
     "gloss": "内容",
     "tip": "course content",
     "example": "Review course content weekly.",
@@ -2011,13 +2152,14 @@
     "tags": [
       "campus"
     ],
-    "tier": "core"
+    "tier": "core",
+    "pos": "n. 名词"
   },
   {
     "id": 141,
     "word": "context",
     "spelling": "C-O-N-T-E-X-T",
-    "phonetic": "",
+    "phonetic": "/ˈkɑntɛkst/",
     "gloss": "语境；背景",
     "tip": "in context",
     "example": "Place quotes in context.",
@@ -2025,13 +2167,14 @@
     "tags": [
       "academic"
     ],
-    "tier": "core"
+    "tier": "core",
+    "pos": "n. 名词"
   },
   {
     "id": 142,
     "word": "contrast",
     "spelling": "C-O-N-T-R-A-S-T",
-    "phonetic": "",
+    "phonetic": "/ˈkɑntræst/",
     "gloss": "对比",
     "tip": "in contrast",
     "example": "In contrast, rural rates were lower.",
@@ -2039,13 +2182,14 @@
     "tags": [
       "academic"
     ],
-    "tier": "core"
+    "tier": "core",
+    "pos": "n. 名词"
   },
   {
     "id": 143,
     "word": "contribute",
     "spelling": "C-O-N-T-R-I-B-U-T-E",
-    "phonetic": "",
+    "phonetic": "/kənˈtrɪbjut/",
     "gloss": "促成；贡献",
     "tip": "contribute to",
     "example": "Diet contributes to health.",
@@ -2054,13 +2198,14 @@
       "academic",
       "verb"
     ],
-    "tier": "core"
+    "tier": "core",
+    "pos": "v. 动词"
   },
   {
     "id": 144,
     "word": "contribution",
     "spelling": "C-O-N-T-R-I-B-U-T-I-O-N",
-    "phonetic": "",
+    "phonetic": "/ˌkɑntrəˈbjuʃən/",
     "gloss": "贡献",
     "tip": "make a contribution",
     "example": "Her contribution is major.",
@@ -2068,13 +2213,14 @@
     "tags": [
       "academic"
     ],
-    "tier": "high"
+    "tier": "high",
+    "pos": "n. 名词"
   },
   {
     "id": 145,
     "word": "control",
     "spelling": "C-O-N-T-R-O-L",
-    "phonetic": "",
+    "phonetic": "/kənˈtroʊl/",
     "gloss": "控制；对照",
     "tip": "control group",
     "example": "Include a control group.",
@@ -2082,13 +2228,14 @@
     "tags": [
       "academic"
     ],
-    "tier": "core"
+    "tier": "core",
+    "pos": "n. 名词"
   },
   {
     "id": 146,
     "word": "controversial",
     "spelling": "C-O-N-T-R-O-V-E-R-S-I-A-L",
-    "phonetic": "",
+    "phonetic": "/ˌkɑntrəˈvəʃəl/",
     "gloss": "有争议的",
     "tip": "controversial claim",
     "example": "Avoid unsupported controversial claims.",
@@ -2096,13 +2243,14 @@
     "tags": [
       "academic"
     ],
-    "tier": "high"
+    "tier": "high",
+    "pos": "adj. 形容词"
   },
   {
     "id": 147,
     "word": "controversy",
     "spelling": "C-O-N-T-R-O-V-E-R-S-Y",
-    "phonetic": "",
+    "phonetic": "/ˈkɑntrəˌvəsi/",
     "gloss": "争议",
     "tip": "spark controversy",
     "example": "Findings sparked controversy.",
@@ -2110,13 +2258,14 @@
     "tags": [
       "academic"
     ],
-    "tier": "high"
+    "tier": "high",
+    "pos": "n. 名词"
   },
   {
     "id": 148,
     "word": "conventional",
     "spelling": "C-O-N-V-E-N-T-I-O-N-A-L",
-    "phonetic": "",
+    "phonetic": "/kənˈvɛnʃənəl/",
     "gloss": "常规的",
     "tip": "conventional wisdom",
     "example": "Challenge conventional wisdom carefully.",
@@ -2124,13 +2273,14 @@
     "tags": [
       "academic"
     ],
-    "tier": "high"
+    "tier": "high",
+    "pos": "adj. 形容词"
   },
   {
     "id": 149,
     "word": "cooperation",
     "spelling": "C-O-O-P-E-R-A-T-I-O-N",
-    "phonetic": "",
+    "phonetic": "/kˌwɔpəˈeɪʃən/",
     "gloss": "合作",
     "tip": "international cooperation",
     "example": "Regional cooperation improved outcomes.",
@@ -2138,7 +2288,8 @@
     "tags": [
       "academic"
     ],
-    "tier": "high"
+    "tier": "high",
+    "pos": "n. 名词"
   },
   {
     "id": 150,
@@ -2152,13 +2303,14 @@
     "tags": [
       "academic"
     ],
-    "tier": "core"
+    "tier": "core",
+    "pos": "n. 名词"
   },
   {
     "id": 151,
     "word": "cost",
     "spelling": "C-O-S-T",
-    "phonetic": "",
+    "phonetic": "/kɔst/",
     "gloss": "成本",
     "tip": "opportunity cost",
     "example": "Consider the opportunity cost.",
@@ -2166,13 +2318,14 @@
     "tags": [
       "econ"
     ],
-    "tier": "core"
+    "tier": "core",
+    "pos": "n. 名词"
   },
   {
     "id": 152,
     "word": "counterargument",
     "spelling": "C-O-U-N-T-E-R-A-R-G-U-M-E-N-T",
-    "phonetic": "",
+    "phonetic": "/counterargument/",
     "gloss": "反驳论点",
     "tip": "address counterarguments",
     "example": "Address counterarguments clearly.",
@@ -2180,13 +2333,14 @@
     "tags": [
       "academic"
     ],
-    "tier": "high"
+    "tier": "high",
+    "pos": "n. 名词"
   },
   {
     "id": 153,
     "word": "credit",
     "spelling": "C-R-E-D-I-T",
-    "phonetic": "",
+    "phonetic": "/ˈkrɛdɪt/",
     "gloss": "学分",
     "tip": "course credit",
     "example": "You need 120 credits.",
@@ -2194,13 +2348,14 @@
     "tags": [
       "campus"
     ],
-    "tier": "core"
+    "tier": "core",
+    "pos": "v. 动词"
   },
   {
     "id": 154,
     "word": "criteria",
     "spelling": "C-R-I-T-E-R-I-A",
-    "phonetic": "",
+    "phonetic": "/kraɪˈtɪriə/",
     "gloss": "标准（复数）",
     "tip": "selection criteria",
     "example": "Admission criteria changed.",
@@ -2209,13 +2364,14 @@
       "academic",
       "campus"
     ],
-    "tier": "core"
+    "tier": "core",
+    "pos": "n. 名词"
   },
   {
     "id": 155,
     "word": "criterion",
     "spelling": "C-R-I-T-E-R-I-O-N",
-    "phonetic": "",
+    "phonetic": "/kraɪˈtɪriən/",
     "gloss": "标准（单数）",
     "tip": "复数 criteria",
     "example": "Clarity is a key criterion.",
@@ -2223,13 +2379,14 @@
     "tags": [
       "academic"
     ],
-    "tier": "core"
+    "tier": "core",
+    "pos": "n. 名词"
   },
   {
     "id": 156,
     "word": "critical",
     "spelling": "C-R-I-T-I-C-A-L",
-    "phonetic": "",
+    "phonetic": "/ˈkrɪtɪkəl/",
     "gloss": "关键的；批判的",
     "tip": "critical thinking",
     "example": "Critical thinking underpins writing.",
@@ -2237,13 +2394,14 @@
     "tags": [
       "academic"
     ],
-    "tier": "core"
+    "tier": "core",
+    "pos": "adj. 形容词"
   },
   {
     "id": 157,
     "word": "critique",
     "spelling": "C-R-I-T-I-Q-U-E",
-    "phonetic": "",
+    "phonetic": "/krɪˈtik/",
     "gloss": "评论；批评",
     "tip": "critical critique",
     "example": "Write a short critique.",
@@ -2251,13 +2409,14 @@
     "tags": [
       "academic"
     ],
-    "tier": "high"
+    "tier": "high",
+    "pos": "v. 动词"
   },
   {
     "id": 158,
     "word": "crucial",
     "spelling": "C-R-U-C-I-A-L",
-    "phonetic": "",
+    "phonetic": "/ˈkruʃəl/",
     "gloss": "至关重要的",
     "tip": "crucial to",
     "example": "Timing is crucial to WFD.",
@@ -2265,13 +2424,14 @@
     "tags": [
       "academic"
     ],
-    "tier": "core"
+    "tier": "core",
+    "pos": "adj. 形容词"
   },
   {
     "id": 159,
     "word": "culture",
     "spelling": "C-U-L-T-U-R-E",
-    "phonetic": "",
+    "phonetic": "/ˈkəlʧə/",
     "gloss": "文化",
     "tip": "campus culture",
     "example": "Campus culture varies widely.",
@@ -2279,13 +2439,14 @@
     "tags": [
       "academic"
     ],
-    "tier": "core"
+    "tier": "core",
+    "pos": "v. 动词"
   },
   {
     "id": 160,
     "word": "current",
     "spelling": "C-U-R-R-E-N-T",
-    "phonetic": "",
+    "phonetic": "/ˈkɑrənt/",
     "gloss": "当前的",
     "tip": "current research",
     "example": "Review current research carefully.",
@@ -2293,13 +2454,14 @@
     "tags": [
       "academic"
     ],
-    "tier": "core"
+    "tier": "core",
+    "pos": "adj. 形容词"
   },
   {
     "id": 161,
     "word": "currently",
     "spelling": "C-U-R-R-E-N-T-L-Y",
-    "phonetic": "",
+    "phonetic": "/ˈkəəntli/",
     "gloss": "目前",
     "tip": "currently",
     "example": "The course is currently full.",
@@ -2307,13 +2469,14 @@
     "tags": [
       "academic"
     ],
-    "tier": "core"
+    "tier": "core",
+    "pos": "adv. 副词"
   },
   {
     "id": 162,
     "word": "curriculum",
     "spelling": "C-U-R-R-I-C-U-L-U-M",
-    "phonetic": "",
+    "phonetic": "/kəˈɪkjələm/",
     "gloss": "课程体系",
     "tip": "core curriculum",
     "example": "The curriculum was revised.",
@@ -2321,13 +2484,14 @@
     "tags": [
       "campus"
     ],
-    "tier": "core"
+    "tier": "core",
+    "pos": "n. 名词"
   },
   {
     "id": 163,
     "word": "data",
     "spelling": "D-A-T-A",
-    "phonetic": "",
+    "phonetic": "/ˈdætə/",
     "gloss": "数据",
     "tip": "raw data",
     "example": "Analyse the raw data carefully.",
@@ -2335,13 +2499,14 @@
     "tags": [
       "academic"
     ],
-    "tier": "core"
+    "tier": "core",
+    "pos": "n. 名词"
   },
   {
     "id": 164,
     "word": "database",
     "spelling": "D-A-T-A-B-A-S-E",
-    "phonetic": "",
+    "phonetic": "/ˈdætəˌbeɪs/",
     "gloss": "数据库",
     "tip": "online database",
     "example": "Access the database with your ID.",
@@ -2350,13 +2515,14 @@
       "academic",
       "campus"
     ],
-    "tier": "core"
+    "tier": "core",
+    "pos": "v. 动词"
   },
   {
     "id": 165,
     "word": "dataset",
     "spelling": "D-A-T-A-S-E-T",
-    "phonetic": "",
+    "phonetic": "/ˈdeɪtəˌsɛt/",
     "gloss": "数据集",
     "tip": "open dataset",
     "example": "Share an open dataset.",
@@ -2364,13 +2530,14 @@
     "tags": [
       "academic"
     ],
-    "tier": "high"
+    "tier": "high",
+    "pos": "n. 名词"
   },
   {
     "id": 166,
     "word": "deadline",
     "spelling": "D-E-A-D-L-I-N-E",
-    "phonetic": "",
+    "phonetic": "/ˈdɛˌdlaɪn/",
     "gloss": "截止日期",
     "tip": "meet the deadline",
     "example": "Submit before the Friday deadline.",
@@ -2378,13 +2545,14 @@
     "tags": [
       "campus"
     ],
-    "tier": "core"
+    "tier": "core",
+    "pos": "n. 名词"
   },
   {
     "id": 167,
     "word": "debate",
     "spelling": "D-E-B-A-T-E",
-    "phonetic": "",
+    "phonetic": "/dəˈbeɪt/",
     "gloss": "辩论",
     "tip": "public debate",
     "example": "Join the class debate.",
@@ -2392,13 +2560,14 @@
     "tags": [
       "academic"
     ],
-    "tier": "core"
+    "tier": "core",
+    "pos": "v. 动词"
   },
   {
     "id": 168,
     "word": "decline",
     "spelling": "D-E-C-L-I-N-E",
-    "phonetic": "",
+    "phonetic": "/dɪˈklaɪn/",
     "gloss": "下降",
     "tip": "in decline",
     "example": "Biodiversity is in decline.",
@@ -2407,13 +2576,14 @@
       "academic",
       "verb"
     ],
-    "tier": "core"
+    "tier": "core",
+    "pos": "v. 动词"
   },
   {
     "id": 169,
     "word": "defer",
     "spelling": "D-E-F-E-R",
-    "phonetic": "",
+    "phonetic": "/dɪˈfə/",
     "gloss": "延期入学",
     "tip": "defer enrolment",
     "example": "You may defer enrolment one year.",
@@ -2422,13 +2592,14 @@
       "campus",
       "verb"
     ],
-    "tier": "high"
+    "tier": "high",
+    "pos": "v. 动词"
   },
   {
     "id": 170,
     "word": "definition",
     "spelling": "D-E-F-I-N-I-T-I-O-N",
-    "phonetic": "",
+    "phonetic": "/ˌdɛfəˈnɪʃən/",
     "gloss": "定义",
     "tip": "working definition",
     "example": "Provide a working definition.",
@@ -2436,13 +2607,14 @@
     "tags": [
       "academic"
     ],
-    "tier": "core"
+    "tier": "core",
+    "pos": "n. 名词"
   },
   {
     "id": 171,
     "word": "degree",
     "spelling": "D-E-G-R-E-E",
-    "phonetic": "",
+    "phonetic": "/dɪˈgri/",
     "gloss": "学位；程度",
     "tip": "to some degree",
     "example": "To some degree, motivation predicts success.",
@@ -2451,13 +2623,14 @@
       "academic",
       "campus"
     ],
-    "tier": "core"
+    "tier": "core",
+    "pos": "v. 动词"
   },
   {
     "id": 172,
     "word": "delay",
     "spelling": "D-E-L-A-Y",
-    "phonetic": "",
+    "phonetic": "/dɪˈleɪ/",
     "gloss": "延误",
     "tip": "without delay",
     "example": "Submit without delay.",
@@ -2465,13 +2638,14 @@
     "tags": [
       "campus"
     ],
-    "tier": "core"
+    "tier": "core",
+    "pos": "n. 名词"
   },
   {
     "id": 173,
     "word": "demand",
     "spelling": "D-E-M-A-N-D",
-    "phonetic": "",
+    "phonetic": "/dɪˈmænd/",
     "gloss": "需求",
     "tip": "rising demand",
     "example": "Rising demand strains housing.",
@@ -2479,7 +2653,8 @@
     "tags": [
       "econ"
     ],
-    "tier": "core"
+    "tier": "core",
+    "pos": "n. 名词"
   },
   {
     "id": 174,
@@ -2494,13 +2669,14 @@
       "academic",
       "econ"
     ],
-    "tier": "core"
+    "tier": "core",
+    "pos": "adj. 形容词"
   },
   {
     "id": 175,
     "word": "demonstrate",
     "spelling": "D-E-M-O-N-S-T-R-A-T-E",
-    "phonetic": "",
+    "phonetic": "/ˈdɛmənˌstreɪt/",
     "gloss": "证明；演示",
     "tip": "demonstrate that",
     "example": "Data demonstrate a pattern.",
@@ -2509,13 +2685,14 @@
       "academic",
       "verb"
     ],
-    "tier": "core"
+    "tier": "core",
+    "pos": "v. 动词"
   },
   {
     "id": 176,
     "word": "department",
     "spelling": "D-E-P-A-R-T-M-E-N-T",
-    "phonetic": "",
+    "phonetic": "/dɪˈpɑrtmənt/",
     "gloss": "系；部门",
     "tip": "history department",
     "example": "Contact the department office.",
@@ -2523,13 +2700,14 @@
     "tags": [
       "campus"
     ],
-    "tier": "core"
+    "tier": "core",
+    "pos": "n. 名词"
   },
   {
     "id": 177,
     "word": "dependent",
     "spelling": "D-E-P-E-N-D-E-N-T",
-    "phonetic": "",
+    "phonetic": "/dɪˈpɛndənt/",
     "gloss": "依赖的；因变量",
     "tip": "dependent variable",
     "example": "Scores are the dependent variable.",
@@ -2537,13 +2715,14 @@
     "tags": [
       "academic"
     ],
-    "tier": "core"
+    "tier": "core",
+    "pos": "adj. 形容词"
   },
   {
     "id": 178,
     "word": "derive",
     "spelling": "D-E-R-I-V-E",
-    "phonetic": "",
+    "phonetic": "/dəaɪv/",
     "gloss": "源自；推导",
     "tip": "derive from",
     "example": "The term derives from Latin.",
@@ -2552,13 +2731,14 @@
       "academic",
       "verb"
     ],
-    "tier": "high"
+    "tier": "high",
+    "pos": "v. 动词"
   },
   {
     "id": 179,
     "word": "despite",
     "spelling": "D-E-S-P-I-T-E",
-    "phonetic": "",
+    "phonetic": "/dɪˈspaɪt/",
     "gloss": "尽管",
     "tip": "despite + noun",
     "example": "Despite cuts, quality rose.",
@@ -2566,13 +2746,14 @@
     "tags": [
       "academic"
     ],
-    "tier": "core"
+    "tier": "core",
+    "pos": "v. 动词"
   },
   {
     "id": 180,
     "word": "detailed",
     "spelling": "D-E-T-A-I-L-E-D",
-    "phonetic": "",
+    "phonetic": "/dɪˈteɪld/",
     "gloss": "详细的",
     "tip": "detailed analysis",
     "example": "Provide a detailed analysis.",
@@ -2580,13 +2761,14 @@
     "tags": [
       "academic"
     ],
-    "tier": "core"
+    "tier": "core",
+    "pos": "adj. 形容词"
   },
   {
     "id": 181,
     "word": "detect",
     "spelling": "D-E-T-E-C-T",
-    "phonetic": "",
+    "phonetic": "/dɪˈtɛkt/",
     "gloss": "检测",
     "tip": "detect a change",
     "example": "Sensors detect subtle changes.",
@@ -2595,13 +2777,14 @@
       "academic",
       "verb"
     ],
-    "tier": "high"
+    "tier": "high",
+    "pos": "v. 动词"
   },
   {
     "id": 182,
     "word": "development",
     "spelling": "D-E-V-E-L-O-P-M-E-N-T",
-    "phonetic": "",
+    "phonetic": "/dɪˈvɛləpmənt/",
     "gloss": "发展",
     "tip": "professional development",
     "example": "Staff need professional development.",
@@ -2609,13 +2792,14 @@
     "tags": [
       "academic"
     ],
-    "tier": "core"
+    "tier": "core",
+    "pos": "n. 名词"
   },
   {
     "id": 183,
     "word": "deviation",
     "spelling": "D-E-V-I-A-T-I-O-N",
-    "phonetic": "",
+    "phonetic": "/ˌdiviˈeɪʃən/",
     "gloss": "偏差",
     "tip": "standard deviation",
     "example": "Report the standard deviation.",
@@ -2623,13 +2807,14 @@
     "tags": [
       "academic"
     ],
-    "tier": "high"
+    "tier": "high",
+    "pos": "n. 名词"
   },
   {
     "id": 184,
     "word": "diagram",
     "spelling": "D-I-A-G-R-A-M",
-    "phonetic": "",
+    "phonetic": "/ˈdaɪəˌgræm/",
     "gloss": "示意图",
     "tip": "flow diagram",
     "example": "Explain the flow diagram step by step.",
@@ -2637,13 +2822,14 @@
     "tags": [
       "academic"
     ],
-    "tier": "core"
+    "tier": "core",
+    "pos": "n. 名词"
   },
   {
     "id": 185,
     "word": "dictate",
     "spelling": "D-I-C-T-A-T-E",
-    "phonetic": "",
+    "phonetic": "/ˈdɪkˌteɪt/",
     "gloss": "听写；口述",
     "tip": "Write From Dictation",
     "example": "Dictation trains listening accuracy.",
@@ -2652,13 +2838,14 @@
       "academic",
       "verb"
     ],
-    "tier": "core"
+    "tier": "core",
+    "pos": "v. 动词"
   },
   {
     "id": 186,
     "word": "differentiate",
     "spelling": "D-I-F-F-E-R-E-N-T-I-A-T-E",
-    "phonetic": "",
+    "phonetic": "/ˌdɪfəˈɛnʧiˌeɪt/",
     "gloss": "区分",
     "tip": "differentiate A from B",
     "example": "Differentiate primary from secondary sources.",
@@ -2667,13 +2854,14 @@
       "academic",
       "verb"
     ],
-    "tier": "high"
+    "tier": "high",
+    "pos": "v. 动词"
   },
   {
     "id": 187,
     "word": "digital",
     "spelling": "D-I-G-I-T-A-L",
-    "phonetic": "",
+    "phonetic": "/ˈdɪʤɪtəl/",
     "gloss": "数字的",
     "tip": "digital literacy",
     "example": "Digital literacy is essential.",
@@ -2681,13 +2869,14 @@
     "tags": [
       "academic"
     ],
-    "tier": "core"
+    "tier": "core",
+    "pos": "adj. 形容词"
   },
   {
     "id": 188,
     "word": "dimension",
     "spelling": "D-I-M-E-N-S-I-O-N",
-    "phonetic": "",
+    "phonetic": "/dɪˈmɛnʃən/",
     "gloss": "维度",
     "tip": "social dimension",
     "example": "Add a social dimension.",
@@ -2695,13 +2884,14 @@
     "tags": [
       "academic"
     ],
-    "tier": "high"
+    "tier": "high",
+    "pos": "n. 名词"
   },
   {
     "id": 189,
     "word": "disadvantage",
     "spelling": "D-I-S-A-D-V-A-N-T-A-G-E",
-    "phonetic": "",
+    "phonetic": "/ˌdɪsədˈvænɪʤ/",
     "gloss": "劣势",
     "tip": "main disadvantage",
     "example": "A disadvantage is higher cost.",
@@ -2709,13 +2899,14 @@
     "tags": [
       "academic"
     ],
-    "tier": "core"
+    "tier": "core",
+    "pos": "v. 动词"
   },
   {
     "id": 190,
     "word": "discipline",
     "spelling": "D-I-S-C-I-P-L-I-N-E",
-    "phonetic": "",
+    "phonetic": "/ˈdɪsəplən/",
     "gloss": "学科；自律",
     "tip": "academic discipline",
     "example": "History is a broad discipline.",
@@ -2724,13 +2915,14 @@
       "academic",
       "campus"
     ],
-    "tier": "core"
+    "tier": "core",
+    "pos": "v. 动词"
   },
   {
     "id": 191,
     "word": "discourage",
     "spelling": "D-I-S-C-O-U-R-A-G-E",
-    "phonetic": "",
+    "phonetic": "/dɪˈskəɪʤ/",
     "gloss": "劝阻",
     "tip": "discourage cheating",
     "example": "Strict rules discourage cheating.",
@@ -2739,13 +2931,14 @@
       "academic",
       "verb"
     ],
-    "tier": "mid"
+    "tier": "mid",
+    "pos": "v. 动词"
   },
   {
     "id": 192,
     "word": "discrimination",
     "spelling": "D-I-S-C-R-I-M-I-N-A-T-I-O-N",
-    "phonetic": "",
+    "phonetic": "/dɪˌskrɪməˈneɪʃən/",
     "gloss": "歧视",
     "tip": "racial discrimination",
     "example": "Discrimination harms campus climate.",
@@ -2753,13 +2946,14 @@
     "tags": [
       "academic"
     ],
-    "tier": "high"
+    "tier": "high",
+    "pos": "n. 名词"
   },
   {
     "id": 193,
     "word": "discussion",
     "spelling": "D-I-S-C-U-S-S-I-O-N",
-    "phonetic": "",
+    "phonetic": "/dɪˈskəʃən/",
     "gloss": "讨论",
     "tip": "class discussion",
     "example": "Contribute to class discussion.",
@@ -2767,7 +2961,8 @@
     "tags": [
       "campus"
     ],
-    "tier": "core"
+    "tier": "core",
+    "pos": "n. 名词"
   },
   {
     "id": 194,
@@ -2782,13 +2977,14 @@
       "academic",
       "campus"
     ],
-    "tier": "core"
+    "tier": "core",
+    "pos": "n. 名词"
   },
   {
     "id": 195,
     "word": "distinct",
     "spelling": "D-I-S-T-I-N-C-T",
-    "phonetic": "",
+    "phonetic": "/dɪˈstɪŋkt/",
     "gloss": "不同的",
     "tip": "distinct from",
     "example": "Two distinct patterns appeared.",
@@ -2796,13 +2992,14 @@
     "tags": [
       "academic"
     ],
-    "tier": "high"
+    "tier": "high",
+    "pos": "adj. 形容词"
   },
   {
     "id": 196,
     "word": "distinguish",
     "spelling": "D-I-S-T-I-N-G-U-I-S-H",
-    "phonetic": "",
+    "phonetic": "/dɪˈstɪŋgwɪʃ/",
     "gloss": "区分",
     "tip": "distinguish between",
     "example": "Distinguish correlation from causation.",
@@ -2811,13 +3008,14 @@
       "academic",
       "verb"
     ],
-    "tier": "core"
+    "tier": "core",
+    "pos": "v. 动词"
   },
   {
     "id": 197,
     "word": "distribute",
     "spelling": "D-I-S-T-R-I-B-U-T-E",
-    "phonetic": "",
+    "phonetic": "/dɪˈstrɪbjut/",
     "gloss": "分发；分布",
     "tip": "distribute evenly",
     "example": "Questionnaires were distributed online.",
@@ -2826,13 +3024,14 @@
       "academic",
       "verb"
     ],
-    "tier": "high"
+    "tier": "high",
+    "pos": "v. 动词"
   },
   {
     "id": 198,
     "word": "distribution",
     "spelling": "D-I-S-T-R-I-B-U-T-I-O-N",
-    "phonetic": "",
+    "phonetic": "/ˌdɪstrəˈbjuʃən/",
     "gloss": "分布",
     "tip": "normal distribution",
     "example": "Check the score distribution.",
@@ -2840,13 +3039,14 @@
     "tags": [
       "academic"
     ],
-    "tier": "core"
+    "tier": "core",
+    "pos": "n. 名词"
   },
   {
     "id": 199,
     "word": "diverse",
     "spelling": "D-I-V-E-R-S-E",
-    "phonetic": "",
+    "phonetic": "/dɪˈvəs/",
     "gloss": "多样的",
     "tip": "diverse backgrounds",
     "example": "A diverse cohort enriches debate.",
@@ -2854,13 +3054,14 @@
     "tags": [
       "academic"
     ],
-    "tier": "core"
+    "tier": "core",
+    "pos": "adj. 形容词"
   },
   {
     "id": 200,
     "word": "diversity",
     "spelling": "D-I-V-E-R-S-I-T-Y",
-    "phonetic": "",
+    "phonetic": "/dɪˈvəsɪti/",
     "gloss": "多样性",
     "tip": "cultural diversity",
     "example": "Campus diversity policies were revised.",
@@ -2869,13 +3070,14 @@
       "academic",
       "campus"
     ],
-    "tier": "core"
+    "tier": "core",
+    "pos": "n. 名词"
   },
   {
     "id": 201,
     "word": "domestic",
     "spelling": "D-O-M-E-S-T-I-C",
-    "phonetic": "",
+    "phonetic": "/dəˈmɛstɪk/",
     "gloss": "国内的",
     "tip": "domestic demand",
     "example": "Domestic demand remained weak.",
@@ -2883,13 +3085,14 @@
     "tags": [
       "academic"
     ],
-    "tier": "high"
+    "tier": "high",
+    "pos": "adj. 形容词"
   },
   {
     "id": 202,
     "word": "dominant",
     "spelling": "D-O-M-I-N-A-N-T",
-    "phonetic": "",
+    "phonetic": "/ˈdɑmənənt/",
     "gloss": "主导的",
     "tip": "dominant factor",
     "example": "Cost is the dominant factor.",
@@ -2897,13 +3100,14 @@
     "tags": [
       "academic"
     ],
-    "tier": "high"
+    "tier": "high",
+    "pos": "adj. 形容词"
   },
   {
     "id": 203,
     "word": "draft",
     "spelling": "D-R-A-F-T",
-    "phonetic": "",
+    "phonetic": "/dræft/",
     "gloss": "草稿",
     "tip": "first draft",
     "example": "Submit a first draft next week.",
@@ -2912,13 +3116,14 @@
       "campus",
       "academic"
     ],
-    "tier": "core"
+    "tier": "core",
+    "pos": "n. 名词"
   },
   {
     "id": 204,
     "word": "dramatically",
     "spelling": "D-R-A-M-A-T-I-C-A-L-L-Y",
-    "phonetic": "",
+    "phonetic": "/drəˈmætɪkəli/",
     "gloss": "急剧地",
     "tip": "change dramatically",
     "example": "Prices changed dramatically.",
@@ -2926,13 +3131,14 @@
     "tags": [
       "academic"
     ],
-    "tier": "core"
+    "tier": "core",
+    "pos": "adv. 副词"
   },
   {
     "id": 205,
     "word": "economic",
     "spelling": "E-C-O-N-O-M-I-C",
-    "phonetic": "",
+    "phonetic": "/ˌɛkəˈnɑmɪk/",
     "gloss": "经济的",
     "tip": "economic growth",
     "example": "Economic growth was uneven.",
@@ -2941,13 +3147,14 @@
       "academic",
       "econ"
     ],
-    "tier": "core"
+    "tier": "core",
+    "pos": "adj. 形容词"
   },
   {
     "id": 206,
     "word": "economy",
     "spelling": "E-C-O-N-O-M-Y",
-    "phonetic": "",
+    "phonetic": "/ɪˈkɑnəmi/",
     "gloss": "经济",
     "tip": "global economy",
     "example": "The global economy slowed.",
@@ -2956,13 +3163,14 @@
       "academic",
       "econ"
     ],
-    "tier": "core"
+    "tier": "core",
+    "pos": "n. 名词"
   },
   {
     "id": 207,
     "word": "ecosystem",
     "spelling": "E-C-O-S-Y-S-T-E-M",
-    "phonetic": "",
+    "phonetic": "/ˈikoʊˌsɪstəm/",
     "gloss": "生态系统",
     "tip": "fragile ecosystem",
     "example": "Pollution damages ecosystems.",
@@ -2971,13 +3179,14 @@
       "academic",
       "env"
     ],
-    "tier": "core"
+    "tier": "core",
+    "pos": "v. 动词"
   },
   {
     "id": 208,
     "word": "education",
     "spelling": "E-D-U-C-A-T-I-O-N",
-    "phonetic": "",
+    "phonetic": "/ˌɛʤəˈkeɪʃən/",
     "gloss": "教育",
     "tip": "higher education",
     "example": "Higher education expands opportunity.",
@@ -2986,13 +3195,14 @@
       "academic",
       "campus"
     ],
-    "tier": "core"
+    "tier": "core",
+    "pos": "n. 名词"
   },
   {
     "id": 209,
     "word": "effect",
     "spelling": "E-F-F-E-C-T",
-    "phonetic": "",
+    "phonetic": "/ˈifɛkt/",
     "gloss": "效果；影响",
     "tip": "cause and effect",
     "example": "Measure the long-term effect.",
@@ -3000,13 +3210,14 @@
     "tags": [
       "academic"
     ],
-    "tier": "core"
+    "tier": "core",
+    "pos": "n. 名词"
   },
   {
     "id": 210,
     "word": "effective",
     "spelling": "E-F-F-E-C-T-I-V-E",
-    "phonetic": "",
+    "phonetic": "/ˈifɛktɪv/",
     "gloss": "有效的",
     "tip": "effective strategy",
     "example": "Feedback is an effective strategy.",
@@ -3014,13 +3225,14 @@
     "tags": [
       "academic"
     ],
-    "tier": "core"
+    "tier": "core",
+    "pos": "adj. 形容词"
   },
   {
     "id": 211,
     "word": "effectiveness",
     "spelling": "E-F-F-E-C-T-I-V-E-N-E-S-S",
-    "phonetic": "",
+    "phonetic": "/ˈifɛktɪvnəs/",
     "gloss": "有效性",
     "tip": "measure effectiveness",
     "example": "They measured tutoring effectiveness.",
@@ -3028,13 +3240,14 @@
     "tags": [
       "academic"
     ],
-    "tier": "high"
+    "tier": "high",
+    "pos": "n. 名词"
   },
   {
     "id": 212,
     "word": "efficient",
     "spelling": "E-F-F-I-C-I-E-N-T",
-    "phonetic": "",
+    "phonetic": "/ɪˈfɪʃənt/",
     "gloss": "高效的",
     "tip": "energy efficient",
     "example": "Efficient systems cut waste.",
@@ -3042,13 +3255,14 @@
     "tags": [
       "academic"
     ],
-    "tier": "core"
+    "tier": "core",
+    "pos": "adj. 形容词"
   },
   {
     "id": 213,
     "word": "elaborate",
     "spelling": "E-L-A-B-O-R-A-T-E",
-    "phonetic": "",
+    "phonetic": "/ɪˈlæbəˌeɪt/",
     "gloss": "详述",
     "tip": "elaborate on",
     "example": "Elaborate on your main point.",
@@ -3057,13 +3271,14 @@
       "academic",
       "verb"
     ],
-    "tier": "high"
+    "tier": "high",
+    "pos": "v. 动词"
   },
   {
     "id": 214,
     "word": "elective",
     "spelling": "E-L-E-C-T-I-V-E",
-    "phonetic": "",
+    "phonetic": "/ɪˈlɛktɪv/",
     "gloss": "选修课",
     "tip": "elective subject",
     "example": "Choose two electives.",
@@ -3071,13 +3286,14 @@
     "tags": [
       "campus"
     ],
-    "tier": "high"
+    "tier": "high",
+    "pos": "adj. 形容词"
   },
   {
     "id": 215,
     "word": "element",
     "spelling": "E-L-E-M-E-N-T",
-    "phonetic": "",
+    "phonetic": "/ˈɛləmənt/",
     "gloss": "要素",
     "tip": "key element",
     "example": "Feedback is a key element.",
@@ -3085,13 +3301,14 @@
     "tags": [
       "academic"
     ],
-    "tier": "core"
+    "tier": "core",
+    "pos": "n. 名词"
   },
   {
     "id": 216,
     "word": "emerge",
     "spelling": "E-M-E-R-G-E",
-    "phonetic": "",
+    "phonetic": "/ˈiməʤ/",
     "gloss": "出现",
     "tip": "emerge from",
     "example": "A pattern emerged.",
@@ -3100,13 +3317,14 @@
       "academic",
       "verb"
     ],
-    "tier": "core"
+    "tier": "core",
+    "pos": "v. 动词"
   },
   {
     "id": 217,
     "word": "emission",
     "spelling": "E-M-I-S-S-I-O-N",
-    "phonetic": "",
+    "phonetic": "/ɪˈmɪʃən/",
     "gloss": "排放",
     "tip": "carbon emissions",
     "example": "Cut carbon emissions by 2030.",
@@ -3115,13 +3333,14 @@
       "academic",
       "env"
     ],
-    "tier": "core"
+    "tier": "core",
+    "pos": "n. 名词"
   },
   {
     "id": 218,
     "word": "emphasis",
     "spelling": "E-M-P-H-A-S-I-S",
-    "phonetic": "",
+    "phonetic": "/ˈɛmfəsɪs/",
     "gloss": "强调",
     "tip": "place emphasis on",
     "example": "Place emphasis on listening.",
@@ -3129,13 +3348,14 @@
     "tags": [
       "academic"
     ],
-    "tier": "core"
+    "tier": "core",
+    "pos": "n. 名词"
   },
   {
     "id": 219,
     "word": "emphasise",
     "spelling": "E-M-P-H-A-S-I-S-E",
-    "phonetic": "",
+    "phonetic": "/emphasise/",
     "gloss": "强调",
     "tip": "emphasise the need",
     "example": "Lecturers emphasise clarity.",
@@ -3144,7 +3364,8 @@
       "academic",
       "verb"
     ],
-    "tier": "core"
+    "tier": "core",
+    "pos": "v. 动词"
   },
   {
     "id": 220,
@@ -3158,13 +3379,14 @@
     "tags": [
       "academic"
     ],
-    "tier": "core"
+    "tier": "core",
+    "pos": "adj. 形容词"
   },
   {
     "id": 221,
     "word": "employer",
     "spelling": "E-M-P-L-O-Y-E-R",
-    "phonetic": "",
+    "phonetic": "/ɪmˈplɔɪə/",
     "gloss": "雇主",
     "tip": "graduate employer",
     "example": "Top employers visit campus.",
@@ -3172,13 +3394,14 @@
     "tags": [
       "campus"
     ],
-    "tier": "core"
+    "tier": "core",
+    "pos": "v. 动词"
   },
   {
     "id": 222,
     "word": "employment",
     "spelling": "E-M-P-L-O-Y-M-E-N-T",
-    "phonetic": "",
+    "phonetic": "/ɪmˈplɔɪmənt/",
     "gloss": "就业",
     "tip": "graduate employment",
     "example": "Graduate employment rose.",
@@ -3188,13 +3411,14 @@
       "econ",
       "campus"
     ],
-    "tier": "core"
+    "tier": "core",
+    "pos": "n. 名词"
   },
   {
     "id": 223,
     "word": "enable",
     "spelling": "E-N-A-B-L-E",
-    "phonetic": "",
+    "phonetic": "/ɪˈneɪbəl/",
     "gloss": "使能够",
     "tip": "enable students to",
     "example": "Grants enable participation.",
@@ -3203,13 +3427,14 @@
       "academic",
       "verb"
     ],
-    "tier": "core"
+    "tier": "core",
+    "pos": "v. 动词"
   },
   {
     "id": 224,
     "word": "encourage",
     "spelling": "E-N-C-O-U-R-A-G-E",
-    "phonetic": "",
+    "phonetic": "/ɪnˈkəəʤ/",
     "gloss": "鼓励",
     "tip": "encourage students",
     "example": "Tutors encourage peer review.",
@@ -3218,13 +3443,14 @@
       "academic",
       "verb"
     ],
-    "tier": "core"
+    "tier": "core",
+    "pos": "v. 动词"
   },
   {
     "id": 225,
     "word": "engagement",
     "spelling": "E-N-G-A-G-E-M-E-N-T",
-    "phonetic": "",
+    "phonetic": "/ɛnˈgeɪʤmənt/",
     "gloss": "参与度",
     "tip": "student engagement",
     "example": "Engagement predicts retention.",
@@ -3232,13 +3458,14 @@
     "tags": [
       "campus"
     ],
-    "tier": "core"
+    "tier": "core",
+    "pos": "n. 名词"
   },
   {
     "id": 226,
     "word": "enhance",
     "spelling": "E-N-H-A-N-C-E",
-    "phonetic": "",
+    "phonetic": "/ɛnˈhæns/",
     "gloss": "增强",
     "tip": "enhance learning",
     "example": "Feedback enhances learning.",
@@ -3247,13 +3474,14 @@
       "academic",
       "verb"
     ],
-    "tier": "core"
+    "tier": "core",
+    "pos": "v. 动词"
   },
   {
     "id": 227,
     "word": "enquiry",
     "spelling": "E-N-Q-U-I-R-Y",
-    "phonetic": "",
+    "phonetic": "/ɪnkˈwaɪˌri/",
     "gloss": "询问",
     "tip": "make an enquiry",
     "example": "Make an enquiry at the desk.",
@@ -3261,13 +3489,14 @@
     "tags": [
       "campus"
     ],
-    "tier": "core"
+    "tier": "core",
+    "pos": "n. 名词"
   },
   {
     "id": 228,
     "word": "enrol",
     "spelling": "E-N-R-O-L",
-    "phonetic": "",
+    "phonetic": "/enrol/",
     "gloss": "注册；入学",
     "tip": "enrol in",
     "example": "Enrol in the statistics course.",
@@ -3276,7 +3505,8 @@
       "campus",
       "verb"
     ],
-    "tier": "core"
+    "tier": "core",
+    "pos": "v. 动词"
   },
   {
     "id": 229,
@@ -3290,13 +3520,14 @@
     "tags": [
       "campus"
     ],
-    "tier": "core"
+    "tier": "core",
+    "pos": "n. 名词"
   },
   {
     "id": 230,
     "word": "ensure",
     "spelling": "E-N-S-U-R-E",
-    "phonetic": "",
+    "phonetic": "/ɪnˈʃʊː/",
     "gloss": "确保",
     "tip": "ensure that",
     "example": "Ensure citations are complete.",
@@ -3305,13 +3536,14 @@
       "academic",
       "verb"
     ],
-    "tier": "core"
+    "tier": "core",
+    "pos": "v. 动词"
   },
   {
     "id": 231,
     "word": "equality",
     "spelling": "E-Q-U-A-L-I-T-Y",
-    "phonetic": "",
+    "phonetic": "/ɪkˈwɑləti/",
     "gloss": "平等",
     "tip": "gender equality",
     "example": "Gender equality improved slowly.",
@@ -3319,13 +3551,14 @@
     "tags": [
       "academic"
     ],
-    "tier": "core"
+    "tier": "core",
+    "pos": "n. 名词"
   },
   {
     "id": 232,
     "word": "equity",
     "spelling": "E-Q-U-I-T-Y",
-    "phonetic": "",
+    "phonetic": "/ˈɛkwəti/",
     "gloss": "公平",
     "tip": "educational equity",
     "example": "Equity in access remains a goal.",
@@ -3333,13 +3566,14 @@
     "tags": [
       "academic"
     ],
-    "tier": "core"
+    "tier": "core",
+    "pos": "n. 名词"
   },
   {
     "id": 233,
     "word": "essay",
     "spelling": "E-S-S-A-Y",
-    "phonetic": "",
+    "phonetic": "/ˈɛˌseɪ/",
     "gloss": "作文",
     "tip": "argumentative essay",
     "example": "Write a 300-word essay.",
@@ -3347,13 +3581,14 @@
     "tags": [
       "campus"
     ],
-    "tier": "core"
+    "tier": "core",
+    "pos": "n. 名词"
   },
   {
     "id": 234,
     "word": "essential",
     "spelling": "E-S-S-E-N-T-I-A-L",
-    "phonetic": "",
+    "phonetic": "/ɛˈsɛnʃəl/",
     "gloss": "必要的",
     "tip": "essential for",
     "example": "Critical reading is essential.",
@@ -3361,13 +3596,14 @@
     "tags": [
       "academic"
     ],
-    "tier": "core"
+    "tier": "core",
+    "pos": "adj. 形容词"
   },
   {
     "id": 235,
     "word": "establish",
     "spelling": "E-S-T-A-B-L-I-S-H",
-    "phonetic": "",
+    "phonetic": "/ɪˈstæblɪʃ/",
     "gloss": "确立",
     "tip": "establish a link",
     "example": "They established a link.",
@@ -3376,13 +3612,14 @@
       "academic",
       "verb"
     ],
-    "tier": "core"
+    "tier": "core",
+    "pos": "v. 动词"
   },
   {
     "id": 236,
     "word": "estimate",
     "spelling": "E-S-T-I-M-A-T-E",
-    "phonetic": "",
+    "phonetic": "/ˈɛstəˌmeɪt/",
     "gloss": "估计",
     "tip": "rough estimate",
     "example": "Officials estimate rising demand.",
@@ -3391,13 +3628,14 @@
       "academic",
       "verb"
     ],
-    "tier": "core"
+    "tier": "core",
+    "pos": "v. 动词"
   },
   {
     "id": 237,
     "word": "ethics",
     "spelling": "E-T-H-I-C-S",
-    "phonetic": "",
+    "phonetic": "/ˈɛθɪks/",
     "gloss": "伦理",
     "tip": "research ethics",
     "example": "Follow research ethics strictly.",
@@ -3405,13 +3643,14 @@
     "tags": [
       "academic"
     ],
-    "tier": "core"
+    "tier": "core",
+    "pos": "n. 名词"
   },
   {
     "id": 238,
     "word": "evaluate",
     "spelling": "E-V-A-L-U-A-T-E",
-    "phonetic": "",
+    "phonetic": "/ɪˈvæljuˌeɪt/",
     "gloss": "评估",
     "tip": "evaluate outcomes",
     "example": "Evaluate each approach.",
@@ -3420,13 +3659,14 @@
       "academic",
       "verb"
     ],
-    "tier": "core"
+    "tier": "core",
+    "pos": "v. 动词"
   },
   {
     "id": 239,
     "word": "eventually",
     "spelling": "E-V-E-N-T-U-A-L-L-Y",
-    "phonetic": "",
+    "phonetic": "/ɪˈvɛnʧəwəli/",
     "gloss": "最终",
     "tip": "eventually",
     "example": "Eventually, consensus emerged.",
@@ -3434,13 +3674,14 @@
     "tags": [
       "academic"
     ],
-    "tier": "core"
+    "tier": "core",
+    "pos": "adv. 副词"
   },
   {
     "id": 240,
     "word": "evidence",
     "spelling": "E-V-I-D-E-N-C-E",
-    "phonetic": "",
+    "phonetic": "/ˈɛvədəns/",
     "gloss": "证据",
     "tip": "empirical evidence",
     "example": "Evidence remains limited.",
@@ -3448,13 +3689,14 @@
     "tags": [
       "academic"
     ],
-    "tier": "core"
+    "tier": "core",
+    "pos": "n. 名词"
   },
   {
     "id": 241,
     "word": "evident",
     "spelling": "E-V-I-D-E-N-T",
-    "phonetic": "",
+    "phonetic": "/ˈɛvədənt/",
     "gloss": "明显的",
     "tip": "it is evident",
     "example": "It is evident that inequality persists.",
@@ -3462,13 +3704,14 @@
     "tags": [
       "academic"
     ],
-    "tier": "core"
+    "tier": "core",
+    "pos": "adj. 形容词"
   },
   {
     "id": 242,
     "word": "exam",
     "spelling": "E-X-A-M",
-    "phonetic": "",
+    "phonetic": "/ɪgˈzæm/",
     "gloss": "考试",
     "tip": "final exam",
     "example": "The final exam is next week.",
@@ -3476,13 +3719,14 @@
     "tags": [
       "campus"
     ],
-    "tier": "core"
+    "tier": "core",
+    "pos": "n. 名词"
   },
   {
     "id": 243,
     "word": "examine",
     "spelling": "E-X-A-M-I-N-E",
-    "phonetic": "",
+    "phonetic": "/ɪgˈzæmɪn/",
     "gloss": "审视；检查",
     "tip": "examine evidence",
     "example": "We examine three theories.",
@@ -3491,13 +3735,14 @@
       "academic",
       "verb"
     ],
-    "tier": "core"
+    "tier": "core",
+    "pos": "v. 动词"
   },
   {
     "id": 244,
     "word": "exceed",
     "spelling": "E-X-C-E-E-D",
-    "phonetic": "",
+    "phonetic": "/ɪkˈsid/",
     "gloss": "超过",
     "tip": "exceed expectations",
     "example": "Enrolment exceeded expectations.",
@@ -3506,13 +3751,14 @@
       "academic",
       "verb"
     ],
-    "tier": "high"
+    "tier": "high",
+    "pos": "v. 动词"
   },
   {
     "id": 245,
     "word": "exclude",
     "spelling": "E-X-C-L-U-D-E",
-    "phonetic": "",
+    "phonetic": "/ɪkˈsklud/",
     "gloss": "排除",
     "tip": "exclude outliers",
     "example": "Exclude incomplete responses.",
@@ -3521,13 +3767,14 @@
       "academic",
       "verb"
     ],
-    "tier": "core"
+    "tier": "core",
+    "pos": "v. 动词"
   },
   {
     "id": 246,
     "word": "expand",
     "spelling": "E-X-P-A-N-D",
-    "phonetic": "",
+    "phonetic": "/ɪkˈspænd/",
     "gloss": "扩大",
     "tip": "expand access",
     "example": "Expand access to journals.",
@@ -3536,13 +3783,14 @@
       "academic",
       "verb"
     ],
-    "tier": "core"
+    "tier": "core",
+    "pos": "v. 动词"
   },
   {
     "id": 247,
     "word": "expenditure",
     "spelling": "E-X-P-E-N-D-I-T-U-R-E",
-    "phonetic": "",
+    "phonetic": "/ɪkˈspɛndɪʧə/",
     "gloss": "支出",
     "tip": "public expenditure",
     "example": "Public expenditure on health rose.",
@@ -3550,13 +3798,14 @@
     "tags": [
       "econ"
     ],
-    "tier": "high"
+    "tier": "high",
+    "pos": "v. 动词"
   },
   {
     "id": 248,
     "word": "experiment",
     "spelling": "E-X-P-E-R-I-M-E-N-T",
-    "phonetic": "",
+    "phonetic": "/ɪkˈspɛrəmənt/",
     "gloss": "实验",
     "tip": "controlled experiment",
     "example": "Design a controlled experiment.",
@@ -3564,13 +3813,14 @@
     "tags": [
       "academic"
     ],
-    "tier": "core"
+    "tier": "core",
+    "pos": "n. 名词"
   },
   {
     "id": 249,
     "word": "explicit",
     "spelling": "E-X-P-L-I-C-I-T",
-    "phonetic": "",
+    "phonetic": "/ɪkˈsplɪsət/",
     "gloss": "明确的",
     "tip": "explicit instruction",
     "example": "Make the thesis explicit.",
@@ -3578,13 +3828,14 @@
     "tags": [
       "academic"
     ],
-    "tier": "high"
+    "tier": "high",
+    "pos": "adj. 形容词"
   },
   {
     "id": 250,
     "word": "export",
     "spelling": "E-X-P-O-R-T",
-    "phonetic": "",
+    "phonetic": "/ˈɛkspɔːt/",
     "gloss": "出口",
     "tip": "export growth",
     "example": "Export growth slowed.",
@@ -3592,13 +3843,14 @@
     "tags": [
       "econ"
     ],
-    "tier": "high"
+    "tier": "high",
+    "pos": "n. 名词"
   },
   {
     "id": 251,
     "word": "expose",
     "spelling": "E-X-P-O-S-E",
-    "phonetic": "",
+    "phonetic": "/ɪkˈspoʊz/",
     "gloss": "使接触；揭露",
     "tip": "expose to",
     "example": "Expose students to authentic materials.",
@@ -3607,13 +3859,14 @@
       "academic",
       "verb"
     ],
-    "tier": "high"
+    "tier": "high",
+    "pos": "v. 动词"
   },
   {
     "id": 252,
     "word": "extension",
     "spelling": "E-X-T-E-N-S-I-O-N",
-    "phonetic": "",
+    "phonetic": "/ɪkˈstɛnʃən/",
     "gloss": "延期",
     "tip": "request an extension",
     "example": "Request an extension early.",
@@ -3621,13 +3874,14 @@
     "tags": [
       "campus"
     ],
-    "tier": "core"
+    "tier": "core",
+    "pos": "n. 名词"
   },
   {
     "id": 253,
     "word": "extensive",
     "spelling": "E-X-T-E-N-S-I-V-E",
-    "phonetic": "",
+    "phonetic": "/ɪkˈstɛnsɪv/",
     "gloss": "广泛的",
     "tip": "extensive research",
     "example": "Extensive research supports the claim.",
@@ -3635,13 +3889,14 @@
     "tags": [
       "academic"
     ],
-    "tier": "core"
+    "tier": "core",
+    "pos": "adj. 形容词"
   },
   {
     "id": 254,
     "word": "extent",
     "spelling": "E-X-T-E-N-T",
-    "phonetic": "",
+    "phonetic": "/ɪkˈstɛnt/",
     "gloss": "程度",
     "tip": "to a large extent",
     "example": "To a large extent, results confirm it.",
@@ -3649,7 +3904,8 @@
     "tags": [
       "academic"
     ],
-    "tier": "core"
+    "tier": "core",
+    "pos": "n. 名词"
   },
   {
     "id": 255,
@@ -3664,13 +3920,14 @@
       "academic",
       "verb"
     ],
-    "tier": "core"
+    "tier": "core",
+    "pos": "v. 动词"
   },
   {
     "id": 256,
     "word": "factor",
     "spelling": "F-A-C-T-O-R",
-    "phonetic": "",
+    "phonetic": "/ˈfæktə/",
     "gloss": "因素",
     "tip": "key factor",
     "example": "Funding is a key factor.",
@@ -3678,13 +3935,14 @@
     "tags": [
       "academic"
     ],
-    "tier": "core"
+    "tier": "core",
+    "pos": "n. 名词"
   },
   {
     "id": 257,
     "word": "faculty",
     "spelling": "F-A-C-U-L-T-Y",
-    "phonetic": "",
+    "phonetic": "/ˈfækəlti/",
     "gloss": "学院；教员",
     "tip": "faculty meeting",
     "example": "The faculty approved reforms.",
@@ -3692,13 +3950,14 @@
     "tags": [
       "campus"
     ],
-    "tier": "core"
+    "tier": "core",
+    "pos": "n. 名词"
   },
   {
     "id": 258,
     "word": "feasible",
     "spelling": "F-E-A-S-I-B-L-E",
-    "phonetic": "",
+    "phonetic": "/ˈfizəbəl/",
     "gloss": "可行的",
     "tip": "feasible solution",
     "example": "Is the proposal feasible?",
@@ -3706,13 +3965,14 @@
     "tags": [
       "academic"
     ],
-    "tier": "high"
+    "tier": "high",
+    "pos": "adj. 形容词"
   },
   {
     "id": 259,
     "word": "feature",
     "spelling": "F-E-A-T-U-R-E",
-    "phonetic": "",
+    "phonetic": "/ˈfiʧə/",
     "gloss": "特征",
     "tip": "key feature",
     "example": "A key feature is open data.",
@@ -3720,13 +3980,14 @@
     "tags": [
       "academic"
     ],
-    "tier": "core"
+    "tier": "core",
+    "pos": "v. 动词"
   },
   {
     "id": 260,
     "word": "fee",
     "spelling": "F-E-E",
-    "phonetic": "",
+    "phonetic": "/fi/",
     "gloss": "费用",
     "tip": "application fee",
     "example": "Pay the application fee online.",
@@ -3734,13 +3995,14 @@
     "tags": [
       "campus"
     ],
-    "tier": "mid"
+    "tier": "mid",
+    "pos": "v. 动词"
   },
   {
     "id": 261,
     "word": "feedback",
     "spelling": "F-E-E-D-B-A-C-K",
-    "phonetic": "",
+    "phonetic": "/ˈfidˌbæk/",
     "gloss": "反馈",
     "tip": "constructive feedback",
     "example": "Seek feedback on your draft.",
@@ -3749,13 +4011,14 @@
       "campus",
       "academic"
     ],
-    "tier": "core"
+    "tier": "core",
+    "pos": "n. 名词"
   },
   {
     "id": 262,
     "word": "fieldwork",
     "spelling": "F-I-E-L-D-W-O-R-K",
-    "phonetic": "",
+    "phonetic": "/ˈfildˌwək/",
     "gloss": "田野调查",
     "tip": "conduct fieldwork",
     "example": "Fieldwork needs ethics clearance.",
@@ -3763,13 +4026,14 @@
     "tags": [
       "academic"
     ],
-    "tier": "high"
+    "tier": "high",
+    "pos": "n. 名词"
   },
   {
     "id": 263,
     "word": "figure",
     "spelling": "F-I-G-U-R-E",
-    "phonetic": "",
+    "phonetic": "/ˈfɪgjə/",
     "gloss": "图；数字",
     "tip": "as shown in Figure 1",
     "example": "As shown in Figure 1, sales rose.",
@@ -3777,13 +4041,14 @@
     "tags": [
       "academic"
     ],
-    "tier": "core"
+    "tier": "core",
+    "pos": "v. 动词"
   },
   {
     "id": 264,
     "word": "findings",
     "spelling": "F-I-N-D-I-N-G-S",
-    "phonetic": "",
+    "phonetic": "/ˈfaɪndɪŋz/",
     "gloss": "研究发现",
     "tip": "research findings",
     "example": "Findings challenge prior claims.",
@@ -3791,13 +4056,14 @@
     "tags": [
       "academic"
     ],
-    "tier": "core"
+    "tier": "core",
+    "pos": "n. 名词"
   },
   {
     "id": 265,
     "word": "flexible",
     "spelling": "F-L-E-X-I-B-L-E",
-    "phonetic": "",
+    "phonetic": "/ˈflɛksəbəl/",
     "gloss": "灵活的",
     "tip": "flexible schedule",
     "example": "Offer a flexible schedule.",
@@ -3806,13 +4072,14 @@
       "academic",
       "campus"
     ],
-    "tier": "high"
+    "tier": "high",
+    "pos": "adj. 形容词"
   },
   {
     "id": 266,
     "word": "fluctuate",
     "spelling": "F-L-U-C-T-U-A-T-E",
-    "phonetic": "",
+    "phonetic": "/ˈfləkʧəˌweɪt/",
     "gloss": "波动",
     "tip": "fluctuate over time",
     "example": "Prices fluctuate seasonally.",
@@ -3821,13 +4088,14 @@
       "academic",
       "verb"
     ],
-    "tier": "high"
+    "tier": "high",
+    "pos": "v. 动词"
   },
   {
     "id": 267,
     "word": "fluency",
     "spelling": "F-L-U-E-N-C-Y",
-    "phonetic": "",
+    "phonetic": "/ˈfluənsi/",
     "gloss": "流利度",
     "tip": "speaking fluency",
     "example": "Fluency matters in RS and RA.",
@@ -3835,13 +4103,14 @@
     "tags": [
       "academic"
     ],
-    "tier": "core"
+    "tier": "core",
+    "pos": "n. 名词"
   },
   {
     "id": 268,
     "word": "focus",
     "spelling": "F-O-C-U-S",
-    "phonetic": "",
+    "phonetic": "/ˈfoʊkɪs/",
     "gloss": "焦点；专注",
     "tip": "focus on",
     "example": "Focus on high-frequency words.",
@@ -3849,13 +4118,14 @@
     "tags": [
       "academic"
     ],
-    "tier": "core"
+    "tier": "core",
+    "pos": "n. 名词"
   },
   {
     "id": 269,
     "word": "footnote",
     "spelling": "F-O-O-T-N-O-T-E",
-    "phonetic": "",
+    "phonetic": "/ˈfʊtˌnoʊt/",
     "gloss": "脚注",
     "tip": "add a footnote",
     "example": "Add a footnote for the source.",
@@ -3863,13 +4133,14 @@
     "tags": [
       "academic"
     ],
-    "tier": "mid"
+    "tier": "mid",
+    "pos": "v. 动词"
   },
   {
     "id": 270,
     "word": "forecast",
     "spelling": "F-O-R-E-C-A-S-T",
-    "phonetic": "",
+    "phonetic": "/ˈfɔːˌkæst/",
     "gloss": "预报；预测",
     "tip": "economic forecast",
     "example": "The forecast remains uncertain.",
@@ -3877,13 +4148,14 @@
     "tags": [
       "academic"
     ],
-    "tier": "high"
+    "tier": "high",
+    "pos": "n. 名词"
   },
   {
     "id": 271,
     "word": "framework",
     "spelling": "F-R-A-M-E-W-O-R-K",
-    "phonetic": "",
+    "phonetic": "/ˈfreɪmˌwək/",
     "gloss": "框架",
     "tip": "theoretical framework",
     "example": "Use a clear framework.",
@@ -3891,13 +4163,14 @@
     "tags": [
       "academic"
     ],
-    "tier": "core"
+    "tier": "core",
+    "pos": "n. 名词"
   },
   {
     "id": 272,
     "word": "frequency",
     "spelling": "F-R-E-Q-U-E-N-C-Y",
-    "phonetic": "",
+    "phonetic": "/ˈfrikwənsi/",
     "gloss": "频率",
     "tip": "high frequency",
     "example": "High-frequency words recur often.",
@@ -3905,13 +4178,14 @@
     "tags": [
       "academic"
     ],
-    "tier": "core"
+    "tier": "core",
+    "pos": "n. 名词"
   },
   {
     "id": 273,
     "word": "frequently",
     "spelling": "F-R-E-Q-U-E-N-T-L-Y",
-    "phonetic": "",
+    "phonetic": "/ˈfrikwɛntli/",
     "gloss": "频繁地",
     "tip": "occur frequently",
     "example": "Errors occur frequently under stress.",
@@ -3919,13 +4193,14 @@
     "tags": [
       "academic"
     ],
-    "tier": "core"
+    "tier": "core",
+    "pos": "adv. 副词"
   },
   {
     "id": 274,
     "word": "function",
     "spelling": "F-U-N-C-T-I-O-N",
-    "phonetic": "",
+    "phonetic": "/ˈfəŋkʃən/",
     "gloss": "功能",
     "tip": "serve a function",
     "example": "Peer review serves a quality function.",
@@ -3933,13 +4208,14 @@
     "tags": [
       "academic"
     ],
-    "tier": "core"
+    "tier": "core",
+    "pos": "n. 名词"
   },
   {
     "id": 275,
     "word": "fundamental",
     "spelling": "F-U-N-D-A-M-E-N-T-A-L",
-    "phonetic": "",
+    "phonetic": "/ˌfəndəˈmɛnəl/",
     "gloss": "根本的",
     "tip": "fundamental principle",
     "example": "Fundamental rights must be protected.",
@@ -3947,13 +4223,14 @@
     "tags": [
       "academic"
     ],
-    "tier": "core"
+    "tier": "core",
+    "pos": "adj. 形容词"
   },
   {
     "id": 276,
     "word": "funding",
     "spelling": "F-U-N-D-I-N-G",
-    "phonetic": "",
+    "phonetic": "/ˈfəndɪŋ/",
     "gloss": "经费",
     "tip": "research funding",
     "example": "Research funding is competitive.",
@@ -3962,13 +4239,14 @@
       "academic",
       "campus"
     ],
-    "tier": "core"
+    "tier": "core",
+    "pos": "n. 名词"
   },
   {
     "id": 277,
     "word": "furthermore",
     "spelling": "F-U-R-T-H-E-R-M-O-R-E",
-    "phonetic": "",
+    "phonetic": "/ˈfəðəˌmɔː/",
     "gloss": "此外",
     "tip": "essay linker",
     "example": "Furthermore, data support the claim.",
@@ -3976,13 +4254,14 @@
     "tags": [
       "academic"
     ],
-    "tier": "core"
+    "tier": "core",
+    "pos": "adv. 副词"
   },
   {
     "id": 278,
     "word": "generate",
     "spelling": "G-E-N-E-R-A-T-E",
-    "phonetic": "",
+    "phonetic": "/ˈʤɛnəˌeɪt/",
     "gloss": "产生",
     "tip": "generate predictions",
     "example": "The model generates predictions.",
@@ -3991,13 +4270,14 @@
       "academic",
       "verb"
     ],
-    "tier": "core"
+    "tier": "core",
+    "pos": "v. 动词"
   },
   {
     "id": 279,
     "word": "global",
     "spelling": "G-L-O-B-A-L",
-    "phonetic": "",
+    "phonetic": "/ˈgloʊbəl/",
     "gloss": "全球的",
     "tip": "global trade",
     "example": "Global trade affects local markets.",
@@ -4005,13 +4285,14 @@
     "tags": [
       "academic"
     ],
-    "tier": "core"
+    "tier": "core",
+    "pos": "adj. 形容词"
   },
   {
     "id": 280,
     "word": "goal",
     "spelling": "G-O-A-L",
-    "phonetic": "",
+    "phonetic": "/goʊl/",
     "gloss": "目标",
     "tip": "long-term goal",
     "example": "Set a realistic PTE goal.",
@@ -4019,13 +4300,14 @@
     "tags": [
       "academic"
     ],
-    "tier": "core"
+    "tier": "core",
+    "pos": "n. 名词"
   },
   {
     "id": 281,
     "word": "governance",
     "spelling": "G-O-V-E-R-N-A-N-C-E",
-    "phonetic": "",
+    "phonetic": "/ˈgəvənəns/",
     "gloss": "治理",
     "tip": "university governance",
     "example": "Good governance builds trust.",
@@ -4033,13 +4315,14 @@
     "tags": [
       "academic"
     ],
-    "tier": "high"
+    "tier": "high",
+    "pos": "n. 名词"
   },
   {
     "id": 282,
     "word": "grade",
     "spelling": "G-R-A-D-E",
-    "phonetic": "",
+    "phonetic": "/greɪd/",
     "gloss": "成绩",
     "tip": "final grade",
     "example": "Your final grade is online.",
@@ -4047,13 +4330,14 @@
     "tags": [
       "campus"
     ],
-    "tier": "core"
+    "tier": "core",
+    "pos": "v. 动词"
   },
   {
     "id": 283,
     "word": "gradual",
     "spelling": "G-R-A-D-U-A-L",
-    "phonetic": "",
+    "phonetic": "/ˈgræʤuəl/",
     "gloss": "逐渐的",
     "tip": "gradual improvement",
     "example": "Expect gradual improvement.",
@@ -4061,13 +4345,14 @@
     "tags": [
       "academic"
     ],
-    "tier": "core"
+    "tier": "core",
+    "pos": "adj. 形容词"
   },
   {
     "id": 284,
     "word": "gradually",
     "spelling": "G-R-A-D-U-A-L-L-Y",
-    "phonetic": "",
+    "phonetic": "/ˈgræʤuəli/",
     "gloss": "逐渐地",
     "tip": "gradually improve",
     "example": "Skills gradually improve.",
@@ -4075,13 +4360,14 @@
     "tags": [
       "academic"
     ],
-    "tier": "core"
+    "tier": "core",
+    "pos": "adv. 副词"
   },
   {
     "id": 285,
     "word": "graduate",
     "spelling": "G-R-A-D-U-A-T-E",
-    "phonetic": "",
+    "phonetic": "/ˈgræʤəˌweɪt/",
     "gloss": "毕业生；毕业",
     "tip": "graduate school",
     "example": "She will graduate in June.",
@@ -4089,13 +4375,14 @@
     "tags": [
       "campus"
     ],
-    "tier": "core"
+    "tier": "core",
+    "pos": "v. 动词"
   },
   {
     "id": 286,
     "word": "grant",
     "spelling": "G-R-A-N-T",
-    "phonetic": "",
+    "phonetic": "/grænt/",
     "gloss": "拨款；准予",
     "tip": "research grant",
     "example": "She received a research grant.",
@@ -4104,13 +4391,14 @@
       "academic",
       "campus"
     ],
-    "tier": "core"
+    "tier": "core",
+    "pos": "n. 名词"
   },
   {
     "id": 287,
     "word": "graph",
     "spelling": "G-R-A-P-H",
-    "phonetic": "",
+    "phonetic": "/græf/",
     "gloss": "曲线图",
     "tip": "line graph",
     "example": "The line graph shows growth.",
@@ -4118,13 +4406,14 @@
     "tags": [
       "academic"
     ],
-    "tier": "core"
+    "tier": "core",
+    "pos": "n. 名词"
   },
   {
     "id": 288,
     "word": "growth",
     "spelling": "G-R-O-W-T-H",
-    "phonetic": "",
+    "phonetic": "/groʊθ/",
     "gloss": "增长",
     "tip": "economic growth",
     "example": "Enrolment growth slowed.",
@@ -4132,13 +4421,14 @@
     "tags": [
       "academic"
     ],
-    "tier": "core"
+    "tier": "core",
+    "pos": "n. 名词"
   },
   {
     "id": 289,
     "word": "guideline",
     "spelling": "G-U-I-D-E-L-I-N-E",
-    "phonetic": "",
+    "phonetic": "/ˈgaɪˌdlaɪn/",
     "gloss": "指南",
     "tip": "ethics guideline",
     "example": "Follow ethics guidelines.",
@@ -4147,13 +4437,14 @@
       "academic",
       "campus"
     ],
-    "tier": "core"
+    "tier": "core",
+    "pos": "v. 动词"
   },
   {
     "id": 290,
     "word": "habit",
     "spelling": "H-A-B-I-T",
-    "phonetic": "",
+    "phonetic": "/ˈhæbət/",
     "gloss": "习惯",
     "tip": "study habit",
     "example": "Build a daily listening habit.",
@@ -4161,13 +4452,14 @@
     "tags": [
       "campus"
     ],
-    "tier": "core"
+    "tier": "core",
+    "pos": "n. 名词"
   },
   {
     "id": 291,
     "word": "handbook",
     "spelling": "H-A-N-D-B-O-O-K",
-    "phonetic": "",
+    "phonetic": "/ˈhændˌbʊk/",
     "gloss": "手册",
     "tip": "student handbook",
     "example": "Read the student handbook.",
@@ -4175,13 +4467,14 @@
     "tags": [
       "campus"
     ],
-    "tier": "mid"
+    "tier": "mid",
+    "pos": "n. 名词"
   },
   {
     "id": 292,
     "word": "handout",
     "spelling": "H-A-N-D-O-U-T",
-    "phonetic": "",
+    "phonetic": "/ˈhænˌdaʊt/",
     "gloss": "讲义",
     "tip": "lecture handout",
     "example": "Collect the lecture handout.",
@@ -4189,13 +4482,14 @@
     "tags": [
       "campus"
     ],
-    "tier": "mid"
+    "tier": "mid",
+    "pos": "n. 名词"
   },
   {
     "id": 293,
     "word": "health",
     "spelling": "H-E-A-L-T-H",
-    "phonetic": "",
+    "phonetic": "/hɛlθ/",
     "gloss": "健康",
     "tip": "public health",
     "example": "Public health improved slowly.",
@@ -4203,13 +4497,14 @@
     "tags": [
       "academic"
     ],
-    "tier": "core"
+    "tier": "core",
+    "pos": "n. 名词"
   },
   {
     "id": 294,
     "word": "hence",
     "spelling": "H-E-N-C-E",
-    "phonetic": "",
+    "phonetic": "/hɛns/",
     "gloss": "因此",
     "tip": "hence the need",
     "example": "Hence the need for caution.",
@@ -4217,13 +4512,14 @@
     "tags": [
       "academic"
     ],
-    "tier": "high"
+    "tier": "high",
+    "pos": "n. 名词"
   },
   {
     "id": 295,
     "word": "highlight",
     "spelling": "H-I-G-H-L-I-G-H-T",
-    "phonetic": "",
+    "phonetic": "/ˈhaɪˌlaɪt/",
     "gloss": "突出；强调",
     "tip": "highlight the issue",
     "example": "The report highlights gaps.",
@@ -4232,13 +4528,14 @@
       "academic",
       "verb"
     ],
-    "tier": "core"
+    "tier": "core",
+    "pos": "v. 动词"
   },
   {
     "id": 296,
     "word": "hinder",
     "spelling": "H-I-N-D-E-R",
-    "phonetic": "",
+    "phonetic": "/ˈhɪndə/",
     "gloss": "阻碍",
     "tip": "hinder progress",
     "example": "Noise can hinder concentration.",
@@ -4247,13 +4544,14 @@
       "academic",
       "verb"
     ],
-    "tier": "high"
+    "tier": "high",
+    "pos": "v. 动词"
   },
   {
     "id": 297,
     "word": "housing",
     "spelling": "H-O-U-S-I-N-G",
-    "phonetic": "",
+    "phonetic": "/ˈhaʊzɪŋ/",
     "gloss": "住房",
     "tip": "student housing",
     "example": "Student housing is limited.",
@@ -4262,13 +4560,14 @@
       "campus",
       "econ"
     ],
-    "tier": "core"
+    "tier": "core",
+    "pos": "n. 名词"
   },
   {
     "id": 298,
     "word": "however",
     "spelling": "H-O-W-E-V-E-R",
-    "phonetic": "",
+    "phonetic": "/ˌhaʊˈɛvə/",
     "gloss": "然而",
     "tip": "essay linker",
     "example": "However, funding is limited.",
@@ -4276,7 +4575,8 @@
     "tags": [
       "academic"
     ],
-    "tier": "core"
+    "tier": "core",
+    "pos": "adv. 副词"
   },
   {
     "id": 299,
@@ -4290,13 +4590,14 @@
     "tags": [
       "academic"
     ],
-    "tier": "core"
+    "tier": "core",
+    "pos": "n. 名词"
   },
   {
     "id": 300,
     "word": "identical",
     "spelling": "I-D-E-N-T-I-C-A-L",
-    "phonetic": "",
+    "phonetic": "/aɪˈdɛntɪkəl/",
     "gloss": "相同的",
     "tip": "identical to",
     "example": "The copies were not identical.",
@@ -4304,13 +4605,14 @@
     "tags": [
       "academic"
     ],
-    "tier": "high"
+    "tier": "high",
+    "pos": "adj. 形容词"
   },
   {
     "id": 301,
     "word": "identify",
     "spelling": "I-D-E-N-T-I-F-Y",
-    "phonetic": "",
+    "phonetic": "/aɪˈdɛntəˌfaɪ/",
     "gloss": "识别；确定",
     "tip": "identify the gap",
     "example": "Identify the research gap.",
@@ -4319,13 +4621,14 @@
       "academic",
       "verb"
     ],
-    "tier": "core"
+    "tier": "core",
+    "pos": "v. 动词"
   },
   {
     "id": 302,
     "word": "identity",
     "spelling": "I-D-E-N-T-I-T-Y",
-    "phonetic": "",
+    "phonetic": "/aɪˈdɛntəˌti/",
     "gloss": "身份；认同",
     "tip": "cultural identity",
     "example": "Language shapes identity.",
@@ -4333,13 +4636,14 @@
     "tags": [
       "academic"
     ],
-    "tier": "core"
+    "tier": "core",
+    "pos": "n. 名词"
   },
   {
     "id": 303,
     "word": "illustrate",
     "spelling": "I-L-L-U-S-T-R-A-T-E",
-    "phonetic": "",
+    "phonetic": "/ˈɪləˌstreɪt/",
     "gloss": "说明；举例",
     "tip": "illustrate with",
     "example": "Charts illustrate the trend.",
@@ -4348,13 +4652,14 @@
       "academic",
       "verb"
     ],
-    "tier": "core"
+    "tier": "core",
+    "pos": "v. 动词"
   },
   {
     "id": 304,
     "word": "immediate",
     "spelling": "I-M-M-E-D-I-A-T-E",
-    "phonetic": "",
+    "phonetic": "/ˌɪˈmiˌdiət/",
     "gloss": "立即的",
     "tip": "immediate feedback",
     "example": "Immediate feedback aids learning.",
@@ -4362,13 +4667,14 @@
     "tags": [
       "academic"
     ],
-    "tier": "core"
+    "tier": "core",
+    "pos": "adj. 形容词"
   },
   {
     "id": 305,
     "word": "immigration",
     "spelling": "I-M-M-I-G-R-A-T-I-O-N",
-    "phonetic": "",
+    "phonetic": "/ˌɪməˈgreɪʃən/",
     "gloss": "移民入境",
     "tip": "immigration policy",
     "example": "Immigration policy affects enrolment.",
@@ -4376,13 +4682,14 @@
     "tags": [
       "academic"
     ],
-    "tier": "high"
+    "tier": "high",
+    "pos": "n. 名词"
   },
   {
     "id": 306,
     "word": "impact",
     "spelling": "I-M-P-A-C-T",
-    "phonetic": "",
+    "phonetic": "/ˌɪmˈpækt/",
     "gloss": "影响",
     "tip": "have an impact on",
     "example": "Climate impacts agriculture.",
@@ -4390,13 +4697,14 @@
     "tags": [
       "academic"
     ],
-    "tier": "core"
+    "tier": "core",
+    "pos": "v. 动词"
   },
   {
     "id": 307,
     "word": "implement",
     "spelling": "I-M-P-L-E-M-E-N-T",
-    "phonetic": "",
+    "phonetic": "/ˈɪmpləmənt/",
     "gloss": "实施",
     "tip": "implement a policy",
     "example": "The university implemented guidelines.",
@@ -4405,13 +4713,14 @@
       "academic",
       "verb"
     ],
-    "tier": "core"
+    "tier": "core",
+    "pos": "v. 动词"
   },
   {
     "id": 308,
     "word": "implication",
     "spelling": "I-M-P-L-I-C-A-T-I-O-N",
-    "phonetic": "",
+    "phonetic": "/ˌɪmpləˈkeɪʃən/",
     "gloss": "含义；影响",
     "tip": "policy implications",
     "example": "Findings have clear implications.",
@@ -4419,13 +4728,14 @@
     "tags": [
       "academic"
     ],
-    "tier": "core"
+    "tier": "core",
+    "pos": "n. 名词"
   },
   {
     "id": 309,
     "word": "implicit",
     "spelling": "I-M-P-L-I-C-I-T",
-    "phonetic": "",
+    "phonetic": "/ˌɪmˈplɪsət/",
     "gloss": "隐含的",
     "tip": "implicit bias",
     "example": "Implicit assumptions shape design.",
@@ -4433,13 +4743,14 @@
     "tags": [
       "academic"
     ],
-    "tier": "high"
+    "tier": "high",
+    "pos": "adj. 形容词"
   },
   {
     "id": 310,
     "word": "imply",
     "spelling": "I-M-P-L-Y",
-    "phonetic": "",
+    "phonetic": "/ˌɪmˈplaɪ/",
     "gloss": "暗示；意味着",
     "tip": "imply that",
     "example": "Silence does not imply consent.",
@@ -4448,13 +4759,14 @@
       "academic",
       "verb"
     ],
-    "tier": "core"
+    "tier": "core",
+    "pos": "v. 动词"
   },
   {
     "id": 311,
     "word": "import",
     "spelling": "I-M-P-O-R-T",
-    "phonetic": "",
+    "phonetic": "/ˌɪmˈpɔːt/",
     "gloss": "进口",
     "tip": "import volume",
     "example": "Import volumes rose.",
@@ -4462,13 +4774,14 @@
     "tags": [
       "econ"
     ],
-    "tier": "high"
+    "tier": "high",
+    "pos": "n. 名词"
   },
   {
     "id": 312,
     "word": "improvement",
     "spelling": "I-M-P-R-O-V-E-M-E-N-T",
-    "phonetic": "",
+    "phonetic": "/ˌɪmˈpruvmənt/",
     "gloss": "改善",
     "tip": "continuous improvement",
     "example": "Seek continuous improvement.",
@@ -4476,13 +4789,14 @@
     "tags": [
       "academic"
     ],
-    "tier": "core"
+    "tier": "core",
+    "pos": "n. 名词"
   },
   {
     "id": 313,
     "word": "incentive",
     "spelling": "I-N-C-E-N-T-I-V-E",
-    "phonetic": "",
+    "phonetic": "/ˌɪnˈsɛnɪv/",
     "gloss": "激励",
     "tip": "financial incentive",
     "example": "Incentives encourage participation.",
@@ -4491,13 +4805,14 @@
       "academic",
       "econ"
     ],
-    "tier": "core"
+    "tier": "core",
+    "pos": "adj. 形容词"
   },
   {
     "id": 314,
     "word": "include",
     "spelling": "I-N-C-L-U-D-E",
-    "phonetic": "",
+    "phonetic": "/ˌɪnˈklud/",
     "gloss": "包括",
     "tip": "include examples",
     "example": "Include clear examples.",
@@ -4506,13 +4821,14 @@
       "academic",
       "verb"
     ],
-    "tier": "core"
+    "tier": "core",
+    "pos": "v. 动词"
   },
   {
     "id": 315,
     "word": "inclusion",
     "spelling": "I-N-C-L-U-S-I-O-N",
-    "phonetic": "",
+    "phonetic": "/ˌɪnˈkluʒən/",
     "gloss": "包容",
     "tip": "social inclusion",
     "example": "Promote inclusion in classrooms.",
@@ -4521,13 +4837,14 @@
       "academic",
       "campus"
     ],
-    "tier": "high"
+    "tier": "high",
+    "pos": "n. 名词"
   },
   {
     "id": 316,
     "word": "income",
     "spelling": "I-N-C-O-M-E",
-    "phonetic": "",
+    "phonetic": "/ˈɪnˌkəm/",
     "gloss": "收入",
     "tip": "household income",
     "example": "Household income grew slowly.",
@@ -4535,13 +4852,14 @@
     "tags": [
       "econ"
     ],
-    "tier": "core"
+    "tier": "core",
+    "pos": "v. 动词"
   },
   {
     "id": 317,
     "word": "incorporate",
     "spelling": "I-N-C-O-R-P-O-R-A-T-E",
-    "phonetic": "",
+    "phonetic": "/ˌɪnˈkɔːpəˌeɪt/",
     "gloss": "纳入",
     "tip": "incorporate feedback",
     "example": "Incorporate tutor feedback.",
@@ -4550,13 +4868,14 @@
       "academic",
       "verb"
     ],
-    "tier": "high"
+    "tier": "high",
+    "pos": "v. 动词"
   },
   {
     "id": 318,
     "word": "increasingly",
     "spelling": "I-N-C-R-E-A-S-I-N-G-L-Y",
-    "phonetic": "",
+    "phonetic": "/ˌɪnˈkrisɪŋgli/",
     "gloss": "日益",
     "tip": "increasingly common",
     "example": "Online exams are increasingly common.",
@@ -4564,13 +4883,14 @@
     "tags": [
       "academic"
     ],
-    "tier": "core"
+    "tier": "core",
+    "pos": "adv. 副词"
   },
   {
     "id": 319,
     "word": "independent",
     "spelling": "I-N-D-E-P-E-N-D-E-N-T",
-    "phonetic": "",
+    "phonetic": "/ˌɪndɪˈpɛndənt/",
     "gloss": "独立的",
     "tip": "independent variable",
     "example": "Control the independent variable.",
@@ -4578,13 +4898,14 @@
     "tags": [
       "academic"
     ],
-    "tier": "core"
+    "tier": "core",
+    "pos": "adj. 形容词"
   },
   {
     "id": 320,
     "word": "indicate",
     "spelling": "I-N-D-I-C-A-T-E",
-    "phonetic": "",
+    "phonetic": "/ˈɪndəˌkeɪt/",
     "gloss": "表明",
     "tip": "indicate that",
     "example": "Results indicate rising demand.",
@@ -4593,13 +4914,14 @@
       "academic",
       "verb"
     ],
-    "tier": "core"
+    "tier": "core",
+    "pos": "v. 动词"
   },
   {
     "id": 321,
     "word": "industry",
     "spelling": "I-N-D-U-S-T-R-Y",
-    "phonetic": "",
+    "phonetic": "/ˈɪndəstri/",
     "gloss": "产业",
     "tip": "manufacturing industry",
     "example": "Industry partners fund labs.",
@@ -4607,13 +4929,14 @@
     "tags": [
       "econ"
     ],
-    "tier": "core"
+    "tier": "core",
+    "pos": "n. 名词"
   },
   {
     "id": 322,
     "word": "inequality",
     "spelling": "I-N-E-Q-U-A-L-I-T-Y",
-    "phonetic": "",
+    "phonetic": "/ˌɪnɪkˈwɑləti/",
     "gloss": "不平等",
     "tip": "income inequality",
     "example": "Income inequality widened.",
@@ -4622,13 +4945,14 @@
       "academic",
       "econ"
     ],
-    "tier": "core"
+    "tier": "core",
+    "pos": "n. 名词"
   },
   {
     "id": 323,
     "word": "inevitable",
     "spelling": "I-N-E-V-I-T-A-B-L-E",
-    "phonetic": "",
+    "phonetic": "/ˌɪˈnɛvətəbəl/",
     "gloss": "不可避免的",
     "tip": "inevitable delay",
     "example": "Some delay is inevitable.",
@@ -4636,13 +4960,14 @@
     "tags": [
       "academic"
     ],
-    "tier": "high"
+    "tier": "high",
+    "pos": "adj. 形容词"
   },
   {
     "id": 324,
     "word": "infer",
     "spelling": "I-N-F-E-R",
-    "phonetic": "",
+    "phonetic": "/ˌɪnˈfə/",
     "gloss": "推断",
     "tip": "infer from",
     "example": "What can we infer?",
@@ -4651,7 +4976,8 @@
       "academic",
       "verb"
     ],
-    "tier": "core"
+    "tier": "core",
+    "pos": "v. 动词"
   },
   {
     "id": 325,
@@ -4666,13 +4992,14 @@
       "academic",
       "econ"
     ],
-    "tier": "core"
+    "tier": "core",
+    "pos": "n. 名词"
   },
   {
     "id": 326,
     "word": "inform",
     "spelling": "I-N-F-O-R-M",
-    "phonetic": "",
+    "phonetic": "/ˌɪnˈfɔːm/",
     "gloss": "告知",
     "tip": "inform students",
     "example": "Inform students of the change.",
@@ -4681,13 +5008,14 @@
       "campus",
       "verb"
     ],
-    "tier": "core"
+    "tier": "core",
+    "pos": "v. 动词"
   },
   {
     "id": 327,
     "word": "information",
     "spelling": "I-N-F-O-R-M-A-T-I-O-N",
-    "phonetic": "",
+    "phonetic": "/ˌɪnˌfɔːˈmeɪʃən/",
     "gloss": "信息",
     "tip": "information literacy",
     "example": "Information literacy reduces bias.",
@@ -4695,7 +5023,8 @@
     "tags": [
       "academic"
     ],
-    "tier": "core"
+    "tier": "core",
+    "pos": "n. 名词"
   },
   {
     "id": 328,
@@ -4710,13 +5039,14 @@
       "academic",
       "econ"
     ],
-    "tier": "core"
+    "tier": "core",
+    "pos": "n. 名词"
   },
   {
     "id": 329,
     "word": "inhibit",
     "spelling": "I-N-H-I-B-I-T",
-    "phonetic": "",
+    "phonetic": "/ˌɪnˈhɪbət/",
     "gloss": "抑制",
     "tip": "inhibit growth",
     "example": "Fear inhibits participation.",
@@ -4725,13 +5055,14 @@
       "academic",
       "verb"
     ],
-    "tier": "high"
+    "tier": "high",
+    "pos": "v. 动词"
   },
   {
     "id": 330,
     "word": "initial",
     "spelling": "I-N-I-T-I-A-L",
-    "phonetic": "",
+    "phonetic": "/ˌɪˈnɪʃəl/",
     "gloss": "最初的",
     "tip": "initial findings",
     "example": "Initial findings were promising.",
@@ -4739,13 +5070,14 @@
     "tags": [
       "academic"
     ],
-    "tier": "core"
+    "tier": "core",
+    "pos": "adj. 形容词"
   },
   {
     "id": 331,
     "word": "initially",
     "spelling": "I-N-I-T-I-A-L-L-Y",
-    "phonetic": "",
+    "phonetic": "/ˌɪˈnɪʃəli/",
     "gloss": "最初",
     "tip": "initially",
     "example": "Initially, results were unclear.",
@@ -4753,13 +5085,14 @@
     "tags": [
       "academic"
     ],
-    "tier": "core"
+    "tier": "core",
+    "pos": "adv. 副词"
   },
   {
     "id": 332,
     "word": "innovation",
     "spelling": "I-N-N-O-V-A-T-I-O-N",
-    "phonetic": "",
+    "phonetic": "/ˌɪnəˈveɪʃən/",
     "gloss": "创新",
     "tip": "technological innovation",
     "example": "Innovation drives productivity.",
@@ -4767,13 +5100,14 @@
     "tags": [
       "academic"
     ],
-    "tier": "core"
+    "tier": "core",
+    "pos": "n. 名词"
   },
   {
     "id": 333,
     "word": "innovative",
     "spelling": "I-N-N-O-V-A-T-I-V-E",
-    "phonetic": "",
+    "phonetic": "/ˈɪnəˌveɪtɪv/",
     "gloss": "创新的",
     "tip": "innovative approach",
     "example": "An innovative approach was piloted.",
@@ -4781,13 +5115,14 @@
     "tags": [
       "academic"
     ],
-    "tier": "core"
+    "tier": "core",
+    "pos": "adj. 形容词"
   },
   {
     "id": 334,
     "word": "institution",
     "spelling": "I-N-S-T-I-T-U-T-I-O-N",
-    "phonetic": "",
+    "phonetic": "/ˌɪnstɪˈtuʃən/",
     "gloss": "机构",
     "tip": "higher education institution",
     "example": "The institution ranked highly.",
@@ -4796,13 +5131,14 @@
       "academic",
       "campus"
     ],
-    "tier": "core"
+    "tier": "core",
+    "pos": "n. 名词"
   },
   {
     "id": 335,
     "word": "instruction",
     "spelling": "I-N-S-T-R-U-C-T-I-O-N",
-    "phonetic": "",
+    "phonetic": "/ˌɪnˈstrəkʃən/",
     "gloss": "说明；教学",
     "tip": "clear instruction",
     "example": "Follow the test instructions.",
@@ -4810,13 +5146,14 @@
     "tags": [
       "campus"
     ],
-    "tier": "core"
+    "tier": "core",
+    "pos": "n. 名词"
   },
   {
     "id": 336,
     "word": "instructor",
     "spelling": "I-N-S-T-R-U-C-T-O-R",
-    "phonetic": "",
+    "phonetic": "/ˌɪnˈstrəktə/",
     "gloss": "教师",
     "tip": "course instructor",
     "example": "Email the instructor for help.",
@@ -4824,13 +5161,14 @@
     "tags": [
       "campus"
     ],
-    "tier": "mid"
+    "tier": "mid",
+    "pos": "n. 名词"
   },
   {
     "id": 337,
     "word": "insufficient",
     "spelling": "I-N-S-U-F-F-I-C-I-E-N-T",
-    "phonetic": "",
+    "phonetic": "/ˌɪnsəˈfɪʃənt/",
     "gloss": "不足的",
     "tip": "insufficient data",
     "example": "Insufficient data limit conclusions.",
@@ -4838,13 +5176,14 @@
     "tags": [
       "academic"
     ],
-    "tier": "high"
+    "tier": "high",
+    "pos": "adj. 形容词"
   },
   {
     "id": 338,
     "word": "integrate",
     "spelling": "I-N-T-E-G-R-A-T-E",
-    "phonetic": "",
+    "phonetic": "/ˈɪnəˌgreɪt/",
     "gloss": "整合",
     "tip": "integrate into",
     "example": "Integrate sources into arguments.",
@@ -4853,13 +5192,14 @@
       "academic",
       "verb"
     ],
-    "tier": "core"
+    "tier": "core",
+    "pos": "v. 动词"
   },
   {
     "id": 339,
     "word": "integrity",
     "spelling": "I-N-T-E-G-R-I-T-Y",
-    "phonetic": "",
+    "phonetic": "/ˌɪnˈtɛgrəti/",
     "gloss": "诚信",
     "tip": "academic integrity",
     "example": "Uphold academic integrity.",
@@ -4868,13 +5208,14 @@
       "academic",
       "campus"
     ],
-    "tier": "core"
+    "tier": "core",
+    "pos": "n. 名词"
   },
   {
     "id": 340,
     "word": "intensive",
     "spelling": "I-N-T-E-N-S-I-V-E",
-    "phonetic": "",
+    "phonetic": "/ˌɪnˈtɛnsɪv/",
     "gloss": "密集的",
     "tip": "intensive course",
     "example": "An intensive course runs six weeks.",
@@ -4882,13 +5223,14 @@
     "tags": [
       "campus"
     ],
-    "tier": "high"
+    "tier": "high",
+    "pos": "adj. 形容词"
   },
   {
     "id": 341,
     "word": "interaction",
     "spelling": "I-N-T-E-R-A-C-T-I-O-N",
-    "phonetic": "",
+    "phonetic": "/ˌɪnəˈækʃən/",
     "gloss": "互动",
     "tip": "social interaction",
     "example": "Peer interaction aids learning.",
@@ -4896,13 +5238,14 @@
     "tags": [
       "academic"
     ],
-    "tier": "core"
+    "tier": "core",
+    "pos": "n. 名词"
   },
   {
     "id": 342,
     "word": "interdisciplinary",
     "spelling": "I-N-T-E-R-D-I-S-C-I-P-L-I-N-A-R-Y",
-    "phonetic": "",
+    "phonetic": "/ˌɪntəˈdɪsəpləˌnɛri/",
     "gloss": "跨学科的",
     "tip": "interdisciplinary research",
     "example": "Interdisciplinary teams publish more.",
@@ -4910,13 +5253,14 @@
     "tags": [
       "academic"
     ],
-    "tier": "high"
+    "tier": "high",
+    "pos": "adj. 形容词"
   },
   {
     "id": 343,
     "word": "international",
     "spelling": "I-N-T-E-R-N-A-T-I-O-N-A-L",
-    "phonetic": "",
+    "phonetic": "/ˌɪnəˈnæʃənɑl/",
     "gloss": "国际的",
     "tip": "international students",
     "example": "International students need visas.",
@@ -4924,13 +5268,14 @@
     "tags": [
       "campus"
     ],
-    "tier": "core"
+    "tier": "core",
+    "pos": "adj. 形容词"
   },
   {
     "id": 344,
     "word": "internship",
     "spelling": "I-N-T-E-R-N-S-H-I-P",
-    "phonetic": "",
+    "phonetic": "/ˈɪntənˌʃɪp/",
     "gloss": "实习",
     "tip": "summer internship",
     "example": "Apply for a summer internship.",
@@ -4938,13 +5283,14 @@
     "tags": [
       "campus"
     ],
-    "tier": "core"
+    "tier": "core",
+    "pos": "n. 名词"
   },
   {
     "id": 345,
     "word": "interpret",
     "spelling": "I-N-T-E-R-P-R-E-T",
-    "phonetic": "",
+    "phonetic": "/ˌɪnˈtəprət/",
     "gloss": "解释",
     "tip": "interpret results",
     "example": "How do we interpret this?",
@@ -4953,13 +5299,14 @@
       "academic",
       "verb"
     ],
-    "tier": "core"
+    "tier": "core",
+    "pos": "v. 动词"
   },
   {
     "id": 346,
     "word": "intervention",
     "spelling": "I-N-T-E-R-V-E-N-T-I-O-N",
-    "phonetic": "",
+    "phonetic": "/ˌɪntəˈvɛnʃən/",
     "gloss": "干预",
     "tip": "policy intervention",
     "example": "Early intervention improves outcomes.",
@@ -4967,13 +5314,14 @@
     "tags": [
       "academic"
     ],
-    "tier": "core"
+    "tier": "core",
+    "pos": "n. 名词"
   },
   {
     "id": 347,
     "word": "interview",
     "spelling": "I-N-T-E-R-V-I-E-W",
-    "phonetic": "",
+    "phonetic": "/ˈɪntəvˌju/",
     "gloss": "面试；访谈",
     "tip": "admission interview",
     "example": "Prepare for the admission interview.",
@@ -4981,13 +5329,14 @@
     "tags": [
       "campus"
     ],
-    "tier": "core"
+    "tier": "core",
+    "pos": "n. 名词"
   },
   {
     "id": 348,
     "word": "intonation",
     "spelling": "I-N-T-O-N-A-T-I-O-N",
-    "phonetic": "",
+    "phonetic": "/ˌɪntəˈneɪʃən/",
     "gloss": "语调",
     "tip": "natural intonation",
     "example": "Use natural intonation in RS.",
@@ -4995,13 +5344,14 @@
     "tags": [
       "academic"
     ],
-    "tier": "high"
+    "tier": "high",
+    "pos": "n. 名词"
   },
   {
     "id": 349,
     "word": "investigate",
     "spelling": "I-N-V-E-S-T-I-G-A-T-E",
-    "phonetic": "",
+    "phonetic": "/ˌɪnˈvɛstəˌgeɪt/",
     "gloss": "调查；研究",
     "tip": "investigate the cause",
     "example": "Researchers investigated the gap.",
@@ -5010,13 +5360,14 @@
       "academic",
       "verb"
     ],
-    "tier": "core"
+    "tier": "core",
+    "pos": "v. 动词"
   },
   {
     "id": 350,
     "word": "investment",
     "spelling": "I-N-V-E-S-T-M-E-N-T",
-    "phonetic": "",
+    "phonetic": "/ˌɪnˈvɛstmənt/",
     "gloss": "投资",
     "tip": "public investment",
     "example": "Public investment in labs rose.",
@@ -5025,13 +5376,14 @@
       "academic",
       "econ"
     ],
-    "tier": "core"
+    "tier": "core",
+    "pos": "n. 名词"
   },
   {
     "id": 351,
     "word": "issue",
     "spelling": "I-S-S-U-E",
-    "phonetic": "",
+    "phonetic": "/ˈɪʃu/",
     "gloss": "问题；发布",
     "tip": "key issue",
     "example": "Address the key issue directly.",
@@ -5039,13 +5391,14 @@
     "tags": [
       "academic"
     ],
-    "tier": "core"
+    "tier": "core",
+    "pos": "v. 动词"
   },
   {
     "id": 352,
     "word": "journal",
     "spelling": "J-O-U-R-N-A-L",
-    "phonetic": "",
+    "phonetic": "/ˈʤənəl/",
     "gloss": "期刊",
     "tip": "academic journal",
     "example": "Search peer-reviewed journals.",
@@ -5053,13 +5406,14 @@
     "tags": [
       "academic"
     ],
-    "tier": "core"
+    "tier": "core",
+    "pos": "v. 动词"
   },
   {
     "id": 353,
     "word": "justice",
     "spelling": "J-U-S-T-I-C-E",
-    "phonetic": "",
+    "phonetic": "/ˈʤəstɪs/",
     "gloss": "正义",
     "tip": "social justice",
     "example": "Social justice themes appear in essays.",
@@ -5067,13 +5421,14 @@
     "tags": [
       "academic"
     ],
-    "tier": "high"
+    "tier": "high",
+    "pos": "v. 动词"
   },
   {
     "id": 354,
     "word": "justify",
     "spelling": "J-U-S-T-I-F-Y",
-    "phonetic": "",
+    "phonetic": "/ˈʤəstəˌfaɪ/",
     "gloss": "证明…合理",
     "tip": "justify the claim",
     "example": "Justify each claim with evidence.",
@@ -5082,13 +5437,14 @@
       "academic",
       "verb"
     ],
-    "tier": "core"
+    "tier": "core",
+    "pos": "v. 动词"
   },
   {
     "id": 355,
     "word": "knowledge",
     "spelling": "K-N-O-W-L-E-D-G-E",
-    "phonetic": "",
+    "phonetic": "/ˈnɑlɪʤ/",
     "gloss": "知识",
     "tip": "prior knowledge",
     "example": "Activate prior knowledge first.",
@@ -5096,13 +5452,14 @@
     "tags": [
       "academic"
     ],
-    "tier": "core"
+    "tier": "core",
+    "pos": "v. 动词"
   },
   {
     "id": 356,
     "word": "laboratory",
     "spelling": "L-A-B-O-R-A-T-O-R-Y",
-    "phonetic": "",
+    "phonetic": "/ˈlæbrəˌtɔːi/",
     "gloss": "实验室",
     "tip": "science laboratory",
     "example": "Book the laboratory in advance.",
@@ -5110,13 +5467,14 @@
     "tags": [
       "campus"
     ],
-    "tier": "core"
+    "tier": "core",
+    "pos": "n. 名词"
   },
   {
     "id": 357,
     "word": "labour",
     "spelling": "L-A-B-O-U-R",
-    "phonetic": "",
+    "phonetic": "/ˈleɪbə/",
     "gloss": "劳动",
     "tip": "labour market",
     "example": "Labour shortages persist.",
@@ -5124,13 +5482,14 @@
     "tags": [
       "econ"
     ],
-    "tier": "high"
+    "tier": "high",
+    "pos": "n. 名词"
   },
   {
     "id": 358,
     "word": "largely",
     "spelling": "L-A-R-G-E-L-Y",
-    "phonetic": "",
+    "phonetic": "/ˈlɑrʤli/",
     "gloss": "很大程度上",
     "tip": "largely due to",
     "example": "Growth was largely due to exports.",
@@ -5138,13 +5497,14 @@
     "tags": [
       "academic"
     ],
-    "tier": "core"
+    "tier": "core",
+    "pos": "adv. 副词"
   },
   {
     "id": 359,
     "word": "lecture",
     "spelling": "L-E-C-T-U-R-E",
-    "phonetic": "",
+    "phonetic": "/ˈlɛkʧə/",
     "gloss": "讲座",
     "tip": "attend a lecture",
     "example": "The lecture starts at nine.",
@@ -5152,13 +5512,14 @@
     "tags": [
       "campus"
     ],
-    "tier": "core"
+    "tier": "core",
+    "pos": "v. 动词"
   },
   {
     "id": 360,
     "word": "lecturer",
     "spelling": "L-E-C-T-U-R-E-R",
-    "phonetic": "",
+    "phonetic": "/ˈlɛkʧəə/",
     "gloss": "讲师",
     "tip": "senior lecturer",
     "example": "The lecturer cancelled class.",
@@ -5166,13 +5527,14 @@
     "tags": [
       "campus"
     ],
-    "tier": "core"
+    "tier": "core",
+    "pos": "n. 名词"
   },
   {
     "id": 361,
     "word": "legend",
     "spelling": "L-E-G-E-N-D",
-    "phonetic": "",
+    "phonetic": "/ˈlɛʤənd/",
     "gloss": "图例",
     "tip": "chart legend",
     "example": "Check the chart legend.",
@@ -5180,13 +5542,14 @@
     "tags": [
       "academic"
     ],
-    "tier": "mid"
+    "tier": "mid",
+    "pos": "n. 名词"
   },
   {
     "id": 362,
     "word": "legislation",
     "spelling": "L-E-G-I-S-L-A-T-I-O-N",
-    "phonetic": "",
+    "phonetic": "/ˌlɛʤəsˈleɪʃən/",
     "gloss": "立法",
     "tip": "environmental legislation",
     "example": "Legislation restricts emissions.",
@@ -5194,13 +5557,14 @@
     "tags": [
       "academic"
     ],
-    "tier": "high"
+    "tier": "high",
+    "pos": "n. 名词"
   },
   {
     "id": 363,
     "word": "level",
     "spelling": "L-E-V-E-L",
-    "phonetic": "",
+    "phonetic": "/ˈlɛvəl/",
     "gloss": "水平",
     "tip": "proficiency level",
     "example": "Aim for a higher level.",
@@ -5208,13 +5572,14 @@
     "tags": [
       "academic"
     ],
-    "tier": "core"
+    "tier": "core",
+    "pos": "n. 名词"
   },
   {
     "id": 364,
     "word": "library",
     "spelling": "L-I-B-R-A-R-Y",
-    "phonetic": "",
+    "phonetic": "/ˈlaɪbrɛˌri/",
     "gloss": "图书馆",
     "tip": "university library",
     "example": "The library closes at midnight.",
@@ -5222,13 +5587,14 @@
     "tags": [
       "campus"
     ],
-    "tier": "core"
+    "tier": "core",
+    "pos": "n. 名词"
   },
   {
     "id": 365,
     "word": "likely",
     "spelling": "L-I-K-E-L-Y",
-    "phonetic": "",
+    "phonetic": "/ˈlaɪkli/",
     "gloss": "可能的",
     "tip": "be likely to",
     "example": "Students are likely to benefit.",
@@ -5236,13 +5602,14 @@
     "tags": [
       "academic"
     ],
-    "tier": "core"
+    "tier": "core",
+    "pos": "adv. 副词"
   },
   {
     "id": 366,
     "word": "limitation",
     "spelling": "L-I-M-I-T-A-T-I-O-N",
-    "phonetic": "",
+    "phonetic": "/ˌlɪmɪˈteɪʃən/",
     "gloss": "局限",
     "tip": "study limitation",
     "example": "Discuss limitations honestly.",
@@ -5250,13 +5617,14 @@
     "tags": [
       "academic"
     ],
-    "tier": "core"
+    "tier": "core",
+    "pos": "n. 名词"
   },
   {
     "id": 367,
     "word": "literacy",
     "spelling": "L-I-T-E-R-A-C-Y",
-    "phonetic": "",
+    "phonetic": "/ˈlɪtəəsi/",
     "gloss": "读写能力",
     "tip": "academic literacy",
     "example": "Academic literacy takes practice.",
@@ -5264,13 +5632,14 @@
     "tags": [
       "academic"
     ],
-    "tier": "core"
+    "tier": "core",
+    "pos": "n. 名词"
   },
   {
     "id": 368,
     "word": "literature",
     "spelling": "L-I-T-E-R-A-T-U-R-E",
-    "phonetic": "",
+    "phonetic": "/ˈlɪtəəʧə/",
     "gloss": "文献；文学",
     "tip": "literature review",
     "example": "Complete a literature review.",
@@ -5278,13 +5647,14 @@
     "tags": [
       "academic"
     ],
-    "tier": "core"
+    "tier": "core",
+    "pos": "v. 动词"
   },
   {
     "id": 369,
     "word": "locate",
     "spelling": "L-O-C-A-T-E",
-    "phonetic": "",
+    "phonetic": "/ˈloʊˌkeɪt/",
     "gloss": "定位",
     "tip": "locate the source",
     "example": "Locate the original source.",
@@ -5293,7 +5663,8 @@
       "academic",
       "verb"
     ],
-    "tier": "high"
+    "tier": "high",
+    "pos": "v. 动词"
   },
   {
     "id": 370,
@@ -5307,13 +5678,14 @@
     "tags": [
       "academic"
     ],
-    "tier": "core"
+    "tier": "core",
+    "pos": "adj. 形容词"
   },
   {
     "id": 371,
     "word": "maintain",
     "spelling": "M-A-I-N-T-A-I-N",
-    "phonetic": "",
+    "phonetic": "/meɪnˈteɪn/",
     "gloss": "维持；主张",
     "tip": "maintain that",
     "example": "Authors maintain funding is key.",
@@ -5322,13 +5694,14 @@
       "academic",
       "verb"
     ],
-    "tier": "core"
+    "tier": "core",
+    "pos": "v. 动词"
   },
   {
     "id": 372,
     "word": "majority",
     "spelling": "M-A-J-O-R-I-T-Y",
-    "phonetic": "",
+    "phonetic": "/məˈʤɔːəti/",
     "gloss": "大多数",
     "tip": "the majority of",
     "example": "The majority of respondents agreed.",
@@ -5336,13 +5709,14 @@
     "tags": [
       "academic"
     ],
-    "tier": "core"
+    "tier": "core",
+    "pos": "n. 名词"
   },
   {
     "id": 373,
     "word": "mandatory",
     "spelling": "M-A-N-D-A-T-O-R-Y",
-    "phonetic": "",
+    "phonetic": "/ˈmændəˌtɔːi/",
     "gloss": "强制的",
     "tip": "mandatory training",
     "example": "Safety training is mandatory.",
@@ -5350,13 +5724,14 @@
     "tags": [
       "campus"
     ],
-    "tier": "high"
+    "tier": "high",
+    "pos": "adj. 形容词"
   },
   {
     "id": 374,
     "word": "manufacturing",
     "spelling": "M-A-N-U-F-A-C-T-U-R-I-N-G",
-    "phonetic": "",
+    "phonetic": "/ˌmænjəˈfækʧəɪŋ/",
     "gloss": "制造业",
     "tip": "manufacturing output",
     "example": "Manufacturing output rose.",
@@ -5364,13 +5739,14 @@
     "tags": [
       "econ"
     ],
-    "tier": "high"
+    "tier": "high",
+    "pos": "n. 名词"
   },
   {
     "id": 375,
     "word": "marginal",
     "spelling": "M-A-R-G-I-N-A-L",
-    "phonetic": "",
+    "phonetic": "/ˈmɑrʤənəl/",
     "gloss": "边际的；微小的",
     "tip": "marginal effect",
     "example": "The effect was only marginal.",
@@ -5378,13 +5754,14 @@
     "tags": [
       "academic"
     ],
-    "tier": "high"
+    "tier": "high",
+    "pos": "adj. 形容词"
   },
   {
     "id": 376,
     "word": "mark",
     "spelling": "M-A-R-K",
-    "phonetic": "",
+    "phonetic": "/mɑrk/",
     "gloss": "分数；批改",
     "tip": "full marks",
     "example": "The tutor marked the scripts.",
@@ -5392,13 +5769,14 @@
     "tags": [
       "campus"
     ],
-    "tier": "core"
+    "tier": "core",
+    "pos": "n. 名词"
   },
   {
     "id": 377,
     "word": "market",
     "spelling": "M-A-R-K-E-T",
-    "phonetic": "",
+    "phonetic": "/ˈmɑrkɪt/",
     "gloss": "市场",
     "tip": "labour market",
     "example": "The labour market tightened.",
@@ -5406,13 +5784,14 @@
     "tags": [
       "econ"
     ],
-    "tier": "core"
+    "tier": "core",
+    "pos": "n. 名词"
   },
   {
     "id": 378,
     "word": "material",
     "spelling": "M-A-T-E-R-I-A-L",
-    "phonetic": "",
+    "phonetic": "/məˈtɪriəl/",
     "gloss": "材料",
     "tip": "reading material",
     "example": "Download reading materials early.",
@@ -5420,13 +5799,14 @@
     "tags": [
       "campus"
     ],
-    "tier": "core"
+    "tier": "core",
+    "pos": "v. 动词"
   },
   {
     "id": 379,
     "word": "maximum",
     "spelling": "M-A-X-I-M-U-M",
-    "phonetic": "",
+    "phonetic": "/ˈmæksəməm/",
     "gloss": "最大值",
     "tip": "maximum score",
     "example": "The maximum score is ninety.",
@@ -5434,13 +5814,14 @@
     "tags": [
       "academic"
     ],
-    "tier": "core"
+    "tier": "core",
+    "pos": "n. 名词"
   },
   {
     "id": 380,
     "word": "mean",
     "spelling": "M-E-A-N",
-    "phonetic": "",
+    "phonetic": "/min/",
     "gloss": "平均值；意味着",
     "tip": "sample mean",
     "example": "Calculate the sample mean.",
@@ -5448,13 +5829,14 @@
     "tags": [
       "academic"
     ],
-    "tier": "core"
+    "tier": "core",
+    "pos": "n. 名词"
   },
   {
     "id": 381,
     "word": "meanwhile",
     "spelling": "M-E-A-N-W-H-I-L-E",
-    "phonetic": "",
+    "phonetic": "/ˈminˌwaɪl/",
     "gloss": "与此同时",
     "tip": "meanwhile",
     "example": "Meanwhile, costs continued to rise.",
@@ -5462,13 +5844,14 @@
     "tags": [
       "academic"
     ],
-    "tier": "core"
+    "tier": "core",
+    "pos": "adv. 副词"
   },
   {
     "id": 382,
     "word": "measure",
     "spelling": "M-E-A-S-U-R-E",
-    "phonetic": "",
+    "phonetic": "/ˈmɛʒə/",
     "gloss": "测量",
     "tip": "measure progress",
     "example": "How do we measure progress?",
@@ -5477,13 +5860,14 @@
       "academic",
       "verb"
     ],
-    "tier": "core"
+    "tier": "core",
+    "pos": "v. 动词"
   },
   {
     "id": 383,
     "word": "mechanism",
     "spelling": "M-E-C-H-A-N-I-S-M",
-    "phonetic": "",
+    "phonetic": "/ˈmɛkəˌnɪzəm/",
     "gloss": "机制",
     "tip": "underlying mechanism",
     "example": "The mechanism remains unclear.",
@@ -5491,13 +5875,14 @@
     "tags": [
       "academic"
     ],
-    "tier": "core"
+    "tier": "core",
+    "pos": "n. 名词"
   },
   {
     "id": 384,
     "word": "media",
     "spelling": "M-E-D-I-A",
-    "phonetic": "",
+    "phonetic": "/ˈmidiə/",
     "gloss": "媒体",
     "tip": "social media",
     "example": "Social media shapes debate.",
@@ -5505,13 +5890,14 @@
     "tags": [
       "academic"
     ],
-    "tier": "core"
+    "tier": "core",
+    "pos": "n. 名词"
   },
   {
     "id": 385,
     "word": "median",
     "spelling": "M-E-D-I-A-N",
-    "phonetic": "",
+    "phonetic": "/ˈmidiən/",
     "gloss": "中位数",
     "tip": "median income",
     "example": "Use the median for skewed data.",
@@ -5519,13 +5905,14 @@
     "tags": [
       "academic"
     ],
-    "tier": "high"
+    "tier": "high",
+    "pos": "n. 名词"
   },
   {
     "id": 386,
     "word": "mentor",
     "spelling": "M-E-N-T-O-R",
-    "phonetic": "",
+    "phonetic": "/ˈmɛnˌtɔː/",
     "gloss": "导师",
     "tip": "faculty mentor",
     "example": "Find a faculty mentor early.",
@@ -5533,7 +5920,8 @@
     "tags": [
       "campus"
     ],
-    "tier": "high"
+    "tier": "high",
+    "pos": "n. 名词"
   },
   {
     "id": 387,
@@ -5547,13 +5935,14 @@
     "tags": [
       "academic"
     ],
-    "tier": "core"
+    "tier": "core",
+    "pos": "n. 名词"
   },
   {
     "id": 388,
     "word": "migration",
     "spelling": "M-I-G-R-A-T-I-O-N",
-    "phonetic": "",
+    "phonetic": "/maɪˈgreɪʃən/",
     "gloss": "迁移；移民",
     "tip": "rural-urban migration",
     "example": "Migration patterns shifted.",
@@ -5561,13 +5950,14 @@
     "tags": [
       "academic"
     ],
-    "tier": "core"
+    "tier": "core",
+    "pos": "n. 名词"
   },
   {
     "id": 389,
     "word": "minimum",
     "spelling": "M-I-N-I-M-U-M",
-    "phonetic": "",
+    "phonetic": "/ˈmɪnəməm/",
     "gloss": "最低的",
     "tip": "minimum requirement",
     "example": "Meet the minimum requirement.",
@@ -5576,13 +5966,14 @@
       "academic",
       "campus"
     ],
-    "tier": "core"
+    "tier": "core",
+    "pos": "adj. 形容词"
   },
   {
     "id": 390,
     "word": "minority",
     "spelling": "M-I-N-O-R-I-T-Y",
-    "phonetic": "",
+    "phonetic": "/məˈnɔːəti/",
     "gloss": "少数",
     "tip": "ethnic minority",
     "example": "Minority voices were underrepresented.",
@@ -5590,13 +5981,14 @@
     "tags": [
       "academic"
     ],
-    "tier": "high"
+    "tier": "high",
+    "pos": "n. 名词"
   },
   {
     "id": 391,
     "word": "modify",
     "spelling": "M-O-D-I-F-Y",
-    "phonetic": "",
+    "phonetic": "/ˈmɑdəˌfaɪ/",
     "gloss": "修改",
     "tip": "modify the design",
     "example": "They modified the design.",
@@ -5605,13 +5997,14 @@
       "academic",
       "verb"
     ],
-    "tier": "high"
+    "tier": "high",
+    "pos": "v. 动词"
   },
   {
     "id": 392,
     "word": "module",
     "spelling": "M-O-D-U-L-E",
-    "phonetic": "",
+    "phonetic": "/ˈmɑʤul/",
     "gloss": "模块",
     "tip": "core module",
     "example": "This module is compulsory.",
@@ -5619,13 +6012,14 @@
     "tags": [
       "campus"
     ],
-    "tier": "core"
+    "tier": "core",
+    "pos": "v. 动词"
   },
   {
     "id": 393,
     "word": "monitor",
     "spelling": "M-O-N-I-T-O-R",
-    "phonetic": "",
+    "phonetic": "/ˈmɑnətə/",
     "gloss": "监测",
     "tip": "monitor progress",
     "example": "Staff monitor attendance.",
@@ -5635,13 +6029,14 @@
       "verb",
       "campus"
     ],
-    "tier": "core"
+    "tier": "core",
+    "pos": "v. 动词"
   },
   {
     "id": 394,
     "word": "moreover",
     "spelling": "M-O-R-E-O-V-E-R",
-    "phonetic": "",
+    "phonetic": "/mɔˈoʊvə/",
     "gloss": "而且",
     "tip": "essay linker",
     "example": "Moreover, access improved.",
@@ -5649,13 +6044,14 @@
     "tags": [
       "academic"
     ],
-    "tier": "core"
+    "tier": "core",
+    "pos": "adv. 副词"
   },
   {
     "id": 395,
     "word": "motivate",
     "spelling": "M-O-T-I-V-A-T-E",
-    "phonetic": "",
+    "phonetic": "/ˈmoʊtəˌveɪt/",
     "gloss": "激励",
     "tip": "motivate learners",
     "example": "Goals motivate practice.",
@@ -5664,13 +6060,14 @@
       "academic",
       "verb"
     ],
-    "tier": "core"
+    "tier": "core",
+    "pos": "v. 动词"
   },
   {
     "id": 396,
     "word": "motivation",
     "spelling": "M-O-T-I-V-A-T-I-O-N",
-    "phonetic": "",
+    "phonetic": "/ˌmoʊtəˈveɪʃən/",
     "gloss": "动机",
     "tip": "intrinsic motivation",
     "example": "Motivation drives practice.",
@@ -5678,27 +6075,29 @@
     "tags": [
       "academic"
     ],
-    "tier": "core"
+    "tier": "core",
+    "pos": "n. 名词"
   },
   {
     "id": 397,
     "word": "namely",
     "spelling": "N-A-M-E-L-Y",
-    "phonetic": "",
-    "gloss": "即",
+    "phonetic": "/ˈneɪmli/",
+    "gloss": "即；也就是",
     "tip": "namely",
     "example": "Two factors, namely cost and access.",
     "exampleZh": "两个因素，即成本与获取。",
     "tags": [
       "academic"
     ],
-    "tier": "high"
+    "tier": "high",
+    "pos": "adv. 副词"
   },
   {
     "id": 398,
     "word": "narrow",
     "spelling": "N-A-R-R-O-W",
-    "phonetic": "",
+    "phonetic": "/ˈnɛroʊ/",
     "gloss": "缩小",
     "tip": "narrow the gap",
     "example": "Policies aim to narrow the gap.",
@@ -5707,13 +6106,14 @@
       "academic",
       "verb"
     ],
-    "tier": "core"
+    "tier": "core",
+    "pos": "v. 动词"
   },
   {
     "id": 399,
     "word": "negative",
     "spelling": "N-E-G-A-T-I-V-E",
-    "phonetic": "",
+    "phonetic": "/ˈnɛgətɪv/",
     "gloss": "消极的；负的",
     "tip": "negative impact",
     "example": "Reduce negative impacts.",
@@ -5721,13 +6121,14 @@
     "tags": [
       "academic"
     ],
-    "tier": "core"
+    "tier": "core",
+    "pos": "adj. 形容词"
   },
   {
     "id": 400,
     "word": "negligible",
     "spelling": "N-E-G-L-I-G-I-B-L-E",
-    "phonetic": "",
+    "phonetic": "/ˈnɛglɪʤəbəl/",
     "gloss": "可忽略的",
     "tip": "negligible difference",
     "example": "The difference was negligible.",
@@ -5735,13 +6136,14 @@
     "tags": [
       "academic"
     ],
-    "tier": "mid"
+    "tier": "mid",
+    "pos": "adj. 形容词"
   },
   {
     "id": 401,
     "word": "negotiate",
     "spelling": "N-E-G-O-T-I-A-T-E",
-    "phonetic": "",
+    "phonetic": "/nɪˈgoʊʃiˌeɪt/",
     "gloss": "协商",
     "tip": "negotiate deadlines",
     "example": "Students negotiate deadlines with tutors.",
@@ -5751,13 +6153,14 @@
       "verb",
       "campus"
     ],
-    "tier": "high"
+    "tier": "high",
+    "pos": "v. 动词"
   },
   {
     "id": 402,
     "word": "neutral",
     "spelling": "N-E-U-T-R-A-L",
-    "phonetic": "",
+    "phonetic": "/ˈnutrəl/",
     "gloss": "中立的",
     "tip": "neutral tone",
     "example": "Keep a neutral academic tone.",
@@ -5765,13 +6168,14 @@
     "tags": [
       "academic"
     ],
-    "tier": "mid"
+    "tier": "mid",
+    "pos": "adj. 形容词"
   },
   {
     "id": 403,
     "word": "nevertheless",
     "spelling": "N-E-V-E-R-T-H-E-L-E-S-S",
-    "phonetic": "",
+    "phonetic": "/ˌnɛvəðəˈlɛs/",
     "gloss": "然而",
     "tip": "essay linker",
     "example": "Nevertheless, risks remain.",
@@ -5779,13 +6183,14 @@
     "tags": [
       "academic"
     ],
-    "tier": "core"
+    "tier": "core",
+    "pos": "adj. 形容词"
   },
   {
     "id": 404,
     "word": "notable",
     "spelling": "N-O-T-A-B-L-E",
-    "phonetic": "",
+    "phonetic": "/ˈnoʊtəbəl/",
     "gloss": "显著的",
     "tip": "notable increase",
     "example": "A notable increase was recorded.",
@@ -5793,13 +6198,14 @@
     "tags": [
       "academic"
     ],
-    "tier": "high"
+    "tier": "high",
+    "pos": "adj. 形容词"
   },
   {
     "id": 405,
     "word": "notice",
     "spelling": "N-O-T-I-C-E",
-    "phonetic": "",
+    "phonetic": "/ˈnoʊtɪs/",
     "gloss": "通知",
     "tip": "official notice",
     "example": "Read the official notice.",
@@ -5807,13 +6213,14 @@
     "tags": [
       "campus"
     ],
-    "tier": "core"
+    "tier": "core",
+    "pos": "v. 动词"
   },
   {
     "id": 406,
     "word": "notify",
     "spelling": "N-O-T-I-F-Y",
-    "phonetic": "",
+    "phonetic": "/ˈnoʊtəˌfaɪ/",
     "gloss": "通知",
     "tip": "notify in advance",
     "example": "Notify the office in advance.",
@@ -5822,13 +6229,14 @@
       "campus",
       "verb"
     ],
-    "tier": "high"
+    "tier": "high",
+    "pos": "v. 动词"
   },
   {
     "id": 407,
     "word": "objective",
     "spelling": "O-B-J-E-C-T-I-V-E",
-    "phonetic": "",
+    "phonetic": "/əˈbʤɛktɪv/",
     "gloss": "目标；客观的",
     "tip": "learning objective",
     "example": "State learning objectives clearly.",
@@ -5836,13 +6244,14 @@
     "tags": [
       "academic"
     ],
-    "tier": "core"
+    "tier": "core",
+    "pos": "adj. 形容词"
   },
   {
     "id": 408,
     "word": "observe",
     "spelling": "O-B-S-E-R-V-E",
-    "phonetic": "",
+    "phonetic": "/əbˈzəv/",
     "gloss": "观察",
     "tip": "observe behaviour",
     "example": "Observers recorded behaviour.",
@@ -5851,13 +6260,14 @@
       "academic",
       "verb"
     ],
-    "tier": "core"
+    "tier": "core",
+    "pos": "v. 动词"
   },
   {
     "id": 409,
     "word": "obstacle",
     "spelling": "O-B-S-T-A-C-L-E",
-    "phonetic": "",
+    "phonetic": "/ˈɑbstəkəl/",
     "gloss": "障碍",
     "tip": "major obstacle",
     "example": "Cost is a major obstacle.",
@@ -5865,13 +6275,14 @@
     "tags": [
       "academic"
     ],
-    "tier": "high"
+    "tier": "high",
+    "pos": "v. 动词"
   },
   {
     "id": 410,
     "word": "obtain",
     "spelling": "O-B-T-A-I-N",
-    "phonetic": "",
+    "phonetic": "/əbˈteɪn/",
     "gloss": "获得",
     "tip": "obtain approval",
     "example": "Obtain ethics approval first.",
@@ -5880,13 +6291,14 @@
       "academic",
       "verb"
     ],
-    "tier": "core"
+    "tier": "core",
+    "pos": "v. 动词"
   },
   {
     "id": 411,
     "word": "offer",
     "spelling": "O-F-F-E-R",
-    "phonetic": "",
+    "phonetic": "/ˈɔfə/",
     "gloss": "录取通知；提供",
     "tip": "conditional offer",
     "example": "She received a conditional offer.",
@@ -5894,13 +6306,14 @@
     "tags": [
       "campus"
     ],
-    "tier": "core"
+    "tier": "core",
+    "pos": "n. 名词"
   },
   {
     "id": 412,
     "word": "omit",
     "spelling": "O-M-I-T",
-    "phonetic": "",
+    "phonetic": "/oʊˈmɪt/",
     "gloss": "省略",
     "tip": "omit details",
     "example": "Do not omit key details.",
@@ -5909,13 +6322,14 @@
       "academic",
       "verb"
     ],
-    "tier": "high"
+    "tier": "high",
+    "pos": "v. 动词"
   },
   {
     "id": 413,
     "word": "ongoing",
     "spelling": "O-N-G-O-I-N-G",
-    "phonetic": "",
+    "phonetic": "/ˈɔnˌgoʊɪŋ/",
     "gloss": "持续的",
     "tip": "ongoing research",
     "example": "Ongoing research continues.",
@@ -5923,13 +6337,14 @@
     "tags": [
       "academic"
     ],
-    "tier": "core"
+    "tier": "core",
+    "pos": "adj. 形容词"
   },
   {
     "id": 414,
     "word": "online",
     "spelling": "O-N-L-I-N-E",
-    "phonetic": "",
+    "phonetic": "/ˈɔnˌlaɪn/",
     "gloss": "在线的",
     "tip": "online learning",
     "example": "Online learning requires discipline.",
@@ -5937,13 +6352,14 @@
     "tags": [
       "campus"
     ],
-    "tier": "core"
+    "tier": "core",
+    "pos": "adj. 形容词"
   },
   {
     "id": 415,
     "word": "opportunity",
     "spelling": "O-P-P-O-R-T-U-N-I-T-Y",
-    "phonetic": "",
+    "phonetic": "/ˌɑpəˈtunəti/",
     "gloss": "机会",
     "tip": "equal opportunity",
     "example": "Equal opportunity needs support.",
@@ -5951,13 +6367,14 @@
     "tags": [
       "academic"
     ],
-    "tier": "core"
+    "tier": "core",
+    "pos": "n. 名词"
   },
   {
     "id": 416,
     "word": "optional",
     "spelling": "O-P-T-I-O-N-A-L",
-    "phonetic": "",
+    "phonetic": "/ˈɔpʃənəl/",
     "gloss": "选修的",
     "tip": "optional course",
     "example": "The module is optional.",
@@ -5965,13 +6382,14 @@
     "tags": [
       "campus"
     ],
-    "tier": "core"
+    "tier": "core",
+    "pos": "adj. 形容词"
   },
   {
     "id": 417,
     "word": "organisation",
     "spelling": "O-R-G-A-N-I-S-A-T-I-O-N",
-    "phonetic": "",
+    "phonetic": "/ˌɔːgənɪˈzeɪʃən/",
     "gloss": "组织",
     "tip": "student organisation",
     "example": "Join a student organisation.",
@@ -5979,7 +6397,8 @@
     "tags": [
       "campus"
     ],
-    "tier": "core"
+    "tier": "core",
+    "pos": "n. 名词"
   },
   {
     "id": 418,
@@ -5993,13 +6412,14 @@
     "tags": [
       "campus"
     ],
-    "tier": "core"
+    "tier": "core",
+    "pos": "n. 名词"
   },
   {
     "id": 419,
     "word": "outcome",
     "spelling": "O-U-T-C-O-M-E",
-    "phonetic": "",
+    "phonetic": "/ˈaʊtˌkəm/",
     "gloss": "结果；成果",
     "tip": "learning outcomes",
     "example": "State desired outcomes.",
@@ -6007,13 +6427,14 @@
     "tags": [
       "academic"
     ],
-    "tier": "core"
+    "tier": "core",
+    "pos": "v. 动词"
   },
   {
     "id": 420,
     "word": "outlier",
     "spelling": "O-U-T-L-I-E-R",
-    "phonetic": "",
+    "phonetic": "/ˈaʊtlaɪə/",
     "gloss": "异常值",
     "tip": "statistical outlier",
     "example": "Handle outliers carefully.",
@@ -6021,13 +6442,14 @@
     "tags": [
       "academic"
     ],
-    "tier": "mid"
+    "tier": "mid",
+    "pos": "v. 动词"
   },
   {
     "id": 421,
     "word": "outline",
     "spelling": "O-U-T-L-I-N-E",
-    "phonetic": "",
+    "phonetic": "/ˈaʊˌtlaɪn/",
     "gloss": "提纲",
     "tip": "essay outline",
     "example": "Draft an outline before writing.",
@@ -6035,13 +6457,14 @@
     "tags": [
       "academic"
     ],
-    "tier": "core"
+    "tier": "core",
+    "pos": "v. 动词"
   },
   {
     "id": 422,
     "word": "overall",
     "spelling": "O-V-E-R-A-L-L",
-    "phonetic": "",
+    "phonetic": "/ˈoʊvəˌɔl/",
     "gloss": "总体的",
     "tip": "overall trend",
     "example": "The overall trend is positive.",
@@ -6049,13 +6472,14 @@
     "tags": [
       "academic"
     ],
-    "tier": "core"
+    "tier": "core",
+    "pos": "adj. 形容词"
   },
   {
     "id": 423,
     "word": "overcome",
     "spelling": "O-V-E-R-C-O-M-E",
-    "phonetic": "",
+    "phonetic": "/ˈoʊvəˌkəm/",
     "gloss": "克服",
     "tip": "overcome barriers",
     "example": "Support helps overcome barriers.",
@@ -6064,13 +6488,14 @@
       "academic",
       "verb"
     ],
-    "tier": "high"
+    "tier": "high",
+    "pos": "v. 动词"
   },
   {
     "id": 424,
     "word": "overview",
     "spelling": "O-V-E-R-V-I-E-W",
-    "phonetic": "",
+    "phonetic": "/ˈoʊvəvˌju/",
     "gloss": "概述",
     "tip": "brief overview",
     "example": "Start with a brief overview.",
@@ -6078,13 +6503,14 @@
     "tags": [
       "academic"
     ],
-    "tier": "core"
+    "tier": "core",
+    "pos": "n. 名词"
   },
   {
     "id": 425,
     "word": "pandemic",
     "spelling": "P-A-N-D-E-M-I-C",
-    "phonetic": "",
+    "phonetic": "/pænˈdɛmɪk/",
     "gloss": "大流行病",
     "tip": "global pandemic",
     "example": "The pandemic disrupted teaching.",
@@ -6092,7 +6518,8 @@
     "tags": [
       "academic"
     ],
-    "tier": "high"
+    "tier": "high",
+    "pos": "n. 名词"
   },
   {
     "id": 426,
@@ -6106,13 +6533,14 @@
     "tags": [
       "academic"
     ],
-    "tier": "core"
+    "tier": "core",
+    "pos": "n. 名词"
   },
   {
     "id": 427,
     "word": "paragraph",
     "spelling": "P-A-R-A-G-R-A-P-H",
-    "phonetic": "",
+    "phonetic": "/ˈpɛrəˌgræf/",
     "gloss": "段落",
     "tip": "one idea per paragraph",
     "example": "One idea per paragraph.",
@@ -6120,13 +6548,14 @@
     "tags": [
       "academic"
     ],
-    "tier": "core"
+    "tier": "core",
+    "pos": "n. 名词"
   },
   {
     "id": 428,
     "word": "paraphrase",
     "spelling": "P-A-R-A-P-H-R-A-S-E",
-    "phonetic": "",
+    "phonetic": "/ˈpɛrəˌfreɪz/",
     "gloss": "改述",
     "tip": "paraphrase to avoid plagiarism",
     "example": "Paraphrase to avoid plagiarism.",
@@ -6135,13 +6564,14 @@
       "academic",
       "verb"
     ],
-    "tier": "core"
+    "tier": "core",
+    "pos": "v. 动词"
   },
   {
     "id": 429,
     "word": "participant",
     "spelling": "P-A-R-T-I-C-I-P-A-N-T",
-    "phonetic": "",
+    "phonetic": "/pɑrˈtɪsəpənt/",
     "gloss": "参与者",
     "tip": "research participant",
     "example": "Participants signed consent forms.",
@@ -6149,13 +6579,14 @@
     "tags": [
       "academic"
     ],
-    "tier": "core"
+    "tier": "core",
+    "pos": "v. 动词"
   },
   {
     "id": 430,
     "word": "participation",
     "spelling": "P-A-R-T-I-C-I-P-A-T-I-O-N",
-    "phonetic": "",
+    "phonetic": "/pɑrˌtɪsəˈpeɪʃən/",
     "gloss": "参与",
     "tip": "active participation",
     "example": "Active participation is expected.",
@@ -6163,13 +6594,14 @@
     "tags": [
       "campus"
     ],
-    "tier": "core"
+    "tier": "core",
+    "pos": "n. 名词"
   },
   {
     "id": 431,
     "word": "particular",
     "spelling": "P-A-R-T-I-C-U-L-A-R",
-    "phonetic": "",
+    "phonetic": "/ˌpɑˈtɪkjələ/",
     "gloss": "特别的",
     "tip": "in particular",
     "example": "In particular, costs rose.",
@@ -6177,13 +6609,14 @@
     "tags": [
       "academic"
     ],
-    "tier": "core"
+    "tier": "core",
+    "pos": "adj. 形容词"
   },
   {
     "id": 432,
     "word": "particularly",
     "spelling": "P-A-R-T-I-C-U-L-A-R-L-Y",
-    "phonetic": "",
+    "phonetic": "/ˌpɑrˈtɪkjələli/",
     "gloss": "尤其",
     "tip": "particularly important",
     "example": "This is particularly important.",
@@ -6191,13 +6624,14 @@
     "tags": [
       "academic"
     ],
-    "tier": "core"
+    "tier": "core",
+    "pos": "adv. 副词"
   },
   {
     "id": 433,
     "word": "passage",
     "spelling": "P-A-S-S-A-G-E",
-    "phonetic": "",
+    "phonetic": "/ˈpæsɪʤ/",
     "gloss": "短文",
     "tip": "reading passage",
     "example": "Skim the passage first.",
@@ -6205,13 +6639,14 @@
     "tags": [
       "academic"
     ],
-    "tier": "core"
+    "tier": "core",
+    "pos": "v. 动词"
   },
   {
     "id": 434,
     "word": "pattern",
     "spelling": "P-A-T-T-E-R-N",
-    "phonetic": "",
+    "phonetic": "/ˈpætən/",
     "gloss": "模式",
     "tip": "clear pattern",
     "example": "A clear pattern emerged.",
@@ -6219,13 +6654,14 @@
     "tags": [
       "academic"
     ],
-    "tier": "core"
+    "tier": "core",
+    "pos": "n. 名词"
   },
   {
     "id": 435,
     "word": "peak",
     "spelling": "P-E-A-K",
-    "phonetic": "",
+    "phonetic": "/pik/",
     "gloss": "峰值",
     "tip": "reach a peak",
     "example": "Demand reached a peak in July.",
@@ -6233,13 +6669,14 @@
     "tags": [
       "academic"
     ],
-    "tier": "core"
+    "tier": "core",
+    "pos": "n. 名词"
   },
   {
     "id": 436,
     "word": "pedagogy",
     "spelling": "P-E-D-A-G-O-G-Y",
-    "phonetic": "",
+    "phonetic": "/ˈpɛdəˌgoʊʤi/",
     "gloss": "教学法",
     "tip": "digital pedagogy",
     "example": "Pedagogy shapes classroom design.",
@@ -6247,13 +6684,14 @@
     "tags": [
       "academic"
     ],
-    "tier": "high"
+    "tier": "high",
+    "pos": "n. 名词"
   },
   {
     "id": 437,
     "word": "peer",
     "spelling": "P-E-E-R",
-    "phonetic": "",
+    "phonetic": "/pɪː/",
     "gloss": "同伴；同行",
     "tip": "peer review",
     "example": "Peer feedback is valuable.",
@@ -6262,13 +6700,14 @@
       "academic",
       "campus"
     ],
-    "tier": "core"
+    "tier": "core",
+    "pos": "n. 名词"
   },
   {
     "id": 438,
     "word": "peer-reviewed",
     "spelling": "P-E-E-R-R-E-V-I-E-W-E-D",
-    "phonetic": "",
+    "phonetic": "/pɪː rivˈjud/",
     "gloss": "同行评审的",
     "tip": "peer review",
     "example": "Cite peer-reviewed sources.",
@@ -6276,13 +6715,14 @@
     "tags": [
       "academic"
     ],
-    "tier": "core"
+    "tier": "core",
+    "pos": "adj. 形容词"
   },
   {
     "id": 439,
     "word": "penalty",
     "spelling": "P-E-N-A-L-T-Y",
-    "phonetic": "",
+    "phonetic": "/ˈpɛnəlti/",
     "gloss": "处罚",
     "tip": "late penalty",
     "example": "A late penalty applies.",
@@ -6290,13 +6730,14 @@
     "tags": [
       "campus"
     ],
-    "tier": "core"
+    "tier": "core",
+    "pos": "n. 名词"
   },
   {
     "id": 440,
     "word": "percentage",
     "spelling": "P-E-R-C-E-N-T-A-G-E",
-    "phonetic": "",
+    "phonetic": "/pəˈsɛnɪʤ/",
     "gloss": "百分比",
     "tip": "a high percentage",
     "example": "A high percentage passed first.",
@@ -6304,13 +6745,14 @@
     "tags": [
       "academic"
     ],
-    "tier": "core"
+    "tier": "core",
+    "pos": "v. 动词"
   },
   {
     "id": 441,
     "word": "perception",
     "spelling": "P-E-R-C-E-P-T-I-O-N",
-    "phonetic": "",
+    "phonetic": "/pəˈsɛpʃən/",
     "gloss": "感知；看法",
     "tip": "public perception",
     "example": "Perception often differs from data.",
@@ -6318,13 +6760,14 @@
     "tags": [
       "academic"
     ],
-    "tier": "core"
+    "tier": "core",
+    "pos": "n. 名词"
   },
   {
     "id": 442,
     "word": "performance",
     "spelling": "P-E-R-F-O-R-M-A-N-C-E",
-    "phonetic": "",
+    "phonetic": "/pəˈfɔːməns/",
     "gloss": "表现",
     "tip": "exam performance",
     "example": "Track weekly performance.",
@@ -6333,13 +6776,14 @@
       "academic",
       "campus"
     ],
-    "tier": "core"
+    "tier": "core",
+    "pos": "n. 名词"
   },
   {
     "id": 443,
     "word": "permanent",
     "spelling": "P-E-R-M-A-N-E-N-T",
-    "phonetic": "",
+    "phonetic": "/ˈpəmɑˌnɛnt/",
     "gloss": "永久的",
     "tip": "permanent change",
     "example": "The change is permanent.",
@@ -6347,13 +6791,14 @@
     "tags": [
       "academic"
     ],
-    "tier": "high"
+    "tier": "high",
+    "pos": "adj. 形容词"
   },
   {
     "id": 444,
     "word": "persistence",
     "spelling": "P-E-R-S-I-S-T-E-N-C-E",
-    "phonetic": "",
+    "phonetic": "/pəˈsɪstəns/",
     "gloss": "坚持",
     "tip": "academic persistence",
     "example": "Persistence predicts completion.",
@@ -6361,13 +6806,14 @@
     "tags": [
       "academic"
     ],
-    "tier": "high"
+    "tier": "high",
+    "pos": "n. 名词"
   },
   {
     "id": 445,
     "word": "perspective",
     "spelling": "P-E-R-S-P-E-C-T-I-V-E",
-    "phonetic": "",
+    "phonetic": "/pəˈspɛktɪv/",
     "gloss": "视角",
     "tip": "from the perspective of",
     "example": "From a policy perspective, costs matter.",
@@ -6375,13 +6821,14 @@
     "tags": [
       "academic"
     ],
-    "tier": "core"
+    "tier": "core",
+    "pos": "adj. 形容词"
   },
   {
     "id": 446,
     "word": "persuade",
     "spelling": "P-E-R-S-U-A-D-E",
-    "phonetic": "",
+    "phonetic": "/pəsˈweɪd/",
     "gloss": "说服",
     "tip": "persuade the reader",
     "example": "Evidence persuades readers.",
@@ -6390,13 +6837,14 @@
       "academic",
       "verb"
     ],
-    "tier": "high"
+    "tier": "high",
+    "pos": "v. 动词"
   },
   {
     "id": 447,
     "word": "phrase",
     "spelling": "P-H-R-A-S-E",
-    "phonetic": "",
+    "phonetic": "/freɪz/",
     "gloss": "短语",
     "tip": "key phrase",
     "example": "Note key phrases while listening.",
@@ -6404,13 +6852,14 @@
     "tags": [
       "academic"
     ],
-    "tier": "core"
+    "tier": "core",
+    "pos": "v. 动词"
   },
   {
     "id": 448,
     "word": "pilot",
     "spelling": "P-I-L-O-T",
-    "phonetic": "",
+    "phonetic": "/ˈpaɪlət/",
     "gloss": "试点",
     "tip": "pilot study",
     "example": "Run a pilot study first.",
@@ -6418,13 +6867,14 @@
     "tags": [
       "academic"
     ],
-    "tier": "high"
+    "tier": "high",
+    "pos": "n. 名词"
   },
   {
     "id": 449,
     "word": "placement",
     "spelling": "P-L-A-C-E-M-E-N-T",
-    "phonetic": "",
+    "phonetic": "/ˈpleɪsmənt/",
     "gloss": "实习安置",
     "tip": "work placement",
     "example": "Complete a work placement.",
@@ -6432,7 +6882,8 @@
     "tags": [
       "campus"
     ],
-    "tier": "high"
+    "tier": "high",
+    "pos": "n. 名词"
   },
   {
     "id": 450,
@@ -6447,13 +6898,14 @@
       "academic",
       "campus"
     ],
-    "tier": "core"
+    "tier": "core",
+    "pos": "n. 名词"
   },
   {
     "id": 451,
     "word": "plateau",
     "spelling": "P-L-A-T-E-A-U",
-    "phonetic": "",
+    "phonetic": "/plæˈtoʊ/",
     "gloss": "平台期",
     "tip": "reach a plateau",
     "example": "Scores reached a plateau.",
@@ -6461,13 +6913,14 @@
     "tags": [
       "academic"
     ],
-    "tier": "high"
+    "tier": "high",
+    "pos": "n. 名词"
   },
   {
     "id": 452,
     "word": "platform",
     "spelling": "P-L-A-T-F-O-R-M",
-    "phonetic": "",
+    "phonetic": "/ˈplætˌfɔːm/",
     "gloss": "平台",
     "tip": "learning platform",
     "example": "Upload files to the platform.",
@@ -6475,13 +6928,14 @@
     "tags": [
       "campus"
     ],
-    "tier": "core"
+    "tier": "core",
+    "pos": "n. 名词"
   },
   {
     "id": 453,
     "word": "plausible",
     "spelling": "P-L-A-U-S-I-B-L-E",
-    "phonetic": "",
+    "phonetic": "/ˈplɔzəbəl/",
     "gloss": "看似合理的",
     "tip": "plausible explanation",
     "example": "Offer a plausible explanation.",
@@ -6489,13 +6943,14 @@
     "tags": [
       "academic"
     ],
-    "tier": "high"
+    "tier": "high",
+    "pos": "adj. 形容词"
   },
   {
     "id": 454,
     "word": "policy",
     "spelling": "P-O-L-I-C-Y",
-    "phonetic": "",
+    "phonetic": "/ˈpɑləsi/",
     "gloss": "政策",
     "tip": "public policy",
     "example": "Public policy shapes enrolment.",
@@ -6503,13 +6958,14 @@
     "tags": [
       "academic"
     ],
-    "tier": "core"
+    "tier": "core",
+    "pos": "n. 名词"
   },
   {
     "id": 455,
     "word": "pollution",
     "spelling": "P-O-L-L-U-T-I-O-N",
-    "phonetic": "",
+    "phonetic": "/pəˈluʃən/",
     "gloss": "污染",
     "tip": "air pollution",
     "example": "Air pollution affects health.",
@@ -6518,13 +6974,14 @@
       "academic",
       "env"
     ],
-    "tier": "core"
+    "tier": "core",
+    "pos": "n. 名词"
   },
   {
     "id": 456,
     "word": "population",
     "spelling": "P-O-P-U-L-A-T-I-O-N",
-    "phonetic": "",
+    "phonetic": "/ˌpɑpjəˈleɪʃən/",
     "gloss": "人口",
     "tip": "ageing population",
     "example": "An ageing population raises costs.",
@@ -6532,13 +6989,14 @@
     "tags": [
       "academic"
     ],
-    "tier": "core"
+    "tier": "core",
+    "pos": "n. 名词"
   },
   {
     "id": 457,
     "word": "portal",
     "spelling": "P-O-R-T-A-L",
-    "phonetic": "",
+    "phonetic": "/ˈpɔːtəl/",
     "gloss": "门户",
     "tip": "student portal",
     "example": "Log in to the student portal.",
@@ -6546,13 +7004,14 @@
     "tags": [
       "campus"
     ],
-    "tier": "core"
+    "tier": "core",
+    "pos": "n. 名词"
   },
   {
     "id": 458,
     "word": "positive",
     "spelling": "P-O-S-I-T-I-V-E",
-    "phonetic": "",
+    "phonetic": "/ˈpɑzətɪv/",
     "gloss": "积极的",
     "tip": "positive correlation",
     "example": "There is a positive correlation.",
@@ -6560,13 +7019,14 @@
     "tags": [
       "academic"
     ],
-    "tier": "core"
+    "tier": "core",
+    "pos": "adj. 形容词"
   },
   {
     "id": 459,
     "word": "postgraduate",
     "spelling": "P-O-S-T-G-R-A-D-U-A-T-E",
-    "phonetic": "",
+    "phonetic": "/postgraduate/",
     "gloss": "研究生",
     "tip": "postgraduate research",
     "example": "Postgraduate research needs ethics approval.",
@@ -6574,13 +7034,14 @@
     "tags": [
       "campus"
     ],
-    "tier": "core"
+    "tier": "core",
+    "pos": "v. 动词"
   },
   {
     "id": 460,
     "word": "postpone",
     "spelling": "P-O-S-T-P-O-N-E",
-    "phonetic": "",
+    "phonetic": "/poʊstˈpoʊn/",
     "gloss": "推迟",
     "tip": "postpone the meeting",
     "example": "The lecture was postponed.",
@@ -6589,13 +7050,14 @@
       "campus",
       "verb"
     ],
-    "tier": "core"
+    "tier": "core",
+    "pos": "v. 动词"
   },
   {
     "id": 461,
     "word": "potential",
     "spelling": "P-O-T-E-N-T-I-A-L",
-    "phonetic": "",
+    "phonetic": "/pəˈtɛnʃəl/",
     "gloss": "潜在的",
     "tip": "potential impact",
     "example": "Assess the potential impact.",
@@ -6603,13 +7065,14 @@
     "tags": [
       "academic"
     ],
-    "tier": "core"
+    "tier": "core",
+    "pos": "adj. 形容词"
   },
   {
     "id": 462,
     "word": "poverty",
     "spelling": "P-O-V-E-R-T-Y",
-    "phonetic": "",
+    "phonetic": "/ˈpɑvəti/",
     "gloss": "贫困",
     "tip": "poverty line",
     "example": "Poverty rates declined slowly.",
@@ -6618,13 +7081,14 @@
       "academic",
       "econ"
     ],
-    "tier": "core"
+    "tier": "core",
+    "pos": "n. 名词"
   },
   {
     "id": 463,
     "word": "precise",
     "spelling": "P-R-E-C-I-S-E",
-    "phonetic": "",
+    "phonetic": "/prɪˈsaɪs/",
     "gloss": "精确的",
     "tip": "precise definition",
     "example": "Give a precise definition.",
@@ -6632,13 +7096,14 @@
     "tags": [
       "academic"
     ],
-    "tier": "core"
+    "tier": "core",
+    "pos": "adj. 形容词"
   },
   {
     "id": 464,
     "word": "precision",
     "spelling": "P-R-E-C-I-S-I-O-N",
-    "phonetic": "",
+    "phonetic": "/priˈsɪʒən/",
     "gloss": "精确度",
     "tip": "measurement precision",
     "example": "Improve measurement precision.",
@@ -6646,13 +7111,14 @@
     "tags": [
       "academic"
     ],
-    "tier": "high"
+    "tier": "high",
+    "pos": "n. 名词"
   },
   {
     "id": 465,
     "word": "predict",
     "spelling": "P-R-E-D-I-C-T",
-    "phonetic": "",
+    "phonetic": "/prɪˈdɪkt/",
     "gloss": "预测",
     "tip": "predict outcomes",
     "example": "Models predict enrolment.",
@@ -6661,13 +7127,14 @@
       "academic",
       "verb"
     ],
-    "tier": "core"
+    "tier": "core",
+    "pos": "v. 动词"
   },
   {
     "id": 466,
     "word": "preliminary",
     "spelling": "P-R-E-L-I-M-I-N-A-R-Y",
-    "phonetic": "",
+    "phonetic": "/prɪˈlɪməˌnɛri/",
     "gloss": "初步的",
     "tip": "preliminary results",
     "example": "Preliminary results are tentative.",
@@ -6675,13 +7142,14 @@
     "tags": [
       "academic"
     ],
-    "tier": "high"
+    "tier": "high",
+    "pos": "adj. 形容词"
   },
   {
     "id": 467,
     "word": "prerequisite",
     "spelling": "P-R-E-R-E-Q-U-I-S-I-T-E",
-    "phonetic": "",
+    "phonetic": "/priˈɛkwəzət/",
     "gloss": "先决条件",
     "tip": "course prerequisite",
     "example": "Statistics is a prerequisite.",
@@ -6689,13 +7157,14 @@
     "tags": [
       "campus"
     ],
-    "tier": "high"
+    "tier": "high",
+    "pos": "n. 名词"
   },
   {
     "id": 468,
     "word": "presentation",
     "spelling": "P-R-E-S-E-N-T-A-T-I-O-N",
-    "phonetic": "",
+    "phonetic": "/ˌprɛzənˈteɪʃən/",
     "gloss": "报告；演示",
     "tip": "oral presentation",
     "example": "Prepare a ten-minute presentation.",
@@ -6703,13 +7172,14 @@
     "tags": [
       "campus"
     ],
-    "tier": "core"
+    "tier": "core",
+    "pos": "n. 名词"
   },
   {
     "id": 469,
     "word": "pressure",
     "spelling": "P-R-E-S-S-U-R-E",
-    "phonetic": "",
+    "phonetic": "/ˈprɛʃə/",
     "gloss": "压力",
     "tip": "time pressure",
     "example": "Time pressure affects accuracy.",
@@ -6718,13 +7188,14 @@
       "academic",
       "campus"
     ],
-    "tier": "core"
+    "tier": "core",
+    "pos": "v. 动词"
   },
   {
     "id": 470,
     "word": "prevailing",
     "spelling": "P-R-E-V-A-I-L-I-N-G",
-    "phonetic": "",
+    "phonetic": "/prɪˈveɪlɪŋ/",
     "gloss": "盛行的",
     "tip": "prevailing view",
     "example": "Challenge the prevailing view.",
@@ -6732,13 +7203,14 @@
     "tags": [
       "academic"
     ],
-    "tier": "mid"
+    "tier": "mid",
+    "pos": "adj. 形容词"
   },
   {
     "id": 471,
     "word": "prevention",
     "spelling": "P-R-E-V-E-N-T-I-O-N",
-    "phonetic": "",
+    "phonetic": "/priˈvɛnʃən/",
     "gloss": "预防",
     "tip": "disease prevention",
     "example": "Prevention is more cost-effective.",
@@ -6746,13 +7218,14 @@
     "tags": [
       "academic"
     ],
-    "tier": "high"
+    "tier": "high",
+    "pos": "n. 名词"
   },
   {
     "id": 472,
     "word": "previous",
     "spelling": "P-R-E-V-I-O-U-S",
-    "phonetic": "",
+    "phonetic": "/ˈpriviəs/",
     "gloss": "先前的",
     "tip": "previous research",
     "example": "Previous research overlooked this.",
@@ -6760,13 +7233,14 @@
     "tags": [
       "academic"
     ],
-    "tier": "core"
+    "tier": "core",
+    "pos": "adj. 形容词"
   },
   {
     "id": 473,
     "word": "previously",
     "spelling": "P-R-E-V-I-O-U-S-L-Y",
-    "phonetic": "",
+    "phonetic": "/ˈpriviəsli/",
     "gloss": "先前",
     "tip": "previously reported",
     "example": "As previously reported, demand rose.",
@@ -6774,13 +7248,14 @@
     "tags": [
       "academic"
     ],
-    "tier": "core"
+    "tier": "core",
+    "pos": "adv. 副词"
   },
   {
     "id": 474,
     "word": "price",
     "spelling": "P-R-I-C-E",
-    "phonetic": "",
+    "phonetic": "/praɪs/",
     "gloss": "价格",
     "tip": "price rise",
     "example": "Prices rose sharply.",
@@ -6788,13 +7263,14 @@
     "tags": [
       "econ"
     ],
-    "tier": "mid"
+    "tier": "mid",
+    "pos": "v. 动词"
   },
   {
     "id": 475,
     "word": "primarily",
     "spelling": "P-R-I-M-A-R-I-L-Y",
-    "phonetic": "",
+    "phonetic": "/praɪˈmɛrəli/",
     "gloss": "主要地",
     "tip": "primarily concerned with",
     "example": "The study is primarily concerned with access.",
@@ -6802,13 +7278,14 @@
     "tags": [
       "academic"
     ],
-    "tier": "core"
+    "tier": "core",
+    "pos": "adv. 副词"
   },
   {
     "id": 476,
     "word": "primary",
     "spelling": "P-R-I-M-A-R-Y",
-    "phonetic": "",
+    "phonetic": "/ˈpraɪˌmɛri/",
     "gloss": "主要的；一手的",
     "tip": "primary source",
     "example": "Use primary sources where possible.",
@@ -6816,13 +7293,14 @@
     "tags": [
       "academic"
     ],
-    "tier": "core"
+    "tier": "core",
+    "pos": "adj. 形容词"
   },
   {
     "id": 477,
     "word": "principle",
     "spelling": "P-R-I-N-C-I-P-L-E",
-    "phonetic": "",
+    "phonetic": "/ˈprɪnsəpəl/",
     "gloss": "原则",
     "tip": "guiding principle",
     "example": "Fairness is a guiding principle.",
@@ -6830,13 +7308,14 @@
     "tags": [
       "academic"
     ],
-    "tier": "core"
+    "tier": "core",
+    "pos": "v. 动词"
   },
   {
     "id": 478,
     "word": "priority",
     "spelling": "P-R-I-O-R-I-T-Y",
-    "phonetic": "",
+    "phonetic": "/praɪˈɔːəti/",
     "gloss": "优先事项",
     "tip": "top priority",
     "example": "Safety is the top priority.",
@@ -6844,13 +7323,14 @@
     "tags": [
       "academic"
     ],
-    "tier": "core"
+    "tier": "core",
+    "pos": "n. 名词"
   },
   {
     "id": 479,
     "word": "privacy",
     "spelling": "P-R-I-V-A-C-Y",
-    "phonetic": "",
+    "phonetic": "/ˈprɪvəsi/",
     "gloss": "隐私",
     "tip": "data privacy",
     "example": "Protect data privacy.",
@@ -6858,13 +7338,14 @@
     "tags": [
       "academic"
     ],
-    "tier": "core"
+    "tier": "core",
+    "pos": "n. 名词"
   },
   {
     "id": 480,
     "word": "probability",
     "spelling": "P-R-O-B-A-B-I-L-I-T-Y",
-    "phonetic": "",
+    "phonetic": "/ˌprɑbəˈbɪləˌti/",
     "gloss": "概率",
     "tip": "probability of",
     "example": "Estimate the probability of success.",
@@ -6872,13 +7353,14 @@
     "tags": [
       "academic"
     ],
-    "tier": "core"
+    "tier": "core",
+    "pos": "n. 名词"
   },
   {
     "id": 481,
     "word": "procedure",
     "spelling": "P-R-O-C-E-D-U-R-E",
-    "phonetic": "",
+    "phonetic": "/prəˈsiʤə/",
     "gloss": "程序",
     "tip": "safety procedures",
     "example": "Follow laboratory procedures.",
@@ -6887,13 +7369,14 @@
       "academic",
       "campus"
     ],
-    "tier": "core"
+    "tier": "core",
+    "pos": "v. 动词"
   },
   {
     "id": 482,
     "word": "process",
     "spelling": "P-R-O-C-E-S-S",
-    "phonetic": "",
+    "phonetic": "/ˈprɔˌsɛs/",
     "gloss": "过程",
     "tip": "learning process",
     "example": "Revision is part of the process.",
@@ -6901,13 +7384,14 @@
     "tags": [
       "academic"
     ],
-    "tier": "core"
+    "tier": "core",
+    "pos": "n. 名词"
   },
   {
     "id": 483,
     "word": "productivity",
     "spelling": "P-R-O-D-U-C-T-I-V-I-T-Y",
-    "phonetic": "",
+    "phonetic": "/ˌproʊdəkˈtɪvɪti/",
     "gloss": "生产率",
     "tip": "labour productivity",
     "example": "Productivity gains lag wages.",
@@ -6916,13 +7400,14 @@
       "academic",
       "econ"
     ],
-    "tier": "high"
+    "tier": "high",
+    "pos": "n. 名词"
   },
   {
     "id": 484,
     "word": "professor",
     "spelling": "P-R-O-F-E-S-S-O-R",
-    "phonetic": "",
+    "phonetic": "/prəˈfɛsə/",
     "gloss": "教授",
     "tip": "associate professor",
     "example": "The professor marked essays.",
@@ -6930,13 +7415,14 @@
     "tags": [
       "campus"
     ],
-    "tier": "core"
+    "tier": "core",
+    "pos": "n. 名词"
   },
   {
     "id": 485,
     "word": "proficiency",
     "spelling": "P-R-O-F-I-C-I-E-N-C-Y",
-    "phonetic": "",
+    "phonetic": "/prəˈfɪʃənsi/",
     "gloss": "熟练度",
     "tip": "language proficiency",
     "example": "PTE measures English proficiency.",
@@ -6945,13 +7431,14 @@
       "academic",
       "campus"
     ],
-    "tier": "core"
+    "tier": "core",
+    "pos": "n. 名词"
   },
   {
     "id": 486,
     "word": "profound",
     "spelling": "P-R-O-F-O-U-N-D",
-    "phonetic": "",
+    "phonetic": "/proʊˈfaʊnd/",
     "gloss": "深刻的",
     "tip": "profound impact",
     "example": "The reform had a profound impact.",
@@ -6959,13 +7446,14 @@
     "tags": [
       "academic"
     ],
-    "tier": "high"
+    "tier": "high",
+    "pos": "adj. 形容词"
   },
   {
     "id": 487,
     "word": "progress",
     "spelling": "P-R-O-G-R-E-S-S",
-    "phonetic": "",
+    "phonetic": "/ˈprɑˌgrɛs/",
     "gloss": "进步",
     "tip": "make progress",
     "example": "Steady progress beats cramming.",
@@ -6973,13 +7461,14 @@
     "tags": [
       "academic"
     ],
-    "tier": "core"
+    "tier": "core",
+    "pos": "n. 名词"
   },
   {
     "id": 488,
     "word": "promote",
     "spelling": "P-R-O-M-O-T-E",
-    "phonetic": "",
+    "phonetic": "/prəˈmoʊt/",
     "gloss": "促进",
     "tip": "promote learning",
     "example": "Feedback promotes learning.",
@@ -6988,13 +7477,14 @@
       "academic",
       "verb"
     ],
-    "tier": "core"
+    "tier": "core",
+    "pos": "v. 动词"
   },
   {
     "id": 489,
     "word": "prompt",
     "spelling": "P-R-O-M-P-T",
-    "phonetic": "",
+    "phonetic": "/prɑmpt/",
     "gloss": "迅速的；提示",
     "tip": "prompt response",
     "example": "Give a prompt response.",
@@ -7002,13 +7492,14 @@
     "tags": [
       "campus"
     ],
-    "tier": "core"
+    "tier": "core",
+    "pos": "adj. 形容词"
   },
   {
     "id": 490,
     "word": "pronunciation",
     "spelling": "P-R-O-N-U-N-C-I-A-T-I-O-N",
-    "phonetic": "",
+    "phonetic": "/prəˌnənsiˈeɪʃən/",
     "gloss": "发音",
     "tip": "clear pronunciation",
     "example": "Clear pronunciation aids RA.",
@@ -7016,13 +7507,14 @@
     "tags": [
       "academic"
     ],
-    "tier": "core"
+    "tier": "core",
+    "pos": "n. 名词"
   },
   {
     "id": 491,
     "word": "proofread",
     "spelling": "P-R-O-O-F-R-E-A-D",
-    "phonetic": "",
+    "phonetic": "/ˈpruˌfrid/",
     "gloss": "校对",
     "tip": "proofread carefully",
     "example": "Proofread before submission.",
@@ -7031,13 +7523,14 @@
       "campus",
       "verb"
     ],
-    "tier": "high"
+    "tier": "high",
+    "pos": "v. 动词"
   },
   {
     "id": 492,
     "word": "property",
     "spelling": "P-R-O-P-E-R-T-Y",
-    "phonetic": "",
+    "phonetic": "/ˈprɑpəti/",
     "gloss": "房产；属性",
     "tip": "property prices",
     "example": "Property prices fluctuated.",
@@ -7045,13 +7538,14 @@
     "tags": [
       "econ"
     ],
-    "tier": "high"
+    "tier": "high",
+    "pos": "n. 名词"
   },
   {
     "id": 493,
     "word": "proportion",
     "spelling": "P-R-O-P-O-R-T-I-O-N",
-    "phonetic": "",
+    "phonetic": "/prəˈpɔːʃən/",
     "gloss": "比例",
     "tip": "a large proportion",
     "example": "A large proportion of students commute.",
@@ -7059,13 +7553,14 @@
     "tags": [
       "academic"
     ],
-    "tier": "core"
+    "tier": "core",
+    "pos": "n. 名词"
   },
   {
     "id": 494,
     "word": "propose",
     "spelling": "P-R-O-P-O-S-E",
-    "phonetic": "",
+    "phonetic": "/prəˈpoʊz/",
     "gloss": "提出",
     "tip": "propose a method",
     "example": "She proposed a new method.",
@@ -7074,13 +7569,14 @@
       "academic",
       "verb"
     ],
-    "tier": "core"
+    "tier": "core",
+    "pos": "v. 动词"
   },
   {
     "id": 495,
     "word": "prosperity",
     "spelling": "P-R-O-S-P-E-R-I-T-Y",
-    "phonetic": "",
+    "phonetic": "/prɑˈspɛrəti/",
     "gloss": "繁荣",
     "tip": "economic prosperity",
     "example": "Education supports prosperity.",
@@ -7089,13 +7585,14 @@
       "academic",
       "econ"
     ],
-    "tier": "high"
+    "tier": "high",
+    "pos": "n. 名词"
   },
   {
     "id": 496,
     "word": "protocol",
     "spelling": "P-R-O-T-O-C-O-L",
-    "phonetic": "",
+    "phonetic": "/ˈproʊtəˌkɔl/",
     "gloss": "规程；协议",
     "tip": "research protocol",
     "example": "The ethics protocol was approved.",
@@ -7103,13 +7600,14 @@
     "tags": [
       "academic"
     ],
-    "tier": "high"
+    "tier": "high",
+    "pos": "n. 名词"
   },
   {
     "id": 497,
     "word": "provide",
     "spelling": "P-R-O-V-I-D-E",
-    "phonetic": "",
+    "phonetic": "/prəˈvaɪd/",
     "gloss": "提供",
     "tip": "provide evidence",
     "example": "The study provides evidence.",
@@ -7118,13 +7616,14 @@
       "academic",
       "verb"
     ],
-    "tier": "core"
+    "tier": "core",
+    "pos": "v. 动词"
   },
   {
     "id": 498,
     "word": "publication",
     "spelling": "P-U-B-L-I-C-A-T-I-O-N",
-    "phonetic": "",
+    "phonetic": "/ˌpəblɪˈkeɪʃən/",
     "gloss": "出版；发表",
     "tip": "recent publication",
     "example": "List recent publications.",
@@ -7132,13 +7631,14 @@
     "tags": [
       "academic"
     ],
-    "tier": "high"
+    "tier": "high",
+    "pos": "n. 名词"
   },
   {
     "id": 499,
     "word": "publish",
     "spelling": "P-U-B-L-I-S-H",
-    "phonetic": "",
+    "phonetic": "/ˈpəblɪʃ/",
     "gloss": "发表",
     "tip": "publish findings",
     "example": "They published findings online.",
@@ -7147,13 +7647,14 @@
       "academic",
       "verb"
     ],
-    "tier": "core"
+    "tier": "core",
+    "pos": "v. 动词"
   },
   {
     "id": 500,
     "word": "punctual",
     "spelling": "P-U-N-C-T-U-A-L",
-    "phonetic": "",
+    "phonetic": "/ˈpəŋkʧuəl/",
     "gloss": "准时的",
     "tip": "be punctual",
     "example": "Be punctual for tutorials.",
@@ -7161,13 +7662,14 @@
     "tags": [
       "campus"
     ],
-    "tier": "mid"
+    "tier": "mid",
+    "pos": "adj. 形容词"
   },
   {
     "id": 501,
     "word": "purpose",
     "spelling": "P-U-R-P-O-S-E",
-    "phonetic": "",
+    "phonetic": "/ˈpəpəs/",
     "gloss": "目的",
     "tip": "for the purpose of",
     "example": "State the purpose of the study.",
@@ -7175,13 +7677,14 @@
     "tags": [
       "academic"
     ],
-    "tier": "core"
+    "tier": "core",
+    "pos": "adj. 形容词"
   },
   {
     "id": 502,
     "word": "pursue",
     "spelling": "P-U-R-S-U-E",
-    "phonetic": "",
+    "phonetic": "/pəˈsu/",
     "gloss": "攻读；追求",
     "tip": "pursue a degree",
     "example": "She will pursue a master's.",
@@ -7191,13 +7694,14 @@
       "verb",
       "campus"
     ],
-    "tier": "high"
+    "tier": "high",
+    "pos": "v. 动词"
   },
   {
     "id": 503,
     "word": "qualification",
     "spelling": "Q-U-A-L-I-F-I-C-A-T-I-O-N",
-    "phonetic": "",
+    "phonetic": "/kˌwɑləfəˈkeɪʃən/",
     "gloss": "资格；学历",
     "tip": "entry qualification",
     "example": "Check entry qualifications.",
@@ -7205,7 +7709,8 @@
     "tags": [
       "campus"
     ],
-    "tier": "core"
+    "tier": "core",
+    "pos": "n. 名词"
   },
   {
     "id": 504,
@@ -7219,13 +7724,14 @@
     "tags": [
       "academic"
     ],
-    "tier": "core"
+    "tier": "core",
+    "pos": "adj. 形容词"
   },
   {
     "id": 505,
     "word": "quality",
     "spelling": "Q-U-A-L-I-T-Y",
-    "phonetic": "",
+    "phonetic": "/kˈwɑləti/",
     "gloss": "质量",
     "tip": "high quality",
     "example": "High-quality evidence persuades.",
@@ -7233,7 +7739,8 @@
     "tags": [
       "academic"
     ],
-    "tier": "core"
+    "tier": "core",
+    "pos": "n. 名词"
   },
   {
     "id": 506,
@@ -7247,13 +7754,14 @@
     "tags": [
       "academic"
     ],
-    "tier": "core"
+    "tier": "core",
+    "pos": "adj. 形容词"
   },
   {
     "id": 507,
     "word": "quantity",
     "spelling": "Q-U-A-N-T-I-T-Y",
-    "phonetic": "",
+    "phonetic": "/kˈwɑntəti/",
     "gloss": "数量",
     "tip": "quantity vs quality",
     "example": "Prefer quality over quantity.",
@@ -7261,13 +7769,14 @@
     "tags": [
       "academic"
     ],
-    "tier": "mid"
+    "tier": "mid",
+    "pos": "n. 名词"
   },
   {
     "id": 508,
     "word": "questionnaire",
     "spelling": "Q-U-E-S-T-I-O-N-N-A-I-R-E",
-    "phonetic": "",
+    "phonetic": "/kˌwɛsʧəˈnɛː/",
     "gloss": "问卷",
     "tip": "online questionnaire",
     "example": "Complete the questionnaire online.",
@@ -7276,13 +7785,14 @@
       "academic",
       "campus"
     ],
-    "tier": "core"
+    "tier": "core",
+    "pos": "v. 动词"
   },
   {
     "id": 509,
     "word": "random",
     "spelling": "R-A-N-D-O-M",
-    "phonetic": "",
+    "phonetic": "/ˈændəm/",
     "gloss": "随机的",
     "tip": "random sample",
     "example": "Use a random sample.",
@@ -7290,13 +7800,14 @@
     "tags": [
       "academic"
     ],
-    "tier": "core"
+    "tier": "core",
+    "pos": "adj. 形容词"
   },
   {
     "id": 510,
     "word": "range",
     "spelling": "R-A-N-G-E",
-    "phonetic": "",
+    "phonetic": "/reɪnʤ/",
     "gloss": "范围",
     "tip": "a wide range of",
     "example": "A wide range of topics was covered.",
@@ -7304,13 +7815,14 @@
     "tags": [
       "academic"
     ],
-    "tier": "core"
+    "tier": "core",
+    "pos": "v. 动词"
   },
   {
     "id": 511,
     "word": "rapid",
     "spelling": "R-A-P-I-D",
-    "phonetic": "",
+    "phonetic": "/ˈæpɪd/",
     "gloss": "迅速的",
     "tip": "rapid growth",
     "example": "Rapid growth strained services.",
@@ -7318,13 +7830,14 @@
     "tags": [
       "academic"
     ],
-    "tier": "core"
+    "tier": "core",
+    "pos": "adj. 形容词"
   },
   {
     "id": 512,
     "word": "rate",
     "spelling": "R-A-T-E",
-    "phonetic": "",
+    "phonetic": "/reɪt/",
     "gloss": "比率",
     "tip": "growth rate",
     "example": "The unemployment rate fell.",
@@ -7332,13 +7845,14 @@
     "tags": [
       "academic"
     ],
-    "tier": "core"
+    "tier": "core",
+    "pos": "v. 动词"
   },
   {
     "id": 513,
     "word": "ratio",
     "spelling": "R-A-T-I-O",
-    "phonetic": "",
+    "phonetic": "/ˈeɪʃiˌoʊ/",
     "gloss": "比率",
     "tip": "student-staff ratio",
     "example": "The student-staff ratio improved.",
@@ -7346,13 +7860,14 @@
     "tags": [
       "academic"
     ],
-    "tier": "high"
+    "tier": "high",
+    "pos": "n. 名词"
   },
   {
     "id": 514,
     "word": "recent",
     "spelling": "R-E-C-E-N-T",
-    "phonetic": "",
+    "phonetic": "/ˈisənt/",
     "gloss": "最近的",
     "tip": "recent findings",
     "example": "Recent findings challenge the model.",
@@ -7360,13 +7875,14 @@
     "tags": [
       "academic"
     ],
-    "tier": "core"
+    "tier": "core",
+    "pos": "adj. 形容词"
   },
   {
     "id": 515,
     "word": "recently",
     "spelling": "R-E-C-E-N-T-L-Y",
-    "phonetic": "",
+    "phonetic": "/ˈisəntli/",
     "gloss": "最近",
     "tip": "recently published",
     "example": "A recently published study confirms this.",
@@ -7374,13 +7890,14 @@
     "tags": [
       "academic"
     ],
-    "tier": "core"
+    "tier": "core",
+    "pos": "adv. 副词"
   },
   {
     "id": 516,
     "word": "recommend",
     "spelling": "R-E-C-O-M-M-E-N-D",
-    "phonetic": "",
+    "phonetic": "/ˌrɛkəˈmɛnd/",
     "gloss": "推荐",
     "tip": "recommend that",
     "example": "Tutors recommend daily practice.",
@@ -7389,13 +7906,14 @@
       "academic",
       "verb"
     ],
-    "tier": "core"
+    "tier": "core",
+    "pos": "v. 动词"
   },
   {
     "id": 517,
     "word": "recommendation",
     "spelling": "R-E-C-O-M-M-E-N-D-A-T-I-O-N",
-    "phonetic": "",
+    "phonetic": "/ˌrɛkəmənˈdeɪʃən/",
     "gloss": "推荐信",
     "tip": "letter of recommendation",
     "example": "Ask for a recommendation early.",
@@ -7403,7 +7921,8 @@
     "tags": [
       "campus"
     ],
-    "tier": "high"
+    "tier": "high",
+    "pos": "n. 名词"
   },
   {
     "id": 518,
@@ -7418,13 +7937,14 @@
       "campus",
       "verb"
     ],
-    "tier": "core"
+    "tier": "core",
+    "pos": "v. 动词"
   },
   {
     "id": 519,
     "word": "recording",
     "spelling": "R-E-C-O-R-D-I-N-G",
-    "phonetic": "",
+    "phonetic": "/rɪˈkɔːdɪŋ/",
     "gloss": "录音",
     "tip": "audio recording",
     "example": "Replay the recording once.",
@@ -7432,13 +7952,14 @@
     "tags": [
       "academic"
     ],
-    "tier": "core"
+    "tier": "core",
+    "pos": "n. 名词"
   },
   {
     "id": 520,
     "word": "recycle",
     "spelling": "R-E-C-Y-C-L-E",
-    "phonetic": "",
+    "phonetic": "/riˈsaɪkəl/",
     "gloss": "回收利用",
     "tip": "recycle waste",
     "example": "The campus recycles plastics.",
@@ -7447,13 +7968,14 @@
       "env",
       "verb"
     ],
-    "tier": "mid"
+    "tier": "mid",
+    "pos": "v. 动词"
   },
   {
     "id": 521,
     "word": "reference",
     "spelling": "R-E-F-E-R-E-N-C-E",
-    "phonetic": "",
+    "phonetic": "/ˈɛfəəns/",
     "gloss": "参考；引用",
     "tip": "reference list",
     "example": "Add a reference list.",
@@ -7461,13 +7983,14 @@
     "tags": [
       "academic"
     ],
-    "tier": "core"
+    "tier": "core",
+    "pos": "n. 名词"
   },
   {
     "id": 522,
     "word": "reform",
     "spelling": "R-E-F-O-R-M",
-    "phonetic": "",
+    "phonetic": "/rɪˈfɔːm/",
     "gloss": "改革",
     "tip": "education reform",
     "example": "Education reform takes time.",
@@ -7475,13 +7998,14 @@
     "tags": [
       "academic"
     ],
-    "tier": "core"
+    "tier": "core",
+    "pos": "n. 名词"
   },
   {
     "id": 523,
     "word": "regardless",
     "spelling": "R-E-G-A-R-D-L-E-S-S",
-    "phonetic": "",
+    "phonetic": "/rəˈgɑrdləs/",
     "gloss": "不顾",
     "tip": "regardless of",
     "example": "Attend regardless of the weather.",
@@ -7489,13 +8013,14 @@
     "tags": [
       "academic"
     ],
-    "tier": "high"
+    "tier": "high",
+    "pos": "adj. 形容词"
   },
   {
     "id": 524,
     "word": "regional",
     "spelling": "R-E-G-I-O-N-A-L",
-    "phonetic": "",
+    "phonetic": "/ˈiʤənəl/",
     "gloss": "区域的",
     "tip": "regional variation",
     "example": "Regional variation was significant.",
@@ -7503,13 +8028,14 @@
     "tags": [
       "academic"
     ],
-    "tier": "high"
+    "tier": "high",
+    "pos": "adj. 形容词"
   },
   {
     "id": 525,
     "word": "registration",
     "spelling": "R-E-G-I-S-T-R-A-T-I-O-N",
-    "phonetic": "",
+    "phonetic": "/ˌrɛʤɪˈstreɪʃən/",
     "gloss": "登记；注册",
     "tip": "course registration",
     "example": "Registration closes at midnight.",
@@ -7517,13 +8043,14 @@
     "tags": [
       "campus"
     ],
-    "tier": "core"
+    "tier": "core",
+    "pos": "n. 名词"
   },
   {
     "id": 526,
     "word": "regulation",
     "spelling": "R-E-G-U-L-A-T-I-O-N",
-    "phonetic": "",
+    "phonetic": "/ˌrɛgjəˈleɪʃən/",
     "gloss": "规章；监管",
     "tip": "government regulation",
     "example": "New regulations take effect soon.",
@@ -7531,13 +8058,14 @@
     "tags": [
       "academic"
     ],
-    "tier": "core"
+    "tier": "core",
+    "pos": "n. 名词"
   },
   {
     "id": 527,
     "word": "reinforce",
     "spelling": "R-E-I-N-F-O-R-C-E",
-    "phonetic": "",
+    "phonetic": "/ˌriɪnˈfɔːs/",
     "gloss": "加强",
     "tip": "reinforce the claim",
     "example": "Examples reinforce the claim.",
@@ -7546,13 +8074,14 @@
       "academic",
       "verb"
     ],
-    "tier": "high"
+    "tier": "high",
+    "pos": "v. 动词"
   },
   {
     "id": 528,
     "word": "reject",
     "spelling": "R-E-J-E-C-T",
-    "phonetic": "",
+    "phonetic": "/ˈiʤɛkt/",
     "gloss": "拒绝",
     "tip": "reject an application",
     "example": "The panel rejected two proposals.",
@@ -7561,13 +8090,14 @@
       "campus",
       "verb"
     ],
-    "tier": "core"
+    "tier": "core",
+    "pos": "v. 动词"
   },
   {
     "id": 529,
     "word": "relatively",
     "spelling": "R-E-L-A-T-I-V-E-L-Y",
-    "phonetic": "",
+    "phonetic": "/ˈɛlətɪvli/",
     "gloss": "相对地",
     "tip": "relatively high",
     "example": "Costs remain relatively high.",
@@ -7575,13 +8105,14 @@
     "tags": [
       "academic"
     ],
-    "tier": "core"
+    "tier": "core",
+    "pos": "adv. 副词"
   },
   {
     "id": 530,
     "word": "release",
     "spelling": "R-E-L-E-A-S-E",
-    "phonetic": "",
+    "phonetic": "/riˈlis/",
     "gloss": "发布",
     "tip": "release a report",
     "example": "The report was released today.",
@@ -7590,13 +8121,14 @@
       "academic",
       "verb"
     ],
-    "tier": "core"
+    "tier": "core",
+    "pos": "v. 动词"
   },
   {
     "id": 531,
     "word": "relevant",
     "spelling": "R-E-L-E-V-A-N-T",
-    "phonetic": "",
+    "phonetic": "/ˈɛləvənt/",
     "gloss": "相关的",
     "tip": "relevant to",
     "example": "Keep examples relevant.",
@@ -7604,13 +8136,14 @@
     "tags": [
       "academic"
     ],
-    "tier": "core"
+    "tier": "core",
+    "pos": "adj. 形容词"
   },
   {
     "id": 532,
     "word": "reliability",
     "spelling": "R-E-L-I-A-B-I-L-I-T-Y",
-    "phonetic": "",
+    "phonetic": "/riˌlaɪəˈbɪləti/",
     "gloss": "信度；可靠性",
     "tip": "test reliability",
     "example": "Reliability was measured.",
@@ -7618,13 +8151,14 @@
     "tags": [
       "academic"
     ],
-    "tier": "core"
+    "tier": "core",
+    "pos": "n. 名词"
   },
   {
     "id": 533,
     "word": "remarkably",
     "spelling": "R-E-M-A-R-K-A-B-L-Y",
-    "phonetic": "",
+    "phonetic": "/rɪˈmɑrkəbli/",
     "gloss": "显著地",
     "tip": "remarkably similar",
     "example": "Results were remarkably similar.",
@@ -7632,13 +8166,14 @@
     "tags": [
       "academic"
     ],
-    "tier": "high"
+    "tier": "high",
+    "pos": "adv. 副词"
   },
   {
     "id": 534,
     "word": "renewable",
     "spelling": "R-E-N-E-W-A-B-L-E",
-    "phonetic": "",
+    "phonetic": "/riˈnuəbəl/",
     "gloss": "可再生的",
     "tip": "renewable energy",
     "example": "Renewable energy reduces emissions.",
@@ -7647,13 +8182,14 @@
       "academic",
       "env"
     ],
-    "tier": "core"
+    "tier": "core",
+    "pos": "adj. 形容词"
   },
   {
     "id": 535,
     "word": "rent",
     "spelling": "R-E-N-T",
-    "phonetic": "",
+    "phonetic": "/rɛnt/",
     "gloss": "租金",
     "tip": "monthly rent",
     "example": "Rent rose near campus.",
@@ -7661,13 +8197,14 @@
     "tags": [
       "campus"
     ],
-    "tier": "mid"
+    "tier": "mid",
+    "pos": "n. 名词"
   },
   {
     "id": 536,
     "word": "replicate",
     "spelling": "R-E-P-L-I-C-A-T-E",
-    "phonetic": "",
+    "phonetic": "/ˈɛplɪˌkeɪt/",
     "gloss": "复现；复制",
     "tip": "replicate a study",
     "example": "Labs could not replicate it.",
@@ -7676,13 +8213,14 @@
       "academic",
       "verb"
     ],
-    "tier": "core"
+    "tier": "core",
+    "pos": "v. 动词"
   },
   {
     "id": 537,
     "word": "representative",
     "spelling": "R-E-P-R-E-S-E-N-T-A-T-I-V-E",
-    "phonetic": "",
+    "phonetic": "/ˌrɛprɪˈzɛnətɪv/",
     "gloss": "有代表性的",
     "tip": "representative sample",
     "example": "Ensure a representative sample.",
@@ -7690,13 +8228,14 @@
     "tags": [
       "academic"
     ],
-    "tier": "core"
+    "tier": "core",
+    "pos": "adj. 形容词"
   },
   {
     "id": 538,
     "word": "request",
     "spelling": "R-E-Q-U-E-S-T",
-    "phonetic": "",
+    "phonetic": "/rɪkˈwɛst/",
     "gloss": "请求",
     "tip": "request feedback",
     "example": "Request feedback on your draft.",
@@ -7704,13 +8243,14 @@
     "tags": [
       "campus"
     ],
-    "tier": "core"
+    "tier": "core",
+    "pos": "n. 名词"
   },
   {
     "id": 539,
     "word": "require",
     "spelling": "R-E-Q-U-I-R-E",
-    "phonetic": "",
+    "phonetic": "/ˌrikˈwaɪə/",
     "gloss": "需要；要求",
     "tip": "require that",
     "example": "Essays require structure.",
@@ -7719,13 +8259,14 @@
       "academic",
       "verb"
     ],
-    "tier": "core"
+    "tier": "core",
+    "pos": "v. 动词"
   },
   {
     "id": 540,
     "word": "requirement",
     "spelling": "R-E-Q-U-I-R-E-M-E-N-T",
-    "phonetic": "",
+    "phonetic": "/rɪkˈwaɪrmənt/",
     "gloss": "要求",
     "tip": "language requirement",
     "example": "Meet the language requirement.",
@@ -7733,13 +8274,14 @@
     "tags": [
       "campus"
     ],
-    "tier": "core"
+    "tier": "core",
+    "pos": "n. 名词"
   },
   {
     "id": 541,
     "word": "reschedule",
     "spelling": "R-E-S-C-H-E-D-U-L-E",
-    "phonetic": "",
+    "phonetic": "/riˈskɛʤul/",
     "gloss": "改期",
     "tip": "reschedule an exam",
     "example": "Reschedule the exam if ill.",
@@ -7748,13 +8290,14 @@
       "campus",
       "verb"
     ],
-    "tier": "high"
+    "tier": "high",
+    "pos": "v. 动词"
   },
   {
     "id": 542,
     "word": "resolve",
     "spelling": "R-E-S-O-L-V-E",
-    "phonetic": "",
+    "phonetic": "/riˈzɑlv/",
     "gloss": "解决",
     "tip": "resolve a conflict",
     "example": "Mediation helped resolve the dispute.",
@@ -7763,13 +8306,14 @@
       "academic",
       "verb"
     ],
-    "tier": "high"
+    "tier": "high",
+    "pos": "v. 动词"
   },
   {
     "id": 543,
     "word": "resource",
     "spelling": "R-E-S-O-U-R-C-E",
-    "phonetic": "",
+    "phonetic": "/ˈisɔːs/",
     "gloss": "资源",
     "tip": "natural resources",
     "example": "Allocate resources fairly.",
@@ -7777,13 +8321,14 @@
     "tags": [
       "academic"
     ],
-    "tier": "core"
+    "tier": "core",
+    "pos": "v. 动词"
   },
   {
     "id": 544,
     "word": "respectively",
     "spelling": "R-E-S-P-E-C-T-I-V-E-L-Y",
-    "phonetic": "",
+    "phonetic": "/rɪˈspɛktɪvli/",
     "gloss": "分别地",
     "tip": "A and B respectively",
     "example": "Scores were 65 and 72 respectively.",
@@ -7791,13 +8336,14 @@
     "tags": [
       "academic"
     ],
-    "tier": "core"
+    "tier": "core",
+    "pos": "adv. 副词"
   },
   {
     "id": 545,
     "word": "responsibility",
     "spelling": "R-E-S-P-O-N-S-I-B-I-L-I-T-Y",
-    "phonetic": "",
+    "phonetic": "/riˌspɑnsəˈbɪləti/",
     "gloss": "责任",
     "tip": "social responsibility",
     "example": "Social responsibility matters in research.",
@@ -7805,13 +8351,14 @@
     "tags": [
       "academic"
     ],
-    "tier": "core"
+    "tier": "core",
+    "pos": "n. 名词"
   },
   {
     "id": 546,
     "word": "retell",
     "spelling": "R-E-T-E-L-L",
-    "phonetic": "",
+    "phonetic": "/riˈtɛl/",
     "gloss": "复述",
     "tip": "retell a lecture",
     "example": "Retell the lecture in your words.",
@@ -7820,13 +8367,14 @@
       "academic",
       "verb"
     ],
-    "tier": "high"
+    "tier": "high",
+    "pos": "v. 动词"
   },
   {
     "id": 547,
     "word": "retention",
     "spelling": "R-E-T-E-N-T-I-O-N",
-    "phonetic": "",
+    "phonetic": "/riˈtɛnʃən/",
     "gloss": "留存",
     "tip": "student retention",
     "example": "Retention strategies need funding.",
@@ -7834,13 +8382,14 @@
     "tags": [
       "campus"
     ],
-    "tier": "high"
+    "tier": "high",
+    "pos": "n. 名词"
   },
   {
     "id": 548,
     "word": "retrieve",
     "spelling": "R-E-T-R-I-E-V-E",
-    "phonetic": "",
+    "phonetic": "/rɪˈtriv/",
     "gloss": "检索",
     "tip": "retrieve information",
     "example": "Retrieve information from databases.",
@@ -7849,13 +8398,14 @@
       "academic",
       "verb"
     ],
-    "tier": "high"
+    "tier": "high",
+    "pos": "v. 动词"
   },
   {
     "id": 549,
     "word": "reveal",
     "spelling": "R-E-V-E-A-L",
-    "phonetic": "",
+    "phonetic": "/rɪˈvil/",
     "gloss": "揭示",
     "tip": "reveal that",
     "example": "Interviews revealed barriers.",
@@ -7864,13 +8414,14 @@
       "academic",
       "verb"
     ],
-    "tier": "core"
+    "tier": "core",
+    "pos": "v. 动词"
   },
   {
     "id": 550,
     "word": "revenue",
     "spelling": "R-E-V-E-N-U-E",
-    "phonetic": "",
+    "phonetic": "/ˈɛvəˌnu/",
     "gloss": "收入",
     "tip": "tax revenue",
     "example": "Tax revenue funded schools.",
@@ -7878,13 +8429,14 @@
     "tags": [
       "econ"
     ],
-    "tier": "high"
+    "tier": "high",
+    "pos": "v. 动词"
   },
   {
     "id": 551,
     "word": "revise",
     "spelling": "R-E-V-I-S-E",
-    "phonetic": "",
+    "phonetic": "/rɪˈvaɪz/",
     "gloss": "修改；复习",
     "tip": "revise the draft",
     "example": "Revise the draft overnight.",
@@ -7893,13 +8445,14 @@
       "campus",
       "verb"
     ],
-    "tier": "core"
+    "tier": "core",
+    "pos": "v. 动词"
   },
   {
     "id": 552,
     "word": "revision",
     "spelling": "R-E-V-I-S-I-O-N",
-    "phonetic": "",
+    "phonetic": "/riˈvɪʒən/",
     "gloss": "复习；修改",
     "tip": "exam revision",
     "example": "Start revision early.",
@@ -7907,13 +8460,14 @@
     "tags": [
       "campus"
     ],
-    "tier": "core"
+    "tier": "core",
+    "pos": "n. 名词"
   },
   {
     "id": 553,
     "word": "rigorous",
     "spelling": "R-I-G-O-R-O-U-S",
-    "phonetic": "",
+    "phonetic": "/ˈɪgəəs/",
     "gloss": "严谨的",
     "tip": "rigorous method",
     "example": "Apply a rigorous method.",
@@ -7921,13 +8475,14 @@
     "tags": [
       "academic"
     ],
-    "tier": "core"
+    "tier": "core",
+    "pos": "adj. 形容词"
   },
   {
     "id": 554,
     "word": "risk",
     "spelling": "R-I-S-K",
-    "phonetic": "",
+    "phonetic": "/rɪsk/",
     "gloss": "风险",
     "tip": "risk assessment",
     "example": "Conduct a risk assessment.",
@@ -7935,13 +8490,14 @@
     "tags": [
       "academic"
     ],
-    "tier": "core"
+    "tier": "core",
+    "pos": "n. 名词"
   },
   {
     "id": 555,
     "word": "robust",
     "spelling": "R-O-B-U-S-T",
-    "phonetic": "",
+    "phonetic": "/roʊˈbəst/",
     "gloss": "稳健的",
     "tip": "robust findings",
     "example": "Findings appear robust.",
@@ -7949,13 +8505,14 @@
     "tags": [
       "academic"
     ],
-    "tier": "high"
+    "tier": "high",
+    "pos": "adj. 形容词"
   },
   {
     "id": 556,
     "word": "role",
     "spelling": "R-O-L-E",
-    "phonetic": "",
+    "phonetic": "/roʊl/",
     "gloss": "角色；作用",
     "tip": "play a role",
     "example": "Funding plays a critical role.",
@@ -7963,13 +8520,14 @@
     "tags": [
       "academic"
     ],
-    "tier": "core"
+    "tier": "core",
+    "pos": "v. 动词"
   },
   {
     "id": 557,
     "word": "routine",
     "spelling": "R-O-U-T-I-N-E",
-    "phonetic": "",
+    "phonetic": "/ruˈtin/",
     "gloss": "例行",
     "tip": "daily routine",
     "example": "A morning routine helps focus.",
@@ -7977,13 +8535,14 @@
     "tags": [
       "campus"
     ],
-    "tier": "core"
+    "tier": "core",
+    "pos": "v. 动词"
   },
   {
     "id": 558,
     "word": "rural",
     "spelling": "R-U-R-A-L",
-    "phonetic": "",
+    "phonetic": "/ˈʊrəl/",
     "gloss": "农村的",
     "tip": "rural areas",
     "example": "Rural schools face shortages.",
@@ -7992,13 +8551,14 @@
       "academic",
       "env"
     ],
-    "tier": "core"
+    "tier": "core",
+    "pos": "adj. 形容词"
   },
   {
     "id": 559,
     "word": "safety",
     "spelling": "S-A-F-E-T-Y",
-    "phonetic": "",
+    "phonetic": "/ˈseɪfti/",
     "gloss": "安全",
     "tip": "lab safety",
     "example": "Lab safety training is mandatory.",
@@ -8006,13 +8566,14 @@
     "tags": [
       "campus"
     ],
-    "tier": "core"
+    "tier": "core",
+    "pos": "n. 名词"
   },
   {
     "id": 560,
     "word": "sample",
     "spelling": "S-A-M-P-L-E",
-    "phonetic": "",
+    "phonetic": "/ˈsæmpəl/",
     "gloss": "样本；抽样",
     "tip": "sample size",
     "example": "The sample included 200 students.",
@@ -8020,13 +8581,14 @@
     "tags": [
       "academic"
     ],
-    "tier": "core"
+    "tier": "core",
+    "pos": "v. 动词"
   },
   {
     "id": 561,
     "word": "scan",
     "spelling": "S-C-A-N",
-    "phonetic": "",
+    "phonetic": "/skæn/",
     "gloss": "扫读",
     "tip": "scan for keywords",
     "example": "Scan for keywords quickly.",
@@ -8035,13 +8597,14 @@
       "academic",
       "verb"
     ],
-    "tier": "core"
+    "tier": "core",
+    "pos": "v. 动词"
   },
   {
     "id": 562,
     "word": "scarce",
     "spelling": "S-C-A-R-C-E",
-    "phonetic": "",
+    "phonetic": "/skɛrs/",
     "gloss": "稀缺的",
     "tip": "scarce resources",
     "example": "Scarce resources need rationing.",
@@ -8049,13 +8612,14 @@
     "tags": [
       "academic"
     ],
-    "tier": "high"
+    "tier": "high",
+    "pos": "adj. 形容词"
   },
   {
     "id": 563,
     "word": "schedule",
     "spelling": "S-C-H-E-D-U-L-E",
-    "phonetic": "",
+    "phonetic": "/ˈʃedjuːl/",
     "gloss": "日程；安排",
     "tip": "class schedule",
     "example": "Check your class schedule.",
@@ -8063,7 +8627,8 @@
     "tags": [
       "campus"
     ],
-    "tier": "core"
+    "tier": "core",
+    "pos": "v. 动词"
   },
   {
     "id": 564,
@@ -8077,13 +8642,14 @@
     "tags": [
       "campus"
     ],
-    "tier": "core"
+    "tier": "core",
+    "pos": "n. 名词"
   },
   {
     "id": 565,
     "word": "scope",
     "spelling": "S-C-O-P-E",
-    "phonetic": "",
+    "phonetic": "/skoʊp/",
     "gloss": "范围",
     "tip": "beyond the scope",
     "example": "That is beyond the scope.",
@@ -8091,13 +8657,14 @@
     "tags": [
       "academic"
     ],
-    "tier": "core"
+    "tier": "core",
+    "pos": "v. 动词"
   },
   {
     "id": 566,
     "word": "secondary",
     "spelling": "S-E-C-O-N-D-A-R-Y",
-    "phonetic": "",
+    "phonetic": "/ˈsɛkənˌdɛri/",
     "gloss": "次要的；二手的",
     "tip": "secondary source",
     "example": "Secondary sources summarise debates.",
@@ -8105,13 +8672,14 @@
     "tags": [
       "academic"
     ],
-    "tier": "core"
+    "tier": "core",
+    "pos": "adj. 形容词"
   },
   {
     "id": 567,
     "word": "sector",
     "spelling": "S-E-C-T-O-R",
-    "phonetic": "",
+    "phonetic": "/ˈsɛktə/",
     "gloss": "部门；行业",
     "tip": "public sector",
     "example": "The public sector hired graduates.",
@@ -8119,13 +8687,14 @@
     "tags": [
       "econ"
     ],
-    "tier": "core"
+    "tier": "core",
+    "pos": "n. 名词"
   },
   {
     "id": 568,
     "word": "select",
     "spelling": "S-E-L-E-C-T",
-    "phonetic": "",
+    "phonetic": "/səˈlɛkt/",
     "gloss": "选择",
     "tip": "select participants",
     "example": "Select participants randomly.",
@@ -8134,13 +8703,14 @@
       "academic",
       "verb"
     ],
-    "tier": "core"
+    "tier": "core",
+    "pos": "v. 动词"
   },
   {
     "id": 569,
     "word": "semester",
     "spelling": "S-E-M-E-S-T-E-R",
-    "phonetic": "",
+    "phonetic": "/səˈmɛstə/",
     "gloss": "学期",
     "tip": "fall semester",
     "example": "The semester starts in September.",
@@ -8148,13 +8718,14 @@
     "tags": [
       "campus"
     ],
-    "tier": "core"
+    "tier": "core",
+    "pos": "n. 名词"
   },
   {
     "id": 570,
     "word": "seminar",
     "spelling": "S-E-M-I-N-A-R",
-    "phonetic": "",
+    "phonetic": "/ˈsɛməˌnɑː/",
     "gloss": "研讨课",
     "tip": "research seminar",
     "example": "Present your draft in the seminar.",
@@ -8162,13 +8733,14 @@
     "tags": [
       "campus"
     ],
-    "tier": "core"
+    "tier": "core",
+    "pos": "n. 名词"
   },
   {
     "id": 571,
     "word": "sentence",
     "spelling": "S-E-N-T-E-N-C-E",
-    "phonetic": "",
+    "phonetic": "/ˈsɛntəns/",
     "gloss": "句子",
     "tip": "complex sentence",
     "example": "Keep the sentence under twenty words.",
@@ -8176,13 +8748,14 @@
     "tags": [
       "academic"
     ],
-    "tier": "core"
+    "tier": "core",
+    "pos": "n. 名词"
   },
   {
     "id": 572,
     "word": "shift",
     "spelling": "S-H-I-F-T",
-    "phonetic": "",
+    "phonetic": "/ʃɪft/",
     "gloss": "转变",
     "tip": "paradigm shift",
     "example": "There was a shift to open access.",
@@ -8190,13 +8763,14 @@
     "tags": [
       "academic"
     ],
-    "tier": "core"
+    "tier": "core",
+    "pos": "n. 名词"
   },
   {
     "id": 573,
     "word": "shortage",
     "spelling": "S-H-O-R-T-A-G-E",
-    "phonetic": "",
+    "phonetic": "/ˈʃɔːtɪʤ/",
     "gloss": "短缺",
     "tip": "staff shortage",
     "example": "A staff shortage delayed marking.",
@@ -8205,13 +8779,14 @@
       "campus",
       "econ"
     ],
-    "tier": "high"
+    "tier": "high",
+    "pos": "v. 动词"
   },
   {
     "id": 574,
     "word": "significant",
     "spelling": "S-I-G-N-I-F-I-C-A-N-T",
-    "phonetic": "",
+    "phonetic": "/sɪgˈnɪfɪkənt/",
     "gloss": "显著的；重要的",
     "tip": "statistically significant",
     "example": "The difference was significant.",
@@ -8219,7 +8794,8 @@
     "tags": [
       "academic"
     ],
-    "tier": "core"
+    "tier": "core",
+    "pos": "adj. 形容词"
   },
   {
     "id": 575,
@@ -8233,13 +8809,14 @@
     "tags": [
       "academic"
     ],
-    "tier": "core"
+    "tier": "core",
+    "pos": "adv. 副词"
   },
   {
     "id": 576,
     "word": "similar",
     "spelling": "S-I-M-I-L-A-R",
-    "phonetic": "",
+    "phonetic": "/ˈsɪmələ/",
     "gloss": "相似的",
     "tip": "similar to",
     "example": "Results were similar across cohorts.",
@@ -8247,13 +8824,14 @@
     "tags": [
       "academic"
     ],
-    "tier": "core"
+    "tier": "core",
+    "pos": "adj. 形容词"
   },
   {
     "id": 577,
     "word": "simultaneously",
     "spelling": "S-I-M-U-L-T-A-N-E-O-U-S-L-Y",
-    "phonetic": "",
+    "phonetic": "/ˌsaɪməlˈteɪniəsli/",
     "gloss": "同时",
     "tip": "occur simultaneously",
     "example": "Two processes occur simultaneously.",
@@ -8261,13 +8839,14 @@
     "tags": [
       "academic"
     ],
-    "tier": "high"
+    "tier": "high",
+    "pos": "adv. 副词"
   },
   {
     "id": 578,
     "word": "skill",
     "spelling": "S-K-I-L-L",
-    "phonetic": "",
+    "phonetic": "/skɪl/",
     "gloss": "技能",
     "tip": "language skill",
     "example": "Listening skill improves with practice.",
@@ -8275,13 +8854,14 @@
     "tags": [
       "academic"
     ],
-    "tier": "core"
+    "tier": "core",
+    "pos": "n. 名词"
   },
   {
     "id": 579,
     "word": "skim",
     "spelling": "S-K-I-M",
-    "phonetic": "",
+    "phonetic": "/skɪm/",
     "gloss": "略读",
     "tip": "skim the passage",
     "example": "Skim the passage for main ideas.",
@@ -8290,13 +8870,14 @@
       "academic",
       "verb"
     ],
-    "tier": "core"
+    "tier": "core",
+    "pos": "v. 动词"
   },
   {
     "id": 580,
     "word": "slightly",
     "spelling": "S-L-I-G-H-T-L-Y",
-    "phonetic": "",
+    "phonetic": "/sˈlaɪtli/",
     "gloss": "略微",
     "tip": "slightly lower",
     "example": "Rates were slightly lower.",
@@ -8304,13 +8885,14 @@
     "tags": [
       "academic"
     ],
-    "tier": "core"
+    "tier": "core",
+    "pos": "adv. 副词"
   },
   {
     "id": 581,
     "word": "society",
     "spelling": "S-O-C-I-E-T-Y",
-    "phonetic": "",
+    "phonetic": "/soʊˈsaɪɪti/",
     "gloss": "社会",
     "tip": "modern society",
     "example": "Technology reshapes society.",
@@ -8318,13 +8900,14 @@
     "tags": [
       "academic"
     ],
-    "tier": "core"
+    "tier": "core",
+    "pos": "n. 名词"
   },
   {
     "id": 582,
     "word": "sophisticated",
     "spelling": "S-O-P-H-I-S-T-I-C-A-T-E-D",
-    "phonetic": "",
+    "phonetic": "/səˈfɪstɪˌkeɪtəd/",
     "gloss": "精密的",
     "tip": "sophisticated model",
     "example": "A sophisticated model was applied.",
@@ -8332,13 +8915,14 @@
     "tags": [
       "academic"
     ],
-    "tier": "high"
+    "tier": "high",
+    "pos": "adj. 形容词"
   },
   {
     "id": 583,
     "word": "source",
     "spelling": "S-O-U-R-C-E",
-    "phonetic": "",
+    "phonetic": "/sɔːs/",
     "gloss": "来源",
     "tip": "reliable source",
     "example": "Cite reliable sources only.",
@@ -8346,13 +8930,14 @@
     "tags": [
       "academic"
     ],
-    "tier": "core"
+    "tier": "core",
+    "pos": "v. 动词"
   },
   {
     "id": 584,
     "word": "specific",
     "spelling": "S-P-E-C-I-F-I-C",
-    "phonetic": "",
+    "phonetic": "/spɪˈsɪfɪk/",
     "gloss": "具体的",
     "tip": "be specific",
     "example": "Be specific in your examples.",
@@ -8360,13 +8945,14 @@
     "tags": [
       "academic"
     ],
-    "tier": "core"
+    "tier": "core",
+    "pos": "adj. 形容词"
   },
   {
     "id": 585,
     "word": "specifically",
     "spelling": "S-P-E-C-I-F-I-C-A-L-L-Y",
-    "phonetic": "",
+    "phonetic": "/spəˈsɪfɪkli/",
     "gloss": "具体地",
     "tip": "specifically",
     "example": "Specifically, costs rose 12%.",
@@ -8374,13 +8960,14 @@
     "tags": [
       "academic"
     ],
-    "tier": "core"
+    "tier": "core",
+    "pos": "adv. 副词"
   },
   {
     "id": 586,
     "word": "stabilise",
     "spelling": "S-T-A-B-I-L-I-S-E",
-    "phonetic": "",
+    "phonetic": "/stabilise/",
     "gloss": "稳定",
     "tip": "prices stabilise",
     "example": "Prices stabilised after reform.",
@@ -8389,13 +8976,14 @@
       "academic",
       "verb"
     ],
-    "tier": "high"
+    "tier": "high",
+    "pos": "v. 动词"
   },
   {
     "id": 587,
     "word": "stable",
     "spelling": "S-T-A-B-L-E",
-    "phonetic": "",
+    "phonetic": "/ˈsteɪbəl/",
     "gloss": "稳定的",
     "tip": "remain stable",
     "example": "Enrolment remained stable.",
@@ -8403,13 +8991,14 @@
     "tags": [
       "academic"
     ],
-    "tier": "core"
+    "tier": "core",
+    "pos": "adj. 形容词"
   },
   {
     "id": 588,
     "word": "standard",
     "spelling": "S-T-A-N-D-A-R-D",
-    "phonetic": "",
+    "phonetic": "/ˈstændəd/",
     "gloss": "标准",
     "tip": "academic standard",
     "example": "Meet academic standards.",
@@ -8417,13 +9006,14 @@
     "tags": [
       "academic"
     ],
-    "tier": "core"
+    "tier": "core",
+    "pos": "v. 动词"
   },
   {
     "id": 589,
     "word": "statistic",
     "spelling": "S-T-A-T-I-S-T-I-C",
-    "phonetic": "",
+    "phonetic": "/stəˈtɪstɪk/",
     "gloss": "统计数据",
     "tip": "key statistic",
     "example": "The statistic shows a clear rise.",
@@ -8431,13 +9021,14 @@
     "tags": [
       "academic"
     ],
-    "tier": "core"
+    "tier": "core",
+    "pos": "n. 名词"
   },
   {
     "id": 590,
     "word": "statistics",
     "spelling": "S-T-A-T-I-S-T-I-C-S",
-    "phonetic": "",
+    "phonetic": "/stəˈtɪstɪks/",
     "gloss": "统计学；统计数据",
     "tip": "inferential statistics",
     "example": "Statistics is a core module.",
@@ -8445,13 +9036,14 @@
     "tags": [
       "academic"
     ],
-    "tier": "core"
+    "tier": "core",
+    "pos": "n. 名词"
   },
   {
     "id": 591,
     "word": "steadily",
     "spelling": "S-T-E-A-D-I-L-Y",
-    "phonetic": "",
+    "phonetic": "/ˈstɛdəli/",
     "gloss": "稳步地",
     "tip": "rise steadily",
     "example": "Enrolment rose steadily.",
@@ -8459,13 +9051,14 @@
     "tags": [
       "academic"
     ],
-    "tier": "core"
+    "tier": "core",
+    "pos": "adv. 副词"
   },
   {
     "id": 592,
     "word": "strategy",
     "spelling": "S-T-R-A-T-E-G-Y",
-    "phonetic": "",
+    "phonetic": "/ˈstrætəʤi/",
     "gloss": "策略",
     "tip": "learning strategy",
     "example": "Revision strategy matters.",
@@ -8474,13 +9067,14 @@
       "academic",
       "campus"
     ],
-    "tier": "core"
+    "tier": "core",
+    "pos": "n. 名词"
   },
   {
     "id": 593,
     "word": "strength",
     "spelling": "S-T-R-E-N-G-T-H",
-    "phonetic": "",
+    "phonetic": "/strɛŋθ/",
     "gloss": "优势",
     "tip": "key strength",
     "example": "A key strength is clarity.",
@@ -8488,13 +9082,14 @@
     "tags": [
       "academic"
     ],
-    "tier": "core"
+    "tier": "core",
+    "pos": "n. 名词"
   },
   {
     "id": 594,
     "word": "stress",
     "spelling": "S-T-R-E-S-S",
-    "phonetic": "",
+    "phonetic": "/strɛs/",
     "gloss": "压力",
     "tip": "exam stress",
     "example": "Manage exam stress with routines.",
@@ -8502,13 +9097,14 @@
     "tags": [
       "campus"
     ],
-    "tier": "core"
+    "tier": "core",
+    "pos": "n. 名词"
   },
   {
     "id": 595,
     "word": "structure",
     "spelling": "S-T-R-U-C-T-U-R-E",
-    "phonetic": "",
+    "phonetic": "/ˈstrəkʧə/",
     "gloss": "结构",
     "tip": "essay structure",
     "example": "Clear structure improves readability.",
@@ -8516,13 +9112,14 @@
     "tags": [
       "academic"
     ],
-    "tier": "core"
+    "tier": "core",
+    "pos": "v. 动词"
   },
   {
     "id": 596,
     "word": "subject",
     "spelling": "S-U-B-J-E-C-T",
-    "phonetic": "",
+    "phonetic": "/ˈsəbʤɪkt/",
     "gloss": "科目",
     "tip": "core subject",
     "example": "Maths is a core subject.",
@@ -8530,13 +9127,14 @@
     "tags": [
       "campus"
     ],
-    "tier": "core"
+    "tier": "core",
+    "pos": "n. 名词"
   },
   {
     "id": 597,
     "word": "submission",
     "spelling": "S-U-B-M-I-S-S-I-O-N",
-    "phonetic": "",
+    "phonetic": "/səbˈmɪʃən/",
     "gloss": "提交",
     "tip": "late submission",
     "example": "Late submission incurs a penalty.",
@@ -8544,13 +9142,14 @@
     "tags": [
       "campus"
     ],
-    "tier": "core"
+    "tier": "core",
+    "pos": "n. 名词"
   },
   {
     "id": 598,
     "word": "submit",
     "spelling": "S-U-B-M-I-T",
-    "phonetic": "",
+    "phonetic": "/səbˈmɪt/",
     "gloss": "提交",
     "tip": "submit an essay",
     "example": "Submit your essay via the portal.",
@@ -8559,13 +9158,14 @@
       "campus",
       "verb"
     ],
-    "tier": "core"
+    "tier": "core",
+    "pos": "v. 动词"
   },
   {
     "id": 599,
     "word": "subsequent",
     "spelling": "S-U-B-S-E-Q-U-E-N-T",
-    "phonetic": "",
+    "phonetic": "/ˈsəbsəkwənt/",
     "gloss": "随后的",
     "tip": "subsequent studies",
     "example": "Subsequent studies confirmed it.",
@@ -8573,13 +9173,14 @@
     "tags": [
       "academic"
     ],
-    "tier": "high"
+    "tier": "high",
+    "pos": "adj. 形容词"
   },
   {
     "id": 600,
     "word": "subsidy",
     "spelling": "S-U-B-S-I-D-Y",
-    "phonetic": "",
+    "phonetic": "/ˈsəbsɪdi/",
     "gloss": "补贴",
     "tip": "government subsidy",
     "example": "Subsidies support renewables.",
@@ -8587,13 +9188,14 @@
     "tags": [
       "econ"
     ],
-    "tier": "high"
+    "tier": "high",
+    "pos": "n. 名词"
   },
   {
     "id": 601,
     "word": "substantial",
     "spelling": "S-U-B-S-T-A-N-T-I-A-L",
-    "phonetic": "",
+    "phonetic": "/səbˈstænʃəl/",
     "gloss": "大量的；实质的",
     "tip": "substantial evidence",
     "example": "There is substantial evidence.",
@@ -8601,7 +9203,8 @@
     "tags": [
       "academic"
     ],
-    "tier": "core"
+    "tier": "core",
+    "pos": "adj. 形容词"
   },
   {
     "id": 602,
@@ -8615,13 +9218,14 @@
     "tags": [
       "academic"
     ],
-    "tier": "core"
+    "tier": "core",
+    "pos": "adv. 副词"
   },
   {
     "id": 603,
     "word": "sufficient",
     "spelling": "S-U-F-F-I-C-I-E-N-T",
-    "phonetic": "",
+    "phonetic": "/səˈfɪʃənt/",
     "gloss": "足够的",
     "tip": "sufficient evidence",
     "example": "Evidence is not yet sufficient.",
@@ -8629,13 +9233,14 @@
     "tags": [
       "academic"
     ],
-    "tier": "core"
+    "tier": "core",
+    "pos": "adj. 形容词"
   },
   {
     "id": 604,
     "word": "suggest",
     "spelling": "S-U-G-G-E-S-T",
-    "phonetic": "",
+    "phonetic": "/səˈʤɛst/",
     "gloss": "表明；建议",
     "tip": "suggest that",
     "example": "Findings suggest a link.",
@@ -8644,13 +9249,14 @@
       "academic",
       "verb"
     ],
-    "tier": "core"
+    "tier": "core",
+    "pos": "v. 动词"
   },
   {
     "id": 605,
     "word": "summarise",
     "spelling": "S-U-M-M-A-R-I-S-E",
-    "phonetic": "",
+    "phonetic": "/summarise/",
     "gloss": "总结",
     "tip": "summarise the lecture",
     "example": "Summarise the lecture in one minute.",
@@ -8659,13 +9265,14 @@
       "academic",
       "verb"
     ],
-    "tier": "core"
+    "tier": "core",
+    "pos": "v. 动词"
   },
   {
     "id": 606,
     "word": "summary",
     "spelling": "S-U-M-M-A-R-Y",
-    "phonetic": "",
+    "phonetic": "/ˈsəməi/",
     "gloss": "摘要",
     "tip": "write a summary",
     "example": "Write a one-sentence summary.",
@@ -8673,13 +9280,14 @@
     "tags": [
       "academic"
     ],
-    "tier": "core"
+    "tier": "core",
+    "pos": "n. 名词"
   },
   {
     "id": 607,
     "word": "supervisor",
     "spelling": "S-U-P-E-R-V-I-S-O-R",
-    "phonetic": "",
+    "phonetic": "/ˈsupəˌvaɪzə/",
     "gloss": "导师；主管",
     "tip": "thesis supervisor",
     "example": "Meet your supervisor monthly.",
@@ -8687,13 +9295,14 @@
     "tags": [
       "campus"
     ],
-    "tier": "core"
+    "tier": "core",
+    "pos": "n. 名词"
   },
   {
     "id": 608,
     "word": "supply",
     "spelling": "S-U-P-P-L-Y",
-    "phonetic": "",
+    "phonetic": "/səˈplaɪ/",
     "gloss": "供给",
     "tip": "supply chain",
     "example": "Supply shortages raised prices.",
@@ -8701,13 +9310,14 @@
     "tags": [
       "econ"
     ],
-    "tier": "core"
+    "tier": "core",
+    "pos": "adv. 副词"
   },
   {
     "id": 609,
     "word": "surge",
     "spelling": "S-U-R-G-E",
-    "phonetic": "",
+    "phonetic": "/səʤ/",
     "gloss": "激增",
     "tip": "a surge in",
     "example": "There was a surge in applications.",
@@ -8715,13 +9325,14 @@
     "tags": [
       "academic"
     ],
-    "tier": "high"
+    "tier": "high",
+    "pos": "v. 动词"
   },
   {
     "id": 610,
     "word": "survey",
     "spelling": "S-U-R-V-E-Y",
-    "phonetic": "",
+    "phonetic": "/ˈsəˌveɪ/",
     "gloss": "调查",
     "tip": "conduct a survey",
     "example": "They conducted a campus survey.",
@@ -8729,13 +9340,14 @@
     "tags": [
       "academic"
     ],
-    "tier": "core"
+    "tier": "core",
+    "pos": "n. 名词"
   },
   {
     "id": 611,
     "word": "sustainability",
     "spelling": "S-U-S-T-A-I-N-A-B-I-L-I-T-Y",
-    "phonetic": "",
+    "phonetic": "/səˌsteɪnəˈbɪlɪti/",
     "gloss": "可持续性",
     "tip": "environmental sustainability",
     "example": "Sustainability is a lecture theme.",
@@ -8744,7 +9356,8 @@
       "academic",
       "env"
     ],
-    "tier": "core"
+    "tier": "core",
+    "pos": "n. 名词"
   },
   {
     "id": 612,
@@ -8759,13 +9372,14 @@
       "academic",
       "env"
     ],
-    "tier": "core"
+    "tier": "core",
+    "pos": "adj. 形容词"
   },
   {
     "id": 613,
     "word": "syllabus",
     "spelling": "S-Y-L-L-A-B-U-S",
-    "phonetic": "",
+    "phonetic": "/ˈsɪləbəs/",
     "gloss": "教学大纲",
     "tip": "course syllabus",
     "example": "Check the syllabus for readings.",
@@ -8773,13 +9387,14 @@
     "tags": [
       "campus"
     ],
-    "tier": "core"
+    "tier": "core",
+    "pos": "n. 名词"
   },
   {
     "id": 614,
     "word": "synonym",
     "spelling": "S-Y-N-O-N-Y-M",
-    "phonetic": "",
+    "phonetic": "/ˈsɪnəˌnɪm/",
     "gloss": "同义词",
     "tip": "close synonym",
     "example": "Use a precise synonym.",
@@ -8787,13 +9402,14 @@
     "tags": [
       "academic"
     ],
-    "tier": "high"
+    "tier": "high",
+    "pos": "n. 名词"
   },
   {
     "id": 615,
     "word": "synthesize",
     "spelling": "S-Y-N-T-H-E-S-I-Z-E",
-    "phonetic": "",
+    "phonetic": "/ˈsɪnθəˌsaɪz/",
     "gloss": "综合；合成",
     "tip": "synthesize sources",
     "example": "Synthesize the sources.",
@@ -8802,13 +9418,14 @@
       "academic",
       "verb"
     ],
-    "tier": "core"
+    "tier": "core",
+    "pos": "v. 动词"
   },
   {
     "id": 616,
     "word": "table",
     "spelling": "T-A-B-L-E",
-    "phonetic": "",
+    "phonetic": "/ˈteɪbəl/",
     "gloss": "表格",
     "tip": "data table",
     "example": "Table 2 summarises the results.",
@@ -8816,13 +9433,14 @@
     "tags": [
       "academic"
     ],
-    "tier": "core"
+    "tier": "core",
+    "pos": "adj. 形容词"
   },
   {
     "id": 617,
     "word": "target",
     "spelling": "T-A-R-G-E-T",
-    "phonetic": "",
+    "phonetic": "/ˈtəgət/",
     "gloss": "目标",
     "tip": "target score",
     "example": "Set a target score of 79.",
@@ -8831,13 +9449,14 @@
       "academic",
       "campus"
     ],
-    "tier": "core"
+    "tier": "core",
+    "pos": "n. 名词"
   },
   {
     "id": 618,
     "word": "tariff",
     "spelling": "T-A-R-I-F-F",
-    "phonetic": "",
+    "phonetic": "/ˈtɛrəf/",
     "gloss": "关税",
     "tip": "import tariff",
     "example": "Tariffs raise consumer prices.",
@@ -8845,13 +9464,14 @@
     "tags": [
       "econ"
     ],
-    "tier": "mid"
+    "tier": "mid",
+    "pos": "v. 动词"
   },
   {
     "id": 619,
     "word": "technology",
     "spelling": "T-E-C-H-N-O-L-O-G-Y",
-    "phonetic": "",
+    "phonetic": "/tɛkˈnɑləʤi/",
     "gloss": "技术",
     "tip": "digital technology",
     "example": "Technology reshapes assessment.",
@@ -8859,13 +9479,14 @@
     "tags": [
       "academic"
     ],
-    "tier": "core"
+    "tier": "core",
+    "pos": "n. 名词"
   },
   {
     "id": 620,
     "word": "temporary",
     "spelling": "T-E-M-P-O-R-A-R-Y",
-    "phonetic": "",
+    "phonetic": "/ˈtɛmpəˌɛri/",
     "gloss": "暂时的",
     "tip": "temporary measure",
     "example": "It was a temporary measure.",
@@ -8873,13 +9494,14 @@
     "tags": [
       "academic"
     ],
-    "tier": "high"
+    "tier": "high",
+    "pos": "adj. 形容词"
   },
   {
     "id": 621,
     "word": "tentative",
     "spelling": "T-E-N-T-A-T-I-V-E",
-    "phonetic": "",
+    "phonetic": "/ˈtɛntətɪv/",
     "gloss": "暂定的",
     "tip": "tentative conclusion",
     "example": "Draw only tentative conclusions.",
@@ -8887,13 +9509,14 @@
     "tags": [
       "academic"
     ],
-    "tier": "high"
+    "tier": "high",
+    "pos": "adj. 形容词"
   },
   {
     "id": 622,
     "word": "term",
     "spelling": "T-E-R-M",
-    "phonetic": "",
+    "phonetic": "/təm/",
     "gloss": "学期；术语",
     "tip": "autumn term",
     "example": "Fees are due each term.",
@@ -8901,13 +9524,14 @@
     "tags": [
       "campus"
     ],
-    "tier": "core"
+    "tier": "core",
+    "pos": "n. 名词"
   },
   {
     "id": 623,
     "word": "terminology",
     "spelling": "T-E-R-M-I-N-O-L-O-G-Y",
-    "phonetic": "",
+    "phonetic": "/ˌtəmɪˈnɑləʤi/",
     "gloss": "术语",
     "tip": "technical terminology",
     "example": "Define technical terminology early.",
@@ -8915,13 +9539,14 @@
     "tags": [
       "academic"
     ],
-    "tier": "high"
+    "tier": "high",
+    "pos": "n. 名词"
   },
   {
     "id": 624,
     "word": "theme",
     "spelling": "T-H-E-M-E",
-    "phonetic": "",
+    "phonetic": "/θim/",
     "gloss": "主题",
     "tip": "central theme",
     "example": "Sustainability is a central theme.",
@@ -8929,13 +9554,14 @@
     "tags": [
       "academic"
     ],
-    "tier": "core"
+    "tier": "core",
+    "pos": "v. 动词"
   },
   {
     "id": 625,
     "word": "theory",
     "spelling": "T-H-E-O-R-Y",
-    "phonetic": "",
+    "phonetic": "/ˈθɪri/",
     "gloss": "理论",
     "tip": "in theory",
     "example": "The theory predicts inequality.",
@@ -8943,13 +9569,14 @@
     "tags": [
       "academic"
     ],
-    "tier": "core"
+    "tier": "core",
+    "pos": "n. 名词"
   },
   {
     "id": 626,
     "word": "therefore",
     "spelling": "T-H-E-R-E-F-O-R-E",
-    "phonetic": "",
+    "phonetic": "/ˈðɛrˌfɔː/",
     "gloss": "因此",
     "tip": "essay linker",
     "example": "Therefore, reform is needed.",
@@ -8957,13 +9584,14 @@
     "tags": [
       "academic"
     ],
-    "tier": "core"
+    "tier": "core",
+    "pos": "adv. 副词"
   },
   {
     "id": 627,
     "word": "thesis",
     "spelling": "T-H-E-S-I-S",
-    "phonetic": "",
+    "phonetic": "/ˈθiˌsɪs/",
     "gloss": "论文；论点",
     "tip": "master's thesis",
     "example": "His thesis examines migration.",
@@ -8972,13 +9600,14 @@
       "academic",
       "campus"
     ],
-    "tier": "core"
+    "tier": "core",
+    "pos": "n. 名词"
   },
   {
     "id": 628,
     "word": "threshold",
     "spelling": "T-H-R-E-S-H-O-L-D",
-    "phonetic": "",
+    "phonetic": "/θˈɛˌʃoʊld/",
     "gloss": "门槛",
     "tip": "score threshold",
     "example": "Scores must meet the threshold.",
@@ -8986,13 +9615,14 @@
     "tags": [
       "academic"
     ],
-    "tier": "high"
+    "tier": "high",
+    "pos": "n. 名词"
   },
   {
     "id": 629,
     "word": "thus",
     "spelling": "T-H-U-S",
-    "phonetic": "",
+    "phonetic": "/ðəs/",
     "gloss": "因此",
     "tip": "academic thus",
     "example": "Thus, the hypothesis holds.",
@@ -9000,13 +9630,14 @@
     "tags": [
       "academic"
     ],
-    "tier": "core"
+    "tier": "core",
+    "pos": "adv. 副词"
   },
   {
     "id": 630,
     "word": "timetable",
     "spelling": "T-I-M-E-T-A-B-L-E",
-    "phonetic": "",
+    "phonetic": "/ˈtaɪmˌteɪbəl/",
     "gloss": "时间表",
     "tip": "exam timetable",
     "example": "The exam timetable is out.",
@@ -9014,13 +9645,14 @@
     "tags": [
       "campus"
     ],
-    "tier": "core"
+    "tier": "core",
+    "pos": "adj. 形容词"
   },
   {
     "id": 631,
     "word": "topic",
     "spelling": "T-O-P-I-C",
-    "phonetic": "",
+    "phonetic": "/ˈtɑpɪk/",
     "gloss": "话题",
     "tip": "essay topic",
     "example": "Choose a focused essay topic.",
@@ -9028,13 +9660,14 @@
     "tags": [
       "academic"
     ],
-    "tier": "core"
+    "tier": "core",
+    "pos": "n. 名词"
   },
   {
     "id": 632,
     "word": "tourism",
     "spelling": "T-O-U-R-I-S-M",
-    "phonetic": "",
+    "phonetic": "/ˈtʊˌrɪzəm/",
     "gloss": "旅游",
     "tip": "eco-tourism",
     "example": "Tourism supports local jobs.",
@@ -9042,13 +9675,14 @@
     "tags": [
       "econ"
     ],
-    "tier": "mid"
+    "tier": "mid",
+    "pos": "n. 名词"
   },
   {
     "id": 633,
     "word": "trade",
     "spelling": "T-R-A-D-E",
-    "phonetic": "",
+    "phonetic": "/treɪd/",
     "gloss": "贸易",
     "tip": "international trade",
     "example": "Trade agreements affect tariffs.",
@@ -9056,13 +9690,14 @@
     "tags": [
       "econ"
     ],
-    "tier": "core"
+    "tier": "core",
+    "pos": "v. 动词"
   },
   {
     "id": 634,
     "word": "traditional",
     "spelling": "T-R-A-D-I-T-I-O-N-A-L",
-    "phonetic": "",
+    "phonetic": "/trəˈdɪʃənəl/",
     "gloss": "传统的",
     "tip": "traditional methods",
     "example": "Traditional lectures remain useful.",
@@ -9070,13 +9705,14 @@
     "tags": [
       "academic"
     ],
-    "tier": "core"
+    "tier": "core",
+    "pos": "adj. 形容词"
   },
   {
     "id": 635,
     "word": "traffic",
     "spelling": "T-R-A-F-F-I-C",
-    "phonetic": "",
+    "phonetic": "/ˈtræfɪk/",
     "gloss": "交通",
     "tip": "traffic congestion",
     "example": "Traffic congestion delays buses.",
@@ -9084,13 +9720,14 @@
     "tags": [
       "env"
     ],
-    "tier": "mid"
+    "tier": "mid",
+    "pos": "n. 名词"
   },
   {
     "id": 636,
     "word": "transcribe",
     "spelling": "T-R-A-N-S-C-R-I-B-E",
-    "phonetic": "",
+    "phonetic": "/trænˈskraɪb/",
     "gloss": "转录",
     "tip": "transcribe audio",
     "example": "Transcribe the lecture carefully.",
@@ -9099,13 +9736,14 @@
       "academic",
       "verb"
     ],
-    "tier": "high"
+    "tier": "high",
+    "pos": "v. 动词"
   },
   {
     "id": 637,
     "word": "transcript",
     "spelling": "T-R-A-N-S-C-R-I-P-T",
-    "phonetic": "",
+    "phonetic": "/ˈtrænˌskrɪpt/",
     "gloss": "成绩单；文本稿",
     "tip": "official transcript",
     "example": "Request an official transcript.",
@@ -9113,13 +9751,14 @@
     "tags": [
       "campus"
     ],
-    "tier": "core"
+    "tier": "core",
+    "pos": "n. 名词"
   },
   {
     "id": 638,
     "word": "transform",
     "spelling": "T-R-A-N-S-F-O-R-M",
-    "phonetic": "",
+    "phonetic": "/ˈtrænsfɔːm/",
     "gloss": "转变",
     "tip": "transform learning",
     "example": "Digital tools transform learning.",
@@ -9128,13 +9767,14 @@
       "academic",
       "verb"
     ],
-    "tier": "core"
+    "tier": "core",
+    "pos": "v. 动词"
   },
   {
     "id": 639,
     "word": "transition",
     "spelling": "T-R-A-N-S-I-T-I-O-N",
-    "phonetic": "",
+    "phonetic": "/trænˈzɪʃən/",
     "gloss": "过渡",
     "tip": "in transition",
     "example": "The campus is in transition.",
@@ -9142,13 +9782,14 @@
     "tags": [
       "academic"
     ],
-    "tier": "high"
+    "tier": "high",
+    "pos": "n. 名词"
   },
   {
     "id": 640,
     "word": "transparency",
     "spelling": "T-R-A-N-S-P-A-R-E-N-C-Y",
-    "phonetic": "",
+    "phonetic": "/trænˈspɛrənsi/",
     "gloss": "透明度",
     "tip": "data transparency",
     "example": "Transparency improves credibility.",
@@ -9156,13 +9797,14 @@
     "tags": [
       "academic"
     ],
-    "tier": "high"
+    "tier": "high",
+    "pos": "n. 名词"
   },
   {
     "id": 641,
     "word": "transparent",
     "spelling": "T-R-A-N-S-P-A-R-E-N-T",
-    "phonetic": "",
+    "phonetic": "/trænˈspɛrənt/",
     "gloss": "透明的",
     "tip": "transparent process",
     "example": "Keep the process transparent.",
@@ -9170,13 +9812,14 @@
     "tags": [
       "academic"
     ],
-    "tier": "high"
+    "tier": "high",
+    "pos": "adj. 形容词"
   },
   {
     "id": 642,
     "word": "transport",
     "spelling": "T-R-A-N-S-P-O-R-T",
-    "phonetic": "",
+    "phonetic": "/ˈtrænspɔːt/",
     "gloss": "交通",
     "tip": "public transport",
     "example": "Public transport reduces emissions.",
@@ -9185,13 +9828,14 @@
       "env",
       "econ"
     ],
-    "tier": "core"
+    "tier": "core",
+    "pos": "n. 名词"
   },
   {
     "id": 643,
     "word": "treatment",
     "spelling": "T-R-E-A-T-M-E-N-T",
-    "phonetic": "",
+    "phonetic": "/ˈtritmənt/",
     "gloss": "处理；治疗",
     "tip": "treatment group",
     "example": "The treatment group improved more.",
@@ -9199,13 +9843,14 @@
     "tags": [
       "academic"
     ],
-    "tier": "high"
+    "tier": "high",
+    "pos": "n. 名词"
   },
   {
     "id": 644,
     "word": "trend",
     "spelling": "T-R-E-N-D",
-    "phonetic": "",
+    "phonetic": "/trɛnd/",
     "gloss": "趋势",
     "tip": "upward trend",
     "example": "An upward trend was observed.",
@@ -9213,13 +9858,14 @@
     "tags": [
       "academic"
     ],
-    "tier": "core"
+    "tier": "core",
+    "pos": "n. 名词"
   },
   {
     "id": 645,
     "word": "trial",
     "spelling": "T-R-I-A-L",
-    "phonetic": "",
+    "phonetic": "/traɪəl/",
     "gloss": "试验",
     "tip": "clinical trial",
     "example": "The clinical trial lasted two years.",
@@ -9227,13 +9873,14 @@
     "tags": [
       "academic"
     ],
-    "tier": "high"
+    "tier": "high",
+    "pos": "n. 名词"
   },
   {
     "id": 646,
     "word": "tuition",
     "spelling": "T-U-I-T-I-O-N",
-    "phonetic": "",
+    "phonetic": "/tjuˈɪʃən/",
     "gloss": "学费",
     "tip": "tuition fees",
     "example": "Tuition fees rose this year.",
@@ -9241,13 +9888,14 @@
     "tags": [
       "campus"
     ],
-    "tier": "core"
+    "tier": "core",
+    "pos": "n. 名词"
   },
   {
     "id": 647,
     "word": "tutor",
     "spelling": "T-U-T-O-R",
-    "phonetic": "",
+    "phonetic": "/ˈtutə/",
     "gloss": "导师",
     "tip": "personal tutor",
     "example": "Email your tutor for help.",
@@ -9255,13 +9903,14 @@
     "tags": [
       "campus"
     ],
-    "tier": "core"
+    "tier": "core",
+    "pos": "n. 名词"
   },
   {
     "id": 648,
     "word": "tutorial",
     "spelling": "T-U-T-O-R-I-A-L",
-    "phonetic": "",
+    "phonetic": "/tuˈtɔːiəl/",
     "gloss": "辅导课",
     "tip": "small-group tutorial",
     "example": "Tutorials are limited to fifteen.",
@@ -9269,13 +9918,14 @@
     "tags": [
       "campus"
     ],
-    "tier": "core"
+    "tier": "core",
+    "pos": "v. 动词"
   },
   {
     "id": 649,
     "word": "ultimately",
     "spelling": "U-L-T-I-M-A-T-E-L-Y",
-    "phonetic": "",
+    "phonetic": "/ˈəltəmətli/",
     "gloss": "最终",
     "tip": "ultimately",
     "example": "Ultimately, evidence decides.",
@@ -9283,13 +9933,14 @@
     "tags": [
       "academic"
     ],
-    "tier": "core"
+    "tier": "core",
+    "pos": "adv. 副词"
   },
   {
     "id": 650,
     "word": "undergraduate",
     "spelling": "U-N-D-E-R-G-R-A-D-U-A-T-E",
-    "phonetic": "",
+    "phonetic": "/ˌəndəˈgræʤəwət/",
     "gloss": "本科生",
     "tip": "undergraduate degree",
     "example": "Undergraduate degrees last three years.",
@@ -9297,13 +9948,14 @@
     "tags": [
       "campus"
     ],
-    "tier": "core"
+    "tier": "core",
+    "pos": "v. 动词"
   },
   {
     "id": 651,
     "word": "undermine",
     "spelling": "U-N-D-E-R-M-I-N-E",
-    "phonetic": "",
+    "phonetic": "/ˈəndəˌmaɪn/",
     "gloss": "削弱",
     "tip": "undermine trust",
     "example": "Bias can undermine trust.",
@@ -9312,13 +9964,14 @@
       "academic",
       "verb"
     ],
-    "tier": "high"
+    "tier": "high",
+    "pos": "v. 动词"
   },
   {
     "id": 652,
     "word": "undertake",
     "spelling": "U-N-D-E-R-T-A-K-E",
-    "phonetic": "",
+    "phonetic": "/ˈəndəˌteɪk/",
     "gloss": "承担；从事",
     "tip": "undertake research",
     "example": "Students undertake a project.",
@@ -9327,13 +9980,14 @@
       "academic",
       "verb"
     ],
-    "tier": "core"
+    "tier": "core",
+    "pos": "v. 动词"
   },
   {
     "id": 653,
     "word": "unemployment",
     "spelling": "U-N-E-M-P-L-O-Y-M-E-N-T",
-    "phonetic": "",
+    "phonetic": "/ˌənɪmˈplɔɪmənt/",
     "gloss": "失业",
     "tip": "unemployment rate",
     "example": "The unemployment rate stabilised.",
@@ -9342,13 +9996,14 @@
       "academic",
       "econ"
     ],
-    "tier": "core"
+    "tier": "core",
+    "pos": "n. 名词"
   },
   {
     "id": 654,
     "word": "update",
     "spelling": "U-P-D-A-T-E",
-    "phonetic": "",
+    "phonetic": "/ˈəpˌdeɪt/",
     "gloss": "更新",
     "tip": "update the syllabus",
     "example": "Update the syllabus each term.",
@@ -9357,13 +10012,14 @@
       "campus",
       "verb"
     ],
-    "tier": "core"
+    "tier": "core",
+    "pos": "v. 动词"
   },
   {
     "id": 655,
     "word": "upload",
     "spelling": "U-P-L-O-A-D",
-    "phonetic": "",
+    "phonetic": "/ˈəˌploʊd/",
     "gloss": "上传",
     "tip": "upload the file",
     "example": "Upload the file before noon.",
@@ -9372,13 +10028,14 @@
       "campus",
       "verb"
     ],
-    "tier": "core"
+    "tier": "core",
+    "pos": "v. 动词"
   },
   {
     "id": 656,
     "word": "urban",
     "spelling": "U-R-B-A-N",
-    "phonetic": "",
+    "phonetic": "/ˈəbən/",
     "gloss": "城市的",
     "tip": "urban planning",
     "example": "Urban density affects transport.",
@@ -9387,7 +10044,8 @@
       "academic",
       "env"
     ],
-    "tier": "core"
+    "tier": "core",
+    "pos": "adj. 形容词"
   },
   {
     "id": 657,
@@ -9402,13 +10060,14 @@
       "academic",
       "env"
     ],
-    "tier": "core"
+    "tier": "core",
+    "pos": "n. 名词"
   },
   {
     "id": 658,
     "word": "validity",
     "spelling": "V-A-L-I-D-I-T-Y",
-    "phonetic": "",
+    "phonetic": "/vəˈlɪdɪti/",
     "gloss": "效度；有效性",
     "tip": "construct validity",
     "example": "Question the test's validity.",
@@ -9416,13 +10075,14 @@
     "tags": [
       "academic"
     ],
-    "tier": "core"
+    "tier": "core",
+    "pos": "n. 名词"
   },
   {
     "id": 659,
     "word": "value",
     "spelling": "V-A-L-U-E",
-    "phonetic": "",
+    "phonetic": "/ˈvælju/",
     "gloss": "价值；价值观",
     "tip": "core values",
     "example": "Core values shape campus culture.",
@@ -9430,13 +10090,14 @@
     "tags": [
       "academic"
     ],
-    "tier": "core"
+    "tier": "core",
+    "pos": "v. 动词"
   },
   {
     "id": 660,
     "word": "variable",
     "spelling": "V-A-R-I-A-B-L-E",
-    "phonetic": "",
+    "phonetic": "/ˈvɛriəbəl/",
     "gloss": "变量",
     "tip": "independent variable",
     "example": "Control each variable carefully.",
@@ -9444,13 +10105,14 @@
     "tags": [
       "academic"
     ],
-    "tier": "core"
+    "tier": "core",
+    "pos": "adj. 形容词"
   },
   {
     "id": 661,
     "word": "variance",
     "spelling": "V-A-R-I-A-N-C-E",
-    "phonetic": "",
+    "phonetic": "/ˈvɛriəns/",
     "gloss": "方差",
     "tip": "high variance",
     "example": "High variance reduces power.",
@@ -9458,13 +10120,14 @@
     "tags": [
       "academic"
     ],
-    "tier": "high"
+    "tier": "high",
+    "pos": "n. 名词"
   },
   {
     "id": 662,
     "word": "verify",
     "spelling": "V-E-R-I-F-Y",
-    "phonetic": "",
+    "phonetic": "/ˈvɛrəˌfaɪ/",
     "gloss": "核实",
     "tip": "verify identity",
     "example": "Verify your identity online.",
@@ -9473,13 +10136,14 @@
       "campus",
       "verb"
     ],
-    "tier": "high"
+    "tier": "high",
+    "pos": "v. 动词"
   },
   {
     "id": 663,
     "word": "viable",
     "spelling": "V-I-A-B-L-E",
-    "phonetic": "",
+    "phonetic": "/ˈvaɪəbəl/",
     "gloss": "可行的",
     "tip": "viable alternative",
     "example": "No viable alternative was found.",
@@ -9487,13 +10151,14 @@
     "tags": [
       "academic"
     ],
-    "tier": "high"
+    "tier": "high",
+    "pos": "adj. 形容词"
   },
   {
     "id": 664,
     "word": "virtual",
     "spelling": "V-I-R-T-U-A-L",
-    "phonetic": "",
+    "phonetic": "/ˈvəʧuəl/",
     "gloss": "虚拟的",
     "tip": "virtual classroom",
     "example": "Join the virtual classroom on time.",
@@ -9501,13 +10166,14 @@
     "tags": [
       "campus"
     ],
-    "tier": "high"
+    "tier": "high",
+    "pos": "adj. 形容词"
   },
   {
     "id": 665,
     "word": "visa",
     "spelling": "V-I-S-A",
-    "phonetic": "",
+    "phonetic": "/ˈvizə/",
     "gloss": "签证",
     "tip": "student visa",
     "example": "Renew your student visa.",
@@ -9515,13 +10181,14 @@
     "tags": [
       "campus"
     ],
-    "tier": "core"
+    "tier": "core",
+    "pos": "n. 名词"
   },
   {
     "id": 666,
     "word": "vital",
     "spelling": "V-I-T-A-L",
-    "phonetic": "",
+    "phonetic": "/ˈvaɪtəl/",
     "gloss": "至关重要的",
     "tip": "vital for",
     "example": "Peer feedback is vital.",
@@ -9529,13 +10196,14 @@
     "tags": [
       "academic"
     ],
-    "tier": "high"
+    "tier": "high",
+    "pos": "adj. 形容词"
   },
   {
     "id": 667,
     "word": "vocabulary",
     "spelling": "V-O-C-A-B-U-L-A-R-Y",
-    "phonetic": "",
+    "phonetic": "/voʊˈkæbjəˌlɛri/",
     "gloss": "词汇",
     "tip": "academic vocabulary",
     "example": "Build academic vocabulary.",
@@ -9543,13 +10211,14 @@
     "tags": [
       "academic"
     ],
-    "tier": "core"
+    "tier": "core",
+    "pos": "n. 名词"
   },
   {
     "id": 668,
     "word": "voluntary",
     "spelling": "V-O-L-U-N-T-A-R-Y",
-    "phonetic": "",
+    "phonetic": "/ˈvɑləntɛri/",
     "gloss": "自愿的",
     "tip": "voluntary participation",
     "example": "Participation is voluntary.",
@@ -9557,13 +10226,14 @@
     "tags": [
       "academic"
     ],
-    "tier": "mid"
+    "tier": "mid",
+    "pos": "adj. 形容词"
   },
   {
     "id": 669,
     "word": "wage",
     "spelling": "W-A-G-E",
-    "phonetic": "",
+    "phonetic": "/weɪʤ/",
     "gloss": "工资",
     "tip": "minimum wage",
     "example": "The minimum wage increased.",
@@ -9571,13 +10241,14 @@
     "tags": [
       "econ"
     ],
-    "tier": "high"
+    "tier": "high",
+    "pos": "v. 动词"
   },
   {
     "id": 670,
     "word": "waste",
     "spelling": "W-A-S-T-E",
-    "phonetic": "",
+    "phonetic": "/weɪst/",
     "gloss": "浪费；废物",
     "tip": "reduce waste",
     "example": "Food waste remains an issue.",
@@ -9585,13 +10256,14 @@
     "tags": [
       "env"
     ],
-    "tier": "mid"
+    "tier": "mid",
+    "pos": "v. 动词"
   },
   {
     "id": 671,
     "word": "weakness",
     "spelling": "W-E-A-K-N-E-S-S",
-    "phonetic": "",
+    "phonetic": "/ˈwiknəs/",
     "gloss": "弱点",
     "tip": "acknowledge weakness",
     "example": "Acknowledge the study's weakness.",
@@ -9599,13 +10271,14 @@
     "tags": [
       "academic"
     ],
-    "tier": "core"
+    "tier": "core",
+    "pos": "n. 名词"
   },
   {
     "id": 672,
     "word": "wealth",
     "spelling": "W-E-A-L-T-H",
-    "phonetic": "",
+    "phonetic": "/wɛlθ/",
     "gloss": "财富",
     "tip": "wealth gap",
     "example": "The wealth gap widened.",
@@ -9613,13 +10286,14 @@
     "tags": [
       "econ"
     ],
-    "tier": "high"
+    "tier": "high",
+    "pos": "n. 名词"
   },
   {
     "id": 673,
     "word": "welfare",
     "spelling": "W-E-L-F-A-R-E",
-    "phonetic": "",
+    "phonetic": "/ˈwɛlˌfɛː/",
     "gloss": "福利",
     "tip": "social welfare",
     "example": "Welfare reforms were debated.",
@@ -9627,13 +10301,14 @@
     "tags": [
       "econ"
     ],
-    "tier": "high"
+    "tier": "high",
+    "pos": "v. 动词"
   },
   {
     "id": 674,
     "word": "wellbeing",
     "spelling": "W-E-L-L-B-E-I-N-G",
-    "phonetic": "",
+    "phonetic": "/ˌwɛlˈbiɪŋ/",
     "gloss": "福祉",
     "tip": "student wellbeing",
     "example": "Support student wellbeing.",
@@ -9641,13 +10316,14 @@
     "tags": [
       "campus"
     ],
-    "tier": "high"
+    "tier": "high",
+    "pos": "n. 名词"
   },
   {
     "id": 675,
     "word": "whereas",
     "spelling": "W-H-E-R-E-A-S",
-    "phonetic": "",
+    "phonetic": "/wɛˈæz/",
     "gloss": "而；然而",
     "tip": "contrast linker",
     "example": "Urban rates rose, whereas rural rates fell.",
@@ -9655,13 +10331,14 @@
     "tags": [
       "academic"
     ],
-    "tier": "core"
+    "tier": "core",
+    "pos": "n. 名词"
   },
   {
     "id": 676,
     "word": "widen",
     "spelling": "W-I-D-E-N",
-    "phonetic": "",
+    "phonetic": "/ˈwaɪdən/",
     "gloss": "扩大",
     "tip": "widen inequality",
     "example": "Inequality widened further.",
@@ -9670,13 +10347,14 @@
       "academic",
       "verb"
     ],
-    "tier": "high"
+    "tier": "high",
+    "pos": "v. 动词"
   },
   {
     "id": 677,
     "word": "widespread",
     "spelling": "W-I-D-E-S-P-R-E-A-D",
-    "phonetic": "",
+    "phonetic": "/ˈwaɪdˈsprɛd/",
     "gloss": "广泛的",
     "tip": "widespread use",
     "example": "Online labs see widespread use.",
@@ -9684,13 +10362,14 @@
     "tags": [
       "academic"
     ],
-    "tier": "high"
+    "tier": "high",
+    "pos": "adj. 形容词"
   },
   {
     "id": 678,
     "word": "withdraw",
     "spelling": "W-I-T-H-D-R-A-W",
-    "phonetic": "",
+    "phonetic": "/wɪθˈdrɔ/",
     "gloss": "退出；撤回",
     "tip": "withdraw from a course",
     "example": "Withdraw before census date.",
@@ -9699,13 +10378,14 @@
       "campus",
       "verb"
     ],
-    "tier": "high"
+    "tier": "high",
+    "pos": "v. 动词"
   },
   {
     "id": 679,
     "word": "workforce",
     "spelling": "W-O-R-K-F-O-R-C-E",
-    "phonetic": "",
+    "phonetic": "/ˈwəkˌfɔːs/",
     "gloss": "劳动力",
     "tip": "skilled workforce",
     "example": "A skilled workforce attracts investment.",
@@ -9713,13 +10393,14 @@
     "tags": [
       "econ"
     ],
-    "tier": "high"
+    "tier": "high",
+    "pos": "v. 动词"
   },
   {
     "id": 680,
     "word": "workshop",
     "spelling": "W-O-R-K-S-H-O-P",
-    "phonetic": "",
+    "phonetic": "/ˈwəkˌʃɑp/",
     "gloss": "工作坊",
     "tip": "writing workshop",
     "example": "Attend the writing workshop.",
@@ -9727,7 +10408,8 @@
     "tags": [
       "campus"
     ],
-    "tier": "core"
+    "tier": "core",
+    "pos": "n. 名词"
   },
   {
     "word": "amendment",
@@ -9741,7 +10423,8 @@
       "academic"
     ],
     "tier": "high",
-    "id": 681
+    "id": 681,
+    "pos": "n. 名词"
   },
   {
     "word": "apparatus",
@@ -9755,7 +10438,8 @@
       "science"
     ],
     "tier": "high",
-    "id": 682
+    "id": 682,
+    "pos": "n. 名词"
   },
   {
     "word": "appraisal",
@@ -9769,7 +10453,8 @@
       "campus"
     ],
     "tier": "mid",
-    "id": 683
+    "id": 683,
+    "pos": "n. 名词"
   },
   {
     "word": "ascertain",
@@ -9783,7 +10468,8 @@
       "academic"
     ],
     "tier": "high",
-    "id": 684
+    "id": 684,
+    "pos": "n. 名词"
   },
   {
     "word": "attainment",
@@ -9797,7 +10483,8 @@
       "academic"
     ],
     "tier": "high",
-    "id": 685
+    "id": 685,
+    "pos": "n. 名词"
   },
   {
     "word": "breadth",
@@ -9811,7 +10498,8 @@
       "academic"
     ],
     "tier": "mid",
-    "id": 686
+    "id": 686,
+    "pos": "n. 名词"
   },
   {
     "word": "catalogue",
@@ -9825,7 +10513,8 @@
       "campus"
     ],
     "tier": "high",
-    "id": 687
+    "id": 687,
+    "pos": "v. 动词"
   },
   {
     "word": "concurrent",
@@ -9839,7 +10528,8 @@
       "academic"
     ],
     "tier": "mid",
-    "id": 688
+    "id": 688,
+    "pos": "adj. 形容词"
   },
   {
     "word": "confine",
@@ -9853,7 +10543,8 @@
       "academic"
     ],
     "tier": "mid",
-    "id": 689
+    "id": 689,
+    "pos": "v. 动词"
   },
   {
     "word": "constrain",
@@ -9867,7 +10558,8 @@
       "academic"
     ],
     "tier": "high",
-    "id": 690
+    "id": 690,
+    "pos": "n. 名词"
   },
   {
     "word": "contemplate",
@@ -9881,7 +10573,8 @@
       "academic"
     ],
     "tier": "mid",
-    "id": 691
+    "id": 691,
+    "pos": "v. 动词"
   },
   {
     "word": "counterpart",
@@ -9895,7 +10588,8 @@
       "academic"
     ],
     "tier": "high",
-    "id": 692
+    "id": 692,
+    "pos": "n. 名词"
   },
   {
     "word": "deduce",
@@ -9909,7 +10603,8 @@
       "academic"
     ],
     "tier": "high",
-    "id": 693
+    "id": 693,
+    "pos": "v. 动词"
   },
   {
     "word": "depict",
@@ -9923,7 +10618,8 @@
       "academic"
     ],
     "tier": "high",
-    "id": 694
+    "id": 694,
+    "pos": "v. 动词"
   },
   {
     "word": "diminish",
@@ -9937,7 +10633,8 @@
       "academic"
     ],
     "tier": "high",
-    "id": 695
+    "id": 695,
+    "pos": "n. 名词"
   },
   {
     "word": "discourse",
@@ -9951,7 +10648,8 @@
       "academic"
     ],
     "tier": "high",
-    "id": 696
+    "id": 696,
+    "pos": "v. 动词"
   },
   {
     "word": "discrepancy",
@@ -9965,7 +10663,8 @@
       "academic"
     ],
     "tier": "high",
-    "id": 697
+    "id": 697,
+    "pos": "n. 名词"
   },
   {
     "word": "embed",
@@ -9979,7 +10678,8 @@
       "academic"
     ],
     "tier": "mid",
-    "id": 698
+    "id": 698,
+    "pos": "n. 名词"
   },
   {
     "word": "endorse",
@@ -9993,7 +10693,8 @@
       "academic"
     ],
     "tier": "high",
-    "id": 699
+    "id": 699,
+    "pos": "v. 动词"
   },
   {
     "word": "ensue",
@@ -10007,7 +10708,8 @@
       "academic"
     ],
     "tier": "mid",
-    "id": 700
+    "id": 700,
+    "pos": "n. 名词"
   },
   {
     "word": "entail",
@@ -10021,7 +10723,8 @@
       "academic"
     ],
     "tier": "high",
-    "id": 701
+    "id": 701,
+    "pos": "n. 名词"
   },
   {
     "word": "enumerate",
@@ -10035,7 +10738,8 @@
       "academic"
     ],
     "tier": "mid",
-    "id": 702
+    "id": 702,
+    "pos": "v. 动词"
   },
   {
     "word": "equate",
@@ -10049,7 +10753,8 @@
       "academic"
     ],
     "tier": "high",
-    "id": 703
+    "id": 703,
+    "pos": "v. 动词"
   },
   {
     "word": "evoke",
@@ -10063,7 +10768,8 @@
       "academic"
     ],
     "tier": "mid",
-    "id": 704
+    "id": 704,
+    "pos": "v. 动词"
   },
   {
     "word": "exemplify",
@@ -10077,7 +10783,8 @@
       "academic"
     ],
     "tier": "high",
-    "id": 705
+    "id": 705,
+    "pos": "v. 动词"
   },
   {
     "word": "formulate",
@@ -10091,7 +10798,8 @@
       "academic"
     ],
     "tier": "high",
-    "id": 706
+    "id": 706,
+    "pos": "v. 动词"
   },
   {
     "word": "hierarchy",
@@ -10105,7 +10813,8 @@
       "academic"
     ],
     "tier": "high",
-    "id": 707
+    "id": 707,
+    "pos": "n. 名词"
   },
   {
     "word": "induce",
@@ -10119,7 +10828,8 @@
       "academic"
     ],
     "tier": "mid",
-    "id": 708
+    "id": 708,
+    "pos": "v. 动词"
   },
   {
     "word": "inherent",
@@ -10133,7 +10843,8 @@
       "academic"
     ],
     "tier": "high",
-    "id": 709
+    "id": 709,
+    "pos": "adj. 形容词"
   },
   {
     "word": "intervene",
@@ -10147,7 +10858,8 @@
       "academic"
     ],
     "tier": "high",
-    "id": 710
+    "id": 710,
+    "pos": "v. 动词"
   },
   {
     "word": "invoke",
@@ -10161,7 +10873,8 @@
       "academic"
     ],
     "tier": "mid",
-    "id": 711
+    "id": 711,
+    "pos": "v. 动词"
   },
   {
     "word": "magnitude",
@@ -10175,7 +10888,8 @@
       "academic"
     ],
     "tier": "high",
-    "id": 712
+    "id": 712,
+    "pos": "v. 动词"
   },
   {
     "word": "manifest",
@@ -10189,7 +10903,8 @@
       "academic"
     ],
     "tier": "high",
-    "id": 713
+    "id": 713,
+    "pos": "adj. 形容词"
   },
   {
     "word": "mediate",
@@ -10203,7 +10918,8 @@
       "academic"
     ],
     "tier": "mid",
-    "id": 714
+    "id": 714,
+    "pos": "v. 动词"
   },
   {
     "word": "notion",
@@ -10217,7 +10933,8 @@
       "academic"
     ],
     "tier": "high",
-    "id": 715
+    "id": 715,
+    "pos": "n. 名词"
   },
   {
     "word": "offset",
@@ -10231,7 +10948,8 @@
       "academic"
     ],
     "tier": "high",
-    "id": 716
+    "id": 716,
+    "pos": "v. 动词"
   },
   {
     "word": "prevalent",
@@ -10245,7 +10963,8 @@
       "academic"
     ],
     "tier": "high",
-    "id": 717
+    "id": 717,
+    "pos": "adj. 形容词"
   },
   {
     "word": "prohibit",
@@ -10259,7 +10978,8 @@
       "campus"
     ],
     "tier": "high",
-    "id": 718
+    "id": 718,
+    "pos": "n. 名词"
   },
   {
     "word": "prospective",
@@ -10273,7 +10993,8 @@
       "campus"
     ],
     "tier": "high",
-    "id": 719
+    "id": 719,
+    "pos": "adj. 形容词"
   },
   {
     "word": "reluctant",
@@ -10287,7 +11008,8 @@
       "academic"
     ],
     "tier": "mid",
-    "id": 720
+    "id": 720,
+    "pos": "adj. 形容词"
   },
   {
     "word": "remedy",
@@ -10301,7 +11023,8 @@
       "academic"
     ],
     "tier": "mid",
-    "id": 721
+    "id": 721,
+    "pos": "n. 名词"
   },
   {
     "word": "resemble",
@@ -10315,7 +11038,8 @@
       "academic"
     ],
     "tier": "mid",
-    "id": 722
+    "id": 722,
+    "pos": "v. 动词"
   },
   {
     "word": "retain",
@@ -10329,7 +11053,8 @@
       "academic"
     ],
     "tier": "high",
-    "id": 723
+    "id": 723,
+    "pos": "n. 名词"
   },
   {
     "word": "scrutiny",
@@ -10343,7 +11068,8 @@
       "academic"
     ],
     "tier": "high",
-    "id": 724
+    "id": 724,
+    "pos": "n. 名词"
   },
   {
     "word": "sustain",
@@ -10357,7 +11083,8 @@
       "academic"
     ],
     "tier": "high",
-    "id": 725
+    "id": 725,
+    "pos": "n. 名词"
   },
   {
     "word": "utilise",
@@ -10371,7 +11098,8 @@
       "academic"
     ],
     "tier": "high",
-    "id": 726
+    "id": 726,
+    "pos": "v. 动词"
   },
   {
     "word": "whereby",
@@ -10385,7 +11113,8 @@
       "academic"
     ],
     "tier": "mid",
-    "id": 727
+    "id": 727,
+    "pos": "adv. 副词"
   },
   {
     "word": "accumulate",
@@ -10399,7 +11128,8 @@
       "academic"
     ],
     "tier": "high",
-    "id": 728
+    "id": 728,
+    "pos": "v. 动词"
   },
   {
     "word": "adjacent",
@@ -10413,7 +11143,8 @@
       "academic"
     ],
     "tier": "mid",
-    "id": 729
+    "id": 729,
+    "pos": "adj. 形容词"
   },
   {
     "word": "advocate",
@@ -10427,7 +11158,8 @@
       "academic"
     ],
     "tier": "high",
-    "id": 730
+    "id": 730,
+    "pos": "v. 动词"
   }
 ];
   global.VOCAB_BANK = VOCAB_BANK;

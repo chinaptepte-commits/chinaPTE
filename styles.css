@@ -1874,6 +1874,115 @@ input:focus-visible {
   border-color: var(--accent);
   color: var(--accent);
 }
+
+/* ——— Industry IPA / phrase keys ——— */
+.ind-ipa {
+  font-size: 0.82rem;
+  color: var(--accent);
+  font-family: "SF Mono", ui-monospace, Menlo, Consolas, monospace;
+  letter-spacing: 0.02em;
+  line-height: 1.35;
+}
+.ind-keys {
+  margin-top: 8px;
+  padding: 8px 10px;
+  background: var(--surface-soft);
+  border: 1px dashed var(--border);
+  border-radius: var(--radius-sm);
+}
+.ind-keys-label {
+  font-size: 0.7rem;
+  font-weight: 700;
+  color: var(--accent);
+  letter-spacing: 0.06em;
+  margin-bottom: 6px;
+  text-transform: uppercase;
+}
+.ind-keys ul {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+  margin: 0;
+  padding: 0;
+}
+.ind-key {
+  display: grid;
+  grid-template-columns: minmax(0, 1.1fr) minmax(0, 1.2fr) minmax(0, 1fr);
+  gap: 6px 10px;
+  align-items: baseline;
+  font-size: 0.8rem;
+  line-height: 1.35;
+}
+.ind-key-en {
+  font-weight: 650;
+  color: var(--text);
+}
+.ind-key-ipa {
+  color: var(--accent);
+  font-family: "SF Mono", ui-monospace, Menlo, Consolas, monospace;
+  font-size: 0.78rem;
+}
+.ind-key-zh {
+  color: var(--text-muted);
+}
+.ind-item-phrase .ind-main {
+  gap: 6px;
+}
+@media (max-width: 520px) {
+  .ind-key {
+    grid-template-columns: 1fr;
+    gap: 2px;
+    padding-bottom: 6px;
+    border-bottom: 1px solid var(--border);
+  }
+  .ind-key:last-child { border-bottom: 0; padding-bottom: 0; }
+}
+
+/* ——— Vocab bank: phonetic + pos + gloss ——— */
+.vr-pos {
+  display: inline-block;
+  font-size: 0.68rem;
+  font-weight: 700;
+  color: var(--accent);
+  background: var(--accent-soft);
+  border-radius: 999px;
+  padding: 1px 7px;
+  margin-left: 6px;
+  vertical-align: middle;
+  letter-spacing: 0.02em;
+}
+.vocab-meta-line {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: baseline;
+  gap: 6px 10px;
+  margin-top: 4px;
+  font-size: 0.85rem;
+  color: var(--text-muted);
+  line-height: 1.45;
+}
+.vocab-meta-line .vm-ph {
+  color: var(--accent);
+  font-family: "SF Mono", ui-monospace, Menlo, Consolas, monospace;
+  font-size: 0.82rem;
+}
+.vocab-meta-line .vm-pos {
+  font-weight: 700;
+  color: var(--accent);
+  font-size: 0.75rem;
+}
+.vocab-meta-line .vm-gloss {
+  color: var(--text-muted);
+}
+.vr-word-wrap {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: baseline;
+  gap: 4px 6px;
+  grid-column: 1;
+}
+
 .copyright-note {
   margin-top: 10px;
   font-size: 0.78rem;

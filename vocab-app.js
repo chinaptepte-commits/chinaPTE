@@ -244,7 +244,7 @@
       if (state.mode === "notebook" && !notebook[it.id]) return false;
       if (state.mode === "unmastered" && mastered[it.id]) return false;
       if (!q) return true;
-      var hay = (it.word + " " + (it.gloss || "") + " " + (it.example || "") + " " + (it.exampleZh || "") + " " + (it.tags || []).join(" ")).toLowerCase();
+      var hay = (it.word + " " + (it.gloss || "") + " " + (it.phonetic || "") + " " + (it.pos || "") + " " + (it.example || "") + " " + (it.exampleZh || "") + " " + (it.tags || []).join(" ")).toLowerCase();
       return hay.indexOf(q) >= 0;
     });
     if (state.index >= items.length) state.index = Math.max(0, items.length - 1);
@@ -290,7 +290,9 @@
       var it = items[i];
       var cls = "vocab-row" + (i === state.index ? " is-active" : "") + (mastered[it.id] ? " is-mastered" : "") + (notebook[it.id] ? " is-note" : "");
       html += '<button type="button" class="' + cls + '" data-idx="' + i + '">' +
-        '<span class="vr-word">' + escapeHtml(it.word) + '</span>' +
+        '<span class="vr-word-wrap"><span class="vr-word">' + escapeHtml(it.word) + '</span>' +
+        (it.pos ? '<span class="vr-pos">' + escapeHtml(it.pos) + '</span>' : "") +
+        '</span>' +
         '<span class="vr-gloss">' + escapeHtml(it.gloss || "") + '</span>' +
         (it.phonetic ? '<span class="vr-ph">' + escapeHtml(it.phonetic) + '</span>' : "") +
         "</button>";
@@ -323,13 +325,36 @@
     syncProgressControls();
     if (els.sentenceEn) {
       els.sentenceEn.innerHTML = escapeHtml(it.word) +
-        (it.phonetic ? ' <span style="color:var(--text-muted);font-size:0.85rem">' + escapeHtml(it.phonetic) + "</span>" : "");
+        (it.pos ? ' <span class="vr-pos">' + escapeHtml(it.pos) + "</span>" : "") +
+        (it.phonetic ? ' <span class="vm-ph" style="color:var(--accent);font-size:0.85rem">' + escapeHtml(it.phonetic) + "</span>" : "");
     }
-    var zhParts = [it.gloss || ""];
+    var metaBits = [];
+    if (it.phonetic) metaBits.push(it.phonetic);
+    if (it.pos) metaBits.push(it.pos);
+    if (it.gloss) metaBits.push(it.gloss);
+    var zhParts = [];
+    if (metaBits.length) {
+      zhParts.push(metaBits.join(" · "));
+    } else if (it.gloss) {
+      zhParts.push(it.gloss);
+    }
     if (it.tip) zhParts.push(it.tip);
     if (state.exampleOn && it.example) zhParts.push(it.example);
     if (state.exampleOn && it.exampleZh) zhParts.push(it.exampleZh);
-    if (els.sentenceZh) els.sentenceZh.textContent = zhParts.filter(Boolean).join(" · ");
+    if (els.sentenceZh) {
+      // Clear structured meta: 音标 + 词性 + 释义 on first line feel
+      els.sentenceZh.innerHTML =
+        '<div class="vocab-meta-line">' +
+        (it.phonetic ? '<span class="vm-ph">' + escapeHtml(it.phonetic) + "</span>" : "") +
+        (it.pos ? '<span class="vm-pos">' + escapeHtml(it.pos) + "</span>" : "") +
+        (it.gloss ? '<span class="vm-gloss">' + escapeHtml(it.gloss) + "</span>" : "") +
+        "</div>" +
+        (it.tip || (state.exampleOn && (it.example || it.exampleZh))
+          ? '<div style="margin-top:6px">' +
+            escapeHtml([it.tip, state.exampleOn ? it.example : "", state.exampleOn ? it.exampleZh : ""].filter(Boolean).join(" · ")) +
+            "</div>"
+          : "");
+    }
     if (els.btnMastered) {
       els.btnMastered.classList.toggle("is-on", !!mastered[it.id]);
       els.btnMastered.setAttribute("aria-pressed", mastered[it.id] ? "true" : "false");
