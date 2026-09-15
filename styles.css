@@ -141,6 +141,14 @@ textarea:focus {
   max-width: var(--max-wide);
 }
 
+/* Stacked on phone; becomes 2-col at ≥1024 */
+.practice-split {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+
 /* ===== Shared site nav ===== */
 .site-nav {
   display: flex;
@@ -2082,8 +2090,8 @@ input:focus-visible {
   :root,
   [data-theme="night"],
   [data-theme="day"] {
-    --max: 680px;
-    --max-wide: 900px;
+    --max: 720px;
+    --max-wide: 920px;
   }
 
   .app {
@@ -2190,13 +2198,74 @@ input:focus-visible {
   :root,
   [data-theme="night"],
   [data-theme="day"] {
-    --max: 760px;
-    --max-wide: 1080px;
+    --max: 1000px;
+    --max-wide: 1120px;
   }
 
+  /* Practice pages use .app only — give them the wide shell on desktop */
   .app {
+    max-width: min(var(--max-wide), 100%);
     padding: 22px 28px calc(36px + var(--safe-bottom));
   }
+
+  .app-wide {
+    max-width: min(var(--max-wide), 100%);
+  }
+
+  /* Desktop practice: roomier player card */
+  .now-card {
+    padding: 22px 24px;
+  }
+
+  .sentence-en {
+    font-size: 1.42rem;
+  }
+
+  .sentence-zh {
+    font-size: 1.02rem;
+  }
+
+  .vocab-player-pane {
+    max-width: none;
+  }
+
+  /* Desktop practice split: player | list */
+  .practice-split {
+    display: grid;
+    grid-template-columns: minmax(0, 1.15fr) minmax(300px, 0.95fr);
+    column-gap: 22px;
+    align-items: start;
+    margin-top: 4px;
+  }
+
+  .practice-split > .practice-split-player {
+    min-width: 0;
+  }
+
+  .practice-split > .practice-split-list,
+  .practice-split > #wordList {
+    min-width: 0;
+    max-height: min(70vh, 640px);
+    position: sticky;
+    top: 16px;
+    align-self: start;
+  }
+
+  .practice-split #wordList,
+  .practice-split .vocab-word-list {
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+    grid-template-columns: none;
+    max-height: min(70vh, 640px);
+    overflow: auto;
+  }
+
+  .practice-split #wordList .vocab-row,
+  .practice-split .vocab-word-list .vocab-row {
+    margin-bottom: 0;
+  }
+
 
   /* Nav: readable horizontal desktop row */
   .site-nav {
@@ -2281,13 +2350,37 @@ input:focus-visible {
   :root,
   [data-theme="night"],
   [data-theme="day"] {
-    --max: 820px;
-    --max-wide: 1200px;
+    --max: 1180px;
+    --max-wide: 1280px;
   }
 
   .app {
+    max-width: min(var(--max-wide), 100%);
     padding: 24px 36px calc(40px + var(--safe-bottom));
   }
+
+  .app-wide {
+    max-width: min(var(--max-wide), 100%);
+  }
+
+  .now-card {
+    padding: 24px 28px;
+  }
+
+  .sentence-en {
+    font-size: 1.48rem;
+  }
+
+  .practice-split {
+    grid-template-columns: minmax(0, 1.2fr) minmax(320px, 1fr);
+    column-gap: 28px;
+  }
+
+  .practice-split > .practice-split-list,
+  .practice-split > #wordList {
+    max-height: min(74vh, 720px);
+  }
+
 
   .home-hero h1 {
     font-size: 2.4rem;

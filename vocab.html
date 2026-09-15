@@ -58,8 +58,7 @@
       #wordList .vocab-row { margin-bottom: 0; }
     }
     @media (min-width: 1024px) {
-      #wordList { max-height: min(52vh, 520px); }
-      .vocab-player-pane { max-width: 720px; }
+      #wordList { max-height: min(70vh, 640px); }
     }
   </style>
   <script src="theme.js" defer></script>
@@ -107,81 +106,87 @@
     </div>
     <p class="privacy" id="metaStats">词库加载中…</p>
 
-    <section class="hero">
-      <button type="button" class="btn-play-all" id="btnPlayAll" aria-label="单词随身听">
-        <span class="icon" id="playAllIcon">▶</span>
-        <span class="label-stack">
-          <span id="playAllLabel">单词随身听 · Play All</span>
-          <span class="label-en">中文 → 英文 → 拼读 → 例句</span>
-        </span>
-      </button>
-    </section>
+    <div class="practice-split">
+      <div class="practice-split-player">
+          <section class="hero">
+            <button type="button" class="btn-play-all" id="btnPlayAll" aria-label="单词随身听">
+              <span class="icon" id="playAllIcon">▶</span>
+              <span class="label-stack">
+                <span id="playAllLabel">单词随身听 · Play All</span>
+                <span class="label-en">中文 → 英文 → 拼读 → 例句</span>
+              </span>
+            </button>
+          </section>
 
-    <div class="progress-wrap">
-      <div class="progress-meta">
-        <span id="progressText">当前 1 / —</span>
-        <span id="phaseText">准备就绪</span>
-        <span id="loopIndicator" class="loop-indicator" hidden></span>
+          <div class="progress-wrap">
+            <div class="progress-meta">
+              <span id="progressText">当前 1 / —</span>
+              <span id="phaseText">准备就绪</span>
+              <span id="loopIndicator" class="loop-indicator" hidden></span>
+            </div>
+            <input type="range" id="progressRange" class="progress-range" min="1" max="1" value="1" step="1" aria-label="拖动选择题号" />
+            <div class="jump-row">
+              <label class="jump-label" for="jumpInput">题号</label>
+              <input type="number" id="jumpInput" class="jump-input" min="1" value="1" inputmode="numeric" aria-label="题号" />
+              <button type="button" class="jump-btn" id="btnJump">跳转</button>
+              <span id="jumpError" class="jump-error" hidden>超出范围</span>
+            </div>
+          </div>
+
+          <article class="now-card" aria-live="polite">
+            <div class="status-badge is-idle" id="statusBadge">
+              <span class="dot"></span>
+              <span id="statusText">待机</span>
+            </div>
+            <p class="sentence-en" id="sentenceEn">点击「单词随身听」开始</p>
+            <p class="sentence-zh" id="sentenceZh">释义与例句将显示在这里</p>
+            <div class="vocab-actions">
+              <button type="button" class="toggle" id="btnMastered" aria-pressed="false"><span class="toggle-track"></span><span>已掌握</span></button>
+              <button type="button" class="toggle" id="btnNotebook" aria-pressed="false"><span class="toggle-track"></span><span>生词本</span></button>
+            </div>
+          </article>
+
+          <nav class="controls" aria-label="播放控制">
+            <button type="button" class="ctrl-btn" id="btnPrev"><span class="ico">⏮</span><span>上一个</span></button>
+            <button type="button" class="ctrl-btn is-primary" id="btnPlayPause"><span class="ico" id="playPauseIcon">▶</span><span id="playPauseLabel">播放</span></button>
+            <button type="button" class="ctrl-btn" id="btnReplay"><span class="ico">↺</span><span>重播</span></button>
+            <button type="button" class="ctrl-btn" id="btnNext"><span class="ico">⏭</span><span>下一个</span></button>
+            <button type="button" class="ctrl-btn" id="btnStop"><span class="ico">■</span><span>停止</span></button>
+          </nav>
+
+          <div class="options">
+            <div class="speed-group" role="group" aria-label="语速">
+              <button type="button" class="speed-btn" data-speed="0.8">0.8×</button>
+              <button type="button" class="speed-btn is-active" data-speed="1">1×</button>
+              <button type="button" class="speed-btn" data-speed="1.2">1.2×</button>
+            </div>
+
+            <div class="loop-group" role="group" aria-label="单题循环">
+              <span class="loop-label">单题循环</span>
+              <button type="button" class="loop-step" id="btnLoopMinus" aria-label="减少循环次数">−</button>
+              <input type="number" id="loopCount" class="loop-input" min="1" max="20" value="1" inputmode="numeric" aria-label="单题循环次数" />
+              <button type="button" class="loop-step" id="btnLoopPlus" aria-label="增加循环次数">+</button>
+            </div>
+
+          <div class="options keep-awake-options" aria-label="息屏续听设置">
+            <button type="button" class="toggle is-on" id="btnKeepAlive" aria-pressed="true" title="息屏续听（安卓更稳）">
+              <span class="toggle-track" aria-hidden="true"></span>
+              <span>息屏续听（安卓更稳）</span>
+            </button>
+            <button type="button" class="toggle" id="btnWakeLock" aria-pressed="false" title="保持屏幕常亮">
+              <span class="toggle-track" aria-hidden="true"></span>
+              <span>保持屏幕常亮</span>
+            </button>
+          </div>
+            <button type="button" class="toggle is-on" id="btnToggleExample" aria-pressed="true"><span class="toggle-track"></span><span>例句</span></button>
+            <button type="button" class="toggle is-on" id="btnToggleSpell" aria-pressed="true"><span class="toggle-track"></span><span>拼读</span></button>
+          </div>
+
       </div>
-      <input type="range" id="progressRange" class="progress-range" min="1" max="1" value="1" step="1" aria-label="拖动选择题号" />
-      <div class="jump-row">
-        <label class="jump-label" for="jumpInput">题号</label>
-        <input type="number" id="jumpInput" class="jump-input" min="1" value="1" inputmode="numeric" aria-label="题号" />
-        <button type="button" class="jump-btn" id="btnJump">跳转</button>
-        <span id="jumpError" class="jump-error" hidden>超出范围</span>
+      <div class="practice-split-list">
+        <div id="wordList" class="vocab-word-list" aria-label="单词列表"></div>
       </div>
     </div>
-
-    <article class="now-card" aria-live="polite">
-      <div class="status-badge is-idle" id="statusBadge">
-        <span class="dot"></span>
-        <span id="statusText">待机</span>
-      </div>
-      <p class="sentence-en" id="sentenceEn">点击「单词随身听」开始</p>
-      <p class="sentence-zh" id="sentenceZh">释义与例句将显示在这里</p>
-      <div class="vocab-actions">
-        <button type="button" class="toggle" id="btnMastered" aria-pressed="false"><span class="toggle-track"></span><span>已掌握</span></button>
-        <button type="button" class="toggle" id="btnNotebook" aria-pressed="false"><span class="toggle-track"></span><span>生词本</span></button>
-      </div>
-    </article>
-
-    <nav class="controls" aria-label="播放控制">
-      <button type="button" class="ctrl-btn" id="btnPrev"><span class="ico">⏮</span><span>上一个</span></button>
-      <button type="button" class="ctrl-btn is-primary" id="btnPlayPause"><span class="ico" id="playPauseIcon">▶</span><span id="playPauseLabel">播放</span></button>
-      <button type="button" class="ctrl-btn" id="btnReplay"><span class="ico">↺</span><span>重播</span></button>
-      <button type="button" class="ctrl-btn" id="btnNext"><span class="ico">⏭</span><span>下一个</span></button>
-      <button type="button" class="ctrl-btn" id="btnStop"><span class="ico">■</span><span>停止</span></button>
-    </nav>
-
-    <div class="options">
-      <div class="speed-group" role="group" aria-label="语速">
-        <button type="button" class="speed-btn" data-speed="0.8">0.8×</button>
-        <button type="button" class="speed-btn is-active" data-speed="1">1×</button>
-        <button type="button" class="speed-btn" data-speed="1.2">1.2×</button>
-      </div>
-
-      <div class="loop-group" role="group" aria-label="单题循环">
-        <span class="loop-label">单题循环</span>
-        <button type="button" class="loop-step" id="btnLoopMinus" aria-label="减少循环次数">−</button>
-        <input type="number" id="loopCount" class="loop-input" min="1" max="20" value="1" inputmode="numeric" aria-label="单题循环次数" />
-        <button type="button" class="loop-step" id="btnLoopPlus" aria-label="增加循环次数">+</button>
-      </div>
-
-    <div class="options keep-awake-options" aria-label="息屏续听设置">
-      <button type="button" class="toggle is-on" id="btnKeepAlive" aria-pressed="true" title="息屏续听（安卓更稳）">
-        <span class="toggle-track" aria-hidden="true"></span>
-        <span>息屏续听（安卓更稳）</span>
-      </button>
-      <button type="button" class="toggle" id="btnWakeLock" aria-pressed="false" title="保持屏幕常亮">
-        <span class="toggle-track" aria-hidden="true"></span>
-        <span>保持屏幕常亮</span>
-      </button>
-    </div>
-      <button type="button" class="toggle is-on" id="btnToggleExample" aria-pressed="true"><span class="toggle-track"></span><span>例句</span></button>
-      <button type="button" class="toggle is-on" id="btnToggleSpell" aria-pressed="true"><span class="toggle-track"></span><span>拼读</span></button>
-    </div>
-
-    <div id="wordList" class="vocab-word-list" aria-label="单词列表"></div>
 <div class="lead-blurb">
       <p><strong>备考之外：</strong>PTE直通车 · 海外就业免费评估，不承诺签证结果。</p>
       <a class="btn-soft" href="consult.html">出国咨询留资</a>
