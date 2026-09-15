@@ -1,6 +1,6 @@
 # chinaPTE · PTE Academic 全题型零成本练习站
 
-华人 PTE 备考静态站：日间/夜间主题（自动跟本地时间 06:00–18:59）+ 耳机随身听（HTML5 MP3 优先 + Web Speech 回退）+ 出国劳务软性留资。
+华人 PTE 备考静态站：日间/夜间主题（自动跟本地时间 06:00–18:59）+ 耳机随身听（HTML5 MP3 优先 + Web Speech 回退）+ PTE直通车软性留资。
 
 ## 快速打开
 
@@ -22,11 +22,11 @@
 - **日间 / 夜间**：手动覆盖并持久化。
 - 通过 `<html data-theme="day|night">` + `styles.css` / `theme.js` 生效。
 
-## 出国劳务页 + 后台
+## PTE直通车页 + 后台
 
 | 页面 | 说明 |
 |------|------|
-| `labor.html` | 公开「考不过怎么办 / 出国劳务」引导页（读 `content/labor.json`） |
+| `labor.html` | 公开「考不过怎么办 / PTE直通车」引导页（读 `content/labor.json`） |
 | `admin/` | 零成本后台：劳务文案 + **单词库审核编辑**（GitHub Contents API） |
 | `admin/config.js` | **改密码**：`window.ADMIN_PASSWORD`（默认 `chinaPTE2026`，请尽快修改） |
 | `content/vocab.json` | 单词库源数据（≥2000 核心词）；前台优先加载 |
@@ -79,7 +79,7 @@ cd chinaPTE-wfd-listen && python3 -m http.server 8080
 
 ## SEO（零成本静态优化）
 
-面向 **中国大陆 + 澳大利亚 / 新西兰华人** 在 Baidu / Bing / Google 搜索 PTE 备考、行业英语、合规出国劳务等信息。
+面向 **中国大陆 + 澳大利亚 / 新西兰华人** 在 Baidu / Bing / Google 搜索 PTE 备考、行业英语、合规出国路径 / PTE直通车等信息。
 
 已落实（不买广告、不承诺排名、不宣称「百度第一」）：
 
@@ -113,7 +113,7 @@ Sitemap URL：`https://chinaptepte-commits.github.io/chinaPTE/sitemap.xml`
 
 ## 合规
 
-仅提供 PTE 练习与正规出国劳务 / 海外就业信息咨询。禁止考试舞弊相关内容。不承诺签证或工作结果。
+仅提供 PTE 练习与正规出国路径 / 海外就业信息咨询（PTE直通车）。禁止考试舞弊相关内容。不承诺签证或工作结果。
 
 **版权：** 题库/词库为本站自有版权内容，未经授权禁止转载、镜像、爬取或商用，盗版必究。
 

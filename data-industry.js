@@ -10,7 +10,7 @@ window.INDUSTRY_DATA = {
     "file": "industry-daily.html",
     "badge": "生活",
     "intro": "面向在澳大利亚、新西兰生活与工作的华人：购物、银行、邮局、医保（Medicare）、租房与对公办理等常用英语。语句口语化，贴近柜台与日常场景。",
-    "softNote": "出国劳务或落地初期，把这些说法练熟，办事更顺、也更自信。",
+    "softNote": "出国落地初期，把这些说法练熟，办事更顺、也更自信。",
     "vocab": [
       {
         "en": "receipt",

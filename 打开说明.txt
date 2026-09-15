@@ -14,8 +14,8 @@ chinaPTE · 全题型练习站 — 打开说明
    rs.html    — RS Repeat Sentence（跟读）
    vocab.html — 单词库 / 单词随身听（核心词汇）
 
-3. 出国劳务引导页（合规信息，软性留资）：
-   labor.html — 「考不过怎么办 / 出国劳务」公开页
+3. PTE直通车引导页（合规信息，软性留资）：
+   labor.html — 「考不过怎么办 / PTE直通车」公开页
    线上地址：https://chinaptepte-commits.github.io/chinaPTE/labor.html
    consult.html — 咨询留资表
 
@@ -45,5 +45,5 @@ chinaPTE · 全题型练习站 — 打开说明
    浏览器访问 http://127.0.0.1:8080/体验全部功能.html
    后台预览：http://127.0.0.1:8080/admin/
 
-8. 合规：本站仅提供 PTE 练习与正规出国劳务 / 海外就业信息咨询。
+8. 合规：本站仅提供 PTE 练习与正规出国路径 / 海外就业信息咨询（PTE直通车）。
    禁止任何考试舞弊相关内容与服务。不承诺签证、工作或移民结果。
