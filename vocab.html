@@ -45,12 +45,27 @@
     .vr-word { font-weight:600; font-size:0.95rem; }
     .vr-gloss { color:var(--text-muted); font-size:0.82rem; grid-column:1; }
     .vr-ph { color:var(--text-muted); font-size:0.75rem; grid-column:2; grid-row:1 / span 2; align-self:center; }
-    #wordList { max-height:280px; overflow:auto; margin-top:12px; padding-right:4px; }
+    #wordList {
+      max-height:280px; overflow:auto; margin-top:12px; padding-right:4px;
+    }
+    @media (min-width: 768px) {
+      #wordList {
+        display: grid;
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+        gap: 8px 12px;
+        max-height: min(48vh, 420px);
+      }
+      #wordList .vocab-row { margin-bottom: 0; }
+    }
+    @media (min-width: 1024px) {
+      #wordList { max-height: min(52vh, 520px); }
+      .vocab-player-pane { max-width: 720px; }
+    }
   </style>
   <script src="theme.js" defer></script>
 </head>
 <body>
-  <div class="app">
+  <div class="app app-wide">
     <nav class="site-nav" aria-label="站点导航">
       <a class="site-nav-brand" href="index.html">chinaPTE</a>
       <ul class="site-nav-links">
@@ -69,7 +84,7 @@
     <header class="header">
       <div class="brand">
         <div class="brand-name">单词库 · 随身听</div>
-        <div class="brand-sub">PTE Academic 高频核心词 · 2300+</div>
+        <div class="brand-sub">PTE Academic 高频核心词 <span class="vocab-count-badge" title="词库规模">2300+</span></div>
       </div>
       <div class="stats-pill" id="todayStats">今天已听 <strong id="todayCount">0</strong></div>
     </header>
@@ -166,7 +181,7 @@
       <button type="button" class="toggle is-on" id="btnToggleSpell" aria-pressed="true"><span class="toggle-track"></span><span>拼读</span></button>
     </div>
 
-    <div id="wordList" aria-label="单词列表"></div>
+    <div id="wordList" class="vocab-word-list" aria-label="单词列表"></div>
 <div class="lead-blurb">
       <p><strong>备考之外：</strong>出国劳务 / 海外就业免费评估，不承诺签证结果。</p>
       <a class="btn-soft" href="consult.html">出国咨询留资</a>

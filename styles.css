@@ -1435,7 +1435,7 @@ input:focus-visible {
   }
 }
 
-@media (min-width: 640px) {
+@media (min-width: 481px) {
   .trust-grid {
     grid-template-columns: 1fr 1fr;
   }
@@ -1473,7 +1473,7 @@ input:focus-visible {
   margin: 12px 0 28px;
 }
 
-@media (min-width: 640px) {
+@media (min-width: 768px) {
   .practice-grid { grid-template-columns: 1fr 1fr 1fr; }
 }
 
@@ -1983,6 +1983,32 @@ input:focus-visible {
   grid-column: 1;
 }
 
+
+/* Home CTA grid + vocab count badge (mobile-first base) */
+.home-cta-grid {
+  display: flex;
+  flex-direction: column;
+  gap: 0;
+  margin-top: 0;
+}
+.home-cta-grid .btn-secondary-link {
+  width: 100%;
+  margin-top: 10px;
+}
+.vocab-count-badge {
+  display: inline-flex;
+  align-items: center;
+  margin-left: 6px;
+  padding: 1px 8px;
+  border-radius: 999px;
+  background: var(--accent-soft);
+  color: var(--accent);
+  font-weight: 800;
+  font-size: 0.72rem;
+  letter-spacing: 0.02em;
+  vertical-align: middle;
+}
+
 .copyright-note {
   margin-top: 10px;
   font-size: 0.78rem;
@@ -1993,4 +2019,345 @@ input:focus-visible {
 .copyright-note strong {
   color: var(--text);
   font-weight: 650;
+}
+
+/* ===== Responsive layout system ===== */
+/*
+  Breakpoints (mobile-first):
+  - base / ≤480px     phone
+  - ≥481px            large phone / tablet portrait
+  - ≥768px            tablet landscape
+  - ≥1024px           desktop
+  - ≥1280px           large desktop
+  Content --max / --max-wide + grids/nav/player scale at each step.
+*/
+
+/* —— ≥481: large phone / tablet portrait —— */
+@media (min-width: 481px) {
+  :root,
+  [data-theme="night"],
+  [data-theme="day"] {
+    --max: 540px;
+    --max-wide: 640px;
+  }
+
+  .app {
+    padding: 16px 20px calc(28px + var(--safe-bottom));
+  }
+
+  .home-hero h1 {
+    font-size: 1.85rem;
+  }
+
+  .home-cta-grid {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 10px;
+    margin-top: 8px;
+  }
+
+  .home-cta-grid .btn-secondary-link {
+    width: 100%;
+    margin-top: 0;
+    min-height: 48px;
+  }
+
+  .vocab-count-badge {
+    font-size: 0.78rem;
+    padding: 2px 10px;
+    margin-left: 8px;
+  }
+
+  .controls {
+    gap: 10px;
+  }
+
+  .ctrl-btn {
+    min-height: 58px;
+  }
+}
+
+/* —— ≥768: tablet landscape —— */
+@media (min-width: 768px) {
+  :root,
+  [data-theme="night"],
+  [data-theme="day"] {
+    --max: 680px;
+    --max-wide: 900px;
+  }
+
+  .app {
+    padding: 20px 24px calc(32px + var(--safe-bottom));
+  }
+
+  .site-nav {
+    gap: 12px;
+    padding: 6px 0 14px;
+  }
+
+  .site-nav-brand {
+    font-size: 0.95rem;
+  }
+
+  .site-nav-links {
+    gap: 4px;
+  }
+
+  .site-nav-links a {
+    padding: 8px 11px;
+    font-size: 0.78rem;
+    min-height: 38px;
+  }
+
+  .home-hero {
+    padding: 10px 0 24px;
+  }
+
+  .home-hero h1 {
+    font-size: 2rem;
+  }
+
+  .home-hero .tagline {
+    font-size: 1.02rem;
+    max-width: 40em;
+  }
+
+  .home-hero .btn-primary-link {
+    width: auto;
+    display: inline-flex;
+    min-width: 260px;
+    max-width: 400px;
+    margin-bottom: 8px;
+  }
+
+  .trust-grid {
+    gap: 12px;
+    margin: 22px 0 26px;
+  }
+
+  .practice-grid {
+    gap: 12px;
+  }
+
+  .method-steps {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 12px;
+  }
+
+  .seo-quick-links.method-steps {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  /* Industry lists: 2 columns */
+  .ind-list {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 10px 12px;
+  }
+
+  /* Vocab word list: 2 columns */
+  #wordList,
+  .vocab-word-list {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 8px 12px;
+    max-height: min(48vh, 420px);
+  }
+
+  #wordList .vocab-row,
+  .vocab-word-list .vocab-row {
+    margin-bottom: 0;
+  }
+
+  .sentence-en {
+    font-size: 1.32rem;
+  }
+
+  .bridge-card .btn-secondary-link {
+    width: auto;
+    display: inline-flex;
+    margin-top: 10px;
+  }
+
+  .now-card {
+    padding: 18px 18px;
+  }
+}
+
+/* —— ≥1024: desktop —— */
+@media (min-width: 1024px) {
+  :root,
+  [data-theme="night"],
+  [data-theme="day"] {
+    --max: 760px;
+    --max-wide: 1080px;
+  }
+
+  .app {
+    padding: 22px 28px calc(36px + var(--safe-bottom));
+  }
+
+  /* Nav: readable horizontal desktop row */
+  .site-nav {
+    flex-wrap: nowrap;
+    align-items: center;
+    gap: 16px;
+    padding: 8px 0 16px;
+    margin-bottom: 20px;
+  }
+
+  .site-nav-brand {
+    font-size: 1rem;
+  }
+
+  .site-nav-links {
+    flex-wrap: nowrap;
+    gap: 2px;
+    justify-content: flex-end;
+  }
+
+  .site-nav-links a {
+    padding: 8px 12px;
+    font-size: 0.8rem;
+    min-height: 38px;
+  }
+
+  .home-hero h1 {
+    font-size: 2.2rem;
+    max-width: 18em;
+  }
+
+  .home-hero .tagline {
+    font-size: 1.05rem;
+    margin-bottom: 22px;
+  }
+
+  .home-cta-grid {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 10px 12px;
+  }
+
+  .trust-grid {
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+    gap: 12px;
+  }
+
+  .practice-grid {
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+    gap: 14px;
+  }
+
+  .ind-list {
+    gap: 10px 14px;
+  }
+
+  #wordList,
+  .vocab-word-list {
+    max-height: min(52vh, 520px);
+  }
+
+  .sentence-en {
+    font-size: 1.35rem;
+  }
+
+  .controls {
+    gap: 12px;
+    max-width: 640px;
+  }
+
+  .ctrl-btn {
+    min-height: 60px;
+    font-size: 0.7rem;
+  }
+
+  .ctrl-btn .ico {
+    font-size: 1.35rem;
+  }
+}
+
+/* —— ≥1280: large desktop —— */
+@media (min-width: 1280px) {
+  :root,
+  [data-theme="night"],
+  [data-theme="day"] {
+    --max: 820px;
+    --max-wide: 1200px;
+  }
+
+  .app {
+    padding: 24px 36px calc(40px + var(--safe-bottom));
+  }
+
+  .home-hero h1 {
+    font-size: 2.4rem;
+  }
+
+  .home-cta-grid {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 12px 14px;
+  }
+
+  .home-hero .btn-primary-link {
+    min-width: 300px;
+    max-width: 440px;
+    font-size: 1.08rem;
+  }
+
+  .practice-grid {
+    gap: 16px;
+  }
+
+  .site-nav-links a {
+    padding: 8px 14px;
+    font-size: 0.82rem;
+  }
+
+  .trust-card {
+    padding: 18px 20px;
+  }
+
+  .ind-list {
+    gap: 12px 16px;
+  }
+
+  #wordList,
+  .vocab-word-list {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    max-height: min(56vh, 560px);
+  }
+
+  .controls {
+    max-width: 680px;
+  }
+}
+
+/* Phone safety: keep single-column CTAs & touch targets on very narrow screens */
+@media (max-width: 480px) {
+  .home-cta-grid {
+    display: flex;
+    flex-direction: column;
+    gap: 0;
+  }
+
+  .home-cta-grid .btn-secondary-link {
+    width: 100%;
+    margin-top: 10px;
+    min-height: 52px;
+  }
+
+  .site-nav-links a {
+    min-height: 36px;
+    padding: 8px 10px;
+  }
+
+  .ctrl-btn {
+    min-height: 56px;
+  }
+
+  /* Avoid accidental 2-col squeeze on tiny phones for industry */
+  .ind-list {
+    display: flex;
+    flex-direction: column;
+  }
 }
