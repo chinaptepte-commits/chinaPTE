@@ -138,8 +138,6 @@
       phraseHtml +
       "</ul>" +
       '<div class="bridge-card" style="margin-top:20px">' +
-      "<h2>PTE直通车 · 落地英语</h2>" +
-      "<p>这些用语可配合 PTE直通车咨询一起了解。继续免费练 PTE，或查看正规出国路径说明。</p>" +
       '<a class="btn-soft" href="labor.html">了解 PTE直通车</a>' +
       '<a class="btn-secondary-link" href="consult.html" style="margin-left:8px">免费咨询留资</a>' +
       '<a class="btn-secondary-link" href="practice.html" style="margin-left:8px">继续练 PTE</a>' +
