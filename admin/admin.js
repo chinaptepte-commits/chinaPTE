@@ -26,7 +26,16 @@
     consultStatus: document.getElementById("consultStatus"),
     btnConsultSave: document.getElementById("btnConsultSave"),
     btnConsultReload: document.getElementById("btnConsultReload"),
-    btnConsultDownload: document.getElementById("btnConsultDownload")
+    btnConsultDownload: document.getElementById("btnConsultDownload"),
+    panelAnalytics: document.getElementById("panelAnalytics"),
+    analyticsStatus: document.getElementById("analyticsStatus"),
+    analyticsHonesty: document.getElementById("analyticsHonesty"),
+    analyticsAdminKey: document.getElementById("analyticsAdminKey"),
+    analyticsDays: document.getElementById("analyticsDays"),
+    btnAnalyticsRefresh: document.getElementById("btnAnalyticsRefresh"),
+    btnAnalyticsCsvRaw: document.getElementById("btnAnalyticsCsvRaw"),
+    btnAnalyticsCsvDaily: document.getElementById("btnAnalyticsCsvDaily"),
+    btnAnalyticsLocal: document.getElementById("btnAnalyticsLocal")
   };
 
   var consultLoaded = false;
@@ -399,13 +408,207 @@
   }
 
   function switchTab(name) {
-    var isLabor = name === "labor";
-    el.panelLabor.classList.toggle("hidden", !isLabor);
-    el.panelConsult.classList.toggle("hidden", isLabor);
+    var tab = name || "labor";
+    el.panelLabor.classList.toggle("hidden", tab !== "labor");
+    el.panelConsult.classList.toggle("hidden", tab !== "consult");
+    if (el.panelAnalytics) el.panelAnalytics.classList.toggle("hidden", tab !== "analytics");
+    // Token card mainly for content editors
+    var tokenCard = document.getElementById("tokenCard");
+    if (tokenCard) tokenCard.classList.toggle("hidden", tab === "analytics");
     document.querySelectorAll(".admin-tab").forEach(function (btn) {
-      btn.classList.toggle("is-active", btn.getAttribute("data-tab") === name);
+      btn.classList.toggle("is-active", btn.getAttribute("data-tab") === tab);
     });
-    if (!isLabor && !consultLoaded) loadConsult();
+    if (tab === "consult" && !consultLoaded) loadConsult();
+    if (tab === "analytics") refreshAnalytics(false);
+  }
+
+  function analyticsEndpoint() {
+    var c = window.CHINAPTE_ANALYTICS || {};
+    return c.endpoint || "https://chinapte.net/api/analytics";
+  }
+
+  function analyticsAdminKey() {
+    var fromInput = el.analyticsAdminKey && el.analyticsAdminKey.value.trim();
+    if (fromInput) return fromInput;
+    var c = window.CHINAPTE_ANALYTICS || {};
+    return c.adminKey || window.ANALYTICS_ADMIN_KEY || "";
+  }
+
+  function formatMs(ms) {
+    if (!ms || ms < 0) return "—";
+    if (ms < 1000) return ms + " ms";
+    var s = Math.round(ms / 1000);
+    if (s < 60) return s + " 秒";
+    var m = Math.floor(s / 60);
+    var r = s % 60;
+    return m + " 分 " + r + " 秒";
+  }
+
+  function topN(obj, n) {
+    return Object.keys(obj || {})
+      .map(function (k) { return { label: k, value: obj[k] || 0 }; })
+      .sort(function (a, b) { return b.value - a.value; })
+      .slice(0, n || 8);
+  }
+
+  function renderBars(node, rows) {
+    if (!node) return;
+    if (!rows || !rows.length) {
+      node.innerHTML = '<div class="hint">暂无数据</div>';
+      return;
+    }
+    var max = Math.max.apply(null, rows.map(function (r) { return r.value; }).concat([1]));
+    node.innerHTML = rows
+      .map(function (r) {
+        var pct = Math.max(4, Math.round((r.value / max) * 100));
+        return (
+          '<div class="bar-row">' +
+          '<div class="bar-label" title="' + String(r.label).replace(/"/g, "&quot;") + '">' +
+          String(r.label) +
+          "</div>" +
+          '<div class="bar-track"><div class="bar-fill" style="width:' + pct + '%"></div></div>' +
+          '<div class="bar-num">' + r.value + "</div>" +
+          "</div>"
+        );
+      })
+      .join("");
+  }
+
+  function applySummary(data, meta) {
+    meta = meta || {};
+    var pv = data.pv || 0;
+    var uv = data.uv || 0;
+    var dwell = data.avgDwellMs || 0;
+    var evCount = data.eventCount != null ? data.eventCount : (data.daily ? data.daily.reduce(function (a, d) { return a + (d.pv || 0); }, 0) : "—");
+    var kpiPv = document.getElementById("kpiPv");
+    var kpiUv = document.getElementById("kpiUv");
+    var kpiDwell = document.getElementById("kpiDwell");
+    var kpiEvents = document.getElementById("kpiEvents");
+    if (kpiPv) kpiPv.textContent = String(pv);
+    if (kpiUv) kpiUv.textContent = String(uv);
+    if (kpiDwell) kpiDwell.textContent = formatMs(dwell);
+    if (kpiEvents) kpiEvents.textContent = String(evCount);
+
+    var pm = data.playModes || {};
+    renderBars(document.getElementById("playModeChart"), [
+      { label: "听题目", value: pm.prompt || 0 },
+      { label: "随身听", value: pm.walkman || 0 }
+    ]);
+    renderBars(document.getElementById("topPagesChart"), topN(data.topPages, 8));
+    renderBars(document.getElementById("topFeaturesChart"), topN(data.topFeatures, 8));
+    var daily = (data.daily || []).slice(0, 14).map(function (d) {
+      return { label: d.day, value: d.pv || 0 };
+    });
+    renderBars(document.getElementById("dailyChart"), daily);
+
+    if (el.analyticsHonesty) {
+      if (data.source === "worker") {
+        el.analyticsHonesty.textContent =
+          "数据来源：Cloudflare Worker 汇总（跨用户）。可用于招商材料；请注明统计口径为匿名会话。";
+      } else {
+        el.analyticsHonesty.textContent =
+          "诚实说明：当前显示的是本机浏览器缓冲 / 本会话数据（非全站跨用户）。" +
+          "部署 workers/analytics 并配置 chinapte.net/api/analytics 后，点「刷新汇总」即可拉取全站 KPI。" +
+          (meta.error ? " 最近请求： " + meta.error : "");
+      }
+    }
+  }
+
+  function localSummary() {
+    if (window.ChinaPTEAnalytics && ChinaPTEAnalytics.getLocalSummary) {
+      return ChinaPTEAnalytics.getLocalSummary();
+    }
+    return {
+      source: "local",
+      pv: 0,
+      uv: 0,
+      avgDwellMs: 0,
+      topPages: {},
+      topFeatures: {},
+      playModes: { prompt: 0, walkman: 0 },
+      eventCount: 0,
+      events: []
+    };
+  }
+
+  function downloadText(filename, text, mime) {
+    var blob = new Blob([text], { type: mime || "text/csv;charset=utf-8" });
+    var a = document.createElement("a");
+    a.href = URL.createObjectURL(blob);
+    a.download = filename;
+    document.body.appendChild(a);
+    a.click();
+    setTimeout(function () {
+      URL.revokeObjectURL(a.href);
+      a.remove();
+    }, 500);
+  }
+
+  function eventsToCsv(events) {
+    var rows = events || [];
+    var keys = ["ts", "type", "path", "sessionId", "feature", "playMode", "dwellMs", "screenWidth", "referrer"];
+    function esc(v) {
+      var s = v == null ? "" : String(v);
+      if (/[",\n]/.test(s)) return '"' + s.replace(/"/g, '""') + '"';
+      return s;
+    }
+    var lines = [keys.join(",")];
+    rows.forEach(function (ev) {
+      lines.push(keys.map(function (k) { return esc(ev[k]); }).join(","));
+    });
+    return lines.join("\n") + "\n";
+  }
+
+  async function fetchWorkerSummary() {
+    var key = analyticsAdminKey();
+    var days = (el.analyticsDays && el.analyticsDays.value) || 30;
+    var url = analyticsEndpoint() + "?summary=1&days=" + encodeURIComponent(days);
+    var res = await fetch(url, {
+      method: "GET",
+      headers: key ? { "X-Admin-Key": key } : {}
+    });
+    if (!res.ok) {
+      var errText = await res.text().catch(function () { return ""; });
+      throw new Error("HTTP " + res.status + " " + (errText || "").slice(0, 120));
+    }
+    return res.json();
+  }
+
+  async function fetchWorkerCsv(kind) {
+    var key = analyticsAdminKey();
+    var url = analyticsEndpoint() + "?csv=1&kind=" + encodeURIComponent(kind || "raw");
+    var res = await fetch(url, {
+      method: "GET",
+      headers: key ? { "X-Admin-Key": key } : {}
+    });
+    if (!res.ok) throw new Error("HTTP " + res.status);
+    return res.text();
+  }
+
+  async function refreshAnalytics(forceLocal) {
+    clearStatus(el.analyticsStatus);
+    if (el.analyticsAdminKey && !el.analyticsAdminKey.value) {
+      var c = window.CHINAPTE_ANALYTICS || {};
+      if (c.adminKey) el.analyticsAdminKey.value = c.adminKey;
+    }
+    if (forceLocal) {
+      applySummary(localSummary());
+      showStatus(el.analyticsStatus, "已加载本机缓冲数据。", "info");
+      return;
+    }
+    showStatus(el.analyticsStatus, "正在请求 Worker 汇总…", "info");
+    try {
+      var data = await fetchWorkerSummary();
+      applySummary(data);
+      showStatus(el.analyticsStatus, "已从 Worker 刷新汇总。", "ok");
+    } catch (err) {
+      applySummary(localSummary(), { error: String(err && err.message ? err.message : err) });
+      showStatus(
+        el.analyticsStatus,
+        "Worker 暂不可用，已回退本机数据。部署后填写 Admin Key 再刷新。",
+        "err"
+      );
+    }
   }
 
   function showEditor() {
@@ -479,6 +682,44 @@
       switchTab(btn.getAttribute("data-tab") || "labor");
     });
   });
+
+  if (el.btnAnalyticsRefresh) {
+    el.btnAnalyticsRefresh.addEventListener("click", function () {
+      refreshAnalytics(false);
+    });
+  }
+  if (el.btnAnalyticsLocal) {
+    el.btnAnalyticsLocal.addEventListener("click", function () {
+      refreshAnalytics(true);
+    });
+  }
+  if (el.btnAnalyticsCsvRaw) {
+    el.btnAnalyticsCsvRaw.addEventListener("click", async function () {
+      try {
+        var csv = await fetchWorkerCsv("raw");
+        downloadText("chinapte-analytics-raw.csv", csv, "text/csv;charset=utf-8");
+        showStatus(el.analyticsStatus, "已下载 Worker 原始事件 CSV。", "ok");
+      } catch (err) {
+        var local = localSummary();
+        downloadText("chinapte-analytics-local-raw.csv", eventsToCsv(local.events || []), "text/csv;charset=utf-8");
+        showStatus(el.analyticsStatus, "Worker CSV 失败，已导出本机事件。", "info");
+      }
+    });
+  }
+  if (el.btnAnalyticsCsvDaily) {
+    el.btnAnalyticsCsvDaily.addEventListener("click", async function () {
+      try {
+        var csv = await fetchWorkerCsv("daily");
+        downloadText("chinapte-analytics-daily.csv", csv, "text/csv;charset=utf-8");
+        showStatus(el.analyticsStatus, "已下载按日汇总 CSV。", "ok");
+      } catch (err) {
+        var local = localSummary();
+        var lines = ["day,pv,uv\n", new Date().toISOString().slice(0, 10) + "," + (local.pv || 0) + "," + (local.uv || 0) + "\n"];
+        downloadText("chinapte-analytics-daily-local.csv", lines.join(""), "text/csv;charset=utf-8");
+        showStatus(el.analyticsStatus, "Worker CSV 失败，已导出本机按日占位。", "info");
+      }
+    });
+  }
 
   if (isLoggedIn()) showEditor();
   else showLogin();

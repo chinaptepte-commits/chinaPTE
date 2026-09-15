@@ -92,7 +92,7 @@ cd chinaPTE-wfd-listen && python3 -m http.server 8080
 - `robots.txt`（`*` / `Baiduspider` / `bingbot` 允许抓取；`/admin/` 禁止）+ `sitemap.xml`
 - 首页 JSON-LD：`WebSite` + `Organization` + `LearningResource`；主要栏目 `BreadcrumbList`
 - `lang="zh-CN"`；单语站点未加 hreflang
-- 首页描述性内链 + 「国内访问说明」（诚实说明 github.io 在大陆可能不稳定；不承诺备案）
+- 首页描述性内链（练习 / 行业 / 直通车等）
 - 首页预留 `baidu-site-verification` 注释槽（拿到验证码后再填，勿编造）
 - 可选友好页：`404.html`
 
@@ -109,10 +109,26 @@ Sitemap URL：`https://chinaptepte-commits.github.io/chinaPTE/sitemap.xml`
    - 对中文搜索亦有帮助，且 Bing 对 github.io 抓取通常更稳。
 3. **Google Search Console**（可选，AU/NZ 受众）→ 提交同一 sitemap。
 
-### 国内访问与可选加固（非必须）
+### 域名与 CDN（可选）
 
-- 收藏常用页；打开慢或失败时换网络 / 稍后再试  
-- 可选：自有域名 + Cloudflare（或其它合规 CDN/节点）指向本站静态资源，改善可达性——**需自行合规办理，本 README 不承诺也不指导虚假备案**
+- 自定义域 `chinapte.net` 已指向本站；可选 Cloudflare 等合规 CDN 改善可达性——**需自行合规办理，本 README 不承诺也不指导虚假备案**
+
+
+## 播放模式（听题目｜随身听）
+
+练习页（WFD / RS / RA / RL / ASQ 等）播放控件旁提供分段开关：
+
+- **听题目**：只播目标英文（适合听写 / 模考）
+- **随身听**：英文 + 中文解读 + 词汇拼写（学习模式）
+
+偏好写入 `localStorage` 键 `chinaPTE_play_mode`。WFD 默认「听题目」。
+
+## 数据看板（招商分析）
+
+- 全站 `analytics.js`（由 `site-nav.js` 注入）：匿名 `sessionId`、page_view / heartbeat / leave、nav_click、feature_use、play_start
+- 管理后台登录后打开 **数据看板**：KPI、听题目 vs 随身听、CSV 下载
+- 跨用户聚合：部署 `workers/analytics/` Cloudflare Worker + KV，路由 `https://chinapte.net/api/analytics`
+- Worker 未上线时：后台显示本机缓冲，并提示部署步骤（不把 GitHub 当分析库）
 
 ## 合规
 

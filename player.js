@@ -11,6 +11,7 @@
     const STORAGE_RESUME = cfg.storagePrefix + "_resume";
     const STORAGE_STREAK = cfg.storagePrefix + "_streak";
     const STORAGE_LOOP = "chinaPTE_loop_count";
+    const STORAGE_PLAY_MODE = "chinaPTE_play_mode"; // prompt=听题目 | walkman=随身听
     const mode = cfg.mode || "wfd"; // wfd|rs|rl|asq|sst|hiw|ra
     const enRateMul = cfg.enRateMul != null ? cfg.enRateMul : 0.88;
     const bankName = cfg.bankName || "BANK";
@@ -22,6 +23,7 @@
       index: 0,
       rate: 1,
       zhOn: true,
+      playMode: "walkman", // prompt | walkman
       playing: false,
       playAll: false,
       paused: false,
@@ -123,6 +125,130 @@
     }
     function itemAnswer(item) {
       return item.answer || item.correct || "";
+    }
+
+    function isPromptMode() {
+      return state.playMode === "prompt";
+    }
+
+    function defaultPlayMode() {
+      // WFD dictation defaults to exam-like 听题目; others default to study 随身听
+      return mode === "wfd" ? "prompt" : "walkman";
+    }
+
+    function loadPlayMode() {
+      try {
+        const raw = localStorage.getItem(STORAGE_PLAY_MODE);
+        if (raw === "prompt" || raw === "walkman") return raw;
+      } catch (e) {}
+      return defaultPlayMode();
+    }
+
+    function trackPlayMode(modeName, meta) {
+      try {
+        if (global.ChinaPTEAnalytics && typeof global.ChinaPTEAnalytics.track === "function") {
+          global.ChinaPTEAnalytics.track("feature_use", {
+            feature: "play_mode",
+            playMode: modeName,
+            pageMode: mode,
+            ...(meta || {}),
+          });
+        }
+      } catch (e) {}
+    }
+
+    function trackPlayStart(opts) {
+      try {
+        if (global.ChinaPTEAnalytics && typeof global.ChinaPTEAnalytics.track === "function") {
+          global.ChinaPTEAnalytics.track("play_start", {
+            playMode: state.playMode,
+            pageMode: mode,
+            continueAll: !!(opts && opts.continueAll),
+            fromVocab: opts && opts.fromVocab != null,
+          });
+        }
+      } catch (e) {}
+    }
+
+    function playModeSubtitle() {
+      if (isPromptMode()) {
+        if (mode === "asq") return "听题目 · 仅英文问题";
+        if (mode === "ra") return "听题目 · 仅英文朗读一遍";
+        if (mode === "wfd") return "听题目 · 仅英文句子（适合听写）";
+        if (mode === "rs") return "听题目 · 仅英文句子一遍";
+        return "听题目 · 仅目标英文音频";
+      }
+      if (mode === "asq") return "随身听 · 问题 → 中文 → 答案";
+      if (mode === "ra") return "随身听 · 朗读 → 中文 → 词汇";
+      if (mode === "rs") return "随身听 · EN → 句意 → 词汇";
+      if (mode === "wfd") return "随身听 · EN → 中文解读 → 拼写";
+      return "随身听 · EN → 中文 → 词汇";
+    }
+
+    function syncPlayModeUI() {
+      const root = document.getElementById("playModeSeg");
+      if (root) {
+        root.querySelectorAll("[data-play-mode]").forEach((btn) => {
+          const on = btn.getAttribute("data-play-mode") === state.playMode;
+          btn.classList.toggle("is-active", on);
+          btn.setAttribute("aria-pressed", on ? "true" : "false");
+        });
+      }
+      const sub = document.querySelector(".btn-play-all .label-en");
+      if (sub) sub.textContent = playModeSubtitle();
+      if (els.playAllLabel && !(state.playAll && state.playing)) {
+        els.playAllLabel.textContent = isPromptMode()
+          ? "听题目 · Play All"
+          : "随身听 · Play All";
+      }
+    }
+
+    function setPlayMode(next, opts) {
+      opts = opts || {};
+      const m = next === "prompt" ? "prompt" : "walkman";
+      const prev = state.playMode;
+      state.playMode = m;
+      try {
+        localStorage.setItem(STORAGE_PLAY_MODE, m);
+      } catch (e) {}
+      syncPlayModeUI();
+      if (!opts.silent && prev !== m) {
+        trackPlayMode(m, { source: opts.source || "toggle" });
+      }
+      // Soft-stop so next play uses new sequence rules
+      if (!opts.keepPlaying && (state.playing || state.playAll)) {
+        stopAll();
+        setPhase("idle", m === "prompt" ? "听题目模式" : "随身听模式");
+      }
+      return m;
+    }
+
+    function ensurePlayModeUI() {
+      if (document.getElementById("playModeSeg")) return;
+      const host =
+        document.querySelector("nav.controls") ||
+        document.querySelector(".options") ||
+        document.querySelector(".hero");
+      if (!host) return;
+      const wrap = document.createElement("div");
+      wrap.className = "play-mode-seg";
+      wrap.id = "playModeSeg";
+      wrap.setAttribute("role", "group");
+      wrap.setAttribute("aria-label", "播放模式：听题目｜随身听");
+      wrap.innerHTML =
+        '<button type="button" class="play-mode-btn" data-play-mode="prompt" aria-pressed="false">听题目</button>' +
+        '<button type="button" class="play-mode-btn" data-play-mode="walkman" aria-pressed="false">随身听</button>' +
+        '<span class="play-mode-hint" id="playModeHint"></span>';
+      if (host.classList.contains("controls")) {
+        host.insertAdjacentElement("afterend", wrap);
+      } else {
+        host.insertAdjacentElement("beforebegin", wrap);
+      }
+      wrap.querySelectorAll("[data-play-mode]").forEach((btn) => {
+        btn.addEventListener("click", () => {
+          setPlayMode(btn.getAttribute("data-play-mode"), { source: "ui" });
+        });
+      });
     }
 
     function todayKey() {
@@ -527,13 +653,22 @@
         if (state.playAll && state.playing) {
           els.playAll.classList.add("is-playing");
           if (els.playAllIcon) els.playAllIcon.textContent = "⏸";
-          if (els.playAllLabel) els.playAllLabel.textContent = "随身听播放中…";
+          if (els.playAllLabel) {
+            els.playAllLabel.textContent = isPromptMode()
+              ? "听题目播放中…"
+              : "随身听播放中…";
+          }
         } else {
           els.playAll.classList.remove("is-playing");
           if (els.playAllIcon) els.playAllIcon.textContent = "▶";
-          if (els.playAllLabel) els.playAllLabel.textContent = "随身听 · Play All";
+          if (els.playAllLabel) {
+            els.playAllLabel.textContent = isPromptMode()
+              ? "听题目 · Play All"
+              : "随身听 · Play All";
+          }
         }
       }
+      syncPlayModeUI();
     }
 
     let playToken = 0;
@@ -662,6 +797,7 @@
 
       const kaStart = ensureKeepAlive();
       if (kaStart) kaStart.onSessionStart(sessionTitle());
+      trackPlayStart(opts);
 
       try {
         if (fromVocab == null) {
@@ -682,61 +818,79 @@
           await wait(mode === "rs" ? 700 : 550);
           if (!isActive(token)) return;
 
-          // Chinese analysis / tip
-          const analysis = itemZh(item);
-          if (state.zhOn && analysis) {
-            setPhase("zh", mode === "rs" ? "句意" : "中文解读");
-            const r2 = await speak(analysis, {
-              lang: "zh-CN",
-              rate: state.rate,
-              voice: state.zhVoice,
-              clipKey: mode + "/" + item.id + "-zh",
-              playbackRate: state.rate,
-            });
-            if (!isActive(token) || (r2 && r2.interrupted)) return;
-            await wait(400);
-            if (!isActive(token)) return;
-          }
-
-          // ASQ: reveal answer after delay
-          if (mode === "asq") {
-            await wait(900);
-            if (!isActive(token)) return;
-            const ans = itemAnswer(item);
-            if (ans) {
-              setPhase("answer", "答案");
-              if (els.answerReveal) {
+          // 听题目 (prompt): English target only — no zh / vocab / answer TTS
+          if (isPromptMode()) {
+            // ASQ exam-like: optionally show answer text without narrating study tips
+            if (mode === "asq") {
+              await wait(600);
+              if (!isActive(token)) return;
+              const ans = itemAnswer(item);
+              if (ans && els.answerReveal) {
                 els.answerReveal.hidden = false;
                 els.answerReveal.classList.add("is-shown");
                 els.answerReveal.textContent = "答案：" + ans;
               }
-              if (state.zhOn) {
-                await speak("答案是 " + ans, {
-                  lang: "zh-CN",
-                  rate: state.rate,
-                  voice: state.zhVoice,
-                });
-              } else {
-                await speak(String(ans), {
-                  lang: enSpeakLang(),
-                  rate: state.rate,
-                  voice: state.enVoice,
-                });
-              }
-              if (!isActive(token)) return;
+            }
+          } else {
+            // 随身听 (walkman): full study sequence
+            const analysis = itemZh(item);
+            if (state.zhOn && analysis) {
+              setPhase("zh", mode === "rs" ? "句意" : "中文解读");
+              const r2 = await speak(analysis, {
+                lang: "zh-CN",
+                rate: state.rate,
+                voice: state.zhVoice,
+                clipKey: mode + "/" + item.id + "-zh",
+                playbackRate: state.rate,
+              });
+              if (!isActive(token) || (r2 && r2.interrupted)) return;
               await wait(400);
+              if (!isActive(token)) return;
+            }
+
+            // ASQ: reveal answer after delay
+            if (mode === "asq") {
+              await wait(900);
+              if (!isActive(token)) return;
+              const ans = itemAnswer(item);
+              if (ans) {
+                setPhase("answer", "答案");
+                if (els.answerReveal) {
+                  els.answerReveal.hidden = false;
+                  els.answerReveal.classList.add("is-shown");
+                  els.answerReveal.textContent = "答案：" + ans;
+                }
+                if (state.zhOn) {
+                  await speak("答案是 " + ans, {
+                    lang: "zh-CN",
+                    rate: state.rate,
+                    voice: state.zhVoice,
+                  });
+                } else {
+                  await speak(String(ans), {
+                    lang: enSpeakLang(),
+                    rate: state.rate,
+                    voice: state.enVoice,
+                  });
+                }
+                if (!isActive(token)) return;
+                await wait(400);
+              }
             }
           }
         }
 
-        const startV = fromVocab != null ? fromVocab : 0;
-        const ok = await playVocabBlock(item, token, startV);
-        if (!ok) return;
+        // Vocab block: only in 随身听, or when user taps a vocab chip (fromVocab)
+        if (!isPromptMode() || fromVocab != null) {
+          const startV = fromVocab != null ? fromVocab : 0;
+          const ok = await playVocabBlock(item, token, startV);
+          if (!ok) return;
+        }
 
         // RS / general: short beep-like pause before next
         if (mode === "rs" || mode === "rl" || mode === "sst") {
           setPhase("beep", "间隔");
-          await wait(500);
+          await wait(isPromptMode() ? 350 : 500);
           if (!isActive(token)) return;
         }
 
@@ -1078,6 +1232,9 @@
       loadResume();
       applyQueryParam();
       refreshTodayUI();
+      state.playMode = loadPlayMode();
+      ensurePlayModeUI();
+      syncPlayModeUI();
       renderItem();
       setPhase("idle", "准备就绪");
       updateTransportUI();
@@ -1212,6 +1369,11 @@
         return it ? it.id : null;
       },
       playPromptEn,
+      setPlayMode,
+      getPlayMode: function () {
+        return state.playMode;
+      },
+      isPromptMode,
     };
   }
 

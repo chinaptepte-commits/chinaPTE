@@ -837,6 +837,47 @@ textarea:focus {
   color: var(--accent);
 }
 
+/* Play mode: 听题目 | 随身听 */
+.play-mode-seg {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 8px;
+  margin: 0 0 14px;
+}
+.play-mode-seg .play-mode-btn {
+  flex: 1 1 auto;
+  min-height: 42px;
+  padding: 8px 14px;
+  font-size: 0.85rem;
+  font-weight: 700;
+  color: var(--text-muted);
+  background: var(--bg-elevated);
+  border: 1px solid var(--border);
+  border-radius: var(--radius-sm);
+}
+.play-mode-seg .play-mode-btn + .play-mode-btn {
+  margin-left: -1px;
+}
+.play-mode-seg .play-mode-btn:first-of-type {
+  border-radius: var(--radius-sm) 0 0 var(--radius-sm);
+}
+.play-mode-seg .play-mode-btn:nth-of-type(2) {
+  border-radius: 0 var(--radius-sm) var(--radius-sm) 0;
+}
+.play-mode-seg .play-mode-btn.is-active {
+  color: var(--accent);
+  background: var(--accent-soft);
+  border-color: rgba(91, 141, 239, 0.45);
+  z-index: 1;
+}
+.play-mode-hint {
+  flex: 1 1 100%;
+  font-size: 0.72rem;
+  color: var(--text-muted);
+  line-height: 1.35;
+}
+
 /* Options row */
 .options {
   display: flex;

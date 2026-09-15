@@ -140,9 +140,16 @@
     var hint = el(
       "p",
       "wfd-dictation-hint",
-      "先听音频，在下方输入你听到的英文，再点「确定 / 核对」。练习模式不会提前显示原文。"
+      "听写建议用「听题目」：只播英文句子，不念中文/词汇。先听再输入，点「确定 / 核对」。练习模式不提前显示原文。"
     );
     root.appendChild(hint);
+
+    var modeTip = el("div", "wfd-dictation-actions");
+    var btnPromptMode = el("button", "wfd-dictation-btn", "切换到听题目");
+    btnPromptMode.type = "button";
+    btnPromptMode.title = "考试听写模式：仅英文音频";
+    modeTip.appendChild(btnPromptMode);
+    root.appendChild(modeTip);
 
     var actionsTop = el("div", "wfd-dictation-actions");
     var btnListen = el("button", "wfd-dictation-btn", "▶ 再听一遍");
@@ -306,6 +313,15 @@
       zhLine.hidden = !z;
       result.hidden = false;
       applyHideToCard();
+      try {
+        if (window.ChinaPTEAnalytics && ChinaPTEAnalytics.track) {
+          ChinaPTEAnalytics.track("feature_use", {
+            feature: "wfd_dictation",
+            action: "check",
+            score: cmp.score,
+          });
+        }
+      } catch (e) {}
     }
 
     hideChk.addEventListener("change", function () {
@@ -336,11 +352,31 @@
       applyHideToCard();
     });
 
+    btnPromptMode.addEventListener("click", function () {
+      var p = getPlayer();
+      if (p && typeof p.setPlayMode === "function") {
+        p.setPlayMode("prompt", { source: "wfd_dictation" });
+        hint.textContent =
+          "已切换到「听题目」。点播放或「再听一遍」只会听到英文句子。";
+        refreshPromptBtn();
+      }
+      try {
+        if (window.ChinaPTEAnalytics && ChinaPTEAnalytics.track) {
+          ChinaPTEAnalytics.track("feature_use", { feature: "wfd_dictation", action: "switch_prompt" });
+        }
+      } catch (e) {}
+    });
+
     btnListen.addEventListener("click", function () {
       var p = getPlayer();
       if (p && typeof p.playPromptEn === "function") {
         p.playPromptEn();
       }
+      try {
+        if (window.ChinaPTEAnalytics && ChinaPTEAnalytics.track) {
+          ChinaPTEAnalytics.track("feature_use", { feature: "wfd_dictation", action: "listen_again" });
+        }
+      } catch (e) {}
     });
 
     ta.addEventListener("keydown", function (e) {
@@ -356,8 +392,17 @@
       setTimeout(resetForItem, 0);
     });
 
-    // Initial
-    setTimeout(resetForItem, 50);
+    // Initial — WFD dictation encourages 听题目 (player defaults to prompt on WFD)
+    function refreshPromptBtn() {
+      var p = getPlayer();
+      var isPrompt = p && typeof p.getPlayMode === "function" && p.getPlayMode() === "prompt";
+      btnPromptMode.textContent = isPrompt ? "当前：听题目 ✓" : "切换到听题目";
+    }
+    setTimeout(function () {
+      resetForItem();
+      refreshPromptBtn();
+    }, 50);
+    setInterval(refreshPromptBtn, 1500);
 
     return {
       reset: resetForItem,

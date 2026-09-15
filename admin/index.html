@@ -9,7 +9,7 @@
   </script>
   <meta name="robots" content="noindex,nofollow" />
   <title>chinaPTE · 内容后台</title>
-  <link rel="stylesheet" href="admin.css?v=20260915r2" />
+  <link rel="stylesheet" href="admin.css?v=20260916r1" />
   <script src="../theme.js?v=20260915r2" defer></script>
 </head>
 <body>
@@ -55,6 +55,7 @@
         <div class="admin-tabs" role="tablist" style="margin-top:14px">
           <button type="button" class="admin-tab is-active" data-tab="labor" id="tabLabor">PTE直通车</button>
           <button type="button" class="admin-tab" data-tab="consult" id="tabConsult">出国咨询</button>
+          <button type="button" class="admin-tab" data-tab="analytics" id="tabAnalytics">数据看板</button>
         </div>
         <p class="hint">
           保存通过 GitHub Contents API 写回
@@ -255,6 +256,74 @@
         </form>
       </div>
 
+
+      <!-- ANALYTICS -->
+      <div id="panelAnalytics" class="hidden">
+        <div class="card">
+          <h2>数据看板（招商用量）</h2>
+          <p class="hint">
+            匿名统计：会话 UUID、页面停留、功能使用、听题目 vs 随身听。
+            聚合数据优先来自 Cloudflare Worker（<code>https://chinapte.net/api/analytics</code>）。
+            Worker 未上线时，此处显示<strong>本机会话 / 本机缓冲</strong>，并给出部署步骤。
+          </p>
+          <div class="field-row-2">
+            <div>
+              <label for="analyticsAdminKey">X-Admin-Key（读取汇总）</label>
+              <input id="analyticsAdminKey" type="password" autocomplete="off" placeholder="与 Worker secret ADMIN_KEY 一致" />
+            </div>
+            <div>
+              <label for="analyticsDays">汇总天数</label>
+              <input id="analyticsDays" type="number" min="1" max="90" value="30" />
+            </div>
+          </div>
+          <div class="btn-row">
+            <button type="button" class="btn-primary" id="btnAnalyticsRefresh">刷新汇总</button>
+            <button type="button" class="btn-secondary" id="btnAnalyticsCsvRaw">下载 CSV（原始事件）</button>
+            <button type="button" class="btn-secondary" id="btnAnalyticsCsvDaily">下载 CSV（按日）</button>
+            <button type="button" class="btn-ghost" id="btnAnalyticsLocal">仅看本机</button>
+          </div>
+          <div id="analyticsStatus" class="status" role="status"></div>
+          <div id="analyticsHonesty" class="analytics-honesty"></div>
+        </div>
+
+        <div class="card">
+          <div class="kpi-grid" id="analyticsKpis">
+            <div class="kpi"><div class="kpi-label">PV</div><div class="kpi-value" id="kpiPv">—</div></div>
+            <div class="kpi"><div class="kpi-label">UV（会话）</div><div class="kpi-value" id="kpiUv">—</div></div>
+            <div class="kpi"><div class="kpi-label">平均停留</div><div class="kpi-value" id="kpiDwell">—</div></div>
+            <div class="kpi"><div class="kpi-label">事件数</div><div class="kpi-value" id="kpiEvents">—</div></div>
+          </div>
+          <div class="analytics-split">
+            <div>
+              <h3>听题目 vs 随身听</h3>
+              <div id="playModeChart" class="bar-chart" aria-label="play mode chart"></div>
+            </div>
+            <div>
+              <h3>热门页面</h3>
+              <div id="topPagesChart" class="bar-chart"></div>
+            </div>
+            <div>
+              <h3>热门功能</h3>
+              <div id="topFeaturesChart" class="bar-chart"></div>
+            </div>
+            <div>
+              <h3>近几日 PV</h3>
+              <div id="dailyChart" class="bar-chart"></div>
+            </div>
+          </div>
+        </div>
+
+        <div class="card">
+          <h3>Worker 部署步骤（一次性）</h3>
+          <ol class="setup-steps">
+            <li>打开仓库 <code>workers/analytics/</code>，按其中 README 用 wrangler 创建 KV 并 <code>npx wrangler deploy</code>。</li>
+            <li>Cloudflare 为 <code>chinapte.net</code> 添加路由 <code>/api/analytics*</code> → 该 Worker。</li>
+            <li><code>npx wrangler secret put ADMIN_KEY</code>，并把同一值填进上方或 <code>admin/config.js</code> 的 <code>CHINAPTE_ANALYTICS.adminKey</code>。</li>
+            <li>可选：设置 <code>ga4MeasurementId</code> 或 <code>CHINAPTE_ANALYTICS_WEBHOOK</code> 作为双写。</li>
+          </ol>
+        </div>
+      </div>
+
       <p class="footer-note">
         修改密码：编辑仓库里的 <code>admin/config.js</code>，改 <code>window.ADMIN_PASSWORD</code> 后推送到 main。<br />
         禁止发布任何考试舞弊相关内容。仅允许正规出国路径 / 海外就业合规信息（PTE直通车）。<br />
@@ -263,7 +332,8 @@
     </div>
   </div>
 
-  <script src="config.js?v=20260915r2"></script>
-  <script src="admin.js?v=20260915r2"></script>
+  <script src="config.js?v=20260916r1"></script>
+  <script src="../analytics.js?v=20260916r1"></script>
+  <script src="admin.js?v=20260916r1"></script>
 </body>
 </html>

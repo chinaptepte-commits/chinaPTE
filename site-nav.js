@@ -48,9 +48,23 @@
     nav.innerHTML = brand + '<ul class="site-nav-links">' + lis + "</ul>";
   }
 
+  function loadAnalytics() {
+    if (window.ChinaPTEAnalytics) return;
+    if (document.querySelector("script[data-chinapte-analytics]")) return;
+    var s = document.createElement("script");
+    s.src = "analytics.js?v=20260916r1";
+    s.defer = true;
+    s.setAttribute("data-chinapte-analytics", "1");
+    (document.head || document.documentElement).appendChild(s);
+  }
+
   if (document.readyState === "loading") {
-    document.addEventListener("DOMContentLoaded", render);
+    document.addEventListener("DOMContentLoaded", function () {
+      render();
+      loadAnalytics();
+    });
   } else {
     render();
+    loadAnalytics();
   }
 })();
