@@ -322,6 +322,13 @@
 
     function speak(text, opts) {
       opts = opts || {};
+      // Prefer TTS when item marks audioPreferTts (e.g. lengthened RA passages)
+      // or when caller sets preferTts — avoids mismatched short MP3s.
+      const cur = typeof currentItem === "function" ? currentItem() : null;
+      const forceTts = !!(opts.preferTts || (cur && cur.audioPreferTts && opts.clipKey && /\/(?:\d+|[^/]+)-en$/.test(String(opts.clipKey))));
+      if (forceTts) {
+        return speakViaTts(text, opts);
+      }
       const engine = global.ChinaPTEAudio;
       if (engine) {
         const url = opts.audioUrl || engine.resolveClipUrl(opts.clipKey);

@@ -52,7 +52,7 @@
     <header class="header">
       <div class="brand">
         <div class="brand-name">WFD 随身听</div>
-        <div class="brand-sub">Write From Dictation · 耳机记忆</div>
+        <div class="brand-sub">Write From Dictation · 听写核对 + 耳机记忆</div>
       </div>
       <div class="stats-pill" id="todayStats" title="今日已练（本地存储）">
         今天已练 <strong id="todayCount">0</strong>
@@ -112,6 +112,8 @@
       </div>
     </article>
 
+    <section class="wfd-dictation-wrap" id="wfdDictationRoot" aria-label="听写练习"></section>
+
     <nav class="controls" aria-label="播放控制">
       <button type="button" class="ctrl-btn" id="btnPrev" title="上一条"><span class="ico">⏮</span><span>上一条</span></button>
       <button type="button" class="ctrl-btn is-primary" id="btnPlayPause" title="播放 / 暂停"><span class="ico" id="playPauseIcon">▶</span><span id="playPauseLabel">播放</span></button>
@@ -159,14 +161,23 @@
   <script src="keepalive.js"></script>
   <script src="audio-engine.js"></script>
   <script src="player.js"></script>
+  <script src="wfd-dictation.js"></script>
   <script>
-    ChinaPTEPlayer.create({
-      bankGlobal: "WFD_BANK",
-      storagePrefix: "chinaPTE_wfd",
-      mode: "wfd",
-      enRateMul: 0.88,
-      bankName: "WFD_BANK"
-    });
+    (function () {
+      var player = ChinaPTEPlayer.create({
+        bankGlobal: "WFD_BANK",
+        storagePrefix: "chinaPTE_wfd",
+        mode: "wfd",
+        enRateMul: 0.88,
+        bankName: "WFD_BANK"
+      });
+      if (window.ChinaPTEWfdDictation) {
+        ChinaPTEWfdDictation.mount({
+          rootId: "wfdDictationRoot",
+          getPlayer: function () { return player; }
+        });
+      }
+    })();
   </script>
 </body>
 </html>

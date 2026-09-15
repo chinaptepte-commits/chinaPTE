@@ -326,6 +326,13 @@
       }
       btnRetry.hidden = false;
       setStatus("", false);
+      try {
+        document.dispatchEvent(
+          new CustomEvent("chinapte:speakscored", {
+            detail: { mode: mode, id: id, score: result.score },
+          })
+        );
+      } catch (e) {}
     }
 
     function cleanupSession() {
@@ -506,6 +513,21 @@
       var d = ev && ev.detail;
       if (d && d.mode && d.mode !== mode) return;
       // Reset card when item changes (avoid showing prior item's transcript as current)
+      if (session) {
+        try {
+          session.recognition.abort();
+        } catch (e) {}
+        cleanupSession();
+        setListeningUI(false);
+      }
+      card.hidden = true;
+      btnRetry.hidden = true;
+      setStatus("", false);
+      refreshBest();
+    });
+
+    document.addEventListener("chinapte:rasentence", function () {
+      if (mode !== "ra") return;
       if (session) {
         try {
           session.recognition.abort();

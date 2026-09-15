@@ -2454,3 +2454,320 @@ input:focus-visible {
     flex-direction: column;
   }
 }
+
+/* ========== WFD 听写练习 ========== */
+.wfd-dictation-wrap {
+  margin: 0 0 16px;
+}
+
+.wfd-dictation {
+  background: var(--bg-card);
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  padding: 16px 14px;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.wfd-dictation-head {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  gap: 8px;
+}
+
+.wfd-dictation-title {
+  margin: 0;
+  font-size: 1rem;
+  font-weight: 700;
+  color: var(--text);
+}
+
+.wfd-dictation-hide-toggle {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  font-size: 0.82rem;
+  color: var(--text-muted);
+  cursor: pointer;
+  user-select: none;
+}
+
+.wfd-dictation-hide-toggle input {
+  width: 16px;
+  height: 16px;
+  accent-color: var(--accent);
+}
+
+.wfd-dictation-hint {
+  margin: 0;
+  font-size: 0.82rem;
+  color: var(--text-muted);
+  line-height: 1.45;
+}
+
+.wfd-dictation-input {
+  width: 100%;
+  min-height: 88px;
+  resize: vertical;
+  border-radius: var(--radius-sm);
+  border: 1px solid var(--border);
+  background: var(--bg-elevated);
+  color: var(--text);
+  padding: 12px 12px;
+  font-size: 1rem;
+  line-height: 1.5;
+  font-family: var(--font);
+  box-sizing: border-box;
+}
+
+.wfd-dictation-input:focus {
+  outline: 2px solid var(--accent-glow);
+  border-color: var(--accent);
+}
+
+.wfd-dictation-actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+
+.wfd-dictation-btn {
+  appearance: none;
+  border: 1px solid var(--border);
+  background: var(--surface-soft);
+  color: var(--text);
+  border-radius: 999px;
+  padding: 10px 14px;
+  font-size: 0.88rem;
+  font-weight: 600;
+  cursor: pointer;
+  min-height: 44px;
+}
+
+.wfd-dictation-btn:active {
+  transform: scale(0.98);
+}
+
+.wfd-dictation-btn-primary {
+  background: var(--accent);
+  border-color: transparent;
+  color: #fff;
+}
+
+.wfd-dictation-result {
+  border-top: 1px solid var(--border);
+  padding-top: 12px;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.wfd-dictation-score {
+  font-weight: 700;
+  color: var(--accent);
+  font-size: 0.95rem;
+}
+
+.wfd-dictation-sublabel {
+  font-size: 0.72rem;
+  font-weight: 600;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  color: var(--text-muted);
+}
+
+.wfd-dictation-compare {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px 4px;
+  line-height: 1.7;
+  font-size: 1.02rem;
+}
+
+.wfd-word {
+  display: inline-block;
+  padding: 2px 6px;
+  border-radius: 6px;
+  font-weight: 600;
+}
+
+.wfd-word.is-correct {
+  background: var(--success-soft);
+  color: var(--success);
+}
+
+.wfd-word.is-wrong,
+.wfd-word.is-extra {
+  background: var(--danger-soft);
+  color: #e85d5d;
+  text-decoration: underline;
+  text-decoration-style: wavy;
+}
+
+.wfd-word.is-missing {
+  background: rgba(139, 149, 168, 0.18);
+  color: var(--text-muted);
+  text-decoration: line-through;
+}
+
+[data-theme="day"] .wfd-word.is-wrong,
+[data-theme="day"] .wfd-word.is-extra {
+  color: #c62828;
+}
+
+.wfd-dictation-target {
+  margin: 0;
+  font-weight: 600;
+  color: var(--text);
+  line-height: 1.55;
+}
+
+.wfd-dictation-zh {
+  margin: 0;
+  color: var(--text-muted);
+  font-size: 0.9rem;
+  line-height: 1.5;
+}
+
+.now-card.is-dictation-hide .sentence-en.is-spoiler-hidden,
+.sentence-en.is-spoiler-hidden {
+  color: var(--text-muted);
+  font-style: italic;
+  font-weight: 500;
+}
+
+.now-card.is-dictation-hide .vocab-section[hidden] {
+  display: none !important;
+}
+
+/* ========== RA longer passages + 一句话模式 ========== */
+.now-card-ra .sentence-en {
+  font-size: 1.05rem;
+  line-height: 1.65;
+  max-height: min(42vh, 320px);
+  overflow-y: auto;
+  -webkit-overflow-scrolling: touch;
+  padding-right: 4px;
+}
+
+.ra-sentence-wrap {
+  margin: 0 0 12px;
+}
+
+.ra-sentence-panel {
+  background: var(--bg-card);
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  padding: 12px 14px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.ra-sentence-mode-row {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 8px;
+}
+
+.ra-sentence-label {
+  font-size: 0.78rem;
+  font-weight: 600;
+  color: var(--text-muted);
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+}
+
+.ra-mode-btn {
+  appearance: none;
+  border: 1px solid var(--border);
+  background: var(--surface-soft);
+  color: var(--text);
+  border-radius: 999px;
+  padding: 8px 14px;
+  font-size: 0.88rem;
+  font-weight: 600;
+  cursor: pointer;
+  min-height: 40px;
+}
+
+.ra-mode-btn.is-active {
+  background: var(--accent-soft);
+  border-color: rgba(91, 141, 239, 0.45);
+  color: var(--accent);
+}
+
+.ra-sentence-nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 8px;
+}
+
+.ra-sentence-nav-btn {
+  appearance: none;
+  border: 1px solid var(--border);
+  background: var(--bg-elevated);
+  color: var(--text);
+  border-radius: var(--radius-sm);
+  padding: 8px 12px;
+  font-size: 0.85rem;
+  font-weight: 600;
+  cursor: pointer;
+  min-height: 40px;
+}
+
+.ra-sentence-nav-btn:disabled {
+  opacity: 0.4;
+  cursor: not-allowed;
+}
+
+.ra-sentence-progress {
+  font-weight: 700;
+  color: var(--accent);
+  font-size: 0.95rem;
+}
+
+.ra-sentence-preview {
+  margin: 0;
+  font-size: 0.92rem;
+  line-height: 1.5;
+  color: var(--text);
+  background: var(--accent-soft);
+  border-radius: var(--radius-sm);
+  padding: 10px 12px;
+}
+
+.ra-sentence-agg {
+  font-size: 0.8rem;
+  color: var(--text-muted);
+  line-height: 1.45;
+}
+
+.sentence-en.ra-has-sentence-hl .ra-sent {
+  border-radius: 4px;
+  padding: 1px 2px;
+  transition: background 0.15s ease;
+}
+
+.sentence-en.ra-has-sentence-hl .ra-sent.is-current {
+  background: var(--accent-soft);
+  box-shadow: inset 0 -2px 0 var(--accent);
+  font-weight: 700;
+}
+
+@media (min-width: 768px) {
+  .wfd-dictation,
+  .ra-sentence-panel {
+    padding: 18px 16px;
+  }
+
+  .now-card-ra .sentence-en {
+    max-height: min(50vh, 420px);
+    font-size: 1.1rem;
+  }
+}

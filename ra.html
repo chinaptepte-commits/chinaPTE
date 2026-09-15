@@ -60,7 +60,7 @@
       <div class="streak-pill" style="background:var(--accent-soft);border-color:rgba(91,141,239,0.25);color:var(--accent)">进度自动续听</div>
     </div>
 
-    <p class="tip-banner" id="tipBanner">💡 先看文字练发音，再点播放跟读；注意重音与意群</p>
+    <p class="tip-banner" id="tipBanner">💡 先看文字练发音，再点播放跟读；可用「一句话」模式逐句评分</p>
 
     <div class="unsupported" id="speechWarn" role="alert">
       当前浏览器不支持 Web Speech API。请换用 Chrome / Edge / Safari。
@@ -96,7 +96,7 @@
       </div>
     </div>
 
-    <article class="now-card" aria-live="polite">
+    <article class="now-card now-card-ra" aria-live="polite">
       <div class="status-badge is-idle" id="statusBadge">
         <span class="dot"></span>
         <span id="statusText">待机</span>
@@ -109,6 +109,8 @@
         <div class="vocab-chips" id="vocabChips"></div>
       </div>
     </article>
+
+    <section class="ra-sentence-wrap" id="raSentenceRoot" aria-label="一句话模式"></section>
 
     <section class="speak-score-wrap" id="speakScoreRoot" aria-label="跟读评分"></section>
 
@@ -160,6 +162,7 @@
   <script src="audio-engine.js"></script>
   <script src="player.js"></script>
   <script src="speak-score.js"></script>
+  <script src="ra-sentence.js"></script>
   <script>
     (function () {
       var player = ChinaPTEPlayer.create({
@@ -169,15 +172,36 @@
         enRateMul: 0.85,
         bankName: "RA_BANK"
       });
+      var sentCtl = null;
+      if (window.ChinaPTERaSentence) {
+        sentCtl = ChinaPTERaSentence.mount({
+          rootId: "raSentenceRoot",
+          getPlayer: function () { return player; }
+        });
+      }
       var root = document.getElementById("speakScoreRoot");
+      var scoreApi = null;
       if (root && window.ChinaPTESpeakScore) {
-        ChinaPTESpeakScore.mount(root, {
+        scoreApi = ChinaPTESpeakScore.mount(root, {
           mode: "ra",
-          getTarget: function () { return player.getTargetText(); },
-          getItemId: function () { return player.getItemId(); },
+          getTarget: function () {
+            if (sentCtl && typeof sentCtl.getTarget === "function") return sentCtl.getTarget();
+            return player.getTargetText();
+          },
+          getItemId: function () {
+            if (sentCtl && typeof sentCtl.getItemId === "function") return sentCtl.getItemId();
+            return player.getItemId();
+          },
           stopPlayer: function () { player.stopAll(); },
         });
       }
+      document.addEventListener("chinapte:rasentence", function () {
+        if (scoreApi && typeof scoreApi.refresh === "function") scoreApi.refresh();
+        if (sentCtl && typeof sentCtl.refreshAgg === "function") sentCtl.refreshAgg();
+      });
+      document.addEventListener("chinapte:speakscored", function () {
+        if (sentCtl && typeof sentCtl.refreshAgg === "function") sentCtl.refreshAgg();
+      });
     })();
   </script>
 </body>
