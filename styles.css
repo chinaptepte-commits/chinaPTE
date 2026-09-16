@@ -1,4 +1,4 @@
-/* chinaPTE — mobile-first; day/night via data-theme on <html> · cache 20260915r2 */
+/* chinaPTE — mobile-first; day/night via data-theme on <html> · cache 20260916r2 */
 
 :root,
 [data-theme="night"] {
@@ -2918,4 +2918,332 @@ input:focus-visible {
     max-height: min(50vh, 420px);
     font-size: 1.1rem;
   }
+}
+
+/* ===== 妈祖祈福 (mazu) — warm shrine accents ===== */
+.mazu-page {
+  --mazu-red: #c45c48;
+  --mazu-red-deep: #9a3d32;
+  --mazu-gold: #d4a84b;
+  --mazu-gold-soft: rgba(212, 168, 75, 0.22);
+  --mazu-lantern: #e8a090;
+}
+
+.mazu-hero {
+  position: relative;
+  text-align: left;
+  padding: 12px 0 20px;
+  margin-bottom: 8px;
+}
+
+.mazu-lanterns {
+  display: flex;
+  gap: 14px;
+  margin-bottom: 10px;
+}
+
+.mazu-lantern {
+  width: 18px;
+  height: 26px;
+  border-radius: 8px 8px 10px 10px;
+  background: linear-gradient(180deg, var(--mazu-lantern) 0%, var(--mazu-red) 70%, var(--mazu-red-deep) 100%);
+  box-shadow: 0 0 16px rgba(196, 92, 72, 0.45);
+  position: relative;
+  animation: mazu-glow 2.8s ease-in-out infinite;
+}
+
+.mazu-lantern::before {
+  content: "";
+  position: absolute;
+  top: -6px;
+  left: 50%;
+  width: 2px;
+  height: 6px;
+  background: var(--mazu-gold);
+  transform: translateX(-50%);
+}
+
+.mazu-lantern-delay {
+  animation-delay: 1.1s;
+  opacity: 0.85;
+}
+
+@keyframes mazu-glow {
+  0%, 100% { box-shadow: 0 0 12px rgba(196, 92, 72, 0.35); }
+  50% { box-shadow: 0 0 22px rgba(212, 168, 75, 0.55); }
+}
+
+.mazu-kicker {
+  font-size: 0.75rem;
+  font-weight: 700;
+  letter-spacing: 0.12em;
+  color: var(--mazu-gold);
+  text-transform: none;
+  margin-bottom: 6px;
+}
+
+.mazu-hero h1 {
+  font-size: 1.7rem;
+  font-weight: 800;
+  letter-spacing: 0.04em;
+  margin-bottom: 10px;
+  background: linear-gradient(90deg, var(--mazu-gold), #f0d9a0 40%, var(--mazu-red));
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+}
+
+[data-theme="day"] .mazu-hero h1 {
+  background: linear-gradient(90deg, #b8860b, #c45c48);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+}
+
+.mazu-lead {
+  font-size: 0.92rem;
+  color: var(--text-muted);
+  line-height: 1.65;
+  margin-bottom: 14px;
+}
+
+.mazu-lead strong {
+  color: var(--text);
+  font-weight: 700;
+}
+
+.mazu-themes {
+  list-style: none;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  padding: 0;
+  margin: 0;
+}
+
+.mazu-themes li {
+  font-size: 0.78rem;
+  font-weight: 700;
+  padding: 6px 12px;
+  border-radius: 999px;
+  border: 1px solid rgba(212, 168, 75, 0.45);
+  background: var(--mazu-gold-soft);
+  color: var(--mazu-gold);
+}
+
+[data-theme="day"] .mazu-themes li {
+  color: #8a5a12;
+  border-color: rgba(196, 92, 72, 0.35);
+  background: rgba(196, 92, 72, 0.08);
+}
+
+.mazu-card {
+  background: var(--bg-card);
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  padding: 16px;
+  margin: 0 0 14px;
+  box-shadow: 0 0 0 1px rgba(212, 168, 75, 0.06);
+}
+
+.mazu-auth-card {
+  border-color: rgba(196, 92, 72, 0.28);
+  background:
+    linear-gradient(135deg, rgba(196, 92, 72, 0.08), transparent 55%),
+    var(--bg-card);
+}
+
+.mazu-section-title {
+  font-size: 1.05rem;
+  font-weight: 750;
+  margin: 0 0 12px;
+  color: var(--text);
+}
+
+.mazu-auth-tabs {
+  display: flex;
+  gap: 6px;
+  margin-bottom: 14px;
+  background: var(--surface-soft);
+  padding: 4px;
+  border-radius: 999px;
+}
+
+.mazu-auth-tab {
+  flex: 1;
+  border: none;
+  background: transparent;
+  color: var(--text-muted);
+  font-weight: 700;
+  font-size: 0.88rem;
+  padding: 10px 12px;
+  border-radius: 999px;
+  cursor: pointer;
+}
+
+.mazu-auth-tab.is-active {
+  background: linear-gradient(135deg, var(--mazu-red) 0%, var(--mazu-red-deep) 100%);
+  color: #fff;
+  box-shadow: 0 4px 14px rgba(196, 92, 72, 0.35);
+}
+
+.mazu-submit {
+  background: linear-gradient(135deg, #c45c48 0%, #9a3d32 100%) !important;
+  box-shadow: 0 6px 20px rgba(196, 92, 72, 0.35) !important;
+}
+
+.mazu-user-bar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+}
+
+.mazu-user-label {
+  font-size: 0.72rem;
+  color: var(--text-muted);
+  margin-bottom: 2px;
+}
+
+.mazu-user-name {
+  font-size: 1.05rem;
+  font-weight: 800;
+  color: var(--mazu-gold);
+}
+
+.mazu-post-lock {
+  background: var(--bg-elevated);
+  border: 1px dashed rgba(212, 168, 75, 0.4);
+  border-radius: var(--radius-sm);
+  padding: 14px;
+}
+
+.mazu-post-lock p {
+  font-size: 0.88rem;
+  color: var(--text-muted);
+  margin-bottom: 12px;
+  line-height: 1.55;
+}
+
+.mazu-cta-row {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  align-items: center;
+}
+
+.mazu-post-meta {
+  display: flex;
+  justify-content: space-between;
+  gap: 8px;
+  font-size: 0.72rem;
+  color: var(--text-muted);
+  margin-top: -4px;
+}
+
+.mazu-wall-head {
+  display: flex;
+  align-items: baseline;
+  justify-content: space-between;
+  gap: 10px;
+  flex-wrap: wrap;
+}
+
+.mazu-wall-head .mazu-section-title {
+  margin-bottom: 0;
+}
+
+.mazu-wall-meta {
+  font-size: 0.75rem;
+  color: var(--text-muted);
+}
+
+.mazu-worker-hint {
+  font-size: 0.78rem;
+  color: var(--text-muted);
+  line-height: 1.55;
+  background: var(--mazu-gold-soft);
+  border: 1px solid rgba(212, 168, 75, 0.35);
+  border-radius: var(--radius-sm);
+  padding: 10px 12px;
+  margin: 10px 0 12px;
+}
+
+.mazu-worker-hint code {
+  font-size: 0.72rem;
+  color: var(--mazu-gold);
+}
+
+.mazu-wall {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  margin: 12px 0 0;
+  padding: 0;
+}
+
+.mazu-blessing {
+  background: var(--bg-elevated);
+  border: 1px solid var(--border);
+  border-left: 3px solid var(--mazu-gold);
+  border-radius: var(--radius-sm);
+  padding: 12px 14px;
+}
+
+.mazu-blessing-head {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 8px;
+  margin-bottom: 6px;
+}
+
+.mazu-blessing-name {
+  font-weight: 750;
+  font-size: 0.88rem;
+  color: var(--text);
+}
+
+.mazu-blessing-time {
+  font-size: 0.72rem;
+  color: var(--text-muted);
+}
+
+.mazu-blessing-tag {
+  font-size: 0.68rem;
+  font-weight: 700;
+  padding: 2px 8px;
+  border-radius: 999px;
+  background: rgba(196, 92, 72, 0.15);
+  color: var(--mazu-red);
+  margin-left: auto;
+}
+
+.mazu-blessing-text {
+  font-size: 0.9rem;
+  line-height: 1.55;
+  color: var(--text);
+  white-space: pre-wrap;
+  word-break: break-word;
+}
+
+.mazu-empty {
+  font-size: 0.88rem;
+  color: var(--text-muted);
+  padding: 16px;
+  text-align: center;
+  border: 1px dashed var(--border);
+  border-radius: var(--radius-sm);
+}
+
+.mazu-disclaimer {
+  font-size: 0.75rem;
+  color: var(--text-muted);
+  line-height: 1.55;
+  margin: 8px 0 20px;
+}
+
+.mazu-disclaimer a {
+  color: var(--mazu-gold);
 }

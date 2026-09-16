@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+  <meta name="theme-color" content="#0c0f14" />
+  <script>
+  (function(){try{var m=localStorage.getItem("chinaPTE_theme_mode")||"auto";var t=(m==="day"||m==="night")?m:(function(){var h=new Date().getHours();return(h>=6&&h<19)?"day":"night";})();document.documentElement.setAttribute("data-theme",t);var c=t==="day"?"#f4f6fb":"#0c0f14";var meta=document.querySelector('meta[name="theme-color"]');if(meta)meta.setAttribute("content",c);}catch(e){document.documentElement.setAttribute("data-theme","night");}})();
+  </script>
+  <meta name="description" content="妈祖祈福：为 PTE 备考、出海平安与学业有成留下心意留言。注册站点会员后可祈福；访客可阅览祈福墙。文化敬意，非迷信推销。" />
+  <meta name="keywords" content="妈祖祈福,PTE备考,出海平安,学业有成,chinaPTE" />
+  <title>妈祖祈福｜备考庇佑·出海平安·学业有成 · chinaPTE</title>
+  <link rel="canonical" href="https://chinaptepte-commits.github.io/chinaPTE/mazu.html" />
+  <meta property="og:title" content="妈祖祈福｜备考庇佑·出海平安·学业有成 · chinaPTE" />
+  <meta property="og:description" content="妈祖祈福：为 PTE 备考、出海平安与学业有成留下心意留言。注册站点会员后可祈福；访客可阅览祈福墙。" />
+  <meta property="og:url" content="https://chinaptepte-commits.github.io/chinaPTE/mazu.html" />
+  <meta property="og:type" content="website" />
+  <meta property="og:locale" content="zh_CN" />
+  <meta property="og:site_name" content="chinaPTE" />
+  <meta name="twitter:card" content="summary" />
+  <meta name="twitter:title" content="妈祖祈福｜备考庇佑·出海平安·学业有成 · chinaPTE" />
+  <meta name="twitter:description" content="妈祖祈福：为 PTE 备考、出海平安与学业有成留下心意留言。注册站点会员后可祈福；访客可阅览祈福墙。" />
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    "itemListElement": [
+      { "@type": "ListItem", "position": 1, "name": "首页", "item": "https://chinaptepte-commits.github.io/chinaPTE/index.html" },
+      { "@type": "ListItem", "position": 2, "name": "妈祖祈福", "item": "https://chinaptepte-commits.github.io/chinaPTE/mazu.html" }
+    ]
+  }
+  </script>
+  <link rel="stylesheet" href="styles.css?v=20260916r2" />
+  <script src="theme.js?v=20260915r2" defer></script>
+</head>
+<body>
+  <div class="app app-wide mazu-page">
+    <nav class="site-nav" aria-label="站点导航">
+      <a class="site-nav-brand" href="index.html"><img class="site-nav-logo" src="logo.svg" width="36" height="36" alt="" />chinaPTE</a>
+      <ul class="site-nav-links">
+        <li><a href="index.html">首页</a></li>
+        <li><a href="practice.html">练习中心</a></li>
+        <li><a href="vocab.html">单词库</a></li>
+        <li><a href="industry.html">行业英语</a></li>
+        <li><a href="bank.html">题库</a></li>
+        <li><a href="labor.html">PTE直通车</a></li>
+        <li><a href="consult.html">出国咨询</a></li>
+        <li><a href="mazu.html" class="is-active">妈祖祈福</a></li>
+      </ul>
+    </nav>
+
+    <header class="mazu-hero" aria-labelledby="mazuTitle">
+      <div class="mazu-lanterns" aria-hidden="true">
+        <span class="mazu-lantern"></span>
+        <span class="mazu-lantern mazu-lantern-delay"></span>
+      </div>
+      <p class="mazu-kicker">文化敬意 · 心意留言</p>
+      <h1 id="mazuTitle">妈祖祈福</h1>
+      <p class="mazu-lead">
+        愿<strong>妈祖庇佑备考</strong>，心静手稳；愿<strong>出海平安</strong>，异乡安好；愿<strong>学业有成</strong>，抵达想去的岸。
+        此处是备考与远行路上的一处安静角落——不是迷信推销，也不是分数承诺，只是把认真与祝愿写下来。
+      </p>
+      <ul class="mazu-themes" aria-label="祈福主题">
+        <li>备考顺遂</li>
+        <li>出海平安</li>
+        <li>学业有成</li>
+      </ul>
+    </header>
+
+    <section class="mazu-card mazu-auth-card" id="mazuAuthCard" aria-label="会员登录注册">
+      <div class="mazu-user-bar" id="mazuUserPanel" hidden>
+        <div>
+          <div class="mazu-user-label">已登录</div>
+          <div class="mazu-user-name" id="mazuUserName">—</div>
+        </div>
+        <button type="button" class="btn-ghost" id="mazuLogout">退出</button>
+      </div>
+
+      <div id="mazuGuestPanel">
+        <div class="mazu-auth-tabs" role="tablist">
+          <button type="button" class="mazu-auth-tab is-active" id="mazuTabLogin" role="tab" aria-selected="true">登录</button>
+          <button type="button" class="mazu-auth-tab" id="mazuTabRegister" role="tab" aria-selected="false">注册</button>
+        </div>
+
+        <form class="lead-form mazu-form" id="mazuLoginForm" autocomplete="on">
+          <label>
+            <span>昵称</span>
+            <input type="text" id="mazuLoginNick" name="nickname" required maxlength="16" placeholder="你的显示昵称" autocomplete="username" />
+          </label>
+          <label>
+            <span>密码</span>
+            <input type="password" id="mazuLoginPass" name="password" required minlength="6" maxlength="64" placeholder="至少 6 位" autocomplete="current-password" />
+          </label>
+          <button type="submit" class="btn-submit mazu-submit">登录</button>
+        </form>
+
+        <form class="lead-form mazu-form" id="mazuRegisterForm" hidden autocomplete="on">
+          <label>
+            <span>昵称（显示名）</span>
+            <input type="text" id="mazuRegNick" name="nickname" required maxlength="16" placeholder="2–16 字" autocomplete="nickname" />
+          </label>
+          <label>
+            <span>密码</span>
+            <input type="password" id="mazuRegPass" name="password" required minlength="6" maxlength="64" placeholder="至少 6 位，仅存哈希" autocomplete="new-password" />
+          </label>
+          <label>
+            <span>简短备注（可选）</span>
+            <input type="text" id="mazuRegNote" name="note" maxlength="80" placeholder="例如：备考中 / 即将出国" />
+          </label>
+          <p class="form-note">密码在浏览器内做 SHA-256 后再发送；站点不存明文。此为站点会员，与后台管理员无关。</p>
+          <button type="submit" class="btn-submit mazu-submit">注册并登录</button>
+        </form>
+      </div>
+    </section>
+
+    <section class="mazu-card" aria-label="写下祈福">
+      <h2 class="mazu-section-title">写下祈福</h2>
+      <div class="mazu-post-lock" id="mazuPostLock">
+        <p>访客可阅览祈福墙。留下留言需先成为站点会员。</p>
+        <div class="mazu-cta-row">
+          <a class="btn-soft" href="#mazuAuthCard" data-mazu-goto="register">注册会员</a>
+          <a class="btn-secondary-link" href="#mazuAuthCard" data-mazu-goto="login">已有账号 · 登录</a>
+        </div>
+      </div>
+      <form class="lead-form mazu-form" id="mazuPostForm" hidden>
+        <label>
+          <span>祈福留言</span>
+          <textarea id="mazuPostText" rows="3" maxlength="160" placeholder="愿备考顺遂、出海平安、学业有成……（约 160 字内）"></textarea>
+        </label>
+        <div class="mazu-post-meta">
+          <span id="mazuCharCount">0 / 160</span>
+          <span>每位会员约每小时可祈福 1 次</span>
+        </div>
+        <button type="submit" class="btn-submit mazu-submit">送出祈福</button>
+      </form>
+    </section>
+
+    <section class="mazu-card mazu-wall-card" aria-label="祈福墙">
+      <div class="mazu-wall-head">
+        <h2 class="mazu-section-title">祈福墙</h2>
+        <p class="mazu-wall-meta" id="mazuWallMeta">加载中…</p>
+      </div>
+      <p class="mazu-worker-hint" id="mazuWorkerHint" hidden>
+        共享墙需在 Cloudflare 配置路由 <code>chinapte.net/api/mazu*</code>。当前可先使用本机留言；示例祝福已预置，墙不会空着。
+      </p>
+      <ul class="mazu-wall" id="mazuWall"></ul>
+    </section>
+
+    <p class="mazu-disclaimer">
+      本页为民间信仰文化氛围的心意留言区，不替代学习与正规规划，不涉及代考、赌博或封建迷信营销。
+      继续备考请前往 <a href="practice.html">练习中心</a>；出国路径说明见 <a href="labor.html">PTE直通车</a>。
+    </p>
+
+    <footer class="site-footer">
+      chinaPTE · 妈祖祈福<br />
+      © 华人 PTE 备考与出国发展信息站
+    </footer>
+  </div>
+
+  <div class="copy-toast" id="mazuToast" role="status">提示</div>
+
+  <script src="mazu-config.js?v=20260916r2"></script>
+  <script src="mazu.js?v=20260916r2" defer></script>
+  <script src="site-nav.js?v=20260916r2" defer></script>
+</body>
+</html>

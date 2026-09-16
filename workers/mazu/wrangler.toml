@@ -1,0 +1,14 @@
+name = "chinapte-mazu"
+main = "src/index.js"
+compatibility_date = "2024-09-01"
+
+# After creating the KV namespace in Cloudflare dashboard:
+#   npx wrangler kv namespace create CHINAPTE_MAZU
+# paste the id below, then:
+#   npx wrangler deploy
+# Route (Workers Routes or Custom Domain): chinapte.net/api/mazu*
+
+[[kv_namespaces]]
+binding = "MAZU_KV"
+id = "REPLACE_WITH_KV_NAMESPACE_ID"
+preview_id = "REPLACE_WITH_KV_PREVIEW_ID"

@@ -10,7 +10,8 @@
     { href: "industry.html", label: "行业英语", match: ["industry.html", "industry-"] },
     { href: "bank.html", label: "题库", match: ["bank.html"] },
     { href: "labor.html", label: "PTE直通车", match: ["labor.html"] },
-    { href: "consult.html", label: "出国咨询", match: ["consult.html"] }
+    { href: "consult.html", label: "出国咨询", match: ["consult.html"] },
+    { href: "mazu.html", label: "妈祖祈福", match: ["mazu.html"] }
   ];
 
   function fileName() {
@@ -52,7 +53,7 @@
     if (window.ChinaPTEAnalytics) return;
     if (document.querySelector("script[data-chinapte-analytics]")) return;
     var s = document.createElement("script");
-    s.src = "analytics.js?v=20260916r1";
+    s.src = "analytics.js?v=20260916r2";
     s.defer = true;
     s.setAttribute("data-chinapte-analytics", "1");
     (document.head || document.documentElement).appendChild(s);

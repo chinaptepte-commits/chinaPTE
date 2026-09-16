@@ -123,6 +123,13 @@ Sitemap URL：`https://chinaptepte-commits.github.io/chinaPTE/sitemap.xml`
 
 偏好写入 `localStorage` 键 `chinaPTE_play_mode`。WFD 默认「听题目」。
 
+## 妈祖祈福
+
+- 页面：`mazu.html`（站点会员注册/登录 + 祈福墙；访客可读）
+- 配置：`mazu-config.js` → `https://chinapte.net/api/mazu`
+- 跨用户留言：部署 `workers/mazu/` Cloudflare Worker + KV，路由 `chinapte.net/api/mazu*`
+- Worker 未上线时：本机注册/登录与「本机留言」仍可用；种子见 `content/mazu-blessings.json`
+
 ## 数据看板（招商分析）
 
 - 全站 `analytics.js`（由 `site-nav.js` 注入）：匿名 `sessionId`、page_view / heartbeat / leave、nav_click、feature_use、play_start

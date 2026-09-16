@@ -1,0 +1,41 @@
+{
+  "updatedAt": "2026-09-16",
+  "note": "示例祈福留言（文化氛围种子）；跨用户留言需部署 workers/mazu Worker。",
+  "blessings": [
+    {
+      "id": "seed-001",
+      "nickname": "备考小舟",
+      "text": "愿妈祖庇佑，这次 PTE 发挥稳定，听力口语都顺顺利利。",
+      "createdAt": "2026-09-10T08:00:00+08:00",
+      "source": "seed"
+    },
+    {
+      "id": "seed-002",
+      "nickname": "出海安心",
+      "text": "求平安渡洋、学业有成。感谢一路陪伴的家人与同学。",
+      "createdAt": "2026-09-11T14:30:00+08:00",
+      "source": "seed"
+    },
+    {
+      "id": "seed-003",
+      "nickname": "RS坚持党",
+      "text": "跟读不放弃。愿心静手稳，分数水到渠成，出国路坦荡。",
+      "createdAt": "2026-09-12T21:15:00+08:00",
+      "source": "seed"
+    },
+    {
+      "id": "seed-004",
+      "nickname": "WFD练习生",
+      "text": "听写天天练。愿妈祖护航，考试顺利，异乡安好。",
+      "createdAt": "2026-09-13T09:45:00+08:00",
+      "source": "seed"
+    },
+    {
+      "id": "seed-005",
+      "nickname": "向海而歌",
+      "text": "不是迷信，是心意。愿所有认真备考的人，都能抵达想去的岸。",
+      "createdAt": "2026-09-14T16:20:00+08:00",
+      "source": "seed"
+    }
+  ]
+}
