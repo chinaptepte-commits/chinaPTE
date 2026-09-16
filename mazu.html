@@ -30,7 +30,7 @@
     ]
   }
   </script>
-  <link rel="stylesheet" href="styles.css?v=20260916r3" />
+  <link rel="stylesheet" href="styles.css?v=20260916r4" />
   <script src="theme.js?v=20260915r2" defer></script>
 </head>
 <body>
@@ -67,10 +67,36 @@
       </ul>
     </header>
 
+    <section class="mazu-stage" aria-label="妈祖神龛">
+      <div class="mazu-stage-frame">
+        <video
+          class="mazu-video"
+          id="mazuVideo"
+          src="media/mazu.mp4"
+          autoplay
+          muted
+          loop
+          playsinline
+          webkit-playsinline
+          preload="metadata"
+          aria-label="妈祖神像循环影像"
+        ></video>
+        <div class="mazu-stage-veil" aria-hidden="true"></div>
+        <!-- Under-portrait floating blessing chips (mid/lower frame, avoid face) -->
+        <div class="mazu-chip-layer" id="mazuChipLayer" aria-hidden="true"></div>
+        <!-- Ocean / wave band danmaku — bottom ~30%, multiple lanes -->
+        <div class="mazu-wave-band" aria-hidden="true">
+          <div class="mazu-wave-foam"></div>
+          <div class="mazu-danmaku-layer" id="mazuDanmakuLayer"></div>
+        </div>
+      </div>
+      <p class="mazu-stage-caption">祈福会在神像下方与海浪之上轻轻浮现</p>
+    </section>
+
     <section class="mazu-card" aria-label="写下祈福">
       <h2 class="mazu-section-title">写下祈福</h2>
       <div class="mazu-post-lock" id="mazuPostLock">
-        <p>访客可阅览祈福墙。留下留言需先登录站点会员（全站统一登录弹窗）。</p>
+        <p>访客可阅览神龛祝福。留下留言需先登录站点会员（全站统一登录弹窗）。</p>
         <div class="mazu-cta-row">
           <button type="button" class="btn-soft" data-mazu-goto="register" data-cpa-skip-gate>注册会员</button>
           <button type="button" class="btn-secondary-link" data-mazu-goto="login" data-cpa-skip-gate>已有账号 · 登录</button>
@@ -89,13 +115,13 @@
       </form>
     </section>
 
-    <section class="mazu-card mazu-wall-card" aria-label="祈福墙">
+    <section class="mazu-card mazu-wall-card mazu-wall-compact" aria-label="近期祈福">
       <div class="mazu-wall-head">
-        <h2 class="mazu-section-title">祈福墙</h2>
+        <h2 class="mazu-section-title">近期祈福</h2>
         <p class="mazu-wall-meta" id="mazuWallMeta">加载中…</p>
       </div>
       <p class="mazu-worker-hint" id="mazuWorkerHint" hidden>
-        共享墙需在 Cloudflare 配置路由 <code>chinapte.net/api/mazu*</code>。当前可先使用本机留言；示例祝福已预置，墙不会空着。
+        共享墙需在 Cloudflare 配置路由 <code>chinapte.net/api/mazu*</code>。当前可先使用本机留言；示例祝福已预置。
       </p>
       <ul class="mazu-wall" id="mazuWall"></ul>
     </section>
@@ -113,9 +139,9 @@
 
   <div class="copy-toast" id="mazuToast" role="status">提示</div>
 
-  <script src="mazu-config.js?v=20260916r3"></script>
-  <script src="auth-modal.js?v=20260916r3" defer></script>
-  <script src="mazu.js?v=20260916r3" defer></script>
-  <script src="site-nav.js?v=20260916r3" defer></script>
+  <script src="mazu-config.js?v=20260916r4"></script>
+  <script src="auth-modal.js?v=20260916r4" defer></script>
+  <script src="mazu.js?v=20260916r4" defer></script>
+  <script src="site-nav.js?v=20260916r4" defer></script>
 </body>
 </html>

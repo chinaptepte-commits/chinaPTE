@@ -191,7 +191,7 @@
   }
 
   function loadSeed() {
-    return fetch("content/mazu-blessings.json?v=20260916r3", { cache: "no-store" })
+    return fetch("content/mazu-blessings.json?v=20260916r4", { cache: "no-store" })
       .then(function (r) {
         return r.ok ? r.json() : { blessings: [] };
       })
@@ -338,6 +338,156 @@
       .replace(/"/g, "&quot;");
   }
 
+  /* —— Shrine stage FX: under-portrait chips + wave-band danmaku —— */
+  var WALL_COMPACT_MAX = 12;
+  var DANMAKU_LANES = 4;
+  var chipLayer = null;
+  var danmakuLayer = null;
+  var feedPool = [];
+  var feedIdx = 0;
+  var danmakuTimer = null;
+  var laneBusyUntil = [0, 0, 0, 0];
+  var reduceMotion = false;
+
+  try {
+    reduceMotion = !!(window.matchMedia && window.matchMedia("(prefers-reduced-motion: reduce)").matches);
+  } catch (e) {}
+
+  function truncateChip(text, max) {
+    var t = String(text || "").replace(/\s+/g, " ").trim();
+    max = max || 28;
+    if (t.length <= max) return t;
+    return t.slice(0, max - 1) + "…";
+  }
+
+  function ensureStageEls() {
+    chipLayer = $("mazuChipLayer");
+    danmakuLayer = $("mazuDanmakuLayer");
+  }
+
+  function setFeed(blessings) {
+    feedPool = (blessings || []).filter(function (b) {
+      return b && b.text;
+    });
+    if (feedIdx >= feedPool.length) feedIdx = 0;
+  }
+
+  function nextFeedItem() {
+    if (!feedPool.length) return null;
+    var b = feedPool[feedIdx % feedPool.length];
+    feedIdx = (feedIdx + 1) % feedPool.length;
+    return b;
+  }
+
+  function spawnChip(text, opts) {
+    ensureStageEls();
+    if (!chipLayer || !text) return;
+    opts = opts || {};
+    var el = document.createElement("span");
+    el.className = "mazu-chip" + (opts.fresh ? " is-fresh" : "");
+    el.textContent = truncateChip(text, opts.fresh ? 36 : 28);
+    var left = 4 + Math.random() * 70;
+    var top = 8 + Math.random() * 70;
+    el.style.left = left + "%";
+    el.style.top = top + "%";
+    chipLayer.appendChild(el);
+    var life = reduceMotion ? 3200 : 4800;
+    setTimeout(function () {
+      if (el.parentNode) el.parentNode.removeChild(el);
+    }, life + 80);
+  }
+
+  function pickLane() {
+    var now = Date.now();
+    var best = 0;
+    var bestT = Infinity;
+    for (var i = 0; i < DANMAKU_LANES; i++) {
+      var t = laneBusyUntil[i] || 0;
+      if (t <= now) return i;
+      if (t < bestT) {
+        bestT = t;
+        best = i;
+      }
+    }
+    return best;
+  }
+
+  function spawnDanmaku(text, opts) {
+    ensureStageEls();
+    if (!danmakuLayer || !text) return;
+    opts = opts || {};
+    var el = document.createElement("span");
+    el.className = "mazu-danmaku" + (opts.fresh ? " is-fresh" : "");
+    el.textContent = truncateChip(text, opts.fresh ? 40 : 32);
+    var lane = typeof opts.lane === "number" ? opts.lane : pickLane();
+    var laneH = 100 / DANMAKU_LANES;
+    var topPct = lane * laneH + laneH * 0.18;
+    el.style.top = topPct + "%";
+    var dur = opts.fresh ? 9 + Math.random() * 3 : 11 + Math.random() * 6;
+    if (reduceMotion) {
+      el.style.left = 6 + Math.random() * 40 + "%";
+      el.style.opacity = "0.9";
+      danmakuLayer.appendChild(el);
+      setTimeout(function () {
+        if (el.parentNode) el.parentNode.removeChild(el);
+      }, 2800);
+      return;
+    }
+    danmakuLayer.appendChild(el);
+    var travel = (danmakuLayer.clientWidth || 320) + (el.offsetWidth || 120) + 48;
+    el.style.setProperty("--mazu-travel", travel + "px");
+    el.style.animationDuration = dur + "s";
+    laneBusyUntil[lane] = Date.now() + Math.min(2800, dur * 220);
+    el.addEventListener("animationend", function () {
+      if (el.parentNode) el.parentNode.removeChild(el);
+    });
+  }
+
+  function celebrateBlessing(b) {
+    if (!b || !b.text) return;
+    spawnChip(b.text, { fresh: true });
+    spawnDanmaku(b.text, { fresh: true });
+  }
+
+  function pulseAmbient() {
+    var b = nextFeedItem();
+    if (!b) return;
+    if (Math.random() < 0.45) spawnChip(b.text, { fresh: false });
+    spawnDanmaku(b.text, { fresh: false });
+  }
+
+  function startAmbientLoop() {
+    if (danmakuTimer) clearInterval(danmakuTimer);
+    // Seed a few immediately
+    var n = Math.min(3, feedPool.length || 0);
+    for (var i = 0; i < n; i++) {
+      (function (delay) {
+        setTimeout(function () {
+          var b = nextFeedItem();
+          if (b) spawnDanmaku(b.text, { fresh: false });
+        }, delay);
+      })(i * 700);
+    }
+    if (feedPool.length && Math.random() < 0.7) {
+      var c = nextFeedItem();
+      if (c) spawnChip(c.text, { fresh: false });
+    }
+    danmakuTimer = setInterval(function () {
+      if (document.hidden) return;
+      pulseAmbient();
+    }, reduceMotion ? 4200 : 2600);
+  }
+
+  function ensureVideoPlay() {
+    var v = $("mazuVideo");
+    if (!v) return;
+    try {
+      v.muted = true;
+      var p = v.play();
+      if (p && p.catch) p.catch(function () {});
+    } catch (e) {}
+  }
+
   function renderAuth() {
     var s = readSession();
     var postLock = $("mazuPostLock");
@@ -357,21 +507,24 @@
     var hint = $("mazuWorkerHint");
     if (!list) return;
     var blessings = (state && state.blessings) || [];
+    setFeed(blessings);
     if (meta) {
       meta.textContent =
         "共 " +
         blessings.length +
         " 条" +
-        (state && state.workerOk ? " · 含共享墙" : " · 当前以本机/示例为主");
+        (state && state.workerOk ? " · 含共享墙" : " · 本机/示例") +
+        " · 神龛海浪弹幕同步";
     }
     if (hint) {
       hint.hidden = !!(state && state.workerOk);
     }
     if (!blessings.length) {
-      list.innerHTML = '<li class="mazu-empty">墙上一时还空着，登录后留下你的第一句祈福吧。</li>';
+      list.innerHTML = '<li class="mazu-empty">神龛上一时还安静，登录后留下你的第一句祈福吧。</li>';
       return;
     }
-    list.innerHTML = blessings
+    var shown = blessings.slice(0, WALL_COMPACT_MAX);
+    list.innerHTML = shown
       .map(function (b) {
         var tag = sourceLabel(b);
         return (
@@ -396,10 +549,12 @@
       .join("");
   }
 
-  function refresh() {
+  function refresh(opts) {
+    opts = opts || {};
     renderAuth();
     return loadWall().then(function (state) {
       renderWall(state);
+      if (opts.restartAmbient !== false) startAmbientLoop();
       return state;
     });
   }
@@ -455,7 +610,8 @@
             if (textArea) textArea.value = "";
             updateCount();
             toast((b && b._hint) || "祈福已送出");
-            return refresh();
+            celebrateBlessing(b);
+            return refresh({ restartAmbient: true });
           })
           .catch(function (err) {
             var msg = (err && err.message) || "发送失败";
@@ -486,9 +642,14 @@
   }
 
   function init() {
+    ensureStageEls();
+    ensureVideoPlay();
     bind();
     waitAuthThen(function () {
       refresh();
+    });
+    document.addEventListener("visibilitychange", function () {
+      if (!document.hidden) ensureVideoPlay();
     });
   }
 
