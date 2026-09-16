@@ -30,8 +30,8 @@
     ]
   }
   </script>
-  <link rel="stylesheet" href="styles.css?v=20260916r5" />
-  <script src="theme.js?v=20260915r2" defer></script>
+  <link rel="stylesheet" href="styles.css?v=20260916r6" />
+  <script src="theme.js?v=20260916r3" defer></script>
 </head>
 <body>
   <div class="app app-wide mazu-page">
@@ -82,9 +82,7 @@
           aria-label="妈祖神像循环影像"
         ></video>
         <div class="mazu-stage-veil" aria-hidden="true"></div>
-        <!-- Under-portrait floating blessing chips (mid/lower frame, avoid face) -->
-        <div class="mazu-chip-layer" id="mazuChipLayer" aria-hidden="true"></div>
-        <!-- Ocean / wave band danmaku — bottom ~30%, multiple lanes -->
+        <!-- Ocean / wave band danmaku — bottom band only (never over face/upper body) -->
         <div class="mazu-wave-band" aria-hidden="true">
           <div class="mazu-wave-foam"></div>
           <div class="mazu-danmaku-layer" id="mazuDanmakuLayer"></div>
@@ -140,7 +138,7 @@
 
   <script src="mazu-config.js?v=20260916r5"></script>
   <script src="auth-modal.js?v=20260916r5" defer></script>
-  <script src="mazu.js?v=20260916r5" defer></script>
+  <script src="mazu.js?v=20260916r6" defer></script>
   <script src="site-nav.js?v=20260916r5" defer></script>
 </body>
 </html>

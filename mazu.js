@@ -338,15 +338,14 @@
       .replace(/"/g, "&quot;");
   }
 
-  /* —— Shrine stage FX: under-portrait chips + wave-band danmaku —— */
+  /* —— Shrine stage FX: wave-band danmaku only (no mid-portrait chips) —— */
   var WALL_COMPACT_MAX = 12;
   var DANMAKU_LANES = 6;
-  var chipLayer = null;
   var danmakuLayer = null;
   var feedPool = [];
   var feedIdx = 0;
   var danmakuTimer = null;
-  var laneBusyUntil = [0, 0, 0, 0];
+  var laneBusyUntil = [0, 0, 0, 0, 0, 0];
   var reduceMotion = false;
 
   try {
@@ -361,7 +360,6 @@
   }
 
   function ensureStageEls() {
-    chipLayer = $("mazuChipLayer");
     danmakuLayer = $("mazuDanmakuLayer");
   }
 
@@ -377,24 +375,6 @@
     var b = feedPool[feedIdx % feedPool.length];
     feedIdx = (feedIdx + 1) % feedPool.length;
     return b;
-  }
-
-  function spawnChip(text, opts) {
-    ensureStageEls();
-    if (!chipLayer || !text) return;
-    opts = opts || {};
-    var el = document.createElement("span");
-    el.className = "mazu-chip" + (opts.fresh ? " is-fresh" : "");
-    el.textContent = truncateChip(text, opts.fresh ? 36 : 28);
-    var left = 4 + Math.random() * 70;
-    var top = 8 + Math.random() * 70;
-    el.style.left = left + "%";
-    el.style.top = top + "%";
-    chipLayer.appendChild(el);
-    var life = reduceMotion ? 3200 : 4800;
-    setTimeout(function () {
-      if (el.parentNode) el.parentNode.removeChild(el);
-    }, life + 80);
   }
 
   function pickLane() {
@@ -445,20 +425,18 @@
 
   function celebrateBlessing(b) {
     if (!b || !b.text) return;
-    spawnChip(b.text, { fresh: true });
     spawnDanmaku(b.text, { fresh: true });
   }
 
   function pulseAmbient() {
     var b = nextFeedItem();
     if (!b) return;
-    if (Math.random() < 0.45) spawnChip(b.text, { fresh: false });
     spawnDanmaku(b.text, { fresh: false });
   }
 
   function startAmbientLoop() {
     if (danmakuTimer) clearInterval(danmakuTimer);
-    // Seed a few immediately
+    // Seed a few immediately (wave band only)
     var n = Math.min(3, feedPool.length || 0);
     for (var i = 0; i < n; i++) {
       (function (delay) {
@@ -467,10 +445,6 @@
           if (b) spawnDanmaku(b.text, { fresh: false });
         }, delay);
       })(i * 700);
-    }
-    if (feedPool.length && Math.random() < 0.7) {
-      var c = nextFeedItem();
-      if (c) spawnChip(c.text, { fresh: false });
     }
     danmakuTimer = setInterval(function () {
       if (document.hidden) return;
