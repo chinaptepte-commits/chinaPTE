@@ -340,7 +340,7 @@
 
   /* —— Shrine stage FX: under-portrait chips + wave-band danmaku —— */
   var WALL_COMPACT_MAX = 12;
-  var DANMAKU_LANES = 4;
+  var DANMAKU_LANES = 6;
   var chipLayer = null;
   var danmakuLayer = null;
   var feedPool = [];

@@ -3340,17 +3340,17 @@ input:focus-visible {
   100% { opacity: 0; transform: translateY(-10px) scale(0.98); }
 }
 
-/* Wave / ocean band — bottom ~22% only; ALL danmaku stays here */
+/* Wave / ocean band — bottom ~40%; ALL danmaku stays here (fills lower waves) */
 .mazu-wave-band {
   pointer-events: none;
   position: absolute;
   left: 0;
   right: 0;
   bottom: 0;
-  height: 22%;
+  height: 40%;
   z-index: 4;
   overflow: hidden;
-  background: linear-gradient(180deg, transparent 0%, rgba(8, 40, 55, 0.12) 35%, rgba(6, 30, 45, 0.28) 100%);
+  background: linear-gradient(180deg, transparent 0%, rgba(8, 40, 55, 0.08) 22%, rgba(6, 30, 45, 0.22) 100%);
 }
 
 .mazu-wave-foam {
