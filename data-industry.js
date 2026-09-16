@@ -121,7 +121,7 @@ window.INDUSTRY_DATA = {
       {
         "en": "direct debit",
         "zh": "自动扣款",
-        "ipa": "/dɪˈɛkt ˈdɛbɪt/"
+        "ipa": "/dɪˈrɛkt ˈdɛbɪt/"
       },
       {
         "en": "statement",
@@ -191,7 +191,7 @@ window.INDUSTRY_DATA = {
       {
         "en": "refund",
         "zh": "退款",
-        "ipa": "/ˈiˌfənd/"
+        "ipa": "/ˈriːfʌnd/"
       },
       {
         "en": "exchange",
@@ -221,7 +221,7 @@ window.INDUSTRY_DATA = {
       {
         "en": "grocery",
         "zh": "食品杂货",
-        "ipa": "/ˈgroʊsəi/"
+        "ipa": "/ˈɡroʊsəri/"
       },
       {
         "en": "trolley / shopping cart",
@@ -286,7 +286,7 @@ window.INDUSTRY_DATA = {
       {
         "en": "bakery",
         "zh": "烘焙区",
-        "ipa": "/ˈbeɪkəi/"
+        "ipa": "/ˈbeɪkəri/"
       },
       {
         "en": "ATM",
@@ -361,7 +361,7 @@ window.INDUSTRY_DATA = {
       {
         "en": "Medicare rebate",
         "zh": "医保报销（澳）",
-        "ipa": "/ˈmɛdəˌkɛː ˈiˌbeɪt/"
+        "ipa": "/ˈmɛdəˌkɛː ˈriːbeɪt/"
       },
       {
         "en": "bulk billing",
@@ -371,7 +371,7 @@ window.INDUSTRY_DATA = {
       {
         "en": "referral",
         "zh": "转诊信",
-        "ipa": "/rɪˈfəəl/"
+        "ipa": "/rɪˈfɜːrəl/"
       },
       {
         "en": "specialist",
@@ -406,7 +406,7 @@ window.INDUSTRY_DATA = {
       {
         "en": "registered post",
         "zh": "挂号邮寄",
-        "ipa": "/ˈɛʤɪstəd poʊst/"
+        "ipa": "/ˈrɛʤɪstəd poʊst/"
       },
       {
         "en": "Express Post",
@@ -461,7 +461,7 @@ window.INDUSTRY_DATA = {
       {
         "en": "strata / body corporate",
         "zh": "业主委员会（公寓）",
-        "ipa": "/ˈstrætə/ / /ˈbɑdi ˈkɔːpəət/"
+        "ipa": "/ˈstrætə/ / /ˈbɒdi ˈkɔːpərət/"
       },
       {
         "en": "rates",
@@ -636,7 +636,7 @@ window.INDUSTRY_DATA = {
       {
         "en": "reference number",
         "zh": "参考编号 / 受理号",
-        "ipa": "/ˈɛfəəns ˈnəmbə/"
+        "ipa": "/ˈrɛfərəns ˈnəmbə/"
       }
     ],
     "phrases": [
@@ -794,7 +794,7 @@ window.INDUSTRY_DATA = {
           },
           {
             "en": "delivery",
-            "ipa": "/dɪˈlɪvəi/",
+            "ipa": "/dɪˈlɪvəri/",
             "zh": "delivery"
           },
           {
@@ -925,7 +925,7 @@ window.INDUSTRY_DATA = {
           },
           {
             "en": "direct debit",
-            "ipa": "/dɪˈɛkt ˈdɛbɪt/",
+            "ipa": "/dɪˈrɛkt ˈdɛbɪt/",
             "zh": "自动扣款"
           }
         ]
@@ -1413,7 +1413,7 @@ window.INDUSTRY_DATA = {
         "keys": [
           {
             "en": "reference number",
-            "ipa": "/ˈɛfəəns ˈnəmbə/",
+            "ipa": "/ˈrɛfərəns ˈnəmbə/",
             "zh": "参考编号 / 受理号"
           },
           {
@@ -1450,7 +1450,7 @@ window.INDUSTRY_DATA = {
         "keys": [
           {
             "en": "referral",
-            "ipa": "/rɪˈfəəl/",
+            "ipa": "/rɪˈfɜːrəl/",
             "zh": "转诊信"
           },
           {
@@ -1591,7 +1591,7 @@ window.INDUSTRY_DATA = {
           },
           {
             "en": "two-bedroom",
-            "ipa": "/two-bedroom/",
+            "ipa": "/tuː ˈbɛdruːm/",
             "zh": "two-bedroom"
           },
           {
@@ -1832,7 +1832,7 @@ window.INDUSTRY_DATA = {
           },
           {
             "en": "instalments",
-            "ipa": "/instalments/",
+            "ipa": "/ɪnˈstɔːlmənts/",
             "zh": "instalments"
           }
         ]
@@ -1864,7 +1864,7 @@ window.INDUSTRY_DATA = {
           },
           {
             "en": "reference number",
-            "ipa": "/ˈɛfəəns ˈnəmbə/",
+            "ipa": "/ˈrɛfərəns ˈnəmbə/",
             "zh": "参考编号 / 受理号"
           }
         ]
@@ -2253,7 +2253,7 @@ window.INDUSTRY_DATA = {
       {
         "en": "rubber mallet",
         "zh": "橡胶锤",
-        "ipa": "/ˈəbə ˈmælɪt/"
+        "ipa": "/ˈrʌbə ˈmælɪt/"
       },
       {
         "en": "notched trowel",
@@ -2318,7 +2318,7 @@ window.INDUSTRY_DATA = {
       {
         "en": "render",
         "zh": "抹灰",
-        "ipa": "/ˈɛndə/"
+        "ipa": "/ˈrɛndə/"
       },
       {
         "en": "plasterboard / gyprock",
@@ -2398,7 +2398,7 @@ window.INDUSTRY_DATA = {
       {
         "en": "threshold",
         "zh": "门槛",
-        "ipa": "/θˈɛˌʃoʊld/"
+        "ipa": "/ˈθrɛʃhəʊld/"
       },
       {
         "en": "control joint",
@@ -2523,7 +2523,7 @@ window.INDUSTRY_DATA = {
       {
         "en": "rubbish chute",
         "zh": "垃圾滑道",
-        "ipa": "/ˈəbɪʃ ʃut/"
+        "ipa": "/ˈrʌbɪʃ ʃut/"
       },
       {
         "en": "curing time",
@@ -2553,7 +2553,7 @@ window.INDUSTRY_DATA = {
       {
         "en": "manufacturer specs",
         "zh": "厂家说明",
-        "ipa": "/ˌmænjəˈfækʧəə spɛks/"
+        "ipa": "/ˌmænjəˈfækʧərə spɛks/"
       },
       {
         "en": "Australian Standards",
@@ -2703,7 +2703,7 @@ window.INDUSTRY_DATA = {
           },
           {
             "en": "three-millimetre",
-            "ipa": "/three-millimetre/",
+            "ipa": "/θriː ˈmɪlɪmiːtə/",
             "zh": "three-millimetre"
           },
           {
@@ -2745,7 +2745,7 @@ window.INDUSTRY_DATA = {
           },
           {
             "en": "screed",
-            "ipa": "/skrid/",
+            "ipa": "/skriːd/",
             "zh": "基层 / 找平层"
           },
           {
@@ -3166,7 +3166,7 @@ window.INDUSTRY_DATA = {
         "keys": [
           {
             "en": "Back-butter",
-            "ipa": "/back-butter/",
+            "ipa": "/bæk ˈbʌtə/",
             "zh": "Back-butter"
           },
           {
@@ -3568,7 +3568,7 @@ window.INDUSTRY_DATA = {
           },
           {
             "en": "thinset",
-            "ipa": "/əˈdhisɪv/ / /ˈθɪnset/",
+            "ipa": "/ˈθɪnset/",
             "zh": "瓷砖胶 / 粘结剂"
           },
           {
@@ -3951,12 +3951,12 @@ window.INDUSTRY_DATA = {
       {
         "en": "reject",
         "zh": "不合格品 / 退回",
-        "ipa": "/ˈiʤɛkt/"
+        "ipa": "/ˈriːʤɛkt/"
       },
       {
         "en": "temperature check",
         "zh": "测温",
-        "ipa": "/ˈtɛmpəəʧə ʧɛk/"
+        "ipa": "/ˈtɛmprəʧə ʧɛk/"
       },
       {
         "en": "chiller / freezer",
@@ -3991,7 +3991,7 @@ window.INDUSTRY_DATA = {
       {
         "en": "roster",
         "zh": "排班表",
-        "ipa": "/ˈɑstə/"
+        "ipa": "/ˈrɒstə/"
       },
       {
         "en": "line speed",
@@ -4261,7 +4261,7 @@ window.INDUSTRY_DATA = {
       {
         "en": "foreign object",
         "zh": "异物",
-        "ipa": "/ˈfɔːən ˈɑbʤɛkt/"
+        "ipa": "/ˈfɒrən ˈɑbʤɛkt/"
       },
       {
         "en": "retention sample",
@@ -4539,7 +4539,7 @@ window.INDUSTRY_DATA = {
           },
           {
             "en": "cross-contaminate",
-            "ipa": "/cross-contaminate/",
+            "ipa": "/krɒs kənˈtæmɪneɪt/",
             "zh": "cross-contaminate"
           },
           {
@@ -4581,7 +4581,7 @@ window.INDUSTRY_DATA = {
           },
           {
             "en": "temperature",
-            "ipa": "/ˈtɛmpəəʧə/",
+            "ipa": "/ˈtɛmprəʧə/",
             "zh": "temperature"
           },
           {
@@ -4754,12 +4754,12 @@ window.INDUSTRY_DATA = {
         "keys": [
           {
             "en": "Vacuum-pack",
-            "ipa": "/vacuum-pack/",
+            "ipa": "/ˈvækjuəm pæk/",
             "zh": "Vacuum-pack"
           },
           {
             "en": "primals",
-            "ipa": "/primals/",
+            "ipa": "/ˈpraɪməlz/",
             "zh": "primals"
           }
         ]
@@ -4948,7 +4948,7 @@ window.INDUSTRY_DATA = {
           },
           {
             "en": "rostered",
-            "ipa": "/rostered/",
+            "ipa": "/ˈrɒstəd/",
             "zh": "rostered"
           },
           {
@@ -4995,7 +4995,7 @@ window.INDUSTRY_DATA = {
         "keys": [
           {
             "en": "Sterilise",
-            "ipa": "/sterilise/",
+            "ipa": "/ˈstɛrəlaɪz/",
             "zh": "Sterilise"
           },
           {
@@ -5147,7 +5147,7 @@ window.INDUSTRY_DATA = {
         "keys": [
           {
             "en": "Blast-freeze",
-            "ipa": "/blast-freeze/",
+            "ipa": "/blɑːst friːz/",
             "zh": "Blast-freeze"
           },
           {
@@ -5313,7 +5313,7 @@ window.INDUSTRY_DATA = {
           },
           {
             "en": "foreign object",
-            "ipa": "/ˈfɔːən ˈɑbʤɛkt/",
+            "ipa": "/ˈfɒrən ˈɑbʤɛkt/",
             "zh": "异物"
           },
           {
@@ -5918,7 +5918,7 @@ window.INDUSTRY_DATA = {
       {
         "en": "respirator",
         "zh": "防尘口罩",
-        "ipa": "/ˈɛspəˌeɪtə/"
+        "ipa": "/ˈrɛspəreɪtə/"
       },
       {
         "en": "site measure",
@@ -5938,7 +5938,7 @@ window.INDUSTRY_DATA = {
       {
         "en": "delivery",
         "zh": "送货",
-        "ipa": "/dɪˈlɪvəi/"
+        "ipa": "/dɪˈlɪvəri/"
       },
       {
         "en": "crane / lifting",
@@ -6033,7 +6033,7 @@ window.INDUSTRY_DATA = {
       {
         "en": "riser",
         "zh": "踢面",
-        "ipa": "/ˈaɪzə/"
+        "ipa": "/ˈraɪzə/"
       },
       {
         "en": "hearth",
@@ -6048,7 +6048,7 @@ window.INDUSTRY_DATA = {
       {
         "en": "threshold stone",
         "zh": "门槛石",
-        "ipa": "/θˈɛˌʃoʊld stoʊn/"
+        "ipa": "/ˈθrɛʃhəʊld stoʊn/"
       },
       {
         "en": "arriss / arris",
@@ -6168,7 +6168,7 @@ window.INDUSTRY_DATA = {
       {
         "en": "router bit",
         "zh": "成型刀头",
-        "ipa": "/ˈutə bɪt/"
+        "ipa": "/ˈruːtə bɪt/"
       },
       {
         "en": "polishing pad",
@@ -6303,7 +6303,7 @@ window.INDUSTRY_DATA = {
       {
         "en": "warranty",
         "zh": "质保",
-        "ipa": "/ˈwɔːənti/"
+        "ipa": "/ˈwɒrənti/"
       },
       {
         "en": "sealer",
@@ -6318,7 +6318,7 @@ window.INDUSTRY_DATA = {
       {
         "en": "resin fill",
         "zh": "树脂补洞",
-        "ipa": "/ˈɛzɪn fɪl/"
+        "ipa": "/ˈrɛzɪn fɪl/"
       },
       {
         "en": "fissure",
@@ -6493,7 +6493,7 @@ window.INDUSTRY_DATA = {
           },
           {
             "en": "accurate",
-            "ipa": "/ˈækjəət/",
+            "ipa": "/ˈækjərət/",
             "zh": "accurate"
           }
         ]
@@ -6572,7 +6572,7 @@ window.INDUSTRY_DATA = {
           },
           {
             "en": "respirator",
-            "ipa": "/ˈɛspəˌeɪtə/",
+            "ipa": "/ˈrɛspəreɪtə/",
             "zh": "防尘口罩"
           },
           {
@@ -6609,7 +6609,7 @@ window.INDUSTRY_DATA = {
         "keys": [
           {
             "en": "delivery",
-            "ipa": "/dɪˈlɪvəi/",
+            "ipa": "/dɪˈlɪvəri/",
             "zh": "送货"
           },
           {
@@ -6913,12 +6913,12 @@ window.INDUSTRY_DATA = {
         "keys": [
           {
             "en": "respirator",
-            "ipa": "/ˈɛspəˌeɪtə/",
+            "ipa": "/ˈrɛspəreɪtə/",
             "zh": "防尘口罩"
           },
           {
             "en": "fit-tested",
-            "ipa": "/fit-tested/",
+            "ipa": "/fɪt ˈtɛstɪd/",
             "zh": "fit-tested"
           }
         ]
@@ -6986,12 +6986,12 @@ window.INDUSTRY_DATA = {
           },
           {
             "en": "undermount",
-            "ipa": "/undermount/",
+            "ipa": "/ˈʌndəmaʊnt/",
             "zh": "undermount"
           },
           {
             "en": "topmount",
-            "ipa": "/topmount/",
+            "ipa": "/ˈtɒpmaʊnt/",
             "zh": "topmount"
           },
           {
@@ -7075,7 +7075,7 @@ window.INDUSTRY_DATA = {
         "keys": [
           {
             "en": "Vacuum-lift",
-            "ipa": "/vacuum-lift/",
+            "ipa": "/ˈvækjuəm lɪft/",
             "zh": "Vacuum-lift"
           },
           {
@@ -7085,7 +7085,7 @@ window.INDUSTRY_DATA = {
           },
           {
             "en": "A-frame",
-            "ipa": "/a-frame/",
+            "ipa": "/ˈeɪ freɪm/",
             "zh": "A-frame"
           }
         ]
@@ -7122,7 +7122,7 @@ window.INDUSTRY_DATA = {
         "keys": [
           {
             "en": "Colour-match",
-            "ipa": "/colour-match/",
+            "ipa": "/ˈkʌlə mæʧ/",
             "zh": "Colour-match"
           },
           {
@@ -7184,7 +7184,7 @@ window.INDUSTRY_DATA = {
           },
           {
             "en": "delivery",
-            "ipa": "/dɪˈlɪvəi/",
+            "ipa": "/dɪˈlɪvəri/",
             "zh": "送货"
           }
         ]
@@ -7257,7 +7257,7 @@ window.INDUSTRY_DATA = {
           },
           {
             "en": "resin fill",
-            "ipa": "/ˈɛzɪn fɪl/",
+            "ipa": "/ˈrɛzɪn fɪl/",
             "zh": "树脂补洞"
           }
         ]
@@ -7304,7 +7304,7 @@ window.INDUSTRY_DATA = {
           },
           {
             "en": "mitred",
-            "ipa": "/mitred/",
+            "ipa": "/ˈmaɪtəd/",
             "zh": "mitred"
           },
           {
@@ -7325,7 +7325,7 @@ window.INDUSTRY_DATA = {
           },
           {
             "en": "dry-cut",
-            "ipa": "/dry-cut/",
+            "ipa": "/draɪ kʌt/",
             "zh": "dry-cut"
           },
           {
@@ -7346,7 +7346,7 @@ window.INDUSTRY_DATA = {
         "keys": [
           {
             "en": "Core-drill",
-            "ipa": "/core-drill/",
+            "ipa": "/kɔː drɪl/",
             "zh": "Core-drill"
           },
           {
@@ -7413,7 +7413,7 @@ window.INDUSTRY_DATA = {
           },
           {
             "en": "manufacturer",
-            "ipa": "/ˌmænjəˈfækʧəə/",
+            "ipa": "/ˌmænjəˈfækʧərə/",
             "zh": "manufacturer"
           }
         ]
@@ -7429,7 +7429,7 @@ window.INDUSTRY_DATA = {
           },
           {
             "en": "natural",
-            "ipa": "/ˈnæʧəəl/",
+            "ipa": "/ˈnæʧərəl/",
             "zh": "natural"
           },
           {
@@ -7517,7 +7517,7 @@ window.INDUSTRY_DATA = {
           },
           {
             "en": "bookmatched",
-            "ipa": "/bookmatched/",
+            "ipa": "/ˈbʊkmæʧt/",
             "zh": "bookmatched"
           }
         ]
@@ -7612,7 +7612,7 @@ window.INDUSTRY_DATA = {
         "keys": [
           {
             "en": "warranty",
-            "ipa": "/ˈwɔːənti/",
+            "ipa": "/ˈwɒrənti/",
             "zh": "质保"
           },
           {
@@ -7745,7 +7745,7 @@ window.INDUSTRY_DATA = {
       {
         "en": "runner / slide",
         "zh": "滑轨",
-        "ipa": "/ˈənə/ / /slaɪd/"
+        "ipa": "/ˈrʌnə/ / /slaɪd/"
       },
       {
         "en": "handle / knob",
@@ -7845,7 +7845,7 @@ window.INDUSTRY_DATA = {
       {
         "en": "confirm measure",
         "zh": "复核尺寸",
-        "ipa": "/kənˈfəm ˈmɛʒə/"
+        "ipa": "/kənˈfɜːm ˈmɛʒə/"
       },
       {
         "en": "install",
@@ -7995,7 +7995,7 @@ window.INDUSTRY_DATA = {
       {
         "en": "under-bench oven",
         "zh": "台下烤箱位",
-        "ipa": "/ˈəndə bɛnʧ ˈəvən/"
+        "ipa": "/ˈʌndə bɛnʧ ˈʌvən/"
       },
       {
         "en": "tall oven tower",
@@ -8230,7 +8230,7 @@ window.INDUSTRY_DATA = {
       {
         "en": "cutlery insert",
         "zh": "刀叉分隔",
-        "ipa": "/ˈkətləi ˌɪnˈsət/"
+        "ipa": "/ˈkʌtləri ˌɪnˈsɜːt/"
       },
       {
         "en": "bin drawer",
@@ -8335,7 +8335,7 @@ window.INDUSTRY_DATA = {
           },
           {
             "en": "confirm measure",
-            "ipa": "/kənˈfəm ˈmɛʒə/",
+            "ipa": "/kənˈfɜːm ˈmɛʒə/",
             "zh": "复核尺寸"
           },
           {
@@ -8471,7 +8471,7 @@ window.INDUSTRY_DATA = {
           },
           {
             "en": "runners",
-            "ipa": "/ˈrənəz/",
+            "ipa": "/ˈrʌnəz/",
             "zh": "runners"
           }
         ]
@@ -8633,7 +8633,7 @@ window.INDUSTRY_DATA = {
           },
           {
             "en": "colour-match",
-            "ipa": "/colour-match/",
+            "ipa": "/ˈkʌlə mæʧ/",
             "zh": "colour-match"
           },
           {
@@ -8654,7 +8654,7 @@ window.INDUSTRY_DATA = {
         "keys": [
           {
             "en": "benchtop",
-            "ipa": "/benchtop/",
+            "ipa": "/ˈbɛntʃtɒp/ / /ˈkaʊntəˌtɑp/",
             "zh": "benchtop"
           },
           {
@@ -8899,7 +8899,7 @@ window.INDUSTRY_DATA = {
         "keys": [
           {
             "en": "confirm measure",
-            "ipa": "/kənˈfəm ˈmɛʒə/",
+            "ipa": "/kənˈfɜːm ˈmɛʒə/",
             "zh": "复核尺寸"
           },
           {
@@ -9013,7 +9013,7 @@ window.INDUSTRY_DATA = {
           },
           {
             "en": "out-of-plumb",
-            "ipa": "/out-of-plumb/",
+            "ipa": "/aʊt əv plʌm/",
             "zh": "out-of-plumb"
           },
           {
@@ -9139,7 +9139,7 @@ window.INDUSTRY_DATA = {
         "keys": [
           {
             "en": "Two-pack",
-            "ipa": "/two-pack/",
+            "ipa": "/tuː pæk/",
             "zh": "Two-pack"
           },
           {
@@ -9206,7 +9206,7 @@ window.INDUSTRY_DATA = {
           },
           {
             "en": "wet-area",
-            "ipa": "/wet-area/",
+            "ipa": "/wɛt ˈɛəriə/",
             "zh": "wet-area"
           }
         ]
@@ -9311,7 +9311,7 @@ window.INDUSTRY_DATA = {
         "keys": [
           {
             "en": "cutlery insert",
-            "ipa": "/ˈkətləi ˌɪnˈsət/",
+            "ipa": "/ˈkʌtləri ˌɪnˈsɜːt/",
             "zh": "刀叉分隔"
           },
           {
@@ -9442,7 +9442,7 @@ window.INDUSTRY_DATA = {
         "keys": [
           {
             "en": "vinyl-wrap",
-            "ipa": "/vinyl-wrap/",
+            "ipa": "/ˈvaɪnəl ræp/",
             "zh": "vinyl-wrap"
           },
           {
@@ -9452,7 +9452,7 @@ window.INDUSTRY_DATA = {
           },
           {
             "en": "delaminated",
-            "ipa": "/delaminated/",
+            "ipa": "/diːˈlæmɪneɪtɪd/",
             "zh": "delaminated"
           },
           {
@@ -9526,7 +9526,7 @@ window.INDUSTRY_DATA = {
         "keys": [
           {
             "en": "HMR",
-            "ipa": "/hmr/",
+            "ipa": "/ˌeɪʧɛmˈɑː/",
             "zh": "HMR"
           },
           {
@@ -9614,7 +9614,7 @@ window.INDUSTRY_DATA = {
           },
           {
             "en": "splashback",
-            "ipa": "/splashback/",
+            "ipa": "/ˈsplæʃbæk/",
             "zh": "splashback"
           }
         ]
@@ -9661,7 +9661,7 @@ window.INDUSTRY_DATA = {
           },
           {
             "en": "confirmat",
-            "ipa": "/confirmat/",
+            "ipa": "/kənˈfɜːmæt/",
             "zh": "confirmat"
           },
           {
@@ -9832,7 +9832,7 @@ window.INDUSTRY_DATA = {
       {
         "en": "tolerance",
         "zh": "公差",
-        "ipa": "/ˈtɑləəns/"
+        "ipa": "/ˈtɒlərəns/"
       },
       {
         "en": "square",
@@ -9972,7 +9972,7 @@ window.INDUSTRY_DATA = {
       {
         "en": "regulator",
         "zh": "减压阀",
-        "ipa": "/ˈɛgjəˌleɪtə/"
+        "ipa": "/ˈrɛɡjəleɪtə/"
       },
       {
         "en": "flow meter",
@@ -10092,7 +10092,7 @@ window.INDUSTRY_DATA = {
       {
         "en": "undercut",
         "zh": "咬边",
-        "ipa": "/ˈəndəˌkət/"
+        "ipa": "/ˈʌndəˌkʌt/"
       },
       {
         "en": "lack of fusion",
@@ -10187,7 +10187,7 @@ window.INDUSTRY_DATA = {
       {
         "en": "roller",
         "zh": "卷板机",
-        "ipa": "/ˈoʊlə/"
+        "ipa": "/ˈroʊlə/"
       },
       {
         "en": "overhead crane",
@@ -10262,7 +10262,7 @@ window.INDUSTRY_DATA = {
       {
         "en": "structural steel",
         "zh": "结构钢",
-        "ipa": "/ˈstrəkʧəəl stil/"
+        "ipa": "/ˈstrʌkʧərəl stil/"
       },
       {
         "en": "purlin",
@@ -10516,7 +10516,7 @@ window.INDUSTRY_DATA = {
         "keys": [
           {
             "en": "tolerance",
-            "ipa": "/ˈtɑləəns/",
+            "ipa": "/ˈtɒlərəns/",
             "zh": "公差"
           },
           {
@@ -10699,7 +10699,7 @@ window.INDUSTRY_DATA = {
         "keys": [
           {
             "en": "Plasma-cut",
-            "ipa": "/plasma-cut/",
+            "ipa": "/ˈplæzmə kʌt/",
             "zh": "Plasma-cut"
           },
           {
@@ -10928,7 +10928,7 @@ window.INDUSTRY_DATA = {
           },
           {
             "en": "litres",
-            "ipa": "/litres/",
+            "ipa": "/ˈliːtəz/",
             "zh": "litres"
           }
         ]
@@ -11018,7 +11018,7 @@ window.INDUSTRY_DATA = {
         "keys": [
           {
             "en": "undercut",
-            "ipa": "/ˈəndəˌkət/",
+            "ipa": "/ˈʌndəˌkʌt/",
             "zh": "咬边"
           },
           {
@@ -11112,7 +11112,7 @@ window.INDUSTRY_DATA = {
           },
           {
             "en": "galvanising",
-            "ipa": "/galvanising/",
+            "ipa": "/ˈɡælvənaɪzɪŋ/",
             "zh": "galvanising"
           },
           {
@@ -11128,7 +11128,7 @@ window.INDUSTRY_DATA = {
         "keys": [
           {
             "en": "Mag-drill",
-            "ipa": "/mag-drill/",
+            "ipa": "/mæɡ drɪl/",
             "zh": "Mag-drill"
           },
           {
@@ -11154,7 +11154,7 @@ window.INDUSTRY_DATA = {
         "keys": [
           {
             "en": "Press-brake",
-            "ipa": "/press-brake/",
+            "ipa": "/prɛs breɪk/",
             "zh": "Press-brake"
           },
           {
@@ -11211,7 +11211,7 @@ window.INDUSTRY_DATA = {
           },
           {
             "en": "arrestors",
-            "ipa": "/arrestors/",
+            "ipa": "/əˈrɛstəz/",
             "zh": "arrestors"
           },
           {
@@ -11274,7 +11274,7 @@ window.INDUSTRY_DATA = {
         "keys": [
           {
             "en": "tolerance",
-            "ipa": "/ˈtɑləəns/",
+            "ipa": "/ˈtɒlərəns/",
             "zh": "公差"
           },
           {
@@ -11452,7 +11452,7 @@ window.INDUSTRY_DATA = {
           },
           {
             "en": "undercut",
-            "ipa": "/ˈəndəˌkət/",
+            "ipa": "/ˈʌndəˌkʌt/",
             "zh": "咬边"
           }
         ]
@@ -11552,7 +11552,7 @@ window.INDUSTRY_DATA = {
           },
           {
             "en": "amps",
-            "ipa": "/amps/",
+            "ipa": "/æmps/",
             "zh": "amps"
           },
           {
@@ -11649,7 +11649,7 @@ window.INDUSTRY_DATA = {
       {
         "en": "resident / client",
         "zh": "住户 / 服务对象",
-        "ipa": "/ˈɛzɪdənt/ / /klaɪənt/"
+        "ipa": "/ˈrɛzɪdənt/ / /klaɪənt/"
       },
       {
         "en": "carer / support worker",
@@ -11814,7 +11814,7 @@ window.INDUSTRY_DATA = {
       {
         "en": "roster",
         "zh": "排班",
-        "ipa": "/ˈɑstə/"
+        "ipa": "/ˈrɒstə/"
       },
       {
         "en": "shift",
@@ -11869,7 +11869,7 @@ window.INDUSTRY_DATA = {
       {
         "en": "enrolled nurse / EN",
         "zh": "登记护士",
-        "ipa": "/ɛnˈoʊld nəs/ / /ɛn/"
+        "ipa": "/ɪnˈroʊld nəs/ / /ɛn/"
       },
       {
         "en": "AIN / PCA",
@@ -11889,7 +11889,7 @@ window.INDUSTRY_DATA = {
       {
         "en": "temperature",
         "zh": "体温",
-        "ipa": "/ˈtɛmpəəʧə/"
+        "ipa": "/ˈtɛmprəʧə/"
       },
       {
         "en": "oxygen saturation / spo2",
@@ -11969,7 +11969,7 @@ window.INDUSTRY_DATA = {
       {
         "en": "oral care",
         "zh": "口腔护理",
-        "ipa": "/ˈɔːəl kɛː/"
+        "ipa": "/ˈɔːrəl kɛː/"
       },
       {
         "en": "dentures",
@@ -12209,7 +12209,7 @@ window.INDUSTRY_DATA = {
       {
         "en": "cultural preference",
         "zh": "文化偏好",
-        "ipa": "/ˈkəlʧəəl ˈprɛfəəns/"
+        "ipa": "/ˈkʌlʧərəl ˈprɛfərəns/"
       },
       {
         "en": "interpreter service",
@@ -13018,7 +13018,7 @@ window.INDUSTRY_DATA = {
           },
           {
             "en": "spo2",
-            "ipa": "/ˈɑksɪʤən ˌsæʧəˈeɪʃən/ / /ˌespiːəʊˈtuː/",
+            "ipa": "/ˌespiːəʊˈtuː/",
             "zh": "血氧饱和度"
           }
         ]
@@ -13050,7 +13050,7 @@ window.INDUSTRY_DATA = {
         "keys": [
           {
             "en": "PRN",
-            "ipa": "/prn/",
+            "ipa": "/ˌpiːɑːˈɛn/",
             "zh": "PRN"
           },
           {
@@ -13255,12 +13255,12 @@ window.INDUSTRY_DATA = {
           },
           {
             "en": "cultural",
-            "ipa": "/ˈkəlʧəəl/",
+            "ipa": "/ˈkʌlʧərəl/",
             "zh": "cultural"
           },
           {
             "en": "preferences",
-            "ipa": "/ˈprɛfəənsɪz/",
+            "ipa": "/ˈprɛfərənsɪz/",
             "zh": "preferences"
           },
           {
@@ -13339,7 +13339,7 @@ window.INDUSTRY_DATA = {
         "keys": [
           {
             "en": "end-of-life",
-            "ipa": "/end-of-life/",
+            "ipa": "/ɛnd əv laɪf/",
             "zh": "end-of-life"
           },
           {
