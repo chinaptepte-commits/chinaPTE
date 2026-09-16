@@ -3,6 +3,7 @@
  */
 (function () {
   "use strict";
+  var ASSET_VER = "20260916r3";
   var ITEMS = [
     { href: "index.html", label: "首页", match: ["index.html", ""] },
     { href: "practice.html", label: "练习中心", match: ["practice.html", "wfd.html", "rs.html", "ra.html", "rl.html", "asq.html", "sst.html", "hiw.html", "di.html", "swt.html", "essay.html", "reading.html", "listening.html", "体验全部功能.html", "chinaPTE-体验全部功能.html", "chinaPTE-随身听.html", "chinaPTE-RS随身听.html"] },
@@ -28,7 +29,6 @@
         if (file.indexOf("industry-") === 0) return true;
       } else if (file === m) return true;
     }
-    // industry-* pages
     if (item.href === "industry.html" && file.indexOf("industry-") === 0) return true;
     return false;
   }
@@ -49,23 +49,50 @@
     nav.innerHTML = brand + '<ul class="site-nav-links">' + lis + "</ul>";
   }
 
+  function loadScript(src, attrs) {
+    if (document.querySelector('script[src="' + src + '"]')) return null;
+    var s = document.createElement("script");
+    s.src = src;
+    s.defer = true;
+    if (attrs) {
+      Object.keys(attrs).forEach(function (k) {
+        s.setAttribute(k, attrs[k]);
+      });
+    }
+    (document.head || document.documentElement).appendChild(s);
+    return s;
+  }
+
   function loadAnalytics() {
     if (window.ChinaPTEAnalytics) return;
     if (document.querySelector("script[data-chinapte-analytics]")) return;
-    var s = document.createElement("script");
-    s.src = "analytics.js?v=20260916r2";
-    s.defer = true;
-    s.setAttribute("data-chinapte-analytics", "1");
-    (document.head || document.documentElement).appendChild(s);
+    loadScript("analytics.js?v=" + ASSET_VER, { "data-chinapte-analytics": "1" });
+  }
+
+  function loadAuth() {
+    if (window.ChinaPTEAuth) {
+      try { window.ChinaPTEAuth.initGate(); } catch (e) {}
+      return;
+    }
+    if (document.querySelector("script[data-chinapte-auth]")) return;
+    if (!window.CHINAPTE_MAZU) {
+      loadScript("mazu-config.js?v=" + ASSET_VER, { "data-chinapte-mazu-config": "1" });
+    }
+    loadScript("auth-modal.js?v=" + ASSET_VER, { "data-chinapte-auth": "1" });
+  }
+
+  function boot() {
+    render();
+    loadAnalytics();
+    loadAuth();
+    if (window.ChinaPTEAuth) {
+      try { window.ChinaPTEAuth.renderAccountChip(); } catch (e) {}
+    }
   }
 
   if (document.readyState === "loading") {
-    document.addEventListener("DOMContentLoaded", function () {
-      render();
-      loadAnalytics();
-    });
+    document.addEventListener("DOMContentLoaded", boot);
   } else {
-    render();
-    loadAnalytics();
+    boot();
   }
 })();

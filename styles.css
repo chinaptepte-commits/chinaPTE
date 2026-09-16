@@ -3247,3 +3247,16 @@ input:focus-visible {
 .mazu-disclaimer a {
   color: var(--mazu-gold);
 }
+
+
+/* ===== chinaPTE auth modal helpers ===== */
+button.btn-secondary-link {
+  appearance: none;
+  -webkit-appearance: none;
+  font: inherit;
+  cursor: pointer;
+  text-align: center;
+}
+.site-nav {
+  align-items: center;
+}

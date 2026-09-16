@@ -30,7 +30,7 @@
     ]
   }
   </script>
-  <link rel="stylesheet" href="styles.css?v=20260916r2" />
+  <link rel="stylesheet" href="styles.css?v=20260916r3" />
   <script src="theme.js?v=20260915r2" defer></script>
 </head>
 <body>
@@ -67,59 +67,13 @@
       </ul>
     </header>
 
-    <section class="mazu-card mazu-auth-card" id="mazuAuthCard" aria-label="会员登录注册">
-      <div class="mazu-user-bar" id="mazuUserPanel" hidden>
-        <div>
-          <div class="mazu-user-label">已登录</div>
-          <div class="mazu-user-name" id="mazuUserName">—</div>
-        </div>
-        <button type="button" class="btn-ghost" id="mazuLogout">退出</button>
-      </div>
-
-      <div id="mazuGuestPanel">
-        <div class="mazu-auth-tabs" role="tablist">
-          <button type="button" class="mazu-auth-tab is-active" id="mazuTabLogin" role="tab" aria-selected="true">登录</button>
-          <button type="button" class="mazu-auth-tab" id="mazuTabRegister" role="tab" aria-selected="false">注册</button>
-        </div>
-
-        <form class="lead-form mazu-form" id="mazuLoginForm" autocomplete="on">
-          <label>
-            <span>昵称</span>
-            <input type="text" id="mazuLoginNick" name="nickname" required maxlength="16" placeholder="你的显示昵称" autocomplete="username" />
-          </label>
-          <label>
-            <span>密码</span>
-            <input type="password" id="mazuLoginPass" name="password" required minlength="6" maxlength="64" placeholder="至少 6 位" autocomplete="current-password" />
-          </label>
-          <button type="submit" class="btn-submit mazu-submit">登录</button>
-        </form>
-
-        <form class="lead-form mazu-form" id="mazuRegisterForm" hidden autocomplete="on">
-          <label>
-            <span>昵称（显示名）</span>
-            <input type="text" id="mazuRegNick" name="nickname" required maxlength="16" placeholder="2–16 字" autocomplete="nickname" />
-          </label>
-          <label>
-            <span>密码</span>
-            <input type="password" id="mazuRegPass" name="password" required minlength="6" maxlength="64" placeholder="至少 6 位，仅存哈希" autocomplete="new-password" />
-          </label>
-          <label>
-            <span>简短备注（可选）</span>
-            <input type="text" id="mazuRegNote" name="note" maxlength="80" placeholder="例如：备考中 / 即将出国" />
-          </label>
-          <p class="form-note">密码在浏览器内做 SHA-256 后再发送；站点不存明文。此为站点会员，与后台管理员无关。</p>
-          <button type="submit" class="btn-submit mazu-submit">注册并登录</button>
-        </form>
-      </div>
-    </section>
-
     <section class="mazu-card" aria-label="写下祈福">
       <h2 class="mazu-section-title">写下祈福</h2>
       <div class="mazu-post-lock" id="mazuPostLock">
-        <p>访客可阅览祈福墙。留下留言需先成为站点会员。</p>
+        <p>访客可阅览祈福墙。留下留言需先登录站点会员（全站统一登录弹窗）。</p>
         <div class="mazu-cta-row">
-          <a class="btn-soft" href="#mazuAuthCard" data-mazu-goto="register">注册会员</a>
-          <a class="btn-secondary-link" href="#mazuAuthCard" data-mazu-goto="login">已有账号 · 登录</a>
+          <button type="button" class="btn-soft" data-mazu-goto="register" data-cpa-skip-gate>注册会员</button>
+          <button type="button" class="btn-secondary-link" data-mazu-goto="login" data-cpa-skip-gate>已有账号 · 登录</button>
         </div>
       </div>
       <form class="lead-form mazu-form" id="mazuPostForm" hidden>
@@ -159,8 +113,9 @@
 
   <div class="copy-toast" id="mazuToast" role="status">提示</div>
 
-  <script src="mazu-config.js?v=20260916r2"></script>
-  <script src="mazu.js?v=20260916r2" defer></script>
-  <script src="site-nav.js?v=20260916r2" defer></script>
+  <script src="mazu-config.js?v=20260916r3"></script>
+  <script src="auth-modal.js?v=20260916r3" defer></script>
+  <script src="mazu.js?v=20260916r3" defer></script>
+  <script src="site-nav.js?v=20260916r3" defer></script>
 </body>
 </html>

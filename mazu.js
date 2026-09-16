@@ -1,12 +1,11 @@
 /**
- * chinaPTE · 妈祖祈福 — 会员注册/登录 + 祈福墙
- * 优先 Cloudflare Worker；不可用时回退本机 localStorage。
+ * chinaPTE · 妈祖祈福 — 祈福墙
+ * 会员登录/注册走全局 ChinaPTEAuth 弹窗；本页不再内嵌登录注册区。
+ * 会话键与 Worker 对齐：chinaPTE_mazu_session
  */
 (function () {
   "use strict";
 
-  var SESSION_KEY = "chinaPTE_mazu_session";
-  var USERS_KEY = "chinaPTE_mazu_users";
   var LOCAL_BLESS_KEY = "chinaPTE_mazu_local_blessings";
   var LAST_POST_KEY = "chinaPTE_mazu_last_post";
 
@@ -14,6 +13,10 @@
     "代考", "替考", "作弊", "泄题", "赌球", "博彩", "色情", "约炮", "操你", "傻逼",
     "fuck", "shit", "casino", "porn", "http://", "https://", "www.",
   ];
+
+  function auth() {
+    return window.ChinaPTEAuth || null;
+  }
 
   function cfg() {
     var c = window.CHINAPTE_MAZU || {};
@@ -40,18 +43,6 @@
     }, 2400);
   }
 
-  function normalizeNick(raw) {
-    return String(raw || "")
-      .trim()
-      .replace(/\s+/g, " ")
-      .slice(0, 16);
-  }
-
-  function isValidNick(nick) {
-    if (!nick || nick.length < 2 || nick.length > 16) return false;
-    return /^[\u4e00-\u9fff\u3400-\u4dbfa-zA-Z0-9_\-·．.]+$/.test(nick);
-  }
-
   function bannedHit(text) {
     var lower = String(text || "").toLowerCase();
     for (var i = 0; i < BANNED.length; i++) {
@@ -71,18 +62,6 @@
     return false;
   }
 
-  function sha256Hex(str) {
-    var enc = new TextEncoder().encode(str);
-    return crypto.subtle.digest("SHA-256", enc).then(function (buf) {
-      var arr = Array.from(new Uint8Array(buf));
-      return arr
-        .map(function (b) {
-          return b.toString(16).padStart(2, "0");
-        })
-        .join("");
-    });
-  }
-
   function uuid() {
     if (crypto.randomUUID) return crypto.randomUUID();
     return "xxxxxxxx-xxxx-4xxx-yxxx-xxxxxxxxxxxx".replace(/[xy]/g, function (c) {
@@ -93,8 +72,10 @@
   }
 
   function readSession() {
+    var a = auth();
+    if (a && a.getSession) return a.getSession();
     try {
-      var raw = localStorage.getItem(SESSION_KEY);
+      var raw = localStorage.getItem("chinaPTE_mazu_session");
       if (!raw) return null;
       var s = JSON.parse(raw);
       if (!s || !s.nickname) return null;
@@ -105,26 +86,14 @@
   }
 
   function writeSession(s) {
-    try {
-      if (!s) localStorage.removeItem(SESSION_KEY);
-      else localStorage.setItem(SESSION_KEY, JSON.stringify(s));
-    } catch (e) {}
-  }
-
-  function readLocalUsers() {
-    try {
-      var raw = localStorage.getItem(USERS_KEY);
-      if (!raw) return {};
-      var o = JSON.parse(raw);
-      return o && typeof o === "object" ? o : {};
-    } catch (e) {
-      return {};
+    var a = auth();
+    if (a && a.writeSession) {
+      a.writeSession(s);
+      return;
     }
-  }
-
-  function writeLocalUsers(map) {
     try {
-      localStorage.setItem(USERS_KEY, JSON.stringify(map));
+      if (!s) localStorage.removeItem("chinaPTE_mazu_session");
+      else localStorage.setItem("chinaPTE_mazu_session", JSON.stringify(s));
     } catch (e) {}
   }
 
@@ -171,19 +140,11 @@
     return { ok: false, waitMin: Math.ceil(left / 60000) };
   }
 
-  var workerOk = null; // null unknown, true/false
-
   function api(path, opts) {
+    var a = auth();
+    if (a && a.api) return a.api(path, opts);
     var url = cfg().endpoint + path;
     var o = opts || {};
-    var ctrl = typeof AbortController !== "undefined" ? new AbortController() : null;
-    var timer = ctrl
-      ? setTimeout(function () {
-          try {
-            ctrl.abort();
-          } catch (e) {}
-        }, 4500)
-      : null;
     return fetch(url, {
       method: o.method || "GET",
       headers: { "Content-Type": "application/json", Accept: "application/json" },
@@ -191,172 +152,46 @@
       mode: "cors",
       credentials: "omit",
       cache: "no-store",
-      signal: ctrl ? ctrl.signal : undefined,
-    })
-      .then(function (res) {
-        return res.json().then(
-          function (data) {
-            return { ok: res.ok, status: res.status, data: data || {} };
-          },
-          function () {
-            return { ok: res.ok, status: res.status, data: {} };
-          }
-        );
-      })
-      .finally(function () {
-        if (timer) clearTimeout(timer);
-      });
+    }).then(function (res) {
+      return res.json().then(
+        function (data) {
+          return { ok: res.ok, status: res.status, data: data || {} };
+        },
+        function () {
+          return { ok: res.ok, status: res.status, data: {} };
+        }
+      );
+    });
+  }
+
+  function getWorkerOk() {
+    var a = auth();
+    if (a && typeof a.getWorkerOk === "function") return a.getWorkerOk();
+    return null;
+  }
+
+  function setWorkerOk(v) {
+    var a = auth();
+    if (a && typeof a.setWorkerOk === "function") a.setWorkerOk(v);
   }
 
   function probeWorker() {
+    var a = auth();
+    if (a && a.probeWorker) return a.probeWorker();
     return api("/blessings", { method: "GET" })
       .then(function (r) {
-        workerOk = !!(r.ok && r.data && Array.isArray(r.data.blessings));
-        return workerOk;
+        var ok = !!(r.ok && r.data && Array.isArray(r.data.blessings));
+        setWorkerOk(ok);
+        return ok;
       })
       .catch(function () {
-        workerOk = false;
+        setWorkerOk(false);
         return false;
       });
   }
 
-  /* ---------- Auth ---------- */
-
-  function registerLocal(nickname, passwordHash, note) {
-    var users = readLocalUsers();
-    var key = nickname.toLowerCase();
-    if (users[key]) return Promise.reject(new Error("该昵称已在本机注册"));
-    users[key] = {
-      nickname: nickname,
-      passwordHash: passwordHash,
-      note: note || "",
-      createdAt: new Date().toISOString(),
-    };
-    writeLocalUsers(users);
-    return Promise.resolve({ mode: "local", nickname: nickname });
-  }
-
-  function loginLocal(nickname, passwordHash) {
-    var users = readLocalUsers();
-    var u = users[nickname.toLowerCase()];
-    if (!u || String(u.passwordHash).toLowerCase() !== passwordHash) {
-      return Promise.reject(new Error("账号或密码不正确"));
-    }
-    var sess = {
-      nickname: u.nickname,
-      token: "local-" + uuid(),
-      mode: "local",
-    };
-    writeSession(sess);
-    return Promise.resolve(sess);
-  }
-
-  function doRegister(nickname, password, note) {
-    nickname = normalizeNick(nickname);
-    note = String(note || "").trim().slice(0, 80);
-    if (!isValidNick(nickname)) return Promise.reject(new Error("昵称需 2–16 字，可用中文/字母/数字"));
-    if (String(password || "").length < cfg().minPasswordLen) {
-      return Promise.reject(new Error("密码至少 " + cfg().minPasswordLen + " 位"));
-    }
-    if (bannedHit(nickname) || bannedHit(note)) {
-      return Promise.reject(new Error("内容不合规，请换个昵称或备注"));
-    }
-    return sha256Hex(password).then(function (hash) {
-      function afterLocal() {
-        return registerLocal(nickname, hash, note).then(function () {
-          return loginLocal(nickname, hash);
-        });
-      }
-      if (workerOk === false) return afterLocal();
-      return api("/register", {
-        method: "POST",
-        body: { nickname: nickname, passwordHash: hash, note: note },
-      })
-        .then(function (r) {
-          if (r.ok && r.data && r.data.ok) {
-            workerOk = true;
-            return api("/login", {
-              method: "POST",
-              body: { nickname: nickname, passwordHash: hash },
-            }).then(function (lr) {
-              if (lr.ok && lr.data && lr.data.token) {
-                var sess = {
-                  nickname: lr.data.nickname || nickname,
-                  token: lr.data.token,
-                  mode: "remote",
-                };
-                writeSession(sess);
-                // mirror local for offline fallback
-                try {
-                  registerLocal(nickname, hash, note).catch(function () {});
-                } catch (e) {}
-                return sess;
-              }
-              return Promise.reject(new Error((lr.data && lr.data.error) || "登录失败"));
-            });
-          }
-          if (r.status === 409) return Promise.reject(new Error(r.data.error || "昵称已被注册"));
-          // Worker missing / error → local
-          workerOk = false;
-          return afterLocal();
-        })
-        .catch(function (err) {
-          if (err && err.message && err.message.indexOf("昵称") !== -1) throw err;
-          workerOk = false;
-          return afterLocal();
-        });
-    });
-  }
-
-  function doLogin(nickname, password) {
-    nickname = normalizeNick(nickname);
-    if (!isValidNick(nickname)) return Promise.reject(new Error("请输入有效昵称"));
-    if (!password) return Promise.reject(new Error("请输入密码"));
-    return sha256Hex(password).then(function (hash) {
-      function localPath() {
-        return loginLocal(nickname, hash);
-      }
-      if (workerOk === false) return localPath();
-      return api("/login", {
-        method: "POST",
-        body: { nickname: nickname, passwordHash: hash },
-      })
-        .then(function (r) {
-          if (r.ok && r.data && r.data.token) {
-            workerOk = true;
-            var sess = {
-              nickname: r.data.nickname || nickname,
-              token: r.data.token,
-              mode: "remote",
-            };
-            writeSession(sess);
-            return sess;
-          }
-          // try local
-          return localPath().catch(function () {
-            return Promise.reject(new Error((r.data && r.data.error) || "账号或密码不正确"));
-          });
-        })
-        .catch(function () {
-          workerOk = false;
-          return localPath();
-        });
-    });
-  }
-
-  function doLogout() {
-    var s = readSession();
-    writeSession(null);
-    if (s && s.mode === "remote" && s.token) {
-      api("/logout", { method: "POST", body: { token: s.token } }).catch(function () {});
-    }
-    return Promise.resolve();
-  }
-
-  /* ---------- Blessings ---------- */
-
   function loadSeed() {
-    return fetch("content/mazu-blessings.json?v=20260916r2", { cache: "no-store" })
+    return fetch("content/mazu-blessings.json?v=20260916r3", { cache: "no-store" })
       .then(function (r) {
         return r.ok ? r.json() : { blessings: [] };
       })
@@ -404,7 +239,7 @@
         blessings: mergeWall(pair[0], local, pair[1]),
         sharedCount: (pair[0] || []).length,
         localCount: local.length,
-        workerOk: !!workerOk,
+        workerOk: !!getWorkerOk(),
       };
     });
   }
@@ -436,6 +271,7 @@
       return b;
     }
 
+    var workerOk = getWorkerOk();
     if (s.mode === "remote" && s.token && workerOk !== false) {
       return api("/blessings", {
         method: "POST",
@@ -453,7 +289,6 @@
           if (r.status === 429) {
             return Promise.reject(new Error((r.data && r.data.error) || "祈福过于频繁"));
           }
-          // fallback local
           var b = saveLocal();
           b._hint = (r.data && r.data.error) || "共享墙暂不可用，已存为本机留言";
           return b;
@@ -468,8 +303,6 @@
 
     return Promise.resolve(saveLocal());
   }
-
-  /* ---------- UI ---------- */
 
   function formatTime(iso) {
     if (!iso) return "";
@@ -507,20 +340,12 @@
 
   function renderAuth() {
     var s = readSession();
-    var guest = $("mazuGuestPanel");
-    var user = $("mazuUserPanel");
     var postLock = $("mazuPostLock");
     var postForm = $("mazuPostForm");
-    var nameEl = $("mazuUserName");
     if (s && s.nickname) {
-      if (guest) guest.hidden = true;
-      if (user) user.hidden = false;
       if (postLock) postLock.hidden = true;
       if (postForm) postForm.hidden = false;
-      if (nameEl) nameEl.textContent = s.nickname + (s.mode === "local" ? " · 本机" : "");
     } else {
-      if (guest) guest.hidden = false;
-      if (user) user.hidden = true;
       if (postLock) postLock.hidden = false;
       if (postForm) postForm.hidden = true;
     }
@@ -540,11 +365,7 @@
         (state && state.workerOk ? " · 含共享墙" : " · 当前以本机/示例为主");
     }
     if (hint) {
-      if (state && state.workerOk) {
-        hint.hidden = true;
-      } else {
-        hint.hidden = false;
-      }
+      hint.hidden = !!(state && state.workerOk);
     }
     if (!blessings.length) {
       list.innerHTML = '<li class="mazu-empty">墙上一时还空着，登录后留下你的第一句祈福吧。</li>';
@@ -575,24 +396,6 @@
       .join("");
   }
 
-  function setAuthTab(tab) {
-    var loginForm = $("mazuLoginForm");
-    var regForm = $("mazuRegisterForm");
-    var tabLogin = $("mazuTabLogin");
-    var tabReg = $("mazuTabRegister");
-    var isLogin = tab !== "register";
-    if (loginForm) loginForm.hidden = !isLogin;
-    if (regForm) regForm.hidden = isLogin;
-    if (tabLogin) {
-      tabLogin.classList.toggle("is-active", isLogin);
-      tabLogin.setAttribute("aria-selected", isLogin ? "true" : "false");
-    }
-    if (tabReg) {
-      tabReg.classList.toggle("is-active", !isLogin);
-      tabReg.setAttribute("aria-selected", !isLogin ? "true" : "false");
-    }
-  }
-
   function refresh() {
     renderAuth();
     return loadWall().then(function (state) {
@@ -601,58 +404,29 @@
     });
   }
 
-  function bind() {
-    var tabLogin = $("mazuTabLogin");
-    var tabReg = $("mazuTabRegister");
-    if (tabLogin) tabLogin.addEventListener("click", function () { setAuthTab("login"); });
-    if (tabReg) tabReg.addEventListener("click", function () { setAuthTab("register"); });
-
-    var loginForm = $("mazuLoginForm");
-    if (loginForm) {
-      loginForm.addEventListener("submit", function (e) {
-        e.preventDefault();
-        var nick = ($("mazuLoginNick") || {}).value;
-        var pass = ($("mazuLoginPass") || {}).value;
-        doLogin(nick, pass)
-          .then(function () {
-            toast("登录成功");
-            loginForm.reset();
-            return refresh();
-          })
-          .catch(function (err) {
-            toast((err && err.message) || "登录失败");
-          });
-      });
-    }
-
-    var regForm = $("mazuRegisterForm");
-    if (regForm) {
-      regForm.addEventListener("submit", function (e) {
-        e.preventDefault();
-        var nick = ($("mazuRegNick") || {}).value;
-        var pass = ($("mazuRegPass") || {}).value;
-        var note = ($("mazuRegNote") || {}).value;
-        doRegister(nick, pass, note)
-          .then(function () {
-            toast("注册并已登录");
-            regForm.reset();
-            return refresh();
-          })
-          .catch(function (err) {
-            toast((err && err.message) || "注册失败");
-          });
-      });
-    }
-
-    var btnLogout = $("mazuLogout");
-    if (btnLogout) {
-      btnLogout.addEventListener("click", function () {
-        doLogout().then(function () {
-          toast("已退出");
+  function openAuthModal(tab) {
+    var a = auth();
+    if (a && a.openModal) {
+      a.openModal({
+        tab: tab || "login",
+        onSuccess: function () {
+          toast("登录成功");
           refresh();
-        });
+        },
       });
+      return;
     }
+    toast("请稍候，登录组件加载中…");
+  }
+
+  function bind() {
+    document.querySelectorAll("[data-mazu-goto]").forEach(function (el) {
+      el.addEventListener("click", function (e) {
+        e.preventDefault();
+        var t = el.getAttribute("data-mazu-goto");
+        openAuthModal(t === "register" ? "register" : "login");
+      });
+    });
 
     var postForm = $("mazuPostForm");
     var textArea = $("mazuPostText");
@@ -670,6 +444,11 @@
     if (postForm) {
       postForm.addEventListener("submit", function (e) {
         e.preventDefault();
+        var s = readSession();
+        if (!s || !s.nickname) {
+          openAuthModal("login");
+          return;
+        }
         var text = textArea ? textArea.value : "";
         postBlessing(text)
           .then(function (b) {
@@ -679,26 +458,38 @@
             return refresh();
           })
           .catch(function (err) {
-            toast((err && err.message) || "发送失败");
+            var msg = (err && err.message) || "发送失败";
+            toast(msg);
+            if (/登录/.test(msg)) openAuthModal("login");
           });
       });
     }
 
-    document.querySelectorAll("[data-mazu-goto]").forEach(function (el) {
-      el.addEventListener("click", function (e) {
-        e.preventDefault();
-        var t = el.getAttribute("data-mazu-goto");
-        setAuthTab(t === "register" ? "register" : "login");
-        var box = $("mazuAuthCard");
-        if (box) box.scrollIntoView({ behavior: "smooth", block: "start" });
-      });
+    document.addEventListener("chinapte:auth", function () {
+      refresh();
     });
+  }
+
+  function waitAuthThen(fn) {
+    if (auth()) {
+      fn();
+      return;
+    }
+    var n = 0;
+    var t = setInterval(function () {
+      n++;
+      if (auth() || n > 40) {
+        clearInterval(t);
+        fn();
+      }
+    }, 50);
   }
 
   function init() {
     bind();
-    setAuthTab("login");
-    refresh();
+    waitAuthThen(function () {
+      refresh();
+    });
   }
 
   if (document.readyState === "loading") {
