@@ -4,16 +4,7 @@
 | 日期 | 选题桶 | 标题 | 备注 |
 |------|--------|------|------|
 | 2026-09-17 | PTE技巧 | WFD 别死磕整句！先抓这 3 个锚点 | 首发测试 |
-
-## Next queued (2026-09-18) · FQ-1 混入
-- Bucket: 行业英语 × **福清同乡楔子**
-- Draft title (A·主推): 福清老乡澳新橱柜｜别只会说 wood
-- Draft title (B·对照备用): 澳新橱柜工地高频英语｜别只会说 wood
-- Angle: 原 cabinet vocab + 同乡钩子（cabinet 尚未发布 → 直接混入，不另插队）
-- Tags Mix A: #福清 #福清人 #澳洲打工 #橱柜 #工地英语
-- slug: `xhs-cabinet-vocab` → `/industry-cabinet.html`
-- Status: ready for daily 19:30 routine（见 posting-time-insights）
-- 48h check: Saves/Views + 同乡信号 → 记入 `xhs-fuqing-playbook.md` 实验记录
+| 2026-09-17 | 行业英语×福清同乡 | 福清老乡澳新橱柜｜别只会说 wood（或 澳新橱柜…） | **PUBLISHED** · FQ-1 · 审核中 · https://www.xiaohongshu.com/explore/6aabdee50000000019030aae · slug `xhs-cabinet-vocab` → `/industry-cabinet.html` · 48h: Saves/Views+同乡信号 → `xhs-fuqing-playbook.md` |
 
 ## After cabinet (next Fuqing-angled)
 - FQ-A `xhs-fq-site5`：福清老乡去澳新｜工长这 5 句先听懂
