@@ -7,6 +7,30 @@
 
 ---
 
+## 0. 发布通道（API 主 · 浏览器备）
+
+| 优先级 | 通道 | 说明 |
+|--------|------|------|
+| **P0 主路径** | **Content Posting API** | 一次性 OAuth 后 agent 持 refresh_token 日更发布；见 `growth/tiktok-api-playbook.md` + `growth/tiktok-api/publish.mjs` |
+| P1 备援 | 手机 App 上传 | PACKAGE.md 交人工；API scope/审计未通时 |
+| P2 末选 | Sticky browser | **仅** `/home/box/tiktok-chrome-profile`；禁止用默认/共享 profile；会话掉线优先修 API 而非重登 |
+
+**Session hygiene**
+- 浏览器只作 fallback；不在共享 Chrome 里登 @chinapte。
+- Token 只存 `/home/box/secrets/tiktok/`（`.env` / `tokens.json`），**永不进 git**。
+- Redirect URI：`https://chinapte.net/oauth/tiktok-callback.html`
+- 未审计 app：Direct Post 用 `--privacy SELF_ONLY`；公开需 TikTok audit。
+- 日常命令：`node growth/tiktok-api/publish.mjs --dry-run --video … --caption "…"`
+
+**Agent routine（发布日）**
+1. 确认成片有声（silent = bug）。
+2. `publish.mjs --dry-run` → 有 token 则 `--privacy SELF_ONLY`（或 audit 后公开）。
+3. 失败再考虑 App / browser fallback。
+4. 写入 `tiktok-posted-log.md`。
+
+
+---
+
 ## 1. 发帖节奏（Cadence）
 
 | 频率 | 内容类型 | 来源 |
@@ -192,4 +216,4 @@
 
 ---
 
-*版本：2026-09-17c · NZ 华人主受众 · 日更建议 15:00 · 与 XHS 防重叠 · 合规措辞精简*
+*版本：2026-09-17d · API 主路径 · NZ 华人主受众 · 日更建议 15:00 · 与 XHS 防重叠 · 合规措辞精简*

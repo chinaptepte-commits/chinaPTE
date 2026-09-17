@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>TikTok OAuth callback · chinaPTE</title>
+  <style>
+    body { font-family: system-ui, sans-serif; max-width: 40rem; margin: 2rem auto; padding: 0 1rem; line-height: 1.5; }
+    code, pre { background: #f4f4f5; padding: 0.2em 0.4em; border-radius: 4px; word-break: break-all; }
+    pre { padding: 1rem; overflow-x: auto; }
+    .ok { color: #166534; }
+    .err { color: #991b1b; }
+    .hint { color: #52525b; font-size: 0.9rem; }
+  </style>
+</head>
+<body>
+  <h1>TikTok OAuth · chinaPTE</h1>
+  <p class="hint">One-time developer authorize callback. Copy the <code>code</code> below into the agent token exchange — do not share publicly.</p>
+  <div id="out">Parsing…</div>
+  <script>
+    (function () {
+      var p = new URLSearchParams(location.search);
+      var code = p.get('code');
+      var state = p.get('state');
+      var scopes = p.get('scopes') || p.get('scope');
+      var err = p.get('error');
+      var desc = p.get('error_description');
+      var el = document.getElementById('out');
+      if (err) {
+        el.innerHTML = '<p class="err"><strong>Error:</strong> ' + err + '</p><p>' + (desc || '') + '</p>';
+        return;
+      }
+      if (!code) {
+        el.innerHTML = '<p class="err">No <code>code</code> in query. Open this page only via TikTok authorize redirect.</p>';
+        return;
+      }
+      el.innerHTML =
+        '<p class="ok"><strong>Authorization code received.</strong> Hand this to the agent once; then close this tab.</p>' +
+        '<p><strong>code</strong></p><pre id="code">' + code + '</pre>' +
+        (scopes ? '<p><strong>scopes</strong></p><pre>' + scopes + '</pre>' : '') +
+        (state ? '<p><strong>state</strong></p><pre>' + state + '</pre>' : '') +
+        '<p class="hint">Agent exchanges code at POST https://open.tiktokapis.com/v2/oauth/token/ then stores tokens under /home/box/secrets/tiktok/ (never git).</p>';
+    })();
+  </script>
+</body>
+</html>

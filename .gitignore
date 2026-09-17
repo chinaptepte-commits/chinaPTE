@@ -1,1 +1,7 @@
 _build/
+
+# TikTok / agent secrets (belt-and-suspenders; real secrets live under /home/box/secrets/)
+**/.env
+!**/.env.example
+**/tokens.json
+**/client_secret*

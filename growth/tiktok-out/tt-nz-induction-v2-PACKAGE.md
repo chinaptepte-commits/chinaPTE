@@ -1,6 +1,6 @@
 # TikTok 上传包 · 2026-09-17 · tt-nz-induction-v2
 
-> 状态：**ready-for-parent-reupload · AUDIO FIX**（手机 App 上传；本包不代发）
+> 状态：**ready · AUDIO FIX** · **优先 Content Posting API**（`growth/tiktok-api/publish.mjs`）；App/浏览器仅 fallback
 > ⚠️ **silent v2 为缺陷（非故意）** —— 已 remake 带中文口播+轻 BGM；请用下方 **audio** 文件重传。  
 > 选题：行业英语 · NZ site induction（与当日 XHS 错开）  
 > 时长：25.0s · 1080×1920 · Remotion kinetic · **有音轨（AAC stereo）**  
@@ -48,7 +48,8 @@ PPE / hard hat / hazard / scaffold / emergency exit
 
 ## 上传检查清单
 
-- [ ] TikTok **手机 App** 上传
+- [ ] **优先 API**：`node growth/tiktok-api/publish.mjs --dry-run --video growth/tiktok-out/tt-nz-induction-v2-audio-2026-09-17.mp4`（见 `tiktok-api-playbook.md`）
+- [ ] API 未通时：TikTok **手机 App** 上传
 - [ ] 视频：**`tt-nz-induction-v2-audio-2026-09-17.mp4`**（勿用无声 v2）
 - [ ] 封面：`tt-nz-induction-v2-cover.jpg`（或 App 截 Hook 帧）
 - [ ] 粘贴上方文案区

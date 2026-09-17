@@ -1,0 +1,10 @@
+# Never commit TikTok OAuth tokens or client secrets
+.env
+.env.*
+!.env.example
+tokens.json
+*.token
+*.secret
+client_secret*
+access_token*
+refresh_token*
