@@ -52,6 +52,15 @@
 
 ---
 
+## 对标爆款（发前 5 分钟）
+
+每条 TikTok 拍摄/生成前，先对标再动刀（详见当日 `growth/tiktok-out/*-BENCHMARK.md` 若有）：
+
+- **搜 3 条**：同垂类 TikTok / 小红书 / Shorts 高互动样本（华人打工英语、工地安全、NZ/AU 场景），只记钩子句 + 前 3 秒画面，不抄旁白全文。
+- **拆 4 点**：钩子类型（痛点/数字/问句）、屏上字数（≤12 字/卡）、切镜节奏（是否 2–3s 一打断）、CTA 软硬。
+- **写 1 句对标结论**：本条要「赢」在哪（更快钩子 / 更大字 / 更短 beats），写进 PACKAGE.md。
+- **禁区**：不刮盗版 PTE 机经；不承诺代考/保分；对标的是节奏与信息密度，不是话术照搬。
+
 ## 3. 创意标准（Creative · 必读）
 
 拍前 / 生成视频前加载 skill：**`short-form-social-video`**（`sand-data/workflows/short-form-social-video`）。
