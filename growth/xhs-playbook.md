@@ -147,7 +147,31 @@
 
 ---
 
-*版本：2026-09-17c · 发布时间 Insights · 与站点 UTM / 分享条同批 · 合规措辞精简*
+
+
+---
+
+## 福清人获客（楔子指针）
+
+详细 ICP / 钩子 / 标签 / A/B / kill：→ **`growth/xhs-fuqing-playbook.md`**  
+草稿：→ `xhs-content-bank.md`「福清同乡」专区 + 橱柜混入版（FQ-1）。
+
+**一句话策略**：用「福清老乡 · 澳新工地够用英语」打穿侨乡蓝领路径，产品落点是免费行业英语 + PTE 碎片练，软链 chinapte.net。
+
+### 验证闭环（post → 48h → keep/kill/iterate）
+
+1. **Post**：从福清桶发 1 条；记 slug、标题变体（A/B）、hashtag mix、发帖时刻（PT）。  
+2. **48h metrics**：曝光、收藏、评论、主页访问；另计「同乡信号」（评论/搜索含福清、融、港头、同乡、表亲在澳新等）。  
+3. **Decision**  
+   - **Keep**：Saves/Views ≥ 3% 或同乡信号 ≥ 2 → 复制结构换场景（油漆/安全/护理）。  
+   - **Iterate**：有曝光但收藏弱 → 只改标题/封面；同乡信号为 0 → 身份词移入正文首行再测。  
+   - **Kill**：Saves/Views < 1% 且连续 3 篇无同乡信号 → 暂停标题点名福清 2 周（见福清 playbook kill 表）。  
+4. **Log**：结果写回 `xhs-posted-log.md` + `xhs-fuqing-playbook.md` 实验记录。
+
+站内归因：`utm_campaign=xhs-fq-*` 或橱柜混入仍用 `xhs-cabinet-vocab`（便于和历史橱柜帖对比）。
+
+
+*版本：2026-09-17d · 福清人楔子指针 · 发布时间 Insights · UTM/分享条*
 
 ## Cadence (updated 2026-09-17)
 - **1 图文 / 天**（新号起号常见最佳密度；同日不发第二篇）
@@ -155,6 +179,6 @@
 
 ## Anti-homogenization
 - 连续笔记不得同选题桶；近 7 篇标题/开头/封面模板不得复用
-- 每天轮换：PTE技巧 / 行业英语 / 备考节奏 / 轻文化 / 工具入口
+- 每天轮换：PTE技巧 / 行业英语 / 备考节奏 / 轻文化 / 工具入口 / **福清同乡（楔子周可占 1–2 条）**
 - 记录见 `xhs-posted-log.md`
 
