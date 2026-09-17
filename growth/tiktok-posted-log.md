@@ -4,6 +4,7 @@
 > 节奏：每天 **11:30**（Asia/Shanghai）1 条。  
 > slug 前缀：`tt-…`
 
+> 流程：发前自观数据+对标爆款发布时间
 | 日期 | 选题桶 | 标题 | slug | 备注 |
 |------|--------|------|------|------|
 | 2026-09-17 | 行业英语 | NZ 工地 induction 听不懂？先抓这 5 个词 | tt-nz-induction | 首包 ready-for-user-upload；手机 App 上传；与当日 XHS WFD 错开 |
