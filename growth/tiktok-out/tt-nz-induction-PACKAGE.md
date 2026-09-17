@@ -49,7 +49,7 @@ PPE / hard hat / hazard / scaffold / emergency exit
 - [ ] 粘贴上方「文案区」
 - [ ] Bio / 主页链接确认 UTM：  
   `https://chinapte.net/industry-construction.html?utm_source=tiktok&utm_medium=social&utm_campaign=tt-nz-induction`
-- [ ] 发后评论置顶：`免费站见主页链接`（勿加法律免责块）
+- [ ] 发后评论置顶：`免费站见主页链接`
 - [ ] 建议发布时间：当天 **11:30**（Asia/Shanghai）
 
 ---

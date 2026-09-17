@@ -2,7 +2,7 @@
 
 > 用途：零成本获客。每条含标题、正文、话题标签、封面建议、UTM campaign slug。  
 > 站内链接模板：`https://chinapte.net/<path>?utm_source=xiaohongshu&utm_medium=social&utm_campaign=<slug>`  
-> **合规红线**：永不做代考、不承诺分数/包过、不恐吓贩卖焦虑；妈祖内容保持文化敬意，不作迷信推销。合规靠不做违规承诺，**不要**在每条笔记末尾刷「无代考」「无保分」。
+> **合规红线**：永不做代考、不承诺分数/包过、不恐吓贩卖焦虑；妈祖内容保持文化敬意，不作迷信推销。
 
 ---
 
@@ -191,5 +191,5 @@
 
 1. 发帖前把正文末尾换成 `ChinaPTEUtm.buildUrl(path, { campaign: slug })` 或站内「复制小红书文案」按钮产物。  
 2. 同一 slug 可 A/B 换封面，**不要**改 slug（方便周报归因）。  
-3. 评论区统一回复：免费站链接 + 可去练习中心（**不要**刷「无代考无保分」）；导流咨询用 `consult.html`（另配 utm_content=comment）。  
-4. 创意：图文封面要强钩子；若发短视频，遵循 skill `short-form-social-video`（kinetic text，禁静态幻灯 + 法律免责收尾）。  
+3. 评论区统一回复：免费站链接 + 可去练习中心；导流咨询用 `consult.html`（另配 utm_content=comment）。  
+4. 创意：图文封面要强钩子；若发短视频，遵循 skill `short-form-social-video`（kinetic text，禁静态幻灯）。  
