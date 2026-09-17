@@ -490,8 +490,10 @@
         (state && state.workerOk ? " · 含共享墙" : " · 本机/示例") +
         " · 神龛海浪弹幕同步";
     }
+    /* Setup / Cloudflare banners removed — never show empty hint chrome */
     if (hint) {
-      hint.hidden = !!(state && state.workerOk);
+      hint.hidden = true;
+      hint.textContent = "";
     }
     if (!blessings.length) {
       list.innerHTML = '<li class="mazu-empty">神龛上一时还安静，登录后留下你的第一句祈福吧。</li>';

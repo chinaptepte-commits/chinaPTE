@@ -3,7 +3,7 @@
  */
 (function () {
   "use strict";
-  var ASSET_VER = "20260916r3";
+  var ASSET_VER = "20260917r1";
   var ITEMS = [
     { href: "index.html", label: "首页", match: ["index.html", ""] },
     { href: "practice.html", label: "练习中心", match: ["practice.html", "wfd.html", "rs.html", "ra.html", "rl.html", "asq.html", "sst.html", "hiw.html", "di.html", "swt.html", "essay.html", "reading.html", "listening.html", "体验全部功能.html", "chinaPTE-体验全部功能.html", "chinaPTE-随身听.html", "chinaPTE-RS随身听.html"] },
@@ -63,10 +63,26 @@
     return s;
   }
 
+  function loadUtm() {
+    if (window.ChinaPTEUtm) return;
+    if (document.querySelector("script[data-chinapte-utm]")) return;
+    loadScript("utm.js?v=" + ASSET_VER, { "data-chinapte-utm": "1" });
+  }
+
   function loadAnalytics() {
     if (window.ChinaPTEAnalytics) return;
     if (document.querySelector("script[data-chinapte-analytics]")) return;
     loadScript("analytics.js?v=" + ASSET_VER, { "data-chinapte-analytics": "1" });
+  }
+
+  function loadXhsShare() {
+    if (!document.querySelector("[data-xhs-share]")) return;
+    if (window.ChinaPTEXHS) {
+      try { window.ChinaPTEXHS.init(); } catch (e) {}
+      return;
+    }
+    if (document.querySelector("script[data-chinapte-xhs]")) return;
+    loadScript("xhs-share.js?v=" + ASSET_VER, { "data-chinapte-xhs": "1" });
   }
 
   function loadAuth() {
@@ -83,7 +99,9 @@
 
   function boot() {
     render();
+    loadUtm();
     loadAnalytics();
+    loadXhsShare();
     loadAuth();
     if (window.ChinaPTEAuth) {
       try { window.ChinaPTEAuth.renderAccountChip(); } catch (e) {}

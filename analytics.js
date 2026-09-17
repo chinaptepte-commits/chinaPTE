@@ -67,7 +67,7 @@
   var path = (location.pathname || "/") + (location.search || "");
 
   function baseProps() {
-    return {
+    var props = {
       sessionId: sessionId,
       path: path,
       referrer: document.referrer || "",
@@ -75,6 +75,13 @@
       ts: new Date().toISOString(),
       href: location.href || "",
     };
+    try {
+      if (global.ChinaPTEUtm && typeof global.ChinaPTEUtm.attributionProps === "function") {
+        var utm = global.ChinaPTEUtm.attributionProps();
+        if (utm) Object.assign(props, utm);
+      }
+    } catch (e) {}
+    return props;
   }
 
   function track(type, props) {
