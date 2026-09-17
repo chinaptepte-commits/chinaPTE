@@ -20,8 +20,7 @@ chinaPTE 有建筑专题可跟读——链接在主页，免费练。
 NZ 工地 induction 听不懂？先抓这 5 个安全词 👷  
 PPE / hard hat / hazard / scaffold / emergency exit  
 听懂比多干半小时更重要。  
-建筑专题免费跟读 → 完整链接在主页（chinapte.net）  
-无代考 · 无保分 · 只练英语
+建筑专题免费跟读 → 完整链接在主页（chinapte.net）
 
 #新西兰打工 #工地英语 #PTE #华人NZ #行业英语 #奥克兰 #新西兰华人 #siteinduction #打工英语 #chinaPTE
 
@@ -50,7 +49,7 @@ PPE / hard hat / hazard / scaffold / emergency exit
 - [ ] 粘贴上方「文案区」
 - [ ] Bio / 主页链接确认 UTM：  
   `https://chinapte.net/industry-construction.html?utm_source=tiktok&utm_medium=social&utm_campaign=tt-nz-induction`
-- [ ] 发后评论置顶：`免费站见主页链接 · 无代考无保分`
+- [ ] 发后评论置顶：`免费站见主页链接`（勿加法律免责块）
 - [ ] 建议发布时间：当天 **11:30**（Asia/Shanghai）
 
 ---
