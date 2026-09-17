@@ -1,9 +1,11 @@
 # TikTok 上传包 · 2026-09-18 · tt-next（RS 3 秒法则）
 
-> 状态：**ready-for-cold-start · DO NOT PUBLISH YET**（明早 15:00 冷启动；本包不代发）  
+> 状态：**ready-for-cold-start · DO NOT PUBLISH YET · AUDIO FIXED**（明早 15:00 冷启动；本包不代发）
+> ⚠️ 原 silent 成片为缺陷；已覆写为有声版（口播+轻 BGM）。**silent=bug**。  
 > 选题：PTE Speaking · RS 跟读 3 秒法则（与前日 NZ induction 工地词错开）  
-> 时长：24.0s · 1080×1920 · Remotion kinetic  
+> 时长：24.0s · 1080×1920 · Remotion kinetic · **有音轨（AAC stereo）**  
 > 对标结论：赢在「3 秒关麦」死亡钩 + 三法则一词一切 + 流利优先金句（见 BENCHMARK）
+> 音频：edge-tts 中文口播（XiaoxiaoNeural）+ soft BGM @ ~-18dB
 
 ---
 
@@ -22,7 +24,7 @@
 
 ---
 
-## 口播稿（可选配音 · ~24s）
+## 口播稿（已烧入音轨 · ~24s）
 
 PTE RS 卡了三秒？录音直接没了。  
 跟读三秒法则：一，Recording 一亮就开口；二，抓主干——主谓宾和数字；三，忘词不停，别沉默想。  
@@ -50,7 +52,7 @@ RS 跟读 → 完整链接在主页
 
 - [ ] **明天 15:00** 冷启动（用户指定；勿提前发）
 - [ ] TikTok **手机 App** 上传
-- [ ] 视频：`tt-next-2026-09-18.mp4`
+- [ ] 视频：`tt-next-2026-09-18.mp4`（已有声；备份同内容 `tt-next-2026-09-18-audio.mp4`）
 - [ ] 封面：`tt-next-2026-09-18-cover.jpg`（或 App 截 Hook 帧）
 - [ ] 粘贴上方文案区
 - [ ] Bio UTM：`https://chinapte.net/rs.html?utm_source=tiktok&utm_medium=social&utm_campaign=tt-rs-3sec-20260918`
@@ -61,7 +63,10 @@ RS 跟读 → 完整链接在主页
 
 ## 文件
 
-- 视频：`growth/tiktok-out/tt-next-2026-09-18.mp4`
+- 视频（有声）：`growth/tiktok-out/tt-next-2026-09-18.mp4`
+- 视频（同内容备份）：`growth/tiktok-out/tt-next-2026-09-18-audio.mp4`
 - 封面：`growth/tiktok-out/tt-next-2026-09-18-cover.jpg`
 - 对标：`growth/tiktok-out/tt-next-BENCHMARK.md`
-- 工程：`/workspace/chinapte-tt-v2`（Remotion · composition `RsThreeSecond`）
+- 工程：`growth/remotion-tt-v2`（vendored；工作区亦可 `/workspace/chinapte-tt-v2`）（Remotion · composition `RsThreeSecond` · **AudioTracks 默认开**）
+- 音轨素材：`growth/tiktok-out/audio/`（rs-vo / bgm-soft / rs-mix）
+- **规则：silent TikTok = bug，禁止再发无声成片**
