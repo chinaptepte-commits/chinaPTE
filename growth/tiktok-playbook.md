@@ -64,6 +64,7 @@
 ## Fastlane 穿插
 
 - **Free Fastlane** = 有限探帖（probe）/ 排期备援，不替代日更主路径。
+- **额度与省分**：详见 [`fastlane-quota-playbook.md`](./fastlane-quota-playbook.md)（Free ≈ **10 AI Studio credits**；**4 cr/图 · 10 cr/秒视频**；周探帖 **≤1–2**；赢了用 Remotion 复刻，优先上传自制片排期）。
 - **打赢再复刻结构**：某条 Fastlane 帖在播放/收藏上胜出时，agent 用 Remotion **只复刻 STRUCTURE**（钩子、节奏、版式），填入 **自有 chinaPTE 干货** + **audio preflight**——**禁止整段照搬**；省 Fastlane 额度。
 - **穿插节奏**：Fastlane 探帖与 agent 自制片交错排期，不连发堆量。
 - **合规不变**：禁止代考/保分等 spam；红线同 §8。
@@ -225,4 +226,4 @@
 
 ---
 
-*版本：2026-09-18 · Fastlane 穿插 · API 主路径 · NZ 华人主受众 · 日更建议 15:00 · 与 XHS 防重叠 · 合规措辞精简*
+*版本：2026-09-18 · Fastlane 额度指针 → fastlane-quota-playbook · API 主路径 · NZ 华人主受众 · 日更建议 15:00 · 与 XHS 防重叠 · 合规措辞精简*
