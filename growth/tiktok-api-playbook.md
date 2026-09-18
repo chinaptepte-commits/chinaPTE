@@ -5,6 +5,8 @@
 Account: **@chinapte / chinaPTE**  
 One-time human OAuth → agent owns refresh + publish forever (until refresh_token revoked / 365d).
 
+Fastlane probe / 结构复刻节奏：见 `growth/tiktok-playbook.md` → **Fastlane 穿插**（省额度；合规红线不变）。
+
 Docs consulted (2026):
 - [Get Started — Direct Post](https://developers.tiktok.com/doc/content-posting-api-get-started)
 - [Direct Post reference](https://developers.tiktok.com/doc/content-posting-api-reference-direct-post)
