@@ -90,9 +90,10 @@
   - Caption: `growth/tiktok-out/tt-care-3lines-v2-2026-09-19-CAPTION.txt`
   - Package: `growth/tiktok-out/tt-care-3lines-v2-2026-09-19-PACKAGE.md`
 
-| 2026-09-19 | 行业英语 | 第一天上班听不懂？直接丢人！ | tt-care-3lines-v2 | Remotion CareThreeLinesV2 + segmented edge-tts EN sync Δ=0ms; ffprobe PASS 16.0s; **READY — parent publish**; v1 rejected boring/desync |
+| 2026-09-19 | 行业英语 | 第一天上班听不懂？直接丢人！ | tt-care-3lines-v2 | Remotion CareThreeLinesV2 + segmented edge-tts EN sync Δ=0ms; ffprobe PASS 16.0s; **PUBLISHED** @chinapte; https://www.tiktok.com/@chinapte/video/7687172257415728404 · status under review; v1 rejected boring/desync |
 
 ## Package status 2026-09-19 (v2)
-- **tt-care-3lines-v2**: ready-for-parent-publish (do not auto-publish)
+- **tt-care-3lines-v2**: **PUBLISHED** @chinapte · status under review
+  URL: https://www.tiktok.com/@chinapte/video/7687172257415728404
   Path: `/workspace/chinaPTE-deploy/growth/tiktok-out/tt-care-3lines-v2-2026-09-19.mp4`
 
