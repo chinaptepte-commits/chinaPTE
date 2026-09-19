@@ -1,0 +1,354 @@
+{
+  "fps": 30,
+  "duration_sec": 16.8333,
+  "duration_frames": 505,
+  "timeline": [
+    {
+      "id": "hook",
+      "file": "01-hook.mp3",
+      "start": 0.0,
+      "end": 1.72,
+      "dur": 1.72,
+      "start_frame": 0,
+      "end_frame": 52
+    },
+    {
+      "id": "gap_hook",
+      "start": 1.72,
+      "end": 1.78,
+      "dur": 0.06,
+      "start_frame": 52,
+      "end_frame": 53
+    },
+    {
+      "id": "humiliate",
+      "file": "02-humiliate.mp3",
+      "start": 1.78,
+      "end": 5.0468,
+      "dur": 3.2668,
+      "start_frame": 53,
+      "end_frame": 151
+    },
+    {
+      "id": "gap_humiliate",
+      "start": 5.0468,
+      "end": 5.1268,
+      "dur": 0.08,
+      "start_frame": 151,
+      "end_frame": 154
+    },
+    {
+      "id": "bridge",
+      "file": "03-bridge.mp3",
+      "start": 5.1268,
+      "end": 6.2153,
+      "dur": 1.0885,
+      "start_frame": 154,
+      "end_frame": 186
+    },
+    {
+      "id": "gap_bridge",
+      "start": 6.2153,
+      "end": 6.3153,
+      "dur": 0.1,
+      "start_frame": 186,
+      "end_frame": 189
+    },
+    {
+      "id": "setup1",
+      "file": "04-setup1.mp3",
+      "start": 6.3153,
+      "end": 7.1454,
+      "dur": 0.8301,
+      "start_frame": 189,
+      "end_frame": 214
+    },
+    {
+      "id": "gap_setup1",
+      "start": 7.1454,
+      "end": 7.1954,
+      "dur": 0.05,
+      "start_frame": 214,
+      "end_frame": 216
+    },
+    {
+      "id": "en1",
+      "file": "05-en1.mp3",
+      "start": 7.1954,
+      "end": 8.1225,
+      "dur": 0.9271,
+      "start_frame": 216,
+      "end_frame": 244
+    },
+    {
+      "id": "gap_en1",
+      "start": 8.1225,
+      "end": 8.1825,
+      "dur": 0.06,
+      "start_frame": 244,
+      "end_frame": 245
+    },
+    {
+      "id": "zh1",
+      "file": "06-zh1.mp3",
+      "start": 8.1825,
+      "end": 9.0136,
+      "dur": 0.8311,
+      "start_frame": 245,
+      "end_frame": 270
+    },
+    {
+      "id": "gap_zh1",
+      "start": 9.0136,
+      "end": 9.1336,
+      "dur": 0.12,
+      "start_frame": 270,
+      "end_frame": 274
+    },
+    {
+      "id": "setup2",
+      "file": "07-setup2.mp3",
+      "start": 9.1336,
+      "end": 9.8623,
+      "dur": 0.7287,
+      "start_frame": 274,
+      "end_frame": 296
+    },
+    {
+      "id": "gap_setup2",
+      "start": 9.8623,
+      "end": 9.9123,
+      "dur": 0.05,
+      "start_frame": 296,
+      "end_frame": 297
+    },
+    {
+      "id": "en2",
+      "file": "08-en2.mp3",
+      "start": 9.9123,
+      "end": 10.6832,
+      "dur": 0.7709,
+      "start_frame": 297,
+      "end_frame": 320
+    },
+    {
+      "id": "gap_en2",
+      "start": 10.6832,
+      "end": 10.7432,
+      "dur": 0.06,
+      "start_frame": 320,
+      "end_frame": 322
+    },
+    {
+      "id": "zh2",
+      "file": "09-zh2.mp3",
+      "start": 10.7432,
+      "end": 11.3684,
+      "dur": 0.6252,
+      "start_frame": 322,
+      "end_frame": 341
+    },
+    {
+      "id": "gap_zh2",
+      "start": 11.3684,
+      "end": 11.4884,
+      "dur": 0.12,
+      "start_frame": 341,
+      "end_frame": 345
+    },
+    {
+      "id": "setup3",
+      "file": "10-setup3.mp3",
+      "start": 11.4884,
+      "end": 12.2306,
+      "dur": 0.7422,
+      "start_frame": 345,
+      "end_frame": 367
+    },
+    {
+      "id": "gap_setup3",
+      "start": 12.2306,
+      "end": 12.2806,
+      "dur": 0.05,
+      "start_frame": 367,
+      "end_frame": 368
+    },
+    {
+      "id": "en3",
+      "file": "11-en3.mp3",
+      "start": 12.2806,
+      "end": 13.4059,
+      "dur": 1.1253,
+      "start_frame": 368,
+      "end_frame": 402
+    },
+    {
+      "id": "gap_en3",
+      "start": 13.4059,
+      "end": 13.4659,
+      "dur": 0.06,
+      "start_frame": 402,
+      "end_frame": 404
+    },
+    {
+      "id": "zh3",
+      "file": "12-zh3.mp3",
+      "start": 13.4659,
+      "end": 14.5008,
+      "dur": 1.035,
+      "start_frame": 404,
+      "end_frame": 435
+    },
+    {
+      "id": "gap_zh3",
+      "start": 14.5008,
+      "end": 14.6008,
+      "dur": 0.1,
+      "start_frame": 435,
+      "end_frame": 438
+    },
+    {
+      "id": "payoff",
+      "file": "13-payoff.mp3",
+      "start": 14.6008,
+      "end": 15.6469,
+      "dur": 1.0461,
+      "start_frame": 438,
+      "end_frame": 469
+    },
+    {
+      "id": "gap_payoff",
+      "start": 15.6469,
+      "end": 15.7269,
+      "dur": 0.08,
+      "start_frame": 469,
+      "end_frame": 472
+    },
+    {
+      "id": "cta",
+      "file": "14-cta.mp3",
+      "start": 15.7269,
+      "end": 16.5169,
+      "dur": 0.79,
+      "start_frame": 472,
+      "end_frame": 496
+    },
+    {
+      "id": "gap_cta",
+      "start": 16.5169,
+      "end": 16.8169,
+      "dur": 0.3,
+      "start_frame": 496,
+      "end_frame": 505
+    }
+  ],
+  "en_sync": {
+    "en1": {
+      "id": "en1",
+      "file": "05-en1.mp3",
+      "start": 7.1954,
+      "end": 8.1225,
+      "dur": 0.9271,
+      "start_frame": 216,
+      "end_frame": 244
+    },
+    "en2": {
+      "id": "en2",
+      "file": "08-en2.mp3",
+      "start": 9.9123,
+      "end": 10.6832,
+      "dur": 0.7709,
+      "start_frame": 297,
+      "end_frame": 320
+    },
+    "en3": {
+      "id": "en3",
+      "file": "11-en3.mp3",
+      "start": 12.2806,
+      "end": 13.4059,
+      "dur": 1.1253,
+      "start_frame": 368,
+      "end_frame": 402
+    }
+  },
+  "zh_sync": {
+    "zh1": {
+      "id": "zh1",
+      "file": "06-zh1.mp3",
+      "start": 8.1825,
+      "end": 9.0136,
+      "dur": 0.8311,
+      "start_frame": 245,
+      "end_frame": 270
+    },
+    "zh2": {
+      "id": "zh2",
+      "file": "09-zh2.mp3",
+      "start": 10.7432,
+      "end": 11.3684,
+      "dur": 0.6252,
+      "start_frame": 322,
+      "end_frame": 341
+    },
+    "zh3": {
+      "id": "zh3",
+      "file": "12-zh3.mp3",
+      "start": 13.4659,
+      "end": 14.5008,
+      "dur": 1.035,
+      "start_frame": 404,
+      "end_frame": 435
+    }
+  },
+  "scenes": {
+    "hook": {
+      "from": 0,
+      "to": 53
+    },
+    "humiliate": {
+      "from": 53,
+      "to": 154
+    },
+    "bridge": {
+      "from": 154,
+      "to": 189
+    },
+    "setup1": {
+      "from": 189,
+      "to": 216
+    },
+    "beat1": {
+      "from": 216,
+      "to": 274
+    },
+    "setup2": {
+      "from": 274,
+      "to": 297
+    },
+    "beat2": {
+      "from": 297,
+      "to": 345
+    },
+    "setup3": {
+      "from": 345,
+      "to": 368
+    },
+    "beat3": {
+      "from": 368,
+      "to": 438
+    },
+    "payoff": {
+      "from": 438,
+      "to": 472
+    },
+    "cta": {
+      "from": 472,
+      "to": 505
+    }
+  },
+  "zh_at": {
+    "zh1": 29,
+    "zh2": 25,
+    "zh3": 36
+  }
+}
