@@ -9,6 +9,16 @@ import {
   DURATION as RS_DURATION,
   FPS as RS_FPS,
 } from "./RsThreeSecond";
+import {
+  CareThreeLines,
+  DURATION as CARE_DURATION,
+  FPS as CARE_FPS,
+} from "./CareThreeLines";
+import {
+  CareThreeLinesV2,
+  DURATION as CARE_V2_DURATION,
+  FPS as CARE_V2_FPS,
+} from "./CareThreeLinesV2";
 
 export const MyComposition = () => {
   return (
@@ -26,6 +36,22 @@ export const MyComposition = () => {
         component={RsThreeSecond}
         durationInFrames={RS_DURATION}
         fps={RS_FPS}
+        width={1080}
+        height={1920}
+      />
+      <Composition
+        id="CareThreeLines"
+        component={CareThreeLines}
+        durationInFrames={CARE_DURATION}
+        fps={CARE_FPS}
+        width={1080}
+        height={1920}
+      />
+      <Composition
+        id="CareThreeLinesV2"
+        component={CareThreeLinesV2}
+        durationInFrames={CARE_V2_DURATION}
+        fps={CARE_V2_FPS}
         width={1080}
         height={1920}
       />

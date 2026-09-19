@@ -79,3 +79,20 @@
 - Sticky `/home/box/tiktok-chrome-profile` session expired → QR/login “Verify it’s really you”.
 - No Fastlane upload attempted this run (session unknown; avoid AI Studio).
 - Unblock: (1) user complete verify in sticky Chrome, then agent re-upload same mp4; or (2) finish TikTok OAuth → `/home/box/secrets/tiktok/tokens.json`.
+
+## Incident · tt-care-3lines v1 rejected (2026-09-19)
+- **User reject:** v1 boring (classroom 普及感) + **A/V desync**.
+- v1 path: `growth/tiktok-out/tt-care-3lines-2026-09-19.mp4` (was published https://www.tiktok.com/@chinapte/video/7687163440728657173 — creative reject; replace with v2).
+- **Remake:** `tt-care-3lines-v2` retention-first hook「第一天上班听不懂？直接丢人！」· 16.0s · EN VO-locked Remotion Sequences · Δ=0ms.
+- Asset ready (parent publishes; this agent does NOT publish):
+  - Video: `growth/tiktok-out/tt-care-3lines-v2-2026-09-19.mp4`
+  - Cover: `growth/tiktok-out/tt-care-3lines-v2-2026-09-19-cover.jpg`
+  - Caption: `growth/tiktok-out/tt-care-3lines-v2-2026-09-19-CAPTION.txt`
+  - Package: `growth/tiktok-out/tt-care-3lines-v2-2026-09-19-PACKAGE.md`
+
+| 2026-09-19 | 行业英语 | 第一天上班听不懂？直接丢人！ | tt-care-3lines-v2 | Remotion CareThreeLinesV2 + segmented edge-tts EN sync Δ=0ms; ffprobe PASS 16.0s; **READY — parent publish**; v1 rejected boring/desync |
+
+## Package status 2026-09-19 (v2)
+- **tt-care-3lines-v2**: ready-for-parent-publish (do not auto-publish)
+  Path: `/workspace/chinaPTE-deploy/growth/tiktok-out/tt-care-3lines-v2-2026-09-19.mp4`
+

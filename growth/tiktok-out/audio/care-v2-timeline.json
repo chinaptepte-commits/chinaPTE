@@ -1,0 +1,269 @@
+{
+  "fps": 30,
+  "duration_sec": 14.9,
+  "duration_frames": 447,
+  "timeline": [
+    {
+      "id": "hook",
+      "file": "01-hook.mp3",
+      "start": 0.0,
+      "end": 2.4574,
+      "dur": 2.4574,
+      "start_frame": 0,
+      "end_frame": 74
+    },
+    {
+      "id": "gap_bridge",
+      "start": 2.4574,
+      "end": 2.6074,
+      "dur": 0.15,
+      "start_frame": 74,
+      "end_frame": 78
+    },
+    {
+      "id": "bridge",
+      "file": "02-bridge.mp3",
+      "start": 2.6074,
+      "end": 3.7526,
+      "dur": 1.1452,
+      "start_frame": 78,
+      "end_frame": 113
+    },
+    {
+      "id": "gap_flash1",
+      "start": 3.7526,
+      "end": 4.3026,
+      "dur": 0.55,
+      "start_frame": 113,
+      "end_frame": 129
+    },
+    {
+      "id": "en1",
+      "file": "03-en1.mp3",
+      "start": 4.3026,
+      "end": 5.2859,
+      "dur": 0.9833,
+      "start_frame": 129,
+      "end_frame": 159
+    },
+    {
+      "id": "gap_zh1",
+      "start": 5.2859,
+      "end": 5.4059,
+      "dur": 0.12,
+      "start_frame": 159,
+      "end_frame": 162
+    },
+    {
+      "id": "zh1",
+      "file": "03-zh1.mp3",
+      "start": 5.4059,
+      "end": 6.2505,
+      "dur": 0.8445,
+      "start_frame": 162,
+      "end_frame": 188
+    },
+    {
+      "id": "gap_flash2",
+      "start": 6.2505,
+      "end": 6.8005,
+      "dur": 0.55,
+      "start_frame": 188,
+      "end_frame": 204
+    },
+    {
+      "id": "en2",
+      "file": "04-en2.mp3",
+      "start": 6.8005,
+      "end": 7.625,
+      "dur": 0.8245,
+      "start_frame": 204,
+      "end_frame": 229
+    },
+    {
+      "id": "gap_zh2",
+      "start": 7.625,
+      "end": 7.745,
+      "dur": 0.12,
+      "start_frame": 229,
+      "end_frame": 232
+    },
+    {
+      "id": "zh2",
+      "file": "04-zh2.mp3",
+      "start": 7.745,
+      "end": 8.3873,
+      "dur": 0.6423,
+      "start_frame": 232,
+      "end_frame": 252
+    },
+    {
+      "id": "gap_flash3",
+      "start": 8.3873,
+      "end": 8.9373,
+      "dur": 0.55,
+      "start_frame": 252,
+      "end_frame": 268
+    },
+    {
+      "id": "en3",
+      "file": "05-en3.mp3",
+      "start": 8.9373,
+      "end": 10.1176,
+      "dur": 1.1803,
+      "start_frame": 268,
+      "end_frame": 304
+    },
+    {
+      "id": "gap_zh3",
+      "start": 10.1176,
+      "end": 10.2376,
+      "dur": 0.12,
+      "start_frame": 304,
+      "end_frame": 307
+    },
+    {
+      "id": "zh3",
+      "file": "05-zh3.mp3",
+      "start": 10.2376,
+      "end": 11.2745,
+      "dur": 1.037,
+      "start_frame": 307,
+      "end_frame": 338
+    },
+    {
+      "id": "gap_payoff",
+      "start": 11.2745,
+      "end": 11.5245,
+      "dur": 0.25,
+      "start_frame": 338,
+      "end_frame": 346
+    },
+    {
+      "id": "payoff",
+      "file": "05b-payoff.mp3",
+      "start": 11.5245,
+      "end": 13.1769,
+      "dur": 1.6524,
+      "start_frame": 346,
+      "end_frame": 395
+    },
+    {
+      "id": "gap_cta",
+      "start": 13.1769,
+      "end": 13.3569,
+      "dur": 0.18,
+      "start_frame": 395,
+      "end_frame": 401
+    },
+    {
+      "id": "cta",
+      "file": "06-cta.mp3",
+      "start": 13.3569,
+      "end": 14.2014,
+      "dur": 0.8445,
+      "start_frame": 401,
+      "end_frame": 426
+    }
+  ],
+  "en_sync": {
+    "en1": {
+      "id": "en1",
+      "file": "03-en1.mp3",
+      "start": 4.3026,
+      "end": 5.2859,
+      "dur": 0.9833,
+      "start_frame": 129,
+      "end_frame": 159
+    },
+    "en2": {
+      "id": "en2",
+      "file": "04-en2.mp3",
+      "start": 6.8005,
+      "end": 7.625,
+      "dur": 0.8245,
+      "start_frame": 204,
+      "end_frame": 229
+    },
+    "en3": {
+      "id": "en3",
+      "file": "05-en3.mp3",
+      "start": 8.9373,
+      "end": 10.1176,
+      "dur": 1.1803,
+      "start_frame": 268,
+      "end_frame": 304
+    }
+  },
+  "zh_sync": {
+    "zh1": {
+      "id": "zh1",
+      "file": "03-zh1.mp3",
+      "start": 5.4059,
+      "end": 6.2505,
+      "dur": 0.8445,
+      "start_frame": 162,
+      "end_frame": 188
+    },
+    "zh2": {
+      "id": "zh2",
+      "file": "04-zh2.mp3",
+      "start": 7.745,
+      "end": 8.3873,
+      "dur": 0.6423,
+      "start_frame": 232,
+      "end_frame": 252
+    },
+    "zh3": {
+      "id": "zh3",
+      "file": "05-zh3.mp3",
+      "start": 10.2376,
+      "end": 11.2745,
+      "dur": 1.037,
+      "start_frame": 307,
+      "end_frame": 338
+    }
+  },
+  "scenes": {
+    "hook": {
+      "from": 0,
+      "to": 78
+    },
+    "bridge": {
+      "from": 78,
+      "to": 113
+    },
+    "flash1": {
+      "from": 113,
+      "to": 129
+    },
+    "beat1": {
+      "from": 129,
+      "to": 188
+    },
+    "flash2": {
+      "from": 188,
+      "to": 204
+    },
+    "beat2": {
+      "from": 204,
+      "to": 252
+    },
+    "flash3": {
+      "from": 252,
+      "to": 268
+    },
+    "beat3": {
+      "from": 268,
+      "to": 346
+    },
+    "payoff": {
+      "from": 346,
+      "to": 401
+    },
+    "cta": {
+      "from": 401,
+      "to": 447
+    }
+  }
+}
