@@ -1,0 +1,7 @@
+file 'sil035.wav'
+file 'vo1-cn.wav'
+file 'sil025.wav'
+file 'vo2-en.wav'
+file 'sil025.wav'
+file 'vo3-cn.wav'
+file 'sil035.wav'
