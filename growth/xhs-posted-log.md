@@ -15,3 +15,9 @@
 - **FQ-B:** PUBLISHED · 审核中 · manager https://creator.rednote.com/new/note-manager · explore URL TBD
 - **care v3:** PUBLISHED · https://www.xiaohongshu.com/explore/6aae814a0000000014011b37 · slug `xhs-care-3lines-v3` · crosspost from TikTok v3
 - Next noon/evening: ≠ FQ-B 关系说明 · ≠ FQ-C 家属 · ≠ care v3 · prefer PTE技巧 (WFD/RS) or 妈祖桶
+
+| 2026-09-20 午 | PTE技巧·RS | RS 不是比语速，是比「完整复述」 | **PUBLISHED · 审核中** · 15:27 · slug `xhs-rs-tip` → `/rs.html` · manager https://creator.rednote.com/new/note-manager · package `growth/xhs-out/2026-09-20-rs-tip-PACKAGE.md` · evening 须换桶（妈祖/行业词/题库入口，勿复用 RS） |
+
+## After 2026-09-20 noon
+- **RS tip:** PUBLISHED · 审核中 · 15:27 · manager https://creator.rednote.com/new/note-manager · explore URL TBD · slug `xhs-rs-tip`
+- Next evening: ≠ RS tip · ≠ 9/19 FQ-B/FQ-C/care v3 · prefer 妈祖桶 / 行业词 / 题库入口
