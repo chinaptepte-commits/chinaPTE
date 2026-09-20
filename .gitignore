@@ -5,3 +5,6 @@ _build/
 !**/.env.example
 **/tokens.json
 **/client_secret*
+
+# talk-real-proof bulky intermediates (proof mp4 + cover kept)
+growth/tiktok-out/talk-real-proof/stock/
