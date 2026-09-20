@@ -1,0 +1,18 @@
+[Script Info]
+ScriptType: v4.00+
+PlayResX: 1080
+PlayResY: 1920
+WrapStyle: 0
+
+[V4+ Styles]
+Format: Name, Fontname, Fontsize, PrimaryColour, SecondaryColour, OutlineColour, BackColour, Bold, Italic, Underline, StrikeOut, ScaleX, ScaleY, Spacing, Angle, BorderStyle, Outline, Shadow, Alignment, MarginL, MarginR, MarginV, Encoding
+Style: Hook,Noto Sans CJK SC,92,&H0000E5FF,&H000000FF,&H00000000,&H90000000,-1,0,0,0,100,100,0,0,1,8,0,2,50,50,780,1
+Style: Cap,Noto Sans CJK SC,70,&H00FFFFFF,&H000000FF,&H00000000,&H80000000,-1,0,0,0,100,100,0,0,1,6,0,2,60,60,220,1
+Style: Tip,Noto Sans CJK SC,78,&H0000FFFF,&H000000FF,&H00000000,&H80000000,-1,0,0,0,100,100,0,0,1,7,0,2,50,50,220,1
+
+[Events]
+Format: Layer, Start, End, Style, Name, MarginL, MarginR, MarginV, Effect, Text
+Dialogue: 1,0:00:00.00,0:00:01.05,Hook,,0,0,0,,又空白了？！
+Dialogue: 0,0:00:01.05,0:00:05.30,Cap,,0,0,0,,公交WFD第一遍\N别死磕整句
+Dialogue: 0,0:00:05.55,0:00:10.28,Tip,,0,0,0,,Just grab\NSubject · Verb · End
+Dialogue: 0,0:00:10.53,0:00:16.10,Cap,,0,0,0,,奥克兰通勤也能练\N主页跟读 · chinapte.net
