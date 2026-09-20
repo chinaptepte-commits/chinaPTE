@@ -117,3 +117,17 @@
   - Package: `growth/tiktok-out/tt-wfd-commute-2026-09-20-PACKAGE.md`
 - Runway Free: image-only (nano-banana-2); lip-sync video still deferred
 
+
+## 2026-09-20 Asia/Shanghai (tt-wfd-talk-free)
+- **Publish: PUBLISHED** @chinapte · status under review
+- Stack: Wav2Lip free (Runway nano-banana-2 portrait → edge-tts → Wav2Lip-ONNX-256 CPU → ffmpeg captions+BGM); $0 paid video
+
+| 2026-09-20 | PTE技巧 | 公交上又空白？WFD只抓3锚点 | tt-wfd-talk-free | Wav2Lip free stack; **PUBLISHED** @chinapte; https://www.tiktok.com/@chinapte/video/7687547955439471892 · status under review |
+
+## Package status 2026-09-20 (tt-wfd-talk-free)
+- **tt-wfd-talk-free**: **PUBLISHED** @chinapte · status under review
+  URL: https://www.tiktok.com/@chinapte/video/7687547955439471892
+  Path: `/workspace/chinaPTE-deploy/growth/tiktok-out/tt-wfd-talk-free-2026-09-20.mp4`
+  - Cover: `growth/tiktok-out/tt-wfd-talk-free-2026-09-20-cover.jpg`
+  - Package: `growth/tiktok-out/tt-wfd-talk-free-2026-09-20-PACKAGE.md`
+  - Doc: `growth/free-talking-video-stack.md`
