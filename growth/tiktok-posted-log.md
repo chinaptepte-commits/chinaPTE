@@ -21,10 +21,10 @@
 - Policy note: never ship TikTok without VO+bed music.
 
 ## Next queued
-- Bucket: 行业英语（今日已发 PTE技巧 RS；避开连发考试桶）
-- Draft title: 奥克兰通勤 15 分钟：WFD 只抓锚点 — 或 养老护理班次 3 句
-- Angle: tt-wfd-commute 或 tt-care-3lines（见 content-bank）
-- Status: queued
+- Bucket: (pick after today's WFD; avoid back-to-back PTE技巧 if XHS also exam)
+- Draft title: TBD from content-bank
+- Angle: TBD
+- Status: queued (tt-wfd-commute published 2026-09-20)
 
 ## Package status
 - **2026-09-17 tt-nz-induction**: ready-for-user-upload  
@@ -96,4 +96,24 @@
 - **tt-care-3lines-v2**: **PUBLISHED** @chinapte · status under review
   URL: https://www.tiktok.com/@chinapte/video/7687172257415728404
   Path: `/workspace/chinaPTE-deploy/growth/tiktok-out/tt-care-3lines-v2-2026-09-19.mp4`
+
+
+## 2026-09-20 ~15:00 Asia/Shanghai run (tt-wfd-commute)
+- Preflight: `tt-wfd-commute-2026-09-20.mp4` **PASS** — 15.59s · 1080×1920 · h264 + aac stereo
+- vs XHS today: XHS RS tip; TT = PTE技巧 Auckland WFD commute skit — differentiated (≠ care v3)
+- Metrics skim (Studio content): care/RS/induction all **0/0/0** views (cold) pre-publish
+- API: NO `/home/box/secrets/tiktok/tokens.json` → skip publish.mjs
+- Earlier: Fastlane scheduled?/Studio fail left publish unconfirmed; later confirmed live
+- **Publish: PUBLISHED** @chinapte
+
+| 2026-09-20 | PTE技巧 | 公交上又空白了？WFD 只抓 3 锚点 | tt-wfd-commute | Remotion WfdCommuteV1 + Runway stills + VO-locked EN; ffprobe PASS 15.6s; **PUBLISHED** @chinapte; https://www.tiktok.com/@chinapte/video/7687518789457497364 |
+
+## Package status 2026-09-20
+- **tt-wfd-commute**: **PUBLISHED** @chinapte
+  URL: https://www.tiktok.com/@chinapte/video/7687518789457497364
+  Path: `/workspace/chinaPTE-deploy/growth/tiktok-out/tt-wfd-commute-2026-09-20.mp4`
+  - Cover: `growth/tiktok-out/tt-wfd-commute-2026-09-20-cover.jpg`
+  - Caption: `growth/tiktok-out/tt-wfd-commute-2026-09-20-CAPTION.txt`
+  - Package: `growth/tiktok-out/tt-wfd-commute-2026-09-20-PACKAGE.md`
+- Runway Free: image-only (nano-banana-2); lip-sync video still deferred
 
