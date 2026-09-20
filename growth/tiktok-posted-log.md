@@ -131,3 +131,18 @@
   - Cover: `growth/tiktok-out/tt-wfd-talk-free-2026-09-20-cover.jpg`
   - Package: `growth/tiktok-out/tt-wfd-talk-free-2026-09-20-PACKAGE.md`
   - Doc: `growth/free-talking-video-stack.md`
+
+
+## 2026-09-20 Asia/Shanghai (tt-wfd-stock-dialogue)
+- **Publish: PUBLISHED** @chinapte · status under review
+- Stack: real stock B-roll (Pexels/Mixkit) + dual VO (Xiaoxiao + Jenny) + ASS burn-in + soft BGM; no Wav2Lip / Ken Burns / Remotion / Runway video
+
+| 2026-09-20 | PTE技巧 | 又空白了？！公交WFD别死磕整句 | tt-wfd-stock-dialogue | stock B-roll + dual VO; **PUBLISHED** @chinapte; https://www.tiktok.com/@chinapte/video/7687562428824964372 · status under review |
+
+## Package status 2026-09-20 (tt-wfd-stock-dialogue)
+- **tt-wfd-stock-dialogue**: **PUBLISHED** @chinapte · status under review
+  URL: https://www.tiktok.com/@chinapte/video/7687562428824964372
+  Path: `/workspace/chinaPTE-deploy/growth/tiktok-out/tt-wfd-stock-dialogue-2026-09-20.mp4`
+  - Cover: `growth/tiktok-out/tt-wfd-stock-dialogue-2026-09-20-cover.jpg`
+  - Caption: `growth/tiktok-out/tt-wfd-stock-dialogue-2026-09-20-CAPTION.txt`
+  - Package: `growth/tiktok-out/tt-wfd-stock-dialogue-2026-09-20-PACKAGE.md`
