@@ -22,10 +22,12 @@
 - **RS tip:** PUBLISHED · 审核中 · 15:27 · manager https://creator.rednote.com/new/note-manager · explore URL TBD · slug `xhs-rs-tip`
 - Next evening: ≠ RS tip · ≠ 9/19 FQ-B/FQ-C/care v3 · prefer 妈祖桶 / 行业词 / 题库入口
 
-| 2026-09-20 晚 | 妈祖品味向 | 拜了妈祖 PTE 就能过？醒醒 | **PUBLISHED · 审核中** · 19:41 · slug `xhs-mazu-bless` → `/mazu.html` · manager https://creator.rednote.com/new/note-manager · package `growth/xhs-out/2026-09-20-mazu-PACKAGE.md` · cover `growth/xhs-out/2026-09-20-mazu-COVER.png` · screenshot `/workspace/xhs-manager-after.png` · ≠ 午 RS · ≠ 今日 TT WFD |
+| 2026-09-20 晚 | 妈祖品味向 | 拜了妈祖 PTE 就能过？醒醒 | **DELETED · cultural error** · 19:41 · slug `xhs-mazu-bless` → `/mazu.html` · manager https://creator.rednote.com/new/note-manager · package `growth/xhs-out/2026-09-20-mazu-PACKAGE.md` · cover `growth/xhs-out/2026-09-20-mazu-COVER.png` · screenshot `/workspace/xhs-manager-after.png` · ≠ 午 RS · ≠ 今日 TT WFD |
 
 ## After 2026-09-20 evening
-> ⚠️ **2026-09-20 晚妈祖帖**：已发钩「拜了妈祖 PTE 就能过？醒醒」**语义违规**（妈祖绑考试）。PACKAGE 已标 DO NOT USE；内容库/playbook 已硬修。下一条妈祖必须出海/旅途平安 ONLY。
-- **妈祖:** PUBLISHED · 审核中 · 19:41 · manager https://creator.rednote.com/new/note-manager · explore URL TBD · slug `xhs-mazu-bless`
-- Next noon/evening: ≠ 妈祖本钩 · ≠ RS tip · ≠ WFD · prefer 行业词（肉类/石材/电焊）或 题库入口
+> ⚠️ **2026-09-20 晚妈祖帖**：钩「拜了妈祖 PTE 就能过？醒醒」语义违规（妈祖绑考试）→ **已下架 DELETED**。PACKAGE DO NOT USE；内容库/playbook/skills 已硬修。
+- **妈祖:** **DELETED · cultural error** · was 19:41 · slug `xhs-mazu-bless`
+- Next noon/evening: ≠ 妈祖本钩 · ≠ RS tip · ≠ WFD · prefer 行业词（肉类/石材/电焊）或 题库入口；若再发妈祖必须「出海/旅途平安」ONLY
 
+
+- 2026-09-20: hard cultural check added to workflows `short-form-social-video` + `publish-preflight` (妈祖=出海/旅途 ONLY; exams=文曲星; reject ironic exam hooks).
