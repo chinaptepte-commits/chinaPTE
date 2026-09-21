@@ -100,6 +100,7 @@
   var pauseTimer = null;
   var keepAlive = null;
   var resumePending = false;
+  var resumeTimer = null;
   var seekDrag = null;
   var jumpErrorTimer = null;
 
@@ -131,19 +132,38 @@
         }
       },
       onResumeSpeech: function () {
-        if (state.paused || resumePending) return;
-        if (!state.playing && !state.playAll) return;
-        resumePending = true;
-        var wasAll = state.playAll;
-        state.playing = true;
-        cancelSpeech();
-        setTimeout(function () {
-          resumePending = false;
-          playCurrent({ continueAll: wasAll, resume: true });
-        }, 80);
+        scheduleAutoResume("keepalive");
       },
     });
     return keepAlive;
+  }
+
+  function clearResumeSchedule() {
+    resumePending = false;
+    if (resumeTimer) {
+      clearTimeout(resumeTimer);
+      resumeTimer = null;
+    }
+  }
+
+  /** Restart current word if session still wants play after OS/notification interrupt. */
+  function scheduleAutoResume(reason) {
+    if (state.paused) return;
+    if (!(state.playing || state.playAll)) return;
+    if (resumePending) return;
+    resumePending = true;
+    if (resumeTimer) clearTimeout(resumeTimer);
+    resumeTimer = setTimeout(function () {
+      resumeTimer = null;
+      resumePending = false;
+      if (state.paused) return;
+      if (!(state.playing || state.playAll)) return;
+      var wasAll = state.playAll;
+      state.playing = true;
+      state.paused = false;
+      cancelSpeech();
+      playCurrent({ continueAll: wasAll, resume: true });
+    }, 220);
   }
 
   function sessionTitle() {
@@ -464,21 +484,24 @@
         setPhase("释义");
         // Speak gloss only — never tip
         var r3 = await speak(it.gloss, { lang: "zh-CN", rate: state.rate, voice: state.zhVoice, clipKey: "vocab/" + it.id + "-gloss", playbackRate: state.rate });
-        if (!isActive(token) || (r3 && r3.interrupted)) return;
+        if (!isActive(token)) return;
+        if (r3 && r3.interrupted) { scheduleAutoResume("interrupted"); return; }
         await wait(320);
         if (!isActive(token)) return;
       }
 
       setPhase("单词");
       var r1 = await speak(it.word, { lang: enSpeakLang(), rate: Math.max(0.7, state.rate * 0.88), voice: state.enVoice, clipKey: "vocab/" + it.id + "-word", playbackRate: state.rate });
-      if (!isActive(token) || (r1 && r1.interrupted)) return;
+      if (!isActive(token)) return;
+      if (r1 && r1.interrupted) { scheduleAutoResume("interrupted"); return; }
       await wait(280);
       if (!isActive(token)) return;
 
       if (state.spellOn && it.spelling) {
         setPhase("拼读");
         var r2 = await speak(lettersOf(it.spelling), { lang: enSpeakLang(), rate: Math.max(0.55, state.rate * 0.72), voice: state.enVoice, clipKey: "vocab/" + it.id + "-spell", playbackRate: state.rate });
-        if (!isActive(token) || (r2 && r2.interrupted)) return;
+        if (!isActive(token)) return;
+        if (r2 && r2.interrupted) { scheduleAutoResume("interrupted"); return; }
         await wait(280);
         if (!isActive(token)) return;
       }
@@ -486,13 +509,15 @@
       if (state.exampleOn && it.example) {
         setPhase("例句");
         var r4 = await speak(it.example, { lang: enSpeakLang(), rate: Math.max(0.7, state.rate * 0.88), voice: state.enVoice, clipKey: "vocab/" + it.id + "-ex", playbackRate: state.rate });
-        if (!isActive(token) || (r4 && r4.interrupted)) return;
+        if (!isActive(token)) return;
+        if (r4 && r4.interrupted) { scheduleAutoResume("interrupted"); return; }
         await wait(250);
         if (!isActive(token)) return;
         if (it.exampleZh) {
           setPhase("例句中文");
           var r5 = await speak(it.exampleZh, { lang: "zh-CN", rate: state.rate, voice: state.zhVoice, clipKey: "vocab/" + it.id + "-exzh", playbackRate: state.rate });
-          if (!isActive(token) || (r5 && r5.interrupted)) return;
+          if (!isActive(token)) return;
+          if (r5 && r5.interrupted) { scheduleAutoResume("interrupted"); return; }
           await wait(350);
         }
       }
@@ -550,6 +575,7 @@
   }
 
   function stopAll() {
+    clearResumeSchedule();
     newToken();
     state.playing = false;
     state.paused = false;
@@ -565,6 +591,7 @@
 
   function pausePlayback() {
     if (!state.playing) return;
+    clearResumeSchedule();
     state.paused = true;
     state.playing = false;
     newToken();

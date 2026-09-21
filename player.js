@@ -80,6 +80,7 @@
 
     let keepAlive = null;
     let resumePending = false;
+    let resumeTimer = null;
     let seekDrag = null;
     let jumpErrorTimer = null;
 
@@ -94,20 +95,38 @@
         onNext: () => onNext(),
         onPrev: () => onPrev(),
         onResumeSpeech: () => {
-          if (state.paused || resumePending) return;
-          // Recover even if a mid-utterance interrupt cleared the loop but left UI "playing"
-          if (!state.playing && !state.playAll) return;
-          resumePending = true;
-          const wasAll = state.playAll;
-          state.playing = true;
-          cancelSpeech();
-          setTimeout(() => {
-            resumePending = false;
-            playCurrentSequence({ continueAll: wasAll, resume: true });
-          }, 80);
+          scheduleAutoResume("keepalive");
         },
       });
       return keepAlive;
+    }
+
+    function clearResumeSchedule() {
+      resumePending = false;
+      if (resumeTimer) {
+        clearTimeout(resumeTimer);
+        resumeTimer = null;
+      }
+    }
+
+    /** Restart current item if session still wants play after OS/notification interrupt. */
+    function scheduleAutoResume(reason) {
+      if (state.paused) return;
+      if (!(state.playing || state.playAll)) return;
+      if (resumePending) return;
+      resumePending = true;
+      if (resumeTimer) clearTimeout(resumeTimer);
+      resumeTimer = setTimeout(() => {
+        resumeTimer = null;
+        resumePending = false;
+        if (state.paused) return;
+        if (!(state.playing || state.playAll)) return;
+        const wasAll = state.playAll;
+        state.playing = true;
+        state.paused = false;
+        cancelSpeech();
+        playCurrentSequence({ continueAll: wasAll, resume: true });
+      }, 220);
     }
 
     function sessionTitle() {
@@ -736,7 +755,8 @@
             clipKey: mode + "/" + item.id + "-v" + vi + "-gloss",
             playbackRate: state.rate,
           });
-          if (!isActive(token) || (rg && rg.interrupted)) return false;
+          if (!isActive(token)) return false;
+          if (rg && rg.interrupted) { scheduleAutoResume("interrupted"); return false; }
           await wait(350);
           if (!isActive(token)) return false;
         }
@@ -749,7 +769,8 @@
           clipKey: mode + "/" + item.id + "-v" + vi + "-word",
           playbackRate: state.rate,
         });
-        if (!isActive(token) || (rw && rw.interrupted)) return false;
+        if (!isActive(token)) return false;
+        if (rw && rw.interrupted) { scheduleAutoResume("interrupted"); return false; }
         await wait(280);
         if (!isActive(token)) return false;
 
@@ -762,7 +783,8 @@
             clipKey: mode + "/" + item.id + "-v" + vi + "-spell",
             playbackRate: state.rate,
           });
-          if (!isActive(token) || (rs && rs.interrupted)) return false;
+          if (!isActive(token)) return false;
+          if (rs && rs.interrupted) { scheduleAutoResume("interrupted"); return false; }
           await wait(280);
           if (!isActive(token)) return false;
         }
@@ -812,7 +834,8 @@
             clipKey: mode + "/" + item.id + "-en",
             playbackRate: state.rate,
           });
-          if (!isActive(token) || (r1 && r1.interrupted)) return;
+          if (!isActive(token)) return;
+          if (r1 && r1.interrupted) { scheduleAutoResume("interrupted"); return; }
 
           setPhase("pause", "…");
           await wait(mode === "rs" ? 700 : 550);
@@ -843,7 +866,8 @@
                 clipKey: mode + "/" + item.id + "-zh",
                 playbackRate: state.rate,
               });
-              if (!isActive(token) || (r2 && r2.interrupted)) return;
+              if (!isActive(token)) return;
+              if (r2 && r2.interrupted) { scheduleAutoResume("interrupted"); return; }
               await wait(400);
               if (!isActive(token)) return;
             }
@@ -949,6 +973,7 @@
     }
 
     function stopAll() {
+      clearResumeSchedule();
       newToken();
       state.playing = false;
       state.paused = false;
@@ -965,6 +990,7 @@
 
     function pausePlayback() {
       if (!state.playing || state.paused) return;
+      clearResumeSchedule();
       state.paused = true;
       state.playing = false;
       newToken();

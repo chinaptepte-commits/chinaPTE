@@ -1,6 +1,8 @@
 /**
  * chinaPTE · HTML5 audio engine (primary) + speechSynthesis fallback
  * Single HTMLAudioElement queue · Media Session · works with keepalive silent loop
+ * Auto-retries play() when OS pauses the element (notification / screen-off) without
+ * resolving the speak Promise as interrupted — so the same clip continues.
  */
 (function (global) {
   "use strict";
@@ -10,7 +12,70 @@
   var audioEl = null;
   var activeToken = 0;
   var playing = false;
+  var intentionalStop = false;
   var queueResolve = null;
+  var pauseRetryTimer = null;
+  var pauseRetryCount = 0;
+  var MAX_PAUSE_RETRIES = 6;
+  var PAUSE_RETRY_MS = 280;
+  var pauseWired = false;
+
+  function clearPauseRetry() {
+    if (pauseRetryTimer) {
+      clearTimeout(pauseRetryTimer);
+      pauseRetryTimer = null;
+    }
+  }
+
+  function resetPauseRetries() {
+    clearPauseRetry();
+    pauseRetryCount = 0;
+  }
+
+  function hasUsableSrc(a) {
+    if (!a) return false;
+    var src = a.currentSrc || a.getAttribute("src") || a.src || "";
+    return !!(src && src.length > 0);
+  }
+
+  function tryResumeElement(reason) {
+    if (intentionalStop || !playing) return false;
+    var a = audioEl;
+    if (!a || !hasUsableSrc(a)) return false;
+    if (a.ended) return false;
+    if (!a.paused) return true;
+    try {
+      var p = a.play();
+      if (p && typeof p.catch === "function") {
+        p.catch(function () {
+          /* will retry via pause handler / resumeIfNeeded / keepalive */
+        });
+      }
+      return true;
+    } catch (e) {
+      return false;
+    }
+  }
+
+  function onElementPause() {
+    if (intentionalStop || !playing) return;
+    if (!audioEl || !hasUsableSrc(audioEl)) return;
+    if (audioEl.ended) return;
+    if (pauseRetryCount >= MAX_PAUSE_RETRIES) return;
+    clearPauseRetry();
+    pauseRetryTimer = setTimeout(function () {
+      pauseRetryTimer = null;
+      if (intentionalStop || !playing) return;
+      if (!audioEl || !audioEl.paused || audioEl.ended) return;
+      if (!hasUsableSrc(audioEl)) return;
+      pauseRetryCount += 1;
+      tryResumeElement("pause-retry");
+    }, PAUSE_RETRY_MS);
+  }
+
+  function onElementPlaying() {
+    resetPauseRetries();
+  }
 
   function ensureEl() {
     if (audioEl) return audioEl;
@@ -18,6 +83,11 @@
     audioEl.preload = "auto";
     audioEl.setAttribute("playsinline", "true");
     audioEl.setAttribute("webkit-playsinline", "true");
+    if (!pauseWired) {
+      pauseWired = true;
+      audioEl.addEventListener("pause", onElementPause);
+      audioEl.addEventListener("playing", onElementPlaying);
+    }
     return audioEl;
   }
 
@@ -68,6 +138,8 @@
   }
 
   function cancel() {
+    intentionalStop = true;
+    resetPauseRetries();
     activeToken += 1;
     playing = false;
     setMediaPlaying(false);
@@ -94,6 +166,19 @@
     return !!(playing && audioEl && !audioEl.paused && !audioEl.ended);
   }
 
+  /**
+   * If session still wants audio but the element was paused by the OS
+   * (notification / lock screen), retry play without killing the Promise.
+   */
+  function resumeIfNeeded() {
+    if (!playing || intentionalStop) return false;
+    if (!audioEl) return false;
+    if (!audioEl.paused || audioEl.ended) return false;
+    if (!hasUsableSrc(audioEl)) return false;
+    resetPauseRetries();
+    return tryResumeElement("resumeIfNeeded");
+  }
+
   function clampRate(r) {
     r = Number(r) || 1;
     if (r < 0.5) return 0.5;
@@ -107,7 +192,9 @@
       cancel();
       var token = activeToken;
       var a = ensureEl();
+      intentionalStop = false;
       playing = true;
+      resetPauseRetries();
       if (opts.title) setMediaMeta(opts.title);
       setMediaPlaying(true);
       a.playbackRate = clampRate(opts.playbackRate != null ? opts.playbackRate : 1);
@@ -115,12 +202,14 @@
       a.onended = function () {
         if (token !== activeToken) { resolve({ interrupted: true, via: "html-audio" }); return; }
         playing = false;
+        resetPauseRetries();
         setMediaPlaying(false);
         resolve({ via: "html-audio" });
       };
       a.onerror = function () {
         if (token !== activeToken) { resolve({ interrupted: true, via: "html-audio" }); return; }
         playing = false;
+        resetPauseRetries();
         setMediaPlaying(false);
         resolve({ error: true, via: "html-audio" });
       };
@@ -128,7 +217,15 @@
       if (p && typeof p.catch === "function") {
         p.catch(function () {
           if (token !== activeToken) { resolve({ interrupted: true, via: "html-audio" }); return; }
+          // Transient autoplay / OS denial — leave Promise open and let pause-retry /
+          // resumeIfNeeded / keepalive recover the same clip instead of interrupting.
+          if (playing && !intentionalStop && hasUsableSrc(a)) {
+            pauseRetryCount = 0;
+            onElementPause();
+            return;
+          }
           playing = false;
+          resetPauseRetries();
           setMediaPlaying(false);
           resolve({ error: true, via: "html-audio" });
         });
@@ -155,6 +252,7 @@
         }
         if (i >= urls.length) {
           playing = false;
+          resetPauseRetries();
           setMediaPlaying(false);
           queueResolve = null;
           resolve({ via: "html-audio" });
@@ -162,14 +260,26 @@
         }
         var url = urls[i++];
         var a = ensureEl();
+        intentionalStop = false;
         playing = true;
+        resetPauseRetries();
         setMediaPlaying(true);
         a.playbackRate = rate;
         a.onended = function () { next(); };
         a.onerror = function () { next(); };
         a.src = url;
         var p = a.play();
-        if (p && typeof p.catch === "function") p.catch(function () { next(); });
+        if (p && typeof p.catch === "function") {
+          p.catch(function () {
+            if (token !== activeToken) return;
+            if (playing && !intentionalStop && hasUsableSrc(a)) {
+              pauseRetryCount = 0;
+              onElementPause();
+              return;
+            }
+            next();
+          });
+        }
       }
       next();
     });
@@ -226,6 +336,7 @@
     playQueue: playQueue,
     playUrl: playUrl,
     isPlaying: isPlaying,
+    resumeIfNeeded: resumeIfNeeded,
     getManifest: function () { return manifest; }
   };
 })(typeof window !== "undefined" ? window : globalThis);

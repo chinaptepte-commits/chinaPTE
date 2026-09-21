@@ -3,13 +3,18 @@
  * Silent looping HTMLAudio + Media Session + optional Screen Wake Lock.
  * Helps Android Chrome keep playback alive when the screen turns off.
  * Prefer HTML5 MP3 (ChinaPTEAudio); silent loop + Media Session still help between clips.
- * iOS may still suspend speechSynthesis fallback — wake lock is the fallback.
+ *
+ * Wake Lock (屏幕常亮) stays OFF by default — commute listening wants screen off + audio on.
+ * Enable wake-lock only on TTS-fallback devices where speechSynthesis dies in background.
+ * iOS Safari may still suspend speechSynthesis / aggressive background tabs within browser limits.
  */
 (function (global) {
   "use strict";
 
   var STORAGE_KEEP = "chinaPTE_keepAlive";
   var STORAGE_WAKE = "chinaPTE_wakeLock";
+  var HEARTBEAT_MS = 1500;
+  var RESUME_COOLDOWN_MS = 1800;
 
   // ~1s silent mono 8kHz WAV (PCM zeros) — loops while 随身听 is active
   function buildSilentWavDataUri(seconds) {
@@ -67,7 +72,7 @@
    * @param {function()} hooks.onPause
    * @param {function()} hooks.onNext
    * @param {function()} hooks.onPrev
-   * @param {function()} [hooks.onResumeSpeech] - called when tab visible again and speech may have died
+   * @param {function()} [hooks.onResumeSpeech] - called when session wants play but audio is dead
    * @param {string} [hooks.artist]
    */
   function create(hooks) {
@@ -81,6 +86,7 @@
     var wantSilent = false;
     var lastTitle = "";
     var visibilityBound = false;
+    var lastResumeCall = 0;
 
     function ensureSilentEl() {
       if (silentAudio) return silentAudio;
@@ -197,37 +203,76 @@
       });
     }
 
+    function htmlAudioActuallyPlaying() {
+      return !!(
+        window.ChinaPTEAudio &&
+        typeof window.ChinaPTEAudio.isPlaying === "function" &&
+        window.ChinaPTEAudio.isPlaying()
+      );
+    }
+
+    function tryHtmlResume() {
+      if (
+        window.ChinaPTEAudio &&
+        typeof window.ChinaPTEAudio.resumeIfNeeded === "function"
+      ) {
+        try {
+          return !!window.ChinaPTEAudio.resumeIfNeeded();
+        } catch (e) {
+          return false;
+        }
+      }
+      return false;
+    }
+
+    function speechAlive() {
+      if (!window.speechSynthesis) return false;
+      try {
+        if (speechSynthesis.paused) {
+          try { speechSynthesis.resume(); } catch (e) {}
+          return true;
+        }
+        return !!(speechSynthesis.speaking || speechSynthesis.pending);
+      } catch (e) {
+        return false;
+      }
+    }
+
+    /** Session wants play but neither HTML audio nor TTS is producing sound. */
+    function maybeResumeDeadPlayback(force) {
+      if (typeof hooks.isPlaying !== "function" || !hooks.isPlaying()) return;
+      if (htmlAudioActuallyPlaying()) return;
+      // Prefer nudging the same HTML clip before restarting the whole sequence
+      if (tryHtmlResume()) return;
+      if (speechAlive()) return;
+      if (typeof hooks.onResumeSpeech !== "function") return;
+      var now = Date.now();
+      if (!force && now - lastResumeCall < RESUME_COOLDOWN_MS) return;
+      lastResumeCall = now;
+      try {
+        hooks.onResumeSpeech();
+      } catch (e) {}
+    }
+
+    function nudgeSession(opts) {
+      opts = opts || {};
+      if (wantSilent && keepAliveOn) tryPlaySilent();
+      if (window.speechSynthesis) {
+        try {
+          if (speechSynthesis.paused) speechSynthesis.resume();
+        } catch (e) {}
+      }
+      tryHtmlResume();
+      maybeResumeDeadPlayback(!!opts.forceResume);
+    }
+
     function onVisibility() {
       var hidden = document.hidden || document.visibilityState === "hidden";
       if (hidden) {
-        if (wantSilent && keepAliveOn) tryPlaySilent();
-        if (window.speechSynthesis) {
-          try {
-            if (speechSynthesis.paused) speechSynthesis.resume();
-          } catch (e) {}
-        }
+        nudgeSession({ forceResume: false });
       } else {
-        // Visible again — re-acquire wake lock if needed; resume speech if it died
         if (wakeLockOn && wantSilent) requestWakeLock();
-        if (wantSilent && keepAliveOn) tryPlaySilent();
-        if (typeof hooks.isPlaying === "function" && hooks.isPlaying()) {
-          var htmlPlaying =
-            window.ChinaPTEAudio &&
-            typeof window.ChinaPTEAudio.isPlaying === "function" &&
-            window.ChinaPTEAudio.isPlaying();
-          var dead =
-            !htmlPlaying &&
-            window.speechSynthesis &&
-            !speechSynthesis.speaking &&
-            !speechSynthesis.pending;
-          if (dead && typeof hooks.onResumeSpeech === "function") {
-            hooks.onResumeSpeech();
-          } else if (!htmlPlaying && window.speechSynthesis && speechSynthesis.paused) {
-            try {
-              speechSynthesis.resume();
-            } catch (e) {}
-          }
-        }
+        nudgeSession({ forceResume: true });
       }
     }
 
@@ -237,13 +282,21 @@
       document.addEventListener("visibilitychange", onVisibility);
       window.addEventListener("pagehide", function () {
         if (wantSilent && keepAliveOn) tryPlaySilent();
+        tryHtmlResume();
       });
       window.addEventListener("pageshow", function () {
-        if (wantSilent && keepAliveOn) tryPlaySilent();
+        nudgeSession({ forceResume: true });
         if (wakeLockOn && wantSilent) requestWakeLock();
+      });
+      window.addEventListener("focus", function () {
+        nudgeSession({ forceResume: true });
+      });
+      window.addEventListener("online", function () {
+        nudgeSession({ forceResume: true });
       });
       document.addEventListener("freeze", function () {
         if (wantSilent && keepAliveOn) tryPlaySilent();
+        tryHtmlResume();
       });
     }
 
@@ -321,25 +374,20 @@
       }
     }
 
-    // Heartbeat: nudge silent audio + resume paused TTS while active
+    // Heartbeat: nudge silent audio + recover dead HTML/TTS while session active
     setInterval(function () {
       if (!wantSilent) return;
       if (keepAliveOn) {
         var el = silentAudio;
         if (el && el.paused) tryPlaySilent();
       }
-      if (
-        typeof hooks.isPlaying === "function" &&
-        hooks.isPlaying() &&
-        window.speechSynthesis &&
-        speechSynthesis.speaking &&
-        speechSynthesis.paused
-      ) {
-        try {
-          speechSynthesis.resume();
-        } catch (e) {}
+      if (typeof hooks.isPlaying !== "function" || !hooks.isPlaying()) return;
+      if (window.speechSynthesis && speechSynthesis.speaking && speechSynthesis.paused) {
+        try { speechSynthesis.resume(); } catch (e) {}
       }
-    }, 4000);
+      tryHtmlResume();
+      maybeResumeDeadPlayback(false);
+    }, HEARTBEAT_MS);
 
     return {
       onSessionStart: onSessionStart,
