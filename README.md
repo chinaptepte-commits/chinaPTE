@@ -37,9 +37,9 @@
 
 线上：
 
-- https://chinaptepte-commits.github.io/chinaPTE/labor.html
-- https://chinaptepte-commits.github.io/chinaPTE/consult.html
-- https://chinaptepte-commits.github.io/chinaPTE/admin/
+- https://chinapte.net/labor.html
+- https://chinapte.net/consult.html
+- https://chinapte.net/admin/
 - 自定义域：https://chinapte.net/labor.html · https://chinapte.net/consult.html · https://chinapte.net/admin/
 
 后台保存需要你自己的 GitHub classic PAT（`repo` scope），Token 只存在浏览器 session/localStorage。
@@ -77,7 +77,7 @@ cd chinaPTE-wfd-listen && python3 -m http.server 8080
 | `industry-*.html` | 日常 / 建筑 / 肉类 / 石材 / 橱柜 / 电焊 / 护理 |
 | `data-industry.js` | 词汇与沟通句子数据 |
 
-线上：https://chinaptepte-commits.github.io/chinaPTE/industry.html
+线上：https://chinapte.net/industry.html
 
 
 ## SEO（零成本静态优化）
@@ -88,7 +88,7 @@ cd chinaPTE-wfd-listen && python3 -m http.server 8080
 
 - 各页独立中文 `<title>` + meta description（合并大陆意图词：PTE考试 / PTE题库 / PTE练习 / WFD听写 / RS跟读 / 华人留学移民英语 / 澳洲新西兰打工英语 / 行业英语，与既有 AU/NZ 表述并存，避免堆砌）
 - 关键页可选 `meta name="keywords"`（百度仍轻度参考；短列表、按页相关）
-- Open Graph / Twitter 基础标签、canonical → `https://chinaptepte-commits.github.io/chinaPTE/...`
+- Open Graph / Twitter 基础标签、canonical → `https://chinapte.net/...`
 - `robots.txt`（`*` / `Baiduspider` / `bingbot` 允许抓取；`/admin/` 禁止）+ `sitemap.xml`
 - 首页 JSON-LD：`WebSite` + `Organization` + `LearningResource`；主要栏目 `BreadcrumbList`
 - `lang="zh-CN"`；单语站点未加 hreflang
@@ -98,7 +98,7 @@ cd chinaPTE-wfd-listen && python3 -m http.server 8080
 
 ### 提交 sitemap（上线后）
 
-Sitemap URL：`https://chinaptepte-commits.github.io/chinaPTE/sitemap.xml`
+Sitemap URL：`https://chinapte.net/sitemap.xml`
 
 1. **百度搜索资源平台**（[ziyuan.baidu.com](https://ziyuan.baidu.com/)）  
    - 添加网站（填写 github.io 站点 URL）→ 完成验证（HTML 标签：把验证码填进首页 `baidu-site-verification` 并取消注释）  

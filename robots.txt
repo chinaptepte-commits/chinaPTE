@@ -14,4 +14,4 @@ User-agent: bingbot
 Allow: /
 Disallow: /chinaPTE/admin/
 
-Sitemap: https://chinaptepte-commits.github.io/chinaPTE/sitemap.xml
+Sitemap: https://chinapte.net/sitemap.xml
