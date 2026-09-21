@@ -1,6 +1,6 @@
 /**
  * chinaPTE · DI — Describe Image
- * Total: 45 items
+ * Total: 47 items
  */
 (function (global) {
   "use strict";
@@ -1225,6 +1225,60 @@
       }
     ],
     "scene": "The pie chart illustrates the proportion of university funding from fees, grants and donations."
+  },
+  {
+    "id": 46,
+    "image": "images/di/46.svg",
+    "en": "📊 柱状图：四国高校研发支出占比 2020–2025",
+    "scene": "📊 柱状图：四国高校研发支出占比 2020–2025",
+    "zhAnalysis": "描述：先总述图表类型与主题；比最高/最低；提趋势；结尾结论。样例：A国持续领先；B国稳步上升；C国波动；D国偏低。",
+    "vocab": [
+      {
+        "word": "increase",
+        "spelling": "I-N-C-R-E-A-S-E",
+        "gloss": "上升",
+        "tip": "DI常用"
+      },
+      {
+        "word": "proportion",
+        "spelling": "P-R-O-P-O-R-T-I-O-N",
+        "gloss": "比例",
+        "tip": ""
+      },
+      {
+        "word": "overall",
+        "spelling": "O-V-E-R-A-L-L",
+        "gloss": "总体",
+        "tip": ""
+      }
+    ]
+  },
+  {
+    "id": 47,
+    "image": "images/di/47.svg",
+    "en": "📈 折线图：校园自行车通勤人数 2018–2025",
+    "scene": "📈 折线图：校园自行车通勤人数 2018–2025",
+    "zhAnalysis": "描述：整体上升；疫情年短暂下降；2022后回升加快；联系可持续交通政策。",
+    "vocab": [
+      {
+        "word": "increase",
+        "spelling": "I-N-C-R-E-A-S-E",
+        "gloss": "上升",
+        "tip": "DI常用"
+      },
+      {
+        "word": "trend",
+        "spelling": "T-R-E-N-D",
+        "gloss": "趋势",
+        "tip": ""
+      },
+      {
+        "word": "overall",
+        "spelling": "O-V-E-R-A-L-L",
+        "gloss": "总体",
+        "tip": ""
+      }
+    ]
   }
 ];
   DI_BANK.forEach(function (item) {

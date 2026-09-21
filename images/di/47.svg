@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 720 420" width="720" height="420" role="img" aria-label="Campus Bicycle Commuters">
+  <rect width="720" height="420" fill="#f8fafc" rx="8"/>
+  <rect x="8" y="8" width="704" height="404" fill="#ffffff" rx="10" stroke="#e2e8f0" stroke-width="1"/>
+  <text x="360" y="36" text-anchor="middle" font-family="Segoe UI,Arial,sans-serif" font-size="16" font-weight="700" fill="#0f172a">Campus Bicycle Commuters 2018–2025</text>
+  <polyline fill="none" stroke="#2563eb" stroke-width="3" points="80,320 160,300 240,280 320,310 400,250 480,200 560,160 640,120"/>
+  <circle cx="80" cy="320" r="4" fill="#2563eb"/><circle cx="160" cy="300" r="4" fill="#2563eb"/>
+  <circle cx="240" cy="280" r="4" fill="#2563eb"/><circle cx="320" cy="310" r="4" fill="#2563eb"/>
+  <circle cx="400" cy="250" r="4" fill="#2563eb"/><circle cx="480" cy="200" r="4" fill="#2563eb"/>
+  <circle cx="560" cy="160" r="4" fill="#2563eb"/><circle cx="640" cy="120" r="4" fill="#2563eb"/>
+  <text x="80" y="360" text-anchor="middle" font-size="10" fill="#64748b">2018</text>
+  <text x="320" y="360" text-anchor="middle" font-size="10" fill="#64748b">2021</text>
+  <text x="640" y="360" text-anchor="middle" font-size="10" fill="#64748b">2025</text>
+</svg>

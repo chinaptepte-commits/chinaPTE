@@ -1,6 +1,6 @@
 /**
  * chinaPTE · HIW — Highlight Incorrect Words
- * Total: 45 items
+ * Total: 47 items
  */
 (function (global) {
   "use strict";
@@ -964,6 +964,46 @@
       }
     ],
     "transcript": "Sustainable design aims to minimise waste while maximising energy efficiency in buildings."
+  },
+  {
+    "id": 46,
+    "en": "Digital archives allow historians to compare primary sources across continents efficiently.",
+    "transcript": "Digital archives allow historians to compare primary sources across continents efficiently.",
+    "zhAnalysis": "对照正确文本，标出与录音不符的词。",
+    "vocab": [
+      {
+        "word": "transcript",
+        "spelling": "T-R-A-N-S-C-R-I-P-T",
+        "gloss": "文字稿",
+        "tip": "对照听"
+      },
+      {
+        "word": "incorrect",
+        "spelling": "I-N-C-O-R-R-E-C-T",
+        "gloss": "错误的",
+        "tip": ""
+      }
+    ]
+  },
+  {
+    "id": 47,
+    "en": "Scholarship committees evaluate both academic merit and community involvement carefully.",
+    "transcript": "Scholarship committees evaluate both academic merit and community involvement carefully.",
+    "zhAnalysis": "对照正确文本，标出与录音不符的词。",
+    "vocab": [
+      {
+        "word": "transcript",
+        "spelling": "T-R-A-N-S-C-R-I-P-T",
+        "gloss": "文字稿",
+        "tip": "对照听"
+      },
+      {
+        "word": "incorrect",
+        "spelling": "I-N-C-O-R-R-E-C-T",
+        "gloss": "错误的",
+        "tip": ""
+      }
+    ]
   }
 ];
   HIW_BANK.forEach(function (item) {

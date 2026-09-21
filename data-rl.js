@@ -1,6 +1,6 @@
 /**
  * chinaPTE · RL — Retell Lecture
- * Total: 55 items
+ * Total: 58 items
  */
 (function (global) {
   "use strict";
@@ -1394,6 +1394,81 @@
         "word": "materials",
         "spelling": "M-A-T-E-R-I-A-L-S",
         "gloss": "材料",
+        "tip": ""
+      }
+    ]
+  },
+  {
+    "id": 56,
+    "en": "This lecture discusses sleep and academic performance. Adequate sleep consolidates memory and supports attention during lectures. Chronic sleep loss is linked to lower grades and higher stress. Practical advice includes fixed bedtimes and reduced late-night screen use.",
+    "zhAnalysis": "讲座要点：睡眠与学业表现；充足睡眠巩固记忆并支撑课堂注意力；长期缺觉关联低分与高压；建议固定作息、减少深夜刷屏。复述：主题+证据+建议。",
+    "vocab": [
+      {
+        "word": "consolidates",
+        "spelling": "C-O-N-S-O-L-I-D-A-T-E-S",
+        "gloss": "巩固",
+        "tip": ""
+      },
+      {
+        "word": "chronic",
+        "spelling": "C-H-R-O-N-I-C",
+        "gloss": "慢性的；长期的",
+        "tip": ""
+      },
+      {
+        "word": "attention",
+        "spelling": "A-T-T-E-N-T-I-O-N",
+        "gloss": "注意力",
+        "tip": ""
+      }
+    ]
+  },
+  {
+    "id": 57,
+    "en": "Today we explore food waste in university canteens. Overproduction and large portion sizes create surplus that often ends in landfill. Simple interventions such as trayless dining and clearer portion labels can cut waste significantly while saving costs.",
+    "zhAnalysis": "讲座要点：大学食堂食物浪费；过量生产与大份量导致剩余进填埋场；无托盘就餐与份量标签等干预可显著减废并省钱。",
+    "vocab": [
+      {
+        "word": "surplus",
+        "spelling": "S-U-R-P-L-U-S",
+        "gloss": "过剩",
+        "tip": ""
+      },
+      {
+        "word": "interventions",
+        "spelling": "I-N-T-E-R-V-E-N-T-I-O-N-S",
+        "gloss": "干预措施",
+        "tip": ""
+      },
+      {
+        "word": "portion",
+        "spelling": "P-O-R-T-I-O-N",
+        "gloss": "份量",
+        "tip": ""
+      }
+    ]
+  },
+  {
+    "id": 58,
+    "en": "The talk explains how peer mentoring helps first-year students adapt. Mentors share study strategies and campus resources. Evaluations show mentees report higher belonging and lower dropout risk. Successful schemes train mentors and match pairs by discipline.",
+    "zhAnalysis": "讲座要点：同伴辅导帮助大一适应；分享学习策略与校园资源；评估显示归属感上升、辍学风险下降；成功项目培训导师并按学科配对。",
+    "vocab": [
+      {
+        "word": "mentoring",
+        "spelling": "M-E-N-T-O-R-I-N-G",
+        "gloss": "辅导；带教",
+        "tip": ""
+      },
+      {
+        "word": "belonging",
+        "spelling": "B-E-L-O-N-G-I-N-G",
+        "gloss": "归属感",
+        "tip": ""
+      },
+      {
+        "word": "dropout",
+        "spelling": "D-R-O-P-O-U-T",
+        "gloss": "辍学",
         "tip": ""
       }
     ]

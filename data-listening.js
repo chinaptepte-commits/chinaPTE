@@ -1,6 +1,6 @@
 /**
  * chinaPTE · Listening practice
- * Total: 68 items
+ * Total: 70 items
  */
 (function (global) {
   "use strict";
@@ -547,6 +547,22 @@
     "en": "Which factor most improved retention in the study? Regular mentoring sessions.",
     "answer": "Regular mentoring sessions",
     "zhAnalysis": "研究中最提升留存的因素是什么？定期导师辅导。",
+    "vocab": []
+  },
+  {
+    "id": 69,
+    "type": "MCQ",
+    "en": "Speaker: The workshop was cancelled because the facilitator was ill, not because of low enrolment.\nQuestion: Why was the workshop cancelled?",
+    "answer": "The facilitator was ill",
+    "zhAnalysis": "听力MCQ：抓 because，排除 low enrolment。",
+    "vocab": []
+  },
+  {
+    "id": 70,
+    "type": "MCQ",
+    "en": "Speaker: Please collect your certificates from the student centre after three o'clock.\nQuestion: Where should students collect certificates?",
+    "answer": "From the student centre",
+    "zhAnalysis": "地点细节：student centre。",
     "vocab": []
   }
 ];

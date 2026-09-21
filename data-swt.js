@@ -1,6 +1,6 @@
 /**
  * chinaPTE · SWT — Summarize Written Text
- * Total: 42 items
+ * Total: 44 items
  */
 (function (global) {
   "use strict";
@@ -886,6 +886,46 @@
       }
     ],
     "passage": "Community gardens on campus provide fresh produce and informal learning spaces. Volunteers manage planting schedules and composting. Participation has grown among both students and local residents. Limited land remains the main constraint on expansion."
+  },
+  {
+    "id": 43,
+    "en": "Remote work has expanded across professional sectors since flexible policies became common. Productivity studies show mixed results depending on job type and home environment. Companies increasingly adopt hybrid models that combine office collaboration with remote focus time. Employee preferences continue to influence retention strategies.",
+    "passage": "Remote work has expanded across professional sectors since flexible policies became common. Productivity studies show mixed results depending on job type and home environment. Companies increasingly adopt hybrid models that combine office collaboration with remote focus time. Employee preferences continue to influence retention strategies.",
+    "zhAnalysis": "SWT：合并为一句。虽效率研究因岗位与居家环境而结果不一，但远程办公已扩张，企业多采用混合模式，且员工偏好影响留任策略。",
+    "vocab": [
+      {
+        "word": "however",
+        "spelling": "H-O-W-E-V-E-R",
+        "gloss": "然而",
+        "tip": "合并句连接"
+      },
+      {
+        "word": "although",
+        "spelling": "A-L-T-H-O-U-G-H",
+        "gloss": "虽然",
+        "tip": ""
+      }
+    ]
+  },
+  {
+    "id": 44,
+    "en": "Open educational resources reduce textbook costs for students worldwide. Quality varies, so instructors must curate materials carefully. Institutions that support OER creation report higher course completion in some subjects. Copyright clarity remains essential for sustainable sharing.",
+    "passage": "Open educational resources reduce textbook costs for students worldwide. Quality varies, so instructors must curate materials carefully. Institutions that support OER creation report higher course completion in some subjects. Copyright clarity remains essential for sustainable sharing.",
+    "zhAnalysis": "SWT：开放教育资源降低教材成本，但质量参差需精选；支持OER的院校在部分科目完成率更高，且版权清晰对可持续共享至关重要。",
+    "vocab": [
+      {
+        "word": "however",
+        "spelling": "H-O-W-E-V-E-R",
+        "gloss": "然而",
+        "tip": ""
+      },
+      {
+        "word": "although",
+        "spelling": "A-L-T-H-O-U-G-H",
+        "gloss": "虽然",
+        "tip": ""
+      }
+    ]
   }
 ];
   SWT_BANK.forEach(function (item) {

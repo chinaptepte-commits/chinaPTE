@@ -1,6 +1,6 @@
 /**
  * chinaPTE · SST — Summarize Spoken Text
- * Total: 45 items
+ * Total: 47 items
  */
 (function (global) {
   "use strict";
@@ -1054,6 +1054,46 @@
       }
     ],
     "passage": "Language support workshops helped international students improve academic writing. Attendance correlated with higher essay scores. Evening sessions attracted more participants than daytime ones. The university will expand the programme next year."
+  },
+  {
+    "id": 46,
+    "en": "Marine biologists report that plastic pollution harms coastal ecosystems. Microplastics enter food chains and affect fish health. Cleanup campaigns help locally, but lasting progress requires reduced single-use packaging and stronger recycling systems. Consumers and manufacturers share responsibility.",
+    "passage": "Marine biologists report that plastic pollution harms coastal ecosystems. Microplastics enter food chains and affect fish health. Cleanup campaigns help locally, but lasting progress requires reduced single-use packaging and stronger recycling systems. Consumers and manufacturers share responsibility.",
+    "zhAnalysis": "总结：塑料污染危害海岸生态→微塑料入食物链→清理有局部作用→关键在减一次性包装与强化回收→消费者与厂商共责。SST写50–70词。",
+    "vocab": [
+      {
+        "word": "pollution",
+        "spelling": "P-O-L-L-U-T-I-O-N",
+        "gloss": "污染",
+        "tip": ""
+      },
+      {
+        "word": "ecosystems",
+        "spelling": "E-C-O-S-Y-S-T-E-M-S",
+        "gloss": "生态系统",
+        "tip": ""
+      }
+    ]
+  },
+  {
+    "id": 47,
+    "en": "Universities are redesigning assessment to emphasise continuous feedback rather than high-stakes final exams alone. Portfolios and staged assignments reduce last-minute stress. Critics worry about marking workload, yet early trials report improved learning outcomes and fairer evaluation of diverse skills.",
+    "passage": "Universities are redesigning assessment to emphasise continuous feedback rather than high-stakes final exams alone. Portfolios and staged assignments reduce last-minute stress. Critics worry about marking workload, yet early trials report improved learning outcomes and fairer evaluation of diverse skills.",
+    "zhAnalysis": "总结：评估转向持续反馈→作品集与分阶段作业减压力→批评者担心阅卷负担→试验显示学习效果与公平性提升。",
+    "vocab": [
+      {
+        "word": "assessment",
+        "spelling": "A-S-S-E-S-S-M-E-N-T",
+        "gloss": "评估",
+        "tip": ""
+      },
+      {
+        "word": "portfolios",
+        "spelling": "P-O-R-T-F-O-L-I-O-S",
+        "gloss": "作品集",
+        "tip": ""
+      }
+    ]
   }
 ];
   SST_BANK.forEach(function (item) {

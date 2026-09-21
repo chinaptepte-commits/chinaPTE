@@ -1,6 +1,6 @@
 /**
  * chinaPTE · RA — Read Aloud
- * Total: 90 items · exam-length passages (~45–65 words)
+ * Total: 95 items · exam-length passages (~45–65 words)
  * Audio: prefer speechSynthesis (audioPreferTts); no RA MP3s in manifest
  */
 (function (global) {
@@ -2341,6 +2341,136 @@
         "word": "traditionally",
         "spelling": "T-R-A-D-I-T-I-O-N-A-L-L-Y",
         "gloss": "",
+        "tip": ""
+      }
+    ],
+    "audioPreferTts": true
+  },
+  {
+    "id": 91,
+    "en": "Peer review remains a cornerstone of scholarly publishing because independent experts evaluate methods, evidence, and clarity before acceptance. Although the process can be slow and occasionally biased, it still filters weak claims and improves manuscripts. Journals increasingly experiment with open review to increase transparency while preserving rigorous standards for scientific communication.",
+    "zhAnalysis": "同行评审是学术出版基石：独立专家在录用前评估方法、证据与清晰度。尽管过程可能缓慢甚至带偏见，仍能过滤薄弱主张并改进稿件。期刊越来越多尝试开放评审以提高透明度，同时保持科学传播的严格标准。",
+    "vocab": [
+      {
+        "word": "Peer",
+        "spelling": "P-E-E-R",
+        "gloss": "同行",
+        "tip": ""
+      },
+      {
+        "word": "review",
+        "spelling": "R-E-V-I-E-W",
+        "gloss": "评审",
+        "tip": ""
+      },
+      {
+        "word": "transparency",
+        "spelling": "T-R-A-N-S-P-A-R-E-N-C-Y",
+        "gloss": "透明度",
+        "tip": ""
+      }
+    ],
+    "audioPreferTts": true
+  },
+  {
+    "id": 92,
+    "en": "Public libraries continue to evolve beyond book lending into community hubs that offer digital literacy classes, quiet study spaces, and access to online databases. For many residents without reliable home internet, these services reduce information inequality. Sustained funding is therefore essential if libraries are to meet changing educational and civic needs.",
+    "zhAnalysis": "公共图书馆已从借书扩展为社区中心，提供数字素养课程、安静自习区与在线数据库。对许多没有可靠家庭网络的居民，这些服务可缩小信息不平等。若要满足变化中的教育与公民需求，持续资金支持至关重要。",
+    "vocab": [
+      {
+        "word": "literacy",
+        "spelling": "L-I-T-E-R-A-C-Y",
+        "gloss": "素养",
+        "tip": ""
+      },
+      {
+        "word": "inequality",
+        "spelling": "I-N-E-Q-U-A-L-I-T-Y",
+        "gloss": "不平等",
+        "tip": ""
+      },
+      {
+        "word": "funding",
+        "spelling": "F-U-N-D-I-N-G",
+        "gloss": "资金",
+        "tip": ""
+      }
+    ],
+    "audioPreferTts": true
+  },
+  {
+    "id": 93,
+    "en": "Effective teamwork in laboratory research depends on clear protocols, shared data standards, and respectful communication among specialists from different fields. When roles are ambiguous, experiments are duplicated and errors multiply. Supervisors who schedule brief coordination meetings often prevent costly delays and strengthen the reliability of collective findings.",
+    "zhAnalysis": "实验室有效协作依赖清晰规程、共享数据标准，以及跨领域专家间的尊重沟通。角色模糊时，实验会被重复且错误倍增。督导若安排简短协调会，常能避免昂贵延误并提升集体发现的可靠性。",
+    "vocab": [
+      {
+        "word": "protocols",
+        "spelling": "P-R-O-T-O-C-O-L-S",
+        "gloss": "规程；协议",
+        "tip": ""
+      },
+      {
+        "word": "duplicated",
+        "spelling": "D-U-P-L-I-C-A-T-E-D",
+        "gloss": "被重复的",
+        "tip": ""
+      },
+      {
+        "word": "reliability",
+        "spelling": "R-E-L-I-A-B-I-L-I-T-Y",
+        "gloss": "可靠性",
+        "tip": ""
+      }
+    ],
+    "audioPreferTts": true
+  },
+  {
+    "id": 94,
+    "en": "Renewable energy targets are reshaping national infrastructure investment as governments seek to reduce carbon emissions without undermining economic growth. Solar and wind capacity expand quickly, yet storage and grid upgrades remain challenging. Policymakers must balance short-term costs against long-term climate resilience and energy security for future generations.",
+    "zhAnalysis": "可再生能源目标正重塑国家基建投资，政府力图在不损害经济增长的前提下减排。太阳能与风电装机快速扩张，但储能与电网升级仍具挑战。决策者须在短期成本与长期气候韧性、能源安全之间取得平衡。",
+    "vocab": [
+      {
+        "word": "Renewable",
+        "spelling": "R-E-N-E-W-A-B-L-E",
+        "gloss": "可再生的",
+        "tip": ""
+      },
+      {
+        "word": "emissions",
+        "spelling": "E-M-I-S-S-I-O-N-S",
+        "gloss": "排放",
+        "tip": ""
+      },
+      {
+        "word": "resilience",
+        "spelling": "R-E-S-I-L-I-E-N-C-E",
+        "gloss": "韧性",
+        "tip": ""
+      }
+    ],
+    "audioPreferTts": true
+  },
+  {
+    "id": 95,
+    "en": "Academic integrity policies remind students that plagiarism and fabricated data destroy trust in scholarship. Universities provide citation workshops and detection software, yet the best safeguard is genuine understanding of source material. Learners who paraphrase carefully and credit authors build habits that serve them throughout professional careers.",
+    "zhAnalysis": "学术诚信政策提醒学生：抄袭与捏造数据会摧毁学术信任。大学提供引用工作坊与检测软件，但最好的保障是真正理解原文。认真改写并注明作者的学习者，会养成贯穿职业生涯的好习惯。",
+    "vocab": [
+      {
+        "word": "integrity",
+        "spelling": "I-N-T-E-G-R-I-T-Y",
+        "gloss": "诚信",
+        "tip": ""
+      },
+      {
+        "word": "plagiarism",
+        "spelling": "P-L-A-G-I-A-R-I-S-M",
+        "gloss": "抄袭",
+        "tip": ""
+      },
+      {
+        "word": "paraphrase",
+        "spelling": "P-A-R-A-P-H-R-A-S-E",
+        "gloss": "改写；释义",
         "tip": ""
       }
     ],

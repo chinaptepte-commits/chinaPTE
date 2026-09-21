@@ -1,6 +1,6 @@
 /**
  * chinaPTE · Reading practice
- * Total: 64 items
+ * Total: 66 items
  */
 (function (global) {
   "use strict";
@@ -515,6 +515,22 @@
     "en": "Students are encouraged to ______ critically with academic texts rather than memorise them.",
     "answer": "engage",
     "zhAnalysis": "鼓励学生批判性接触学术文本，而非死记硬背。",
+    "vocab": []
+  },
+  {
+    "id": 65,
+    "type": "FIB",
+    "en": "The committee will _____ the proposal at next week's meeting.",
+    "answer": "discuss / consider / review",
+    "zhAnalysis": "FIB：discuss/consider/review。",
+    "vocab": []
+  },
+  {
+    "id": 66,
+    "type": "FIB",
+    "en": "Reliable sources are essential when you _____ academic arguments.",
+    "answer": "support / construct / build",
+    "zhAnalysis": "FIB：support/construct。",
     "vocab": []
   }
 ];

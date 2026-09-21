@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 720 420" width="720" height="420" role="img" aria-label="University R&amp;D Spending Share">
+  <rect width="720" height="420" fill="#f8fafc" rx="8"/>
+  <rect x="8" y="8" width="704" height="404" fill="#ffffff" rx="10" stroke="#e2e8f0" stroke-width="1"/>
+  <text x="360" y="36" text-anchor="middle" font-family="Segoe UI,Arial,sans-serif" font-size="16" font-weight="700" fill="#0f172a">University R&amp;D Spending Share 2020–2025</text>
+  <text x="40" y="70" font-family="Segoe UI,Arial,sans-serif" font-size="12" fill="#64748b">% of GDP-equivalent research budget</text>
+  <rect x="80" y="280" width="40" height="80" fill="#3b82f6"/><rect x="130" y="240" width="40" height="120" fill="#3b82f6"/>
+  <rect x="220" y="300" width="40" height="60" fill="#10b981"/><rect x="270" y="260" width="40" height="100" fill="#10b981"/>
+  <rect x="360" y="270" width="40" height="90" fill="#f59e0b"/><rect x="410" y="250" width="40" height="110" fill="#f59e0b"/>
+  <rect x="500" y="320" width="40" height="40" fill="#ef4444"/><rect x="550" y="300" width="40" height="60" fill="#ef4444"/>
+  <text x="100" y="390" text-anchor="middle" font-size="11" fill="#334155">A</text>
+  <text x="240" y="390" text-anchor="middle" font-size="11" fill="#334155">B</text>
+  <text x="380" y="390" text-anchor="middle" font-size="11" fill="#334155">C</text>
+  <text x="520" y="390" text-anchor="middle" font-size="11" fill="#334155">D</text>
+  <text x="600" y="100" font-size="11" fill="#64748b">light=2020 dark=2025</text>
+</svg>

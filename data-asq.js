@@ -1,6 +1,6 @@
 /**
  * chinaPTE · ASQ — Answer Short Question
- * Total: 90 items
+ * Total: 95 items
  */
 (function (global) {
   "use strict";
@@ -723,6 +723,46 @@
     "question": "What do we call water in solid form?",
     "answer": "Ice",
     "zhAnalysis": "固态的水叫什么？冰。",
+    "vocab": []
+  },
+  {
+    "id": 91,
+    "en": "What do we call a book that lists words and their meanings?",
+    "question": "What do we call a book that lists words and their meanings?",
+    "answer": "a dictionary / dictionary",
+    "zhAnalysis": "词典。",
+    "vocab": []
+  },
+  {
+    "id": 92,
+    "en": "Which gas do plants absorb during photosynthesis?",
+    "question": "Which gas do plants absorb during photosynthesis?",
+    "answer": "carbon dioxide / CO2",
+    "zhAnalysis": "二氧化碳。",
+    "vocab": []
+  },
+  {
+    "id": 93,
+    "en": "What instrument is used to measure temperature?",
+    "question": "What instrument is used to measure temperature?",
+    "answer": "a thermometer / thermometer",
+    "zhAnalysis": "温度计。",
+    "vocab": []
+  },
+  {
+    "id": 94,
+    "en": "How many minutes are there in two hours?",
+    "question": "How many minutes are there in two hours?",
+    "answer": "120 / one hundred and twenty",
+    "zhAnalysis": "120分钟。",
+    "vocab": []
+  },
+  {
+    "id": 95,
+    "en": "What do we call the opposite of artificial?",
+    "question": "What do we call the opposite of artificial?",
+    "answer": "natural",
+    "zhAnalysis": "natural（自然的）。",
     "vocab": []
   }
 ];
