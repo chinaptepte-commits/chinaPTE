@@ -8,8 +8,8 @@
 - 自定义域 CNAME：`chinapte.net`
 
 ## 仍需你在面板完成（一次即可）
-1. **域名注册商 Whois 隐私**：打开 Privacy / Redacted，避免公开姓名、邮箱、电话、地址。
-2. **Cloudflare DNS**：`chinapte.net` / `www` 必须是 **橙色云（Proxied）**，不要 DNS-only 灰色云（灰色会暴露源站解析）。
+1. **域名 Whois 隐私**：✅ 已完成（2026-09-15 Cloudflare Registrar 购入时已确认 redaction；公开 RDAP 只显示 Cloudflare，无个人姓名/邮箱/电话）。
+2. **Cloudflare DNS**：✅ 已橙色云代理（解析到 CF anycast，如 104.21.x / 172.67.x）；勿改回灰色 DNS-only。
 3. **GitHub 账号资料**：`chinaptepte-commits` 保持空资料；Settings → Emails 勾选 Keep my email addresses private；勿把个人 Gmail 设为 Public。
 4. **免费 GitHub Pages 限制**：仓库通常必须 **Public** 才能白嫖 Pages。想整库 Private，需要改托管（Cloudflare Pages / 别家）——那是另一次迁移，不是开关。
 5. **旧 commit 里的个人邮箱**：公开历史上可能仍有 `chinaptepte@gmail.com`。彻底抹掉要 rewrite + force-push，会伤协作记录；需要的话再说一声我再做。
