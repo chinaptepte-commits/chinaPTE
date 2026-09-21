@@ -90,6 +90,7 @@
       keepAlive = global.ChinaPTEKeepAlive.create({
         artist: "chinaPTE 随身听",
         isPlaying: () => state.playing && !state.paused,
+        isBetweenClips: () => !!betweenClips,
         onPlay: () => onPlayPause(),
         onPause: () => pausePlayback(),
         onNext: () => onNext(),
@@ -151,8 +152,8 @@
     }
 
     function defaultPlayMode() {
-      // WFD dictation defaults to exam-like 听题目; others default to study 随身听
-      return mode === "wfd" ? "prompt" : "walkman";
+      // Default study 随身听 (EN→中文→单词). 听题目 remains an explicit toggle.
+      return "walkman";
     }
 
     function loadPlayMode() {
@@ -451,9 +452,11 @@
     }
 
     let pauseTimer = null;
+    let betweenClips = false;
     let currentUtter = null;
 
     function cancelSpeech() {
+      betweenClips = false;
       if (pauseTimer) {
         clearTimeout(pauseTimer);
         pauseTimer = null;
@@ -526,8 +529,10 @@
 
     function wait(ms) {
       return new Promise((resolve) => {
+        betweenClips = true;
         pauseTimer = setTimeout(() => {
           pauseTimer = null;
+          betweenClips = false;
           resolve();
         }, ms);
       });

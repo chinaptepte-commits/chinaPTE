@@ -241,6 +241,8 @@
     /** Session wants play but neither HTML audio nor TTS is producing sound. */
     function maybeResumeDeadPlayback(force) {
       if (typeof hooks.isPlaying !== "function" || !hooks.isPlaying()) return;
+      // Inter-clip waits (zh↔en gaps) look "dead" — never restart the whole sequence there
+      if (typeof hooks.isBetweenClips === "function" && hooks.isBetweenClips()) return;
       if (htmlAudioActuallyPlaying()) return;
       // Prefer nudging the same HTML clip before restarting the whole sequence
       if (tryHtmlResume()) return;

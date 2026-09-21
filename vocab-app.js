@@ -98,6 +98,7 @@
   var els = {};
   var playToken = 0;
   var pauseTimer = null;
+  var betweenClips = false;
   var keepAlive = null;
   var resumePending = false;
   var resumeTimer = null;
@@ -110,6 +111,7 @@
     keepAlive = global.ChinaPTEKeepAlive.create({
       artist: "chinaPTE 随身听",
       isPlaying: function () { return state.playing && !state.paused; },
+      isBetweenClips: function () { return !!betweenClips; },
       onPlay: function () {
         if (state.playing && !state.paused) pausePlayback();
         else {
@@ -210,6 +212,7 @@
   }
 
   function cancelSpeech() {
+    betweenClips = false;
     if (pauseTimer) { clearTimeout(pauseTimer); pauseTimer = null; }
     if (global.ChinaPTEAudio) { try { global.ChinaPTEAudio.cancel(); } catch (e) {} }
     if (window.speechSynthesis) speechSynthesis.cancel();
