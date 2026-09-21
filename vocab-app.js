@@ -257,7 +257,12 @@
 
   function wait(ms) {
     return new Promise(function (resolve) {
-      pauseTimer = setTimeout(function () { pauseTimer = null; resolve(); }, ms);
+      betweenClips = true;
+      pauseTimer = setTimeout(function () {
+        pauseTimer = null;
+        betweenClips = false;
+        resolve();
+      }, ms);
     });
   }
 
