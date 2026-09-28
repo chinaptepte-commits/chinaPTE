@@ -1,6 +1,6 @@
 /**
  * chinaPTE · SWT — Summarize Written Text
- * Total: 44 items
+ * Total: 46 items
  */
 (function (global) {
   "use strict";
@@ -912,6 +912,46 @@
     "en": "Open educational resources reduce textbook costs for students worldwide. Quality varies, so instructors must curate materials carefully. Institutions that support OER creation report higher course completion in some subjects. Copyright clarity remains essential for sustainable sharing.",
     "passage": "Open educational resources reduce textbook costs for students worldwide. Quality varies, so instructors must curate materials carefully. Institutions that support OER creation report higher course completion in some subjects. Copyright clarity remains essential for sustainable sharing.",
     "zhAnalysis": "SWT：开放教育资源降低教材成本，但质量参差需精选；支持OER的院校在部分科目完成率更高，且版权清晰对可持续共享至关重要。",
+    "vocab": [
+      {
+        "word": "however",
+        "spelling": "H-O-W-E-V-E-R",
+        "gloss": "然而",
+        "tip": ""
+      },
+      {
+        "word": "although",
+        "spelling": "A-L-T-H-O-U-G-H",
+        "gloss": "虽然",
+        "tip": ""
+      }
+    ]
+  },
+  {
+    "id": 45,
+    "en": "Campus makerspaces provide tools for prototyping student inventions. Safety training is required before using advanced equipment. Projects that solve local community problems often receive small seed grants. Collaboration across engineering and design programmes is strongly encouraged.",
+    "passage": "Campus makerspaces provide tools for prototyping student inventions. Safety training is required before using advanced equipment. Projects that solve local community problems often receive small seed grants. Collaboration across engineering and design programmes is strongly encouraged.",
+    "zhAnalysis": "SWT：合并为一句。校园创客空间提供原型工具且需安全培训，解决社区问题的项目常获种子基金，并鼓励工科与设计跨专业协作。",
+    "vocab": [
+      {
+        "word": "however",
+        "spelling": "H-O-W-E-V-E-R",
+        "gloss": "然而",
+        "tip": "合并句连接"
+      },
+      {
+        "word": "although",
+        "spelling": "A-L-T-H-O-U-G-H",
+        "gloss": "虽然",
+        "tip": ""
+      }
+    ]
+  },
+  {
+    "id": 46,
+    "en": "Lecture recordings help students revise difficult concepts after class. Attendance sometimes falls when recordings are unrestricted. Departments that release videos after a short delay report a better balance between flexibility and presence. Captioning improves accessibility for all learners.",
+    "passage": "Lecture recordings help students revise difficult concepts after class. Attendance sometimes falls when recordings are unrestricted. Departments that release videos after a short delay report a better balance between flexibility and presence. Captioning improves accessibility for all learners.",
+    "zhAnalysis": "SWT：课堂录像利于复习，但无限制开放或降低出勤；短延迟发布可平衡灵活与到课，字幕则提升无障碍访问。",
     "vocab": [
       {
         "word": "however",

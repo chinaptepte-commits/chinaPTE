@@ -1,6 +1,6 @@
 /**
  * chinaPTE · ASQ — Answer Short Question
- * Total: 95 items
+ * Total: 100 items
  */
 (function (global) {
   "use strict";
@@ -763,6 +763,46 @@
     "question": "What do we call the opposite of artificial?",
     "answer": "natural",
     "zhAnalysis": "natural（自然的）。",
+    "vocab": []
+  },
+  {
+    "id": 96,
+    "en": "What do we call a place where books are borrowed?",
+    "question": "What do we call a place where books are borrowed?",
+    "answer": "a library / library",
+    "zhAnalysis": "图书馆。",
+    "vocab": []
+  },
+  {
+    "id": 97,
+    "en": "How many sides does a triangle have?",
+    "question": "How many sides does a triangle have?",
+    "answer": "three / 3",
+    "zhAnalysis": "三条边。",
+    "vocab": []
+  },
+  {
+    "id": 98,
+    "en": "What organ pumps blood around the human body?",
+    "question": "What organ pumps blood around the human body?",
+    "answer": "the heart / heart",
+    "zhAnalysis": "心脏。",
+    "vocab": []
+  },
+  {
+    "id": 99,
+    "en": "Which day comes immediately after Thursday?",
+    "question": "Which day comes immediately after Thursday?",
+    "answer": "Friday",
+    "zhAnalysis": "星期五。",
+    "vocab": []
+  },
+  {
+    "id": 100,
+    "en": "What do we call frozen water?",
+    "question": "What do we call frozen water?",
+    "answer": "ice",
+    "zhAnalysis": "冰。",
     "vocab": []
   }
 ];

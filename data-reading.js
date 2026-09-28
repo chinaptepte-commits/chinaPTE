@@ -1,6 +1,6 @@
 /**
  * chinaPTE · Reading practice
- * Total: 66 items
+ * Total: 68 items
  */
 (function (global) {
   "use strict";
@@ -531,6 +531,22 @@
     "en": "Reliable sources are essential when you _____ academic arguments.",
     "answer": "support / construct / build",
     "zhAnalysis": "FIB：support/construct。",
+    "vocab": []
+  },
+  {
+    "id": 67,
+    "type": "FIB",
+    "en": "Students should _____ their drafts carefully before final submission.",
+    "answer": "proofread / revise / check",
+    "zhAnalysis": "FIB：proofread/revise/check。",
+    "vocab": []
+  },
+  {
+    "id": 68,
+    "type": "FIB",
+    "en": "The professor asked the class to _____ the main argument in one sentence.",
+    "answer": "summarise / summarize / restate",
+    "zhAnalysis": "FIB：summarise/restate。",
     "vocab": []
   }
 ];

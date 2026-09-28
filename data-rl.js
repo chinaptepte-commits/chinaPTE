@@ -1,6 +1,6 @@
 /**
  * chinaPTE · RL — Retell Lecture
- * Total: 58 items
+ * Total: 61 items
  */
 (function (global) {
   "use strict";
@@ -1469,6 +1469,81 @@
         "word": "dropout",
         "spelling": "D-R-O-P-O-U-T",
         "gloss": "辍学",
+        "tip": ""
+      }
+    ]
+  },
+  {
+    "id": 59,
+    "en": "This lecture examines time management for coursework. Spreading tasks across the week beats last-minute cramming. Using a simple calendar and fixed study blocks reduces missed deadlines. The speaker also recommends short breaks to maintain concentration during long reading sessions.",
+    "zhAnalysis": "讲座要点：课业时间管理；分散任务优于考前突击；日历与固定学习时段减少逾期；长阅读穿插短休息以保持专注。复述：主题+方法+建议。",
+    "vocab": [
+      {
+        "word": "cramming",
+        "spelling": "C-R-A-M-M-I-N-G",
+        "gloss": "突击复习",
+        "tip": ""
+      },
+      {
+        "word": "calendar",
+        "spelling": "C-A-L-E-N-D-A-R",
+        "gloss": "日历",
+        "tip": ""
+      },
+      {
+        "word": "concentration",
+        "spelling": "C-O-N-C-E-N-T-R-A-T-I-O-N",
+        "gloss": "专注力",
+        "tip": ""
+      }
+    ]
+  },
+  {
+    "id": 60,
+    "en": "Today we discuss campus recycling systems. Clear bin labels and convenient drop-off points raise participation. Contamination from food waste still lowers recycling quality. Education campaigns and regular feedback to dormitories can improve sorting behaviour over a semester.",
+    "zhAnalysis": "讲座要点：校园回收系统；清晰标签与便利投放点提高参与；食物污染降低回收质量；宣传与宿舍反馈可改善分类习惯。",
+    "vocab": [
+      {
+        "word": "contamination",
+        "spelling": "C-O-N-T-A-M-I-N-A-T-I-O-N",
+        "gloss": "污染；混杂",
+        "tip": ""
+      },
+      {
+        "word": "sorting",
+        "spelling": "S-O-R-T-I-N-G",
+        "gloss": "分类",
+        "tip": ""
+      },
+      {
+        "word": "dormitories",
+        "spelling": "D-O-R-M-I-T-O-R-I-E-S",
+        "gloss": "宿舍",
+        "tip": ""
+      }
+    ]
+  },
+  {
+    "id": 61,
+    "en": "The talk explains how undergraduate research assistants gain skills. Students learn data entry, basic analysis, and professional communication with supervisors. Mentored projects often strengthen graduate-school applications. Clear expectations about hours and authorship prevent later misunderstandings.",
+    "zhAnalysis": "讲座要点：本科科研助理获得技能；数据录入、基础分析与专业沟通；有指导的项目强化申研；明确工时与署名预期可防误解。",
+    "vocab": [
+      {
+        "word": "assistants",
+        "spelling": "A-S-S-I-S-T-A-N-T-S",
+        "gloss": "助理",
+        "tip": ""
+      },
+      {
+        "word": "mentored",
+        "spelling": "M-E-N-T-O-R-E-D",
+        "gloss": "有指导的",
+        "tip": ""
+      },
+      {
+        "word": "authorship",
+        "spelling": "A-U-T-H-O-R-S-H-I-P",
+        "gloss": "署名权",
         "tip": ""
       }
     ]

@@ -35706,5 +35706,625 @@
     ],
     "tier": "core",
     "pos": "n. 名词"
+  },
+  {
+    "id": 2341,
+    "word": "ameliorate",
+    "spelling": "A-M-E-L-I-O-R-A-T-E",
+    "phonetic": "/əˈmiːliəreɪt/",
+    "gloss": "改善；缓和",
+    "tip": "ameliorate conditions",
+    "example": "Policies aim to ameliorate living conditions.",
+    "exampleZh": "政策旨在改善生活条件。",
+    "tags": [
+      "academic",
+      "verb"
+    ],
+    "tier": "high",
+    "pos": "v. 动词"
+  },
+  {
+    "id": 2342,
+    "word": "cohesive",
+    "spelling": "C-O-H-E-S-I-V-E",
+    "phonetic": "/kəʊˈhiːsɪv/",
+    "gloss": "有凝聚力的；连贯的",
+    "tip": "cohesive group",
+    "example": "A cohesive team finishes projects faster.",
+    "exampleZh": "有凝聚力的团队完成项目更快。",
+    "tags": [
+      "academic"
+    ],
+    "tier": "core",
+    "pos": "adj. 形容词"
+  },
+  {
+    "id": 2343,
+    "word": "consolidate",
+    "spelling": "C-O-N-S-O-L-I-D-A-T-E",
+    "phonetic": "/kənˈsɒlɪdeɪt/",
+    "gloss": "巩固；合并",
+    "tip": "consolidate gains",
+    "example": "Review sessions consolidate weekly learning.",
+    "exampleZh": "复习课巩固每周所学。",
+    "tags": [
+      "academic",
+      "verb"
+    ],
+    "tier": "core",
+    "pos": "v. 动词"
+  },
+  {
+    "id": 2344,
+    "word": "contingent",
+    "spelling": "C-O-N-T-I-N-G-E-N-T",
+    "phonetic": "/kənˈtɪndʒənt/",
+    "gloss": "视情况而定的",
+    "tip": "contingent on",
+    "example": "Approval is contingent on ethics clearance.",
+    "exampleZh": "批准取决于伦理审查通过。",
+    "tags": [
+      "academic"
+    ],
+    "tier": "high",
+    "pos": "adj. 形容词"
+  },
+  {
+    "id": 2345,
+    "word": "divergent",
+    "spelling": "D-I-V-E-R-G-E-N-T",
+    "phonetic": "/daɪˈvɜːdʒənt/",
+    "gloss": "分歧的；发散的",
+    "tip": "divergent views",
+    "example": "Experts hold divergent views on the reform.",
+    "exampleZh": "专家对这项改革持有分歧观点。",
+    "tags": [
+      "academic"
+    ],
+    "tier": "high",
+    "pos": "adj. 形容词"
+  },
+  {
+    "id": 2346,
+    "word": "elicit",
+    "spelling": "E-L-I-C-I-T",
+    "phonetic": "/ɪˈlɪsɪt/",
+    "gloss": "引出；诱发",
+    "tip": "elicit a response",
+    "example": "Open questions elicit fuller answers.",
+    "exampleZh": "开放式问题能引出更充分的回答。",
+    "tags": [
+      "academic",
+      "verb"
+    ],
+    "tier": "core",
+    "pos": "v. 动词"
+  },
+  {
+    "id": 2347,
+    "word": "entrench",
+    "spelling": "E-N-T-R-E-N-C-H",
+    "phonetic": "/ɪnˈtrentʃ/",
+    "gloss": "使根深蒂固",
+    "tip": "entrench inequality",
+    "example": "Poor policy may entrench inequality.",
+    "exampleZh": "糟糕的政策可能使不平等固化。",
+    "tags": [
+      "academic",
+      "verb"
+    ],
+    "tier": "high",
+    "pos": "v. 动词"
+  },
+  {
+    "id": 2348,
+    "word": "impede",
+    "spelling": "I-M-P-E-D-E",
+    "phonetic": "/ɪmˈpiːd/",
+    "gloss": "阻碍",
+    "tip": "impede progress",
+    "example": "Noise can impede concentration.",
+    "exampleZh": "噪音会阻碍专注。",
+    "tags": [
+      "academic",
+      "verb"
+    ],
+    "tier": "core",
+    "pos": "v. 动词"
+  },
+  {
+    "id": 2349,
+    "word": "juxtapose",
+    "spelling": "J-U-X-T-A-P-O-S-E",
+    "phonetic": "/ˈdʒʌkstəpəʊz/",
+    "gloss": "并置；对照",
+    "tip": "juxtapose ideas",
+    "example": "The essay juxtaposes two theories.",
+    "exampleZh": "这篇论文将两种理论并置对照。",
+    "tags": [
+      "academic",
+      "verb"
+    ],
+    "tier": "high",
+    "pos": "v. 动词"
+  },
+  {
+    "id": 2350,
+    "word": "mitigate",
+    "spelling": "M-I-T-I-G-A-T-E",
+    "phonetic": "/ˈmɪtɪɡeɪt/",
+    "gloss": "减轻；缓解",
+    "tip": "mitigate risk",
+    "example": "Insurance helps mitigate financial risk.",
+    "exampleZh": "保险有助于减轻财务风险。",
+    "tags": [
+      "academic",
+      "verb"
+    ],
+    "tier": "core",
+    "pos": "v. 动词"
+  },
+  {
+    "id": 2351,
+    "word": "paramount",
+    "spelling": "P-A-R-A-M-O-U-N-T",
+    "phonetic": "/ˈpærəmaʊnt/",
+    "gloss": "最重要的",
+    "tip": "of paramount importance",
+    "example": "Safety is of paramount importance.",
+    "exampleZh": "安全最为重要。",
+    "tags": [
+      "academic"
+    ],
+    "tier": "high",
+    "pos": "adj. 形容词"
+  },
+  {
+    "id": 2352,
+    "word": "proliferate",
+    "spelling": "P-R-O-L-I-F-E-R-A-T-E",
+    "phonetic": "/prəˈlɪfəreɪt/",
+    "gloss": "激增；扩散",
+    "tip": "proliferate online",
+    "example": "Rumours proliferate online quickly.",
+    "exampleZh": "谣言在网上迅速扩散。",
+    "tags": [
+      "academic",
+      "verb"
+    ],
+    "tier": "high",
+    "pos": "v. 动词"
+  },
+  {
+    "id": 2353,
+    "word": "proficient",
+    "spelling": "P-R-O-F-I-C-I-E-N-T",
+    "phonetic": "/prəˈfɪʃnt/",
+    "gloss": "熟练的",
+    "tip": "proficient in",
+    "example": "She is proficient in academic writing.",
+    "exampleZh": "她擅长学术写作。",
+    "tags": [
+      "academic"
+    ],
+    "tier": "core",
+    "pos": "adj. 形容词"
+  },
+  {
+    "id": 2354,
+    "word": "residual",
+    "spelling": "R-E-S-I-D-U-A-L",
+    "phonetic": "/rɪˈzɪdjuəl/",
+    "gloss": "残留的；剩余的",
+    "tip": "residual effects",
+    "example": "The residual effects lasted for days.",
+    "exampleZh": "残留影响持续了数日。",
+    "tags": [
+      "academic"
+    ],
+    "tier": "high",
+    "pos": "adj. 形容词"
+  },
+  {
+    "id": 2355,
+    "word": "scrutinise",
+    "spelling": "S-C-R-U-T-I-N-I-S-E",
+    "phonetic": "/ˈskruːtənaɪz/",
+    "gloss": "仔细审查",
+    "tip": "scrutinise evidence",
+    "example": "Markers scrutinise citations carefully.",
+    "exampleZh": "阅卷者仔细审查引用。",
+    "tags": [
+      "academic",
+      "verb"
+    ],
+    "tier": "core",
+    "pos": "v. 动词"
+  },
+  {
+    "id": 2356,
+    "word": "substantiate",
+    "spelling": "S-U-B-S-T-A-N-T-I-A-T-E",
+    "phonetic": "/səbˈstænʃieɪt/",
+    "gloss": "证实；证明",
+    "tip": "substantiate a claim",
+    "example": "Data substantiate the main claim.",
+    "exampleZh": "数据证实了主要论点。",
+    "tags": [
+      "academic",
+      "verb"
+    ],
+    "tier": "core",
+    "pos": "v. 动词"
+  },
+  {
+    "id": 2357,
+    "word": "synthesise",
+    "spelling": "S-Y-N-T-H-E-S-I-S-E",
+    "phonetic": "/ˈsɪnθəsaɪz/",
+    "gloss": "综合；合成",
+    "tip": "synthesise sources",
+    "example": "Students must synthesise multiple sources.",
+    "exampleZh": "学生必须综合多个来源。",
+    "tags": [
+      "academic",
+      "verb"
+    ],
+    "tier": "core",
+    "pos": "v. 动词"
+  },
+  {
+    "id": 2358,
+    "word": "underpin",
+    "spelling": "U-N-D-E-R-P-I-N",
+    "phonetic": "/ˌʌndəˈpɪn/",
+    "gloss": "支撑；构成基础",
+    "tip": "underpin the argument",
+    "example": "Evidence must underpin the argument.",
+    "exampleZh": "证据必须支撑论点。",
+    "tags": [
+      "academic",
+      "verb"
+    ],
+    "tier": "core",
+    "pos": "v. 动词"
+  },
+  {
+    "id": 2359,
+    "word": "volatile",
+    "spelling": "V-O-L-A-T-I-L-E",
+    "phonetic": "/ˈvɒlətaɪl/",
+    "gloss": "易变的；动荡的",
+    "tip": "volatile market",
+    "example": "Oil prices remain volatile this year.",
+    "exampleZh": "今年油价仍然波动剧烈。",
+    "tags": [
+      "academic"
+    ],
+    "tier": "high",
+    "pos": "adj. 形容词"
+  },
+  {
+    "id": 2360,
+    "word": "affluent",
+    "spelling": "A-F-F-L-U-E-N-T",
+    "phonetic": "/ˈæfluənt/",
+    "gloss": "富裕的",
+    "tip": "affluent suburbs",
+    "example": "Affluent suburbs fund better schools.",
+    "exampleZh": "富裕郊区能为学校提供更多资金。",
+    "tags": [
+      "academic"
+    ],
+    "tier": "high",
+    "pos": "adj. 形容词"
+  },
+  {
+    "id": 2361,
+    "word": "analogous",
+    "spelling": "A-N-A-L-O-G-O-U-S",
+    "phonetic": "/əˈnæləɡəs/",
+    "gloss": "类似的",
+    "tip": "analogous to",
+    "example": "The process is analogous to digestion.",
+    "exampleZh": "该过程类似于消化。",
+    "tags": [
+      "academic"
+    ],
+    "tier": "high",
+    "pos": "adj. 形容词"
+  },
+  {
+    "id": 2362,
+    "word": "banal",
+    "spelling": "B-A-N-A-L",
+    "phonetic": "/bəˈnɑːl/",
+    "gloss": "陈腐的；平庸的",
+    "tip": "banal comment",
+    "example": "Avoid banal comments in essays.",
+    "exampleZh": "论文中避免陈词滥调。",
+    "tags": [
+      "academic"
+    ],
+    "tier": "high",
+    "pos": "adj. 形容词"
+  },
+  {
+    "id": 2363,
+    "word": "bolster",
+    "spelling": "B-O-L-S-T-E-R",
+    "phonetic": "/ˈbəʊlstə/",
+    "gloss": "支持；增强",
+    "tip": "bolster confidence",
+    "example": "Practice can bolster speaking confidence.",
+    "exampleZh": "练习能增强口语自信。",
+    "tags": [
+      "academic",
+      "verb"
+    ],
+    "tier": "high",
+    "pos": "v. 动词"
+  },
+  {
+    "id": 2364,
+    "word": "concede",
+    "spelling": "C-O-N-C-E-D-E",
+    "phonetic": "/kənˈsiːd/",
+    "gloss": "承认；让步",
+    "tip": "concede that",
+    "example": "Critics concede that reforms helped.",
+    "exampleZh": "批评者也承认改革有帮助。",
+    "tags": [
+      "academic",
+      "verb"
+    ],
+    "tier": "core",
+    "pos": "v. 动词"
+  },
+  {
+    "id": 2365,
+    "word": "conjecture",
+    "spelling": "C-O-N-J-E-C-T-U-R-E",
+    "phonetic": "/kənˈdʒektʃə/",
+    "gloss": "推测；臆测",
+    "tip": "mere conjecture",
+    "example": "Without data it is mere conjecture.",
+    "exampleZh": "没有数据就只是臆测。",
+    "tags": [
+      "academic"
+    ],
+    "tier": "high",
+    "pos": "n. 名词"
+  },
+  {
+    "id": 2366,
+    "word": "corroborate",
+    "spelling": "C-O-R-R-O-B-O-R-A-T-E",
+    "phonetic": "/kəˈrɒbəreɪt/",
+    "gloss": "证实；印证",
+    "tip": "corroborate findings",
+    "example": "A second study corroborates the findings.",
+    "exampleZh": "第二项研究印证了这些发现。",
+    "tags": [
+      "academic",
+      "verb"
+    ],
+    "tier": "core",
+    "pos": "v. 动词"
+  },
+  {
+    "id": 2367,
+    "word": "culminate",
+    "spelling": "C-U-L-M-I-N-A-T-E",
+    "phonetic": "/ˈkʌlmɪneɪt/",
+    "gloss": "达到顶点；以…告终",
+    "tip": "culminate in",
+    "example": "The project culminated in a report.",
+    "exampleZh": "该项目以一份报告告终。",
+    "tags": [
+      "academic",
+      "verb"
+    ],
+    "tier": "high",
+    "pos": "v. 动词"
+  },
+  {
+    "id": 2368,
+    "word": "disseminate",
+    "spelling": "D-I-S-S-E-M-I-N-A-T-E",
+    "phonetic": "/dɪˈsemɪneɪt/",
+    "gloss": "传播；散布",
+    "tip": "disseminate information",
+    "example": "Journals disseminate research findings.",
+    "exampleZh": "期刊传播研究成果。",
+    "tags": [
+      "academic",
+      "verb"
+    ],
+    "tier": "core",
+    "pos": "v. 动词"
+  },
+  {
+    "id": 2369,
+    "word": "ephemeral",
+    "spelling": "E-P-H-E-M-E-R-A-L",
+    "phonetic": "/ɪˈfemərəl/",
+    "gloss": "短暂的",
+    "tip": "ephemeral trend",
+    "example": "Fashion trends can be ephemeral.",
+    "exampleZh": "时尚潮流可能转瞬即逝。",
+    "tags": [
+      "academic"
+    ],
+    "tier": "high",
+    "pos": "adj. 形容词"
+  },
+  {
+    "id": 2370,
+    "word": "indispensable",
+    "spelling": "I-N-D-I-S-P-E-N-S-A-B-L-E",
+    "phonetic": "/ˌɪndɪˈspensəbl/",
+    "gloss": "不可或缺的",
+    "tip": "indispensable tool",
+    "example": "Dictionaries remain an indispensable tool.",
+    "exampleZh": "词典仍是不可或缺的工具。",
+    "tags": [
+      "academic"
+    ],
+    "tier": "core",
+    "pos": "adj. 形容词"
+  },
+  {
+    "id": 2371,
+    "word": "obsolete",
+    "spelling": "O-B-S-O-L-E-T-E",
+    "phonetic": "/ˈɒbsəliːt/",
+    "gloss": "过时的",
+    "tip": "become obsolete",
+    "example": "Some skills quickly become obsolete.",
+    "exampleZh": "有些技能很快就会过时。",
+    "tags": [
+      "academic"
+    ],
+    "tier": "core",
+    "pos": "adj. 形容词"
+  },
+  {
+    "id": 2372,
+    "word": "reciprocal",
+    "spelling": "R-E-C-I-P-R-O-C-A-L",
+    "phonetic": "/rɪˈsɪprəkl/",
+    "gloss": "相互的",
+    "tip": "reciprocal relationship",
+    "example": "Trust requires a reciprocal relationship.",
+    "exampleZh": "信任需要相互关系。",
+    "tags": [
+      "academic"
+    ],
+    "tier": "high",
+    "pos": "adj. 形容词"
+  },
+  {
+    "id": 2373,
+    "word": "refute",
+    "spelling": "R-E-F-U-T-E",
+    "phonetic": "/rɪˈfjuːt/",
+    "gloss": "驳斥",
+    "tip": "refute an argument",
+    "example": "Evidence can refute a weak argument.",
+    "exampleZh": "证据可以驳斥薄弱论点。",
+    "tags": [
+      "academic",
+      "verb"
+    ],
+    "tier": "core",
+    "pos": "v. 动词"
+  },
+  {
+    "id": 2374,
+    "word": "sporadic",
+    "spelling": "S-P-O-R-A-D-I-C",
+    "phonetic": "/spəˈrædɪk/",
+    "gloss": "零星的；断断续续的",
+    "tip": "sporadic attendance",
+    "example": "Sporadic attendance harms progress.",
+    "exampleZh": "出勤断断续续会影响进步。",
+    "tags": [
+      "academic"
+    ],
+    "tier": "high",
+    "pos": "adj. 形容词"
+  },
+  {
+    "id": 2375,
+    "word": "tenable",
+    "spelling": "T-E-N-A-B-L-E",
+    "phonetic": "/ˈtenəbl/",
+    "gloss": "站得住脚的",
+    "tip": "tenable position",
+    "example": "That claim is no longer tenable.",
+    "exampleZh": "该主张已站不住脚。",
+    "tags": [
+      "academic"
+    ],
+    "tier": "high",
+    "pos": "adj. 形容词"
+  },
+  {
+    "id": 2376,
+    "word": "alleviate",
+    "spelling": "A-L-L-E-V-I-A-T-E",
+    "phonetic": "/əˈliːvieɪt/",
+    "gloss": "减轻；缓解",
+    "tip": "alleviate poverty",
+    "example": "Grants help alleviate student poverty.",
+    "exampleZh": "助学金有助于减轻学生贫困。",
+    "tags": [
+      "academic",
+      "verb"
+    ],
+    "tier": "core",
+    "pos": "v. 动词"
+  },
+  {
+    "id": 2377,
+    "word": "affirm",
+    "spelling": "A-F-F-I-R-M",
+    "phonetic": "/əˈfɜːm/",
+    "gloss": "申明；肯定",
+    "tip": "affirm the decision",
+    "example": "The board affirmed the earlier decision.",
+    "exampleZh": "董事会肯定了先前决定。",
+    "tags": [
+      "academic",
+      "verb"
+    ],
+    "tier": "high",
+    "pos": "v. 动词"
+  },
+  {
+    "id": 2378,
+    "word": "arduous",
+    "spelling": "A-R-D-U-O-U-S",
+    "phonetic": "/ˈɑːdjuəs/",
+    "gloss": "艰巨的",
+    "tip": "arduous task",
+    "example": "Writing a thesis is an arduous task.",
+    "exampleZh": "写论文是一项艰巨任务。",
+    "tags": [
+      "academic"
+    ],
+    "tier": "high",
+    "pos": "adj. 形容词"
+  },
+  {
+    "id": 2379,
+    "word": "catalyst",
+    "spelling": "C-A-T-A-L-Y-S-T",
+    "phonetic": "/ˈkætəlɪst/",
+    "gloss": "催化剂；促成因素",
+    "tip": "a catalyst for",
+    "example": "The lecture was a catalyst for debate.",
+    "exampleZh": "这场讲座促成了辩论。",
+    "tags": [
+      "academic"
+    ],
+    "tier": "core",
+    "pos": "n. 名词"
+  },
+  {
+    "id": 2380,
+    "word": "latent",
+    "spelling": "L-A-T-E-N-T",
+    "phonetic": "/ˈleɪtnt/",
+    "gloss": "潜在的；潜伏的",
+    "tip": "latent ability",
+    "example": "Training can unlock latent ability.",
+    "exampleZh": "训练能释放潜在能力。",
+    "tags": [
+      "academic"
+    ],
+    "tier": "high",
+    "pos": "adj. 形容词"
   }
 ]

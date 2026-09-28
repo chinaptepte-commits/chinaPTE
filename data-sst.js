@@ -1,6 +1,6 @@
 /**
  * chinaPTE · SST — Summarize Spoken Text
- * Total: 47 items
+ * Total: 49 items
  */
 (function (global) {
   "use strict";
@@ -1091,6 +1091,58 @@
         "word": "portfolios",
         "spelling": "P-O-R-T-F-O-L-I-O-S",
         "gloss": "作品集",
+        "tip": ""
+      }
+    ]
+  },
+  {
+    "id": 48,
+    "en": "Public universities are expanding evening courses for working adults. Flexible schedules and online modules reduce commuting barriers. Employers sometimes sponsor tuition when skills match workplace needs. Critics note that part-time study can increase stress without adequate student-support services.",
+    "passage": "Public universities are expanding evening courses for working adults. Flexible schedules and online modules reduce commuting barriers. Employers sometimes sponsor tuition when skills match workplace needs. Critics note that part-time study can increase stress without adequate student-support services.",
+    "zhAnalysis": "总结：公立大学扩展夜校→灵活排课与在线模块减通勤障碍→雇主或资助学费→批评者担心兼职学习缺支持会增压。SST写50–70词。",
+    "vocab": [
+      {
+        "word": "modules",
+        "spelling": "M-O-D-U-L-E-S",
+        "gloss": "模块",
+        "tip": ""
+      },
+      {
+        "word": "sponsor",
+        "spelling": "S-P-O-N-S-O-R",
+        "gloss": "赞助",
+        "tip": ""
+      },
+      {
+        "word": "tuition",
+        "spelling": "T-U-I-T-I-O-N",
+        "gloss": "学费",
+        "tip": ""
+      }
+    ]
+  },
+  {
+    "id": 49,
+    "en": "City libraries are digitising rare local newspapers to protect fragile paper archives. Volunteers help tag articles so historians can search by topic and date. Funding shortages slow the work, yet each completed collection expands public access to community history.",
+    "passage": "City libraries are digitising rare local newspapers to protect fragile paper archives. Volunteers help tag articles so historians can search by topic and date. Funding shortages slow the work, yet each completed collection expands public access to community history.",
+    "zhAnalysis": "总结：市图书馆数字化稀有报纸→保护脆弱纸质档案→志愿者标注便于检索→资金短缺放慢进度→完成馆藏扩大公众获取。",
+    "vocab": [
+      {
+        "word": "digitising",
+        "spelling": "D-I-G-I-T-I-S-I-N-G",
+        "gloss": "数字化",
+        "tip": "英式"
+      },
+      {
+        "word": "fragile",
+        "spelling": "F-R-A-G-I-L-E",
+        "gloss": "易损的",
+        "tip": ""
+      },
+      {
+        "word": "archives",
+        "spelling": "A-R-C-H-I-V-E-S",
+        "gloss": "档案",
         "tip": ""
       }
     ]

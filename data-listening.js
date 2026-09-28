@@ -1,6 +1,6 @@
 /**
  * chinaPTE · Listening practice
- * Total: 70 items
+ * Total: 72 items
  */
 (function (global) {
   "use strict";
@@ -563,6 +563,22 @@
     "en": "Speaker: Please collect your certificates from the student centre after three o'clock.\nQuestion: Where should students collect certificates?",
     "answer": "From the student centre",
     "zhAnalysis": "地点细节：student centre。",
+    "vocab": []
+  },
+  {
+    "id": 71,
+    "type": "MCQ",
+    "en": "Speaker: The museum tour starts at nine, but please arrive by half past eight for registration.\nQuestion: When should visitors arrive?",
+    "answer": "By half past eight",
+    "zhAnalysis": "听力MCQ：抓 arrive by，不是 tour starts。",
+    "vocab": []
+  },
+  {
+    "id": 72,
+    "type": "MCQ",
+    "en": "Speaker: Lab coats are available free at the store, but safety goggles must be purchased separately.\nQuestion: What must students buy separately?",
+    "answer": "Safety goggles",
+    "zhAnalysis": "细节：goggles 需另购；lab coats 免费。",
     "vocab": []
   }
 ];

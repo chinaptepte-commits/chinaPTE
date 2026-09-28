@@ -1,6 +1,6 @@
 /**
  * chinaPTE · HIW — Highlight Incorrect Words
- * Total: 47 items
+ * Total: 49 items
  */
 (function (global) {
   "use strict";
@@ -989,6 +989,46 @@
     "id": 47,
     "en": "Scholarship committees evaluate both academic merit and community involvement carefully.",
     "transcript": "Scholarship committees evaluate both academic merit and community involvement carefully.",
+    "zhAnalysis": "对照正确文本，标出与录音不符的词。",
+    "vocab": [
+      {
+        "word": "transcript",
+        "spelling": "T-R-A-N-S-C-R-I-P-T",
+        "gloss": "文字稿",
+        "tip": "对照听"
+      },
+      {
+        "word": "incorrect",
+        "spelling": "I-N-C-O-R-R-E-C-T",
+        "gloss": "错误的",
+        "tip": ""
+      }
+    ]
+  },
+  {
+    "id": 48,
+    "en": "Faculty advisors encourage students to balance coursework with rest and exercise regularly.",
+    "transcript": "Faculty advisors encourage students to balance coursework with rest and exercise regularly.",
+    "zhAnalysis": "对照正确文本，标出与录音不符的词。",
+    "vocab": [
+      {
+        "word": "transcript",
+        "spelling": "T-R-A-N-S-C-R-I-P-T",
+        "gloss": "文字稿",
+        "tip": "对照听"
+      },
+      {
+        "word": "incorrect",
+        "spelling": "I-N-C-O-R-R-E-C-T",
+        "gloss": "错误的",
+        "tip": ""
+      }
+    ]
+  },
+  {
+    "id": 49,
+    "en": "Digital literacy workshops teach how to evaluate online sources before citing them.",
+    "transcript": "Digital literacy workshops teach how to evaluate online sources before citing them.",
     "zhAnalysis": "对照正确文本，标出与录音不符的词。",
     "vocab": [
       {

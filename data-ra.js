@@ -1,6 +1,6 @@
 /**
  * chinaPTE · RA — Read Aloud
- * Total: 95 items · exam-length passages (~45–65 words)
+ * Total: 100 items · exam-length passages (~45–65 words)
  * Audio: prefer speechSynthesis (audioPreferTts); no RA MP3s in manifest
  */
 (function (global) {
@@ -2471,6 +2471,136 @@
         "word": "paraphrase",
         "spelling": "P-A-R-A-P-H-R-A-S-E",
         "gloss": "改写；释义",
+        "tip": ""
+      }
+    ],
+    "audioPreferTts": true
+  },
+  {
+    "id": 96,
+    "en": "Open-access publishing increases the visibility of research by removing paywalls that restrict readership. Advocates argue that publicly funded findings should be free to citizens and practitioners. Critics worry about article-processing charges that shift costs onto authors. Sustainable models therefore need both quality control and fair funding mechanisms for scholars in less wealthy institutions.",
+    "zhAnalysis": "开放获取出版通过取消付费墙提高研究可见度。支持者认为公共资助成果应对公民与从业者免费开放；批评者担心文章处理费把成本转嫁给作者。可持续模式需兼顾质量控制与对较贫困院校学者的公平资助机制。",
+    "vocab": [
+      {
+        "word": "visibility",
+        "spelling": "V-I-S-I-B-I-L-I-T-Y",
+        "gloss": "可见度",
+        "tip": ""
+      },
+      {
+        "word": "paywalls",
+        "spelling": "P-A-Y-W-A-L-L-S",
+        "gloss": "付费墙",
+        "tip": ""
+      },
+      {
+        "word": "mechanisms",
+        "spelling": "M-E-C-H-A-N-I-S-M-S",
+        "gloss": "机制",
+        "tip": ""
+      }
+    ],
+    "audioPreferTts": true
+  },
+  {
+    "id": 97,
+    "en": "Campus mental-health services have expanded as universities recognise the pressures of academic competition and financial strain. Counselling appointments, peer-support groups, and wellness workshops are now common offerings. Demand still often exceeds capacity, so early outreach and staff training remain priorities for reducing crisis referrals.",
+    "zhAnalysis": "随着大学意识到学业竞争与经济压力，校园心理健康服务已扩展。咨询预约、同伴支持小组与健康工作坊已很常见。需求仍常超过容量，因此早期外展与员工培训仍是减少危机转介的优先事项。",
+    "vocab": [
+      {
+        "word": "counselling",
+        "spelling": "C-O-U-N-S-E-L-L-I-N-G",
+        "gloss": "心理咨询",
+        "tip": "英式"
+      },
+      {
+        "word": "capacity",
+        "spelling": "C-A-P-A-C-I-T-Y",
+        "gloss": "容量；能力",
+        "tip": ""
+      },
+      {
+        "word": "outreach",
+        "spelling": "O-U-T-R-E-A-C-H",
+        "gloss": "外展服务",
+        "tip": ""
+      }
+    ],
+    "audioPreferTts": true
+  },
+  {
+    "id": 98,
+    "en": "Sustainable campus transport policies encourage walking, cycling, and frequent shuttle buses instead of private cars. Bike lanes, secure parking, and discounted transit passes make alternatives more attractive. When fewer vehicles enter campus, air quality improves and noise around lecture halls declines.",
+    "zhAnalysis": "可持续校园交通政策鼓励步行、骑行与高频班车，而非私家车。自行车道、安全停放与折扣公交卡使替代方式更具吸引力。进入校园的车辆减少后，空气质量改善，阶梯教室周边噪音下降。",
+    "vocab": [
+      {
+        "word": "shuttle",
+        "spelling": "S-H-U-T-T-L-E",
+        "gloss": "班车",
+        "tip": ""
+      },
+      {
+        "word": "alternatives",
+        "spelling": "A-L-T-E-R-N-A-T-I-V-E-S",
+        "gloss": "替代方案",
+        "tip": ""
+      },
+      {
+        "word": "declines",
+        "spelling": "D-E-C-L-I-N-E-S",
+        "gloss": "下降",
+        "tip": ""
+      }
+    ],
+    "audioPreferTts": true
+  },
+  {
+    "id": 99,
+    "en": "Collaborative note-sharing platforms help students catch up after illness, yet they can also discourage active listening in class. Instructors who set clear rules about what may be shared protect intellectual property while still supporting peers. Balanced guidance is more effective than an outright ban.",
+    "zhAnalysis": "协作笔记共享平台帮助学生在病假后补课，但也可能削弱课堂主动听讲。教师若明确可共享内容的规则，既能保护知识产权又支持同伴。平衡引导比一刀切禁止更有效。",
+    "vocab": [
+      {
+        "word": "collaborative",
+        "spelling": "C-O-L-L-A-B-O-R-A-T-I-V-E",
+        "gloss": "协作的",
+        "tip": ""
+      },
+      {
+        "word": "discourage",
+        "spelling": "D-I-S-C-O-U-R-A-G-E",
+        "gloss": "劝阻；使气馁",
+        "tip": ""
+      },
+      {
+        "word": "outright",
+        "spelling": "O-U-T-R-I-G-H-T",
+        "gloss": "彻底的",
+        "tip": ""
+      }
+    ],
+    "audioPreferTts": true
+  },
+  {
+    "id": 100,
+    "en": "Fieldwork in the social sciences teaches students to gather evidence ethically and interpret local contexts carefully. Consent procedures, anonymisation, and respectful interviewing are as important as research questions. Supervisors who review protocols early prevent costly redesigns later in the project.",
+    "zhAnalysis": "社会科学田野调查教会学生合乎伦理地收集证据并谨慎解读地方语境。知情同意、匿名化与尊重式访谈和研究问题同等重要。督导若尽早审阅规程，可避免项目后期昂贵的重新设计。",
+    "vocab": [
+      {
+        "word": "Fieldwork",
+        "spelling": "F-I-E-L-D-W-O-R-K",
+        "gloss": "田野调查",
+        "tip": ""
+      },
+      {
+        "word": "anonymisation",
+        "spelling": "A-N-O-N-Y-M-I-S-A-T-I-O-N",
+        "gloss": "匿名化",
+        "tip": "英式"
+      },
+      {
+        "word": "protocols",
+        "spelling": "P-R-O-T-O-C-O-L-S",
+        "gloss": "规程",
         "tip": ""
       }
     ],

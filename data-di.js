@@ -1,6 +1,6 @@
 /**
  * chinaPTE · DI — Describe Image
- * Total: 47 items
+ * Total: 49 items
  */
 (function (global) {
   "use strict";
@@ -1276,6 +1276,60 @@
         "word": "overall",
         "spelling": "O-V-E-R-A-L-L",
         "gloss": "总体",
+        "tip": ""
+      }
+    ]
+  },
+  {
+    "id": 48,
+    "image": "images/di/48.svg",
+    "en": "📊 柱状图：五系图书馆借阅量 2023–2025",
+    "scene": "📊 柱状图：五系图书馆借阅量 2023–2025",
+    "zhAnalysis": "描述：先总述图表类型与主题；比最高/最低；提两年对比；结尾结论。样例：工程系借阅最高；艺术系偏低；多数系 2025 年上升。",
+    "vocab": [
+      {
+        "word": "increase",
+        "spelling": "I-N-C-R-E-A-S-E",
+        "gloss": "上升",
+        "tip": "DI常用"
+      },
+      {
+        "word": "faculty",
+        "spelling": "F-A-C-U-L-T-Y",
+        "gloss": "系；学院",
+        "tip": ""
+      },
+      {
+        "word": "overall",
+        "spelling": "O-V-E-R-A-L-L",
+        "gloss": "总体",
+        "tip": ""
+      }
+    ]
+  },
+  {
+    "id": 49,
+    "image": "images/di/49.svg",
+    "en": "📈 折线图：校园食堂日均用餐人次 2019–2025",
+    "scene": "📈 折线图：校园食堂日均用餐人次 2019–2025",
+    "zhAnalysis": "描述：整体回升；2020 显著下降；2022 后稳步增长；联系返校与餐品种类扩展。",
+    "vocab": [
+      {
+        "word": "decline",
+        "spelling": "D-E-C-L-I-N-E",
+        "gloss": "下降",
+        "tip": ""
+      },
+      {
+        "word": "recover",
+        "spelling": "R-E-C-O-V-E-R",
+        "gloss": "回升",
+        "tip": ""
+      },
+      {
+        "word": "trend",
+        "spelling": "T-R-E-N-D",
+        "gloss": "趋势",
         "tip": ""
       }
     ]

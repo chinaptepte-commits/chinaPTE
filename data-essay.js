@@ -1,6 +1,6 @@
 /**
  * chinaPTE · Essay prompts
- * Total: 35 items
+ * Total: 37 items
  */
 (function (global) {
   "use strict";
@@ -894,6 +894,58 @@
     "en": "Some educators argue that artificial intelligence tools should be banned in student assignments. Others believe AI can support learning if used transparently. Discuss both views and give your opinion.",
     "prompt": "Some educators argue that artificial intelligence tools should be banned in student assignments. Others believe AI can support learning if used transparently. Discuss both views and give your opinion.",
     "zhAnalysis": "提纲：开头改写表态；一边禁用以防抄袭依赖；一边透明使用可辅助学习；你的观点：规范使用+考核设计；结尾重申。200–300词。",
+    "vocab": [
+      {
+        "word": "however",
+        "spelling": "H-O-W-E-V-E-R",
+        "gloss": "然而",
+        "tip": ""
+      },
+      {
+        "word": "furthermore",
+        "spelling": "F-U-R-T-H-E-R-M-O-R-E",
+        "gloss": "此外",
+        "tip": ""
+      },
+      {
+        "word": "therefore",
+        "spelling": "T-H-E-R-E-F-O-R-E",
+        "gloss": "因此",
+        "tip": ""
+      }
+    ]
+  },
+  {
+    "id": 36,
+    "en": "Some people believe universities should prioritise vocational skills that lead directly to employment. Others argue that a broad liberal education remains essential. Discuss both views and give your opinion.",
+    "prompt": "Some people believe universities should prioritise vocational skills that lead directly to employment. Others argue that a broad liberal education remains essential. Discuss both views and give your opinion.",
+    "zhAnalysis": "提纲：开头改写表态；一边就业导向技能；一边通识教育培养批判思维；你的观点：核心技能+通识平衡；结尾重申。200–300词。",
+    "vocab": [
+      {
+        "word": "however",
+        "spelling": "H-O-W-E-V-E-R",
+        "gloss": "然而",
+        "tip": ""
+      },
+      {
+        "word": "furthermore",
+        "spelling": "F-U-R-T-H-E-R-M-O-R-E",
+        "gloss": "此外",
+        "tip": ""
+      },
+      {
+        "word": "therefore",
+        "spelling": "T-H-E-R-E-F-O-R-E",
+        "gloss": "因此",
+        "tip": ""
+      }
+    ]
+  },
+  {
+    "id": 37,
+    "en": "Online learning offers flexibility for students with work or family duties. However, some educators claim face-to-face classes build stronger academic communities. Discuss both sides and state your view.",
+    "prompt": "Online learning offers flexibility for students with work or family duties. However, some educators claim face-to-face classes build stronger academic communities. Discuss both sides and state your view.",
+    "zhAnalysis": "提纲：在线灵活 vs 面授社群；折中混合式；举例说明；结论。200–300词。",
     "vocab": [
       {
         "word": "however",
