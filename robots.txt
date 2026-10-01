@@ -5,13 +5,16 @@
 User-agent: *
 Allow: /
 Disallow: /chinaPTE/admin/
+Disallow: /admin/
 
 User-agent: Baiduspider
 Allow: /
 Disallow: /chinaPTE/admin/
+Disallow: /admin/
 
 User-agent: bingbot
 Allow: /
 Disallow: /chinaPTE/admin/
+Disallow: /admin/
 
 Sitemap: https://chinapte.net/sitemap.xml
