@@ -1,6 +1,6 @@
 /**
  * chinaPTE · Reading practice
- * Total: 68 items
+ * Total: 71 items
  */
 (function (global) {
   "use strict";
@@ -547,6 +547,30 @@
     "en": "The professor asked the class to _____ the main argument in one sentence.",
     "answer": "summarise / summarize / restate",
     "zhAnalysis": "FIB：summarise/restate。",
+    "vocab": []
+  },
+  {
+    "id": 69,
+    "type": "FIB",
+    "en": "Researchers must _____ participants' personal data so that individuals cannot be identified.",
+    "answer": "anonymise / anonymize",
+    "zhAnalysis": "FIB：anonymise（匿名化）——so that individuals cannot be identified 是提示。",
+    "vocab": []
+  },
+  {
+    "id": 70,
+    "type": "RWFIB",
+    "en": "Rising sea levels pose a serious ______ to low-lying coastal communities.",
+    "answer": "threat",
+    "zhAnalysis": "海平面上升对低洼沿海社区构成严重威胁。pose a threat to 固定搭配。",
+    "vocab": []
+  },
+  {
+    "id": 71,
+    "type": "RWFIB",
+    "en": "The new scholarship scheme had a significant ______ on enrolment numbers.",
+    "answer": "impact / effect",
+    "zhAnalysis": "新的奖学金计划对入学人数产生了显著影响。have an impact/effect on 固定搭配。",
     "vocab": []
   }
 ];

@@ -1,6 +1,6 @@
 /**
  * chinaPTE · Essay prompts
- * Total: 37 items
+ * Total: 39 items
  */
 (function (global) {
   "use strict";
@@ -946,6 +946,58 @@
     "en": "Online learning offers flexibility for students with work or family duties. However, some educators claim face-to-face classes build stronger academic communities. Discuss both sides and state your view.",
     "prompt": "Online learning offers flexibility for students with work or family duties. However, some educators claim face-to-face classes build stronger academic communities. Discuss both sides and state your view.",
     "zhAnalysis": "提纲：在线灵活 vs 面授社群；折中混合式；举例说明；结论。200–300词。",
+    "vocab": [
+      {
+        "word": "however",
+        "spelling": "H-O-W-E-V-E-R",
+        "gloss": "然而",
+        "tip": ""
+      },
+      {
+        "word": "furthermore",
+        "spelling": "F-U-R-T-H-E-R-M-O-R-E",
+        "gloss": "此外",
+        "tip": ""
+      },
+      {
+        "word": "therefore",
+        "spelling": "T-H-E-R-E-F-O-R-E",
+        "gloss": "因此",
+        "tip": ""
+      }
+    ]
+  },
+  {
+    "id": 38,
+    "en": "Some people think governments should invest more in public transport, while others believe building more roads is the best way to reduce traffic congestion. Discuss both views and give your own opinion.",
+    "prompt": "Some people think governments should invest more in public transport, while others believe building more roads is the best way to reduce traffic congestion. Discuss both views and give your own opinion.",
+    "zhAnalysis": "提纲：开头改写题目并表态；公共交通：运量大、减排；修路：短期缓解但会刺激更多车流；观点：优先发展公交，同时合理规划道路；结尾重申。200–300词。",
+    "vocab": [
+      {
+        "word": "however",
+        "spelling": "H-O-W-E-V-E-R",
+        "gloss": "然而",
+        "tip": ""
+      },
+      {
+        "word": "furthermore",
+        "spelling": "F-U-R-T-H-E-R-M-O-R-E",
+        "gloss": "此外",
+        "tip": ""
+      },
+      {
+        "word": "therefore",
+        "spelling": "T-H-E-R-E-F-O-R-E",
+        "gloss": "因此",
+        "tip": ""
+      }
+    ]
+  },
+  {
+    "id": 39,
+    "en": "Advances in artificial intelligence are changing the way students learn and complete assignments. Do the advantages of this development outweigh the disadvantages? Support your view with reasons and examples.",
+    "prompt": "Advances in artificial intelligence are changing the way students learn and complete assignments. Do the advantages of this development outweigh the disadvantages? Support your view with reasons and examples.",
+    "zhAnalysis": "提纲：开头表态；优点：个性化辅导、即时反馈；缺点：过度依赖、学术诚信风险；观点：利大于弊，但需要明确的使用规范；结尾重申。200–300词。",
     "vocab": [
       {
         "word": "however",

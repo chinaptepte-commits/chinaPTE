@@ -1,6 +1,6 @@
 /**
  * chinaPTE · SST — Summarize Spoken Text
- * Total: 49 items
+ * Total: 51 items
  */
 (function (global) {
   "use strict";
@@ -1143,6 +1143,58 @@
         "word": "archives",
         "spelling": "A-R-C-H-I-V-E-S",
         "gloss": "档案",
+        "tip": ""
+      }
+    ]
+  },
+  {
+    "id": 50,
+    "en": "Citizen science projects invite members of the public to collect data for researchers. Volunteers count birds, record local weather, or classify images of galaxies online. Together they gather far more information than small research teams could manage alone. Scientists must still check data quality carefully, because untrained participants can make inconsistent observations.",
+    "passage": "Citizen science projects invite members of the public to collect data for researchers. Volunteers count birds, record local weather, or classify images of galaxies online. Together they gather far more information than small research teams could manage alone. Scientists must still check data quality carefully, because untrained participants can make inconsistent observations.",
+    "zhAnalysis": "总结：公民科学项目邀请公众为研究者收集数据→志愿者数鸟、记录天气、在线给星系图像分类→数据量远超小团队→但未经训练的参与者观察可能不一致，科学家仍需严格核查质量。SST写50–70词。",
+    "vocab": [
+      {
+        "word": "volunteers",
+        "spelling": "V-O-L-U-N-T-E-E-R-S",
+        "gloss": "志愿者",
+        "tip": ""
+      },
+      {
+        "word": "classify",
+        "spelling": "C-L-A-S-S-I-F-Y",
+        "gloss": "分类",
+        "tip": ""
+      },
+      {
+        "word": "inconsistent",
+        "spelling": "I-N-C-O-N-S-I-S-T-E-N-T",
+        "gloss": "不一致的",
+        "tip": ""
+      }
+    ]
+  },
+  {
+    "id": 51,
+    "en": "Food waste is a serious problem for supermarkets and households. Edible products are often thrown away because of strict appearance standards or confusing date labels. Some stores now sell imperfect fruit at lower prices and donate surplus food to charities. Clearer labelling and better consumer education could further reduce the amount of food sent to landfill.",
+    "passage": "Food waste is a serious problem for supermarkets and households. Edible products are often thrown away because of strict appearance standards or confusing date labels. Some stores now sell imperfect fruit at lower prices and donate surplus food to charities. Clearer labelling and better consumer education could further reduce the amount of food sent to landfill.",
+    "zhAnalysis": "总结：超市和家庭食物浪费严重→外观标准严格、日期标签混乱导致可食用食品被丢弃→部分商店低价卖“丑”水果并把剩余食物捐给慈善机构→更清晰的标签和消费者教育可进一步减少填埋。SST写50–70词。",
+    "vocab": [
+      {
+        "word": "edible",
+        "spelling": "E-D-I-B-L-E",
+        "gloss": "可食用的",
+        "tip": ""
+      },
+      {
+        "word": "surplus",
+        "spelling": "S-U-R-P-L-U-S",
+        "gloss": "剩余的；过剩",
+        "tip": ""
+      },
+      {
+        "word": "landfill",
+        "spelling": "L-A-N-D-F-I-L-L",
+        "gloss": "垃圾填埋场",
         "tip": ""
       }
     ]

@@ -1,7 +1,7 @@
 /**
  * chinaPTE · RS bank — Repeat Sentence
  * Free, local-only. No network required.
- * Total: 224 items
+ * Total: 236 items
  */
 (function (global) {
   "use strict";
@@ -5032,6 +5032,264 @@
         "word": "evening",
         "spelling": "E-V-E-N-I-N-G",
         "gloss": "晚上",
+        "tip": ""
+      }
+    ]
+  },
+  {
+    "id": 225,
+    "en": "The library will close early on public holidays.",
+    "zhAnalysis": "图书馆在公共假日会提前闭馆。",
+    "vocab": [
+      {
+        "word": "library",
+        "spelling": "L-I-B-R-A-R-Y",
+        "gloss": "图书馆",
+        "tip": ""
+      },
+      {
+        "word": "public",
+        "spelling": "P-U-B-L-I-C",
+        "gloss": "公共的",
+        "tip": ""
+      },
+      {
+        "word": "holidays",
+        "spelling": "H-O-L-I-D-A-Y-S",
+        "gloss": "假日",
+        "tip": ""
+      }
+    ]
+  },
+  {
+    "id": 226,
+    "en": "Bags must be left outside the testing room.",
+    "zhAnalysis": "包必须放在考场外面。",
+    "vocab": [
+      {
+        "word": "bags",
+        "spelling": "B-A-G-S",
+        "gloss": "包；书包",
+        "tip": ""
+      },
+      {
+        "word": "outside",
+        "spelling": "O-U-T-S-I-D-E",
+        "gloss": "在…外面",
+        "tip": ""
+      },
+      {
+        "word": "testing",
+        "spelling": "T-E-S-T-I-N-G",
+        "gloss": "考试的；测试",
+        "tip": ""
+      }
+    ]
+  },
+  {
+    "id": 227,
+    "en": "Your essay should include a clear thesis statement.",
+    "zhAnalysis": "你的论文应包含清晰的论点句。",
+    "vocab": [
+      {
+        "word": "essay",
+        "spelling": "E-S-S-A-Y",
+        "gloss": "论文；短文",
+        "tip": ""
+      },
+      {
+        "word": "thesis",
+        "spelling": "T-H-E-S-I-S",
+        "gloss": "论点；论题",
+        "tip": ""
+      },
+      {
+        "word": "statement",
+        "spelling": "S-T-A-T-E-M-E-N-T",
+        "gloss": "陈述",
+        "tip": ""
+      }
+    ]
+  },
+  {
+    "id": 228,
+    "en": "The computer lab is on the second floor.",
+    "zhAnalysis": "机房在二楼。",
+    "vocab": [
+      {
+        "word": "computer",
+        "spelling": "C-O-M-P-U-T-E-R",
+        "gloss": "电脑",
+        "tip": ""
+      },
+      {
+        "word": "floor",
+        "spelling": "F-L-O-O-R",
+        "gloss": "楼层",
+        "tip": ""
+      }
+    ]
+  },
+  {
+    "id": 229,
+    "en": "Tutorial groups will be announced on Monday.",
+    "zhAnalysis": "辅导课分组将于周一公布。",
+    "vocab": [
+      {
+        "word": "tutorial",
+        "spelling": "T-U-T-O-R-I-A-L",
+        "gloss": "辅导课",
+        "tip": ""
+      },
+      {
+        "word": "announced",
+        "spelling": "A-N-N-O-U-N-C-E-D",
+        "gloss": "宣布；公布",
+        "tip": ""
+      }
+    ]
+  },
+  {
+    "id": 230,
+    "en": "Parking permits can be renewed online.",
+    "zhAnalysis": "停车许可证可以在网上续办。",
+    "vocab": [
+      {
+        "word": "permits",
+        "spelling": "P-E-R-M-I-T-S",
+        "gloss": "许可证",
+        "tip": ""
+      },
+      {
+        "word": "renewed",
+        "spelling": "R-E-N-E-W-E-D",
+        "gloss": "续期；更新",
+        "tip": ""
+      }
+    ]
+  },
+  {
+    "id": 231,
+    "en": "The professor holds office hours every Wednesday.",
+    "zhAnalysis": "教授每周三都有答疑时间。",
+    "vocab": [
+      {
+        "word": "professor",
+        "spelling": "P-R-O-F-E-S-S-O-R",
+        "gloss": "教授",
+        "tip": ""
+      },
+      {
+        "word": "office",
+        "spelling": "O-F-F-I-C-E",
+        "gloss": "办公室",
+        "tip": ""
+      }
+    ]
+  },
+  {
+    "id": 232,
+    "en": "Group presentations start after the morning break.",
+    "zhAnalysis": "小组展示在上午课间休息后开始。",
+    "vocab": [
+      {
+        "word": "presentations",
+        "spelling": "P-R-E-S-E-N-T-A-T-I-O-N-S",
+        "gloss": "展示；汇报",
+        "tip": ""
+      },
+      {
+        "word": "break",
+        "spelling": "B-R-E-A-K",
+        "gloss": "休息",
+        "tip": ""
+      }
+    ]
+  },
+  {
+    "id": 233,
+    "en": "Please bring photo identification to the exam hall.",
+    "zhAnalysis": "请携带有照片的身份证件进入考场。",
+    "vocab": [
+      {
+        "word": "identification",
+        "spelling": "I-D-E-N-T-I-F-I-C-A-T-I-O-N",
+        "gloss": "身份证明",
+        "tip": ""
+      },
+      {
+        "word": "hall",
+        "spelling": "H-A-L-L",
+        "gloss": "大厅；礼堂",
+        "tip": ""
+      }
+    ]
+  },
+  {
+    "id": 234,
+    "en": "Most first-year subjects include a weekly quiz.",
+    "zhAnalysis": "大多数一年级科目每周都有小测验。",
+    "vocab": [
+      {
+        "word": "subjects",
+        "spelling": "S-U-B-J-E-C-T-S",
+        "gloss": "科目",
+        "tip": ""
+      },
+      {
+        "word": "weekly",
+        "spelling": "W-E-E-K-L-Y",
+        "gloss": "每周的",
+        "tip": ""
+      },
+      {
+        "word": "quiz",
+        "spelling": "Q-U-I-Z",
+        "gloss": "小测验",
+        "tip": ""
+      }
+    ]
+  },
+  {
+    "id": 235,
+    "en": "The orientation tour meets outside the main gate.",
+    "zhAnalysis": "新生导览团在正门外集合。",
+    "vocab": [
+      {
+        "word": "orientation",
+        "spelling": "O-R-I-E-N-T-A-T-I-O-N",
+        "gloss": "入学迎新",
+        "tip": ""
+      },
+      {
+        "word": "gate",
+        "spelling": "G-A-T-E",
+        "gloss": "大门",
+        "tip": ""
+      }
+    ]
+  },
+  {
+    "id": 236,
+    "en": "Feedback forms are available at the front desk.",
+    "zhAnalysis": "反馈表可以在前台领取。",
+    "vocab": [
+      {
+        "word": "feedback",
+        "spelling": "F-E-E-D-B-A-C-K",
+        "gloss": "反馈",
+        "tip": ""
+      },
+      {
+        "word": "available",
+        "spelling": "A-V-A-I-L-A-B-L-E",
+        "gloss": "可获得的",
+        "tip": ""
+      },
+      {
+        "word": "desk",
+        "spelling": "D-E-S-K",
+        "gloss": "服务台；桌子",
         "tip": ""
       }
     ]

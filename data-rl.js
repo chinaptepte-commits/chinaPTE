@@ -1,6 +1,6 @@
 /**
  * chinaPTE · RL — Retell Lecture
- * Total: 61 items
+ * Total: 64 items
  */
 (function (global) {
   "use strict";
@@ -1544,6 +1544,81 @@
         "word": "authorship",
         "spelling": "A-U-T-H-O-R-S-H-I-P",
         "gloss": "署名权",
+        "tip": ""
+      }
+    ]
+  },
+  {
+    "id": 62,
+    "en": "This talk focuses on plastic pollution in the oceans. Most marine plastic comes from land, especially from poorly managed waste. Small fragments called microplastics are eaten by fish and can enter the human food chain. The speaker argues that reducing single-use packaging is more effective than relying on beach clean-ups alone.",
+    "zhAnalysis": "讲座要点：海洋塑料污染；大多来自陆地上管理不善的垃圾；微塑料被鱼吃下后可进入人类食物链；讲者认为减少一次性包装比单靠海滩清理更有效。复述：主题+来源+影响+观点。",
+    "vocab": [
+      {
+        "word": "marine",
+        "spelling": "M-A-R-I-N-E",
+        "gloss": "海洋的",
+        "tip": ""
+      },
+      {
+        "word": "fragments",
+        "spelling": "F-R-A-G-M-E-N-T-S",
+        "gloss": "碎片",
+        "tip": ""
+      },
+      {
+        "word": "packaging",
+        "spelling": "P-A-C-K-A-G-I-N-G",
+        "gloss": "包装",
+        "tip": ""
+      }
+    ]
+  },
+  {
+    "id": 63,
+    "en": "The lecture introduces the idea of a growth mindset. Learners who believe ability can improve through effort tend to persist after making mistakes. Teachers can encourage this by praising strategies rather than intelligence. However, the speaker notes that mindset alone cannot replace good teaching and adequate resources.",
+    "zhAnalysis": "讲座要点：成长型思维；相信能力可通过努力提升的学习者犯错后更能坚持；老师应表扬方法而非聪明；但讲者指出，光有心态替代不了好的教学和充足的资源。",
+    "vocab": [
+      {
+        "word": "mindset",
+        "spelling": "M-I-N-D-S-E-T",
+        "gloss": "心态；思维方式",
+        "tip": ""
+      },
+      {
+        "word": "persist",
+        "spelling": "P-E-R-S-I-S-T",
+        "gloss": "坚持",
+        "tip": ""
+      },
+      {
+        "word": "adequate",
+        "spelling": "A-D-E-Q-U-A-T-E",
+        "gloss": "充足的",
+        "tip": ""
+      }
+    ]
+  },
+  {
+    "id": 64,
+    "en": "Today's talk examines remote work. Working from home saves commuting time and gives employees more flexibility. On the other hand, some workers feel isolated and find it harder to separate work from personal life. As a result, many organisations now choose a hybrid model that combines office days with days at home.",
+    "zhAnalysis": "讲座要点：远程办公；居家办公省通勤、更灵活；但部分员工感到孤立、难以区分工作与生活；因此许多机构采用办公室与居家结合的混合模式。",
+    "vocab": [
+      {
+        "word": "remote",
+        "spelling": "R-E-M-O-T-E",
+        "gloss": "远程的",
+        "tip": ""
+      },
+      {
+        "word": "isolated",
+        "spelling": "I-S-O-L-A-T-E-D",
+        "gloss": "孤立的",
+        "tip": ""
+      },
+      {
+        "word": "hybrid",
+        "spelling": "H-Y-B-R-I-D",
+        "gloss": "混合的",
         "tip": ""
       }
     ]

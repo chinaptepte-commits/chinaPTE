@@ -1,6 +1,6 @@
 /**
  * chinaPTE · PTE Academic 高频核心词
- * Total: 2380
+ * Total: 2420
  * Domains: academic research, campus/admin (WFD/RS), environment/society/economy, dictation verbs/adverbs
  * Fields: word, spelling, phonetic (IPA /slashes/), pos (e.g. n. 名词), gloss, tip, example, exampleZh, tags, tier, id
  * Admin source of truth: content/vocab.json (keep in sync with this file)
@@ -36336,6 +36336,617 @@
     ],
     "tier": "high",
     "pos": "adj. 形容词"
+  },
+  {
+    "id": 2381,
+    "word": "delineate",
+    "spelling": "D-E-L-I-N-E-A-T-E",
+    "phonetic": "/dɪˈlɪnieɪt/",
+    "gloss": "描述；界定",
+    "tip": "delineate the scope",
+    "example": "The introduction delineates the scope of the study.",
+    "exampleZh": "引言界定了研究的范围。",
+    "tags": [
+      "academic",
+      "verb"
+    ],
+    "tier": "high",
+    "pos": "v. 动词"
+  },
+  {
+    "id": 2382,
+    "word": "lenient",
+    "spelling": "L-E-N-I-E-N-T",
+    "phonetic": "/ˈliːniənt/",
+    "gloss": "宽容的；宽松的",
+    "tip": "lenient policy",
+    "example": "The tutor was lenient about the late draft.",
+    "exampleZh": "导师对迟交的草稿比较宽容。",
+    "tags": [
+      "academic"
+    ],
+    "tier": "high",
+    "pos": "adj. 形容词"
+  },
+  {
+    "id": 2383,
+    "word": "sceptical",
+    "spelling": "S-C-E-P-T-I-C-A-L",
+    "phonetic": "/ˈskeptɪkl/",
+    "gloss": "怀疑的",
+    "tip": "sceptical about（美式 skeptical）",
+    "example": "Many reviewers remain sceptical about the results.",
+    "exampleZh": "许多评审人仍对结果持怀疑态度。",
+    "tags": [
+      "academic"
+    ],
+    "tier": "core",
+    "pos": "adj. 形容词"
+  },
+  {
+    "id": 2384,
+    "word": "tenuous",
+    "spelling": "T-E-N-U-O-U-S",
+    "phonetic": "/ˈtenjuəs/",
+    "gloss": "薄弱的；牵强的",
+    "tip": "tenuous link",
+    "example": "The link between the two events is tenuous.",
+    "exampleZh": "这两件事之间的联系很牵强。",
+    "tags": [
+      "academic"
+    ],
+    "tier": "high",
+    "pos": "adj. 形容词"
+  },
+  {
+    "id": 2385,
+    "word": "inadvertently",
+    "spelling": "I-N-A-D-V-E-R-T-E-N-T-L-Y",
+    "phonetic": "/ˌɪnədˈvɜːtəntli/",
+    "gloss": "无意中；不经意地",
+    "tip": "inadvertently omit",
+    "example": "He inadvertently omitted a key reference.",
+    "exampleZh": "他无意中漏掉了一条关键参考文献。",
+    "tags": [
+      "academic"
+    ],
+    "tier": "high",
+    "pos": "adv. 副词"
+  },
+  {
+    "id": 2386,
+    "word": "predominate",
+    "spelling": "P-R-E-D-O-M-I-N-A-T-E",
+    "phonetic": "/prɪˈdɒmɪneɪt/",
+    "gloss": "占主导地位；占多数",
+    "tip": "predominate in",
+    "example": "Women predominate in the nursing workforce.",
+    "exampleZh": "护理从业人员中女性占多数。",
+    "tags": [
+      "academic",
+      "verb"
+    ],
+    "tier": "high",
+    "pos": "v. 动词"
+  },
+  {
+    "id": 2387,
+    "word": "conformity",
+    "spelling": "C-O-N-F-O-R-M-I-T-Y",
+    "phonetic": "/kənˈfɔːməti/",
+    "gloss": "遵从；一致",
+    "tip": "in conformity with",
+    "example": "Peer pressure can encourage conformity.",
+    "exampleZh": "同伴压力可能促使人随大流。",
+    "tags": [
+      "academic"
+    ],
+    "tier": "high",
+    "pos": "n. 名词"
+  },
+  {
+    "id": 2388,
+    "word": "persuasive",
+    "spelling": "P-E-R-S-U-A-S-I-V-E",
+    "phonetic": "/pəˈsweɪsɪv/",
+    "gloss": "有说服力的",
+    "tip": "persuasive argument",
+    "example": "A persuasive essay needs solid evidence.",
+    "exampleZh": "有说服力的文章需要扎实的证据。",
+    "tags": [
+      "academic"
+    ],
+    "tier": "core",
+    "pos": "adj. 形容词"
+  },
+  {
+    "id": 2389,
+    "word": "stereotype",
+    "spelling": "S-T-E-R-E-O-T-Y-P-E",
+    "phonetic": "/ˈsteriətaɪp/",
+    "gloss": "刻板印象",
+    "tip": "gender stereotype",
+    "example": "The campaign challenges gender stereotypes.",
+    "exampleZh": "这项活动挑战性别刻板印象。",
+    "tags": [
+      "academic"
+    ],
+    "tier": "core",
+    "pos": "n. 名词"
+  },
+  {
+    "id": 2390,
+    "word": "eligible",
+    "spelling": "E-L-I-G-I-B-L-E",
+    "phonetic": "/ˈelɪdʒəbl/",
+    "gloss": "有资格的；符合条件的",
+    "tip": "eligible for",
+    "example": "Full-time students are eligible for the grant.",
+    "exampleZh": "全日制学生有资格申请这笔助学金。",
+    "tags": [
+      "academic"
+    ],
+    "tier": "core",
+    "pos": "adj. 形容词"
+  },
+  {
+    "id": 2391,
+    "word": "dilemma",
+    "spelling": "D-I-L-E-M-M-A",
+    "phonetic": "/dɪˈlemə/",
+    "gloss": "两难；困境",
+    "tip": "ethical dilemma",
+    "example": "Doctors often face an ethical dilemma.",
+    "exampleZh": "医生常常面临伦理困境。",
+    "tags": [
+      "academic"
+    ],
+    "tier": "core",
+    "pos": "n. 名词"
+  },
+  {
+    "id": 2392,
+    "word": "adhere",
+    "spelling": "A-D-H-E-R-E",
+    "phonetic": "/ədˈhɪə/",
+    "gloss": "遵守；坚持；黏附",
+    "tip": "adhere to",
+    "example": "All researchers must adhere to safety rules.",
+    "exampleZh": "所有研究人员必须遵守安全规定。",
+    "tags": [
+      "academic",
+      "verb"
+    ],
+    "tier": "core",
+    "pos": "v. 动词"
+  },
+  {
+    "id": 2393,
+    "word": "degradation",
+    "spelling": "D-E-G-R-A-D-A-T-I-O-N",
+    "phonetic": "/ˌdeɡrəˈdeɪʃn/",
+    "gloss": "退化；恶化",
+    "tip": "environmental degradation",
+    "example": "Overgrazing leads to land degradation.",
+    "exampleZh": "过度放牧导致土地退化。",
+    "tags": [
+      "academic"
+    ],
+    "tier": "high",
+    "pos": "n. 名词"
+  },
+  {
+    "id": 2394,
+    "word": "aggravate",
+    "spelling": "A-G-G-R-A-V-A-T-E",
+    "phonetic": "/ˈæɡrəveɪt/",
+    "gloss": "加重；使恶化",
+    "tip": "aggravate the problem",
+    "example": "Poor sleep can aggravate stress.",
+    "exampleZh": "睡眠不足会加重压力。",
+    "tags": [
+      "academic",
+      "verb"
+    ],
+    "tier": "high",
+    "pos": "v. 动词"
+  },
+  {
+    "id": 2395,
+    "word": "subsidise",
+    "spelling": "S-U-B-S-I-D-I-S-E",
+    "phonetic": "/ˈsʌbsɪdaɪz/",
+    "gloss": "补贴；资助",
+    "tip": "subsidise public transport（美式 subsidize）",
+    "example": "The council subsidises public transport.",
+    "exampleZh": "市议会为公共交通提供补贴。",
+    "tags": [
+      "academic",
+      "verb"
+    ],
+    "tier": "high",
+    "pos": "v. 动词"
+  },
+  {
+    "id": 2396,
+    "word": "jargon",
+    "spelling": "J-A-R-G-O-N",
+    "phonetic": "/ˈdʒɑːɡən/",
+    "gloss": "行话；术语",
+    "tip": "technical jargon",
+    "example": "Avoid unnecessary jargon in your summary.",
+    "exampleZh": "摘要中要避免不必要的术语。",
+    "tags": [
+      "academic"
+    ],
+    "tier": "high",
+    "pos": "n. 名词"
+  },
+  {
+    "id": 2397,
+    "word": "stagnant",
+    "spelling": "S-T-A-G-N-A-N-T",
+    "phonetic": "/ˈstæɡnənt/",
+    "gloss": "停滞的；不流动的",
+    "tip": "stagnant wages",
+    "example": "Wages have remained stagnant for years.",
+    "exampleZh": "工资多年来停滞不前。",
+    "tags": [
+      "academic"
+    ],
+    "tier": "high",
+    "pos": "adj. 形容词"
+  },
+  {
+    "id": 2398,
+    "word": "aesthetic",
+    "spelling": "A-E-S-T-H-E-T-I-C",
+    "phonetic": "/iːsˈθetɪk/",
+    "gloss": "审美的；美学的",
+    "tip": "aesthetic value",
+    "example": "The old building has great aesthetic value.",
+    "exampleZh": "这座老建筑很有审美价值。",
+    "tags": [
+      "academic"
+    ],
+    "tier": "high",
+    "pos": "adj. 形容词"
+  },
+  {
+    "id": 2399,
+    "word": "symmetry",
+    "spelling": "S-Y-M-M-E-T-R-Y",
+    "phonetic": "/ˈsɪmətri/",
+    "gloss": "对称",
+    "tip": "perfect symmetry",
+    "example": "The design relies on balance and symmetry.",
+    "exampleZh": "这个设计靠的是平衡与对称。",
+    "tags": [
+      "academic"
+    ],
+    "tier": "high",
+    "pos": "n. 名词"
+  },
+  {
+    "id": 2400,
+    "word": "burgeon",
+    "spelling": "B-U-R-G-E-O-N",
+    "phonetic": "/ˈbɜːdʒən/",
+    "gloss": "迅速发展；激增",
+    "tip": "burgeoning industry",
+    "example": "Online learning has burgeoned in recent years.",
+    "exampleZh": "近年来在线学习迅速发展。",
+    "tags": [
+      "academic",
+      "verb"
+    ],
+    "tier": "high",
+    "pos": "v. 动词"
+  },
+  {
+    "id": 2401,
+    "word": "impair",
+    "spelling": "I-M-P-A-I-R",
+    "phonetic": "/ɪmˈpeə/",
+    "gloss": "损害；削弱",
+    "tip": "impair memory",
+    "example": "Lack of sleep can impair memory.",
+    "exampleZh": "缺乏睡眠会损害记忆力。",
+    "tags": [
+      "academic",
+      "verb"
+    ],
+    "tier": "core",
+    "pos": "v. 动词"
+  },
+  {
+    "id": 2402,
+    "word": "contaminate",
+    "spelling": "C-O-N-T-A-M-I-N-A-T-E",
+    "phonetic": "/kənˈtæmɪneɪt/",
+    "gloss": "污染；弄脏",
+    "tip": "contaminate water",
+    "example": "Chemical waste may contaminate groundwater.",
+    "exampleZh": "化学废物可能污染地下水。",
+    "tags": [
+      "academic",
+      "verb"
+    ],
+    "tier": "core",
+    "pos": "v. 动词"
+  },
+  {
+    "id": 2403,
+    "word": "pervasive",
+    "spelling": "P-E-R-V-A-S-I-V-E",
+    "phonetic": "/pəˈveɪsɪv/",
+    "gloss": "普遍的；无处不在的",
+    "tip": "pervasive influence",
+    "example": "Social media has a pervasive influence on teenagers.",
+    "exampleZh": "社交媒体对青少年的影响无处不在。",
+    "tags": [
+      "academic"
+    ],
+    "tier": "high",
+    "pos": "adj. 形容词"
+  },
+  {
+    "id": 2404,
+    "word": "colloquial",
+    "spelling": "C-O-L-L-O-Q-U-I-A-L",
+    "phonetic": "/kəˈləʊkwiəl/",
+    "gloss": "口语的；通俗的",
+    "tip": "colloquial expression",
+    "example": "Avoid colloquial expressions in academic essays.",
+    "exampleZh": "学术论文中要避免口语化表达。",
+    "tags": [
+      "academic"
+    ],
+    "tier": "high",
+    "pos": "adj. 形容词"
+  },
+  {
+    "id": 2405,
+    "word": "rhetoric",
+    "spelling": "R-H-E-T-O-R-I-C",
+    "phonetic": "/ˈretərɪk/",
+    "gloss": "修辞；花言巧语",
+    "tip": "political rhetoric",
+    "example": "The speech relied on rhetoric rather than facts.",
+    "exampleZh": "这篇演讲靠的是修辞而不是事实。",
+    "tags": [
+      "academic"
+    ],
+    "tier": "high",
+    "pos": "n. 名词"
+  },
+  {
+    "id": 2406,
+    "word": "terrestrial",
+    "spelling": "T-E-R-R-E-S-T-R-I-A-L",
+    "phonetic": "/təˈrestriəl/",
+    "gloss": "陆地的；地球的",
+    "tip": "terrestrial species",
+    "example": "The island has few terrestrial mammals.",
+    "exampleZh": "这座岛上的陆生哺乳动物很少。",
+    "tags": [
+      "academic"
+    ],
+    "tier": "high",
+    "pos": "adj. 形容词"
+  },
+  {
+    "id": 2407,
+    "word": "predecessor",
+    "spelling": "P-R-E-D-E-C-E-S-S-O-R",
+    "phonetic": "/ˈpriːdɪsesə/",
+    "gloss": "前任；前身",
+    "tip": "its predecessor",
+    "example": "The new model is lighter than its predecessor.",
+    "exampleZh": "新型号比上一代更轻。",
+    "tags": [
+      "academic"
+    ],
+    "tier": "core",
+    "pos": "n. 名词"
+  },
+  {
+    "id": 2408,
+    "word": "pragmatic",
+    "spelling": "P-R-A-G-M-A-T-I-C",
+    "phonetic": "/præɡˈmætɪk/",
+    "gloss": "务实的",
+    "tip": "pragmatic approach",
+    "example": "The team took a pragmatic approach to the budget.",
+    "exampleZh": "团队在预算上采取了务实的做法。",
+    "tags": [
+      "academic"
+    ],
+    "tier": "core",
+    "pos": "adj. 形容词"
+  },
+  {
+    "id": 2409,
+    "word": "abolish",
+    "spelling": "A-B-O-L-I-S-H",
+    "phonetic": "/əˈbɒlɪʃ/",
+    "gloss": "废除；取消",
+    "tip": "abolish a fee",
+    "example": "The university abolished the library fee.",
+    "exampleZh": "大学取消了图书馆收费。",
+    "tags": [
+      "academic",
+      "verb"
+    ],
+    "tier": "core",
+    "pos": "v. 动词"
+  },
+  {
+    "id": 2410,
+    "word": "paradox",
+    "spelling": "P-A-R-A-D-O-X",
+    "phonetic": "/ˈpærədɒks/",
+    "gloss": "悖论；看似矛盾的事",
+    "tip": "a paradox of choice",
+    "example": "It is a paradox that more choice can make people less happy.",
+    "exampleZh": "选择越多反而越不快乐，这是个悖论。",
+    "tags": [
+      "academic"
+    ],
+    "tier": "high",
+    "pos": "n. 名词"
+  },
+  {
+    "id": 2411,
+    "word": "dissipate",
+    "spelling": "D-I-S-S-I-P-A-T-E",
+    "phonetic": "/ˈdɪsɪpeɪt/",
+    "gloss": "消散；散发",
+    "tip": "dissipate heat",
+    "example": "The fan helps dissipate heat from the engine.",
+    "exampleZh": "风扇有助于散发发动机的热量。",
+    "tags": [
+      "academic",
+      "verb"
+    ],
+    "tier": "high",
+    "pos": "v. 动词"
+  },
+  {
+    "id": 2412,
+    "word": "autonomy",
+    "spelling": "A-U-T-O-N-O-M-Y",
+    "phonetic": "/ɔːˈtɒnəmi/",
+    "gloss": "自主权；自治",
+    "tip": "learner autonomy",
+    "example": "Postgraduate study requires greater autonomy.",
+    "exampleZh": "研究生学习需要更强的自主性。",
+    "tags": [
+      "academic"
+    ],
+    "tier": "core",
+    "pos": "n. 名词"
+  },
+  {
+    "id": 2413,
+    "word": "potent",
+    "spelling": "P-O-T-E-N-T",
+    "phonetic": "/ˈpəʊtnt/",
+    "gloss": "强有力的；效力大的",
+    "tip": "potent symbol",
+    "example": "The bridge became a potent symbol of unity.",
+    "exampleZh": "这座桥成了团结的有力象征。",
+    "tags": [
+      "academic"
+    ],
+    "tier": "high",
+    "pos": "adj. 形容词"
+  },
+  {
+    "id": 2414,
+    "word": "compensation",
+    "spelling": "C-O-M-P-E-N-S-A-T-I-O-N",
+    "phonetic": "/ˌkɒmpenˈseɪʃn/",
+    "gloss": "补偿；赔偿",
+    "tip": "receive compensation",
+    "example": "Workers received compensation for the injury.",
+    "exampleZh": "工人因受伤获得了赔偿。",
+    "tags": [
+      "academic"
+    ],
+    "tier": "core",
+    "pos": "n. 名词"
+  },
+  {
+    "id": 2415,
+    "word": "exemption",
+    "spelling": "E-X-E-M-P-T-I-O-N",
+    "phonetic": "/ɪɡˈzempʃn/",
+    "gloss": "豁免；免除",
+    "tip": "fee exemption",
+    "example": "Some students qualify for a fee exemption.",
+    "exampleZh": "部分学生符合免交费用的条件。",
+    "tags": [
+      "academic"
+    ],
+    "tier": "high",
+    "pos": "n. 名词"
+  },
+  {
+    "id": 2416,
+    "word": "unprecedented",
+    "spelling": "U-N-P-R-E-C-E-D-E-N-T-E-D",
+    "phonetic": "/ʌnˈpresɪdentɪd/",
+    "gloss": "前所未有的",
+    "tip": "unprecedented growth",
+    "example": "The city saw unprecedented growth last decade.",
+    "exampleZh": "过去十年该城市经历了前所未有的增长。",
+    "tags": [
+      "academic"
+    ],
+    "tier": "core",
+    "pos": "adj. 形容词"
+  },
+  {
+    "id": 2417,
+    "word": "dormant",
+    "spelling": "D-O-R-M-A-N-T",
+    "phonetic": "/ˈdɔːmənt/",
+    "gloss": "休眠的；蛰伏的",
+    "tip": "dormant volcano",
+    "example": "The volcano has been dormant for centuries.",
+    "exampleZh": "这座火山已休眠了几百年。",
+    "tags": [
+      "academic"
+    ],
+    "tier": "high",
+    "pos": "adj. 形容词"
+  },
+  {
+    "id": 2418,
+    "word": "momentum",
+    "spelling": "M-O-M-E-N-T-U-M",
+    "phonetic": "/məˈmentəm/",
+    "gloss": "势头；动量",
+    "tip": "gain momentum",
+    "example": "The campaign quickly gained momentum online.",
+    "exampleZh": "这项运动在网上迅速形成声势。",
+    "tags": [
+      "academic"
+    ],
+    "tier": "core",
+    "pos": "n. 名词"
+  },
+  {
+    "id": 2419,
+    "word": "deficient",
+    "spelling": "D-E-F-I-C-I-E-N-T",
+    "phonetic": "/dɪˈfɪʃnt/",
+    "gloss": "缺乏的；不足的",
+    "tip": "deficient in",
+    "example": "Many diets are deficient in iron.",
+    "exampleZh": "许多人的饮食缺铁。",
+    "tags": [
+      "academic"
+    ],
+    "tier": "high",
+    "pos": "adj. 形容词"
+  },
+  {
+    "id": 2420,
+    "word": "outweigh",
+    "spelling": "O-U-T-W-E-I-G-H",
+    "phonetic": "/ˌaʊtˈweɪ/",
+    "gloss": "超过；比…更重要",
+    "tip": "outweigh the costs",
+    "example": "The benefits clearly outweigh the costs.",
+    "exampleZh": "收益明显大于成本。",
+    "tags": [
+      "academic",
+      "verb"
+    ],
+    "tier": "core",
+    "pos": "v. 动词"
   }
 ]
 ;

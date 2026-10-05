@@ -1,6 +1,6 @@
 /**
  * chinaPTE · Listening practice
- * Total: 72 items
+ * Total: 75 items
  */
 (function (global) {
   "use strict";
@@ -579,6 +579,30 @@
     "en": "Speaker: Lab coats are available free at the store, but safety goggles must be purchased separately.\nQuestion: What must students buy separately?",
     "answer": "Safety goggles",
     "zhAnalysis": "细节：goggles 需另购；lab coats 免费。",
+    "vocab": []
+  },
+  {
+    "id": 73,
+    "type": "MCQ",
+    "en": "Speaker: During exam weeks, the library will stay open until midnight from Monday to Thursday, but it will close at six on Fridays.\nQuestion: How late is the library open on Tuesdays during exam weeks?",
+    "answer": "Until midnight",
+    "zhAnalysis": "细节：周一至周四开到午夜，周五六点关门；周二属于周一至周四。",
+    "vocab": []
+  },
+  {
+    "id": 74,
+    "type": "FIB",
+    "en": "According to the speaker, regular ______ is the most effective way to reduce exam anxiety.",
+    "answer": "practice",
+    "zhAnalysis": "根据讲者，规律练习是减轻考试焦虑最有效的方法。",
+    "vocab": []
+  },
+  {
+    "id": 75,
+    "type": "SMW",
+    "en": "Coral reefs cover less than one percent of the ocean floor, yet they support about a quarter of all marine species. For this reason, protecting them is a global priority.",
+    "answer": "a global priority",
+    "zhAnalysis": "SMW：根据前文逻辑（面积小却养活大量物种）补全结尾：保护珊瑚礁是全球优先事项。",
     "vocab": []
   }
 ];

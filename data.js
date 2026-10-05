@@ -1,7 +1,7 @@
 /**
  * chinaPTE · WFD bank — Write From Dictation items
  * Free, local-only. No network required.
- * Total: 336 items
+ * Total: 351 items
  */
 (function (global) {
   "use strict";
@@ -9608,6 +9608,381 @@
         "word": "limitations",
         "spelling": "L-I-M-I-T-A-T-I-O-N-S",
         "gloss": "局限性",
+        "tip": ""
+      }
+    ]
+  },
+  {
+    "id": 337,
+    "en": "The research seminar has been rescheduled to Thursday afternoon.",
+    "zhAnalysis": "研究研讨会已改到周四下午。",
+    "vocab": [
+      {
+        "word": "research",
+        "spelling": "R-E-S-E-A-R-C-H",
+        "gloss": "研究",
+        "tip": ""
+      },
+      {
+        "word": "seminar",
+        "spelling": "S-E-M-I-N-A-R",
+        "gloss": "研讨会",
+        "tip": ""
+      },
+      {
+        "word": "rescheduled",
+        "spelling": "R-E-S-C-H-E-D-U-L-E-D",
+        "gloss": "重新安排时间",
+        "tip": ""
+      }
+    ]
+  },
+  {
+    "id": 338,
+    "en": "Students are advised to keep a copy of every assignment they submit.",
+    "zhAnalysis": "建议学生把每份提交的作业都留一份副本。",
+    "vocab": [
+      {
+        "word": "advised",
+        "spelling": "A-D-V-I-S-E-D",
+        "gloss": "建议；劝告",
+        "tip": ""
+      },
+      {
+        "word": "copy",
+        "spelling": "C-O-P-Y",
+        "gloss": "副本",
+        "tip": ""
+      },
+      {
+        "word": "assignment",
+        "spelling": "A-S-S-I-G-N-M-E-N-T",
+        "gloss": "作业",
+        "tip": ""
+      }
+    ]
+  },
+  {
+    "id": 339,
+    "en": "Graduate students may apply for travel funding to attend international conferences.",
+    "zhAnalysis": "研究生可以申请差旅经费去参加国际会议。",
+    "vocab": [
+      {
+        "word": "graduate",
+        "spelling": "G-R-A-D-U-A-T-E",
+        "gloss": "研究生的",
+        "tip": ""
+      },
+      {
+        "word": "funding",
+        "spelling": "F-U-N-D-I-N-G",
+        "gloss": "资金；经费",
+        "tip": ""
+      },
+      {
+        "word": "international",
+        "spelling": "I-N-T-E-R-N-A-T-I-O-N-A-L",
+        "gloss": "国际的",
+        "tip": ""
+      }
+    ]
+  },
+  {
+    "id": 340,
+    "en": "The new timetable will be published on the faculty website next week.",
+    "zhAnalysis": "新课表将于下周在学院网站上公布。",
+    "vocab": [
+      {
+        "word": "timetable",
+        "spelling": "T-I-M-E-T-A-B-L-E",
+        "gloss": "时间表；课表",
+        "tip": ""
+      },
+      {
+        "word": "published",
+        "spelling": "P-U-B-L-I-S-H-E-D",
+        "gloss": "公布；发布",
+        "tip": ""
+      },
+      {
+        "word": "faculty",
+        "spelling": "F-A-C-U-L-T-Y",
+        "gloss": "学院；系",
+        "tip": ""
+      }
+    ]
+  },
+  {
+    "id": 341,
+    "en": "Late submissions without a medical certificate will receive a reduced mark.",
+    "zhAnalysis": "没有医疗证明的迟交作业会被扣分。",
+    "vocab": [
+      {
+        "word": "submissions",
+        "spelling": "S-U-B-M-I-S-S-I-O-N-S",
+        "gloss": "提交的作业",
+        "tip": ""
+      },
+      {
+        "word": "certificate",
+        "spelling": "C-E-R-T-I-F-I-C-A-T-E",
+        "gloss": "证明；证书",
+        "tip": ""
+      },
+      {
+        "word": "reduced",
+        "spelling": "R-E-D-U-C-E-D",
+        "gloss": "降低的",
+        "tip": ""
+      }
+    ]
+  },
+  {
+    "id": 342,
+    "en": "Environmental scientists are monitoring water quality along the river.",
+    "zhAnalysis": "环境科学家正在监测沿河的水质。",
+    "vocab": [
+      {
+        "word": "environmental",
+        "spelling": "E-N-V-I-R-O-N-M-E-N-T-A-L",
+        "gloss": "环境的",
+        "tip": ""
+      },
+      {
+        "word": "monitoring",
+        "spelling": "M-O-N-I-T-O-R-I-N-G",
+        "gloss": "监测",
+        "tip": ""
+      },
+      {
+        "word": "quality",
+        "spelling": "Q-U-A-L-I-T-Y",
+        "gloss": "质量",
+        "tip": ""
+      }
+    ]
+  },
+  {
+    "id": 343,
+    "en": "The lecture explored how economic policy shapes regional development.",
+    "zhAnalysis": "这场讲座探讨了经济政策如何影响区域发展。",
+    "vocab": [
+      {
+        "word": "explored",
+        "spelling": "E-X-P-L-O-R-E-D",
+        "gloss": "探讨",
+        "tip": ""
+      },
+      {
+        "word": "economic",
+        "spelling": "E-C-O-N-O-M-I-C",
+        "gloss": "经济的",
+        "tip": ""
+      },
+      {
+        "word": "regional",
+        "spelling": "R-E-G-I-O-N-A-L",
+        "gloss": "地区的；区域的",
+        "tip": ""
+      }
+    ]
+  },
+  {
+    "id": 344,
+    "en": "Participants completed an online survey at the end of each session.",
+    "zhAnalysis": "参与者在每节课结束时填写一份在线调查。",
+    "vocab": [
+      {
+        "word": "participants",
+        "spelling": "P-A-R-T-I-C-I-P-A-N-T-S",
+        "gloss": "参与者",
+        "tip": ""
+      },
+      {
+        "word": "survey",
+        "spelling": "S-U-R-V-E-Y",
+        "gloss": "调查",
+        "tip": ""
+      },
+      {
+        "word": "session",
+        "spelling": "S-E-S-S-I-O-N",
+        "gloss": "一节；一场",
+        "tip": ""
+      }
+    ]
+  },
+  {
+    "id": 345,
+    "en": "Accurate referencing is essential for maintaining academic integrity.",
+    "zhAnalysis": "准确标注引用对维护学术诚信至关重要。",
+    "vocab": [
+      {
+        "word": "accurate",
+        "spelling": "A-C-C-U-R-A-T-E",
+        "gloss": "准确的",
+        "tip": ""
+      },
+      {
+        "word": "referencing",
+        "spelling": "R-E-F-E-R-E-N-C-I-N-G",
+        "gloss": "标注出处；引用",
+        "tip": ""
+      },
+      {
+        "word": "integrity",
+        "spelling": "I-N-T-E-G-R-I-T-Y",
+        "gloss": "诚信",
+        "tip": ""
+      }
+    ]
+  },
+  {
+    "id": 346,
+    "en": "The tutor will provide written feedback within ten working days.",
+    "zhAnalysis": "导师会在十个工作日内给出书面反馈。",
+    "vocab": [
+      {
+        "word": "tutor",
+        "spelling": "T-U-T-O-R",
+        "gloss": "导师；辅导老师",
+        "tip": ""
+      },
+      {
+        "word": "feedback",
+        "spelling": "F-E-E-D-B-A-C-K",
+        "gloss": "反馈",
+        "tip": ""
+      },
+      {
+        "word": "working",
+        "spelling": "W-O-R-K-I-N-G",
+        "gloss": "工作的",
+        "tip": ""
+      }
+    ]
+  },
+  {
+    "id": 347,
+    "en": "Renewable energy research receives significant support from government agencies.",
+    "zhAnalysis": "可再生能源研究得到政府机构的大力支持。",
+    "vocab": [
+      {
+        "word": "renewable",
+        "spelling": "R-E-N-E-W-A-B-L-E",
+        "gloss": "可再生的",
+        "tip": ""
+      },
+      {
+        "word": "significant",
+        "spelling": "S-I-G-N-I-F-I-C-A-N-T",
+        "gloss": "重大的；显著的",
+        "tip": ""
+      },
+      {
+        "word": "agencies",
+        "spelling": "A-G-E-N-C-I-E-S",
+        "gloss": "机构",
+        "tip": ""
+      }
+    ]
+  },
+  {
+    "id": 348,
+    "en": "First-year students are encouraged to join at least one academic society.",
+    "zhAnalysis": "学校鼓励一年级学生至少加入一个学术社团。",
+    "vocab": [
+      {
+        "word": "encouraged",
+        "spelling": "E-N-C-O-U-R-A-G-E-D",
+        "gloss": "鼓励",
+        "tip": ""
+      },
+      {
+        "word": "academic",
+        "spelling": "A-C-A-D-E-M-I-C",
+        "gloss": "学术的",
+        "tip": ""
+      },
+      {
+        "word": "society",
+        "spelling": "S-O-C-I-E-T-Y",
+        "gloss": "社团；学会",
+        "tip": ""
+      }
+    ]
+  },
+  {
+    "id": 349,
+    "en": "The museum archive contains thousands of photographs from the early twentieth century.",
+    "zhAnalysis": "博物馆档案库收藏了数千张二十世纪初的照片。",
+    "vocab": [
+      {
+        "word": "archive",
+        "spelling": "A-R-C-H-I-V-E",
+        "gloss": "档案库；档案",
+        "tip": ""
+      },
+      {
+        "word": "contains",
+        "spelling": "C-O-N-T-A-I-N-S",
+        "gloss": "包含；收藏",
+        "tip": ""
+      },
+      {
+        "word": "photographs",
+        "spelling": "P-H-O-T-O-G-R-A-P-H-S",
+        "gloss": "照片",
+        "tip": ""
+      }
+    ]
+  },
+  {
+    "id": 350,
+    "en": "Group members should divide responsibilities fairly before starting the project.",
+    "zhAnalysis": "小组成员在开始项目前应公平分工。",
+    "vocab": [
+      {
+        "word": "divide",
+        "spelling": "D-I-V-I-D-E",
+        "gloss": "分配；划分",
+        "tip": ""
+      },
+      {
+        "word": "responsibilities",
+        "spelling": "R-E-S-P-O-N-S-I-B-I-L-I-T-I-E-S",
+        "gloss": "职责",
+        "tip": ""
+      },
+      {
+        "word": "fairly",
+        "spelling": "F-A-I-R-L-Y",
+        "gloss": "公平地",
+        "tip": ""
+      }
+    ]
+  },
+  {
+    "id": 351,
+    "en": "Statistical software is available on all computers in the postgraduate lounge.",
+    "zhAnalysis": "研究生休息室的所有电脑上都装有统计软件。",
+    "vocab": [
+      {
+        "word": "statistical",
+        "spelling": "S-T-A-T-I-S-T-I-C-A-L",
+        "gloss": "统计的",
+        "tip": ""
+      },
+      {
+        "word": "software",
+        "spelling": "S-O-F-T-W-A-R-E",
+        "gloss": "软件",
+        "tip": ""
+      },
+      {
+        "word": "postgraduate",
+        "spelling": "P-O-S-T-G-R-A-D-U-A-T-E",
+        "gloss": "研究生的",
         "tip": ""
       }
     ]

@@ -1,6 +1,6 @@
 /**
  * chinaPTE · RA — Read Aloud
- * Total: 100 items · exam-length passages (~45–65 words)
+ * Total: 105 items · exam-length passages (~45–65 words)
  * Audio: prefer speechSynthesis (audioPreferTts); no RA MP3s in manifest
  */
 (function (global) {
@@ -2601,6 +2601,136 @@
         "word": "protocols",
         "spelling": "P-R-O-T-O-C-O-L-S",
         "gloss": "规程",
+        "tip": ""
+      }
+    ],
+    "audioPreferTts": true
+  },
+  {
+    "id": 101,
+    "en": "Green roofs are becoming more common in crowded cities. These planted surfaces absorb rainwater, lower indoor temperatures in summer, and provide small habitats for insects and birds. Although installation is expensive, building owners often save on energy bills over time, and many local councils now offer grants to encourage wider adoption.",
+    "zhAnalysis": "屋顶绿化在拥挤的城市里越来越常见。这些种植层能吸收雨水、降低夏季室内温度，还能为昆虫和鸟类提供小型栖息地。虽然安装费用高，但业主往往能逐步省下能源开支，许多地方议会现在也提供补助来鼓励推广。",
+    "vocab": [
+      {
+        "word": "absorb",
+        "spelling": "A-B-S-O-R-B",
+        "gloss": "吸收",
+        "tip": ""
+      },
+      {
+        "word": "habitats",
+        "spelling": "H-A-B-I-T-A-T-S",
+        "gloss": "栖息地",
+        "tip": ""
+      },
+      {
+        "word": "adoption",
+        "spelling": "A-D-O-P-T-I-O-N",
+        "gloss": "采用；推广",
+        "tip": ""
+      }
+    ],
+    "audioPreferTts": true
+  },
+  {
+    "id": 102,
+    "en": "Sleep plays a central role in learning. During deep sleep, the brain organises and stores information gathered throughout the day. Students who regularly stay up late before exams may therefore remember less, not more. Researchers recommend consistent bedtimes and limiting screen use in the hour before going to sleep.",
+    "zhAnalysis": "睡眠在学习中起着核心作用。深度睡眠时，大脑会整理并储存白天获取的信息。因此，考前经常熬夜的学生可能记住得更少而不是更多。研究者建议保持固定的就寝时间，并在睡前一小时减少使用屏幕。",
+    "vocab": [
+      {
+        "word": "organises",
+        "spelling": "O-R-G-A-N-I-S-E-S",
+        "gloss": "整理；组织",
+        "tip": "英式"
+      },
+      {
+        "word": "consistent",
+        "spelling": "C-O-N-S-I-S-T-E-N-T",
+        "gloss": "一贯的；固定的",
+        "tip": ""
+      },
+      {
+        "word": "limiting",
+        "spelling": "L-I-M-I-T-I-N-G",
+        "gloss": "限制",
+        "tip": ""
+      }
+    ],
+    "audioPreferTts": true
+  },
+  {
+    "id": 103,
+    "en": "Many museums now use digital technology to reach wider audiences. Virtual tours allow people in remote areas to explore collections without travelling, while interactive displays help younger visitors engage with history. However, curators stress that screens should complement, rather than replace, the experience of seeing original objects in person.",
+    "zhAnalysis": "许多博物馆如今借助数字技术吸引更广泛的观众。虚拟导览让偏远地区的人无需出行即可浏览藏品，互动展示则帮助年轻参观者走近历史。不过策展人强调，屏幕应当补充而非取代亲眼观看原件的体验。",
+    "vocab": [
+      {
+        "word": "virtual",
+        "spelling": "V-I-R-T-U-A-L",
+        "gloss": "虚拟的",
+        "tip": ""
+      },
+      {
+        "word": "interactive",
+        "spelling": "I-N-T-E-R-A-C-T-I-V-E",
+        "gloss": "互动的",
+        "tip": ""
+      },
+      {
+        "word": "complement",
+        "spelling": "C-O-M-P-L-E-M-E-N-T",
+        "gloss": "补充",
+        "tip": ""
+      }
+    ],
+    "audioPreferTts": true
+  },
+  {
+    "id": 104,
+    "en": "Agricultural scientists are developing crop varieties that can tolerate drought and high temperatures. By combining traditional breeding with modern genetic analysis, they can identify useful traits much more quickly. This work is vital for food security, especially in regions where rainfall has become less predictable.",
+    "zhAnalysis": "农业科学家正在培育能耐旱、耐高温的作物品种。将传统育种与现代基因分析相结合，他们能更快地找出有用的性状。这项工作对粮食安全至关重要，尤其是在降雨越来越难预测的地区。",
+    "vocab": [
+      {
+        "word": "tolerate",
+        "spelling": "T-O-L-E-R-A-T-E",
+        "gloss": "耐受；忍受",
+        "tip": ""
+      },
+      {
+        "word": "traits",
+        "spelling": "T-R-A-I-T-S",
+        "gloss": "性状；特征",
+        "tip": ""
+      },
+      {
+        "word": "predictable",
+        "spelling": "P-R-E-D-I-C-T-A-B-L-E",
+        "gloss": "可预测的",
+        "tip": ""
+      }
+    ],
+    "audioPreferTts": true
+  },
+  {
+    "id": 105,
+    "en": "Effective group work depends on clear communication and shared responsibility. Teams that agree on roles and deadlines at their first meeting usually avoid conflict later. Short regular check-ins allow members to raise problems early, and a fair method of assessing individual contributions keeps everyone motivated.",
+    "zhAnalysis": "高效的小组合作取决于清晰的沟通和共同承担责任。在第一次开会时就商定分工和截止日期的团队，后期通常能避免冲突。简短而定期的进度沟通让成员尽早提出问题，公平评估个人贡献的方式则能让每个人保持积极性。",
+    "vocab": [
+      {
+        "word": "responsibility",
+        "spelling": "R-E-S-P-O-N-S-I-B-I-L-I-T-Y",
+        "gloss": "责任",
+        "tip": ""
+      },
+      {
+        "word": "conflict",
+        "spelling": "C-O-N-F-L-I-C-T",
+        "gloss": "冲突",
+        "tip": ""
+      },
+      {
+        "word": "contributions",
+        "spelling": "C-O-N-T-R-I-B-U-T-I-O-N-S",
+        "gloss": "贡献",
         "tip": ""
       }
     ],

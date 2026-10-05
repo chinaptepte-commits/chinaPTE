@@ -1,6 +1,6 @@
 /**
  * chinaPTE · DI — Describe Image
- * Total: 49 items
+ * Total: 51 items
  */
 (function (global) {
   "use strict";
@@ -1330,6 +1330,60 @@
         "word": "trend",
         "spelling": "T-R-E-N-D",
         "gloss": "趋势",
+        "tip": ""
+      }
+    ]
+  },
+  {
+    "id": 50,
+    "image": "images/di/50.svg",
+    "en": "🥧 饼图：大学生通勤方式占比 2025",
+    "scene": "🥧 饼图：大学生通勤方式占比 2025",
+    "zhAnalysis": "描述：先说明图表主题；公交占比最高（35%），步行其次（30%）；开车占 20%，骑车最少（15%）；结论：多数学生依靠公共交通或步行上学。",
+    "vocab": [
+      {
+        "word": "proportion",
+        "spelling": "P-R-O-P-O-R-T-I-O-N",
+        "gloss": "比例",
+        "tip": "DI常用"
+      },
+      {
+        "word": "majority",
+        "spelling": "M-A-J-O-R-I-T-Y",
+        "gloss": "大多数",
+        "tip": ""
+      },
+      {
+        "word": "respectively",
+        "spelling": "R-E-S-P-E-C-T-I-V-E-L-Y",
+        "gloss": "分别地",
+        "tip": ""
+      }
+    ]
+  },
+  {
+    "id": 51,
+    "image": "images/di/51.svg",
+    "en": "📊 柱状图：各年级学生每周平均自习时长",
+    "scene": "📊 柱状图：各年级学生每周平均自习时长",
+    "zhAnalysis": "描述：自习时长随年级逐步上升；一年级最少（约12小时）；四年级最多（约22小时）；结论：高年级课业要求更高，学生投入更多时间。",
+    "vocab": [
+      {
+        "word": "average",
+        "spelling": "A-V-E-R-A-G-E",
+        "gloss": "平均的",
+        "tip": "DI常用"
+      },
+      {
+        "word": "gradually",
+        "spelling": "G-R-A-D-U-A-L-L-Y",
+        "gloss": "逐渐地",
+        "tip": ""
+      },
+      {
+        "word": "steadily",
+        "spelling": "S-T-E-A-D-I-L-Y",
+        "gloss": "稳步地",
         "tip": ""
       }
     ]

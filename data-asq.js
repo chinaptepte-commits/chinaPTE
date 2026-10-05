@@ -1,6 +1,6 @@
 /**
  * chinaPTE · ASQ — Answer Short Question
- * Total: 100 items
+ * Total: 105 items
  */
 (function (global) {
   "use strict";
@@ -803,6 +803,46 @@
     "question": "What do we call frozen water?",
     "answer": "ice",
     "zhAnalysis": "冰。",
+    "vocab": []
+  },
+  {
+    "id": 101,
+    "en": "What do we call a doctor who looks after people's teeth?",
+    "question": "What do we call a doctor who looks after people's teeth?",
+    "answer": "a dentist / dentist",
+    "zhAnalysis": "牙医。",
+    "vocab": []
+  },
+  {
+    "id": 102,
+    "en": "What do we call a period of ten years?",
+    "question": "What do we call a period of ten years?",
+    "answer": "a decade / decade",
+    "zhAnalysis": "十年（decade）。",
+    "vocab": []
+  },
+  {
+    "id": 103,
+    "en": "Which part of the body do we mainly use to taste food?",
+    "question": "Which part of the body do we mainly use to taste food?",
+    "answer": "the tongue / tongue",
+    "zhAnalysis": "舌头。",
+    "vocab": []
+  },
+  {
+    "id": 104,
+    "en": "What do we call a scientist who studies stars and planets?",
+    "question": "What do we call a scientist who studies stars and planets?",
+    "answer": "an astronomer / astronomer",
+    "zhAnalysis": "天文学家。",
+    "vocab": []
+  },
+  {
+    "id": 105,
+    "en": "What official document do you usually need to travel to another country?",
+    "question": "What official document do you usually need to travel to another country?",
+    "answer": "a passport / passport",
+    "zhAnalysis": "护照。",
     "vocab": []
   }
 ];

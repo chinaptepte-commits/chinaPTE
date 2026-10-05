@@ -1,6 +1,6 @@
 /**
  * chinaPTE · SWT — Summarize Written Text
- * Total: 46 items
+ * Total: 48 items
  */
 (function (global) {
   "use strict";
@@ -952,6 +952,46 @@
     "en": "Lecture recordings help students revise difficult concepts after class. Attendance sometimes falls when recordings are unrestricted. Departments that release videos after a short delay report a better balance between flexibility and presence. Captioning improves accessibility for all learners.",
     "passage": "Lecture recordings help students revise difficult concepts after class. Attendance sometimes falls when recordings are unrestricted. Departments that release videos after a short delay report a better balance between flexibility and presence. Captioning improves accessibility for all learners.",
     "zhAnalysis": "SWT：课堂录像利于复习，但无限制开放或降低出勤；短延迟发布可平衡灵活与到课，字幕则提升无障碍访问。",
+    "vocab": [
+      {
+        "word": "however",
+        "spelling": "H-O-W-E-V-E-R",
+        "gloss": "然而",
+        "tip": ""
+      },
+      {
+        "word": "although",
+        "spelling": "A-L-T-H-O-U-G-H",
+        "gloss": "虽然",
+        "tip": ""
+      }
+    ]
+  },
+  {
+    "id": 47,
+    "en": "Community gardens on university campuses give students a place to grow vegetables and learn about sustainable food production. They also create social spaces where people from different disciplines can meet. However, the gardens depend on volunteers, and some projects struggle when experienced members graduate. Partnerships with local gardening groups can help maintain continuity.",
+    "passage": "Community gardens on university campuses give students a place to grow vegetables and learn about sustainable food production. They also create social spaces where people from different disciplines can meet. However, the gardens depend on volunteers, and some projects struggle when experienced members graduate. Partnerships with local gardening groups can help maintain continuity.",
+    "zhAnalysis": "SWT：合并为一句。校园社区花园让学生种菜、了解可持续食物生产并促进跨学科交流，但依赖志愿者、老成员毕业后容易难以为继，与当地园艺团体合作则有助于保持延续。",
+    "vocab": [
+      {
+        "word": "however",
+        "spelling": "H-O-W-E-V-E-R",
+        "gloss": "然而",
+        "tip": "合并句连接"
+      },
+      {
+        "word": "although",
+        "spelling": "A-L-T-H-O-U-G-H",
+        "gloss": "虽然",
+        "tip": ""
+      }
+    ]
+  },
+  {
+    "id": 48,
+    "en": "Bilingual education programmes teach school subjects in two languages. Research suggests that bilingual children often develop strong problem-solving and attention skills. However, such programmes need qualified teachers and suitable materials in both languages. Where these resources are lacking, students may fall behind in subject knowledge.",
+    "passage": "Bilingual education programmes teach school subjects in two languages. Research suggests that bilingual children often develop strong problem-solving and attention skills. However, such programmes need qualified teachers and suitable materials in both languages. Where these resources are lacking, students may fall behind in subject knowledge.",
+    "zhAnalysis": "SWT：双语教育用两种语言授课，研究显示有助于培养解决问题和专注能力，但需要合格教师和双语教材，缺乏这些资源时学生的学科知识可能落后。",
     "vocab": [
       {
         "word": "however",
