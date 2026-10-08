@@ -104,6 +104,8 @@
   var resumeTimer = null;
   var seekDrag = null;
   var jumpErrorTimer = null;
+  // Ignore slider events caused by auto-advance writing the range value.
+  var progressMute = 0;
 
   function ensureKeepAlive() {
     if (keepAlive) return keepAlive;
@@ -615,19 +617,32 @@
   function syncProgressControls() {
     var n = Math.max(items.length, 1);
     var i = items.length ? state.index + 1 : 1;
-    if (els.progressRange) {
-      els.progressRange.min = "1";
-      els.progressRange.max = String(n);
-      els.progressRange.value = String(i);
-      els.progressRange.disabled = !items.length;
-    }
-    if (els.jumpInput) {
-      els.jumpInput.min = "1";
-      els.jumpInput.max = String(Math.max(items.length, 1));
-      if (document.activeElement !== els.jumpInput) {
-        els.jumpInput.value = items.length ? String(i) : "";
+    progressMute++;
+    try {
+      if (els.progressRange) {
+        els.progressRange.min = "1";
+        els.progressRange.max = String(n);
+        els.progressRange.value = String(i);
+        els.progressRange.disabled = !items.length;
       }
+      if (els.jumpInput) {
+        els.jumpInput.min = "1";
+        els.jumpInput.max = String(Math.max(items.length, 1));
+        if (document.activeElement !== els.jumpInput) {
+          els.jumpInput.value = items.length ? String(i) : "";
+        }
+      }
+    } finally {
+      setTimeout(function () {
+        progressMute = Math.max(0, progressMute - 1);
+      }, 0);
     }
+  }
+
+  function progressEchoesState() {
+    if (seekDrag || !els.progressRange) return false;
+    var one = parseInt(els.progressRange.value, 10);
+    return one === state.index + 1;
   }
 
   function showJumpError(msg) {
@@ -684,6 +699,7 @@
   }
 
   function onProgressInput() {
+    if (progressMute || progressEchoesState()) return;
     if (!els.progressRange || !items.length) return;
     if (!seekDrag) {
       seekDrag = {
@@ -700,6 +716,7 @@
   }
 
   function onProgressChange() {
+    if (progressMute || progressEchoesState()) return;
     if (!els.progressRange || !items.length) return;
     var drag = seekDrag;
     seekDrag = null;
