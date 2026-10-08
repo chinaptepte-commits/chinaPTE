@@ -130,7 +130,10 @@
         state.playing = true;
         state.paused = false;
         cancelSpeech();
-        playCurrentSequence({ continueAll: wasAll, resume: true });
+        // Keep the current 单题循环 pass so an OS interrupt doesn't restart at 1/N
+        // (that made one item loop forever on mobile).
+        const pass = state.loopPass > 0 ? state.loopPass : 1;
+        playCurrentSequence({ continueAll: wasAll, resume: true, loopPass: pass });
       }, 220);
     }
 
@@ -1121,11 +1124,9 @@
       stopAll();
       state.index = one - 1;
       renderItem();
-      if (wasAll) {
+      if (wasAll || wasPlaying) {
         state.playAll = true;
         playCurrentSequence({ continueAll: true });
-      } else if (wasPlaying) {
-        playCurrentSequence({ continueAll: false });
       } else {
         setPhase("idle", "已跳转");
       }
@@ -1186,9 +1187,10 @@
         pausePlayback();
         return;
       }
-      const wasAll = state.playAll;
+      // 随身听: play is continuous — after 单题循环 it moves on to the next item.
       cancelSpeech();
-      playCurrentSequence({ continueAll: wasAll });
+      state.playAll = true;
+      playCurrentSequence({ continueAll: true });
     }
 
     function onReplay() {
@@ -1196,26 +1198,21 @@
       playCurrentSequence({ continueAll: state.playAll });
     }
 
+    // 上一题/下一题: always start playing the new item and keep going.
     function onPrev() {
-      const keepAll = state.playAll;
       stopAll();
       state.index = Math.max(0, state.index - 1);
       renderItem();
-      if (keepAll) {
-        state.playAll = true;
-        playCurrentSequence({ continueAll: true });
-      }
+      state.playAll = true;
+      playCurrentSequence({ continueAll: true });
     }
 
     function onNext() {
-      const keepAll = state.playAll;
       stopAll();
       state.index = Math.min(items.length - 1, state.index + 1);
       renderItem();
-      if (keepAll) {
-        state.playAll = true;
-        playCurrentSequence({ continueAll: true });
-      }
+      state.playAll = true;
+      playCurrentSequence({ continueAll: true });
     }
 
     function onSpeed(rate) {

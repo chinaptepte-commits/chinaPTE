@@ -414,7 +414,7 @@ function fillManifest(sandbox, items) {
   sandbox.__manifest = { clips, base: "audio/" };
 }
 
-async function runCase(loopN) {
+async function runCase(loopN, startBtn = "btnPlayAll") {
   const h = createHarness();
   const items = bank();
   fillManifest(h.sandbox, items);
@@ -430,8 +430,8 @@ async function runCase(loopN) {
   for (let i = 0; i < 8; i++) await h.drainMicro();
   const url = h.sandbox.ChinaPTEAudio.resolveClipUrl("wfd/1-en");
   assert(url === "audio/i1-en.mp3", "manifest clip url, got " + url);
-  h.document.getElementById("btnPlayAll").click();
-  assert(player.state.playing && player.state.playAll, "play all should start");
+  h.document.getElementById(startBtn).click();
+  assert(player.state.playing && player.state.playAll, startBtn + " should start continuous play");
   await h.flushUntil(() => !player.state.playing && !player.state.playAll && h.speaks.length > 0);
   return { speaks: h.speaks, state: { ...player.state } };
 }
@@ -463,5 +463,17 @@ const r2 = await runCase(2);
 check(2, r2);
 const r1 = await runCase(1);
 check(1, r1);
+// Middle play/pause button must also advance through the list (随身听 is continuous).
+const rp = await runCase(2, "btnPlayPause");
+check(2, rp);
+// 下一题 from idle: starts item 2 immediately and continues to item 3.
+const rn = await runCase(1, "btnNext");
+{
+  const seen = [];
+  for (const s of rn.speaks) if (seen[seen.length - 1] !== s.index) seen.push(s.index);
+  assert(seen.join(",") === "1,2", "btnNext should play 1,2, got " + seen.join(","));
+  assert(rn.state.index === 2, "btnNext should end on last item");
+  console.log("ok next-autoplay", seen.join(","));
+}
 if (process.exitCode) process.exit(process.exitCode);
 console.log("walkman loop advance: all checks passed");

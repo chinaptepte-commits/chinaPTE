@@ -117,24 +117,14 @@
       onPlay: function () {
         if (state.playing && !state.paused) pausePlayback();
         else {
-          var was = state.playAll;
           cancelSpeech();
-          playCurrent({ continueAll: was });
+          state.playAll = true;
+          playCurrent({ continueAll: true });
         }
       },
       onPause: function () { pausePlayback(); },
-      onNext: function () {
-        if (state.index < items.length - 1) {
-          state.index += 1; renderItem();
-          if (state.playing) { cancelSpeech(); playCurrent({ continueAll: state.playAll }); }
-        }
-      },
-      onPrev: function () {
-        if (state.index > 0) {
-          state.index -= 1; renderItem();
-          if (state.playing) { cancelSpeech(); playCurrent({ continueAll: state.playAll }); }
-        }
-      },
+      onNext: function () { goStep(1); },
+      onPrev: function () { goStep(-1); },
       onResumeSpeech: function () {
         scheduleAutoResume("keepalive");
       },
@@ -166,7 +156,8 @@
       state.playing = true;
       state.paused = false;
       cancelSpeech();
-      playCurrent({ continueAll: wasAll, resume: true });
+      var pass = state.loopPass > 0 ? state.loopPass : 1;
+      playCurrent({ continueAll: wasAll, resume: true, loopPass: pass });
     }, 220);
   }
 
@@ -474,6 +465,17 @@
     }
   }
 
+  // 上一题/下一题: always play the new item and keep going (随身听 is continuous).
+  function goStep(delta) {
+    var ni = state.index + delta;
+    if (ni < 0 || ni > items.length - 1) return;
+    stopAll();
+    state.index = ni;
+    renderItem();
+    state.playAll = true;
+    playCurrent({ continueAll: true });
+  }
+
   async function playCurrent(opts) {
     var token = newToken();
     var continueAll = opts && opts.continueAll;
@@ -687,11 +689,9 @@
     stopAll();
     state.index = one - 1;
     renderItem();
-    if (wasAll) {
+    if (wasAll || wasPlaying) {
       state.playAll = true;
       playCurrent({ continueAll: true });
-    } else if (wasPlaying) {
-      playCurrent({ continueAll: false });
     } else {
       setPhase("已跳转");
     }
@@ -826,9 +826,9 @@
     });
     if (els.playPause) els.playPause.addEventListener("click", function () {
       if (state.playing && !state.paused) { pausePlayback(); return; }
-      var was = state.playAll;
       cancelSpeech();
-      playCurrent({ continueAll: was });
+      state.playAll = true;
+      playCurrent({ continueAll: true });
     });
     if (els.replay) els.replay.addEventListener("click", function () {
       cancelSpeech();
@@ -849,12 +849,8 @@
       });
     }
 
-    if (els.prev) els.prev.addEventListener("click", function () {
-      if (state.index > 0) { state.index -= 1; renderItem(); if (state.playing) { cancelSpeech(); playCurrent({ continueAll: state.playAll }); } }
-    });
-    if (els.next) els.next.addEventListener("click", function () {
-      if (state.index < items.length - 1) { state.index += 1; renderItem(); if (state.playing) { cancelSpeech(); playCurrent({ continueAll: state.playAll }); } }
-    });
+    if (els.prev) els.prev.addEventListener("click", function () { goStep(-1); });
+    if (els.next) els.next.addEventListener("click", function () { goStep(1); });
 
     els.speedBtns.forEach(function (btn) {
       btn.addEventListener("click", function () {
