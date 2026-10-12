@@ -1,6 +1,6 @@
 /**
  * chinaPTE · Essay prompts
- * Total: 39 items
+ * Total: 41 items
  */
 (function (global) {
   "use strict";
@@ -998,6 +998,58 @@
     "en": "Advances in artificial intelligence are changing the way students learn and complete assignments. Do the advantages of this development outweigh the disadvantages? Support your view with reasons and examples.",
     "prompt": "Advances in artificial intelligence are changing the way students learn and complete assignments. Do the advantages of this development outweigh the disadvantages? Support your view with reasons and examples.",
     "zhAnalysis": "提纲：开头表态；优点：个性化辅导、即时反馈；缺点：过度依赖、学术诚信风险；观点：利大于弊，但需要明确的使用规范；结尾重申。200–300词。",
+    "vocab": [
+      {
+        "word": "however",
+        "spelling": "H-O-W-E-V-E-R",
+        "gloss": "然而",
+        "tip": ""
+      },
+      {
+        "word": "furthermore",
+        "spelling": "F-U-R-T-H-E-R-M-O-R-E",
+        "gloss": "此外",
+        "tip": ""
+      },
+      {
+        "word": "therefore",
+        "spelling": "T-H-E-R-E-F-O-R-E",
+        "gloss": "因此",
+        "tip": ""
+      }
+    ]
+  },
+  {
+    "id": 40,
+    "en": "Some people believe that university education should be free for all students, while others think students should pay for their own studies. Discuss both views and give your own opinion.",
+    "prompt": "Some people believe that university education should be free for all students, while others think students should pay for their own studies. Discuss both views and give your own opinion.",
+    "zhAnalysis": "提纲：开头改写题目并表态；免费：促进教育公平、培养人才回馈社会；自费：减轻财政负担、学生更珍惜学习机会；观点：政府应承担大部分费用并为困难学生提供资助；结尾重申。200–300词。",
+    "vocab": [
+      {
+        "word": "however",
+        "spelling": "H-O-W-E-V-E-R",
+        "gloss": "然而",
+        "tip": ""
+      },
+      {
+        "word": "furthermore",
+        "spelling": "F-U-R-T-H-E-R-M-O-R-E",
+        "gloss": "此外",
+        "tip": ""
+      },
+      {
+        "word": "therefore",
+        "spelling": "T-H-E-R-E-F-O-R-E",
+        "gloss": "因此",
+        "tip": ""
+      }
+    ]
+  },
+  {
+    "id": 41,
+    "en": "More and more people are choosing to work from home. What are the advantages and disadvantages of this trend for employees and employers? Support your view with reasons and examples.",
+    "prompt": "More and more people are choosing to work from home. What are the advantages and disadvantages of this trend for employees and employers? Support your view with reasons and examples.",
+    "zhAnalysis": "提纲：开头表态；员工：省通勤、更灵活，但易孤立、工作生活界限模糊；雇主：节省办公成本、招人范围更广，但沟通协作和管理难度增加；观点：混合办公最平衡；结尾重申。200–300词。",
     "vocab": [
       {
         "word": "however",

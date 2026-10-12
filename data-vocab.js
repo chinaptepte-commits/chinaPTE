@@ -1,6 +1,6 @@
 /**
  * chinaPTE · PTE Academic 高频核心词
- * Total: 2420
+ * Total: 2460
  * Domains: academic research, campus/admin (WFD/RS), environment/society/economy, dictation verbs/adverbs
  * Fields: word, spelling, phonetic (IPA /slashes/), pos (e.g. n. 名词), gloss, tip, example, exampleZh, tags, tier, id
  * Admin source of truth: content/vocab.json (keep in sync with this file)
@@ -36946,6 +36946,622 @@
       "verb"
     ],
     "tier": "core",
+    "pos": "v. 动词"
+  },
+  {
+    "id": 2421,
+    "word": "ubiquitous",
+    "spelling": "U-B-I-Q-U-I-T-O-U-S",
+    "phonetic": "/juːˈbɪkwɪtəs/",
+    "gloss": "无处不在的；普遍存在的",
+    "tip": "ubiquitous technology",
+    "example": "Smartphones have become ubiquitous on campus.",
+    "exampleZh": "智能手机在校园里已无处不在。",
+    "tags": [
+      "academic"
+    ],
+    "tier": "high",
+    "pos": "adj. 形容词"
+  },
+  {
+    "id": 2422,
+    "word": "stringent",
+    "spelling": "S-T-R-I-N-G-E-N-T",
+    "phonetic": "/ˈstrɪndʒənt/",
+    "gloss": "严格的；严厉的",
+    "tip": "stringent rules",
+    "example": "The lab follows stringent safety rules.",
+    "exampleZh": "实验室执行严格的安全规定。",
+    "tags": [
+      "academic"
+    ],
+    "tier": "high",
+    "pos": "adj. 形容词"
+  },
+  {
+    "id": 2423,
+    "word": "tangible",
+    "spelling": "T-A-N-G-I-B-L-E",
+    "phonetic": "/ˈtændʒəbl/",
+    "gloss": "切实的；有形的",
+    "tip": "tangible benefits",
+    "example": "The program produced tangible benefits for local farmers.",
+    "exampleZh": "该项目给当地农民带来了切实的好处。",
+    "tags": [
+      "academic"
+    ],
+    "tier": "core",
+    "pos": "adj. 形容词"
+  },
+  {
+    "id": 2424,
+    "word": "extrinsic",
+    "spelling": "E-X-T-R-I-N-S-I-C",
+    "phonetic": "/eksˈtrɪnsɪk/",
+    "gloss": "外在的；外部的",
+    "tip": "extrinsic motivation",
+    "example": "Grades are a form of extrinsic motivation.",
+    "exampleZh": "分数是一种外在激励。",
+    "tags": [
+      "academic"
+    ],
+    "tier": "high",
+    "pos": "adj. 形容词"
+  },
+  {
+    "id": 2425,
+    "word": "allocation",
+    "spelling": "A-L-L-O-C-A-T-I-O-N",
+    "phonetic": "/ˌæləˈkeɪʃn/",
+    "gloss": "分配；拨款",
+    "tip": "budget allocation",
+    "example": "The budget allocation for research rose this year.",
+    "exampleZh": "今年的科研预算拨款增加了。",
+    "tags": [
+      "academic"
+    ],
+    "tier": "core",
+    "pos": "n. 名词"
+  },
+  {
+    "id": 2426,
+    "word": "deterrent",
+    "spelling": "D-E-T-E-R-R-E-N-T",
+    "phonetic": "/dɪˈterənt/",
+    "gloss": "威慑；阻碍因素",
+    "tip": "act as a deterrent",
+    "example": "High fines act as a deterrent to illegal dumping.",
+    "exampleZh": "高额罚款对非法倾倒垃圾起到威慑作用。",
+    "tags": [
+      "academic"
+    ],
+    "tier": "high",
+    "pos": "n. 名词"
+  },
+  {
+    "id": 2427,
+    "word": "meticulous",
+    "spelling": "M-E-T-I-C-U-L-O-U-S",
+    "phonetic": "/məˈtɪkjələs/",
+    "gloss": "一丝不苟的；极仔细的",
+    "tip": "meticulous records",
+    "example": "She kept meticulous records of every experiment.",
+    "exampleZh": "她对每次实验都做了一丝不苟的记录。",
+    "tags": [
+      "academic"
+    ],
+    "tier": "high",
+    "pos": "adj. 形容词"
+  },
+  {
+    "id": 2428,
+    "word": "fluctuation",
+    "spelling": "F-L-U-C-T-U-A-T-I-O-N",
+    "phonetic": "/ˌflʌktʃuˈeɪʃn/",
+    "gloss": "波动；起伏",
+    "tip": "price fluctuation",
+    "example": "Seasonal fluctuation affects tourism income.",
+    "exampleZh": "季节性波动影响旅游收入。",
+    "tags": [
+      "academic"
+    ],
+    "tier": "core",
+    "pos": "n. 名词"
+  },
+  {
+    "id": 2429,
+    "word": "prevalence",
+    "spelling": "P-R-E-V-A-L-E-N-C-E",
+    "phonetic": "/ˈprevələns/",
+    "gloss": "流行；普遍程度",
+    "tip": "the prevalence of",
+    "example": "The survey measured the prevalence of obesity in children.",
+    "exampleZh": "这项调查测量了儿童肥胖的流行程度。",
+    "tags": [
+      "academic"
+    ],
+    "tier": "high",
+    "pos": "n. 名词"
+  },
+  {
+    "id": 2430,
+    "word": "disparity",
+    "spelling": "D-I-S-P-A-R-I-T-Y",
+    "phonetic": "/dɪˈspærəti/",
+    "gloss": "差距；不平等",
+    "tip": "income disparity",
+    "example": "There is a wide disparity between urban and rural incomes.",
+    "exampleZh": "城乡收入之间差距很大。",
+    "tags": [
+      "academic"
+    ],
+    "tier": "high",
+    "pos": "n. 名词"
+  },
+  {
+    "id": 2431,
+    "word": "diversify",
+    "spelling": "D-I-V-E-R-S-I-F-Y",
+    "phonetic": "/daɪˈvɜːsɪfaɪ/",
+    "gloss": "使多样化；扩大经营范围",
+    "tip": "diversify the economy",
+    "example": "The region needs to diversify its economy.",
+    "exampleZh": "该地区需要让经济多元化。",
+    "tags": [
+      "academic",
+      "verb"
+    ],
+    "tier": "core",
+    "pos": "v. 动词"
+  },
+  {
+    "id": 2432,
+    "word": "endeavour",
+    "spelling": "E-N-D-E-A-V-O-U-R",
+    "phonetic": "/ɪnˈdevə/",
+    "gloss": "努力；尽力",
+    "tip": "scientific endeavour（美式 endeavor）",
+    "example": "Space exploration is a costly scientific endeavour.",
+    "exampleZh": "太空探索是一项耗资巨大的科学事业。",
+    "tags": [
+      "academic"
+    ],
+    "tier": "high",
+    "pos": "n./v. 名词/动词"
+  },
+  {
+    "id": 2433,
+    "word": "equilibrium",
+    "spelling": "E-Q-U-I-L-I-B-R-I-U-M",
+    "phonetic": "/ˌiːkwɪˈlɪbriəm/",
+    "gloss": "平衡；均衡",
+    "tip": "reach equilibrium",
+    "example": "The market eventually reached a new equilibrium.",
+    "exampleZh": "市场最终达到了新的平衡。",
+    "tags": [
+      "academic"
+    ],
+    "tier": "high",
+    "pos": "n. 名词"
+  },
+  {
+    "id": 2434,
+    "word": "feasibility",
+    "spelling": "F-E-A-S-I-B-I-L-I-T-Y",
+    "phonetic": "/ˌfiːzəˈbɪləti/",
+    "gloss": "可行性",
+    "tip": "feasibility study",
+    "example": "A feasibility study was carried out before construction.",
+    "exampleZh": "施工前进行了可行性研究。",
+    "tags": [
+      "academic"
+    ],
+    "tier": "core",
+    "pos": "n. 名词"
+  },
+  {
+    "id": 2435,
+    "word": "legitimate",
+    "spelling": "L-E-G-I-T-I-M-A-T-E",
+    "phonetic": "/lɪˈdʒɪtɪmət/",
+    "gloss": "合法的；正当的",
+    "tip": "legitimate concern",
+    "example": "Parents raised a legitimate concern about safety.",
+    "exampleZh": "家长们提出了合理的安全担忧。",
+    "tags": [
+      "academic"
+    ],
+    "tier": "core",
+    "pos": "adj. 形容词"
+  },
+  {
+    "id": 2436,
+    "word": "scarcity",
+    "spelling": "S-C-A-R-C-I-T-Y",
+    "phonetic": "/ˈskeəsəti/",
+    "gloss": "短缺；稀缺",
+    "tip": "water scarcity",
+    "example": "Water scarcity is a growing problem in dry regions.",
+    "exampleZh": "干旱地区的缺水问题日益严重。",
+    "tags": [
+      "academic"
+    ],
+    "tier": "core",
+    "pos": "n. 名词"
+  },
+  {
+    "id": 2437,
+    "word": "sedentary",
+    "spelling": "S-E-D-E-N-T-A-R-Y",
+    "phonetic": "/ˈsedntri/",
+    "gloss": "久坐的；不爱活动的",
+    "tip": "sedentary lifestyle",
+    "example": "A sedentary lifestyle increases the risk of heart disease.",
+    "exampleZh": "久坐的生活方式会增加患心脏病的风险。",
+    "tags": [
+      "academic"
+    ],
+    "tier": "high",
+    "pos": "adj. 形容词"
+  },
+  {
+    "id": 2438,
+    "word": "versatile",
+    "spelling": "V-E-R-S-A-T-I-L-E",
+    "phonetic": "/ˈvɜːsətaɪl/",
+    "gloss": "多才多艺的；用途广泛的",
+    "tip": "versatile material",
+    "example": "Bamboo is a versatile building material.",
+    "exampleZh": "竹子是一种用途广泛的建筑材料。",
+    "tags": [
+      "academic"
+    ],
+    "tier": "core",
+    "pos": "adj. 形容词"
+  },
+  {
+    "id": 2439,
+    "word": "wane",
+    "spelling": "W-A-N-E",
+    "phonetic": "/weɪn/",
+    "gloss": "减弱；衰退",
+    "tip": "interest wanes",
+    "example": "Public interest in the issue began to wane.",
+    "exampleZh": "公众对这个问题的兴趣开始减退。",
+    "tags": [
+      "academic",
+      "verb"
+    ],
+    "tier": "high",
+    "pos": "v. 动词"
+  },
+  {
+    "id": 2440,
+    "word": "comply",
+    "spelling": "C-O-M-P-L-Y",
+    "phonetic": "/kəmˈplaɪ/",
+    "gloss": "遵守；服从",
+    "tip": "comply with",
+    "example": "All staff must comply with the privacy policy.",
+    "exampleZh": "所有员工都必须遵守隐私政策。",
+    "tags": [
+      "academic",
+      "verb"
+    ],
+    "tier": "core",
+    "pos": "v. 动词"
+  },
+  {
+    "id": 2441,
+    "word": "deplete",
+    "spelling": "D-E-P-L-E-T-E",
+    "phonetic": "/dɪˈpliːt/",
+    "gloss": "耗尽；大量减少",
+    "tip": "deplete resources",
+    "example": "Overfishing has depleted fish stocks.",
+    "exampleZh": "过度捕捞使鱼类资源大量减少。",
+    "tags": [
+      "academic",
+      "verb"
+    ],
+    "tier": "high",
+    "pos": "v. 动词"
+  },
+  {
+    "id": 2442,
+    "word": "emulate",
+    "spelling": "E-M-U-L-A-T-E",
+    "phonetic": "/ˈemjuleɪt/",
+    "gloss": "效仿；模仿",
+    "tip": "emulate success",
+    "example": "Other cities hope to emulate this success.",
+    "exampleZh": "其他城市希望效仿这一成功经验。",
+    "tags": [
+      "academic",
+      "verb"
+    ],
+    "tier": "high",
+    "pos": "v. 动词"
+  },
+  {
+    "id": 2443,
+    "word": "envisage",
+    "spelling": "E-N-V-I-S-A-G-E",
+    "phonetic": "/ɪnˈvɪzɪdʒ/",
+    "gloss": "设想；预见",
+    "tip": "envisage a future",
+    "example": "The plan envisages a car-free city centre.",
+    "exampleZh": "该计划设想打造一个无车市中心。",
+    "tags": [
+      "academic",
+      "verb"
+    ],
+    "tier": "high",
+    "pos": "v. 动词"
+  },
+  {
+    "id": 2444,
+    "word": "hamper",
+    "spelling": "H-A-M-P-E-R",
+    "phonetic": "/ˈhæmpə/",
+    "gloss": "妨碍；阻碍",
+    "tip": "hamper progress",
+    "example": "Bad weather hampered the rescue effort.",
+    "exampleZh": "恶劣天气妨碍了救援工作。",
+    "tags": [
+      "academic",
+      "verb"
+    ],
+    "tier": "high",
+    "pos": "v. 动词"
+  },
+  {
+    "id": 2445,
+    "word": "lucrative",
+    "spelling": "L-U-C-R-A-T-I-V-E",
+    "phonetic": "/ˈluːkrətɪv/",
+    "gloss": "赚钱的；利润丰厚的",
+    "tip": "lucrative market",
+    "example": "Tourism has become a lucrative industry for the island.",
+    "exampleZh": "旅游业已成为这座岛利润丰厚的产业。",
+    "tags": [
+      "academic"
+    ],
+    "tier": "high",
+    "pos": "adj. 形容词"
+  },
+  {
+    "id": 2446,
+    "word": "moderate",
+    "spelling": "M-O-D-E-R-A-T-E",
+    "phonetic": "/ˈmɒdərət/",
+    "gloss": "适度的；中等的",
+    "tip": "moderate exercise",
+    "example": "Moderate exercise improves sleep quality.",
+    "exampleZh": "适度运动能改善睡眠质量。",
+    "tags": [
+      "academic"
+    ],
+    "tier": "core",
+    "pos": "adj. 形容词"
+  },
+  {
+    "id": 2447,
+    "word": "nurture",
+    "spelling": "N-U-R-T-U-R-E",
+    "phonetic": "/ˈnɜːtʃə/",
+    "gloss": "培养；养育",
+    "tip": "nurture talent",
+    "example": "Good teachers nurture curiosity in their students.",
+    "exampleZh": "好老师会培养学生的好奇心。",
+    "tags": [
+      "academic",
+      "verb"
+    ],
+    "tier": "core",
+    "pos": "v. 动词"
+  },
+  {
+    "id": 2448,
+    "word": "overt",
+    "spelling": "O-V-E-R-T",
+    "phonetic": "/əʊˈvɜːt/",
+    "gloss": "公开的；明显的",
+    "tip": "overt discrimination",
+    "example": "Overt discrimination is now illegal in most workplaces.",
+    "exampleZh": "公开歧视现在在大多数职场都是违法的。",
+    "tags": [
+      "academic"
+    ],
+    "tier": "high",
+    "pos": "adj. 形容词"
+  },
+  {
+    "id": 2449,
+    "word": "covert",
+    "spelling": "C-O-V-E-R-T",
+    "phonetic": "/ˈkʌvət/",
+    "gloss": "隐蔽的；暗中的",
+    "tip": "covert observation",
+    "example": "The researchers used covert observation in the study.",
+    "exampleZh": "研究人员在研究中采用了隐蔽观察法。",
+    "tags": [
+      "academic"
+    ],
+    "tier": "high",
+    "pos": "adj. 形容词"
+  },
+  {
+    "id": 2450,
+    "word": "permeate",
+    "spelling": "P-E-R-M-E-A-T-E",
+    "phonetic": "/ˈpɜːmieɪt/",
+    "gloss": "渗透；弥漫",
+    "tip": "permeate society",
+    "example": "Digital technology permeates every part of modern life.",
+    "exampleZh": "数字技术渗透到现代生活的方方面面。",
+    "tags": [
+      "academic",
+      "verb"
+    ],
+    "tier": "high",
+    "pos": "v. 动词"
+  },
+  {
+    "id": 2451,
+    "word": "plummet",
+    "spelling": "P-L-U-M-M-E-T",
+    "phonetic": "/ˈplʌmɪt/",
+    "gloss": "暴跌；骤降",
+    "tip": "prices plummet",
+    "example": "Sales plummeted during the economic crisis.",
+    "exampleZh": "经济危机期间销量暴跌。",
+    "tags": [
+      "academic",
+      "verb"
+    ],
+    "tier": "high",
+    "pos": "v. 动词"
+  },
+  {
+    "id": 2452,
+    "word": "proponent",
+    "spelling": "P-R-O-P-O-N-E-N-T",
+    "phonetic": "/prəˈpəʊnənt/",
+    "gloss": "支持者；倡导者",
+    "tip": "a proponent of",
+    "example": "He is a strong proponent of renewable energy.",
+    "exampleZh": "他是可再生能源的坚定支持者。",
+    "tags": [
+      "academic"
+    ],
+    "tier": "high",
+    "pos": "n. 名词"
+  },
+  {
+    "id": 2453,
+    "word": "reiterate",
+    "spelling": "R-E-I-T-E-R-A-T-E",
+    "phonetic": "/riˈɪtəreɪt/",
+    "gloss": "重申；反复说",
+    "tip": "reiterate a point",
+    "example": "The minister reiterated the need for reform.",
+    "exampleZh": "部长重申了改革的必要性。",
+    "tags": [
+      "academic",
+      "verb"
+    ],
+    "tier": "high",
+    "pos": "v. 动词"
+  },
+  {
+    "id": 2454,
+    "word": "unanimous",
+    "spelling": "U-N-A-N-I-M-O-U-S",
+    "phonetic": "/juˈnænɪməs/",
+    "gloss": "一致同意的；全体一致的",
+    "tip": "unanimous decision",
+    "example": "The committee reached a unanimous decision.",
+    "exampleZh": "委员会达成了一致决定。",
+    "tags": [
+      "academic"
+    ],
+    "tier": "high",
+    "pos": "adj. 形容词"
+  },
+  {
+    "id": 2455,
+    "word": "unveil",
+    "spelling": "U-N-V-E-I-L",
+    "phonetic": "/ʌnˈveɪl/",
+    "gloss": "公布；揭幕",
+    "tip": "unveil a plan",
+    "example": "The council unveiled a new transport plan.",
+    "exampleZh": "市议会公布了新的交通规划。",
+    "tags": [
+      "academic",
+      "verb"
+    ],
+    "tier": "core",
+    "pos": "v. 动词"
+  },
+  {
+    "id": 2456,
+    "word": "vigorous",
+    "spelling": "V-I-G-O-R-O-U-S",
+    "phonetic": "/ˈvɪɡərəs/",
+    "gloss": "剧烈的；有力的",
+    "tip": "vigorous exercise",
+    "example": "Vigorous exercise raises the heart rate quickly.",
+    "exampleZh": "剧烈运动会让心率迅速升高。",
+    "tags": [
+      "academic"
+    ],
+    "tier": "core",
+    "pos": "adj. 形容词"
+  },
+  {
+    "id": 2457,
+    "word": "warrant",
+    "spelling": "W-A-R-R-A-N-T",
+    "phonetic": "/ˈwɒrənt/",
+    "gloss": "使有必要；证明…正当",
+    "tip": "warrant attention",
+    "example": "The results warrant further investigation.",
+    "exampleZh": "这些结果值得进一步研究。",
+    "tags": [
+      "academic",
+      "verb"
+    ],
+    "tier": "high",
+    "pos": "v. 动词"
+  },
+  {
+    "id": 2458,
+    "word": "appraise",
+    "spelling": "A-P-P-R-A-I-S-E",
+    "phonetic": "/əˈpreɪz/",
+    "gloss": "评估；估价",
+    "tip": "appraise performance",
+    "example": "Managers appraise staff performance every year.",
+    "exampleZh": "经理每年都会评估员工表现。",
+    "tags": [
+      "academic",
+      "verb"
+    ],
+    "tier": "high",
+    "pos": "v. 动词"
+  },
+  {
+    "id": 2459,
+    "word": "circumvent",
+    "spelling": "C-I-R-C-U-M-V-E-N-T",
+    "phonetic": "/ˌsɜːkəmˈvent/",
+    "gloss": "规避；绕过",
+    "tip": "circumvent the rules",
+    "example": "Some companies try to circumvent tax laws.",
+    "exampleZh": "有些公司试图规避税法。",
+    "tags": [
+      "academic",
+      "verb"
+    ],
+    "tier": "high",
+    "pos": "v. 动词"
+  },
+  {
+    "id": 2460,
+    "word": "curtail",
+    "spelling": "C-U-R-T-A-I-L",
+    "phonetic": "/kɜːˈteɪl/",
+    "gloss": "削减；限制",
+    "tip": "curtail spending",
+    "example": "The government plans to curtail public spending.",
+    "exampleZh": "政府计划削减公共开支。",
+    "tags": [
+      "academic",
+      "verb"
+    ],
+    "tier": "high",
     "pos": "v. 动词"
   }
 ]

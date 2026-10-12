@@ -1,6 +1,6 @@
 /**
  * chinaPTE · Listening practice
- * Total: 75 items
+ * Total: 78 items
  */
 (function (global) {
   "use strict";
@@ -603,6 +603,30 @@
     "en": "Coral reefs cover less than one percent of the ocean floor, yet they support about a quarter of all marine species. For this reason, protecting them is a global priority.",
     "answer": "a global priority",
     "zhAnalysis": "SMW：根据前文逻辑（面积小却养活大量物种）补全结尾：保护珊瑚礁是全球优先事项。",
+    "vocab": []
+  },
+  {
+    "id": 76,
+    "type": "MCQ",
+    "en": "Speaker: The campus gym is free for students on weekdays before nine in the morning. After that, there is a small fee of three dollars per visit.\nQuestion: When can students use the gym for free?",
+    "answer": "On weekdays before 9 am",
+    "zhAnalysis": "细节：工作日早上九点前免费，之后每次收费三元。",
+    "vocab": []
+  },
+  {
+    "id": 77,
+    "type": "FIB",
+    "en": "The speaker explains that most ______ in the region come from the mining industry.",
+    "answer": "jobs",
+    "zhAnalysis": "讲者解释说该地区大部分工作岗位来自采矿业。",
+    "vocab": []
+  },
+  {
+    "id": 78,
+    "type": "SMW",
+    "en": "Many students start the semester with good intentions, but without a clear schedule, they often leave assignments until the last minute. The result is usually unnecessary stress.",
+    "answer": "unnecessary stress",
+    "zhAnalysis": "SMW：根据前文逻辑（没有计划、拖到最后一刻）补全结尾：结果往往是不必要的压力。",
     "vocab": []
   }
 ];

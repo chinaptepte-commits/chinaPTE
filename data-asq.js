@@ -1,6 +1,6 @@
 /**
  * chinaPTE · ASQ — Answer Short Question
- * Total: 105 items
+ * Total: 110 items
  */
 (function (global) {
   "use strict";
@@ -843,6 +843,46 @@
     "question": "What official document do you usually need to travel to another country?",
     "answer": "a passport / passport",
     "zhAnalysis": "护照。",
+    "vocab": []
+  },
+  {
+    "id": 106,
+    "en": "What do we call a person who designs buildings?",
+    "question": "What do we call a person who designs buildings?",
+    "answer": "an architect / architect",
+    "zhAnalysis": "建筑师。",
+    "vocab": []
+  },
+  {
+    "id": 107,
+    "en": "Which instrument do scientists use to look at very small things such as cells?",
+    "question": "Which instrument do scientists use to look at very small things such as cells?",
+    "answer": "a microscope / microscope",
+    "zhAnalysis": "显微镜。",
+    "vocab": []
+  },
+  {
+    "id": 108,
+    "en": "What do you call the piece of paper a shop gives you to show what you have paid?",
+    "question": "What do you call the piece of paper a shop gives you to show what you have paid?",
+    "answer": "a receipt / receipt",
+    "zhAnalysis": "收据；小票。",
+    "vocab": []
+  },
+  {
+    "id": 109,
+    "en": "How many years are there in a century?",
+    "question": "How many years are there in a century?",
+    "answer": "one hundred / 100",
+    "zhAnalysis": "一百年。",
+    "vocab": []
+  },
+  {
+    "id": 110,
+    "en": "Who would you call to fix a leaking pipe in your house?",
+    "question": "Who would you call to fix a leaking pipe in your house?",
+    "answer": "a plumber / plumber",
+    "zhAnalysis": "水管工。",
     "vocab": []
   }
 ];

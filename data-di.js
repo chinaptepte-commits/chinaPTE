@@ -1,6 +1,6 @@
 /**
  * chinaPTE · DI — Describe Image
- * Total: 51 items
+ * Total: 53 items
  */
 (function (global) {
   "use strict";
@@ -1384,6 +1384,60 @@
         "word": "steadily",
         "spelling": "S-T-E-A-D-I-L-Y",
         "gloss": "稳步地",
+        "tip": ""
+      }
+    ]
+  },
+  {
+    "id": 52,
+    "image": "images/di/52.svg",
+    "en": "📈 折线图：某城市月均降雨量 1–6 月",
+    "scene": "📈 折线图：某城市月均降雨量 1–6 月",
+    "zhAnalysis": "描述：先说明图表主题；1月降雨最多（约120毫米），之后逐月下降；3月约80毫米，6月最少（约25毫米）；结论：上半年降雨量持续减少，进入旱季。",
+    "vocab": [
+      {
+        "word": "rainfall",
+        "spelling": "R-A-I-N-F-A-L-L",
+        "gloss": "降雨量",
+        "tip": "DI常用"
+      },
+      {
+        "word": "decline",
+        "spelling": "D-E-C-L-I-N-E",
+        "gloss": "下降",
+        "tip": ""
+      },
+      {
+        "word": "steadily",
+        "spelling": "S-T-E-A-D-I-L-Y",
+        "gloss": "稳步地",
+        "tip": ""
+      }
+    ]
+  },
+  {
+    "id": 53,
+    "image": "images/di/53.svg",
+    "en": "📊 柱状图：大学生每周课余时间分配",
+    "scene": "📊 柱状图：大学生每周课余时间分配",
+    "zhAnalysis": "描述：兼职工作时间最多（约14小时），社交媒体其次（约10小时）；运动约5小时，志愿活动最少（约2小时）；结论：学生课余时间主要用于打工和上网。",
+    "vocab": [
+      {
+        "word": "distribution",
+        "spelling": "D-I-S-T-R-I-B-U-T-I-O-N",
+        "gloss": "分配；分布",
+        "tip": "DI常用"
+      },
+      {
+        "word": "approximately",
+        "spelling": "A-P-P-R-O-X-I-M-A-T-E-L-Y",
+        "gloss": "大约",
+        "tip": ""
+      },
+      {
+        "word": "followed",
+        "spelling": "F-O-L-L-O-W-E-D",
+        "gloss": "紧随其后",
         "tip": ""
       }
     ]

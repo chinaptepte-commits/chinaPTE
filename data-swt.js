@@ -1,6 +1,6 @@
 /**
  * chinaPTE · SWT — Summarize Written Text
- * Total: 48 items
+ * Total: 50 items
  */
 (function (global) {
   "use strict";
@@ -1003,6 +1003,58 @@
         "word": "although",
         "spelling": "A-L-T-H-O-U-G-H",
         "gloss": "虽然",
+        "tip": ""
+      }
+    ]
+  },
+  {
+    "id": 49,
+    "en": "Microplastics are tiny plastic particles that are now found in oceans, soil and even drinking water. They come from the breakdown of larger plastic items and from products such as synthetic clothing. Scientists are still studying their effects on human health, but early evidence suggests they may cause inflammation. Reducing plastic use is widely seen as the most reliable way to limit exposure.",
+    "passage": "Microplastics are tiny plastic particles that are now found in oceans, soil and even drinking water. They come from the breakdown of larger plastic items and from products such as synthetic clothing. Scientists are still studying their effects on human health, but early evidence suggests they may cause inflammation. Reducing plastic use is widely seen as the most reliable way to limit exposure.",
+    "zhAnalysis": "SWT：合并为一句。微塑料来自大塑料分解和合成衣物等产品，已遍布海洋、土壤和饮用水；其健康影响仍在研究，初步证据显示可能引发炎症，因此减少塑料使用被视为降低接触最可靠的办法。",
+    "vocab": [
+      {
+        "word": "particles",
+        "spelling": "P-A-R-T-I-C-L-E-S",
+        "gloss": "颗粒",
+        "tip": ""
+      },
+      {
+        "word": "synthetic",
+        "spelling": "S-Y-N-T-H-E-T-I-C",
+        "gloss": "合成的",
+        "tip": ""
+      },
+      {
+        "word": "inflammation",
+        "spelling": "I-N-F-L-A-M-M-A-T-I-O-N",
+        "gloss": "炎症",
+        "tip": ""
+      }
+    ]
+  },
+  {
+    "id": 50,
+    "en": "Gap years allow students to take time off between school and university to work, travel or volunteer. Supporters argue that this experience builds maturity and helps young people choose a course that suits them. Critics point out that a gap year can be expensive and that some students lose study momentum. Careful planning can help students gain the benefits while avoiding these risks.",
+    "passage": "Gap years allow students to take time off between school and university to work, travel or volunteer. Supporters argue that this experience builds maturity and helps young people choose a course that suits them. Critics point out that a gap year can be expensive and that some students lose study momentum. Careful planning can help students gain the benefits while avoiding these risks.",
+    "zhAnalysis": "SWT：合并为一句。间隔年让学生在升学前工作、旅行或做志愿者，支持者认为能培养成熟度、帮助选对专业，批评者则指出花费高、可能失去学习状态，而周密计划可以兼得好处、避开风险。",
+    "vocab": [
+      {
+        "word": "volunteer",
+        "spelling": "V-O-L-U-N-T-E-E-R",
+        "gloss": "做志愿者",
+        "tip": ""
+      },
+      {
+        "word": "maturity",
+        "spelling": "M-A-T-U-R-I-T-Y",
+        "gloss": "成熟",
+        "tip": ""
+      },
+      {
+        "word": "momentum",
+        "spelling": "M-O-M-E-N-T-U-M",
+        "gloss": "势头；状态",
         "tip": ""
       }
     ]

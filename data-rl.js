@@ -1,6 +1,6 @@
 /**
  * chinaPTE · RL — Retell Lecture
- * Total: 64 items
+ * Total: 67 items
  */
 (function (global) {
   "use strict";
@@ -1619,6 +1619,81 @@
         "word": "hybrid",
         "spelling": "H-Y-B-R-I-D",
         "gloss": "混合的",
+        "tip": ""
+      }
+    ]
+  },
+  {
+    "id": 65,
+    "en": "This lecture looks at the four-day working week. In several trials, companies kept pay the same while reducing hours. Many reported similar or higher productivity, and staff said they felt less stressed. The speaker points out, though, that the model may be harder to apply in hospitals, schools and other services that must run every day.",
+    "zhAnalysis": "讲座要点：四天工作制；多项试点中公司工资不变、工时减少；不少公司生产率持平或提高，员工压力减轻；但讲者指出医院、学校等每天运转的服务业较难推行。复述：主题+试点结果+好处+局限。",
+    "vocab": [
+      {
+        "word": "trials",
+        "spelling": "T-R-I-A-L-S",
+        "gloss": "试验；试点",
+        "tip": ""
+      },
+      {
+        "word": "productivity",
+        "spelling": "P-R-O-D-U-C-T-I-V-I-T-Y",
+        "gloss": "生产率",
+        "tip": ""
+      },
+      {
+        "word": "stressed",
+        "spelling": "S-T-R-E-S-S-E-D",
+        "gloss": "有压力的",
+        "tip": ""
+      }
+    ]
+  },
+  {
+    "id": 66,
+    "en": "Today's talk is about urban heat islands. Cities are often several degrees warmer than nearby countryside because concrete and asphalt absorb heat during the day and release it at night. Planting trees, adding green spaces and using lighter roofing materials can lower temperatures and reduce energy use for cooling.",
+    "zhAnalysis": "讲座要点：城市热岛；城市比周边乡村高几度，因为混凝土和沥青白天吸热、夜里放热；植树、增加绿地、使用浅色屋顶材料可以降温并减少制冷能耗。复述：主题+原因+解决办法。",
+    "vocab": [
+      {
+        "word": "concrete",
+        "spelling": "C-O-N-C-R-E-T-E",
+        "gloss": "混凝土",
+        "tip": ""
+      },
+      {
+        "word": "asphalt",
+        "spelling": "A-S-P-H-A-L-T",
+        "gloss": "沥青",
+        "tip": ""
+      },
+      {
+        "word": "release",
+        "spelling": "R-E-L-E-A-S-E",
+        "gloss": "释放",
+        "tip": ""
+      }
+    ]
+  },
+  {
+    "id": 67,
+    "en": "The speaker discusses how memory works when we study. Information is more likely to be remembered when it is reviewed several times with gaps in between, rather than all at once. Testing yourself is also more effective than simply rereading notes. These techniques take more effort at first but lead to longer-lasting learning.",
+    "zhAnalysis": "讲座要点：学习时的记忆规律；间隔多次复习比一次集中复习记得更牢；自测比单纯重读笔记更有效；这些方法起初更费力，但记忆更持久。复述：主题+两种方法+结论。",
+    "vocab": [
+      {
+        "word": "reviewed",
+        "spelling": "R-E-V-I-E-W-E-D",
+        "gloss": "复习",
+        "tip": ""
+      },
+      {
+        "word": "effective",
+        "spelling": "E-F-F-E-C-T-I-V-E",
+        "gloss": "有效的",
+        "tip": ""
+      },
+      {
+        "word": "techniques",
+        "spelling": "T-E-C-H-N-I-Q-U-E-S",
+        "gloss": "方法；技巧",
         "tip": ""
       }
     ]

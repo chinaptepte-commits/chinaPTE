@@ -1,6 +1,6 @@
 /**
  * chinaPTE · RA — Read Aloud
- * Total: 105 items · exam-length passages (~45–65 words)
+ * Total: 110 items · exam-length passages (~45–65 words)
  * Audio: prefer speechSynthesis (audioPreferTts); no RA MP3s in manifest
  */
 (function (global) {
@@ -2731,6 +2731,136 @@
         "word": "contributions",
         "spelling": "C-O-N-T-R-I-B-U-T-I-O-N-S",
         "gloss": "贡献",
+        "tip": ""
+      }
+    ],
+    "audioPreferTts": true
+  },
+  {
+    "id": 106,
+    "en": "Public libraries have changed a great deal over the past twenty years. Besides lending books, many now provide free internet access, job-search support and quiet study spaces. For people without a computer at home, these services can be essential. As a result, libraries increasingly act as community centres rather than simple book collections.",
+    "zhAnalysis": "过去二十年公共图书馆变化很大。除了借书，许多图书馆现在还提供免费上网、求职支持和安静的自习空间。对家里没有电脑的人来说，这些服务可能必不可少。因此，图书馆越来越像社区中心，而不仅仅是藏书的地方。",
+    "vocab": [
+      {
+        "word": "access",
+        "spelling": "A-C-C-E-S-S",
+        "gloss": "使用权；接入",
+        "tip": ""
+      },
+      {
+        "word": "essential",
+        "spelling": "E-S-S-E-N-T-I-A-L",
+        "gloss": "必不可少的",
+        "tip": ""
+      },
+      {
+        "word": "increasingly",
+        "spelling": "I-N-C-R-E-A-S-I-N-G-L-Y",
+        "gloss": "越来越多地",
+        "tip": ""
+      }
+    ],
+    "audioPreferTts": true
+  },
+  {
+    "id": 107,
+    "en": "Bees play a vital role in food production because they pollinate many fruit and vegetable crops. In recent decades, however, bee populations in several countries have declined. Scientists link this to habitat loss, pesticide use and disease. Planting wildflowers and reducing chemical sprays are simple steps that can help bees recover.",
+    "zhAnalysis": "蜜蜂在粮食生产中作用重大，因为它们为许多水果和蔬菜作物授粉。然而近几十年来，多个国家的蜜蜂数量下降。科学家认为这与栖息地减少、农药使用和疾病有关。种植野花、减少化学喷洒是帮助蜜蜂恢复的简单措施。",
+    "vocab": [
+      {
+        "word": "pollinate",
+        "spelling": "P-O-L-L-I-N-A-T-E",
+        "gloss": "授粉",
+        "tip": ""
+      },
+      {
+        "word": "declined",
+        "spelling": "D-E-C-L-I-N-E-D",
+        "gloss": "下降；减少",
+        "tip": ""
+      },
+      {
+        "word": "pesticide",
+        "spelling": "P-E-S-T-I-C-I-D-E",
+        "gloss": "农药；杀虫剂",
+        "tip": ""
+      }
+    ],
+    "audioPreferTts": true
+  },
+  {
+    "id": 108,
+    "en": "Learning a second language as an adult is challenging but highly rewarding. Adults may find pronunciation harder than children do, yet they often have better study habits and a clearer purpose. Short daily practice, real conversations and listening to native speakers can lead to steady progress over time.",
+    "zhAnalysis": "成年后学第二语言有挑战，但回报很大。成年人可能觉得发音比孩子难，但他们往往有更好的学习习惯和更明确的目标。每天短时间练习、真实对话和多听母语者说话，可以带来持续的进步。",
+    "vocab": [
+      {
+        "word": "challenging",
+        "spelling": "C-H-A-L-L-E-N-G-I-N-G",
+        "gloss": "有挑战性的",
+        "tip": ""
+      },
+      {
+        "word": "rewarding",
+        "spelling": "R-E-W-A-R-D-I-N-G",
+        "gloss": "有回报的；值得的",
+        "tip": ""
+      },
+      {
+        "word": "steady",
+        "spelling": "S-T-E-A-D-Y",
+        "gloss": "稳定的；持续的",
+        "tip": ""
+      }
+    ],
+    "audioPreferTts": true
+  },
+  {
+    "id": 109,
+    "en": "Electric vehicles are often described as a clean alternative to petrol cars. They produce no exhaust emissions while driving, which improves air quality in cities. However, their overall environmental impact depends on how the electricity is generated and how the batteries are made and recycled at the end of their life.",
+    "zhAnalysis": "电动车常被称为汽油车的清洁替代品。它们行驶时不排放尾气，能改善城市空气质量。但它们对环境的整体影响取决于电力如何产生，以及电池如何生产和报废后如何回收。",
+    "vocab": [
+      {
+        "word": "alternative",
+        "spelling": "A-L-T-E-R-N-A-T-I-V-E",
+        "gloss": "替代品",
+        "tip": ""
+      },
+      {
+        "word": "emissions",
+        "spelling": "E-M-I-S-S-I-O-N-S",
+        "gloss": "排放物",
+        "tip": ""
+      },
+      {
+        "word": "recycled",
+        "spelling": "R-E-C-Y-C-L-E-D",
+        "gloss": "回收利用",
+        "tip": ""
+      }
+    ],
+    "audioPreferTts": true
+  },
+  {
+    "id": 110,
+    "en": "Time management is one of the most useful skills a university student can develop. Breaking large tasks into smaller steps makes them feel less overwhelming. Using a weekly planner helps students see deadlines in advance, and setting aside regular study blocks reduces the need for stressful last-minute work.",
+    "zhAnalysis": "时间管理是大学生最值得培养的技能之一。把大任务拆成小步骤，会让人觉得没那么难以应付。使用周计划表能提前看到截止日期，固定安排学习时段则能减少临时抱佛脚带来的压力。",
+    "vocab": [
+      {
+        "word": "management",
+        "spelling": "M-A-N-A-G-E-M-E-N-T",
+        "gloss": "管理",
+        "tip": ""
+      },
+      {
+        "word": "overwhelming",
+        "spelling": "O-V-E-R-W-H-E-L-M-I-N-G",
+        "gloss": "难以承受的",
+        "tip": ""
+      },
+      {
+        "word": "deadlines",
+        "spelling": "D-E-A-D-L-I-N-E-S",
+        "gloss": "截止日期",
         "tip": ""
       }
     ],

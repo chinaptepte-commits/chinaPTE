@@ -1,6 +1,6 @@
 /**
  * chinaPTE · HIW — Highlight Incorrect Words
- * Total: 51 items
+ * Total: 53 items
  */
 (function (global) {
   "use strict";
@@ -1069,6 +1069,46 @@
     "id": 51,
     "en": "The research team published its findings after a careful peer review process.",
     "transcript": "The research team published its findings after a careful peer review process.",
+    "zhAnalysis": "对照正确文本，标出与录音不符的词。",
+    "vocab": [
+      {
+        "word": "transcript",
+        "spelling": "T-R-A-N-S-C-R-I-P-T",
+        "gloss": "文字稿",
+        "tip": "对照听"
+      },
+      {
+        "word": "incorrect",
+        "spelling": "I-N-C-O-R-R-E-C-T",
+        "gloss": "错误的",
+        "tip": ""
+      }
+    ]
+  },
+  {
+    "id": 52,
+    "en": "Students must complete the online safety module before entering the workshop.",
+    "transcript": "Students must complete the online safety module before entering the workshop.",
+    "zhAnalysis": "对照正确文本，标出与录音不符的词。",
+    "vocab": [
+      {
+        "word": "transcript",
+        "spelling": "T-R-A-N-S-C-R-I-P-T",
+        "gloss": "文字稿",
+        "tip": "对照听"
+      },
+      {
+        "word": "incorrect",
+        "spelling": "I-N-C-O-R-R-E-C-T",
+        "gloss": "错误的",
+        "tip": ""
+      }
+    ]
+  },
+  {
+    "id": 53,
+    "en": "The survey results indicate that most residents support the new cycling lanes.",
+    "transcript": "The survey results indicate that most residents support the new cycling lanes.",
     "zhAnalysis": "对照正确文本，标出与录音不符的词。",
     "vocab": [
       {

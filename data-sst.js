@@ -1,6 +1,6 @@
 /**
  * chinaPTE · SST — Summarize Spoken Text
- * Total: 51 items
+ * Total: 53 items
  */
 (function (global) {
   "use strict";
@@ -1195,6 +1195,58 @@
         "word": "landfill",
         "spelling": "L-A-N-D-F-I-L-L",
         "gloss": "垃圾填埋场",
+        "tip": ""
+      }
+    ]
+  },
+  {
+    "id": 52,
+    "en": "Many universities now record lectures and put them online. Students value the flexibility to watch at their own pace and to review difficult sections before exams. Some lecturers, however, worry that recordings reduce attendance and limit discussion in class. Research suggests that recordings work best as a supplement to live teaching rather than a replacement for it.",
+    "passage": "Many universities now record lectures and put them online. Students value the flexibility to watch at their own pace and to review difficult sections before exams. Some lecturers, however, worry that recordings reduce attendance and limit discussion in class. Research suggests that recordings work best as a supplement to live teaching rather than a replacement for it.",
+    "zhAnalysis": "总结：大学普遍录制课程并上传网络→学生看重按自己节奏观看、考前复习难点的灵活性→部分讲师担心出勤率下降、课堂讨论减少→研究认为录播最适合作为现场教学的补充而非替代。SST写50–70词。",
+    "vocab": [
+      {
+        "word": "flexibility",
+        "spelling": "F-L-E-X-I-B-I-L-I-T-Y",
+        "gloss": "灵活性",
+        "tip": ""
+      },
+      {
+        "word": "attendance",
+        "spelling": "A-T-T-E-N-D-A-N-C-E",
+        "gloss": "出勤",
+        "tip": ""
+      },
+      {
+        "word": "supplement",
+        "spelling": "S-U-P-P-L-E-M-E-N-T",
+        "gloss": "补充",
+        "tip": ""
+      }
+    ]
+  },
+  {
+    "id": 53,
+    "en": "Fast fashion allows consumers to buy cheap, trendy clothes that are replaced quickly. This business model creates large amounts of textile waste and uses significant quantities of water and energy. Garment workers in some countries also face low pay and poor conditions. Buying fewer, higher-quality items and supporting second-hand markets are ways consumers can reduce these impacts.",
+    "passage": "Fast fashion allows consumers to buy cheap, trendy clothes that are replaced quickly. This business model creates large amounts of textile waste and uses significant quantities of water and energy. Garment workers in some countries also face low pay and poor conditions. Buying fewer, higher-quality items and supporting second-hand markets are ways consumers can reduce these impacts.",
+    "zhAnalysis": "总结：快时尚让消费者买到便宜、潮流且更新快的衣服→产生大量纺织垃圾、消耗大量水和能源→部分国家制衣工人工资低、条件差→少买、买质量更好的衣服并支持二手市场可减轻影响。SST写50–70词。",
+    "vocab": [
+      {
+        "word": "textile",
+        "spelling": "T-E-X-T-I-L-E",
+        "gloss": "纺织品",
+        "tip": ""
+      },
+      {
+        "word": "garment",
+        "spelling": "G-A-R-M-E-N-T",
+        "gloss": "服装",
+        "tip": ""
+      },
+      {
+        "word": "impacts",
+        "spelling": "I-M-P-A-C-T-S",
+        "gloss": "影响",
         "tip": ""
       }
     ]

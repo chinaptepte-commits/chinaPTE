@@ -1,6 +1,6 @@
 /**
  * chinaPTE · Reading practice
- * Total: 71 items
+ * Total: 74 items
  */
 (function (global) {
   "use strict";
@@ -571,6 +571,30 @@
     "en": "The new scholarship scheme had a significant ______ on enrolment numbers.",
     "answer": "impact / effect",
     "zhAnalysis": "新的奖学金计划对入学人数产生了显著影响。have an impact/effect on 固定搭配。",
+    "vocab": []
+  },
+  {
+    "id": 72,
+    "type": "FIB",
+    "en": "The committee will _____ the proposal carefully before making a final decision.",
+    "answer": "consider / review",
+    "zhAnalysis": "FIB：委员会在做最终决定前会仔细审议这项提案。before making a final decision 提示这里需要“审议、考虑”类动词。",
+    "vocab": []
+  },
+  {
+    "id": 73,
+    "type": "RWFIB",
+    "en": "Regular exercise can significantly ______ the risk of developing heart disease.",
+    "answer": "reduce / lower",
+    "zhAnalysis": "规律运动可以显著降低患心脏病的风险。reduce/lower the risk of 固定搭配。",
+    "vocab": []
+  },
+  {
+    "id": 74,
+    "type": "RWFIB",
+    "en": "The researchers drew their ______ from a sample of more than two thousand households.",
+    "answer": "conclusions",
+    "zhAnalysis": "研究人员根据两千多户家庭的样本得出结论。draw conclusions from 固定搭配。",
     "vocab": []
   }
 ];
